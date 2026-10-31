@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Python resource verification on temporary copies of the pinned original package",
+  "checks": {
+    "missing_package_rejected": true,
+    "complete_98_resource_package_accepted": true,
+    "single_byte_intro_corruption_rejected": true,
+    "unmanifested_extra_resource_rejected": true
+  },
+  "native_source_files_unchanged": 769,
+  "resource_file_count": 98
+}

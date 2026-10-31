@@ -15,7 +15,7 @@ LIBRARIES := $(HOST_BUILD)/libg1_resources.a $(HOST_BUILD)/libg1_png.a $(HOST_BU
 CPPFLAGS += -I$(GL_DEPS)/usr/include -Iupstream/ios/native/include -Iapp/src/main/cpp
 CXXFLAGS += -std=c++17 -O1 -g -Wall -Wextra -Wno-misleading-indentation
 $(HOST_BUILD)/game_probe: $(OBJECTS) $(LIBRARIES)
-	$(CXX) $^ -L$(GL_DEPS)/usr/lib/x86_64-linux-gnu -Wl,-rpath,$(GL_DEPS)/usr/lib/x86_64-linux-gnu -lGLESv2 -l:libEGL.so.1 -lz -lpthread -o $@
+	$(CXX) $^ -L$(GL_DEPS)/usr/lib/x86_64-linux-gnu -Wl,-rpath,$(GL_DEPS)/usr/lib/x86_64-linux-gnu -Wl,--wrap=glCheckFramebufferStatus -lGLESv2 -l:libEGL.so.1 -lz -lpthread -o $@
 $(HOST_BUILD)/game-probe-objects/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -MMD -MP -c $< -o $@

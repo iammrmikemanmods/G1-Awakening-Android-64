@@ -1,0 +1,1 @@
+Starting: Intent { cmp=com.iammrmikeman.g1awakening/.MainActivity (has extras) }

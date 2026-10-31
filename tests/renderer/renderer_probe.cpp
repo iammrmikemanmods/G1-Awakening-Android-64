@@ -117,6 +117,168 @@ void render(g1::GLESModelRenderer &renderer, const g1::M3GStaticModel &source) {
     auto gpu = renderer.upload(source);
     renderer.encode(*gpu, identity);
 }
+
+// CPU reference in source texel coordinates. The iOS resolve integrates four
+// bilinear samples at the quarter/three-quarter points of each output pixel.
+// No GLSL helpers, UV interpolation, or renderer state is reused by this oracle.
+std::array<double, 4> bilinear_sample(const g1::RgbaImage &source, double x, double y) {
+    const int left = static_cast<int>(std::floor(x));
+    const int bottom = static_cast<int>(std::floor(y));
+    const double fx = x - left, fy = y - bottom;
+    std::array<double, 4> result{};
+    for (int dy = 0; dy < 2; ++dy)
+        for (int dx = 0; dx < 2; ++dx) {
+            const int sx = std::clamp(left + dx, 0, static_cast<int>(source.width) - 1);
+            const int sy = std::clamp(bottom + dy, 0, static_cast<int>(source.height) - 1);
+            const double weight = (dx ? fx : 1 - fx) * (dy ? fy : 1 - fy);
+            for (std::size_t channel = 0; channel < result.size(); ++channel)
+                result[channel] += weight * source.pixels[(sy * source.width + sx) * 4 + channel];
+        }
+    return result;
+}
+std::array<double, 4> supersampling_reference(const g1::RgbaImage &source, int x, int y,
+                                            int width, int height) {
+    std::array<double, 4> result{};
+    for (double vertical : {.25, .75})
+        for (double horizontal : {.25, .75}) {
+            const auto sample = bilinear_sample(source, (x + horizontal) * source.width / width - .5,
+                                                (y + vertical) * source.height / height - .5);
+            for (std::size_t channel = 0; channel < result.size(); ++channel)
+                result[channel] += sample[channel] / 4;
+        }
+    return result;
+}
+void expect_resolve_pixel(const g1::RgbaImage &source, int x, int y, int width, int height,
+                          const std::string &name) {
+    const auto expected = supersampling_reference(source, x, y, width, height);
+    const auto actual = pixel(x, y);
+    for (std::size_t channel = 0; channel < actual.size(); ++channel) {
+        const auto target = static_cast<int>(std::lround(expected[channel]));
+        if (std::abs(static_cast<int>(actual[channel]) - target) > 2)
+            throw std::runtime_error(name + " at " + std::to_string(x) + "," + std::to_string(y) +
+                                     " channel " + std::to_string(channel) + ": " +
+                                     std::to_string(actual[channel]) + " expected " + std::to_string(target));
+    }
+    ++checks;
+}
+
+void supersampling_contract(g1::GLESRenderer &scene) {
+    constexpr int width = 8, height = 6;
+    g1::RgbaImage source{12, 9, {}}; // Actual 1.5x scale, where one bilinear sample is insufficient.
+    for (std::uint32_t y = 0; y < source.height; ++y)
+        for (std::uint32_t x = 0; x < source.width; ++x) {
+            // Asymmetric horizontal/vertical landmarks prove orientation. Blue
+            // has one-texel alternation, and alpha must survive without blending.
+            source.pixels.push_back(static_cast<unsigned char>(20 + (x / 4) * 105));
+            source.pixels.push_back(static_cast<unsigned char>(10 + (y / 3) * 115));
+            source.pixels.push_back((x + y) % 2 ? 255 : 0);
+            source.pixels.push_back(static_cast<unsigned char>(48 + ((x * 19 + y * 29) % 192)));
+        }
+    auto color = scene.texture(source);
+    GLuint source_fbo = 0;
+    glGenFramebuffers(1, &source_fbo);
+    glBindFramebuffer(GL_FRAMEBUFFER, source_fbo);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, color->id(), 0);
+    expect(glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE,
+           "supersampling source texture is a renderable framebuffer");
+
+    // Execute the previous single-blit path to establish that this fixture can
+    // catch the actual regression, rather than a theoretical filter difference.
+    glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
+    glDisable(GL_SCISSOR_TEST);
+    glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
+    glBlitFramebuffer(0, 0, source.width, source.height, 0, 0, width, height,
+                      GL_COLOR_BUFFER_BIT, GL_LINEAR);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    int distinguishable = 0;
+    for (int y = 0; y < height; ++y)
+        for (int x = 0; x < width; ++x) {
+            const auto old = pixel(x, y);
+            const auto expected = supersampling_reference(source, x, y, width, height);
+            if (std::abs(static_cast<double>(old[2]) - expected[2]) >= 12)
+                ++distinguishable;
+        }
+    expect(distinguishable >= width * height / 2,
+           "1.5x high-frequency fixture distinguishes four taps from the old bilinear blit");
+
+    clear({1, 0, 1, 1});
+    glBindFramebuffer(GL_FRAMEBUFFER, source_fbo);
+    glViewport(2, 3, 1, 2);
+    glEnable(GL_SCISSOR_TEST);
+    glScissor(2, 3, 1, 1);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_ZERO, GL_ONE);
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_NEVER);
+    glDepthMask(GL_TRUE);
+    glEnable(GL_STENCIL_TEST);
+    glStencilFunc(GL_NEVER, 0, ~0U);
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_FRONT_AND_BACK);
+    glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
+    GLuint inherited_sampler = 0;
+    glGenSamplers(1, &inherited_sampler);
+    glSamplerParameteri(inherited_sampler, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glSamplerParameteri(inherited_sampler, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glSamplerParameteri(inherited_sampler, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glSamplerParameteri(inherited_sampler, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glBindSampler(0, inherited_sampler);
+    glActiveTexture(GL_TEXTURE5);
+
+    scene.resolve_supersampling(color->id(), width, height);
+    GLint framebuffer = -1, viewport[4]{};
+    glGetIntegerv(GL_DRAW_FRAMEBUFFER_BINDING, &framebuffer);
+    glGetIntegerv(GL_VIEWPORT, viewport);
+    expect(framebuffer == 0 && viewport[0] == 0 && viewport[1] == 0 &&
+               viewport[2] == width && viewport[3] == height,
+           "resolve selects the native output framebuffer and viewport");
+    expect(!glIsEnabled(GL_SCISSOR_TEST) && !glIsEnabled(GL_BLEND) && !glIsEnabled(GL_DEPTH_TEST) &&
+               !glIsEnabled(GL_STENCIL_TEST) && !glIsEnabled(GL_CULL_FACE),
+           "resolve ignores inherited scene rejection/blend state");
+    GLboolean depth_write = GL_TRUE, color_write[4]{};
+    glGetBooleanv(GL_DEPTH_WRITEMASK, &depth_write);
+    glGetBooleanv(GL_COLOR_WRITEMASK, color_write);
+    expect(!depth_write && std::all_of(std::begin(color_write), std::end(color_write),
+                                     [](GLboolean value) { return value == GL_TRUE; }),
+           "resolve writes all color channels and preserves native depth");
+
+    expect_resolve_pixel(source, 0, 0, width, height, "bottom-left landmark and clamped quarter taps");
+    expect_resolve_pixel(source, width - 1, 0, width, height, "bottom-right landmark");
+    expect_resolve_pixel(source, 0, height - 1, width, height, "top-left landmark");
+    expect_resolve_pixel(source, width - 1, height - 1, width, height, "top-right landmark");
+    for (int y = 0; y < height; ++y)
+        for (int x = 0; x < width; ++x)
+            if ((x != 0 && x != width - 1) || (y != 0 && y != height - 1))
+                expect_resolve_pixel(source, x, y, width, height, "four-tap full output against CPU oracle");
+
+    // Reuse the cached shader at a different aspect/scale. The footprint must
+    // depend on the current output size, not the source or the previous resolve.
+    constexpr int second_width = 6, second_height = 3;
+    scene.resolve_supersampling(color->id(), second_width, second_height);
+    for (int y = 0; y < second_height; ++y)
+        for (int x = 0; x < second_width; ++x)
+            expect_resolve_pixel(source, x, y, second_width, second_height,
+                                  "cached resolve updates its output-pixel footprint");
+    bool rejected = false;
+    try {
+        scene.resolve_supersampling(0, width, height);
+    } catch (const g1::FormatError &) {
+        rejected = true;
+    }
+    expect(rejected, "resolve rejects a missing source texture");
+    rejected = false;
+    try {
+        scene.resolve_supersampling(color->id(), 0, height);
+    } catch (const g1::FormatError &) {
+        rejected = true;
+    }
+    expect(rejected, "resolve rejects a zero-sized output");
+    glDeleteSamplers(1, &inherited_sampler);
+    glDeleteFramebuffers(1, &source_fbo);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glViewport(0, 0, 64, 64);
+    expect(glGetError() == GL_NO_ERROR, "four-tap resolve leaves no GLES errors");
+}
 } // namespace
 int main() {
     try {
@@ -355,6 +517,9 @@ int main() {
             rejected = true;
         }
         expect(rejected, "unsupported lighting fails before upload");
+        supersampling_contract(scene);
+        clear({0, .25F, .5F, 1});
+        const auto before_context_loss = pixel();
         auto resources = mesh;
         scene.abandon_context();
         expect(!red->live(), "context invalidation reaches retained texture");
@@ -365,6 +530,14 @@ int main() {
             rejected = true;
         }
         expect(rejected, "lost-context resource draw rejected");
+        rejected = false;
+        try {
+            scene.resolve_supersampling(red->id(), 64, 64);
+        } catch (const std::runtime_error &) {
+            rejected = true;
+        }
+        expect(rejected, "lost-context supersampling resolve rejected");
+        expect(pixel() == before_context_loss, "lost-context resolve draws no pixels");
         expect(glGetError() == GL_NO_ERROR, "no unhandled GLES errors");
         std::cout << "{\"status\":\"passed\",\"checks\":" << checks << ",\"renderer\":\""
                   << renderer_name << "\",\"version\":\"" << version

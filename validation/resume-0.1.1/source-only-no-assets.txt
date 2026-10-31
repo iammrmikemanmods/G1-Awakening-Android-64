@@ -1,0 +1,60 @@
+
+> Configure project :app
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64][g1awakening]
+> Task :app:externalNativeBuildDebug
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateDebugLintReportModel
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :app:lintAnalyzeDebug
+> Task :app:lintReportDebug UP-TO-DATE
+> Task :app:lintDebug
+
+BUILD SUCCESSFUL in 2s
+30 actionable tasks: 6 executed, 24 up-to-date

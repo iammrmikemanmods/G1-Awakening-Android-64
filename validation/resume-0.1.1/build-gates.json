@@ -1,0 +1,23 @@
+{
+  "arm64_release_build": "passed",
+  "x86_64_debug_build": "passed",
+  "lint": {
+    "debug": {
+      "Warning": 9
+    },
+    "release": {
+      "Warning": 9
+    }
+  },
+  "source_only_native_java_lint_without_assets": "passed",
+  "package_debug_without_assets": "rejected by verifyGameAssets",
+  "restored_asset_verification": "passed",
+  "gradle": "8.11.1",
+  "agp": "8.10.1",
+  "ndk": "28.2.13676358",
+  "build_tools": "36.0.0",
+  "aab_resource_gate": "confirmed in bundleRelease dry-run task graph; AAB not built",
+  "aab_packaging_task_dependency": "verifyGameAssets precedes packageReleaseBundle in the real Gradle dry-run graph",
+  "aab_built": false,
+  "aab_task_graph_report": "aab-packaging-task-graph.txt"
+}

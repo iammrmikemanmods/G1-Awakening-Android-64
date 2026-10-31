@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "scenario_count": 8,
+  "scenarios": [
+    "healthy_start_original_pcm_and_pause_resume",
+    "initial_builder_failure_recovery",
+    "initial_open_failure_recovery",
+    "initial_start_failure_recovery",
+    "repeated_failure_retries_are_bounded",
+    "background_suppresses_retry_until_foreground",
+    "disconnect_callback_defers_close_and_retains_pcm_cursor",
+    "pause_failure_recovery_preserves_playback"
+  ],
+  "scope": "Real AndroidAudio host, original AudioEvents planner and Vorbis decoder, original iphone.big; injected AAudio output device only. No hardware audibility claim."
+}

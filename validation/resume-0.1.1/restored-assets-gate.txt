@@ -1,0 +1,41 @@
+
+> Configure project :app
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+
+> Task :app:verifyGameAssets
+{
+  "source": {
+    "files": 769,
+    "commit": "be203a911bc26313615ea450758413e5c9cf6462",
+    "byte_identical": true
+  },
+  "resources": {
+    "files": 98,
+    "bytes": 36914225,
+    "revision": "017R1",
+    "source_ipa_sha256": "b035acfe0c08aafa715c54f60a59423191046c271328abbca4cd72689dfaed46",
+    "byte_identical": true
+  }
+}
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed

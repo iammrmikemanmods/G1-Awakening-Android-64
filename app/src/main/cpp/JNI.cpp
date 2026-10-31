@@ -1,4 +1,5 @@
 #include "AndroidGame.hpp"
+#include "GLESRenderer.hpp"
 #include <jni.h>
 #include <android/native_window_jni.h>
 #include <android/log.h>
@@ -229,7 +230,12 @@ struct Host {
             }
             throw std::runtime_error("Cannot make game surface current: " + std::to_string(error));
         }
-        game->draw(delta);
+        try {
+            game->draw(delta);
+        } catch (const g1::GLContextLost &) {
+            recoverContext();
+            return;
+        }
         // Fence completion plus successful queueing precede core presentation
         // receipts. Pause/surface boundaries invalidate their epoch in the game.
         auto fence = glFenceSync(GL_SYNC_GPU_COMMANDS_COMPLETE, 0);

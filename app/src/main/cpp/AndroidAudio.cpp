@@ -103,7 +103,15 @@ struct AndroidAudio::Impl {
 #endif
     explicit Impl(const Archive &a) : archive(a) {
         config.enabled_a4 = true;
-        open();
+        // A temporarily unavailable output device must not prevent the native
+        // game/session from being created. Retry from the game thread, using
+        // the same backoff as a later device disconnection.
+        try {
+            open();
+        } catch (const std::exception &e) {
+            failure = e.what();
+            retry_after = std::chrono::steady_clock::now() + std::chrono::milliseconds(500);
+        }
     }
     ~Impl() {
         close();
@@ -198,10 +206,13 @@ void AndroidAudio::maintain() {
 bool AndroidAudio::request(MissionAudioRequest r) {
     auto &p = *impl_;
     maintain();
-    if (!p.failure.empty())
-        return false;
     auto next = p.control;
-    auto plan = dispatch_audio_request(next, p.config, {p.active, p.playing()}, r);
+    // Keep the original preload/control plan alive while hardware is missing.
+    // Otherwise startup preload groups are discarded and effects remain
+    // permanently unloaded after the output stream recovers.
+    const bool outputAvailable = p.failure.empty();
+    auto plan = dispatch_audio_request(
+        next, p.config, {p.active && outputAvailable, outputAvailable && p.playing()}, r);
     for (const auto action : plan.actions)
         switch (action.kind) {
         case AudioActionKind::load:

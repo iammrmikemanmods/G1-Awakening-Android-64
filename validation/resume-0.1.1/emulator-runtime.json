@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-31",
+  "version": "0.1.1-dev",
+  "status": "runtime_acceptance_incomplete",
+  "scope": "Real Android16 x86_64 emulator, software CPU emulation without /dev/kvm; not physical Galaxy A36",
+  "emulator_model": "Android SDK built for x86_64",
+  "emulator_name": "G1Api36",
+  "physical_display": [
+    1080,
+    2340
+  ],
+  "persisted_emulator_display_override": [
+    540,
+    1170
+  ],
+  "game_landscape_surface": [
+    1170,
+    540
+  ],
+  "apk": {
+    "abi": "x86_64",
+    "size_bytes": 49172156,
+    "sha256": "5c2cd1260a8896190b7bd411c82cbe2e73bc95c56b26167c28fb1fa08eded5cd"
+  },
+  "observed": {
+    "android_boot_completed": true,
+    "update_install_preserving_previous_app_data": "Success",
+    "activity_launch_intent_accepted": true,
+    "game_surface_refresh_request_logged": true,
+    "settled_game_menu_observed": false,
+    "mission1_reached": false,
+    "mission1_player_control_verified": false,
+    "home_resume_verified": false,
+    "continue_verified": false,
+    "system_anr_dialog": "Process system is not responding",
+    "after_wait_launcher_anr_dialog": "Quickstep is not responding",
+    "uiautomator_result": "ERROR: null root node returned by UiTestAutomationBridge."
+  },
+  "limitations": [
+    "OS and launcher unresponsiveness prevented completing the requested real-emulator gameplay smoke test.",
+    "No game exception was present in the captured app-tag log; absence of an exception does not establish correct game runtime behavior.",
+    "This attempt is not counted as a successful Android gameplay test.",
+    "Physical Galaxy A36 and full Android campaign acceptance remain outstanding.",
+    "The development intro-skip option was used; intro playback was not tested by this attempt."
+  ],
+  "evidence": [
+    "emulator-install.txt",
+    "emulator-launch.txt",
+    "emulator-app-logcat.txt",
+    "emulator-system-anr.png",
+    "emulator-launcher-anr.png",
+    "emulator-uiautomator.txt"
+  ],
+  "android_api_observed": 36,
+  "installed_package_observed": {
+    "versionCode": 2,
+    "versionName": "0.1.1-dev",
+    "minSdk": 36,
+    "targetSdk": 36,
+    "primaryCpuAbi": "x86_64"
+  },
+  "debug_intro_skip": true,
+  "intro_tested_this_run": false,
+  "launch_intent_extra": "skip_intro=true (debug build only)",
+  "emulator_shutdown": {
+    "requested": "adb emu kill",
+    "console_acknowledged": true,
+    "process_exit_code": 139,
+    "observation": "Emulator host process segfaulted during shutdown after acknowledging kill. No data-wipe command was used."
+  }
+}

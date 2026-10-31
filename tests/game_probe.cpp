@@ -1,6 +1,7 @@
 #include "AndroidGame.hpp"
 #include "AndroidUI.hpp"
 #include "g1/Image.hpp"
+#include "g1/MissionExecution.hpp"
 #include <EGL/egl.h>
 #include <GLES3/gl3.h>
 #include <algorithm>
@@ -18,6 +19,20 @@
 #include <string>
 #include <sys/wait.h>
 #include <unistd.h>
+
+namespace {
+// Host-test linker wrapping is the only failure injection. The Android APK
+// neither compiles this probe nor exposes any runtime failure switch.
+bool reject_next_scene_framebuffer = false;
+}
+extern "C" GLenum __real_glCheckFramebufferStatus(GLenum target);
+extern "C" GLenum __wrap_glCheckFramebufferStatus(GLenum target) {
+    if (reject_next_scene_framebuffer && target == GL_FRAMEBUFFER) {
+        reject_next_scene_framebuffer = false;
+        return GL_FRAMEBUFFER_UNSUPPORTED;
+    }
+    return __real_glCheckFramebufferStatus(target);
+}
 
 namespace {
 constexpr int width = 2340, height = 1080;
@@ -139,7 +154,7 @@ std::optional<TileTarget> adjacent(const std::string &document, const UnitTarget
     return {};
 }
 std::optional<TileTarget> towards(const std::string &document, const UnitTarget &actor,
-                                  const UnitTarget &enemy) {
+                                  const UnitTarget &enemy, int minimum_distance = 1) {
     const auto start = document.find("\"tile_targets\":[");
     if (start == std::string::npos)
         return {};
@@ -153,7 +168,7 @@ std::optional<TileTarget> towards(const std::string &document, const UnitTarget 
                         std::stof(field(value, "x")), std::stof(field(value, "y"))};
         const auto next =
             std::abs(tile.tile_x - enemy.tile_x) + std::abs(tile.tile_y - enemy.tile_y);
-        if (next > 0 && next < distance) {
+        if (next >= minimum_distance && next < distance) {
             distance = next;
             best = tile;
         }
@@ -367,8 +382,12 @@ class Probe {
         game->presented(presented);
         ++frames;
         record(presented ? "presented" : "presentation_rejected");
-        require(field(state, "mission_stop").empty() || number(state, "mission_stop") == 0,
-                "Original engine reached a noninteractive stop: " + state);
+        // Campaign handoff is the source engine's expected stop after a real
+        // victory. Unsupported gameplay stops must still fail the probe.
+        require(field(state, "mission_stop").empty() || number(state, "mission_stop") == 0 ||
+                    number(state, "mission_stop") ==
+                        static_cast<std::uint64_t>(g1::MissionStop::campaign_handoff_required),
+                "Original engine reached an unsupported stop: " + state);
     }
     bool has(int id, int value = 0) const {
         return target(state, id, value).has_value();
@@ -385,7 +404,177 @@ class Probe {
     void capture(const std::string &name) {
         screenshot(output_ + "/" + name + ".png");
     }
+    void touch_at(float x, float y) {
+        game->touch(0, x, y, 0, 0, 1);
+        ++touches;
+        record("public_touch");
+        frame(0);
+    }
 };
+
+struct CampaignTransitionEvidence {
+    std::string results, mission2, restored_mission2;
+    std::uint64_t capture_actions{}, upgrade_actions{}, battle_completions{};
+    unsigned decisions{}, end_turns{};
+};
+
+CampaignTransitionEvidence complete_first_mission(Probe &probe) {
+    using namespace g1::android;
+    // These are observed source menu action IDs, exercised only through the
+    // enabled target returned by the rendered Android UI.
+    constexpr int dismiss_message = 125, results_continue = 126;
+    CampaignTransitionEvidence evidence;
+    const auto captures_before = number(probe.state, "capture_actions");
+    const auto upgrades_before = number(probe.state, "upgrade_actions");
+    const auto battles_before = number(probe.state, "battle_completed");
+
+    const auto settle = [&] {
+        for (unsigned i = 0; i < 1800; ++i) {
+            const auto panel = number(probe.state, "panel");
+            // The first draw creates a receipt; the next update observes it
+            // and enables Continue. Do not mistake that required gate for a
+            // missing control immediately after the first results frame.
+            if (panel == 3 && probe.has(results_continue))
+                return;
+            if (panel == 14 && probe.has(dismiss_message)) {
+                probe.click(dismiss_message);
+                continue;
+            }
+            if (panel == 0 && number(probe.state, "mission_gate") == 0 &&
+                i % 3 == 0) {
+                probe.touch_at(width * .5F, height * .6F);
+            }
+            if (number(probe.state, "panel") == 0 &&
+                number(probe.state, "interaction_mode") == 0 &&
+                number(probe.state, "turn") == 0 &&
+                number(probe.state, "battle_token") == 0 &&
+                !boolean(probe.state, "moving") &&
+                !boolean(probe.state, "world_pending") && probe.has(ui_end_turn))
+                return;
+            probe.frame();
+        }
+        throw std::runtime_error("Campaign pilot did not reach player input/results: " +
+                                 probe.state);
+    };
+
+    settle();
+    for (; evidence.decisions < 40 && number(probe.state, "panel") != 3;
+         ++evidence.decisions) {
+        require(number(probe.state, "mission_index") == 0,
+                "Mission changed before the rendered results received Continue");
+        auto actor = friendly(probe.state);
+        require(bool(actor), "Mission 1 lost its visible friendly unit before completion");
+        probe.touch_at(actor->x, actor->y);
+        require(field(probe.state, "selected") == std::to_string(actor->index),
+                "Campaign pilot could not select the rendered friendly unit");
+
+        // Fight and capture in the source robot form. No stats, action flags,
+        // checkpoint contents, unlocks or shared random state are injected.
+        if (actor->form != 0 && probe.has(ui_transform)) {
+            probe.click(ui_transform);
+            settle();
+            actor = friendly(probe.state);
+            require(actor && actor->form == 0, "Robot transformation did not complete");
+            continue;
+        }
+        if (probe.has(ui_capture)) {
+            const auto before = number(probe.state, "capture_actions");
+            probe.click(ui_capture);
+            require(number(probe.state, "capture_actions") == before + 1,
+                    "Enabled source Capture did not capture the mission objective");
+            probe.capture("game-mission1-captured-a36");
+            settle();
+            continue;
+        }
+        const auto enemy = unit_for_faction(probe.state, 1);
+        if (enemy && probe.has(ui_attack)) {
+            const auto before = number(probe.state, "attack_actions");
+            probe.click(ui_attack);
+            probe.touch_at(enemy->x, enemy->y);
+            require(number(probe.state, "attack_actions") == before + 1 &&
+                        number(probe.state, "battle_token") > 0,
+                    "Campaign pilot attack did not start its source battle");
+            settle();
+            continue;
+        }
+
+        if (probe.has(ui_move)) {
+            probe.click(ui_move);
+            // Mission 1's source captured-site goal is (5,7), corroborated by
+            // the preserved iOS story trace. The coordinate merely chooses a
+            // reachable on-screen tile; movement/capture use public touches.
+            const UnitTarget site{0, 0, 5, 7, 0, 0};
+            const auto destination = towards(probe.state, *actor, enemy ? *enemy : site,
+                                               enemy ? 1 : 0);
+            if (destination) {
+                const auto before = number(probe.state, "move_actions");
+                probe.touch_at(destination->x, destination->y);
+                probe.touch_at(destination->x, destination->y);
+                require(number(probe.state, "move_actions") == before + 1 &&
+                            boolean(probe.state, "moving"),
+                        "Campaign pilot movement target did not accept two public touches");
+                settle();
+                const auto arrived = friendly(probe.state);
+                require(arrived && arrived->tile_x == destination->tile_x &&
+                            arrived->tile_y == destination->tile_y,
+                        "Campaign pilot movement arrived on a different source tile");
+                continue;
+            }
+        }
+        probe.click(ui_end_turn);
+        ++evidence.end_turns;
+        settle();
+    }
+    require(number(probe.state, "panel") == 3 &&
+                number(probe.state, "mission_index") == 0 && probe.has(results_continue),
+            "Mission 1 did not produce its real enabled results panel: " + probe.state);
+    evidence.capture_actions = number(probe.state, "capture_actions") - captures_before;
+    evidence.upgrade_actions = number(probe.state, "upgrade_actions") - upgrades_before;
+    evidence.battle_completions = number(probe.state, "battle_completed") - battles_before;
+    require(evidence.capture_actions > 0 && evidence.battle_completions > 0,
+            "Mission completion bypassed capture or rendered combat");
+    probe.capture("game-mission1-results-a36");
+    // Waiting at Results must not silently install the next mission.
+    for (unsigned i = 0; i < 4; ++i)
+        probe.frame();
+    require(number(probe.state, "panel") == 3 && number(probe.state, "mission_index") == 0,
+            "Campaign advanced without a real Results Continue touch");
+    evidence.results = probe.state;
+    probe.click(results_continue);
+    for (unsigned i = 0; i < 120 && number(probe.state, "mission_index") == 0; ++i)
+        probe.frame();
+    require(number(probe.state, "mission_index") == 1 &&
+                number(probe.state, "session_installs") == 2,
+            "Results Continue did not install the original Mission 2 session");
+    settle();
+    require(number(probe.state, "mission_index") == 1 && number(probe.state, "panel") == 0 &&
+                probe.has(ui_end_turn),
+            "Mission 2 did not reach rendered player control after campaign handoff");
+    probe.capture("game-mission2-player-control-a36");
+    evidence.mission2 = probe.state;
+
+    // Check that the real CampaignController write unlocked Mission 2 and no
+    // further mission. Navigate out and back through the actual menu controls.
+    require(probe.game->back(), "Mission 2 Back did not open the pause menu");
+    probe.frame(0);
+    probe.click(134); // Save and main menu.
+    probe.click(101); // Play.
+    probe.click(102); // Story.
+    require(probe.has(105, 0) && probe.has(105, 1) && !probe.has(105, 2),
+            "Mission 1 results did not persist exactly the next mission unlock");
+    probe.capture("game-mission2-unlocked-a36");
+    require(probe.game->back(), "Mission picker Back was not handled");
+    probe.frame(0);
+    require(probe.game->back(), "Mode picker Back was not handled");
+    probe.frame(0);
+    probe.click(112); // Continue the checkpoint created in Mission 2.
+    settle();
+    require(number(probe.state, "mission_index") == 1 &&
+                number(probe.state, "checkpoint_loads") == 2 && probe.has(ui_end_turn),
+            "Mission 2 checkpoint did not restore through the real Continue control");
+    evidence.restored_mission2 = probe.state;
+    return evidence;
+}
 } // namespace
 
 int main(int argc, char **argv) {
@@ -506,12 +695,27 @@ int main(int argc, char **argv) {
                     number(probe.state, "tactical_fallbacks") == 0,
                 "Modern tactical model path used an unexpected sprite fallback");
         probe.capture("game-mission1-modern-a36");
+        const auto allocations_before = number(probe.state, "render_allocation_fallbacks");
+        const auto presentations_before_recreation = number(probe.state, "presented_frames");
         probe.game->detachGraphics(true);
         screen.replaceContext();
+        reject_next_scene_framebuffer = true;
         probe.game->attachGraphics();
         probe.game->resize(width, height, 72, 0, 0, 0);
         probe.game->resume();
         probe.frame(0);
+        require(!reject_next_scene_framebuffer &&
+                    number(probe.state, "render_allocation_fallbacks") == allocations_before + 1 &&
+                    number(probe.state, "render_width") == width &&
+                    number(probe.state, "render_height") == height &&
+                    number(probe.state, "presented_frames") == presentations_before_recreation + 1,
+                "Rejected supersampling allocation did not present a healthy native-size frame");
+        probe.capture("game-supersampling-allocation-fallback-a36");
+        probe.frame(0);
+        require(number(probe.state, "render_width") > width &&
+                    number(probe.state, "render_height") > height &&
+                    number(probe.state, "render_allocation_fallbacks") == allocations_before + 1,
+                "Modern supersampling did not recover after the one-shot allocation failure");
         require(number(probe.state, "command_index") == command &&
                     number(probe.state, "tactical_models") > 0 &&
                     number(probe.state, "tactical_fallbacks") == 0,
@@ -713,6 +917,8 @@ int main(int argc, char **argv) {
                     restored->tile_y == checkpoint_unit->tile_y,
                 "Post-combat source unit did not survive checkpoint reload");
         probe.capture("game-checkpoint-restored-a36");
+        const auto restored_mission1 = probe.state;
+        const auto campaign = complete_first_mission(probe);
         std::ofstream report(output + "/game-probe-report.json");
         report << "{\n  \"status\": \"passed\",\n  \"kind\": \"Real public AndroidGame integration "
                   "on offscreen GLES; not an Android device test\",\n"
@@ -737,10 +943,25 @@ int main(int argc, char **argv) {
                << "  \"failed_present_rejected\": true, \"pause_receipt_invalidated\": true, "
                   "\"resume_clock_reset\": true,\n"
                << "  \"actual_gl_context_replaced\": true, \"process_checkpoint_restored\": true,\n"
+               << "  \"supersampling_allocation_failure_native_fallback\": true, "
+                  "\"supersampling_recovers_after_allocation_failure\": true,\n"
+               << "  \"mission1_completed_via_public_touch\": true, "
+                  "\"mission1_capture_actions\": " << campaign.capture_actions << ",\n"
+               << "  \"campaign_pilot_decisions\": " << campaign.decisions << ", "
+                  "\"campaign_pilot_end_turns\": " << campaign.end_turns << ",\n"
+               << "  \"campaign_pilot_battle_completions\": " << campaign.battle_completions
+               << ", \"campaign_pilot_upgrade_actions\": " << campaign.upgrade_actions << ",\n"
+               << "  \"results_wait_for_actual_continue\": true, "
+                  "\"mission2_installed_by_campaign_controller\": true,\n"
+               << "  \"mission2_player_control\": true, \"mission2_unlock_persisted\": true, "
+                  "\"mission3_remains_locked\": true, \"mission2_checkpoint_restored\": true,\n"
                << "  \"limitations\": \"Host font adapter is DejaVuSansMono; AAudio/MediaPlayer, "
                   "SurfaceView/EGL recovery, physical Samsung driver, touch latency, thermal "
                   "performance, and a complete campaign require Android device validation\",\n"
                << "  \"pre_restart_diagnostics\": " << before_restart << ",\n"
+               << "  \"mission1_checkpoint_restored_diagnostics\": " << restored_mission1 << ",\n"
+               << "  \"mission1_results_diagnostics\": " << campaign.results << ",\n"
+               << "  \"mission2_player_control_diagnostics\": " << campaign.mission2 << ",\n"
                << "  \"final_diagnostics\": " << probe.state << "\n}\n";
         require(bool(report), "Game report write failed");
         probe.game->pause();
@@ -749,7 +970,8 @@ int main(int argc, char **argv) {
         std::cout
             << "Game integration passed: " << probe.frames << " rendered frames, "
             << probe.dialogues.size()
-            << " original dialogue commands, real context recreation and checkpoint reload.\n";
+            << " original dialogue commands, real context recreation, Mission 1 capture/results, "
+               "Mission 2 handoff, persisted unlock and checkpoint reload.\n";
         return 0;
     } catch (const std::exception &e) {
         if (argc == 3)

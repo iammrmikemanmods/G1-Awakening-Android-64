@@ -37,8 +37,35 @@ void main() {
 }
 )GLSL";
 
+constexpr const char *resolve_vertex_shader = R"GLSL(#version 300 es
+precision highp float;
+out vec2 vUV;
+void main() {
+    vec2 p=gl_VertexID==0?vec2(-1,-1):(gl_VertexID==1?vec2(3,-1):vec2(-1,3));
+    gl_Position=vec4(p,0,1);
+    // Both the source FBO and destination use GLES bottom-left texture coordinates.
+    vUV=(p+1.0)*0.5;
+}
+)GLSL";
+constexpr const char *resolve_fragment_shader = R"GLSL(#version 300 es
+precision highp float;
+in vec2 vUV;
+uniform sampler2D uImage;
+uniform vec2 uFootprint;
+out vec4 outColor;
+void main() {
+    vec2 d=uFootprint*0.25;
+    outColor=(texture(uImage,vUV+vec2(-d.x,-d.y))+
+              texture(uImage,vUV+vec2( d.x,-d.y))+
+              texture(uImage,vUV+vec2(-d.x, d.y))+
+              texture(uImage,vUV+vec2( d.x, d.y)))*0.25;
+}
+)GLSL";
+
 void check_gl(const char *operation) {
     const auto error = glGetError();
+    if (error == 0x0507) // GL_CONTEXT_LOST, also on GLES3 via robustness extensions.
+        throw GLContextLost(operation);
     if (error != GL_NO_ERROR) {
         std::ostringstream message;
         message << operation << " failed (GLES 0x" << std::hex << error << ")";
@@ -64,11 +91,12 @@ GLuint compile(GLenum type, const char *source) {
     }
     return shader;
 }
-GLuint program() {
+GLuint program(const char *vertex_source = vertex_shader,
+               const char *fragment_source = fragment_shader) {
     GLuint vertex = 0, fragment = 0, result = 0;
     try {
-        vertex = compile(GL_VERTEX_SHADER, vertex_shader);
-        fragment = compile(GL_FRAGMENT_SHADER, fragment_shader);
+        vertex = compile(GL_VERTEX_SHADER, vertex_source);
+        fragment = compile(GL_FRAGMENT_SHADER, fragment_source);
         result = glCreateProgram();
         if (!result)
             throw std::runtime_error("GLES program allocation failed");
@@ -159,6 +187,10 @@ GLESRenderer::GLESRenderer() : lifetime_(std::make_shared<GLContextLifetime>()) 
 }
 GLESRenderer::~GLESRenderer() {
     if (lifetime_->active) {
+        if (resolve_program_)
+            glDeleteProgram(resolve_program_);
+        if (resolve_vao_)
+            glDeleteVertexArrays(1, &resolve_vao_);
         if (program_)
             glDeleteProgram(program_);
         if (linear_sampler_)
@@ -170,6 +202,40 @@ GLESRenderer::~GLESRenderer() {
 }
 void GLESRenderer::abandon_context() noexcept {
     lifetime_->active = false;
+}
+
+void GLESRenderer::resolve_supersampling(GLuint color, int width, int height) {
+    if (!lifetime_->active)
+        throw std::runtime_error("GLES context has been abandoned");
+    if (!color || width <= 0 || height <= 0)
+        throw FormatError("Invalid supersampling source or destination");
+    if (!resolve_program_) {
+        resolve_program_ = program(resolve_vertex_shader, resolve_fragment_shader);
+        resolve_footprint_ = glGetUniformLocation(resolve_program_, "uFootprint");
+        glGenVertexArrays(1, &resolve_vao_);
+        if (resolve_footprint_ < 0 || !resolve_vao_)
+            throw std::runtime_error("GLES supersampling resolve initialization failed");
+        glUseProgram(resolve_program_);
+        glUniform1i(glGetUniformLocation(resolve_program_, "uImage"), 0);
+    }
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glViewport(0, 0, width, height);
+    glDisable(GL_SCISSOR_TEST);
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_STENCIL_TEST);
+    glDisable(GL_CULL_FACE);
+    glDisable(GL_BLEND);
+    glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
+    glDepthMask(GL_FALSE);
+    glUseProgram(resolve_program_);
+    glUniform2f(resolve_footprint_, 1.0F / width, 1.0F / height);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, color);
+    glBindSampler(0, linear_sampler_);
+    glBindVertexArray(resolve_vao_);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glBindVertexArray(0);
+    check_gl("GLES four-tap supersampling resolve");
 }
 
 std::shared_ptr<GLESMesh> GLESRenderer::mesh(const std::vector<SceneVertex> &vertices) {

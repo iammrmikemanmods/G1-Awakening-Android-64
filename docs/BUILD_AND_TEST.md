@@ -90,6 +90,7 @@ and Python/Pillow for the host platform-font adapter. Then run:
 bash tests/renderer/run-renderer-probe.sh
 bash tools/run-ui-probe.sh
 bash tools/run-game-probe.sh
+bash tools/run-audio-recovery-probe.sh
 ```
 
 The latter two probes require imported original resources and the built host
@@ -102,6 +103,22 @@ receipts and long production lists. The game probe starts with a fresh private
 save directory, uses actual public-touch menu/command paths, renders frames,
 and restores a written checkpoint into a new host. Test screenshots identify
 their offscreen origin; they are not device captures.
+
+The game probe now finishes Mission 1 and opens Mission 2 through normal public
+touches, including results, natural unlocks and Continue. Its GNU linker wrapper
+rejects one framebuffer allocation to exercise native-resolution recovery; the
+wrapper exists only in the host probe and is never linked into the Android app.
+
+The audio recovery probe uses the original audio dispatcher, Vorbis decoder and
+game archive with an injected AAudio device boundary. It tests successful PCM
+output, unavailable-device retries, retained preloads, foreground/background,
+disconnects and pause errors. It does not establish physical audibility.
+
+APK and AAB packaging depend on `:app:verifyGameAssets`. The verifier is run for
+each packaging invocation and checks actual bytes rather than trusting timestamps.
+Use `-Pg1Python=python` if that is the Python 3 executable name on the build host.
+The public CI source compile/lint tasks intentionally remain independent of this
+packaging-only gate; the self-contained 127-check renderer probe also runs in CI.
 
 ## A36 validation and recovery
 

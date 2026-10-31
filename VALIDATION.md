@@ -1,109 +1,97 @@
-# Android port validation
+# Android port validation — 0.1.1-dev
 
-This record separates source identity, compilation, offscreen rendering,
-actual game-host behavior, Android runtime checks and physical-device testing.
-Results apply to this development checkpoint. They are not a blanket claim
-that every campaign path or every future Android version is verified.
+Date: 31 October 2026. This record distinguishes source identity, compilation,
+desktop execution of the Android host, emulator installation and physical-device
+acceptance. The target remains Samsung Galaxy A36 on Android 16/API 36 or later.
 
-## Completed host checks
+## Current verified results
 
 | Check | Result | Evidence |
 | --- | --- | --- |
-| Pinned iOS source and licence | 769 files byte-identical |`SOURCE_PROVENANCE.json` |
-| Original 017R1 resources | 98 files, 36,914,225 bytes; 88 clean PNGs; original intro |`validation/ios-resource-manifest.json` |
-| Portable core contracts | 72/72 passed, Debug assertions enabled |`validation/host-core.xml` |
-| GLES renderer | 51 shader/state/pixel checks passed |`validation/renderer-report.json` |
-| UI contracts | Source art/font geometry, 511 English entries inspected, receipts, disabled controls and safe insets passed |`validation/ui-contract-report.json` |
-| Production list | All 23 original unit definitions plus fixed Cancel; offscreen hit rejection |UI report |
-| Accessibility mapping | Unique visible nodes, source labels/readouts, disabled state and normal-hit equivalence |UI report; Android Java compile |
-| Actual AndroidGame integration | 993 rendered frames, 45 public touches |`validation/game-probe-report.json` |
+| Pinned iOS source and licence | All 769 files byte-identical to Build 017 | [Source provenance](SOURCE_PROVENANCE.json) |
+| Original 017R1 resources | All 98 files byte-identical, including 88 clean PNGs and the iOS intro | [APK resource verification](validation/resume-0.1.1/apk-verification.json) |
+| Portable core tests | 72/72 passed with Debug assertions | [CTest report](validation/resume-0.1.1/host-core.xml) |
+| GLES renderer | 127 pixel/state checks passed | [Renderer report](validation/resume-0.1.1/renderer-report.json) |
+| Original UI contracts | Fonts, menus, dialogue, controls, scrolling production choices, safe-area geometry and accessibility mapping passed | [UI report](validation/resume-0.1.1/ui-contract-report.json) |
+| Audio failure recovery | Eight scenarios passed with original planner/decoder and injected AAudio device calls | [Audio report](validation/resume-0.1.1/audio-recovery-report.json) |
+| Public-touch game integration | 1,832 rendered frames; 83 touches; Mission 1 complete; Mission 2 control/unlock/checkpoint | [Gameplay report](validation/resume-0.1.1/game-probe-report.json) |
+| Supersampling allocation failure | Native 2340 × 1080 frame successfully presented, then 3510 × 1620 supersampling recovered | [Gameplay report](validation/resume-0.1.1/game-probe-report.json) |
+| Android native/Java builds | Optimized ARM64 release and x86_64 debug passed | [Build gates](validation/resume-0.1.1/build-gates.json) |
+| Android lint | Zero errors; nine advisory warnings in each variant | [Debug](validation/resume-0.1.1/lint-debug.xml), [release](validation/resume-0.1.1/lint-release.xml) |
+| Missing resource package | Actual Gradle package task rejected; source-only compile/lint still passed | [Rejection](validation/resume-0.1.1/package-without-assets.txt), [source-only build](validation/resume-0.1.1/source-only-no-assets.txt) |
+| Resource corruption | A single changed intro byte and an extra unmanifested file were rejected | [Asset rejection report](validation/resume-0.1.1/asset-rejection-report.json) |
+| APK integrity/signing/alignment | ZIP CRCs, original resources, signature, ARM64 ELF64 and 16 KB ELF/APK alignment passed | [APK verification](validation/resume-0.1.1/apk-verification.json), [signature](validation/resume-0.1.1/apk-signature.txt), [alignment](validation/resume-0.1.1/apk-zip-alignment.txt) |
 
-The host uses real Mesa llvmpipe EGL/OpenGL ES, at 2340 × 1080 with a 72 px left
-safe inset. It loads the exact game data and uses the same Android C++ host
-compiled into the application. The font adapter for desktop tests uses
-DejaVuSansMono; the Android app uses Canvas fonts.
+## Gameplay coverage and its limits
 
-The full public-touch integration run covered fresh profile→Play→Story→Mission 1,
-the seven original opening dialogue commands, camera and world gates, and
-normal player control. It rendered Classic and Modern, with zero Modern
-sprite fallbacks. It opened real Tech Specs robot/vehicle models, transformed,
-confirmed a move with two taps, completed movement and Undo, advanced two
-normal turns with AI movement, attacked a legitimately adjacent opponent,
-rendered the original M3G battle, and returned to tactical play.
+The gameplay probe runs the actual Android C++ host with the exact original
+resources on Mesa llvmpipe EGL/OpenGL ES, at 2340 × 1080 with a 72 px safe inset.
+Desktop system-font rendering uses DejaVuSansMono; the Android app uses Canvas.
 
-The test deliberately rejected the completed final battle frame. The core
-battle remained pending; the next matching final HUD and successful GPU frame
-acknowledged it exactly once. It also rejected an ordinary failed-present
-receipt, invalidated a pending receipt at pause, resumed without background
-time catch-up, destroyed/recreated the actual GL context, and restored a
-post-combat checkpoint into a newly constructed host through Continue.
+The test starts a fresh profile, enters Story and Mission 1 through real menus,
+handles original dialogue and presentation gates, and uses enabled public touch
+targets. It covers Classic/Modern, Tech Specs robot/vehicle models, transformation,
+two-tap movement, Undo, normal end turns and AI movement, real M3G battles,
+objective capture, Mission Complete results and the player's Continue action.
+The campaign controller then installs Mission 2. Mission 2 is naturally unlocked
+while Mission 3 remains locked, and Continue restores the Mission 2 checkpoint.
 
-Before that restart, diagnostics recorded 988 successful presentations,
-352 simulation ticks, 4 moves, 1 transform, 1 attack, 2 End Turns, 1 Undo,
-1 acknowledged battle and 16 checkpoint writes. Diagnostic counters reset
-with the new host; both pre-restart and post-restart states are retained in
-the report. The cadence check fed 90 intervals of 8,333,334 ns and observed
-exactly 25 original 30 ms simulation ticks.
+Presentation checks reject a failed final battle frame, prevent stale receipts
+at pause, preserve the 30 ms simulation cadence at 120 Hz, replace the actual
+host GL context, and resume without catching up background time. A host-only
+linker wrapper rejects one framebuffer allocation; the game presents a native
+frame successfully and returns to supersampling on the next frame. The wrapper
+is not compiled into the Android application.
 
-These are real game-host interactions, not direct `GameSession` mutations,
-unlocked debug missions or synthetic acknowledgement of unseen battle frames.
-They remain offscreen desktop execution, not an Android or Samsung device test.
+No game stats, mission progress, profile unlocks or RNG were injected. These are
+real host interactions, but they do not exercise Android Java lifecycle or a
+Samsung driver. Heal, upgrade, production and the support-tutorial action path
+are outside this probe's newly exercised gameplay. Entire Story, Showdown and
+Arena playthroughs remain unverified on Android.
 
-## Android packaging and runtime
+## APK and update identity
 
-The Android Java host, JNI, native renderer and unchanged core compile with the
-pinned Android 36 SDK/NDK toolchain. Both optimized ARM64 release and x86_64
-development builds succeeded. Debug and release lint each report zero errors
-and ten advisory warnings. The optimized ARM64 APK is development-signed,
-39,529,529 bytes, with SHA-256:
+The delivered optimized development APK is:
 
-`f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684`
+- `G1-Awakening-Android64-v0.1.1-dev.apk`
+- 39,533,625 bytes; ARM64 only; minimum and target API 36.
+- Version name `0.1.1-dev`, version code `2`.
+- SHA-256: `2ff8d0052d75b6d5f897893e7ffb9a92eaab56739ae94c83e52d4febe4a97b37`.
+- Signing certificate SHA-256: `303fcdd4074d308738d01d667dc2c6f1ccca8eee32fc077f367a2ccea91dbf29`.
 
-The APK's v3 signature, API 36 minimum/target, ARM64-only library, ELF LOAD
-alignment and APK ZIP alignment were independently verified. All 98 original
-resource files inside that APK match their pinned hashes. Exact output is in
-`validation/android/apk-verification.json`, the adjacent Android build-tools
-reports, and `validation/source-and-assets.json`.
+The certificate and application ID match the previous 0.1.0 development build.
+The private key was recovered locally and was not committed. The Android source
+and build inputs used for this pass are fingerprinted in
+[android-source-fingerprint.json](validation/resume-0.1.1/android-source-fingerprint.json).
 
-The final x86_64 development APK was installed in the official Android 16/API 36
-software emulator. The native main menu rendered, a real Play Game touch opened
-Game Modes, Home/resume retained that panel, and Back returned through Main Menu
-to the Android launcher. Pause diagnostics recorded 861 successful presented
-frames, the source Classic default, and no native game/audio error. The final
-process log contained no fatal exception, signal, JNI or library-loading marker.
-See `validation/android/emulator-smoke.json` for the exact test APK, image and
-diagnostic state.
+## Current Android emulator result: incomplete
 
-The unchanged original intro decoded and naturally completed into the menu on
-the preceding development build. The final debug smoke used its debug-only
-intro-skip option; that option is ignored by the delivered release APK. No
-mission was played inside the Android emulator. Broader gameplay coverage is
-the separate offscreen native integration run described above.
+The official Android 16 x86_64 emulator completed boot and accepted the final
+same-signer update over the previous installation, without uninstalling or
+clearing application data. The MainActivity launch request was accepted.
 
-Without KVM, the emulator used CPU emulation and SwiftShader. The OS displayed
-system ANR dialogs during boot. Two bounded native lifecycle waits also exceeded
-two seconds during early backgrounding and final shutdown; subsequent surface
-recovery/rendering and Back-to-launcher succeeded. Those warnings remain recorded,
-so this smoke is not a performance or interruption-latency certification.
+The emulator then displayed **Process system isn't responding** and later
+**Quickstep isn't responding**. This environment has no KVM; the emulator was
+using software CPU emulation. A settled game menu or mission could not be
+verified in this pass. The result is **incomplete runtime acceptance**, not a
+passed Android gameplay test and not proof of an application defect.
 
-`tools/verify_port.py --apk ... --abi arm64-v8a` checks the actual packaged
-resource inventory/hashes, ELF64 architecture, native 16 KB LOAD alignment,
-duplicate ZIP entries and ZIP CRCs. Android `apksigner`, `zipalign` and `aapt2`
-independently verify signer, APK alignment and SDK/manifest metadata.
-
-No physical Galaxy A36 is attached to this environment. Android emulator
-captures, if present, are identified separately from offscreen host captures.
-Emulation is not evidence of Samsung GPU timing, thermal behavior or touch
-latency. Audio stream creation is not evidence that a listener heard correct
-audio. The original movie's hash is not evidence that a physical phone decoded
-and displayed every frame.
+Exact scope and observations are recorded in
+[emulator-runtime.json](validation/resume-0.1.1/emulator-runtime.json).
+The successful menu/Home/Back smoke from 0.1.0 is historical evidence, preserved
+in [the initial validation record](docs/VALIDATION_0_1_0.md). It is not reused as
+a new runtime pass for 0.1.1. The current original-intro check is byte identity;
+this pass does not claim a new physical-device movie playback test.
 
 ## Remaining device acceptance
 
-The target phone must run Android 16/API 36 or later. Record the APK SHA-256,
-model, OS build and observed behavior for its launch/intro, source menus,
-mission controls, sound/music, save/Continue, Back, TalkBack, backgrounding,
-process recreation and Classic/Modern performance. Complete all campaign
-modes through natural unlocks before marking whole-game device parity as
-verified. Platform font rasterization and OS audio/navigation behavior are
-documented differences in `PORT_PARITY.md`.
+No physical Galaxy A36 is attached. Test the delivered ARM64 APK on the target
+phone: opening cinematic, menus, missions, sound/music, save/Continue, Back,
+TalkBack, interruptions, process recreation and sustained Classic/Modern use.
+Record the APK hash and Android build with the result. Complete the original
+campaign modes through natural unlocks before declaring whole-game device
+parity. Hardware audibility, touch latency, driver behavior and thermal
+performance require their own observations.
+
+The [update record](docs/DEVELOPMENT_0_1_1.md) explains the changes. Platform
+substitutions remain documented in [PORT_PARITY.md](PORT_PARITY.md).

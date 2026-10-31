@@ -161,6 +161,8 @@ void main() {
 
 void check_gl(const char *operation) {
     const GLenum error = glGetError();
+    if (error == 0x0507)
+        throw GLContextLost(operation);
     if (error != GL_NO_ERROR) {
         std::ostringstream message;
         message << operation << " failed (GLES 0x" << std::hex << error << ")";

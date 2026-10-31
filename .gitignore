@@ -14,4 +14,4 @@ __pycache__/
 .android-sdk/
 private-signing/
 captures/
-validation/runtime/
+validation/runtime*/

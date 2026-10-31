@@ -3,10 +3,18 @@
 #include <GLES3/gl3.h>
 #include "g1/Scene.hpp"
 #include <memory>
+#include <stdexcept>
 #include <utility>
 
 namespace g1 {
 using Matrix4 = std::array<float, 16>; // Source matrices retain Metal depth 0..1.
+
+// GL errors can report context loss before the next EGL swap/fence. Preserve
+// that signal for the Android host's existing context recreation path.
+class GLContextLost : public std::runtime_error {
+  public:
+    using std::runtime_error::runtime_error;
+};
 
 // A lost EGL context must be abandoned before old objects are destroyed. This
 // prevents a recycled GL name from being deleted in a replacement context.
@@ -78,11 +86,15 @@ class GLESRenderer {
     GLTexturePtr texture(const RgbaImage &);
     // The caller owns framebuffer, viewport and clear. Does not swap buffers.
     void encode(const std::vector<GLESDraw> &);
+    // Translate the iOS four-tap supersampling resolve to the native framebuffer.
+    void resolve_supersampling(GLuint color, int output_width, int output_height);
     void abandon_context() noexcept;
 
   private:
     std::shared_ptr<GLContextLifetime> lifetime_;
     GLuint program_{}, linear_sampler_{}, nearest_sampler_{};
+    GLuint resolve_program_{}, resolve_vao_{};
+    GLint resolve_footprint_{-1};
     GLint matrix_{-1}, tint_{-1}, offset_{-1};
 };
 

@@ -64,6 +64,17 @@ These fixes are in Android adapters; the authoritative core remains untouched.
    failure leaves the previous mode and a recoverable settings screen.
 7. Keep generic results/messages separate from source menu artwork, and provide
    unrestricted production scrolling with matching clipped touch targets.
+8. Recover from initial audio-device opening failures with a bounded retry while
+   retaining original preload requests, so effects can play after recovery.
+9. Match the iOS four-tap bilinear supersampling filter. Consult both texture
+   and depth-renderbuffer limits; use the native target on allocation failure.
+   Preserve a reported GL context loss for the Android context recreation path.
+
+The 0.1.1 host integration probe completes Mission 1, captures its objective,
+presents results, opens Mission 2 and restores its checkpoint through the real
+menus. It also rejects one framebuffer allocation and verifies a successful
+native-resolution frame followed by restored supersampling. The report is
+`validation/resume-0.1.1/game-probe-report.json`.
 
 ## Validation boundaries
 

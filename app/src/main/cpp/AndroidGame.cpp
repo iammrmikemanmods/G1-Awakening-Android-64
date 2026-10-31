@@ -348,6 +348,7 @@ struct AndroidGame::Impl {
     GLuint _fbo{}, _color{}, _depth{};
     int _renderWidth{}, _renderHeight{};
     quality::Plan _renderQuality{};
+    std::uint64_t _renderAllocationFallbacks{};
 
     Impl(std::string assets, std::string saves, bool modern);
     void attach();
@@ -951,11 +952,11 @@ void AndroidGame::Impl::showHelp() {
 }
 void AndroidGame::Impl::showCredits() {
     showPanel(NativePanel::credits, "CREDITS",
-              "TRANSFORMERS G1: AWAKENING\n\nFaithful native ARM64 iOS port by iammrmikeman. "
+              "TRANSFORMERS G1: AWAKENING\n\nNative ARM64 Android port by iammrmikeman, "
+              "based on the working iOS port. "
               "Original game models, art, sound and campaign data are retained. Unofficial fan "
               "project. Transformers and the original game remain the property of their respective "
-              "rights holders. No old online services, Glu blog or feedback links. The app starts "
-              "directly in the G1 menu.",
+              "rights holders. The original iOS opening cinematic plays before the G1 menu.",
               0, true);
     addButton("Back", information_back);
 }
@@ -2252,16 +2253,40 @@ void AndroidGame::Impl::beginTarget() {
     const auto pages = sysconf(_SC_PHYS_PAGES), pageSize = sysconf(_SC_PAGESIZE);
     if (pages > 0 && pageSize > 0)
         cap.memory_bytes = std::uint64_t(pages) * std::uint64_t(pageSize);
-    GLint maximum = 0;
-    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maximum);
-    cap.maximum_dimension = std::uint32_t(std::max(64, maximum));
+    GLint maximumTexture = 0, maximumDepth = 0;
+    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maximumTexture);
+    glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE, &maximumDepth);
+    cap.maximum_dimension = std::uint32_t(std::max(64, std::min(maximumTexture, maximumDepth)));
     cap.memory_pressure = _renderMemoryPressure;
     cap.low_power = _renderLowPower;
     cap.thermal_serious = _renderThermalSerious;
     _renderQuality = quality::plan(
         _width, _height, _graphicsModern ? quality::Mode::modern : quality::Mode::classic, cap);
+    auto nativeTarget = [this] {
+        releaseTarget();
+        _renderWidth = _width;
+        _renderHeight = _height;
+        _renderQuality.width = _width;
+        _renderQuality.height = _height;
+        _renderQuality.scale = 1;
+        _renderQuality.supersampling = false;
+        _renderQuality.estimated_surface_bytes = 0;
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        glViewport(0, 0, _width, _height);
+    };
+    // Match MetalSupersampling::begin: Classic and constrained Modern render
+    // directly to the native target, retaining native-resolution UI afterward.
+    if (!_renderQuality.supersampling) {
+        nativeTarget();
+        return;
+    }
     const int w = int(_renderQuality.width), h = int(_renderQuality.height);
     if (!_fbo || w != _renderWidth || h != _renderHeight) {
+        const auto precedingError = glGetError();
+        if (precedingError == 0x0507)
+            throw GLContextLost("Context lost before scene target allocation");
+        if (precedingError != GL_NO_ERROR)
+            throw FormatError("GLES error precedes scene target allocation");
         releaseTarget();
         glGenFramebuffers(1, &_fbo);
         glBindFramebuffer(GL_FRAMEBUFFER, _fbo);
@@ -2277,8 +2302,20 @@ void AndroidGame::Impl::beginTarget() {
         glBindRenderbuffer(GL_RENDERBUFFER, _depth);
         glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT32F, w, h);
         glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, _depth);
-        if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-            throw FormatError("Android scene framebuffer is incomplete");
+        const auto status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+        bool allocationFailed = !_fbo || !_color || !_depth || status != GL_FRAMEBUFFER_COMPLETE;
+        // Drain only errors produced by this allocation, so the native fallback
+        // does not inherit GL_OUT_OF_MEMORY or incomplete-attachment errors.
+        for (GLenum error; (error = glGetError()) != GL_NO_ERROR;) {
+            if (error == 0x0507)
+                throw GLContextLost("Context lost during scene target allocation");
+            allocationFailed = true;
+        }
+        if (allocationFailed) {
+            ++_renderAllocationFallbacks;
+            nativeTarget();
+            return;
+        }
         _renderWidth = w;
         _renderHeight = h;
         glDisable(GL_SCISSOR_TEST);
@@ -2292,14 +2329,8 @@ void AndroidGame::Impl::beginTarget() {
     glViewport(0, 0, w, h);
 }
 void AndroidGame::Impl::resolveTarget() {
-    glDisable(GL_SCISSOR_TEST);
-    glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
-    glBindFramebuffer(GL_READ_FRAMEBUFFER, _fbo);
-    glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
-    glBlitFramebuffer(0, 0, _renderWidth, _renderHeight, 0, 0, _width, _height, GL_COLOR_BUFFER_BIT,
-                      GL_LINEAR);
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glViewport(0, 0, _width, _height);
+    if (_fbo)
+        _renderer->resolve_supersampling(_color, _width, _height);
 }
 
 void AndroidGame::Impl::draw(std::uint64_t nanos) {
@@ -2535,6 +2566,7 @@ std::string AndroidGame::Impl::report() const {
           << ",\"battle_revision\":" << status.revision;
     }
     s << ",\"render_width\":" << _renderWidth << ",\"render_height\":" << _renderHeight
+      << ",\"render_allocation_fallbacks\":" << _renderAllocationFallbacks
       << ",\"render_low_power\":" << (_renderLowPower ? "true" : "false")
       << ",\"render_thermal_serious\":" << (_renderThermalSerious ? "true" : "false")
       << ",\"render_memory_pressure\":" << (_renderMemoryPressure ? "true" : "false");

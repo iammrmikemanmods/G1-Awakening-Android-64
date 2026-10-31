@@ -1,0 +1,2 @@
+--------- beginning of main
+10-31 13:28:13.258  2231  2231 I G1Surface: Requested display refresh: 120.00001 Hz; simulation timing remains independent.

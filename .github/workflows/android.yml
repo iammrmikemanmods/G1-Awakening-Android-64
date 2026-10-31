@@ -30,6 +30,12 @@ jobs:
           cmake --build build/host --parallel 2
       - name: Run source contract tests
         run: ctest --test-dir build/host --output-on-failure
+      - name: Install offscreen GLES test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libegl1-mesa-dev libgles2-mesa-dev
+      - name: Verify Android renderer pixel and state contracts
+        run: bash tests/renderer/run-renderer-probe.sh
 
   build:
     name: Android 16 / ${{ matrix.abi }}

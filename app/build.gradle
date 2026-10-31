@@ -18,8 +18,8 @@ android {
         applicationId 'com.iammrmikeman.g1awakening'
         minSdk 36
         targetSdk 36
-        versionCode 1
-        versionName '0.1.0-dev'
+        versionCode 2
+        versionName '0.1.1-dev'
         externalNativeBuild {
             cmake {
                 targets 'g1awakening'
@@ -71,5 +71,25 @@ android {
         jniLibs {
             useLegacyPackaging false
         }
+    }
+}
+
+// Source-only CI can compile and lint without redistributing game data. An
+// installable APK/AAB, however, must contain the complete pinned iOS package.
+// Run every time: file timestamps are not proof that resource bytes are intact.
+def verifyGameAssets = tasks.register('verifyGameAssets', Exec) {
+    group = 'verification'
+    description = 'Verify the authoritative iOS source and all 98 packaged game resources.'
+    workingDir rootProject.projectDir
+    commandLine providers.gradleProperty('g1Python').orElse('python3').get(),
+            rootProject.file('tools/verify_port.py').absolutePath, '--require-assets'
+}
+
+android.applicationVariants.all { variant ->
+    def variantName = variant.name.capitalize()
+    tasks.matching { task ->
+        task.name == "package${variantName}" || task.name == "package${variantName}Bundle"
+    }.configureEach {
+        dependsOn verifyGameAssets
     }
 }

@@ -1,0 +1,82 @@
+
+> Configure project :app
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+WARNING: C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+C/C++: Platform version 36 is beyond 35, the maximum API level supported by this NDK. Using 35 instead.
+:app:preBuild SKIPPED
+:app:preReleaseBuild SKIPPED
+:app:generateReleaseResValues SKIPPED
+:app:mapReleaseSourceSetPaths SKIPPED
+:app:generateReleaseResources SKIPPED
+:app:mergeReleaseResources SKIPPED
+:app:createReleaseCompatibleScreenManifests SKIPPED
+:app:extractDeepLinksRelease SKIPPED
+:app:processReleaseMainManifest SKIPPED
+:app:processReleaseManifest SKIPPED
+:app:processApplicationManifestReleaseForBundle SKIPPED
+:app:checkReleaseAarMetadata SKIPPED
+:app:packageReleaseResources SKIPPED
+:app:parseReleaseLocalResources SKIPPED
+:app:processReleaseManifestForPackage SKIPPED
+:app:processReleaseResources SKIPPED
+:app:bundleReleaseResources SKIPPED
+:app:extractReleaseVersionControlInfo SKIPPED
+:app:checkReleaseDuplicateClasses SKIPPED
+:app:generateReleaseBuildConfig SKIPPED
+:app:javaPreCompileRelease SKIPPED
+:app:compileReleaseJavaWithJavac SKIPPED
+:app:dexBuilderRelease SKIPPED
+:app:desugarReleaseFileDependencies SKIPPED
+:app:mergeReleaseStartupProfile SKIPPED
+:app:mergeExtDexRelease SKIPPED
+:app:mergeDexRelease SKIPPED
+:app:mergeReleaseShaders SKIPPED
+:app:compileReleaseShaders SKIPPED
+:app:generateReleaseAssets SKIPPED
+:app:mergeReleaseAssets SKIPPED
+:app:mergeReleaseGlobalSynthetics SKIPPED
+:app:processReleaseJavaRes SKIPPED
+:app:mergeReleaseJavaResource SKIPPED
+:app:configureCMakeRelWithDebInfo[arm64-v8a] SKIPPED
+:app:buildCMakeRelWithDebInfo[arm64-v8a][g1awakening] SKIPPED
+:app:mergeReleaseJniLibFolders SKIPPED
+:app:mergeReleaseNativeLibs SKIPPED
+:app:stripReleaseDebugSymbols SKIPPED
+:app:writeReleaseAppMetadata SKIPPED
+:app:buildReleasePreBundle SKIPPED
+:app:mergeReleaseArtProfile SKIPPED
+:app:compileReleaseArtProfile SKIPPED
+:app:collectReleaseDependencies SKIPPED
+:app:configureReleaseDependencies SKIPPED
+:app:extractReleaseNativeSymbolTables SKIPPED
+:app:extractProguardFiles SKIPPED
+:app:generateReleaseLintVitalReportModel SKIPPED
+:app:lintVitalAnalyzeRelease SKIPPED
+:app:lintVitalReportRelease SKIPPED
+:app:lintVitalRelease SKIPPED
+:app:parseReleaseIntegrityConfig SKIPPED
+:app:verifyGameAssets SKIPPED
+:app:packageReleaseBundle SKIPPED
+:app:signReleaseBundle SKIPPED
+:app:produceReleaseBundleIdeListingFile SKIPPED
+:app:createReleaseBundleListingFileRedirect SKIPPED
+:app:bundleRelease SKIPPED
+
+BUILD SUCCESSFUL in 864ms

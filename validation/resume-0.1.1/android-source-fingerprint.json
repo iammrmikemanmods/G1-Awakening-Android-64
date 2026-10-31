@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "scope": "Android host, build configuration and packaged non-game resources used for 0.1.1 validation; pinned core provenance remains SOURCE_PROVENANCE.json",
+  "base_commit": "5cc5a63fd794171859fff47e053ca00ccbe83597",
+  "files": [
+    {
+      "path": "app/build.gradle",
+      "size": 2995,
+      "sha256": "af7c388c6e2dc433f82bd782086e529bb185f44c4eaf3cfb43d62406c8efa23a"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "size": 1102,
+      "sha256": "d30d8a8b9591b67bd576c9b3ec088026a3ed29d17b55f30f1d2eed07379de201"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidAudio.cpp",
+      "size": 10961,
+      "sha256": "e4396dfa47a840b7346c69cd002dd6403fc91537d75e7b706d30204b0e6c513b"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidAudio.hpp",
+      "size": 504,
+      "sha256": "c9e272aaad34c742ee98c9f47083d1b1674fd9df4f5342d14f6e801c962bafc8"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidGame.cpp",
+      "size": 111491,
+      "sha256": "41ee2f0f39aeb7abe2f55823578173661f7edc31acb1921e15065d0fd5f9c648"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidGame.hpp",
+      "size": 1048,
+      "sha256": "1ebd1ca02ae534222c8eab857ed4ec7ab88c4beab756eb268a98103bb27a454b"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidUI.cpp",
+      "size": 55799,
+      "sha256": "d42d985ee7a34a977c6465bf523681f44142b1580467228a0331b86e22c84af8"
+    },
+    {
+      "path": "app/src/main/cpp/AndroidUI.hpp",
+      "size": 4787,
+      "sha256": "bbf8b0477035f0eb39a322df2ff6ba841f963f6a023186fb3c05527c5729aa60"
+    },
+    {
+      "path": "app/src/main/cpp/AssetStore.cpp",
+      "size": 5117,
+      "sha256": "72be90f423f53f0b63b5957bbda8e8069b0aadd2813314dd569341762dbf07e0"
+    },
+    {
+      "path": "app/src/main/cpp/AssetStore.hpp",
+      "size": 634,
+      "sha256": "e18618ff119f216887291d05a2b4b2a61e8e3d682cd2c88ccf4fe1f5fe305120"
+    },
+    {
+      "path": "app/src/main/cpp/CMakeLists.txt",
+      "size": 1257,
+      "sha256": "fbebecb4def536923cec571829a513bd1406157d04f6faf62f0a214b7684d67d"
+    },
+    {
+      "path": "app/src/main/cpp/GLESModelRenderer.cpp",
+      "size": 32758,
+      "sha256": "38e1f0b9b3ba3d444b30f2d98dd9113ac6ff314422d2ff8d0c9ba88c8ba0415c"
+    },
+    {
+      "path": "app/src/main/cpp/GLESModelRenderer.hpp",
+      "size": 1794,
+      "sha256": "a3fe0b90067659fa5a93f134d8ccb169d3e562ac3f1138660cd9fdfe53a2cab1"
+    },
+    {
+      "path": "app/src/main/cpp/GLESRenderer.cpp",
+      "size": 13336,
+      "sha256": "d4a5988ac37824a6628b8976e21210155cd6216db328a7541305620341356a04"
+    },
+    {
+      "path": "app/src/main/cpp/GLESRenderer.hpp",
+      "size": 3144,
+      "sha256": "71e7812b4fcc6b1d3343ff8db4508d6b5dd0248928300ec46ae294f6954de2af"
+    },
+    {
+      "path": "app/src/main/cpp/IOSBattlePort.inc",
+      "size": 13207,
+      "sha256": "52d7f919c703b361585d885c1252f1c1935f53e870ff5cec03edbc121e0eccc1"
+    },
+    {
+      "path": "app/src/main/cpp/IOSRenderPort.inc",
+      "size": 18005,
+      "sha256": "ff0ace66fb6d3cc25fe9b1c1815f4af6b298401ab79e9dda84536a26762b6341"
+    },
+    {
+      "path": "app/src/main/cpp/IOSScenePort.inc",
+      "size": 31630,
+      "sha256": "66afcb0dfb1311f93e49939bf33d358053b99cebbadc352245c4af95f43acd04"
+    },
+    {
+      "path": "app/src/main/cpp/JNI.cpp",
+      "size": 15919,
+      "sha256": "02c830e39743bfbbd84074e217f26eab645d91966ae8d6541cc2a12d64d24125"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/AssetInstaller.java",
+      "size": 8214,
+      "sha256": "4b98b1087f95e0d817b58d798de5df0122737cc7ad3a71c14e06902f15ceca77"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/GameAccessibility.java",
+      "size": 17930,
+      "sha256": "40fc81ed28c481cdbc3978967980ff98dec59da1efaa9bd294a27b79362502b6"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/GameSurfaceView.java",
+      "size": 14836,
+      "sha256": "6ee4e182b8b41376d7167f0744d80d647cff7dbe3ba8646ff3209013d2281066"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/IntroPlayer.java",
+      "size": 7470,
+      "sha256": "4aff960dbf7c5567dbb42d33fee1fed4359441c444fc678c5ddc5cc72456c659"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/MainActivity.java",
+      "size": 11948,
+      "sha256": "bc44582d1ce7b441428c160c074f4537219118dd0fe83ea485fc75bfe0662cf5"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/NativeBridge.java",
+      "size": 1725,
+      "sha256": "781db2a3d0663cf23139393ce5f69e78c6c0e06b3452fa4be77aa104523837b2"
+    },
+    {
+      "path": "app/src/main/java/com/iammrmikeman/g1awakening/TextRasterizer.java",
+      "size": 2658,
+      "sha256": "f5252af187166a21792507002542e4f94f32640e21045bf366bc4da4ec3f35cb"
+    },
+    {
+      "path": "app/src/main/res/drawable/game_icon.png",
+      "size": 59206,
+      "sha256": "5e391d805dbc2c14da6ecfa324c58ea2a9cf36e3b7c98ccb0e253f2c183c3667"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "size": 483,
+      "sha256": "6fb9f7d0d6b664965d8f1cc8959a6d3fe56904c72f4a0028240c44e5eef31bb6"
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "size": 734,
+      "sha256": "de000a350e35d90901169dccb9c68db15f46134e38a3c91fc48fd578d4e46db9"
+    },
+    {
+      "path": "build.gradle",
+      "size": 74,
+      "sha256": "b9feca3af1665bc353ecf70ae3262664d2fcfe83c38638e20b36cc00d2881c37"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "size": 340,
+      "sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4"
+    },
+    {
+      "path": "gradle.properties",
+      "size": 156,
+      "sha256": "ff165ea9109bdde96364eba1b065edabb9d058ce99d76568fd057272fe4ab10d"
+    },
+    {
+      "path": "settings.gradle",
+      "size": 342,
+      "sha256": "b7aab408f6314e3aa388597f44121480ed9ce6ee7ecfa9ca70dc6fb554996e66"
+    }
+  ]
+}

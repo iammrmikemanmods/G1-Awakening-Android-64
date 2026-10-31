@@ -18,37 +18,80 @@
     "passed": 72,
     "total": 72,
     "configuration": "Debug with assertions enabled",
-    "report": "validation/host-core.xml"
+    "report": "validation/resume-0.1.1/host-core.xml"
   },
   "gles_contract_tests": {
-    "passed": 51,
-    "report": "validation/renderer-report.json"
+    "passed": 127,
+    "report": "validation/resume-0.1.1/renderer-report.json"
   },
-  "ui_contract_report": "validation/ui-contract-report.json",
+  "ui_contract_report": "validation/resume-0.1.1/ui-contract-report.json",
   "public_touch_gameplay": {
     "status": "passed",
-    "rendered_frames": 993,
-    "touch_events": 45,
-    "source_dialogue_commands": 7,
+    "execution": "AndroidGame C++ on desktop Mesa GLES; not Android device execution",
+    "rendered_frames": 1832,
+    "touch_events": 83,
+    "source_dialogue_commands": 11,
     "real_m3g_battle": true,
     "final_battle_failed_receipt_rejected": true,
     "process_checkpoint_restore": true,
-    "report": "validation/game-probe-report.json"
+    "mission1_completed": true,
+    "mission1_capture": true,
+    "mission2_player_control": true,
+    "mission2_natural_unlock_persisted": true,
+    "mission3_remains_locked": true,
+    "mission2_checkpoint_restore": true,
+    "supersampling_allocation_failure_native_fallback": true,
+    "supersampling_recovered_next_frame": true,
+    "report": "validation/resume-0.1.1/game-probe-report.json"
   },
   "android_build": {
     "status": "passed",
     "variant": "optimized release, development signed",
-    "apk": "G1-Awakening-Android64-v0.1.0-dev.apk",
-    "bytes": 39529529,
-    "sha256": "f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684",
+    "apk": "G1-Awakening-Android64-v0.1.1-dev.apk",
+    "bytes": 39533625,
+    "sha256": "2ff8d0052d75b6d5f897893e7ffb9a92eaab56739ae94c83e52d4febe4a97b37",
     "min_sdk": 36,
     "target_sdk": 36,
     "abi": "arm64-v8a",
     "signature_verified": true,
     "elf_and_apk_16kb_alignment_verified": true,
-    "report": "validation/android/apk-verification.json"
+    "report": "validation/resume-0.1.1/apk-verification.json",
+    "signer_preserved_from_0_1_0": true,
+    "signer_certificate_sha256": "303fcdd4074d308738d01d667dc2c6f1ccca8eee32fc077f367a2ccea91dbf29",
+    "build_gates_report": "validation/resume-0.1.1/build-gates.json"
   },
   "android_emulator": {
+    "status": "incomplete_system_and_launcher_anr",
+    "android_api": 36,
+    "test_abi": "x86_64",
+    "installed_over_previous_build": true,
+    "application_launch_requested": true,
+    "game_menu_verified": false,
+    "missions_played_in_android_emulator": false,
+    "physical_a36_validated": false,
+    "limitation": "Android system process and Quickstep stopped responding in software CPU emulation before settled game runtime could be verified",
+    "report": "validation/resume-0.1.1/emulator-runtime.json",
+    "test_apk_sha256": "5c2cd1260a8896190b7bd411c82cbe2e73bc95c56b26167c28fb1fa08eded5cd",
+    "debug_intro_skipped": true,
+    "emulator_host_shutdown_exit_code": 139
+  },
+  "remaining_validation": [
+    "Physical Galaxy A36 with delivered APK",
+    "Full Story, Showdown and Arena on Android",
+    "Audible media/audio routing and interruptions on hardware",
+    "TalkBack runtime and touch latency",
+    "Sustained Modern thermal/performance behavior",
+    "Future Android releases"
+  ],
+  "claims": "The pinned source/resources, build, signature and host tests are verified. Current Android runtime acceptance is incomplete; physical A36 and whole-campaign verification are outstanding.",
+  "version": "0.1.1-dev",
+  "version_code": 2,
+  "audio_recovery_tests": {
+    "passed": 8,
+    "scope": "Original audio planner/decoder with an injected AAudio device boundary",
+    "report": "validation/resume-0.1.1/audio-recovery-report.json"
+  },
+  "historical_0_1_0_android_emulator": {
     "status": "functional_menu_touch_and_surface_lifecycle_smoke_passed",
     "android_api": 36,
     "test_abi": "x86_64",
@@ -61,14 +104,5 @@
     "missions_played_in_android_emulator": false,
     "bounded_lifecycle_wait_warnings": 2,
     "report": "validation/android/emulator-smoke.json"
-  },
-  "remaining_validation": [
-    "Physical Galaxy A36 with delivered APK",
-    "Full Story, Showdown and Arena on Android",
-    "Audible media/audio routing and interruptions on hardware",
-    "TalkBack runtime and touch latency",
-    "Sustained Modern thermal/performance behavior",
-    "Future Android releases"
-  ],
-  "claims": "Source and asset identity are verified. No 100 percent device or whole-campaign parity certification is implied."
+  }
 }

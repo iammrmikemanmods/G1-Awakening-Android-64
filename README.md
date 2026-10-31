@@ -10,6 +10,23 @@ build and host gameplay checks do not establish that every mission works on
 a physical A36. Current evidence and remaining device checks are recorded in
 [VALIDATION.md](VALIDATION.md) and [PORT_STATUS.json](PORT_STATUS.json).
 
+## Development update 0.1.1
+
+This update keeps the complete pinned iOS source and all original resources.
+It fixes startup when the Android audio device is temporarily unavailable,
+matches the iOS four-tap supersampling resolve, and falls back to native
+resolution if a supersampling target cannot be allocated. APK/AAB packaging
+now requires the complete verified asset set.
+
+The extended native gameplay probe completes Mission 1 through normal controls,
+opens Mission 2 through the original campaign controller, and verifies its
+unlock and Continue checkpoint. It passes **1,832 rendered frames and 83 touches**.
+The renderer passes **127 checks**, and the audio recovery probe passes
+**eight failure/recovery scenarios**. These host tests are recorded separately
+from Android runtime and physical-phone validation.
+
+See [the update record](docs/DEVELOPMENT_0_1_1.md) for the changes and evidence.
+
 ## Authoritative source and assets
 
 - iOS source: [G1-Awakening-IOS](https://github.com/iammrmikemanmods/G1-Awakening-IOS).
@@ -81,6 +98,11 @@ The default APK is `app/build/outputs/apk/debug/app-debug.apk`, with only
 ```bash
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
+
+Packaging runs `:app:verifyGameAssets` automatically. Missing, changed or extra
+game resources reject the build before an installable package is produced.
+Source-only compilation and lint remain available without the original data.
+On a host where Python 3 is named `python`, pass `-Pg1Python=python`.
 
 An x86_64 emulator build is available with `-Pg1Abis=x86_64`. That APK is for
 an emulator, not the A36. For an optimized package, use `:app:assembleRelease`
