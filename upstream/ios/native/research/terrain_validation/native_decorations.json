@@ -1,0 +1,41 @@
+{
+  "scope": "native style1 interior single-batch transient pool only; no native app integration or device claim",
+  "strict_compile": {
+    "command": "g++ -std=c++17 -O2 -ffunction-sections -fdata-sections -Wall -Wextra -Wconversion -Wpedantic -Werror -I native/include native/src/Terrain.cpp native/src/TerrainDecorations.cpp native/src/Combat.cpp native/tests/terrain_decorations_test.cpp -Wl,--gc-sections -o research/native_terrain/terrain_decorations_test",
+    "exit_code": 0
+  },
+  "run": {
+    "command": "research/native_terrain/terrain_decorations_test native/tests/terrain_decorations_cases.txt",
+    "exit_code": 0,
+    "original_cases": 24,
+    "snapshots": 408,
+    "checks": 38389,
+    "restore_continuation_checked": true,
+    "passed": true
+  },
+  "oracle_regeneration_command": "python3 analysis_tools/terrain/validate_decorations.py --binary research/binary/G1awakening.armv6 --libgcc ../.tools/g1_runtime/Applesauce/touchHLE_dylibs/libgcc_s.1.dylib --unicorn-dir /tmp/g1-movement-oracle-tools/python --native-probe research/native_terrain/decorations_probe --manifest research/assets/results/asset_manifest.json --tables research/native_terrain/terrain_visual_tables.bin --fixture native/tests/terrain_decorations_cases.txt --output native/research/terrain_validation/original_decorations.json",
+  "original_report_sha256": "ac9a5195c3846874643e7f041d54eb43fec8d2d3cca303539700f67e1431fdd7",
+  "source_sha256": {
+    "native/include/g1/TerrainDecorations.hpp": "52925f12aeb10622a2943f377ddbf6f088402d8184d85cd5196fbdb62a84d494",
+    "native/src/TerrainDecorations.cpp": "4b35dfc378068f3ee030bd6a4727e2a06650152a9c82baee350d26d47c4aed0b",
+    "native/tests/terrain_decorations_test.cpp": "5081be8cdf5930179c3c4230adbdd6555592cc4469c6da1a69c069773ff60f63",
+    "native/tests/terrain_decorations_cases.txt": "921cfa4c5884133259e0aff922404154f33f49f93b9bbc1a7e35b4ef96fdfdec",
+    "analysis_tools/terrain/decorations_probe.cpp": "8163639babf6f43e828b4c6c2e97fa0ba2aa900e4f98d9a4c0249a8889ba2689",
+    "analysis_tools/terrain/decorations_oracle.py": "69dccc2828a830863f361d56c8a5152eaacaa503e4023fcd99ed4ed61a09706d",
+    "analysis_tools/terrain/validate_decorations.py": "753a611b563aee23906aaff0dbfd81d199023980f7cb9723ed5350578b256334",
+    "native/research/TERRAIN_DECORATIONS.md": "9ca9c1515bc8f74ee092701d9e483c514f27eef4bb573ba777bc89ee81f8e568"
+  },
+  "dependencies_sha256": {
+    "native/include/g1/Terrain.hpp": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a",
+    "native/src/Terrain.cpp": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+    "native/include/g1/Combat.hpp": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e"
+  },
+  "binary_sha256": "c7da857752c00764f1b81a1af92981e254b469a944ac09352bd727b9afb6288e",
+  "not_established": [
+    "style0/2 decoration pools and their shared RNG consumption",
+    "outside camera padding and multiple column batches",
+    "complete original scheduler",
+    "GPU/device/full campaign execution"
+  ]
+}

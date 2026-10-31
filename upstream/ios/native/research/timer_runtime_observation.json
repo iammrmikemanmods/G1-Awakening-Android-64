@@ -1,0 +1,88 @@
+{
+  "kind": "observed original guest timer arguments in a development-only runtime",
+  "native_product_includes_compatibility_runtime": false,
+  "probe": "g1_port/research/native_timer/runtime01_probe",
+  "log_sha256": "17541a200a7a96ae4699a56acccf5d287ff59c312af235f4ee3dce43444bde5f",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "observed_instruction_prefixes_match_original": {
+    "0x00028f54": "0x7a1b",
+    "0x00028f56": "0x2b00",
+    "0x00028f78": "0x1c2b",
+    "0x00028f7a": "0xf091"
+  },
+  "instruction_scope": "Original Thumb prefixes fetched at the four traced addresses; not a hash of all live relocated memory",
+  "all_timer_argument_samples": 4594,
+  "all_interval_bit_counts": {
+    "0x3f9eb851e0000000": 4594
+  },
+  "viewed_gameplay_frames": [
+    {
+      "frame": 2040,
+      "log_line": 16449,
+      "png_sha256": "46a23b4319d69f0b6352134c2881073a6be343ac6a7084ef1457e2a5416d2089",
+      "ppm_sha256": "ea17de0da453c287af9cfe2565bd457824eb4bf5ae347d75ebf962d6be812251"
+    },
+    {
+      "frame": 2640,
+      "log_line": 21259,
+      "png_sha256": "f5a0498075bbbb9345da100c49ff0d69183494f9cfe08800e09ef20da4340ac6",
+      "ppm_sha256": "b0e69480ca6d693e6961d606e2bc7558637a546ab8f69b9962aa05349416640e"
+    }
+  ],
+  "gameplay_timer_argument_samples": 600,
+  "gameplay_interval_bit_counts": {
+    "0x3f9eb851e0000000": 600
+  },
+  "gameplay_flag_counts": {
+    "0": 600
+  },
+  "first_gameplay_sample": {
+    "log_line": 16456,
+    "flag_load_log_line": 16450,
+    "preceding_capture_frame": 2040,
+    "core_pointer": "0x30024be0",
+    "core_byte_plus8": 0,
+    "r0": "0x30021800",
+    "r1": "0x000bd0e2",
+    "r2": "0xe0000000",
+    "r3": "0x3f9eb851",
+    "double_bits": "0x3f9eb851e0000000",
+    "interval_seconds": 0.029999999329447746
+  },
+  "last_gameplay_sample": {
+    "log_line": 21257,
+    "flag_load_log_line": 21251,
+    "preceding_capture_frame": 2580,
+    "core_pointer": "0x30024be0",
+    "core_byte_plus8": 0,
+    "r0": "0x30021800",
+    "r1": "0x000bd0e2",
+    "r2": "0xe0000000",
+    "r3": "0x3f9eb851",
+    "double_bits": "0x3f9eb851e0000000",
+    "interval_seconds": 0.029999999329447746
+  },
+  "limits": [
+    "Observed timer request argument, not measured wall-clock delivery or fixed simulation frequency.",
+    "Diagnostic trace single-steps the CPU and changes host timing; no FPS inference is valid.",
+    "One copied-save first-mission state on Linux, not every game mode or physical historical iPhone.",
+    "The original callback re-arms after work; 30ms requests do not imply exactly 33.333 updates/s.",
+    "No native app/device performance or campaign completion is established."
+  ],
+  "probe_outcome": {
+    "duration_seconds": 300.293,
+    "timeout_seconds": 300.0,
+    "timed_out": true,
+    "returncode": 0,
+    "game_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+    "emulator_sha256": "be938215ab4a7b091aa9c4d13fc39cc06c39af7ff965bf4efc7103bb3db40fda",
+    "game_unchanged_after_probe": true,
+    "emulator_unchanged_after_probe": true
+  },
+  "source_integrity_sha256": "21a5058667850a32ad81b6d53ba86c17a1267ee93cb16b4591b583edd441cbdf",
+  "runtime_source_hash_count": 21,
+  "observed_inputs": "Three ordinary observed prompt taps: sound YES, title start band, continue YES. No movement/action inputs or game-state injection.",
+  "visual_review": "Both frame2040 and2640 were viewed. They show the original loaded first mission, selected yellow Bumblebee, movement grid and original HUD/actions. They bracket600 complete observed SetTimer calls.",
+  "stop_note": "Supervisor reached its300-second bound and sentSIGTERM; emulator handled quit and returned0. No success inferred from exit. An earlier external SIGTERM attempt could not address the PID from its separate namespace; no alternate/escalated termination was attempted.",
+  "summary_tool_sha256": "b2d019d92d2cd87958f594fc32444d32743991cc7135c16fbc490dab6e4362fc"
+}

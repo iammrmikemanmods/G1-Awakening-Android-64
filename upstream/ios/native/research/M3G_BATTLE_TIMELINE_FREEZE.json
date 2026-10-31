@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "scope": "Native battle model timeline helpers and bounded original model/camera binding evidence; no full cinematic or GPU claim",
+  "sources": [
+    {
+      "path": "native/include/g1/M3GBattleTimeline.hpp",
+      "sha256": "b80131c93ce1445a4caa1d0c11897a803f87165ab3cef63fc9223afec3964925",
+      "bytes": 1332
+    },
+    {
+      "path": "native/src/M3GBattleTimeline.cpp",
+      "sha256": "4cd66f6d2acf7d5af20eaaac8093e42b8809736c152f3ec54aa4e30c847df5f0",
+      "bytes": 1869
+    },
+    {
+      "path": "native/tests/m3g_battle_timeline_test.cpp",
+      "sha256": "d3494d69088115fb61ad740957faf03de3f01e3360b6504dfadee3bb5fa6d4c0",
+      "bytes": 2818
+    },
+    {
+      "path": "native/tests/m3g_battle_timeline_fixture.hpp",
+      "sha256": "b80aa1c0c34c62162a6ed5133883bee9c623dbdd601969995ef3b00f7469be14",
+      "bytes": 4297
+    },
+    {
+      "path": "analysis_tools/m3g/timeline_fixture.py",
+      "sha256": "16cd2e4675f10b67055867f1b274a124063dd66e8c4b91c796f535a4da1c83c0",
+      "bytes": 2953
+    },
+    {
+      "path": "analysis_tools/m3g/battle_timeline_oracle.py",
+      "sha256": "43ea3cdba41d9af33f44819f86a480eb2b57d16b112a6b36392e63bfaf796622",
+      "bytes": 7080
+    }
+  ],
+  "records": [
+    {
+      "path": "native/research/M3G_BATTLE_TIMELINE.md",
+      "sha256": "305a9dff95d26da636cd4d88ff4171a11dc509efbc0126b81bc634979ede75bc",
+      "bytes": 4991
+    },
+    {
+      "path": "native/research/M3G_PUBLIC_ANIMATE.md",
+      "sha256": "371b64730ff011d8f0a2e9fdf8c6a34b6890f59c3aac6d30b11f17158100e8ba",
+      "bytes": 4832
+    },
+    {
+      "path": "native/research/M3G_BATTLE_BINDING.md",
+      "sha256": "8327d757900f509d0888ab1aa08792f75ae796fe041309db4e982582a096e4f7",
+      "bytes": 12971
+    },
+    {
+      "path": "native/research/M3G_BATTLE_BINDING.json",
+      "sha256": "02bc1d349ba91547c1ed04ad9a7cf43ddaa5e27af80cabcec046e45fe6892644",
+      "bytes": 10449
+    },
+    {
+      "path": "native/research/m3g_validation/original_battle_timeline.json",
+      "sha256": "15baf7f0794896bd5815f46b7721c3099a94fea28201eb8b3eba74ad3f2b8c4a",
+      "bytes": 16646
+    },
+    {
+      "path": "native/research/m3g_validation/battle_timeline_native.json",
+      "sha256": "2860a538fa36dd20b00b6e7a35f827121351ae2da434851b1c86000ddc1c3edc",
+      "bytes": 2239
+    },
+    {
+      "path": "analysis_tools/m3g/BATTLE_TIMELINE_REFERENCE.md",
+      "sha256": "d975ac61432a8d850596461fe4fc830a0b5bbdea975c4914f770fe857567b314",
+      "bytes": 2908
+    }
+  ],
+  "existing_development_dependency": {
+    "path": "analysis_tools/combat/oracle.py",
+    "sha256": "10c98c7fe6b2132fd8e70da527cb7f149e8c071975fae137404970d0dfd038e9",
+    "bytes": 31197
+  },
+  "excluded": [
+    "private game assets",
+    "original ARM program",
+    "CPU emulator or tool binaries"
+  ],
+  "captured_campaign_native_app_sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+  "prior_animation_and_metal_freezes_unchanged": true,
+  "native_reference_cases": 54,
+  "native_reference_comparisons": 186,
+  "native_contracts": 58,
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "complete_cinematic": false
+}

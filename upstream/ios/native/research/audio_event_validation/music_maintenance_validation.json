@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "cases": 1280,
+  "scalar_comparisons": 2752,
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "oracle_sha256": "c80da9adbb879e60e9abe127104a19332f22d4ceb96637b77ca5e4050a5d2c96",
+  "fixture_sha256": "24ffec0ccf70aaebd8b3006787ffc40f4eb65cab46911aa53a4db0be95b7e856",
+  "native_probe_sha256": "a6a6404e4a644ae3211dcbd4ec044053b8cb4764a06f43493d122b2b7374dd94",
+  "original_entries": [
+    "0x5b5a4..0x5b5e8",
+    "0x428a4..0x428c6",
+    "0x4e7b8",
+    "0x2ad6c",
+    "0x62d1c"
+  ],
+  "external_boundaries": {
+    "0x2ad12": "Record operation/argument; operation 6 returns independently supplied actual-output-playing state."
+  },
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "all_case_map_app_storage_unchanged": true,
+  "scope": "Exact active-body requests, not whole updater execution, audible output, Apple API behavior or physical iPhone testing.",
+  "map_outer_dispatch": "The original map updater reaches this active body under app+0x1c0==100 at 0x5b304..0x5b30e. Inner values are varied independently to exercise transitions/guards."
+}

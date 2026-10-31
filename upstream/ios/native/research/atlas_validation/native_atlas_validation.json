@@ -1,0 +1,1258 @@
+{
+  "scope": "Native C++17 sprite descriptor and raw quantized quad geometry",
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "host": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_target": "x86_64-linux-gnu",
+  "build_command": [
+    "/usr/bin/g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-I",
+    "/workspace/scratch/cba553aafa20/g1_port/native/include",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Atlas.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/tools/atlas_probe.cpp",
+    "-lz",
+    "-o",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/atlas_validation/atlas_probe"
+  ],
+  "build_stderr": "",
+  "executable_sha256": "68b9694117d258c6cc50b3307564c08183f6458fe88f456e27bcc45832e86d58",
+  "source_files_sha256": {
+    "src/Archive.cpp": "a19a7576c9b9e793a5e2171d0096b7aba68e3951d28f4bb794494466905f8d87",
+    "src/Atlas.cpp": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+    "tools/atlas_probe.cpp": "a79260305f11fd65764a7b5b2d37e7d4067c82e015772422ffbac1334cd05e15",
+    "include/g1/Atlas.hpp": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+    "include/g1/Archive.hpp": "a53b2b30f456bad82d644996c92c5f3d630df1b6e8778b4be446765be41657f5",
+    "tests/atlas_test.cpp": "b66a127f098faada423a51149e43d2438f2e2a388164138948e4a2efc6e50f6f",
+    "tests/generate_atlas_reference.py": "1cda792238f2967a973206af136283bb9568e9d7d6dff38ec2cecb8a10a44dbb",
+    "tests/verify_missions.py": "de8f32da9479ed2a70b2ee49d1529c6d1218e110404867e5f8d3bbe320c16469",
+    "tests/verify_atlas.py": "5ab4a5b8774082254f801e80aa98587c5d03d5d5fe5110975b4294be27871f08",
+    "tests/atlas_reference.json": "56fc4b6637852f51a0377b2a6583e1ad62503501af2b636ad34e381ea73d9adf"
+  },
+  "reference_provenance": {
+    "input_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+    "archive_member": "Payload/G1awakening.app/iphone.big",
+    "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "archive_size": 6994213,
+    "original_manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+    "generator_sha256": "1cda792238f2967a973206af136283bb9568e9d7d6dff38ec2cecb8a10a44dbb",
+    "expectations_derived_from_cpp_output": false,
+    "original_machine_code_executed": false,
+    "original_descriptor_table_va": "0xcf5b0",
+    "original_parser_va": "0x7315c",
+    "original_quad_routine_va": "0x728f0"
+  },
+  "counts_matched": {
+    "descriptors": 38,
+    "rectangles": 311,
+    "variants": 416,
+    "frames": 700,
+    "parts": 3639,
+    "animations": 170,
+    "steps": 728
+  },
+  "source_matches": [
+    {
+      "resource_id": 1298,
+      "rectangles": 14,
+      "variants": 20,
+      "frames": 29,
+      "parts": 178,
+      "animations": 8,
+      "steps": 29,
+      "source_sha256": "dbc8c268992ee448cf074281f740b59d84a0cfad8c5c362c43472a5ea0102d5a",
+      "decode_and_quad_sha256": "0969da3671794d767685a96a576a9eefffa7c114e20eae377c27d7545e1e225e",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1111,
+      "rectangles": 15,
+      "variants": 20,
+      "frames": 25,
+      "parts": 150,
+      "animations": 8,
+      "steps": 25,
+      "source_sha256": "7ebaf2146026658e3198a4d17b8cc867d23b0f2f68c71774fba8bd0e84c3d91d",
+      "decode_and_quad_sha256": "bf4dc29976d51bc0c9a3ca852217740456905ff0107c1a9abdd2653c2d869a0c",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1119,
+      "rectangles": 9,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "c231c2d87b0aa1ce53ea5afa45ca0b61a4c8bd89fea30e939f3e62aa75f20241",
+      "decode_and_quad_sha256": "efe98828d89beb282c9bec97bc6f79079b5f74d182d97d5141346ab2f2b1fd01",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1020,
+      "rectangles": 15,
+      "variants": 23,
+      "frames": 31,
+      "parts": 193,
+      "animations": 8,
+      "steps": 34,
+      "source_sha256": "72be6f7d02616e75a68ae3d03fbcdeacafea547695c5f336b558fd75ce1ef956",
+      "decode_and_quad_sha256": "ab3ace899ac49d17db54473ad38e189c9a16f6dfa7e2d8edbd0cce91940080c4",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1106,
+      "rectangles": 7,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 18,
+      "source_sha256": "d2e2d907347c87a5d3f670aa03a003e4ba3fc123eaa5b5857a812f0a2b004947",
+      "decode_and_quad_sha256": "252c28f5d3d4a296577c22c8d03173723ff0a0f0d054cbc05db262303d457b68",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1041,
+      "rectangles": 9,
+      "variants": 10,
+      "frames": 9,
+      "parts": 72,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "a595b62055c204fefdfc3d4faca781c2a2122bb540dcd802f724e3f8caa9c8cf",
+      "decode_and_quad_sha256": "879bb9a5273752135211205d0da97c564f57b0ff07a7c2ea6cd90ec64903393c",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 426,
+      "rectangles": 7,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "82a9fd9f452d8c293ce70d152d1b70da744925febfee4225c1dd96d229bc7ec1",
+      "decode_and_quad_sha256": "35e75362e2f3e26dd6b33fac6c5f1eb7efd2499e570da758d6ae4d8aeae75b77",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 522,
+      "rectangles": 7,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "93dc6d11926de3c3359334cc838d45ea4e0ae0c4130e53cd3f8e910ef7f05ba7",
+      "decode_and_quad_sha256": "38aed97c1e4fc44eccad791b10adf4354028a76268e5c91b38bfe7ea8fcb3f33",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1281,
+      "rectangles": 10,
+      "variants": 13,
+      "frames": 12,
+      "parts": 168,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "cc5af48e8aa0cc2a539d6071fac67627f589ec04ebbb061de6c2e02ade4f2ffa",
+      "decode_and_quad_sha256": "f2d726d3df17b5e5bc8c8b9e1e033c96260e16e20b24e564782311830c8f91ad",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1088,
+      "rectangles": 8,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "e5a89d3e0a0f9e823d234b637caf8c845c4eff689f5c79a2919797e703b7bed1",
+      "decode_and_quad_sha256": "7193f4b49d660aeb7a5bb0b5360a6c68cbf670707df3399d40bbe8f8381c74f9",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1155,
+      "rectangles": 13,
+      "variants": 19,
+      "frames": 25,
+      "parts": 143,
+      "animations": 8,
+      "steps": 25,
+      "source_sha256": "bace757c618a641ed22145ba1c105bb5f8bb44245a536f5ee513eab80e128427",
+      "decode_and_quad_sha256": "7fe8cc121f0d7072f84f6dc1b75900117ca750c769113b7fd4f4d707e063fe9a",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 868,
+      "rectangles": 15,
+      "variants": 24,
+      "frames": 57,
+      "parts": 295,
+      "animations": 12,
+      "steps": 59,
+      "source_sha256": "b0340493a08dae156db5cd3501838c0107681607a7d9e02afcdbd5adc00c6a4b",
+      "decode_and_quad_sha256": "c8eec1ee5233b245e3af4532df046e1777c4504a441ac83d82c28548f9e81c11",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 876,
+      "rectangles": 10,
+      "variants": 11,
+      "frames": 12,
+      "parts": 108,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "563367fdb5e14c0f710bc3c4b6327aaf5bd97db2232b9bb7eb7675be51e84889",
+      "decode_and_quad_sha256": "53a5226c8b9b317e63df5919e57423a3c6642794f00f8f064dca4c25647de981",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 377,
+      "rectangles": 15,
+      "variants": 24,
+      "frames": 29,
+      "parts": 176,
+      "animations": 8,
+      "steps": 34,
+      "source_sha256": "d6f134404ac2573a0dc6c432e164a9b535f52cc3214314e8f97d20ce60d73fba",
+      "decode_and_quad_sha256": "7e7c7fa94e6c7adb0acf4f3479cb570f545c42dfdac33175d8acb28a8a60751e",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 985,
+      "rectangles": 15,
+      "variants": 24,
+      "frames": 29,
+      "parts": 177,
+      "animations": 8,
+      "steps": 34,
+      "source_sha256": "f923ab0655c3fb2aa0f860a3202d0a423d424cc39d3b33d5ad5104a96545a99b",
+      "decode_and_quad_sha256": "83b2b4a06f59f1b3f20637eafcd76e046e0b6f2969d554a9c6feb256b00e612f",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1036,
+      "rectangles": 15,
+      "variants": 22,
+      "frames": 25,
+      "parts": 149,
+      "animations": 8,
+      "steps": 25,
+      "source_sha256": "75410e2ce681a0f77443d14d095e0880d4bb5391c7d217f6075dcfdcb46fc72e",
+      "decode_and_quad_sha256": "678f31c1a9a8ef8faca9f4be59dbb3635a50c21629da0ce15d9171329594c649",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1196,
+      "rectangles": 13,
+      "variants": 19,
+      "frames": 25,
+      "parts": 147,
+      "animations": 8,
+      "steps": 27,
+      "source_sha256": "244e1a44eb3e29801945e8ac9a4a49b3abfbb41aa661b01adc4904e48b09ea7b",
+      "decode_and_quad_sha256": "2f4148b0925b87bc08e42884340c723e53c2e6fdd228588316c38c3314610c39",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1032,
+      "rectangles": 16,
+      "variants": 21,
+      "frames": 29,
+      "parts": 162,
+      "animations": 8,
+      "steps": 34,
+      "source_sha256": "1a81cb186edf624d7f5312ede5f91a4a780b35f8e74d749bb6e8ccb0050e3a0c",
+      "decode_and_quad_sha256": "1ad41546f41f267f4cbe1c3a34bccdfc9ee78e6784d28941bf8d6f19df410958",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 815,
+      "rectangles": 14,
+      "variants": 19,
+      "frames": 25,
+      "parts": 146,
+      "animations": 8,
+      "steps": 25,
+      "source_sha256": "4afe71f3fd74dd16d8b0e21adfefed12cdf6a95adbdcbb2de423878b22e28c4b",
+      "decode_and_quad_sha256": "fafe8327c8755736933762ee60d286afc25d4ba56b18c2d6dd7f0eb602f60ecb",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 517,
+      "rectangles": 7,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "68c21b9b1c9beb6062d6436642a4324791fb3c7d7ec0f24aa42f4e7c91ea50b8",
+      "decode_and_quad_sha256": "f8d2799cf6905386ab15ee03e549e8dfb4bbed9ebad0d52ea36d6268794a00dd",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1027,
+      "rectangles": 7,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "102b5811a3801d4bbdc43ed697070405113634654b13c5b5077f47f42973c1f6",
+      "decode_and_quad_sha256": "b8ef7d9df8e23886f72d48bef7137ab4a204f0ca3871180d4c9e343ae78aa0c7",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1183,
+      "rectangles": 9,
+      "variants": 10,
+      "frames": 12,
+      "parts": 96,
+      "animations": 3,
+      "steps": 12,
+      "source_sha256": "af172532f9ae61e960d227c75e56f522c280d022301383d1770d3bcd5b9b807e",
+      "decode_and_quad_sha256": "3ef49671473fa5ee2e12e18ae744559ffa59bcf991f7f7bca46d46d9f8d94610",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1069,
+      "rectangles": 13,
+      "variants": 19,
+      "frames": 25,
+      "parts": 143,
+      "animations": 8,
+      "steps": 25,
+      "source_sha256": "0146c13d47efbc300157318976a620ea8e9656800d4c0ad5acfa0b5bbcf2151b",
+      "decode_and_quad_sha256": "d8f8de6f1765548ffda88f1f055bb934903ce158347ab76afe79be4237b81e59",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 607,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 2,
+      "parts": 0,
+      "animations": 1,
+      "steps": 1,
+      "source_sha256": "1305a3312821d509f5a4c72c9fe8c4cf7b0fb2ebddb89140a73ac6fc20285867",
+      "decode_and_quad_sha256": "1b417506e2ffd808e4ac5956f703a12c7f820f3a9ba92d9ea89fd6eba8192084",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 769,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 8,
+      "parts": 0,
+      "animations": 3,
+      "steps": 11,
+      "source_sha256": "abbfda4b205c1bbbb1e7b8b9da421510d84e8cdbc7e9008e02a745d3745d2d18",
+      "decode_and_quad_sha256": "298b27ae77e5aec5ca7a951616e4a906ab5e28c8db4bd89734ab6b9c90d1e00f",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 708,
+      "rectangles": 8,
+      "variants": 8,
+      "frames": 5,
+      "parts": 20,
+      "animations": 2,
+      "steps": 5,
+      "source_sha256": "47cfe5db5e2a9715a95d61243b08979af410d9d103572e2d421d79795efa04e1",
+      "decode_and_quad_sha256": "07bce625bef9895c2921a0dc06263ee2e0a1d39be1288588ff5203d7ebcd7995",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 933,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 6,
+      "parts": 0,
+      "animations": 1,
+      "steps": 6,
+      "source_sha256": "af6299e58c6f486768c0ae7be10843ce794c7916d08ffdf4a9b66ba88a5de5ff",
+      "decode_and_quad_sha256": "90b6329aa43e9c60d66077b504c0f2976a6582b91250727d385ff90f0cec3e78",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 809,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 2,
+      "parts": 0,
+      "animations": 1,
+      "steps": 2,
+      "source_sha256": "8dacb6ee076f6ee055895008f80d9edd3f4e2f87892137251e02c81148f6dad9",
+      "decode_and_quad_sha256": "2d79c3ff48e86b494cf832a94f3cb5ac91584dcb4928b1eb314b33e49f8da273",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 641,
+      "rectangles": 7,
+      "variants": 7,
+      "frames": 64,
+      "parts": 256,
+      "animations": 1,
+      "steps": 64,
+      "source_sha256": "4f4968dd6be9caa4e949c068094ad6ceb948ba4d0beee0445b107f361f5d5b65",
+      "decode_and_quad_sha256": "d47bf132f36c682736fc63ffc280ee7a2fa83e30946e9b649791c95c72615737",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1037,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 54,
+      "parts": 0,
+      "animations": 2,
+      "steps": 55,
+      "source_sha256": "eba8fb57bacb8ca5fd33960bb715fe0cab2bb33f52dedc1d4e58b2cf224c9258",
+      "decode_and_quad_sha256": "faceed325b31d9ea83450ab3dd1e5dedbf70dc69c67a0d958cfd33822709c6b0",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 539,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 10,
+      "parts": 0,
+      "animations": 1,
+      "steps": 10,
+      "source_sha256": "67304d82352e0e444b8e05ae2b2d3f760ac85a9c4e8b72f05dc26aaba119dbcd",
+      "decode_and_quad_sha256": "e0b5ceeb338e6082be1e0024e811189f99052e6692e72c7fdb3904e77333f023",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 781,
+      "rectangles": 0,
+      "variants": 0,
+      "frames": 1,
+      "parts": 0,
+      "animations": 1,
+      "steps": 1,
+      "source_sha256": "4fb9413bc7f4bb361748c8ad4f0441960079cbd213054cb8926e8104cade6d98",
+      "decode_and_quad_sha256": "79413691746a4e6c8d5e2c9812c53e96e1efe8d242bc964113cd9747088cada3",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": true
+    },
+    {
+      "resource_id": 638,
+      "rectangles": 1,
+      "variants": 1,
+      "frames": 1,
+      "parts": 1,
+      "animations": 1,
+      "steps": 1,
+      "source_sha256": "d401b3eae93648eeb1e8be92b37c918d4fbccfa0365d2b4e2218f946b8c9facb",
+      "decode_and_quad_sha256": "f9a1e6dbe641ccfc140ba0766d2286821e6bb5628d723831372e84774ce41361",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 825,
+      "rectangles": 5,
+      "variants": 5,
+      "frames": 5,
+      "parts": 28,
+      "animations": 5,
+      "steps": 5,
+      "source_sha256": "4ad09ea1edf988950db43da952e432b1ef8eacb76733ee2d0d8f0aedffd9b003",
+      "decode_and_quad_sha256": "cdf3d3d1123d2032427bbe7e71c8b8461cec834b051480a95a6685637314b314",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 581,
+      "rectangles": 8,
+      "variants": 8,
+      "frames": 18,
+      "parts": 22,
+      "animations": 3,
+      "steps": 17,
+      "source_sha256": "328adcfeb6579be78edb61968f22b3fbe66c9efbcb92faf007d0561c6e124bff",
+      "decode_and_quad_sha256": "f55611376a4533de9163d3b6505535f20ba9492cb23936a57b16a70b1a8898bb",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1095,
+      "rectangles": 8,
+      "variants": 8,
+      "frames": 8,
+      "parts": 14,
+      "animations": 4,
+      "steps": 4,
+      "source_sha256": "fcbc3e3160857d8fcdfc34402ceb05f88a524b2e3f2c00081af5edb528a7d1a6",
+      "decode_and_quad_sha256": "49da24df1a96dc7a99692731ec88816b1196b0bf90a7c3014c152f7e8b0fa01f",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 1132,
+      "rectangles": 4,
+      "variants": 4,
+      "frames": 8,
+      "parts": 4,
+      "animations": 8,
+      "steps": 8,
+      "source_sha256": "b9cf58061c6ecbc0dbbd420119c4d8d3bb7bdd252e68026aa785b76a7cfae2ea",
+      "decode_and_quad_sha256": "db1823e2b49d1a86f4d1bb7368298903ee0c136bad853385ae06836f9da99140",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    },
+    {
+      "resource_id": 982,
+      "rectangles": 7,
+      "variants": 7,
+      "frames": 25,
+      "parts": 119,
+      "animations": 3,
+      "steps": 24,
+      "source_sha256": "276295a357cae72e6deff895d9e4d92062437f9bbd607ebd51929d9434004f10",
+      "decode_and_quad_sha256": "16f71f94c46d81f42d65eed2d0374aff2c610ecd5f74a489f3244f653ad9e68c",
+      "all_fields_match": true,
+      "all_frame_quads_match_python_transcription": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true,
+      "empty_descriptor_path_unresolved": false
+    }
+  ],
+  "malformed_input_rejections": [
+    {
+      "resource_id": 1298,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1298,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 826"
+    },
+    {
+      "resource_id": 1298,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1111,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1111,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 751"
+    },
+    {
+      "resource_id": 1111,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1119,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1119,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 445"
+    },
+    {
+      "resource_id": 1119,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1020,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1020,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 919"
+    },
+    {
+      "resource_id": 1020,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1106,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1106,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 441"
+    },
+    {
+      "resource_id": 1106,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1041,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1041,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 367"
+    },
+    {
+      "resource_id": 1041,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 426,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 426,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 429"
+    },
+    {
+      "resource_id": 426,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 522,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 522,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 429"
+    },
+    {
+      "resource_id": 522,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1281,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1281,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 675"
+    },
+    {
+      "resource_id": 1281,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1088,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1088,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 437"
+    },
+    {
+      "resource_id": 1088,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1155,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1155,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 712"
+    },
+    {
+      "resource_id": 1155,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 868,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 868,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 1346"
+    },
+    {
+      "resource_id": 868,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 876,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 876,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 491"
+    },
+    {
+      "resource_id": 876,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 377,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 377,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 866"
+    },
+    {
+      "resource_id": 377,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 985,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 985,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 869"
+    },
+    {
+      "resource_id": 985,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1036,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1036,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 743"
+    },
+    {
+      "resource_id": 1036,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1196,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1196,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 715"
+    },
+    {
+      "resource_id": 1196,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1032,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1032,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 826"
+    },
+    {
+      "resource_id": 1032,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 815,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 815,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 720"
+    },
+    {
+      "resource_id": 815,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 517,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 517,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 429"
+    },
+    {
+      "resource_id": 517,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1027,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1027,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 429"
+    },
+    {
+      "resource_id": 1027,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1183,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1183,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 445"
+    },
+    {
+      "resource_id": 1183,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1069,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1069,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 703"
+    },
+    {
+      "resource_id": 1069,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 607,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 607,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 19"
+    },
+    {
+      "resource_id": 607,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 769,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 769,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 51"
+    },
+    {
+      "resource_id": 769,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 708,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 708,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 172"
+    },
+    {
+      "resource_id": 708,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 933,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 933,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 27"
+    },
+    {
+      "resource_id": 933,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 809,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 809,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 19"
+    },
+    {
+      "resource_id": 809,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 641,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 641,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 981"
+    },
+    {
+      "resource_id": 641,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1037,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1037,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 277"
+    },
+    {
+      "resource_id": 1037,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 539,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 539,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 35"
+    },
+    {
+      "resource_id": 539,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 781,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 781,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 17"
+    },
+    {
+      "resource_id": 781,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 638,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 638,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 30"
+    },
+    {
+      "resource_id": 638,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 825,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 825,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 175"
+    },
+    {
+      "resource_id": 825,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 581,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 581,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 238"
+    },
+    {
+      "resource_id": 581,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1095,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1095,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 165"
+    },
+    {
+      "resource_id": 1095,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 1132,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 1132,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 111"
+    },
+    {
+      "resource_id": 1132,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    },
+    {
+      "resource_id": 982,
+      "case": "truncated_header",
+      "error": "ERROR: truncated atlas field at byte 6"
+    },
+    {
+      "resource_id": 982,
+      "case": "truncated_last_byte",
+      "error": "ERROR: atlas count exceeds resource at byte 545"
+    },
+    {
+      "resource_id": 982,
+      "case": "trailing_byte",
+      "error": "ERROR: atlas descriptor has trailing bytes"
+    }
+  ],
+  "rejection_count": 114,
+  "all_passed": true,
+  "original_machine_code_executed": false,
+  "gpu_rendered": false,
+  "ios_arm64_compiled": false,
+  "device_tested": false,
+  "limitations": [
+    "normalized Metal UVs",
+    "GPU-rendered fidelity",
+    "terrain/camera rules",
+    "original consumption path of seven empty descriptors",
+    "animation time units",
+    "iOS build",
+    "device performance"
+  ]
+}

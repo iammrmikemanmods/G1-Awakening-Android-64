@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "prerequisites": [
+    "sampler_v2.patch",
+    "scene_pose_v3.patch",
+    "NATIVE_SPRITE3D_FREEZE.json"
+  ],
+  "live_source_unchanged": true,
+  "files": [
+    {
+      "path": "native/include/g1/M3GScene.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/include/g1/M3GScene.hpp",
+      "sha256": "2bc0c69777857cc1dfff3bf78da7e7d99cbc54903acb584751bbc3de58cc2df1",
+      "bytes": 5988,
+      "base_sha256": "02f25cde344a5661cd1fc00dace1626840ef80a16af21f0ef93fb11988bc5ca5"
+    },
+    {
+      "path": "native/src/M3GScene.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/M3GScene.cpp",
+      "sha256": "09865ffbad65ec7bccc7c413805aac5f4228428d9c394563bcd5477972b8c2b6",
+      "bytes": 37818,
+      "base_sha256": "da9eeb3764b0a0e31509c71a8085302548f5f761d08a567138b98fe1f970898e"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/apple/MetalM3GRenderer.hpp",
+      "sha256": "fcce8e7a6e7279dfd44aeb3f1df9d2d2dacad504b8a7cdc1404c80a8afe2b429",
+      "bytes": 2991,
+      "base_sha256": "583b984f7f79ec32c767d9bd1cf50c452aedc8d181fed3c851fdcb3be25f842a"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.mm",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/apple/MetalM3GRenderer.mm",
+      "sha256": "ef7ada8792ba2e8c740b86793c8da508050fd0d8407e919c0c1462870d57e41c",
+      "bytes": 25537,
+      "base_sha256": "a8476fc1520af7f513003920f75f1caf4b4ae74c5599aafc50e6e31f4c9c9ec2"
+    },
+    {
+      "path": "native/tests/m3g_scene_test.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_scene_test.cpp",
+      "sha256": "97b80c24dc30a3199b56231c7e2edde7e115a675aeef54da22b9db88e2d42ebf",
+      "bytes": 13011,
+      "base_sha256": "ebdb4c738258ae06dc93e524a59e28a8f3f083dfe0bbb99506f5680b3b9574af"
+    },
+    {
+      "path": "native/include/g1/M3GRenderFrame.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/include/g1/M3GRenderFrame.hpp",
+      "sha256": "1a89af7fc4701c75492293ea074b2ce5556e6bfe10a1c428d6ea0ecf45ab6796",
+      "bytes": 3741,
+      "base_sha256": null
+    },
+    {
+      "path": "native/src/M3GRenderFrame.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/M3GRenderFrame.cpp",
+      "sha256": "69ee42e31ce63bbaff9d53513dec3146f5337af32da4703bdb2ab9fbf29a07ec",
+      "bytes": 9604,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_render_asset_test.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_render_asset_test.cpp",
+      "sha256": "6835643eb4003fc8fac0dc382891a73df9998ef9e59b61aa4736000bcc96820b",
+      "bytes": 4041,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_render_frame_test.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_render_frame_test.cpp",
+      "sha256": "106a93a53bead23142c4821ed52897df0e3b35cad1257ed54d2b9698376b283b",
+      "bytes": 7505,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_mesh_queue_fixture.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_mesh_queue_fixture.hpp",
+      "sha256": "915892abcc21d131750c06d26c251e820a71b36a7291fde4f0d0f803b4d0dfba",
+      "bytes": 5295,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tools/m3g_render_asset_probe.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_render_asset_probe.cpp",
+      "sha256": "890d5f3129134fb5b94eae852444b54975e6ef1a3664723d671abdbdec0a01ef",
+      "bytes": 3160,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tools/m3g_render_frame_probe.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/m3g_render_frame_probe.cpp",
+      "sha256": "da11ea4457c33ca9f0ca553a7e7a762ca25ffbc36d373709233cc249eb29cb70",
+      "bytes": 2962,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/mesh_queue_fixture.py",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/mesh_queue_fixture.py",
+      "sha256": "ca15c9e307d34927e11ffb6df39f750eaed7e98721c7b465788e4a077d3cf02a",
+      "bytes": 2434,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/render_frame_validate.py",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_frame_validate.py",
+      "sha256": "805fe23f2806373339de334cf22c3b621627e9f43b324584e546f2f1b4bd3c74",
+      "bytes": 3596,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/render_pass_inventory.py",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_pass_inventory.py",
+      "sha256": "7e8c407a58c244f0e623fc60b04d8fd866ac3d5e9ba14860472dbb1d61aa6c27",
+      "bytes": 2975,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/M3G_RENDER_FRAME.md",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/M3G_RENDER_FRAME.md",
+      "sha256": "4b54392977753ebec8bc00207f50f71582490d0420bdbf48ee191a44a9d05c7f",
+      "bytes": 13789,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/render_frame_native.json",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/frame_native.json",
+      "sha256": "38892bcc0be23c1bd841bfc269cd4b56c3e5166be77325efd96ffbe8f671702b",
+      "bytes": 78,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/render_frame_actual.json",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_frame_actual.json",
+      "sha256": "9bf02816bbc775678f276ff4557295ba812779cbeed271086b687d212b672de2",
+      "bytes": 414230,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/render_asset_native.txt",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_asset_native.txt",
+      "sha256": "19bfc06cfc932c1aed8d29ffdcf0d75ce720a92035b5238ffbe6fbaefd4ef52b",
+      "bytes": 44,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/render_scene_native.txt",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/scene_native.txt",
+      "sha256": "db848f24c00813cf6b42b0766c8be851a12d427e838db56d5af3257cfdb98a14",
+      "bytes": 37,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/render_pass_inventory.json",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_pass_inventory.json",
+      "sha256": "474f9edaaac86a8b54fb7aa6244624c61d88e47bae2e7b1f80eede9a2a0153d0",
+      "bytes": 16597,
+      "base_sha256": null
+    }
+  ],
+  "patch": {
+    "path": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/render_scene_v4/render_scene_v4.patch",
+    "bytes": 545614,
+    "sha256": "3109af8ce086ac43e13e1709ead1eb6773b96b2fa3ffea13e3df216df2614586"
+  },
+  "chained_patch_apply_check": "passed; every applied file hash matches the frozen source",
+  "validation": {
+    "frame_contracts": {
+      "checks": 167,
+      "classification_cases": 51,
+      "original_classification_fields": 153
+    },
+    "scene_contracts": 50,
+    "render_asset_contracts": 14,
+    "independent_actual_asset_checks": 19930,
+    "independent_actual_assets": 27,
+    "actual_frame_preparation": {
+      "resources": 5,
+      "prepared_frames": 60,
+      "mesh_draw_records": 2256,
+      "projected_sprite_draw_records": 118,
+      "culled_sprite_records": 530,
+      "original_appearance_index_rank_comparisons": 32
+    },
+    "render_pass_inventory": {
+      "resources": 27,
+      "worlds": 27,
+      "image_backgrounds": 0,
+      "depth_test_disabled_write_enabled": 0
+    }
+  },
+  "original_classification_fixture_sha256": "907ff1b6dc5b26213a3d92271747836f9efa9f9a97d207948b0b6c47f189147e",
+  "original_appearance_order_fixture_sha256": "3bce8fa518bfb46857359bcf8dde65cc19e0e16aa6715e032a462c3bba530901",
+  "asset_decode_audit_manifest_sha256": "e493eb1daa5dab1cd00111a97024334ca878f586ab484650a7b8fb19d2d180ab",
+  "peer_review": "asset_audit read-only frame/Metal review found no concrete supported-path blocker; subsequent Metal comments only document independently confirmed depth semantics",
+  "cmake": {
+    "core": [
+      "src/M3GRenderFrame.cpp"
+    ],
+    "tests": [
+      {
+        "source": "tests/m3g_render_asset_test.cpp",
+        "arguments": []
+      },
+      {
+        "source": "tests/m3g_render_frame_test.cpp",
+        "arguments": []
+      }
+    ],
+    "optional_probes": [
+      "tools/m3g_render_asset_probe.cpp",
+      "tools/m3g_render_frame_probe.cpp"
+    ],
+    "rebuild_all_M3GScene_header_consumers": true
+  },
+  "original_executable_in_product": false,
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false,
+  "boundaries": [
+    "caller supplies actual attachment order, camera, form and globally depth-enabled pass",
+    "World clear/background selection is not inferred from source model authoring metadata",
+    "no battle-controller completion is synthesized"
+  ]
+}

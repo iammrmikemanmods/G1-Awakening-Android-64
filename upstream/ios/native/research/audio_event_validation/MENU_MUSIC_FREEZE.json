@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "scope": "Isolated native menu music policy/host follow-up; no canonical or remote writes",
+  "depends_on_audio_maintenance_freeze_sha256": "8f2cc08e62350644b1435c4c9e83484e339a6b1742eacd83943e565841903457",
+  "base_files": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "before_sha256": "c8b61d17facd67aede1af4d4b4c4f522e59fd37eb7cab97f579e965f9bd0c71b",
+      "after_sha256": "1ff0d8bc82fb13c4b6b1a52e4de1e9bc088632502de05218908912985c1fcf72"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "before_sha256": "ebd936888ce5e40470e2e729700d0a9c86c7a3bf9b7872850e26dc477c3139b6",
+      "after_sha256": "4c40661b6db933ea54f319ae4bb0bd0a23c642a2057bf1b843d168e644b91a92"
+    }
+  ],
+  "files": [
+    {
+      "path": "analysis_tools/audio/menu_music_oracle.py",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/analysis_tools/audio/menu_music_oracle.py",
+      "bytes": 7629,
+      "sha256": "be87a33ac95ded639374c40f5f1d433b4edca81c832f3d9af25ce72e56765258"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/CMakeLists.txt",
+      "bytes": 20478,
+      "sha256": "4c40661b6db933ea54f319ae4bb0bd0a23c642a2057bf1b843d168e644b91a92"
+    },
+    {
+      "path": "native/include/g1/MenuMusic.hpp",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/include/g1/MenuMusic.hpp",
+      "bytes": 1787,
+      "sha256": "e4537498fab6ec64471ca0bd9e41cdff930d52172f36c99e1295c522bb20fe32"
+    },
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/platform/apple/NativeApp.mm",
+      "bytes": 152651,
+      "sha256": "1ff0d8bc82fb13c4b6b1a52e4de1e9bc088632502de05218908912985c1fcf72"
+    },
+    {
+      "path": "native/research/MENU_MUSIC.md",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/research/MENU_MUSIC.md",
+      "bytes": 7941,
+      "sha256": "24f006a413a5ffc8b7d370d7c3714733338e5abb97d860dc6187fe5c82326cce"
+    },
+    {
+      "path": "native/research/audio_event_validation/menu_music_validation.json",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/research/audio_event_validation/menu_music_validation.json",
+      "bytes": 1038,
+      "sha256": "8fae1f28b852409bc6f9a63be1c1a5b2707c46e4186c05e4f2670b45007358e5"
+    },
+    {
+      "path": "native/tests/menu_music_cases.txt",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/tests/menu_music_cases.txt",
+      "bytes": 434465,
+      "sha256": "e88ce3ad13c3188e2009f1bf4a890d7e2bc6588f7d9449a012e43d40df4fed6b"
+    },
+    {
+      "path": "native/tests/menu_music_test.cpp",
+      "source_path": "g1_port/research/audio_menu_followup/delivery/native/tests/menu_music_test.cpp",
+      "bytes": 3517,
+      "sha256": "c1b1a7d95b6a81d2678cf18b375eafc583f29de4cdcd976e1a7759f3882c0682"
+    }
+  ],
+  "portable_original_cases": 10608,
+  "portable_scalar_comparisons": 17392,
+  "host_patch_path": "g1_port/research/audio_menu_followup/HOST_AND_CMAKE.patch",
+  "host_patch_sha256": "93c2dce8036def0323a430adaa5571ad1776471d12033ee44b164b17c59fd244",
+  "apple_compiled": false,
+  "device_tested": false,
+  "runtime_assets_or_original_executable_included": false,
+  "coverage": "Original 36eae..36f22 body and identified native main/profile, mission selection, faction, opponent and pause contexts. No claim of complete original menus or every native extension."
+}

@@ -1,0 +1,848 @@
+{
+  "scope": "Native terrain resources and bounded first-mission interior mesh",
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "host": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_target": "x86_64-linux-gnu",
+  "build_command": [
+    "/usr/bin/g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic",
+    "-I",
+    "/workspace/scratch/cba553aafa20/g1_port/native/include",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Terrain.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/tools/terrain_probe.cpp",
+    "-lz",
+    "-o",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/terrain_validation/terrain_probe"
+  ],
+  "build_stderr": "",
+  "native_probe_sha256": "cf2c579c01b8fc5900ec8d5be7a840d81872628a34bf4ec4fdb9397e090b44ad",
+  "source_files_sha256": {
+    "src/Archive.cpp": "a19a7576c9b9e793a5e2171d0096b7aba68e3951d28f4bb794494466905f8d87",
+    "src/Terrain.cpp": "2baa7dbe5503e90379aa5950f5f5898a072a0e53cbec560612c7953c4582ef43",
+    "tools/terrain_probe.cpp": "f7d7013fda5001de7b6ed01da0873827345ce82b2b0d67833337fff0d7398a38",
+    "include/g1/Terrain.hpp": "23f270aa8360b59674c44925afbcdae25d146aeea81099db69143ca8c431bcc6",
+    "tests/terrain_test.cpp": "91b8f0b9cf82012759180cb9c46c71e415ef7b68a80af5a187b5adde2d7dd28f",
+    "tests/terrain_cases.txt": "5791215629f391e3400075ce012a4168a65931ea50fc8581f4c30e8d11c64345",
+    "tests/generate_terrain_reference.py": "9a5bccfa856356c281ba1440bd007d59325b80051132aa8c4f9b5037b218ba33",
+    "tests/verify_missions.py": "de8f32da9479ed2a70b2ee49d1529c6d1218e110404867e5f8d3bbe320c16469",
+    "tools/extract_terrain_tables.py": "bca928d01ef4dc25f335b75d761266fbb6750bb721efd2a8fa93d60511c2e9b0",
+    "tests/verify_terrain.py": "851f7a94494e73f301223e8a46f5d8edd33107f21b0cd42db10d9592eafaa6f9",
+    "tests/terrain_reference.json": "e1d5940bc9acd1d1d89e475650e85f83fd9fdad7364b4ef1eec3a0f2fb7bee87"
+  },
+  "counts_matched": {
+    "grids": 22,
+    "grid_cells": 4510,
+    "lookups": 3,
+    "terrain_rules": 6,
+    "visual_styles": 3,
+    "visual_records": 96
+  },
+  "source_matches": [
+    {
+      "kind": "grid",
+      "resource_id": 258,
+      "payload_sha256": "19ad753d282141f6226459717bf7a6438a0783ee908a75070810b9bf04d42007",
+      "canonical_decode_sha256": "77cd1aab5813c66a4f0aeafc946e092556db3b2b060c6b1b3d208d2028bcda1a",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 259,
+      "payload_sha256": "b4c195267bc2f14eb5688840292c4e61e38aa04ffca004a7ec974cd899c4ec1a",
+      "canonical_decode_sha256": "223dceea2b0fcd8a85a659d2b00ebeee427d6fcd64d97fd8382ef6f78cc1e811",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 260,
+      "payload_sha256": "1ecf3d2767e5f4747ddc28c368cacdbe386cae65cbd85d9ecd54f8878111fcee",
+      "canonical_decode_sha256": "54edf92188e1f7463cbe9bef0fd516c602af02ae6d57af00a2d7ed0c0c534eba",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 261,
+      "payload_sha256": "141d852a7e5990507146b180e01f19b2752c11cbe6eb4d71127764038ddca173",
+      "canonical_decode_sha256": "c6c4236be999a619cad3cde4f49e34acad5022cec0f4ff90de3920bff927783f",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 262,
+      "payload_sha256": "c3a247135dbbc767ca38449620f41c12345737470ea51f86e211a27d660c305e",
+      "canonical_decode_sha256": "84734a4627e66156a353e2d8ce7fe64aade925595c3eb08eea991fc80ca27be4",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 263,
+      "payload_sha256": "c313bc5383173ba64d7f7c9e0bcf302e902653c88d255a16930bcc8f66da6316",
+      "canonical_decode_sha256": "15e593aa4b7fdb37186b6cf281dc69586cd5120f39ea0f32f1decb5cf8a3b6cc",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 264,
+      "payload_sha256": "dc437d41223e42dd117da182da8725dbcf8eedbe0cda5e7dcd77c6bbf67cea3c",
+      "canonical_decode_sha256": "86099b9832eeb03893ae3db7f06f84d5d4109c7dacd84bd792f8139c536d2858",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 265,
+      "payload_sha256": "f7e135f23f3f7dd7f5d26c15546d98f73a9092696629c27d71e63f7005dacd82",
+      "canonical_decode_sha256": "a55efc6497d181a914ab4c3c971149576d1c3cb8612648838d3f6dad648a4a9f",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 266,
+      "payload_sha256": "57704033dd4379b00c1d5a5992a463e35527392962a89067175d761907f9dcb0",
+      "canonical_decode_sha256": "d59446a880886b64eeb73fc7eccb3c209d2c7797e252f39cdb699261dee28dd5",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 267,
+      "payload_sha256": "9a33dde81fbd9e89ca4168319ca9614286e47834c9a3485d8fa024b265a8670a",
+      "canonical_decode_sha256": "2f866fc65100402d0081f834813dbbb8864949f9cf50cc04fd2d3b7c070de857",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 268,
+      "payload_sha256": "cdd071f319ba2d8160699df363f7dd666342a23abd6e276b23fc36b73c95a5b5",
+      "canonical_decode_sha256": "f4698ab630c36aab9fc0a20aa6420fb044ebd049be9c11e823b08dfb87e116d8",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 269,
+      "payload_sha256": "6ee1ca919e4efcff41c444931b52b2f92d7dafc448631dd9f55658aa55092840",
+      "canonical_decode_sha256": "af13d2ce88673b7bcaef6609ed2adba31c809af4a2c9e3e46f448c05ca2d73fa",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 270,
+      "payload_sha256": "ec884419d9c857157ef1ea6082242cb42eb66087f8399a79260287c4f94f021d",
+      "canonical_decode_sha256": "342b037694edab00e0cc2e2ca6e9ab80bd0873200e35705b9f9884a383fa855d",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 271,
+      "payload_sha256": "3ce2a551c99354bcfd321e445929a6681fa0c4b320be7ee7a44fdcfd31a10563",
+      "canonical_decode_sha256": "13c0cb2d93f6bd0ac7da7f5217ceb3af0eb61c82f659018977ae95bd615ce375",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 272,
+      "payload_sha256": "924de9e8e39aa0c2c478d8d154476accbf8376a4171595f766e827a6318ad6f9",
+      "canonical_decode_sha256": "bb6aca691c359a15639c3404c19f696631ce084562134bb9775798ceaf6a7c1f",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 273,
+      "payload_sha256": "bc61e76e2bd024b5e31398652a79512bb79acb6f21957b569b27fafa4250fb2b",
+      "canonical_decode_sha256": "3314d82e887218dd251f9c3098dd03db8812dcaf3eb80ceabfa90f39a7f2067d",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 274,
+      "payload_sha256": "b01336a219158837b32ec8f33aacb0de952d0d74e7c618d37bfd77a85a429d41",
+      "canonical_decode_sha256": "971e590a03f24009376df44e3b7ca8b5f384b87df1bc95034442013f68401a4f",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 275,
+      "payload_sha256": "d7ea4c16198081eb18d8f945a3b32db9d2c4d18019ab4572a6a338870dfa120d",
+      "canonical_decode_sha256": "4bca557598d8cb6690d468f86d570f47330999f4a6e1d73b31f6ddf0156c2ada",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 276,
+      "payload_sha256": "a946b7d0efa7519e2cc85eefa7cdedf57f2b4e1cbeda366e72004cb9c512179c",
+      "canonical_decode_sha256": "0b3cccc49198df131d4e426126718f119e40556d289b33918c756aae01846f86",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 277,
+      "payload_sha256": "cff5dabb0c6c49b67e3f8826c93af1c9fbae12becf1eda083cde548d9023e176",
+      "canonical_decode_sha256": "2931b0abdf381a7f15d77f141044ab10a329c00234929755c4d3671a4686d878",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 278,
+      "payload_sha256": "6daf4eb65a1af956f5f6f349b4b84d822c551e7c53d9b83556ba60d505fbb27b",
+      "canonical_decode_sha256": "ddc8c91c9c380782e5d67285d5ffd3815bb905b4b69f647fee92a625de7cacbd",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "grid",
+      "resource_id": 279,
+      "payload_sha256": "fa1b281ba6052d9eae124cfe0496cfa00d40345463e224db5584432fc5dd189b",
+      "canonical_decode_sha256": "2abdd80f4aba7df68bcefe074fe3ae1295cd7b8136fe724bc2779da53fe98ff5",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 280,
+      "payload_sha256": "8c50d704a6037f96dd04ac6ac0b9bceb47613a8bf80d1d7de69565cc22d384b3",
+      "canonical_decode_sha256": "257d9dcd4e89de0186375658332db2f84d267ebf7991cbd0bacccc41b01daf68",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 281,
+      "payload_sha256": "2b2380db9b2324d17dd128474e250372617fb25435498cf19b064827b2989c13",
+      "canonical_decode_sha256": "3ec51804871310932779414fda3ea3cea25d2c9887c626cb1b49698452e0bfed",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 282,
+      "payload_sha256": "527de37ee61d0786d08e4d82bdd433656750accf9a03ce7494e1b46922294327",
+      "canonical_decode_sha256": "c490ac7763bd561675e31bdfce4f7ba2e951afd5109dd732e6627224359ff377",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "rules",
+      "resource_id": 306,
+      "payload_sha256": "76d725c07c67bfc0763481644b3d6d9642c43736c28275666d169f6232323928",
+      "canonical_decode_sha256": "e5efb41f769031544c66fd1c5d4996684913472c177c94d52a144da174754c60",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "kind": "tables",
+      "resource_id": null,
+      "payload_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+      "canonical_decode_sha256": "5e70438c26801bca63ad8b883693c51ee3302090bdff7f92929fd39f157c54ce",
+      "all_fields_match": true,
+      "byte_exact_round_trip": true
+    }
+  ],
+  "rejection_count": 81,
+  "malformed_input_rejections": [
+    {
+      "kind": "grid",
+      "resource_id": 258,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 258,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 258,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 259,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 259,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 259,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 260,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 260,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 260,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 261,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 261,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 261,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 262,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 262,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 262,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 263,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 263,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 263,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 264,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 264,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 264,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 265,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 265,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 265,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 266,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 266,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 266,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 267,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 267,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 267,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 268,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 268,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 268,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 269,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 269,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 269,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 270,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 270,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 270,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 271,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 271,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 271,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 272,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 272,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 272,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 273,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 273,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 273,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 274,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 274,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 274,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 275,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 275,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 275,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 276,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 276,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 276,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 277,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 277,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 277,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 278,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 278,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 278,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 279,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 279,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain grid payload does not match dimensions"
+    },
+    {
+      "kind": "grid",
+      "resource_id": 279,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain tile is outside the observed table or empty sentinel"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 280,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 280,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 280,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 281,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 281,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 281,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 282,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 282,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "lookup",
+      "resource_id": 282,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain lookup requires observed marker 1 and 32 entries"
+    },
+    {
+      "kind": "rules",
+      "resource_id": 306,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain rule count does not match three-byte rows"
+    },
+    {
+      "kind": "rules",
+      "resource_id": 306,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain rule count does not match three-byte rows"
+    },
+    {
+      "kind": "rules",
+      "resource_id": 306,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain rule row width is unsupported"
+    },
+    {
+      "kind": "tables",
+      "resource_id": null,
+      "case": "last_byte_missing",
+      "error": "ERROR: terrain visual tables require exactly 480 data bytes"
+    },
+    {
+      "kind": "tables",
+      "resource_id": null,
+      "case": "trailing_byte",
+      "error": "ERROR: terrain visual tables require exactly 480 data bytes"
+    },
+    {
+      "kind": "tables",
+      "resource_id": null,
+      "case": "unsupported_semantic_field",
+      "error": "ERROR: terrain table has an unsupported atlas selector"
+    }
+  ],
+  "table_extraction_provenance": {
+    "schema_version": 1,
+    "data_format": "G1 native terrain visual tables, raw style-major v1",
+    "size": 480,
+    "sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+    "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+    "record_fields": [
+      "top_atlas_cell_u8",
+      "front_atlas_cell_u8",
+      "left_atlas_cell_u8",
+      "right_atlas_cell_u8",
+      "signed_height_steps_i8"
+    ],
+    "world_units_per_height_step": 32,
+    "tables": [
+      {
+        "style": 0,
+        "original_virtual_address": 888964,
+        "original_virtual_address_hex": "0xd9084",
+        "segment": "__DATA",
+        "original_file_offset": 884868,
+        "output_offset": 0,
+        "record_count": 32,
+        "record_size": 5,
+        "sha256": "664368b98e22900675e0c10a936d022433d018bcc4e25141cd59343d065bf5ca",
+        "atlas_resource_id": 693,
+        "atlas_width": 512,
+        "atlas_height": 256,
+        "atlas_cell_width": 64,
+        "atlas_cell_height": 64
+      },
+      {
+        "style": 1,
+        "original_virtual_address": 888632,
+        "original_virtual_address_hex": "0xd8f38",
+        "segment": "__DATA",
+        "original_file_offset": 884536,
+        "output_offset": 160,
+        "record_count": 32,
+        "record_size": 5,
+        "sha256": "5af1a12467d6e61d1d2b02a7c338dd5fe11f2460828571c5572b12cb18e116a8",
+        "atlas_resource_id": 777,
+        "atlas_width": 512,
+        "atlas_height": 256,
+        "atlas_cell_width": 64,
+        "atlas_cell_height": 64
+      },
+      {
+        "style": 2,
+        "original_virtual_address": 888802,
+        "original_virtual_address_hex": "0xd8fe2",
+        "segment": "__DATA",
+        "original_file_offset": 884706,
+        "output_offset": 320,
+        "record_count": 32,
+        "record_size": 5,
+        "sha256": "e8a36407980fb13b82dd177a3ce7fa90a7c82528e11afdc89040eeb728ff389a",
+        "atlas_resource_id": 761,
+        "atlas_width": 512,
+        "atlas_height": 256,
+        "atlas_cell_width": 64,
+        "atlas_cell_height": 64
+      }
+    ],
+    "contains_original_machine_code": false,
+    "scope": "Original data tables only; no campaign linkage, camera or executable payload",
+    "original_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+    "original_member": "Payload/G1awakening.app/G1awakening",
+    "extractor_sha256": "bca928d01ef4dc25f335b75d761266fbb6750bb721efd2a8fa93d60511c2e9b0"
+  },
+  "first_grid_geometry": {
+    "resource_id": 268,
+    "style": 0,
+    "quads": 255,
+    "original_and_native_quad_sha256": "7392230606f98cae05d8b174e83b8ca7ecb0f50d8219d8631370fbffd06d2727",
+    "matches_original_instruction_reference": true
+  },
+  "all_passed": true,
+  "original_instructions_executed_by_this_script": false,
+  "original_instruction_reference_used": true,
+  "guest_execution_in_native_product": false,
+  "gpu_rendered": false,
+  "ios_arm64_compiled": false,
+  "device_tested": false,
+  "limitations": [
+    "camera/padded full scene",
+    "style1 animated terrain",
+    "GPU pixel parity",
+    "unit world anchor",
+    "complete gameplay",
+    "native iPhone execution"
+  ]
+}

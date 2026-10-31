@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "scope": "Native Camera decoding/projection/finite affine view; no live cinematic or GPU claim",
+  "sources": [
+    {
+      "path": "native/include/g1/M3GCamera.hpp",
+      "sha256": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04",
+      "bytes": 1520
+    },
+    {
+      "path": "native/src/M3GCamera.cpp",
+      "sha256": "5344397d24736ae86eab134d5a3ca7b5fe6b7c7870bb346a29187e12062e32a2",
+      "bytes": 7144
+    },
+    {
+      "path": "native/tests/m3g_camera_test.cpp",
+      "sha256": "b9928f5c35d68e4935e8d9dc711d29d805c94cfc2231cf3596ba304719546ee4",
+      "bytes": 4252
+    },
+    {
+      "path": "native/tests/m3g_camera_fixture.hpp",
+      "sha256": "dc6d39f420534c965a5ff655bc43e518e42f1d34e3563a148868bf0fd23cc5e5",
+      "bytes": 3916
+    },
+    {
+      "path": "native/tools/m3g_camera_probe.cpp",
+      "sha256": "9ce357639473752fc63abdd71d8ee7b4e85edb72ea068f46f8f1757c5f2448c7",
+      "bytes": 1194
+    },
+    {
+      "path": "analysis_tools/m3g/camera_oracle.py",
+      "sha256": "dbc007fa33e0e23a75ed26833ea1fe72d40da3aaf7dff6b0be3b9c930953c9da",
+      "bytes": 6209
+    },
+    {
+      "path": "analysis_tools/m3g/camera_validate.py",
+      "sha256": "3df7e8b962e257ebfca7c03fbb66d9d80d33a1b4c6567dd0e7367839c66f19fa",
+      "bytes": 3119
+    }
+  ],
+  "records": [
+    {
+      "path": "native/research/M3G_CAMERA.md",
+      "sha256": "c72c7bd3c0054a82e082a71fe465ec114dbae3a96a38bd5f1370e46d5f0633ea",
+      "bytes": 7596
+    },
+    {
+      "path": "native/research/m3g_validation/original_camera_projection.json",
+      "sha256": "6aaedd0bfc4f6d53b2b9cf511a5ba99693f75d111a7ac4465a67782669eebcc1",
+      "bytes": 5984
+    },
+    {
+      "path": "native/research/m3g_validation/camera_projection_native.json",
+      "sha256": "4fe21fbaa793e16eec37cb2b6be14ddee5c58d4ec8c0efa7d6e1c1fb06e2a34c",
+      "bytes": 1803
+    },
+    {
+      "path": "native/research/m3g_validation/camera_corpus_native.json",
+      "sha256": "0d604f4aa99ab2e22d4a1330c1b888dcbc7f5b5f7dd6af329405397840cda89c",
+      "bytes": 7098
+    }
+  ],
+  "existing_dependencies": [
+    {
+      "path": "analysis_tools/sprite/render_oracle.py",
+      "sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+      "bytes": 13657
+    },
+    {
+      "path": "native/tests/m3g_animation_fixture.hpp",
+      "sha256": "1a9b5bcbfcc70a68c58e244702678c265c24177589b0079938674abfaebfa191",
+      "bytes": 3658
+    },
+    {
+      "path": "native/research/m3g_validation/battle_corpus_coverage.json",
+      "sha256": "5736641c02095a3f19fbff375d13548592754549cb64bca313b458f5eb6c0468",
+      "bytes": 259820
+    }
+  ],
+  "excluded": [
+    "private game payloads",
+    "original ARM program",
+    "CPU emulator or tool binaries"
+  ],
+  "captured_campaign_native_app_sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+  "native_reference_cases": 12,
+  "native_projection_scalar_comparisons": 192,
+  "native_contracts": 28,
+  "actual_asset_resources": 27,
+  "actual_asset_cameras": 73,
+  "actual_asset_field_comparisons": 365,
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "live_camera_selection": false
+}

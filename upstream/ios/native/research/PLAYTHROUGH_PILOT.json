@@ -1,0 +1,634 @@
+{
+  "status": "frozen native host input-integration checkpoint",
+  "source_sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6",
+  "executable_sha256": "7db60e84f3f268d7fdd04bb1fecaac8aff126daa7dc110b174410e6bc3a4a2cf",
+  "original_archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "input_files": {
+    "g1_port/research/assets/iphone.big": {
+      "bytes": 6994213,
+      "sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4"
+    },
+    "g1_port/research/native_terrain/terrain_visual_tables.bin": {
+      "bytes": 480,
+      "sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8"
+    }
+  },
+  "build": {
+    "strict_cpp17_passed": true,
+    "inputs_unchanged_during_build": true,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "linked_libraries": {
+      "g1_port/native/research/mission_validation/cmake_build/libg1_resources.a": {
+        "bytes": 1650368,
+        "sha256": "ad01504b64cc5ac421f409bce3ef08797e53b64174359b9bb1bcfc99cb246c0c"
+      },
+      "g1_port/native/research/mission_validation/cmake_build/libg1_png.a": {
+        "bytes": 211556,
+        "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+      },
+      "g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a": {
+        "bytes": 90250,
+        "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+      }
+    }
+  },
+  "continuous": {
+    "start_group": 0,
+    "start_mission": 0,
+    "seed": 18241,
+    "success_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "loss_index": 7,
+    "success_count": 7,
+    "actual_profile_writes": 8,
+    "actual_next_session_installs": 7,
+    "highest_unlocked": [
+      7,
+      0
+    ],
+    "campaign_completed": [
+      false,
+      false
+    ],
+    "ticks": 5920,
+    "actions": {
+      "commands": 344,
+      "selections": 232,
+      "moves": 87,
+      "attacks": 90,
+      "captures": 11,
+      "transforms": 47,
+      "heals": 0,
+      "upgrades": 0,
+      "productions": 9,
+      "human_end_turns": 100,
+      "ai_turn_entries": 99
+    },
+    "escape_search": {
+      "branch_command_evaluations": 6481,
+      "accepted_branch_commands": 6481,
+      "settle_bounds": 0,
+      "solutions": 1,
+      "live_replay_checkpoint_matches": 22,
+      "state_transplanted": false,
+      "per_search_command_bound": 30000,
+      "per_search_turn_bound": 10,
+      "per_search_seconds_bound": 10
+    },
+    "errors": 0,
+    "reproduced_again_with_identical_native_results_excluding_timing_and_reporting_fields": true
+  },
+  "isolated_matrix": {
+    "mission_count": 30,
+    "success_branches": 13,
+    "loss_branches": 17,
+    "exceptions": 0,
+    "run_bounds_reached": 0,
+    "outcome_counts": {
+      "mission_count_bound": 12,
+      "native_loss_handoff": 17,
+      "native_campaign_ending": 1
+    },
+    "fresh_profile_per_run": true,
+    "continuous_campaign_claim": false,
+    "rows": [
+      {
+        "group": 0,
+        "mission_index": 0,
+        "resource": 315,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          1,
+          0
+        ],
+        "human_turns": 3,
+        "ticks": 221,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 1,
+        "resource": 326,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          2,
+          0
+        ],
+        "human_turns": 4,
+        "ticks": 268,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 2,
+        "resource": 333,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          5,
+          0
+        ],
+        "human_turns": 9,
+        "ticks": 967,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 3,
+        "resource": 334,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          3,
+          0
+        ],
+        "human_turns": 8,
+        "ticks": 847,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 4,
+        "resource": 335,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          1,
+          2
+        ],
+        "human_turns": 5,
+        "ticks": 412,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 5,
+        "resource": 336,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          6,
+          0
+        ],
+        "human_turns": 15,
+        "ticks": 736,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 6,
+        "resource": 337,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          1,
+          4
+        ],
+        "human_turns": 11,
+        "ticks": 1057,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 7,
+        "resource": 338,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          7
+        ],
+        "human_turns": 51,
+        "ticks": 1454,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 8,
+        "resource": 339,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          3,
+          0
+        ],
+        "human_turns": 29,
+        "ticks": 1343,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 9,
+        "resource": 316,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          3,
+          0
+        ],
+        "human_turns": 5,
+        "ticks": 502,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 10,
+        "resource": 317,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          1,
+          0
+        ],
+        "human_turns": 6,
+        "ticks": 637,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 11,
+        "resource": 318,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          1
+        ],
+        "human_turns": 22,
+        "ticks": 910,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 12,
+        "resource": 319,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          5
+        ],
+        "human_turns": 17,
+        "ticks": 1759,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 13,
+        "resource": 320,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          3,
+          0
+        ],
+        "human_turns": 36,
+        "ticks": 3107,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 14,
+        "resource": 321,
+        "classification": "success_branch",
+        "native_outcome": "mission_count_bound",
+        "handoff": "next_mission",
+        "active_counts": [
+          1,
+          1
+        ],
+        "human_turns": 20,
+        "ticks": 1403,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 15,
+        "resource": 322,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          3
+        ],
+        "human_turns": 15,
+        "ticks": 1045,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 0,
+        "mission_index": 16,
+        "resource": 323,
+        "classification": "success_branch",
+        "native_outcome": "native_campaign_ending",
+        "handoff": "campaign_ending",
+        "active_counts": [
+          3,
+          0
+        ],
+        "human_turns": 5,
+        "ticks": 294,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 0,
+        "resource": 324,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 19,
+        "ticks": 471,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 1,
+        "resource": 325,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 7,
+        "ticks": 562,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 2,
+        "resource": 327,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          3
+        ],
+        "human_turns": 23,
+        "ticks": 697,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 3,
+        "resource": 328,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          1
+        ],
+        "human_turns": 4,
+        "ticks": 162,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 4,
+        "resource": 329,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          3
+        ],
+        "human_turns": 12,
+        "ticks": 1303,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 5,
+        "resource": 330,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          4
+        ],
+        "human_turns": 12,
+        "ticks": 450,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 6,
+        "resource": 331,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          3
+        ],
+        "human_turns": 3,
+        "ticks": 198,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 1,
+        "mission_index": 7,
+        "resource": 332,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 7,
+        "ticks": 386,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 2,
+        "mission_index": 0,
+        "resource": 310,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          4
+        ],
+        "human_turns": 8,
+        "ticks": 902,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 2,
+        "mission_index": 1,
+        "resource": 311,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 4,
+        "ticks": 249,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 2,
+        "mission_index": 2,
+        "resource": 312,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          3
+        ],
+        "human_turns": 8,
+        "ticks": 958,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 2,
+        "mission_index": 3,
+        "resource": 313,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 10,
+        "ticks": 543,
+        "real_profile_writes": 1,
+        "error": ""
+      },
+      {
+        "group": 2,
+        "mission_index": 4,
+        "resource": 314,
+        "classification": "loss",
+        "native_outcome": "native_loss_handoff",
+        "handoff": "campaign_menu",
+        "active_counts": [
+          0,
+          2
+        ],
+        "human_turns": 7,
+        "ticks": 936,
+        "real_profile_writes": 1,
+        "error": ""
+      }
+    ]
+  },
+  "headless_boundaries": {
+    "presentation_feedback": "synthetic world/camera/dialogue/focus/transform/battle/results/menu/ending",
+    "fixed_tick_ms": 30,
+    "state_forced": false,
+    "controller_flags_changed": false,
+    "search_state_transplanted": false,
+    "original_arm_executable_or_interpreter_used": false,
+    "core_logic_changed_for_bot": false,
+    "ui_audio_render_validation": false,
+    "device_validation": false,
+    "fps_or_real_time_speed_measurement": false,
+    "full_campaign_completion_verified": false
+  },
+  "input_strategy_scope": [
+    "Only public GameSession human commands mutate the live session.",
+    "Opponent turns use the native AI and original decoded data.",
+    "Read-only AI planner results are advice; proposed form/stat side effects are not directly installed.",
+    "Escape branches use exact public checkpoint copies; the live session receives only replayed commands and matches encoded checkpoints including RNG and terrain.",
+    "A geometry-only board copy guides future path estimates; the live board and public movement admission remain authoritative.",
+    "The fixed tick schedule and immediate synthetic presentation feedback are part of the test input; a different presentation schedule can change shared RNG timing and outcomes."
+  ],
+  "historical_limit": {
+    "pilot01_preserved": true,
+    "pilot01_success_count": 5,
+    "pilot01_loss_index": 5,
+    "pre_freeze_heal_counter_bug": "An optional insufficient-funds result was counted/retried as a heal; final source checks actual HealOutcome::healed. Historical heal counts are attempts, not evidence of HP restoration.",
+    "corrected_heal_cases": "playthrough_validation/CORRECTED_HEAL_CASES.json"
+  },
+  "next_gates": [
+    "Complete all17 Story missions continuously with legal inputs and actual outcome branches.",
+    "Complete all8 Showdown missions and5 Arena scenarios as wins where required.",
+    "Validate UIKit/Metal/audio and real touch presentation on the iPhone XR/iOS17.5.",
+    "Measure device pacing at the target60FPS and verify original gameplay-time behavior."
+  ],
+  "repository_eligible_files": [
+    "native/research/playthrough_validation/BASELINE_PILOT01_PROVENANCE.json",
+    "native/research/playthrough_validation/BASELINE_PILOT01_RESULT.json",
+    "native/research/playthrough_validation/CORRECTED_HEAL_CASES.json",
+    "native/research/playthrough_validation/FINAL_BUILD.json",
+    "native/research/playthrough_validation/FINAL_CONTINUOUS.json",
+    "native/research/playthrough_validation/FINAL_INDIVIDUAL.json",
+    "native/research/playthrough_validation/WRAPPER_SMOKE.json",
+    "native/research/playthrough_validation/continuous_events.jsonl"
+  ],
+  "private_outputs_excluded": [
+    "original archive",
+    "terrain table payload",
+    "native save binaries",
+    "compiled host executable"
+  ]
+}

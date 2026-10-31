@@ -1,0 +1,18 @@
+{
+  "scope": "original plan-consumer dispatch and native continuous-session contracts; not a campaign playthrough",
+  "original_cases": 136,
+  "native_comparisons": 681,
+  "original_text_unchanged": true,
+  "fixture_sha256": "b5bfc94cbd15165e76995c21ba23fc1eed876343a28070c55e5db05063beb758",
+  "oracle_sha256": "39c03ab3ed28b06dd66e7d2a43ce2d91e6ef184e820730f71af6879bd9a14090",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "external_boundaries": {
+    "0x56044": "renderer transform request recorded",
+    "0x5494c": "phase-selection request recorded, setup not executed",
+    "0x556a8": "upgrade request recorded, mutation tested separately"
+  },
+  "whole_AI_driver_original_comparison": false,
+  "shared_oracle_after_effective_cost_fix_sha256": "6d59e821459f7f4a86dc4ea562b39f1a092491bd90168fb83f2309e645a9737f",
+  "regenerated_after_effective_cost_fix": true,
+  "fixture_changed_after_cost_fix": false
+}

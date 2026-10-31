@@ -1,0 +1,163 @@
+{
+  "scope": "Native C++17 sprite geometry, millisecond animation and model placement",
+  "source_frozen": true,
+  "native_modules": [
+    "SpriteGeometry",
+    "SpriteAnimation",
+    "SpritePlacement"
+  ],
+  "source_files_sha256": {
+    "native/include/g1/SpriteGeometry.hpp": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac",
+    "native/src/SpriteGeometry.cpp": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+    "native/include/g1/SpriteAnimation.hpp": "11ad554fa9bfe469fb49adb8b5b041d7e9801878f23cbb72be02c4b64cb82a70",
+    "native/src/SpriteAnimation.cpp": "8469a57e5149757e9f531fe1e6f68f17d6281d535c94b155fe612ae8ef1df564",
+    "native/include/g1/SpritePlacement.hpp": "be73567877ec77644328abcbe73629526b0e1f12d4d1753d687c218083eb555d",
+    "native/src/SpritePlacement.cpp": "7615da12e273eb5bf5c6cb18707655b73b547c2dce0f7306f074619a37bb7ed0",
+    "native/tests/sprite_geometry_test.cpp": "62ef35a3933f7ad3a58d1978075f9e7335bdd5ff7edcab7b1e30d21225eb21e4",
+    "native/tests/sprite_animation_test.cpp": "81b426bfedf725b383ff339ebc2d8884f55f1a98a7a1f957db18798358a12ac3",
+    "native/tests/sprite_placement_test.cpp": "9e59f47a53049811d3e2631bf8062ce341ebcc9b8ffe585af37c213cf1fc5ed6",
+    "analysis_tools/sprite/animation_oracle.py": "055c46dbfc8b13fc7c63278e214d1c04c9ca61035d9513bad9dffa84f9dbf79b",
+    "analysis_tools/sprite/matrix_oracle.py": "678dd059c857de98c2a9aadcb0f7be3be65b273c6772893be0963ec1f5ef57d4",
+    "analysis_tools/sprite/placement_oracle.py": "940f7010add66ec3188886f4b96147c1c4c16cbf8720c89f6d369b8682b85325",
+    "analysis_tools/sprite/render_oracle.py": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+    "analysis_tools/sprite/animation_probe.cpp": "9ed6bb55dd04e7240bd0be5ed319665903183d1972c599336f4fb963e970d283",
+    "analysis_tools/sprite/placement_probe.cpp": "a4c0b34ac1385e446da75c21aa0638f949ac32e431079f1b6a08a0ad2175d2a1",
+    "analysis_tools/sprite/README.md": "bf7eba337401312b6da6142029ec69a75335f39ae2b8627937df338b207b3176",
+    "native/research/SPRITE_RENDERING.md": "0c26611e0468f67f11cdb2003d2ec14baf739177f83a7c0cae55b19ebdf405c1"
+  },
+  "local_contracts": {
+    "geometry": 21,
+    "animation": 26,
+    "placement": 28,
+    "all_passed": true
+  },
+  "references": {
+    "render_setup_cases": 10,
+    "animation_cases": 1616,
+    "animation_states": 17776,
+    "animation_scalar_comparisons": 124432,
+    "placement_cases": 130,
+    "placement_component_comparisons": 1430,
+    "matrix_cases": 130,
+    "matrix_scalar_comparisons": 2080,
+    "all_passed": true
+  },
+  "records": {
+    "original_render_setup": {
+      "path": "native/research/sprite_validation/original_render_setup.json",
+      "sha256": "082428b9f9e232141b4eaa8753015f7a3897e2d6bd650e945528bf5abce25074"
+    },
+    "original_animation": {
+      "path": "native/research/sprite_validation/original_animation.json",
+      "sha256": "98a4635b26aa7577f6e0c1e14b5926c877167706c125e9ef9e0b3444a35b8832"
+    },
+    "original_placement": {
+      "path": "native/research/sprite_validation/original_placement.json",
+      "sha256": "078c965d01611f8a498310fddd630978b0b51a3e11986ad5176c20fb56fbd99d"
+    },
+    "original_matrix": {
+      "path": "native/research/sprite_validation/original_matrix.json",
+      "sha256": "4b8177654819afab875ce908bcc737730f6d45e12742c40e7d6ea2c465a1a712"
+    }
+  },
+  "native_vertex_stride": 20,
+  "native_vertex_offsets": {
+    "position": 0,
+    "uv": 12
+  },
+  "model_convention": "column-major column vectors, S(0.8)*T*Rx(-45 degrees)",
+  "first_units": [
+    {
+      "type": 11,
+      "tile": [
+        1,
+        2
+      ],
+      "form": 0,
+      "descriptor": 868,
+      "image": 961,
+      "animation": 0,
+      "repeats": -1,
+      "reverse": false,
+      "facing": 1
+    },
+    {
+      "type": 19,
+      "tile": [
+        4,
+        7
+      ],
+      "form": 0,
+      "descriptor": 517,
+      "image": 961,
+      "animation": 0,
+      "repeats": -1,
+      "reverse": false,
+      "facing": 1
+    }
+  ],
+  "native_product_requires_original_executable": false,
+  "native_product_contains_emulator": false,
+  "original_oracle_code_readonly": true,
+  "original_instruction_patches": 0,
+  "matrix_libm_boundary": "host sinf/cosf; old-iOS bit identity not established",
+  "gpu_rendered_by_this_audit": false,
+  "iphone_tested": false,
+  "fps_claim": null,
+  "remaining_scope": [
+    "Metal pixel comparison",
+    "camera/viewport hierarchy",
+    "complete game-state and event execution",
+    "combat",
+    "save persistence",
+    "audio",
+    "device and full-playthrough validation"
+  ],
+  "facing_lookup": {
+    "formula": "type*9 + form*4 + facing",
+    "unit_field": "0x4b",
+    "directions": {
+      "up": 0,
+      "down": 1,
+      "left": 2,
+      "right": 3
+    },
+    "type11_row": [
+      0,
+      0,
+      2,
+      1,
+      5,
+      4,
+      6,
+      7,
+      3
+    ],
+    "type19_row": [
+      0,
+      0,
+      2,
+      1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "first_spawn_delta_multiplier": 1,
+    "special_animation_double_rate_predicate": "current animation equals row[type*9+8] and sprite+0x75 is zero",
+    "form_transition_flag": "unit+0x2e set by0x43a54, consumed at0x6cdae..0x6cdca"
+  },
+  "step_selector": {
+    "original": "0x72cb4",
+    "api": "select_step(uint8_t)",
+    "preserves": [
+      "elapsed_ms",
+      "repeat_count",
+      "reverse",
+      "completed"
+    ],
+    "added_contracts": 2,
+    "original_selector_oracle_run": false
+  }
+}

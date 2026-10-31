@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "passed": true,
+  "compiler": "g++ (C++17, -O2 -Wall -Wextra -Werror -pedantic)",
+  "original_tutorial_cases": 2202,
+  "output_scalar_comparisons": 6606,
+  "original_profile_prefix_roundtrips": 256,
+  "helper_identity_unchanged": true,
+  "consumed_flag_blocks_repetition": true,
+  "default_pending_flag": 1,
+  "host_scope": "Portable helper and original offline oracle only; no UIKit/Metal/device assertion.",
+  "source_sha256": "0533df8b8b2cc896bac9eae2b73554ef90e12ad739c6906a35e9e98d4bb7715a",
+  "test_sha256": "75246f5017ba8ccc6d3a602c38546066fc0379993efa1fa056433aeb9fc4ee04",
+  "fixture_sha256": "44b15c030e78d48920ed9041f122084c89c8b2319a58e7b7baea17b05fff60cc",
+  "original_report_sha256": "608d2427227182ffe64a31b3497b571b84e7c5758436661adc0faa75f83af07a"
+}

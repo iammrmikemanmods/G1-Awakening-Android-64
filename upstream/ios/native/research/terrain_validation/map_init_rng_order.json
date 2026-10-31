@@ -1,0 +1,73 @@
+{
+  "scope": "static unchanged-original map-init stage and initial RNG ordering; not a live trace or complete draw history",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "switch_table_va": "0x56c48",
+  "phase_targets": {
+    "3": "0x56c64",
+    "4": "0x56e50",
+    "5": "0x56e68",
+    "6": "0x56e68",
+    "7": "0x56e90"
+  },
+  "calls": {
+    "0x56e80": "0x5d250",
+    "0x56ea2": "0x5d250",
+    "0x5d2a8": "0x6e254",
+    "0x6eb62": "0x6a2a4",
+    "0x6b63e": "0x64ebc",
+    "0x6eb72": "0x68efc",
+    "0x69b56": "0x2b43c",
+    "0x69b9c": "0x2b43c",
+    "0x69e3c": "0x2b43c",
+    "0x69e84": "0x2b43c",
+    "0x69fe4": "0x2b43c",
+    "0x6a054": "0x2b43c",
+    "0x6a148": "0x2b43c"
+  },
+  "inspected_ranges": [
+    {
+      "start": "0x56c20",
+      "end_exclusive": "0x56c64",
+      "sha256": "cad7cf4ba3506c963fa93e32e5ace520dfb63ddf101cedb53bb2a964e9417ec8"
+    },
+    {
+      "start": "0x56e3c",
+      "end_exclusive": "0x56edc",
+      "sha256": "28afdec40085f15bfe4d68be3cd8abe8dabb1e69666e4060bcbdb79c0261da1a"
+    },
+    {
+      "start": "0x5d250",
+      "end_exclusive": "0x5d2ae",
+      "sha256": "e9039bb1ae0b1484b7e169c705a3fe0729820f33c4d79d510bfd14b8b8b6804c"
+    },
+    {
+      "start": "0x6e254",
+      "end_exclusive": "0x6e2a6",
+      "sha256": "51eb90022fe0258135777cdd99f58fbb0b57655d2785374e2a8e290c130e359e"
+    },
+    {
+      "start": "0x6eb5c",
+      "end_exclusive": "0x6eb7e",
+      "sha256": "1bffc6c81865a6ebcf82df46e33262ac77530cb1ffc6cd3b4022b42082fd8582"
+    },
+    {
+      "start": "0x6b606",
+      "end_exclusive": "0x6b660",
+      "sha256": "ce8346a90761d4f7092f32ecc27d7b9538aad41d3b200e3a21390a09eaf065a4"
+    },
+    {
+      "start": "0x68efc",
+      "end_exclusive": "0x6a25a",
+      "sha256": "75a7cbc71123333a7f6d1c23d7475bd888f7245a24b09aa36c789502a1b89774"
+    }
+  ],
+  "original_image_modified": false,
+  "following_opcode6_requires_opcode9_stages_complete": true,
+  "initial_pool_before_following_spawn": true,
+  "stage2_additional_rng_calls_present": true,
+  "stage2_draw_count_proven": false,
+  "complete_timed_update_schedule_proven": false,
+  "historical_seed_proven": false,
+  "independent_dispatcher_cross_check": "binary_audit confirmed phase normalization, stage arguments, cursor decrement and phase7 completion",
+  "note_sha256": "275238e8f212118ede4e421c60ee0f7201c8fed6415abe2406a624d3dde7619d"
+}

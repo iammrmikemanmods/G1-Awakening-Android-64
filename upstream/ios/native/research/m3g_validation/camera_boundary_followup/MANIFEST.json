@@ -1,0 +1,43 @@
+{
+  "kind": "fixture-only camera libm boundary correction",
+  "files": [
+    {
+      "path": "analysis_tools/m3g/camera_oracle.py",
+      "base_sha256": "dbc007fa33e0e23a75ed26833ea1fe72d40da3aaf7dff6b0be3b9c930953c9da",
+      "proposed_sha256": "d89c6e6bad07237423cfed4df4477c2c3f9b868f57a6062160102548e6f67171",
+      "bytes": 11103
+    },
+    {
+      "path": "native/research/M3G_CAMERA.md",
+      "base_sha256": "c72c7bd3c0054a82e082a71fe465ec114dbae3a96a38bd5f1370e46d5f0633ea",
+      "proposed_sha256": "ef29d3bad08ae738d89fd881d0a977d9747f728613295aeb0a2e7247549c4edb",
+      "bytes": 10332
+    },
+    {
+      "path": "native/research/m3g_validation/original_camera_projection_boundaries.json",
+      "base_sha256": null,
+      "proposed_sha256": "e7d8e3c369d6214162fadb7a7c7130adeb19525e622c7d3d4195565a87af53ea",
+      "bytes": 12042
+    },
+    {
+      "path": "native/tests/m3g_camera_fixture.hpp",
+      "base_sha256": "dc6d39f420534c965a5ff655bc43e518e42f1d34e3563a148868bf0fd23cc5e5",
+      "proposed_sha256": "06e24df75b45cc6a9d8d8b7acc82c83b1f7be656c5fe656b0881073e2f970e28",
+      "bytes": 7042
+    },
+    {
+      "path": "native/tests/m3g_camera_test.cpp",
+      "base_sha256": "b9928f5c35d68e4935e8d9dc711d29d805c94cfc2231cf3596ba304719546ee4",
+      "proposed_sha256": "bcd9facb1c0a47220bed18374a631b687f0889e59c6ce5f43a202b74bb8d182c",
+      "bytes": 7379
+    }
+  ],
+  "canonical_files_unchanged": {
+    "native/src/M3GCamera.cpp": "5344397d24736ae86eab134d5a3ca7b5fe6b7c7870bb346a29187e12062e32a2",
+    "native/include/g1/M3GCamera.hpp": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04",
+    "native/research/m3g_validation/original_camera_projection.json": "6aaedd0bfc4f6d53b2b9cf511a5ba99693f75d111a7ac4465a67782669eebcc1"
+  },
+  "patch_sha256": "4c9f045be348a41f5c0fd579fa6cbdbcc982a2e847a7f0703e8bc1532cb6b88b",
+  "validation": "focused_test_gnu.json and validation.json",
+  "apple_validation": "pending hosted rerun"
+}

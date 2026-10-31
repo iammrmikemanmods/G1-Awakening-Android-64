@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "kind": "all_lower_boundaries",
+      "exit_code": 0,
+      "stdout": "{\"original_cases\":12,\"projection_comparisons\":192,\"native_contracts\":40,\"target_tanf_cases\":6,\"historical_host_tanf_differences\":2,\"tanf_boundaries\":[{\"case\":0,\"input_bits\":1048971922,\"target_output_bits\":1049178275,\"historical_output_bits\":1049178275,\"lower_bits\":1049178275,\"upper_bits\":1049178276},{\"case\":1,\"input_bits\":1057360530,\"target_output_bits\":1058262330,\"historical_output_bits\":1058262331,\"lower_bits\":1058262330,\"upper_bits\":1058262331},{\"case\":2,\"input_bits\":1061752795,\"target_output_bits\":1065353216,\"historical_output_bits\":1065353216,\"lower_bits\":1065353216,\"upper_bits\":1065353217},{\"case\":3,\"input_bits\":1007614517,\"target_output_bits\":1007614754,\"historical_output_bits\":1007614755,\"lower_bits\":1007614754,\"upper_bits\":1007614755},{\"case\":4,\"input_bits\":1065749138,\"target_output_bits\":1071494104,\"historical_output_bits\":1071494104,\"lower_bits\":1071494104,\"upper_bits\":1071494105},{\"case\":5,\"input_bits\":1053364187,\"target_output_bits\":1054086093,\"historical_output_bits\":1054086093,\"lower_bits\":1054086093,\"upper_bits\":1054086094}],\"passed\":true}",
+      "stderr": ""
+    },
+    {
+      "kind": "all_upper_boundaries",
+      "exit_code": 0,
+      "stdout": "{\"original_cases\":12,\"projection_comparisons\":192,\"native_contracts\":40,\"target_tanf_cases\":6,\"historical_host_tanf_differences\":4,\"tanf_boundaries\":[{\"case\":0,\"input_bits\":1048971922,\"target_output_bits\":1049178276,\"historical_output_bits\":1049178275,\"lower_bits\":1049178275,\"upper_bits\":1049178276},{\"case\":1,\"input_bits\":1057360530,\"target_output_bits\":1058262331,\"historical_output_bits\":1058262331,\"lower_bits\":1058262330,\"upper_bits\":1058262331},{\"case\":2,\"input_bits\":1061752795,\"target_output_bits\":1065353217,\"historical_output_bits\":1065353216,\"lower_bits\":1065353216,\"upper_bits\":1065353217},{\"case\":3,\"input_bits\":1007614517,\"target_output_bits\":1007614755,\"historical_output_bits\":1007614755,\"lower_bits\":1007614754,\"upper_bits\":1007614755},{\"case\":4,\"input_bits\":1065749138,\"target_output_bits\":1071494105,\"historical_output_bits\":1071494104,\"lower_bits\":1071494104,\"upper_bits\":1071494105},{\"case\":5,\"input_bits\":1053364187,\"target_output_bits\":1054086094,\"historical_output_bits\":1054086093,\"lower_bits\":1054086093,\"upper_bits\":1054086094}],\"passed\":true}",
+      "stderr": ""
+    },
+    {
+      "kind": "outside_boundary_rejected",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "FAIL: target tanf is outside the proven adjacent-float bracket: case=0 type=50 parameters=[30,1.5,2,5000] tanf_input=0x3e860a92 target_tanf=0x3e8930a5 historical_host_tanf=0x3e8930a3 tangent_bounds=[0x3e8930a3,0x3e8930a4]"
+    },
+    {
+      "kind": "one_ulp_matrix_error_rejected",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "FAIL: original camera projection bits differ: case=0 type=50 parameters=[30,1.5,2,5000] tanf_input=0x3e860a92 target_tanf=0x3e8930a3 historical_host_tanf=0x3e8930a3 tangent_bounds=[0x3e8930a3,0x3e8930a4] element=14 actual=0xc0800d1c expected=0xc0800d1d"
+    }
+  ],
+  "passed": true
+}

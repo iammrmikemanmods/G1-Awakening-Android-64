@@ -1,0 +1,90 @@
+{
+  "scope": "Native first-mission GameSession and UIKit/Metal UI integration",
+  "source_frozen": true,
+  "source_sha256": {
+    "native/platform/apple/NativeApp.mm": "3b2e86456032a637793b4a5fe08f2dd443b41c9408e6034c7d1101cba4edf6a5",
+    "native/platform/apple/NativeDialogue.hpp": "ed05f1d832cab3d24e294ab5b802e6ecadfd4b077fc90ef45472e1932523bbfc",
+    "native/include/g1/SpriteAnimation.hpp": "11ad554fa9bfe469fb49adb8b5b041d7e9801878f23cbb72be02c4b64cb82a70",
+    "native/src/SpriteAnimation.cpp": "8469a57e5149757e9f531fe1e6f68f17d6281d535c94b155fe612ae8ef1df564",
+    "native/tests/sprite_animation_test.cpp": "81b426bfedf725b383ff339ebc2d8884f55f1a98a7a1f957db18798358a12ac3",
+    "native/research/SPRITE_RENDERING.md": "0c26611e0468f67f11cdb2003d2ec14baf739177f83a7c0cae55b19ebdf405c1",
+    "native/research/SPRITE_RENDERING.json": "d2020a9d29ab549d4638b7fe0319d0e37512cdb47007d1998ac5aae14ac2ea18",
+    "native/research/NATIVE_GAMEPLAY_UI.md": "017f739b162a69107418b0b55b85f358a88baac08fed3a304e85f1b3851537ca",
+    "native/platform/apple/AppleAudio.hpp": "eacbb06584a93fffc07c9510df8c8c13fae950bf545b20a89896a5a34ea170fd",
+    "native/platform/apple/AppleAudio.mm": "c9ea90c338a429392d97b8316c8915bcefda32a60c39439017f54d72d63537f9",
+    "native/platform/apple/NativeBattle.hpp": "34ca6a80ac3ae8aca32124db9e94545b17c240a550e6d543200ad8e92c93f729",
+    "native/research/NATIVE_BATTLE_PRESENTATION.md": "a8cf4196adf635ad5c42eec5ba1ad18393cb19b0d84b700cf2065a6c1bbd9c08"
+  },
+  "validation": {
+    "sprite_animation_contracts_passed": 26,
+    "bounded_independent_dialogue_review": "no first-session blocker; future session handoff must invalidate caches/callbacks",
+    "apple_compilation_performed": false,
+    "iphone_test_performed": false,
+    "fps_claim": null
+  },
+  "native_policy": {
+    "simulation_step_ms": 30,
+    "camera_non_immediate_pan_ms": 360,
+    "camera_projection": "inspection, original parity unverified",
+    "dialogue_font": "native system medium 14pt",
+    "dialogue_layout": "actual TextKit line fragments",
+    "dialogue_reveal_completion": "current revision drawRect completed",
+    "dialogue_input_masks": [
+      1,
+      16,
+      128
+    ],
+    "camera_ack": "reached target and positive actual Metal presentedTime",
+    "movement_interpolation": "previous/current model translation"
+  },
+  "actions_connected": [
+    "ordinary empty-destination move",
+    "capture",
+    "transform",
+    "attack with core-validated targets and exchange result"
+  ],
+  "completion_requests": "audio forwarded to native host; text presentation pending",
+  "audio_playback_implemented": true,
+  "end_turn_exposed": false,
+  "full_gameplay_implemented": false,
+  "full_campaign_verified": false,
+  "save_reload_verified": false,
+  "product_original_executable": false,
+  "product_interpreter": false,
+  "remaining": [
+    "Apple compile/link",
+    "iPhone XR iOS17.5 validation",
+    "full sound-event coverage and device audio",
+    "site visual updates",
+    "complete AI/campaign/save integration",
+    "original camera/font/UI and battle cinematic fidelity",
+    "sustained presentation/content/game-time measurements"
+  ],
+  "audio_device_audibility_verified": false,
+  "audio_wiring": {
+    "startup_preload_groups": [
+      0,
+      1,
+      2
+    ],
+    "skip_dialogue": [
+      5,
+      18
+    ],
+    "capture": [
+      5,
+      12
+    ],
+    "transform": "actual TransformResult.audio_event_in_group5",
+    "completion": "actual CompletionPresentation.audio_requests",
+    "soundtrack_selection_invented": false
+  },
+  "battle_presentation": {
+    "type": "native HP before/result panel, not original 3D cinematic",
+    "without_counter_ms": 1500,
+    "with_counter_ms": 2100,
+    "completion": "initial draw, native timeline, final draw, explicit user Continue, matching session token",
+    "auto_acknowledgement": false,
+    "gameplay_health_written_by_view": false
+  }
+}

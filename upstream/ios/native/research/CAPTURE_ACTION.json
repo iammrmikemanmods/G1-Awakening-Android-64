@@ -1,0 +1,26 @@
+{
+  "status": "frozen_native_component",
+  "scope": "capture eligibility, target selection, ownership/link mutation and counter refresh; typed presentation requests",
+  "host_contracts_passed": 20,
+  "original_cases": 304,
+  "original_network_function_cases": 192,
+  "original_selection_block_cases": 64,
+  "original_mutation_prefix_cases": 48,
+  "native_original_exact_match": true,
+  "original_ui_audio_renderer_executed": false,
+  "original_binary_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "instruction_patches": 0,
+  "function_stubs": 0,
+  "native_product_contains_original_code_or_cpu_runtime": false,
+  "files": {
+    "native/include/g1/CaptureAction.hpp": "6da2441c3e6b225546b9ae30f7aae447f124ffe9b8981487e66db0448dacfa54",
+    "native/src/CaptureAction.cpp": "63aa811da8b9f910b79526883dd96160f14a61ef3d7660018120698fda20a401",
+    "native/tests/capture_action_test.cpp": "3ab201a77e1edb23f8a79ce2f6ad5beeb094c358bd9a22e8d102f10e1ba34c82",
+    "native/research/CAPTURE_ACTION.md": "80901d0edf2540f0fc3015669604ea0e14e2fba6fd888d1844e62db0e80ae820",
+    "native/research/capture_action_validation/original_capture.json": "194133e56ce693d5de27bc34fe07052caa0d28517e69ce0befd089051b596e53",
+    "analysis_tools/capture_action/oracle.py": "8368f9e6be9000c2435270e39d2bdb09414478faa34392fa17f1370308a8b4f3",
+    "analysis_tools/capture_action/probe.cpp": "fe47619563c2ba414d338e913f0cad7583a4e60c761321005f1ffe8dab451d69",
+    "analysis_tools/capture_action/README.md": "6adaf7e1625183506b2909371f409e263bf9ab9d31fad54955358607ca3eade2"
+  },
+  "cold_start_note": "Helper counters default1,1; actual cold session explicitly sets0,0 before real turn refresh"
+}

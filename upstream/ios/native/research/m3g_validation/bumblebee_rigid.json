@@ -1,0 +1,247 @@
+{
+  "scope": "Native serialized rigid subtree geometry versus independent original-data decoder",
+  "model_sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+  "native_probe_sha256": "517db3021cbb68c0ed114e635632fb41df3b6ed3566ade3610fd91f53980fa6a",
+  "user_id": 838542512,
+  "root_object": 221,
+  "objects": 233,
+  "mesh_count": 22,
+  "surface_count": 34,
+  "vertex_count": 6960,
+  "exact_vertex_bytes_compared": 445440,
+  "matrix_scalar_comparisons": 1424,
+  "maximum_matrix_absolute_error": 8.213497313391827e-07,
+  "matrix_tolerance": 2e-05,
+  "matrix_reference": "Independent double Rodrigues/TRSM and hierarchy, not original engine execution",
+  "surfaces": [
+    {
+      "mesh": 57,
+      "submesh": 0,
+      "vertices": 48,
+      "geometry_sha256": "7a3a58cf21c3476937aed8134fea44e2154e93b3c1f40d1e85cfff84c645a202"
+    },
+    {
+      "mesh": 62,
+      "submesh": 0,
+      "vertices": 63,
+      "geometry_sha256": "79db889181e20d6b0198840197a9d45ebc1ca772fddfae5e90e3e178e95e6949"
+    },
+    {
+      "mesh": 69,
+      "submesh": 0,
+      "vertices": 174,
+      "geometry_sha256": "0ef9fc0f8b5025a2911e4d227a570aaad37661234dc34e144aa5e5a1ef836b42"
+    },
+    {
+      "mesh": 69,
+      "submesh": 1,
+      "vertices": 330,
+      "geometry_sha256": "d62aceec3d0a6908e2f1f5ea4c687e692db3047b83edaeed671c605fc478ca59"
+    },
+    {
+      "mesh": 69,
+      "submesh": 2,
+      "vertices": 57,
+      "geometry_sha256": "2303f8c5aac7ba3651a7d814103508569a4826cac5b018ef2a55e8cdd14e825b"
+    },
+    {
+      "mesh": 76,
+      "submesh": 0,
+      "vertices": 93,
+      "geometry_sha256": "ecb351fbd6cc01490f263e5f68c12aced11f4d26b5dc268b9b83cfc555c52ad4"
+    },
+    {
+      "mesh": 76,
+      "submesh": 1,
+      "vertices": 306,
+      "geometry_sha256": "4c564cc74e18ff6a0c54c12df0c6257d723852a1f60434bfebacc969aeb23d2b"
+    },
+    {
+      "mesh": 76,
+      "submesh": 2,
+      "vertices": 54,
+      "geometry_sha256": "058ba05f5847caf640cabec2abe3d6a8c1fa4d613ea1e3fd8c81b64a97f83dea"
+    },
+    {
+      "mesh": 91,
+      "submesh": 0,
+      "vertices": 111,
+      "geometry_sha256": "8685a055613ec782cdcd07270e637ee5d9e3bd12ef9be4043300a19fc568b1d5"
+    },
+    {
+      "mesh": 98,
+      "submesh": 0,
+      "vertices": 174,
+      "geometry_sha256": "32ed2f4a6b7ecd5e1c152f3e8b30f0c02f092326cbfa9c34c9459ef207679984"
+    },
+    {
+      "mesh": 98,
+      "submesh": 1,
+      "vertices": 315,
+      "geometry_sha256": "8b522f9cda1eb98a3fc1c0d56cde16b319d274d7bb267754353f50c1e0a0188c"
+    },
+    {
+      "mesh": 98,
+      "submesh": 2,
+      "vertices": 54,
+      "geometry_sha256": "08d6c2e5491139374ee8364c3a7bc6e45570dab9ae5daf3056b1d65c2dae093a"
+    },
+    {
+      "mesh": 105,
+      "submesh": 0,
+      "vertices": 96,
+      "geometry_sha256": "5f4b68f170a08e61372aaec5ccb91dd8e14791148022fb7b8153a628dfdab869"
+    },
+    {
+      "mesh": 105,
+      "submesh": 1,
+      "vertices": 312,
+      "geometry_sha256": "07a8c9dde4cb44ee342be352f440ba2e8c4407c32ca8d61e6a8b881a57691598"
+    },
+    {
+      "mesh": 105,
+      "submesh": 2,
+      "vertices": 57,
+      "geometry_sha256": "967e40903bdbed09d60249a7da93342b9a9740cbce1d13457b1007bcc747cd8d"
+    },
+    {
+      "mesh": 115,
+      "submesh": 0,
+      "vertices": 48,
+      "geometry_sha256": "dfca35e0f297e95e775e9237aac986e1de46368339b8fdf357200172d80d6d6d"
+    },
+    {
+      "mesh": 120,
+      "submesh": 0,
+      "vertices": 63,
+      "geometry_sha256": "548e8c98ebfb76e308ce49ff1529d755df3c8002eb2104ec3e58ac11321b5d5b"
+    },
+    {
+      "mesh": 132,
+      "submesh": 0,
+      "vertices": 336,
+      "geometry_sha256": "c94ae5de8843a3a235e242ad2ce156fd36b1250a5f5d0b9d62f5ecbd229ec87d"
+    },
+    {
+      "mesh": 132,
+      "submesh": 1,
+      "vertices": 42,
+      "geometry_sha256": "1ac7d6321d9461b3397da0fa4402c28016c4dcef1ddacd5e0f1435a2506f1759"
+    },
+    {
+      "mesh": 132,
+      "submesh": 2,
+      "vertices": 150,
+      "geometry_sha256": "bacb6c2577adcf2837f5060f9a99620d110f7f45bf7182ed3ef64e9f871c3c7b"
+    },
+    {
+      "mesh": 137,
+      "submesh": 0,
+      "vertices": 474,
+      "geometry_sha256": "666f7155452b8e3f7ea194d1e2aa5b3f0bac1972dc53c1fe0cd7242d65ddbb6a"
+    },
+    {
+      "mesh": 142,
+      "submesh": 0,
+      "vertices": 477,
+      "geometry_sha256": "1fede0d06d4fdc89e0303829e0805aa762672eb0b5073e95d0380329a64a53db"
+    },
+    {
+      "mesh": 150,
+      "submesh": 0,
+      "vertices": 102,
+      "geometry_sha256": "f700c248577eafdf71699d82a5bdd18cb775313a32e5ccb6dad0c33098bc4523"
+    },
+    {
+      "mesh": 155,
+      "submesh": 0,
+      "vertices": 114,
+      "geometry_sha256": "ff21f1ad719965d96dee470b9cf0bad2de5bf4d8b26a553c0ffe160812965682"
+    },
+    {
+      "mesh": 163,
+      "submesh": 0,
+      "vertices": 504,
+      "geometry_sha256": "b9968eb949465dcc646a866ec89eaceb0fabd1eb78fe788f4c76af3ac9611127"
+    },
+    {
+      "mesh": 168,
+      "submesh": 0,
+      "vertices": 576,
+      "geometry_sha256": "505348bd8fcf470acb57fded0978b6a8d1f7778ff2645dd77f8821b36704122f"
+    },
+    {
+      "mesh": 178,
+      "submesh": 0,
+      "vertices": 114,
+      "geometry_sha256": "c191fc7a44f7255479a0279a34211ba88679f81f784b9d6cd8261ec99aa64c4c"
+    },
+    {
+      "mesh": 183,
+      "submesh": 0,
+      "vertices": 96,
+      "geometry_sha256": "8196b61a944cf6e63a8e18421a4e53e42a3ed78355c295ccfaf4d5f104bdcb7d"
+    },
+    {
+      "mesh": 195,
+      "submesh": 0,
+      "vertices": 324,
+      "geometry_sha256": "8ca04a6dc12b7755d84effcdd4068ae431bc26e49b57caa5315a16cc9cdf362e"
+    },
+    {
+      "mesh": 195,
+      "submesh": 1,
+      "vertices": 39,
+      "geometry_sha256": "5fa87e034e0cde54e5e8b78f5565e6ba0583c0362a8ec0407b7ad04a876f4614"
+    },
+    {
+      "mesh": 195,
+      "submesh": 2,
+      "vertices": 153,
+      "geometry_sha256": "dbdf181645eeb74477127dd3906951993bf1a1609c9815926c7ad8da8fae7216"
+    },
+    {
+      "mesh": 200,
+      "submesh": 0,
+      "vertices": 471,
+      "geometry_sha256": "3dd8653f8cafcfa2c35f81fc6acb24f8194b245bed635620ff1b13582b156bd9"
+    },
+    {
+      "mesh": 205,
+      "submesh": 0,
+      "vertices": 516,
+      "geometry_sha256": "9c27adbcc3f8f47327fb8c8b78363aa24fcdd8d5f464dcaccfd1e5832440aed2"
+    },
+    {
+      "mesh": 216,
+      "submesh": 0,
+      "vertices": 117,
+      "geometry_sha256": "2a11aa63c2cd9226e979a25d9844f1794ef2898f9454661bab2c285bfd2129b3"
+    }
+  ],
+  "images": [
+    {
+      "object": 40,
+      "width": 256,
+      "height": 256,
+      "rgba_sha256": "827928dac691aecd834386ee628cbac5259efa522c87eecaa5a49a5c12be2263",
+      "bytes": 262144
+    },
+    {
+      "object": 54,
+      "width": 256,
+      "height": 128,
+      "rgba_sha256": "508ba797c630d623fcb34988b294b68aa6b9e6ae2a17c9d83584d1812434b8e9",
+      "bytes": 131072
+    }
+  ],
+  "serialized_pose_only": true,
+  "animation_evaluated": false,
+  "gpu_execution": false,
+  "iphone_tested": false,
+  "passed": true,
+  "source_sha256": {
+    "validate.py": "5bae2c249babf6c3b833c63261fe65068c41fb5ec26e1ff90bb62fe049052cee",
+    "reference.py": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404"
+  }
+}

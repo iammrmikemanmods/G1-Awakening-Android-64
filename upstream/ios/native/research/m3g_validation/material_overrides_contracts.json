@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "scope": "Native C++17 source-only fixture and bounded malformed/input contracts; no GPU or Apple execution",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "common_flags": [
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-pedantic"
+  ],
+  "fixture_sha256": "af5a4b4f44027dac70d30ec445458293596b5d638a2652ba180937a7028a179f",
+  "original_fixture_source_report": "original_material_overrides.json",
+  "original_fixture_source_sha256": "6ec43cc903b5f4f3548a44ec4ffc3ebf78ef42bb4b438972277fecb1fabbc59d",
+  "native_test_sha256": "47664677ed33ce332e89039b54eb1d354fd9b38c917ec7b986f90f59198f7896",
+  "executions": [
+    {
+      "executable_sha256": "80aaec1601bb9d152454053eb7a58e71be55d3b5b3a685496bff60e9d625e579",
+      "flags": [
+        "-O2"
+      ],
+      "result": {
+        "original_cases": 40,
+        "original_checks": 272,
+        "contract_checks": 37,
+        "checks": 309,
+        "all_passed": true
+      },
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "executable_sha256": "26d34cb6146b7a9ca64c94eb8c03b944bc2203c3200021c8e3d115c29cc21c71",
+      "flags": [
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all"
+      ],
+      "result": {
+        "original_cases": 40,
+        "original_checks": 272,
+        "contract_checks": 37,
+        "checks": 309,
+        "all_passed": true
+      },
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "independent_review": {
+    "agent": "port_approaches",
+    "scope": "read-only header/source integration and format contract",
+    "concrete_blocker_found": false,
+    "review_reran_full_parity": false
+  },
+  "all_passed": true
+}

@@ -1,0 +1,1078 @@
+{
+  "schema": 1,
+  "scope": "Headless native Showdown completion and all Arena configuration handoffs",
+  "presentation_feedback": "synthetic world/camera/dialogue/focus/transform/battle/results/menu/ending",
+  "device_or_rendered_playthrough": false,
+  "native_gameplay_core_changed": false,
+  "gameplay_state_forced": false,
+  "profile_unlock_flags_forced": false,
+  "counterfactual_state_installed": false,
+  "story_freeze_verified": {
+    "path": "g1_port/research/playthrough_strategy_followup/STORY_COMPLETION_FREEZE.json",
+    "bytes": 13037,
+    "sha256": "cff5a34fc164f8e5f6a2da202e678c9408495bb412b58b4de2a07409adb18ad7"
+  },
+  "actual_story_profile_input": {
+    "path": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+    "bytes": 330,
+    "sha256": "bc7f1b4d472ed8f41937d563663ebd273f91d597d8b7e0f605395c529efd6a56"
+  },
+  "showdown": {
+    "start": "new menu selection of Showdown0 from actual completed Story profile; no session restore",
+    "seed": 18241,
+    "outcome": "native_campaign_ending",
+    "handoffs": [
+      {
+        "group": 1,
+        "index": 0,
+        "resource": 324,
+        "handoff": "next_mission",
+        "first_tick": 0,
+        "last_tick": 517,
+        "active_counts": [
+          1,
+          0
+        ],
+        "record": [
+          17,
+          2,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 1,
+        "resource": 325,
+        "handoff": "next_mission",
+        "first_tick": 518,
+        "last_tick": 1223,
+        "active_counts": [
+          3,
+          0
+        ],
+        "record": [
+          26,
+          3,
+          1
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 2,
+        "resource": 327,
+        "handoff": "next_mission",
+        "first_tick": 1224,
+        "last_tick": 3572,
+        "active_counts": [
+          4,
+          0
+        ],
+        "record": [
+          128,
+          3,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 3,
+        "resource": 328,
+        "handoff": "next_mission",
+        "first_tick": 3573,
+        "last_tick": 3805,
+        "active_counts": [
+          1,
+          0
+        ],
+        "record": [
+          3,
+          1,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 4,
+        "resource": 329,
+        "handoff": "next_mission",
+        "first_tick": 3806,
+        "last_tick": 4193,
+        "active_counts": [
+          2,
+          0
+        ],
+        "record": [
+          7,
+          3,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 5,
+        "resource": 330,
+        "handoff": "next_mission",
+        "first_tick": 4194,
+        "last_tick": 5451,
+        "active_counts": [
+          2,
+          0
+        ],
+        "record": [
+          133,
+          4,
+          1
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 6,
+        "resource": 331,
+        "handoff": "next_mission",
+        "first_tick": 5452,
+        "last_tick": 5637,
+        "active_counts": [
+          1,
+          0
+        ],
+        "record": [
+          4,
+          6,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 1,
+        "index": 7,
+        "resource": 332,
+        "handoff": "campaign_ending",
+        "first_tick": 5638,
+        "last_tick": 5915,
+        "active_counts": [
+          2,
+          0
+        ],
+        "record": [
+          6,
+          2,
+          0
+        ],
+        "profile_written": true
+      }
+    ],
+    "ticks": 5915,
+    "wall_seconds": 51.2683,
+    "simulation_step_ms": 30,
+    "actions": {
+      "commands": 666,
+      "selections": 350,
+      "moves": 81,
+      "attacks": 51,
+      "captures": 13,
+      "transforms": 29,
+      "heals": 46,
+      "upgrades": 120,
+      "productions": 4,
+      "human_end_turns": 322,
+      "ai_turn_entries": 322
+    },
+    "synthetic_feedback": {
+      "world": 8,
+      "camera": 8,
+      "dialogue_ticks": 0,
+      "focus": 869,
+      "transform": 31,
+      "battle": 228,
+      "results": 8
+    },
+    "profile_writes": 8,
+    "next_mission_installs": 7,
+    "exact_in_memory_replay_comparisons": 643,
+    "entry_checkpoint_write_readback_and_temporary_reconstruction_checks": 8,
+    "normal_plan_admission_rejections": 0,
+    "native_exceptions": 0,
+    "search_settle_bounds": 0,
+    "reached_search_budgets": 0,
+    "result": {
+      "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/result.json",
+      "bytes": 4187,
+      "sha256": "1f42f470d3785331d1cc910c921013faa1f29cd861959f91f374194d0235cbeb"
+    },
+    "events": {
+      "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/events.jsonl",
+      "bytes": 635156,
+      "sha256": "67aa663d5976cb5e3d2e1a0f6d1447ab99b27ebd3b889fca06ca3af69c8a7f44"
+    },
+    "reproduction": {
+      "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/reproduction.json",
+      "bytes": 9096,
+      "sha256": "b59432bb6ae0f56e5eb3226a86f166ca20e024819e9fa7a24eb858f6078a596d"
+    },
+    "final_profile_identity": {
+      "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "bytes": 330,
+      "sha256": "eaeffce146ffc4a2bd508fa6a33f9f337f1ca7ece340bda31ef87ab135dd9a85"
+    },
+    "final_profile": {
+      "completed": [
+        true,
+        true
+      ],
+      "highest_unlocked": [
+        17,
+        8
+      ],
+      "records": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          9,
+          5,
+          1
+        ],
+        [
+          8,
+          4,
+          3
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          15,
+          2,
+          4
+        ],
+        [
+          11,
+          0,
+          1
+        ],
+        [
+          11,
+          3,
+          0
+        ],
+        [
+          22,
+          7,
+          1
+        ],
+        [
+          8,
+          5,
+          0
+        ],
+        [
+          6,
+          5,
+          0
+        ],
+        [
+          57,
+          10,
+          0
+        ],
+        [
+          13,
+          6,
+          0
+        ],
+        [
+          32,
+          9,
+          3
+        ],
+        [
+          45,
+          6,
+          1
+        ],
+        [
+          14,
+          6,
+          1
+        ],
+        [
+          6,
+          1,
+          1
+        ],
+        [
+          17,
+          2,
+          0
+        ],
+        [
+          26,
+          3,
+          1
+        ],
+        [
+          128,
+          3,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          7,
+          3,
+          0
+        ],
+        [
+          133,
+          4,
+          1
+        ],
+        [
+          4,
+          6,
+          0
+        ],
+        [
+          6,
+          2,
+          0
+        ]
+      ]
+    },
+    "story_records_preserved": true
+  },
+  "arena": {
+    "input_profile": "actual final profile from the fresh continuous Showdown run",
+    "maps": 5,
+    "faction_choices": 2,
+    "opponent_choices": [
+      "human",
+      "native AI"
+    ],
+    "configurations": 20,
+    "normal_native_menu_handoffs": 20,
+    "profile_writes": 20,
+    "profile_bytes_preserved": true,
+    "entry_checkpoint_write_readback_and_temporary_reconstruction_checks": 20,
+    "winner_counts": {
+      "player0": 11,
+      "player1": 9
+    },
+    "actions": {
+      "commands": 1270,
+      "selections": 768,
+      "moves": 455,
+      "attacks": 298,
+      "captures": 115,
+      "transforms": 143,
+      "heals": 0,
+      "upgrades": 5,
+      "productions": 11,
+      "human_end_turns": 243,
+      "ai_turn_entries": 75
+    },
+    "synthetic_feedback": {
+      "world": 20,
+      "camera": 20,
+      "dialogue_ticks": 0,
+      "focus": 555,
+      "transform": 174,
+      "battle": 393,
+      "results": 0
+    },
+    "ticks": 14215,
+    "normal_plan_admission_rejections": 59,
+    "native_exceptions": 0,
+    "rows": [
+      {
+        "mission": 0,
+        "faction": 0,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 1095,
+        "active_counts": [
+          0,
+          3
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 13,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0/result.json",
+          "bytes": 3861,
+          "sha256": "f13b00835a4aa6ccc85c1b8272ba3427b44ec0e82d070a8925b185c5f4e5ef2d"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0/events.jsonl",
+          "bytes": 39570,
+          "sha256": "c45bfa97e8d4694c5b4a62547af33b9137048401adb2a106795b1bb68be0ab30"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0/reproduction.json",
+          "bytes": 6838,
+          "sha256": "b6c028423bad8d3abc53962c92f7d1b3eb9b322c76f30b951d83ee6ed8570ee2"
+        }
+      },
+      {
+        "mission": 0,
+        "faction": 0,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 902,
+        "active_counts": [
+          0,
+          4
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 2,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1/result.json",
+          "bytes": 3854,
+          "sha256": "7b0038572c9edb8078382c16390a0d1b0fa9a0884390f1e5bc6ddb9e13a9bf73"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1/events.jsonl",
+          "bytes": 26652,
+          "sha256": "2b03936623621703e8ce85dfe0aae43b8cfcc2788ccf9ddf3144d2f0b6505c3a"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1/reproduction.json",
+          "bytes": 6834,
+          "sha256": "bad41f63287bc315be78e36be95c89f556c25cc2a04a803d0d9fbf9ec0e80bae"
+        }
+      },
+      {
+        "mission": 0,
+        "faction": 1,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 1054,
+        "active_counts": [
+          2,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 9,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0/result.json",
+          "bytes": 3861,
+          "sha256": "5a184a8405c602393a742ea9c9fa0c691417cdefb304fdf9792758920dfe07c5"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0/events.jsonl",
+          "bytes": 37287,
+          "sha256": "99f4641229af6e48f107bfea7d3ac1d5b5450c50a683a58b66138858ad9c4a7b"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0/reproduction.json",
+          "bytes": 6838,
+          "sha256": "0bd6c2f0d711270cf9eb217d7411224fcba6480a5a95addc188a877ed72b90aa"
+        }
+      },
+      {
+        "mission": 0,
+        "faction": 1,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 721,
+        "active_counts": [
+          2,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1/result.json",
+          "bytes": 3855,
+          "sha256": "35cfc2cfc8fca5b66070c040d3e886928006b3b34cdcbb528e4495e49c473aff"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1/events.jsonl",
+          "bytes": 23845,
+          "sha256": "b064ee1bd4f66d46a39dfff0d133f23318555318a4d29ba664ba4ee6b4955431"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1/reproduction.json",
+          "bytes": 6835,
+          "sha256": "131873280fb9fdc41ef9051c6674359cce564eebf71f2e407a986a81d9ccb071"
+        }
+      },
+      {
+        "mission": 1,
+        "faction": 0,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 274,
+        "active_counts": [
+          0,
+          2
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 1,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0/result.json",
+          "bytes": 3726,
+          "sha256": "e17d368db5e0773c04b818abcdb555e7a44dd725a25cccd60e1b1babfd220d2e"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0/events.jsonl",
+          "bytes": 16185,
+          "sha256": "44e728a565318522c480768056fdd79ad533111a5558766ebe2de2bf92708eb6"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0/reproduction.json",
+          "bytes": 6835,
+          "sha256": "a3bd499fd06d8b0a2cdbc784fa716cb2387bcabb02c9dab7cb65cc8a6b2a807c"
+        }
+      },
+      {
+        "mission": 1,
+        "faction": 0,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 249,
+        "active_counts": [
+          0,
+          2
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1/result.json",
+          "bytes": 3723,
+          "sha256": "e6e2047283a1a1542b8db8b9812b601e7c2bd84ab3a016411a7fab13587347c2"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1/events.jsonl",
+          "bytes": 14863,
+          "sha256": "7448d9258673148c9bac048c031f4b555845734760eee4e87586eea7e4659b5d"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1/reproduction.json",
+          "bytes": 6833,
+          "sha256": "ca803c99469ee0b164c36afaae4ed59017a8b72b0142eb1ae56467e7f7825d53"
+        }
+      },
+      {
+        "mission": 1,
+        "faction": 1,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 399,
+        "active_counts": [
+          2,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 2,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0/result.json",
+          "bytes": 3731,
+          "sha256": "6f906131eb2c8dfe065c3644847ca8d71adcae8ad7dc187e05111842fc0030b8"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0/events.jsonl",
+          "bytes": 21975,
+          "sha256": "7a1323a13c40a8bd3b8d5c78e2a8bb034c9d16f8631c668a853caef9213fee96"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0/reproduction.json",
+          "bytes": 6836,
+          "sha256": "c459fd30984cb112b5d752e5a6e3d1196cdf1df4fa096002395d0c24398b5f06"
+        }
+      },
+      {
+        "mission": 1,
+        "faction": 1,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 472,
+        "active_counts": [
+          1,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1/result.json",
+          "bytes": 3728,
+          "sha256": "cc7a3f329233ad7de9e60dc054d071db8ee85c098ea10e78d00bb453d476908a"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1/events.jsonl",
+          "bytes": 25641,
+          "sha256": "febe737f56aa6b5658ac37f6c0126b2b4b76416f8fc009f148ac51957e4cf9bb"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1/reproduction.json",
+          "bytes": 6835,
+          "sha256": "6415980d1ea73109d851a5d234bc2162cdcf92ec8edeb8bf41e73309b31fa41d"
+        }
+      },
+      {
+        "mission": 2,
+        "faction": 0,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 881,
+        "active_counts": [
+          0,
+          3
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 11,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0/result.json",
+          "bytes": 4000,
+          "sha256": "553683309024171588f6d7fcc1a9becd80114409b2e2823fe749bafd84324e33"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0/events.jsonl",
+          "bytes": 37050,
+          "sha256": "bcb6ca98a358510796d78740b642f625e41ecf3c4f1aa14e317812ab5a2ad695"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0/reproduction.json",
+          "bytes": 6837,
+          "sha256": "d7ba593081d2d9a93d8bea987ce0cf74fcf59d16072451733ad7b9810c967acb"
+        }
+      },
+      {
+        "mission": 2,
+        "faction": 0,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 958,
+        "active_counts": [
+          0,
+          3
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 3,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1/result.json",
+          "bytes": 3994,
+          "sha256": "112bd2a4570b7592497a9fd6c026e959303199a73d813a83ae9a0655f75bb7fa"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1/events.jsonl",
+          "bytes": 26823,
+          "sha256": "46408dd8f8b3dc6908276501732597c8e3fa698bb6c613e154afbceaa4c7dc5b"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1/reproduction.json",
+          "bytes": 6834,
+          "sha256": "b542e369c1d6802fe4d6558ae53b4dc21320b3fcde044487e1007462ed515304"
+        }
+      },
+      {
+        "mission": 2,
+        "faction": 1,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 1132,
+        "active_counts": [
+          1,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 9,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0/result.json",
+          "bytes": 4003,
+          "sha256": "6a2d83f6a70190c9036755efbd732d1bf624e74a52206f8da51f0f1fe7de9d2f"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0/events.jsonl",
+          "bytes": 51113,
+          "sha256": "f5f3f1c01260dbb796986f1240afc114c1507f83a1ab8416525a0ddf5aad58d1"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0/reproduction.json",
+          "bytes": 6839,
+          "sha256": "5b27585a801842a707754d2c7e2a16d921632f8c0a0fbe94c5cf231ffec8bdb5"
+        }
+      },
+      {
+        "mission": 2,
+        "faction": 1,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 997,
+        "active_counts": [
+          2,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 2,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1/result.json",
+          "bytes": 3994,
+          "sha256": "ef057eff47a3b9bb1ed47d6307c3d32586e6ada300d67e486309e27cea0a2849"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1/events.jsonl",
+          "bytes": 30720,
+          "sha256": "14ab520d47db1c9cd20950f08ca27a6caeb1b4136cbeb0f96fb71902b66681dc"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1/reproduction.json",
+          "bytes": 6834,
+          "sha256": "a53bc3495cbe6d0ccc7dc02b6e22d449934d8451868b443cc12660a1f2f15ae7"
+        }
+      },
+      {
+        "mission": 3,
+        "faction": 0,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 379,
+        "active_counts": [
+          3,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 3,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0/result.json",
+          "bytes": 4203,
+          "sha256": "bd480803016bc4c3d260f871d217831540b2916688aed1369da72c92967ee2de"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0/events.jsonl",
+          "bytes": 43617,
+          "sha256": "89990508ad8b1c400d9c85116eae8aa0e6c846ca160f576d26b82f31c939c54e"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0/reproduction.json",
+          "bytes": 6836,
+          "sha256": "bded17ffef2ac9c229af2eaae1db82f751f3d9621d597c0869979869fc9917ba"
+        }
+      },
+      {
+        "mission": 3,
+        "faction": 0,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 543,
+        "active_counts": [
+          0,
+          2
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 2,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1/result.json",
+          "bytes": 3856,
+          "sha256": "5d611d90f317a2d4c77012ab485c0fbf928f75d74cc120ac7d4b2b1f8604e1ab"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1/events.jsonl",
+          "bytes": 28381,
+          "sha256": "35e0b1127971e83a6783390a8d0a8f7ee1ebc9d21174a71a351041fdf0ec213d"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1/reproduction.json",
+          "bytes": 6835,
+          "sha256": "19e5a2c52c74f328cfd7e6f06c46797511510abc2c4ddf550386225dbd2f138d"
+        }
+      },
+      {
+        "mission": 3,
+        "faction": 1,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 324,
+        "active_counts": [
+          4,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0/result.json",
+          "bytes": 3686,
+          "sha256": "2699452d7e472c5462e9fbc845f8b00feaf8ad376ce459f556c40303ade2a69d"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0/events.jsonl",
+          "bytes": 20697,
+          "sha256": "cafa2c43fa45e0b6695edd2899665b0c4902216770b74bb46d6b9ff0e89258a3"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0/reproduction.json",
+          "bytes": 6836,
+          "sha256": "96acbfce7f9f593cdee034499a387650f3cebba4ed459a06f19c51c0cf7dff96"
+        }
+      },
+      {
+        "mission": 3,
+        "faction": 1,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 392,
+        "active_counts": [
+          4,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1/result.json",
+          "bytes": 3681,
+          "sha256": "94222b12a1da896e09822380380d5e595d0b738af6e7a83318844a816ba1aa6d"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1/events.jsonl",
+          "bytes": 21601,
+          "sha256": "7ca2c28b676dba28efd63fa57a0e1a2f970ff04a0dc0b42798800e4eaa707b5e"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1/reproduction.json",
+          "bytes": 6833,
+          "sha256": "027a291eb7e32984beee046f274ea6f02bcb3731d7c57834d080cff6083fd0cc"
+        }
+      },
+      {
+        "mission": 4,
+        "faction": 0,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 879,
+        "active_counts": [
+          0,
+          2
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 2,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0/result.json",
+          "bytes": 3825,
+          "sha256": "e91591356cd406fd435677eaac8514dbcbdc70fdcedd13e60465257aedd4139c"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0/events.jsonl",
+          "bytes": 30609,
+          "sha256": "11cfd8530750fc0dc1a3fb52720e1b08fc9e16dc5509499f2065e0367a874567"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0/reproduction.json",
+          "bytes": 6837,
+          "sha256": "21fce80f96a711c7240c531bd579d7a5ae0b423c8d44affe49e3343f64aeb05e"
+        }
+      },
+      {
+        "mission": 4,
+        "faction": 0,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 1,
+        "outcome": "native_arena_finished",
+        "ticks": 936,
+        "active_counts": [
+          0,
+          2
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1/result.json",
+          "bytes": 3821,
+          "sha256": "cffae822f0858a3aab08bc528278b6585af87552784f04f0636e92dd5cc2904b"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1/events.jsonl",
+          "bytes": 25827,
+          "sha256": "ef7011fe5666e1b84a6ad922d14e7f2947bf8c351baccab89daee1cf14f49a62"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1/reproduction.json",
+          "bytes": 6834,
+          "sha256": "80fa209d6c586ff9cef58104ddc929478961089981f1d3b8dd90f5f22e2ddda5"
+        }
+      },
+      {
+        "mission": 4,
+        "faction": 1,
+        "opponent": 0,
+        "opponent_kind": "human",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 772,
+        "active_counts": [
+          3,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0/result.json",
+          "bytes": 3822,
+          "sha256": "7428fbfe321751cdcfab07bcd35e14764c54651d7c6a3dbceb966f0fd1b4e8f5"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0/events.jsonl",
+          "bytes": 26531,
+          "sha256": "33fb0d604dd2d202f8fca4dadc67e4533d844076156060e8e8c8d356952c3aeb"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0/reproduction.json",
+          "bytes": 6836,
+          "sha256": "fd12c00cce349d180625eedda5cd0a318e6d807136ff953647aa4fbd07cc8821"
+        }
+      },
+      {
+        "mission": 4,
+        "faction": 1,
+        "opponent": 1,
+        "opponent_kind": "native AI",
+        "winner_player": 0,
+        "outcome": "native_arena_finished",
+        "ticks": 856,
+        "active_counts": [
+          3,
+          0
+        ],
+        "profile_writes": 1,
+        "entry_checkpoint_writes": 1,
+        "profile_bytes_preserved": true,
+        "normal_plan_admission_rejections": 0,
+        "result": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1/result.json",
+          "bytes": 3818,
+          "sha256": "2f701c782a4fd12541f860397a56326a6e018cc9880448011172fe7e677e97e2"
+        },
+        "events": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1/events.jsonl",
+          "bytes": 23239,
+          "sha256": "0eaeb62dc7c441cfc5754b3028be47bfa46596be19784a6510efbb80852cbda3"
+        },
+        "reproduction": {
+          "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1/reproduction.json",
+          "bytes": 6835,
+          "sha256": "a3b1a3aa6e5b927073435751af66fb8b41ec439e24ff1bc89adf14f3c16776a3"
+        }
+      }
+    ]
+  },
+  "method_limits": [
+    "A single explicit seed per menu start and one bounded legal command path; not exhaustive player-choice coverage.",
+    "All presentation feedback is synthetic; no UIKit/Metal/audio/lifecycle/device/frame-pacing validation.",
+    "Replay comparisons are in-memory checks, separate from entry checkpoint files.",
+    "Normal read-only AI advice may be rejected by stricter human command admission; it never bypasses that admission.",
+    "Raw generic strategy text mentions real opponent AI; arena_opponent and ai_turn_entries identify the ten human-opponent runs, where both players receive public human commands."
+  ],
+  "proof_chain": [
+    "fresh Story0\u201316 completion retained in separate immutable Story freeze",
+    "actual completed Story profile read by native menu admission for fresh Showdown0\u20137",
+    "Showdown completion writes the actual Arena unlock flag",
+    "each of 20 Arena menu starts reads that exact Showdown-complete profile"
+  ],
+  "current_build_core_comparison": {
+    "compiled_commit_prefix": "083057b",
+    "matching_existing_files": 120,
+    "changed_existing_files": 0,
+    "added_excluded_headers": [
+      {
+        "path": "native/include/g1/AudioMaintenance.hpp",
+        "sha256": "56fe008b5846b6a0f46b93e1525273a17fc5906fafb62797176907b66cfa3bac",
+        "reason": "Added header absent from frozen pilot library inputs; presentation/music maintenance has separate validation."
+      },
+      {
+        "path": "native/include/g1/MenuMusic.hpp",
+        "sha256": "e4537498fab6ec64471ca0bd9e41cdff930d52172f36c99e1295c522bb20fe32",
+        "reason": "Added header absent from frozen pilot library inputs; presentation/music maintenance has separate validation."
+      }
+    ],
+    "evidence": "MODE_CORE_SOURCE_COMPARISON.json"
+  }
+}

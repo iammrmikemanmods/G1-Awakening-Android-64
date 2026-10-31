@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "original_cases": 192,
+  "native_comparisons_and_guards": 7685,
+  "output_fields_per_case": 37,
+  "source_sha256": {
+    "include/g1/UnitSpawn.hpp": "ea2a2365909deaf668b78fcf0be2c4864f5defffc53ad163fb27265fb0d4d27f",
+    "src/UnitSpawn.cpp": "1a6e77d6b1d57eaac69274d3fa76091b010c0412bf27ab1bb0c3ae44c18b64a4",
+    "tests/unit_spawn_test.cpp": "67464ec71bb1be61ca8113476fe7092fba302b0b74e24fa62d99225ca7eb4571",
+    "tests/unit_spawn_original_vectors.txt": "f5b518a31e605ba8f254fe8ad96079d5eaa42c7a9bbb4591c3ab8a13ab6dcf88"
+  },
+  "original_reference": "unit_spawn_validation/original_unit_spawn_reference.json",
+  "limits": [
+    "Pure native activation result only; caller owns action admission, ordered funds, owner slots/counts and rendering.",
+    "Special-placement modifiers are explicit, not inferred from campaign.",
+    "Pending animation byte2e remains external and preserved.",
+    "No Apple/device/campaign validation from this test."
+  ],
+  "active_count_contract": "Each activation emits active_count_increment=1, even for a repeated active type; apply byte wrapping. Map installation resets original counts."
+}

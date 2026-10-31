@@ -1,0 +1,242 @@
+{
+  "scope": "Eleven actual style1 campaign grids, original first-pass count and interior two-surface geometry",
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "tables_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+  "config_resource_id": 307,
+  "config_sha256": "1f3a38cb119bf213df68bc46951a903a9e0f70fa77bfcfe13d15f8248b3df8f6",
+  "config_row_counts": [
+    3,
+    3,
+    5,
+    2
+  ],
+  "resource_manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "unicorn_version": "2.1.4",
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "oracle_source_sha256": "28ece8384423a5093593ca787a30e7f6d236428819c860eaa18ab35d69f0b1e2",
+  "native_probe_sha256": "869de5d98ae0760f5b65200ca63d7dc179b33f1e7904f00c9f21648f27d5a6ce",
+  "original_blocks": [
+    "0x6a3cc..0x6a782",
+    "0x6ae1a..0x6af02",
+    "0x6af02..0x6b1e8"
+  ],
+  "original_functions": [
+    "0x474a0",
+    "0x45a54",
+    "0x45a5e",
+    "0x65310",
+    "0x714c0"
+  ],
+  "substitutions": [
+    "bounded allocation/free and exact imported memset",
+    "M3G API recording and ownership",
+    "engine singleton",
+    "unwind registration",
+    "triangle-strip factory"
+  ],
+  "entry_state": "Actual grid and config data in original object layout; zero camera padding and previous_mask16 at each interior row",
+  "cases": [
+    {
+      "grid_resource_id": 258,
+      "grid_sha256": "19ad753d282141f6226459717bf7a6438a0783ee908a75070810b9bf04d42007",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 117,
+      "original_decoration_slots": 16,
+      "base_quads": 212,
+      "animated_quads": 22,
+      "original_neighbor_masks_sha256": "1b83788cda1050bddbf5a92cd979463febc843c33361521a65b8846fcf7b4cbd",
+      "original_and_native_base_sha256": "b4e4a33b760b02a94ab0abf544af323e52c5ddbe3ef21e086799f5519d0f10a5",
+      "original_and_native_animated_sha256": "4a10fc0089d5954c3babf38fc0e8932cb511789fab25b321622becf8b36cb654",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 259,
+      "grid_sha256": "b4c195267bc2f14eb5688840292c4e61e38aa04ffca004a7ec974cd899c4ec1a",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 77,
+      "original_decoration_slots": 11,
+      "base_quads": 230,
+      "animated_quads": 22,
+      "original_neighbor_masks_sha256": "df5ab28f19dd4e358a75dca2bfdddba66776f366bcdab44d79bc1516460ea68e",
+      "original_and_native_base_sha256": "76d331286e68d6f8733b5e1b33339e51eacb75a06a42dadb8fac62a910c78777",
+      "original_and_native_animated_sha256": "decbcea7459aa147df5332ab35e81e839a9c1c9d12f95af1eb7193784ff60725",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 260,
+      "grid_sha256": "1ecf3d2767e5f4747ddc28c368cacdbe386cae65cbd85d9ecd54f8878111fcee",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 123,
+      "original_decoration_slots": 17,
+      "base_quads": 222,
+      "animated_quads": 36,
+      "original_neighbor_masks_sha256": "a263bcfbf0727eb3e7b745146bcdf50b9186bb6535450970631ceb28df956a97",
+      "original_and_native_base_sha256": "e12c3820537c4c2ab19d706e927b7a7fee318468dde5f5beeae664c83f8cce64",
+      "original_and_native_animated_sha256": "aae26d11e1c5a75e0b8a4bbe089b5d37c5639d93cc04e18bfb66d51247afd201",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 261,
+      "grid_sha256": "141d852a7e5990507146b180e01f19b2752c11cbe6eb4d71127764038ddca173",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 102,
+      "original_decoration_slots": 14,
+      "base_quads": 216,
+      "animated_quads": 22,
+      "original_neighbor_masks_sha256": "0087defbc65b14e64eb90385c78fa1c6d418923a83e4facb760636c2db12e10a",
+      "original_and_native_base_sha256": "be5e760af160896f14fa780272030ec9cf122b8834b37eb1b57d42a67e10f9e9",
+      "original_and_native_animated_sha256": "c2d2ae31720853d8adf9c1dc0cf6f57ec57ed71bf06eae1924086a12cc281a49",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 262,
+      "grid_sha256": "c3a247135dbbc767ca38449620f41c12345737470ea51f86e211a27d660c305e",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 86,
+      "original_decoration_slots": 12,
+      "base_quads": 242,
+      "animated_quads": 24,
+      "original_neighbor_masks_sha256": "4cc69ce7e4fd738d7e6ed508e87ee5e3bc3358b64a79f12dabd1511cf9e226d9",
+      "original_and_native_base_sha256": "969f600086fe2958f5599e887bb8da00058f3dcc1763da58efb220747286fe0b",
+      "original_and_native_animated_sha256": "12106ab895764ec229f28f9aeeb24f1f21483fbdb769d43e58192d3416c79359",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 265,
+      "grid_sha256": "f7e135f23f3f7dd7f5d26c15546d98f73a9092696629c27d71e63f7005dacd82",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 107,
+      "original_decoration_slots": 15,
+      "base_quads": 230,
+      "animated_quads": 34,
+      "original_neighbor_masks_sha256": "bd9676993f76145603152223bd32b7f8f2bc8a287620c14541bdd571590006c0",
+      "original_and_native_base_sha256": "3a60cb5e949d8ae220c07bdfc3f5c9a05828e6262f22ced719be5803338e1b2e",
+      "original_and_native_animated_sha256": "4b9b6672e3698188ead800e604d8a958860137e4b0cedeb5adb5bb70c60d0a40",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 266,
+      "grid_sha256": "57704033dd4379b00c1d5a5992a463e35527392962a89067175d761907f9dcb0",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 84,
+      "original_decoration_slots": 12,
+      "base_quads": 242,
+      "animated_quads": 24,
+      "original_neighbor_masks_sha256": "a87dad62055293f164cff4ec1ee279c548bec0b18f6704c709b4d39e6a226645",
+      "original_and_native_base_sha256": "a4a3e02cf8ba2ed87fb0f7b0bacac4bebc811bdf139fdf6c752506318516eb42",
+      "original_and_native_animated_sha256": "5581f3e800246dacbd7b6f0f16f132af1fcfd06b277946c72535e7f45c612512",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 267,
+      "grid_sha256": "9a33dde81fbd9e89ca4168319ca9614286e47834c9a3485d8fa024b265a8670a",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 78,
+      "original_decoration_slots": 11,
+      "base_quads": 221,
+      "animated_quads": 31,
+      "original_neighbor_masks_sha256": "622a8c771de93c706f89314697210c134580ec2436fa1818902ba0b33a3304f8",
+      "original_and_native_base_sha256": "8a89f96e50085335b75317dd5ad03edc39c9b2984997585ad5739340e28ec79e",
+      "original_and_native_animated_sha256": "58bd7e0da22833eb501b045997895c0dcf93d79e65d1d5f81ec666c50fc527d1",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 269,
+      "grid_sha256": "6ee1ca919e4efcff41c444931b52b2f92d7dafc448631dd9f55658aa55092840",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 79,
+      "original_decoration_slots": 11,
+      "base_quads": 228,
+      "animated_quads": 24,
+      "original_neighbor_masks_sha256": "b1e9997c974cef5f8b6931f7468a82cb3a832780afe9c91528119cdeab535589",
+      "original_and_native_base_sha256": "37837c9947b886ed44ba6a7fccb6b9c805e7e56e4320426f7d14aacb0fdc3d16",
+      "original_and_native_animated_sha256": "be16d3b2c2caae281e1be50d8218c95ddd0c062a8056d062c2d1911bea9b90b2",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 275,
+      "grid_sha256": "d7ea4c16198081eb18d8f945a3b32db9d2c4d18019ab4572a6a338870dfa120d",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 75,
+      "original_decoration_slots": 10,
+      "base_quads": 232,
+      "animated_quads": 32,
+      "original_neighbor_masks_sha256": "d0b01dc8b446a4a30ca1b15f5f28a49cd179bf9872ba003c97797b1e8c6126c7",
+      "original_and_native_base_sha256": "afcafd8aca38dd0170c6f5bc87bf0356039b3aa34ff38d467c51d3249041be70",
+      "original_and_native_animated_sha256": "c27cd3690a090fe375411eb24ec64d22cd6f45d930fc072616ef6eac927cf843",
+      "all_native_positions_uv_and_pool_counts_match": true
+    },
+    {
+      "grid_resource_id": 279,
+      "grid_sha256": "fa1b281ba6052d9eae124cfe0496cfa00d40345463e224db5584432fc5dd189b",
+      "grid_dimensions": [
+        15,
+        14
+      ],
+      "cells": 210,
+      "original_candidate_count": 102,
+      "original_decoration_slots": 14,
+      "base_quads": 224,
+      "animated_quads": 26,
+      "original_neighbor_masks_sha256": "0665b66282c5d65df4db798aa1597bc24cd4d5bbf9e08c01a87676ca486e0576",
+      "original_and_native_base_sha256": "f14e97946d9d5f0c7ada187b86aa158683e712247609d97839e6c733e8d7dad7",
+      "original_and_native_animated_sha256": "1e7994b267973fd5a30e428813f6fb2753106fea18e1842a0c9b3fbec349fdfa",
+      "all_native_positions_uv_and_pool_counts_match": true
+    }
+  ],
+  "case_count": 11,
+  "cells": 2310,
+  "base_quads": 2499,
+  "animated_quads": 297,
+  "all_passed": true,
+  "not_established": [
+    "complete padded constructor",
+    "transient random-decoration placement",
+    "GPU pixel parity",
+    "device execution",
+    "full campaign playthrough"
+  ]
+}

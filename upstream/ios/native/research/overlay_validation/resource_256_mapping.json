@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "scope": "Original resource-256 2D support overlay metadata and image resource mapping",
+  "production_integration": false,
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "resources": [
+    {
+      "id": 256,
+      "key": "0xf4e02223",
+      "bytes": 546,
+      "kind": "version-1 2D descriptor",
+      "sha256": "dc520143e30346dad8ed479089fcb78783b97922b7e1bda0eef0e5c1f28a50bb"
+    },
+    {
+      "id": 1000,
+      "key": "0xe179f4be",
+      "bytes": 24,
+      "kind": "little-endian property record",
+      "sha256": "e6522b4147b7553cde18e15b1be0febfa7143ec57a23ecc430c682e0416bd382",
+      "pairs": [
+        [
+          6,
+          "0xffffffff"
+        ],
+        [
+          9,
+          "0x00ff00ff"
+        ],
+        [
+          14,
+          "0x020003e5"
+        ]
+      ]
+    },
+    {
+      "id": 997,
+      "key": "0xb717945f",
+      "bytes": 4774,
+      "kind": "8-bit paletted BMP",
+      "width": 69,
+      "height": 63,
+      "sha256": "9ca143bb91d5bb8f8bfc2dce2244cb3df334e5ebf059931ba827990fb36069cb"
+    }
+  ],
+  "source_chain": [
+    {
+      "range": "0x5d4f2..0x5d502",
+      "observation": "Renderer bank+0x28 element0 allocates 0xa8 then calls 0x5fa34(owner,1000,0x03000100)."
+    },
+    {
+      "functions": [
+        "0x5fa34",
+        "0x5f8b8",
+        "0x5eb30"
+      ],
+      "observation": "Wrapper forwards property resource1000 and tagged descriptor256; clones share decoded metadata."
+    },
+    {
+      "range": "0x5ee84..0x5eeaa",
+      "observation": "Version1 constructs base image view using property id1000 at 0x2b1bc; no v2 embedded image tag is read."
+    },
+    {
+      "functions": [
+        "0x2b1bc",
+        "0x2b18e",
+        "0x2b14a",
+        "0x61f9e",
+        "0x726fe"
+      ],
+      "observation": "Base image resolves through the original resource manager; width and height become image-view+0x14/+0x18."
+    },
+    {
+      "range": "0x15b1e..0x15b6c",
+      "observation": "Property14 resolves its tagged resource value and supplies a byte stream to the surface loader."
+    },
+    {
+      "range": "0x1ceba..0x1cf28",
+      "observation": "Surface load dispatch selects 0x1c95c for BMP key0xb717945f and a separate decoder for PNG."
+    },
+    {
+      "range": "0x5efc6..0x5f088",
+      "observation": "Base image <=256 in each dimension uses byte x/y/width/height and exact crop constructor0x2adb6; no +1 origin adjustment."
+    },
+    {
+      "range": "0x5f128..0x5f7f6",
+      "observation": "Variant/frame/point/animation parsing and initial sequence copy execute in the parser oracle."
+    }
+  ],
+  "descriptor_profile": {
+    "version": 1,
+    "wide_coordinates": false,
+    "extra_image_count": 0,
+    "rectangle_count": 13,
+    "variant_count": 13,
+    "frame_count": 27,
+    "extra_point_count": 0,
+    "animation_step_counts": [
+      26,
+      5,
+      20,
+      19
+    ],
+    "variant_orientations": [
+      0
+    ],
+    "all_explicit_bounds_absent": true
+  },
+  "support_animation": {
+    "index": 2,
+    "repeat": 1,
+    "reverse": false,
+    "step_count": 20,
+    "raw_duration_sum": 1680,
+    "frames": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visible_variant": 11,
+    "source_rectangle": [
+      0,
+      0,
+      32,
+      14
+    ],
+    "visible_offsets": [
+      [
+        0,
+        -59
+      ],
+      [
+        0,
+        -63
+      ],
+      [
+        0,
+        -65
+      ],
+      [
+        0,
+        -67
+      ],
+      [
+        0,
+        -69
+      ]
+    ],
+    "empty_blink_frame": 21,
+    "original_overall_bounds": [
+      -9,
+      -90,
+      44,
+      100
+    ]
+  },
+  "private_decoded_fixture_sha256": "23413b5a8652206e53f1d5868f0fa8ce87fe5ef7f18c21d5232581085919d921",
+  "separate_support_evidence": {
+    "original_clock_report": "native/research/support_presentation_recovery/results/original_support_animation.json",
+    "original_clock_report_sha256": "30b8166aa8bfbd9f203a9db7ad67c0ebb4d8b01ed63990068934ad2e6cd6cf28",
+    "original_palette_report": "native/research/support_presentation_recovery/results/original_support_palette.json",
+    "original_palette_report_sha256": "6a308d235575f9f568787f0e4bea3d5c1e356ea959877362438af624969ed231",
+    "support_manifest_sha256": "d8eedcf699b6cd7cbbba2957d3308070f93b11500e1b0c66e446b1394b036504",
+    "ownership": "decomp_skill_review support presentation delivery"
+  },
+  "remaining_host_work": [
+    "Read and decode the resolved BMP/property record into a native texture; native Image.cpp currently decodes PNG only.",
+    "Add the separate 2D effect bank to the native renderer and preserve original support phase/visibility/completion guards.",
+    "Project the recovered support anchor through the native tactical camera, then explicitly map original 2D offsets into the target viewport.",
+    "Schedule the already-compared 2D animation clock from original simulation time, including original 0x5ca44 completed-player update suppression, and issue reverse-order part draws from exact crops.",
+    "Verify clipping, alpha blending, transitions and timing on Apple simulator/device."
+  ],
+  "limitations": [
+    "Parser oracle substitutes resource lookup with independently resolved image dimensions; property/palette semantics have separate evidence.",
+    "No bitmap decoder, texture upload, Metal/UIView draw integration, clipping parity or device result is claimed.",
+    "The strict research decoder rejects feature branches absent from descriptor256; it is not a general v1 decoder.",
+    "V2 terrain/unit descriptors and M3G atlas geometry remain unchanged."
+  ]
+}

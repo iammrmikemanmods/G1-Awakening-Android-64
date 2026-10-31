@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "scope": "bounded native CGraphicFont descriptor/metrics/width/fit/draw plan and five keyed BMP image profiles",
+  "verified_utc": "2026-10-26T23:17:51.380075+00:00",
+  "upstream_baseline": "f41c436a26414df55daa92d257f942da19d80280",
+  "portable_original_comparisons": {
+    "width_draw_cases": 240,
+    "draw_records": 1052,
+    "oracle_advance_queries_recorded": 36,
+    "oracle_metric_profiles": 4,
+    "code_patches": 0,
+    "original_code_readonly": true
+  },
+  "normal_tests": {
+    "compiler": "GNU g++13.3.0",
+    "options": [
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror"
+    ],
+    "fixture_checks_passed": 71678,
+    "with_source_asset_checks_passed": 72042,
+    "original_descriptors": 12,
+    "original_glyph_records": 1017,
+    "keyed_bmp_sheets": 5,
+    "independent_pixel_reference": "Pillow plus original low-24-bit color-key behavior"
+  },
+  "sanitizers": {
+    "address_sanitizer": "passed",
+    "undefined_behavior_sanitizer": "passed",
+    "leak_sanitizer": "not run successfully; unavailable /proc task access in sandbox",
+    "runtime_options": {
+      "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "with_source_asset_checks_passed": 72042
+  },
+  "not_verified": [
+    "PNG font image property/loader conversion",
+    "external graphics clipping rectangle",
+    "original GPU glyph pixels",
+    "original font choice at every UI caller",
+    "native UIKit adapter output",
+    "physical iPhone XR execution/performance",
+    "complete text wrapping/layout parity"
+  ],
+  "source_sha256": {
+    "native/include/g1/BitmapFont.hpp": "0c4389b816c54894d22478e9a20eb4d71908702f3bddf9ddd36862366fd3da47",
+    "native/src/BitmapFont.cpp": "10b63c7fbcd0b3ffc123c62c6a2864025fef971ad31102fdd0a83c99b8da0209",
+    "native/tests/bitmap_font_test.cpp": "c893aace55108ecf60cf91cd648eefbdc6ce92ea6b732fd57eabbeed0a0a0fae",
+    "native/research/font_recovery/original_font_oracle.py": "9f9769e11707abc8af2018b627f100d517b85b42b6363b72acdadc44e574d4a4",
+    "native/research/font_recovery/original_vectors.hpp": "731a5b04b2a9f0c3b729170e7151828d5c9f7a0d227bec1275fb831e4541048c",
+    "native/research/font_recovery/original_vectors.json": "ef23b4d8d819c4bca7e7d53fb1441567f1c664b5e0b44d9efe13e396f46e6b7f",
+    "native/research/font_recovery/inspect_font_assets.py": "7fe8b8f06455fd01f35321781973d0d578f5fc2a2e75597708bc60c45fd30f8a",
+    "native/research/font_recovery/source_asset_inventory.json": "b8693ca34a01825c0dc6d7e284f8b9e785e6ff9b40d8aeaf7df5074364c7f39a",
+    "native/research/font_recovery/README.md": "ee0e4d8a8183e77e68d7c4cc7140849c6be32025316a9320eed0e98aebd74bc3"
+  }
+}

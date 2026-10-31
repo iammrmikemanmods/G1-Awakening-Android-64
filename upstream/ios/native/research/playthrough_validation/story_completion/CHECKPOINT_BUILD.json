@@ -1,0 +1,27 @@
+{
+  "scope": "Native live-prefix save/restore instrumentation only; public input policy unchanged",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy_followup/checkpoint_probe.cpp",
+      "bytes": 93376,
+      "sha256": "98b4f3a9c29ea9ea386f442645a6ad366c60b0eb200bdb657ab5819626dd3d03"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy_followup/pilot_checkpoint",
+      "bytes": 953136,
+      "sha256": "7da5ae004b99b4f7ca2920d615341ba0481450ef966ee3d9bbf94849d6e72119"
+    }
+  ],
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "headers": "HEADER_INPUTS.json",
+  "libraries": "ORIGIN.json"
+}

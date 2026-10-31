@@ -1,0 +1,776 @@
+{
+  "schema": 1,
+  "kind": "unchanged original battle timeline helper execution",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "original_libgcc_armv6_sha256": "7c737e6bc896ae963833a8c2580fb5511948f3b120d6cccf73707b23a7cdbe7d",
+  "unicorn_version": "2.1.4",
+  "runner_sha256": "43ea3cdba41d9af33f44819f86a480eb2b57d16b112a6b36392e63bfaf796622",
+  "base_oracle_sha256": "10c98c7fe6b2132fd8e70da527cb7f149e8c071975fae137404970d0dfd038e9",
+  "helpers": {
+    "start": "0x3c23a",
+    "tick": "0x3c950"
+  },
+  "tables": {
+    "starts": "0xceaa8",
+    "ends": "0xcea90",
+    "milliseconds_per_frame_float_bits": "0x42055555",
+    "clips": [
+      {
+        "clip": 0,
+        "start_frame": 0,
+        "end_frame": 20,
+        "start_ms": 0,
+        "end_float_ms": 666.6666259765625,
+        "end_clamped_ms": 666
+      },
+      {
+        "clip": 1,
+        "start_frame": 50,
+        "end_frame": 90,
+        "start_ms": 1666,
+        "end_float_ms": 3000.0,
+        "end_clamped_ms": 3000
+      },
+      {
+        "clip": 2,
+        "start_frame": 100,
+        "end_frame": 160,
+        "start_ms": 3333,
+        "end_float_ms": 5333.3330078125,
+        "end_clamped_ms": 5333
+      },
+      {
+        "clip": 3,
+        "start_frame": 200,
+        "end_frame": 250,
+        "start_ms": 6666,
+        "end_float_ms": 8333.3330078125,
+        "end_clamped_ms": 8333
+      },
+      {
+        "clip": 4,
+        "start_frame": 320,
+        "end_frame": 350,
+        "start_ms": 10666,
+        "end_float_ms": 11666.666015625,
+        "end_clamped_ms": 11666
+      },
+      {
+        "clip": 5,
+        "start_frame": 260,
+        "end_frame": 300,
+        "start_ms": 8666,
+        "end_float_ms": 10000.0,
+        "end_clamped_ms": 10000
+      }
+    ]
+  },
+  "case_count": 54,
+  "case_counts": {
+    "start": 6,
+    "tick": 48
+  },
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "original_libgcc_readonly_unchanged": true,
+  "synthetic_inputs": true,
+  "recording_boundaries": [
+    "nonthrowing SjLj unwind registration and unregistration",
+    "synthetic object retain and release",
+    "synthetic public virtual slot 0x24: record signed R1 time only"
+  ],
+  "scope": {
+    "original_timeline_arithmetic_executed": true,
+    "actual_model_object_executed": false,
+    "complete_cinematic_state_machine_executed": false,
+    "gpu_rendering": false,
+    "native_comparison": false
+  },
+  "cases": [
+    {
+      "name": "start_0",
+      "kind": "start",
+      "clip": 0,
+      "clock_before": 1985229328,
+      "clock_after": 0,
+      "virtual_24_calls_ms": [
+        0
+      ]
+    },
+    {
+      "name": "tick_0_0_before",
+      "kind": "tick",
+      "clip": 0,
+      "restart": false,
+      "clock_before": 664,
+      "delta_ms": 1,
+      "clock_after": 665,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        664
+      ]
+    },
+    {
+      "name": "tick_0_0_integer_end",
+      "kind": "tick",
+      "clip": 0,
+      "restart": false,
+      "clock_before": 666,
+      "delta_ms": 0,
+      "clock_after": 666,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        666
+      ]
+    },
+    {
+      "name": "tick_0_0_cross",
+      "kind": "tick",
+      "clip": 0,
+      "restart": false,
+      "clock_before": 666,
+      "delta_ms": 1,
+      "clock_after": 666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        666
+      ]
+    },
+    {
+      "name": "tick_0_0_large_step",
+      "kind": "tick",
+      "clip": 0,
+      "restart": false,
+      "clock_before": 0,
+      "delta_ms": 20000,
+      "clock_after": 0,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        666
+      ]
+    },
+    {
+      "name": "tick_0_1_before",
+      "kind": "tick",
+      "clip": 0,
+      "restart": true,
+      "clock_before": 664,
+      "delta_ms": 1,
+      "clock_after": 665,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        664
+      ]
+    },
+    {
+      "name": "tick_0_1_integer_end",
+      "kind": "tick",
+      "clip": 0,
+      "restart": true,
+      "clock_before": 666,
+      "delta_ms": 0,
+      "clock_after": 666,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        666
+      ]
+    },
+    {
+      "name": "tick_0_1_cross",
+      "kind": "tick",
+      "clip": 0,
+      "restart": true,
+      "clock_before": 666,
+      "delta_ms": 1,
+      "clock_after": 0,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        0
+      ]
+    },
+    {
+      "name": "tick_0_1_large_step",
+      "kind": "tick",
+      "clip": 0,
+      "restart": true,
+      "clock_before": 0,
+      "delta_ms": 20000,
+      "clock_after": 0,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        0
+      ]
+    },
+    {
+      "name": "start_1",
+      "kind": "start",
+      "clip": 1,
+      "clock_before": 1985229328,
+      "clock_after": 1666,
+      "virtual_24_calls_ms": [
+        1666
+      ]
+    },
+    {
+      "name": "tick_1_0_before",
+      "kind": "tick",
+      "clip": 1,
+      "restart": false,
+      "clock_before": 2998,
+      "delta_ms": 1,
+      "clock_after": 2999,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        2998
+      ]
+    },
+    {
+      "name": "tick_1_0_integer_end",
+      "kind": "tick",
+      "clip": 1,
+      "restart": false,
+      "clock_before": 3000,
+      "delta_ms": 0,
+      "clock_after": 3000,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        3000
+      ]
+    },
+    {
+      "name": "tick_1_0_cross",
+      "kind": "tick",
+      "clip": 1,
+      "restart": false,
+      "clock_before": 3000,
+      "delta_ms": 1,
+      "clock_after": 3000,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        3000
+      ]
+    },
+    {
+      "name": "tick_1_0_large_step",
+      "kind": "tick",
+      "clip": 1,
+      "restart": false,
+      "clock_before": 1666,
+      "delta_ms": 20000,
+      "clock_after": 1666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        3000
+      ]
+    },
+    {
+      "name": "tick_1_1_before",
+      "kind": "tick",
+      "clip": 1,
+      "restart": true,
+      "clock_before": 2998,
+      "delta_ms": 1,
+      "clock_after": 2999,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        2998
+      ]
+    },
+    {
+      "name": "tick_1_1_integer_end",
+      "kind": "tick",
+      "clip": 1,
+      "restart": true,
+      "clock_before": 3000,
+      "delta_ms": 0,
+      "clock_after": 1666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        1666
+      ]
+    },
+    {
+      "name": "tick_1_1_cross",
+      "kind": "tick",
+      "clip": 1,
+      "restart": true,
+      "clock_before": 3000,
+      "delta_ms": 1,
+      "clock_after": 1666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        1666
+      ]
+    },
+    {
+      "name": "tick_1_1_large_step",
+      "kind": "tick",
+      "clip": 1,
+      "restart": true,
+      "clock_before": 1666,
+      "delta_ms": 20000,
+      "clock_after": 1666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        1666
+      ]
+    },
+    {
+      "name": "start_2",
+      "kind": "start",
+      "clip": 2,
+      "clock_before": 1985229328,
+      "clock_after": 3333,
+      "virtual_24_calls_ms": [
+        3333
+      ]
+    },
+    {
+      "name": "tick_2_0_before",
+      "kind": "tick",
+      "clip": 2,
+      "restart": false,
+      "clock_before": 5331,
+      "delta_ms": 1,
+      "clock_after": 5332,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        5331
+      ]
+    },
+    {
+      "name": "tick_2_0_integer_end",
+      "kind": "tick",
+      "clip": 2,
+      "restart": false,
+      "clock_before": 5333,
+      "delta_ms": 0,
+      "clock_after": 5333,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        5333
+      ]
+    },
+    {
+      "name": "tick_2_0_cross",
+      "kind": "tick",
+      "clip": 2,
+      "restart": false,
+      "clock_before": 5333,
+      "delta_ms": 1,
+      "clock_after": 5333,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        5333
+      ]
+    },
+    {
+      "name": "tick_2_0_large_step",
+      "kind": "tick",
+      "clip": 2,
+      "restart": false,
+      "clock_before": 3333,
+      "delta_ms": 20000,
+      "clock_after": 3333,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        5333
+      ]
+    },
+    {
+      "name": "tick_2_1_before",
+      "kind": "tick",
+      "clip": 2,
+      "restart": true,
+      "clock_before": 5331,
+      "delta_ms": 1,
+      "clock_after": 5332,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        5331
+      ]
+    },
+    {
+      "name": "tick_2_1_integer_end",
+      "kind": "tick",
+      "clip": 2,
+      "restart": true,
+      "clock_before": 5333,
+      "delta_ms": 0,
+      "clock_after": 5333,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        5333
+      ]
+    },
+    {
+      "name": "tick_2_1_cross",
+      "kind": "tick",
+      "clip": 2,
+      "restart": true,
+      "clock_before": 5333,
+      "delta_ms": 1,
+      "clock_after": 3333,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        3333
+      ]
+    },
+    {
+      "name": "tick_2_1_large_step",
+      "kind": "tick",
+      "clip": 2,
+      "restart": true,
+      "clock_before": 3333,
+      "delta_ms": 20000,
+      "clock_after": 3333,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        3333
+      ]
+    },
+    {
+      "name": "start_3",
+      "kind": "start",
+      "clip": 3,
+      "clock_before": 1985229328,
+      "clock_after": 6666,
+      "virtual_24_calls_ms": [
+        6666
+      ]
+    },
+    {
+      "name": "tick_3_0_before",
+      "kind": "tick",
+      "clip": 3,
+      "restart": false,
+      "clock_before": 8331,
+      "delta_ms": 1,
+      "clock_after": 8332,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        8331
+      ]
+    },
+    {
+      "name": "tick_3_0_integer_end",
+      "kind": "tick",
+      "clip": 3,
+      "restart": false,
+      "clock_before": 8333,
+      "delta_ms": 0,
+      "clock_after": 8333,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        8333
+      ]
+    },
+    {
+      "name": "tick_3_0_cross",
+      "kind": "tick",
+      "clip": 3,
+      "restart": false,
+      "clock_before": 8333,
+      "delta_ms": 1,
+      "clock_after": 8333,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        8333
+      ]
+    },
+    {
+      "name": "tick_3_0_large_step",
+      "kind": "tick",
+      "clip": 3,
+      "restart": false,
+      "clock_before": 6666,
+      "delta_ms": 20000,
+      "clock_after": 6666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        8333
+      ]
+    },
+    {
+      "name": "tick_3_1_before",
+      "kind": "tick",
+      "clip": 3,
+      "restart": true,
+      "clock_before": 8331,
+      "delta_ms": 1,
+      "clock_after": 8332,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        8331
+      ]
+    },
+    {
+      "name": "tick_3_1_integer_end",
+      "kind": "tick",
+      "clip": 3,
+      "restart": true,
+      "clock_before": 8333,
+      "delta_ms": 0,
+      "clock_after": 8333,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        8333
+      ]
+    },
+    {
+      "name": "tick_3_1_cross",
+      "kind": "tick",
+      "clip": 3,
+      "restart": true,
+      "clock_before": 8333,
+      "delta_ms": 1,
+      "clock_after": 6666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        6666
+      ]
+    },
+    {
+      "name": "tick_3_1_large_step",
+      "kind": "tick",
+      "clip": 3,
+      "restart": true,
+      "clock_before": 6666,
+      "delta_ms": 20000,
+      "clock_after": 6666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        6666
+      ]
+    },
+    {
+      "name": "start_4",
+      "kind": "start",
+      "clip": 4,
+      "clock_before": 1985229328,
+      "clock_after": 10666,
+      "virtual_24_calls_ms": [
+        10666
+      ]
+    },
+    {
+      "name": "tick_4_0_before",
+      "kind": "tick",
+      "clip": 4,
+      "restart": false,
+      "clock_before": 11664,
+      "delta_ms": 1,
+      "clock_after": 11665,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        11664
+      ]
+    },
+    {
+      "name": "tick_4_0_integer_end",
+      "kind": "tick",
+      "clip": 4,
+      "restart": false,
+      "clock_before": 11666,
+      "delta_ms": 0,
+      "clock_after": 11666,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        11666
+      ]
+    },
+    {
+      "name": "tick_4_0_cross",
+      "kind": "tick",
+      "clip": 4,
+      "restart": false,
+      "clock_before": 11666,
+      "delta_ms": 1,
+      "clock_after": 11666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        11666
+      ]
+    },
+    {
+      "name": "tick_4_0_large_step",
+      "kind": "tick",
+      "clip": 4,
+      "restart": false,
+      "clock_before": 10666,
+      "delta_ms": 20000,
+      "clock_after": 10666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        11666
+      ]
+    },
+    {
+      "name": "tick_4_1_before",
+      "kind": "tick",
+      "clip": 4,
+      "restart": true,
+      "clock_before": 11664,
+      "delta_ms": 1,
+      "clock_after": 11665,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        11664
+      ]
+    },
+    {
+      "name": "tick_4_1_integer_end",
+      "kind": "tick",
+      "clip": 4,
+      "restart": true,
+      "clock_before": 11666,
+      "delta_ms": 0,
+      "clock_after": 11666,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        11666
+      ]
+    },
+    {
+      "name": "tick_4_1_cross",
+      "kind": "tick",
+      "clip": 4,
+      "restart": true,
+      "clock_before": 11666,
+      "delta_ms": 1,
+      "clock_after": 10666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        10666
+      ]
+    },
+    {
+      "name": "tick_4_1_large_step",
+      "kind": "tick",
+      "clip": 4,
+      "restart": true,
+      "clock_before": 10666,
+      "delta_ms": 20000,
+      "clock_after": 10666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        10666
+      ]
+    },
+    {
+      "name": "start_5",
+      "kind": "start",
+      "clip": 5,
+      "clock_before": 1985229328,
+      "clock_after": 8666,
+      "virtual_24_calls_ms": [
+        8666
+      ]
+    },
+    {
+      "name": "tick_5_0_before",
+      "kind": "tick",
+      "clip": 5,
+      "restart": false,
+      "clock_before": 9998,
+      "delta_ms": 1,
+      "clock_after": 9999,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        9998
+      ]
+    },
+    {
+      "name": "tick_5_0_integer_end",
+      "kind": "tick",
+      "clip": 5,
+      "restart": false,
+      "clock_before": 10000,
+      "delta_ms": 0,
+      "clock_after": 10000,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        10000
+      ]
+    },
+    {
+      "name": "tick_5_0_cross",
+      "kind": "tick",
+      "clip": 5,
+      "restart": false,
+      "clock_before": 10000,
+      "delta_ms": 1,
+      "clock_after": 10000,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        10000
+      ]
+    },
+    {
+      "name": "tick_5_0_large_step",
+      "kind": "tick",
+      "clip": 5,
+      "restart": false,
+      "clock_before": 8666,
+      "delta_ms": 20000,
+      "clock_after": 8666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        10000
+      ]
+    },
+    {
+      "name": "tick_5_1_before",
+      "kind": "tick",
+      "clip": 5,
+      "restart": true,
+      "clock_before": 9998,
+      "delta_ms": 1,
+      "clock_after": 9999,
+      "completion_return": 0,
+      "virtual_24_calls_ms": [
+        9998
+      ]
+    },
+    {
+      "name": "tick_5_1_integer_end",
+      "kind": "tick",
+      "clip": 5,
+      "restart": true,
+      "clock_before": 10000,
+      "delta_ms": 0,
+      "clock_after": 8666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        8666
+      ]
+    },
+    {
+      "name": "tick_5_1_cross",
+      "kind": "tick",
+      "clip": 5,
+      "restart": true,
+      "clock_before": 10000,
+      "delta_ms": 1,
+      "clock_after": 8666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        8666
+      ]
+    },
+    {
+      "name": "tick_5_1_large_step",
+      "kind": "tick",
+      "clip": 5,
+      "restart": true,
+      "clock_before": 8666,
+      "delta_ms": 20000,
+      "clock_after": 8666,
+      "completion_return": 1,
+      "virtual_24_calls_ms": [
+        8666
+      ]
+    }
+  ]
+}

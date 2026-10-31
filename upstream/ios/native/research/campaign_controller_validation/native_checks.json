@@ -1,0 +1,54 @@
+{
+  "status": "native_campaign_orchestration_verified_locally",
+  "validated_at_utc": "2026-10-26T06:58:06.389444+00:00",
+  "runtime_checks": 53,
+  "compile_time_single_owner_assertion": true,
+  "passed": true,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compile_command_from_workspace": "g++ -std=c++17 -Wall -Wextra -Wconversion -Werror -pedantic -O2 -I g1_port/native/include g1_port/native/src/CampaignController.cpp g1_port/native/tests/campaign_controller_test.cpp g1_port/native/research/mission_validation/cmake_build/libg1_resources.a g1_port/native/research/mission_validation/cmake_build/libg1_png.a g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a -lz -o g1_port/research/binary/native_mission_general/campaign_controller_test",
+  "run_command_from_workspace": "g1_port/research/binary/native_mission_general/campaign_controller_test",
+  "compile_exit_code": 0,
+  "run_exit_code": 0,
+  "output": "53 campaign orchestration checks passed with real filesystem writes/failures; no UI/device draw claimed.",
+  "source_hashes": {
+    "include/g1/CampaignController.hpp": "a74e8d6b119816a867d6c59e4eec5b92bc7e07725bc5526bc93223a4ace3c843",
+    "src/CampaignController.cpp": "3e54328d75b67b2afbb612d81bc7a015cdbbfc534bb3be3cb2f47c4755a684a4",
+    "tests/campaign_controller_test.cpp": "aff6f773d10cf816e772992bdd2b90f75bb9bf108ee36df54b36c4152769adbe"
+  },
+  "binary_sha256": "0b1aac7506b38387186d6bb5598104af348e8c06852af36d9757a579ecad632d",
+  "linked_supporting_libraries": {
+    "research/mission_validation/cmake_build/libg1_resources.a": "e6f9b06d7d316bfbf4f9f51a1383927f2c61ef3cf9c8fafa2adeb04fa4b53b2e",
+    "research/mission_validation/cmake_build/libg1_png.a": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9",
+    "research/mission_validation/cmake_build/libg1_vorbis.a": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+  },
+  "source_input": "constructed native archive and actual native GameSession; no original game assets needed",
+  "actual_filesystem_checks": [
+    "missing parent fails without result gate",
+    "parent created and retry durably succeeds",
+    "destination directory causes rename failure",
+    "removed obstruction allows retry",
+    "closed profile readback",
+    "new controller loads saved profile",
+    "corrupt profile is not overwritten",
+    "no temporary save files remain"
+  ],
+  "presentation_and_handoff_checks": [
+    "reject actual dialogue and pending-world gates as completion",
+    "reject undrawn/stale/repeated result input",
+    "original accepted input masks and scrolling",
+    "loss/menu and ending branches",
+    "original group2 immediate post-save handoff",
+    "failure after random spawn leaves captured stream unchanged",
+    "cached bootstrap does not draw extra random words",
+    "reject reseeded installed session",
+    "installed next session retains pending world/camera gates"
+  ],
+  "not_claimed": [
+    "Apple compilation of this new module",
+    "host results/ending/menu rendering",
+    "iPhone execution",
+    "complete campaign playthrough",
+    "mid-mission restore",
+    "sustained60FPS"
+  ]
+}

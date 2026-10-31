@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "native/include/g1/M3GBattleCamera.hpp",
+      "sha256": "34370c78f2f81f540d68dcd1a8f9e968f7d624236bc059d49c01c8f45e1e9fc3",
+      "bytes": 3698
+    },
+    {
+      "path": "native/src/M3GBattleCamera.cpp",
+      "sha256": "2568601c2bac5561d32e64c50960cfb4698e2a56a7c6cf3aca79cc25015fa5a8",
+      "bytes": 6004
+    },
+    {
+      "path": "native/tests/m3g_battle_camera_test.cpp",
+      "sha256": "d41f39c273fb8d9a9be5743d6ed9411f8fecd06b815db94ba19fb16466656115",
+      "bytes": 7947
+    },
+    {
+      "path": "native/tests/m3g_battle_camera_fixture.hpp",
+      "sha256": "c4e6a67add5dbd7453c0f6465abda9842b236a1a49c9c4eab6ce78e0ee96ab7c",
+      "bytes": 94872
+    },
+    {
+      "path": "native/research/M3G_BATTLE_CAMERA.md",
+      "sha256": "0790b2eddd2a290f3261d633805f58747ce4dfc33ace879b017dd0bc037ea1fc",
+      "bytes": 9434
+    },
+    {
+      "path": "analysis_tools/m3g/battle_camera_oracle.py",
+      "sha256": "7917b756471c4a8d47dfcd0bf51f8a8ace59f6538f7479e6f5f6dbb7f820eb02",
+      "bytes": 12383
+    },
+    {
+      "path": "analysis_tools/m3g/battle_camera_fixture.py",
+      "sha256": "0b86dd1c2409e7f996739b5f99e2c94c8a48544a60b9ad0c6ef3e83acd432449",
+      "bytes": 5087
+    },
+    {
+      "path": "analysis_tools/m3g/battle_camera_inventory.py",
+      "sha256": "82bbb7d13b4ef80bdbb5c7b146d42bfccd7af15fa8c6c52f4445eb8e52eab6a6",
+      "bytes": 3181
+    },
+    {
+      "path": "native/research/m3g_validation/original_battle_camera.json",
+      "sha256": "1ff9f9c6235d53809bf7db4d1e69c286fb195cf5de5675f9c9f77fe672bd1ace",
+      "bytes": 865475
+    },
+    {
+      "path": "native/research/m3g_validation/battle_camera_scene_bindings.json",
+      "sha256": "fb0191582677e534c89d9f5340ddb736145254e5de88869ff4fe19f510bc369d",
+      "bytes": 9344
+    },
+    {
+      "path": "native/research/m3g_validation/battle_camera_native_validation.json",
+      "sha256": "b71d41ce3626b93b13b74a3cd583acd37192c4f6b6c1e151cf3d6827866b43ae",
+      "bytes": 3001
+    }
+  ],
+  "dependencies": {
+    "native/include/g1/M3GBindings.hpp": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03",
+    "native/src/M3GBindings.cpp": "6178bfd971e4aabdd1ade845a2175f2423cededdb246c7bff5d69d9eb7b50bdc",
+    "native/research/M3G_CAMERA_TRANSLATE_SLOT.md": "6c3c64ccf5b1d1b7d14d5fe623e06f1a3a2b85c77692d16245c80bc05fc7587f",
+    "native/research/M3G_CAMERA_TRANSLATE_SLOT.json": "7953f9121eb7ebdb397035e648646bddc57885868542eee644f6e1851550ddb9",
+    "analysis_tools/sprite/render_oracle.py": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c"
+  },
+  "bytes": 1020426,
+  "validation": {
+    "checks": 9668,
+    "original_cases": 221,
+    "original_field_comparisons": 9645,
+    "native_contracts": 23
+  },
+  "original_execution": {
+    "cases": 221,
+    "public_events": 5192,
+    "propagation_entries": 442
+  },
+  "cmake": {
+    "core": [
+      "src/M3GBattleCamera.cpp"
+    ],
+    "test_source": "tests/m3g_battle_camera_test.cpp",
+    "test_arguments": [],
+    "suggested_ctest": "m3g_battle_camera_original_function_vectors"
+  },
+  "source_scope": "11 additive new files; no existing Scene/Animation/Metal/App/CMake changes",
+  "original_executable_in_product": false,
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "scope": "Native Sprite3D arithmetic versus frozen unchanged-original GL recording",
+  "reference_sha256": "027532e072019b84008ace8b566fb7a370fa8070bb4803f233208d12f4b66722",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "fixture_sha256": "4cb9bc5b0b3e6d40e9981038ac4ca33c27189a34a88a93875e9d6be3f17a9ef9",
+  "probe_sha256": "8663ce4ed6520b81410200d1c01f1f3f796c9c7085865710d0a60e21a0adcd89",
+  "comparisons": 1705,
+  "original_numeric_boolean_comparisons": 1557,
+  "binary32_origin_values_compared_exactly": 141,
+  "fixed16_values_compared_exactly": 1128,
+  "contracts": {
+    "optimized": {
+      "result": {
+        "renderer_cases": 142,
+        "draws": 47,
+        "queue_sequences": 4,
+        "queue_entries": 26,
+        "original_value_checks": 1557,
+        "contract_checks": 30,
+        "passed": true
+      },
+      "executable_sha256": "f055d08e89048f28190a1ab6eb4c5ac6b59c7747ee7f8d4837f11596a10079f3",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    "undefined_behavior_sanitizer": {
+      "result": {
+        "renderer_cases": 142,
+        "draws": 47,
+        "queue_sequences": 4,
+        "queue_entries": 26,
+        "original_value_checks": 1557,
+        "contract_checks": 30,
+        "passed": true
+      },
+      "executable_sha256": "e5d3cd788a991cba8b84f0ae5c9f5e6058738a8c1ad0284ab151a074e3646a28",
+      "exit_code": 0,
+      "stderr": ""
+    }
+  },
+  "cases": 142,
+  "draws": 47,
+  "queue_sequences": 4,
+  "differences": [],
+  "passed": true,
+  "gpu_tested": false,
+  "iphone_tested": false,
+  "reference_limits": [
+    "GL arrays/state recording, no GL execution or rasterization",
+    "decoded image width/height accessors",
+    "host sqrtf/tanf rounded to binary32",
+    "external memcpy",
+    "nonthrowing unwind registration/unregistration"
+  ],
+  "source_sha256": {
+    "analysis_tools/m3g/sprite3d_validate.py": "d193f81b96c9cb45a0dce8b05a1e029de8ad382795e17aac3b92814f86ee2879",
+    "native/include/g1/M3GSprite3D.hpp": "0e99e83bf8a16b8eb754f1d80aa9a0cd202a97558958ac2a562f42607842167b",
+    "native/src/M3GSprite3D.cpp": "26486d2ade3a6823646a9b5a3c9be4cc9034e95dfed11385f28dac8e3d6cae1e",
+    "native/tools/m3g_sprite3d_probe.cpp": "9db5034bb1ce028e1970b05b733433c967442f3d3a7a9de7424b8675f5b34aae",
+    "native/tests/m3g_sprite3d_fixture.hpp": "625048fcf7d7f531b01062a28363f673287c05a11da06393b3e1cac6eaea32d2",
+    "native/tests/m3g_sprite3d_test.cpp": "6b1a67facd4368007a57106657f07f3595b171bd282a8232a5cef4b536f5dbe3"
+  }
+}

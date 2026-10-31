@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "scope": "Frozen native campaign UI0.4.0 build4; no Apple compilation claimed",
+  "sources": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+      "bytes": 137541
+    },
+    {
+      "path": "native/platform/apple/NativeCampaign.hpp",
+      "sha256": "2c8a8b16b191fe74ef13ed27878618926b7e937d3411bb99b6bdc7a743e97c27",
+      "bytes": 4079
+    },
+    {
+      "path": "native/platform/apple/NativeDialogue.hpp",
+      "sha256": "0feb9b86c49d22b636932cfd2bf7e3920fce9fc1270a5a0666c3c068fd16e806",
+      "bytes": 6556
+    },
+    {
+      "path": "native/platform/apple/NativeBattle.hpp",
+      "sha256": "423bbfb6c2c5333dedbc6075b5f6a8867f927d8b04169b525dd56e371bf80223",
+      "bytes": 6210
+    },
+    {
+      "path": "native/platform/apple/AppleAudio.hpp",
+      "sha256": "c72655669f7c8c28a91682bafedd7b43c7005cf581c2a302750d6ac5a1eda5e3",
+      "bytes": 584
+    },
+    {
+      "path": "native/platform/apple/AppleAudio.mm",
+      "sha256": "53d2c5655d9672d99a635fda5b6b765b0bc3d5f142c691d3ac6c5d9d32297912",
+      "bytes": 18268
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.hpp",
+      "sha256": "0e97ecfd4820515ee8673e9e76db82aebd927cbe47ec76347d154b7122ef38d1",
+      "bytes": 1070
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.mm",
+      "sha256": "8a27f759647c622309207cbf0e07f08a224899eaa1ff9ef0f22dd959368432dc",
+      "bytes": 7262
+    },
+    {
+      "path": "native/platform/apple/Info.plist.in",
+      "sha256": "52e62fab0edc61424cb454f17d61e44621aa2e294bb4d10337c45cf233d38d19",
+      "bytes": 1855
+    },
+    {
+      "path": "native/include/g1/Scene.hpp",
+      "sha256": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1",
+      "bytes": 1965
+    },
+    {
+      "path": "native/src/Scene.cpp",
+      "sha256": "919b83acbe2e6eee2299985f4a3bc41d46442f5b1f33d9ccb41474899cec98ab",
+      "bytes": 4546
+    },
+    {
+      "path": "native/tools/scene_catalog_probe.cpp",
+      "sha256": "4b1b9d6ea9b365eb674f4610849ec79163ea7945dc0dab95973e68b0e230f6e8",
+      "bytes": 9487
+    },
+    {
+      "path": "analysis_tools/scene_catalog/validate.py",
+      "sha256": "b9886446b4f478d3abd9df38d516bd95f71fb0cbcf4089976db0e92d7163e64a",
+      "bytes": 5030
+    }
+  ],
+  "records": [
+    {
+      "path": "native/research/NATIVE_CAMPAIGN_UI.md",
+      "sha256": "96f30b88bce3e82c2628b34a063cdba2009b45f91b556628ac57b957640f714e",
+      "bytes": 11243
+    },
+    {
+      "path": "native/research/NATIVE_CAMPAIGN_UI.json",
+      "sha256": "5caab439928eafd86d458b64b428d19eb6fc265273d5b98a5255cea0506c912a",
+      "bytes": 4852
+    },
+    {
+      "path": "native/research/NATIVE_GAMEPLAY_UI.md",
+      "sha256": "533745ec24553da88ead0ac4512ccafc6d263b6307226d32cd06ea9c2aec5ff6",
+      "bytes": 13320
+    },
+    {
+      "path": "native/research/SCENE_ASSET_RELOAD.md",
+      "sha256": "9437c62831cd998a3104e4a124399d50ae41b00d47dc388488ea0f852ce042a9",
+      "bytes": 5672
+    },
+    {
+      "path": "native/research/NATIVE_AUDIO_OUTPUT.md",
+      "sha256": "42fb6aa0ddc4c4d9a30b3cfa50b026da1ab18940e7e11cd525b652692f91b9cf",
+      "bytes": 8131
+    },
+    {
+      "path": "native/research/scene_catalog_validation/with_animated_surface/validation.json",
+      "sha256": "f04111de4f334aefd6a34999cbada3c1bf39a9308ee0b9387717d338844b77ce",
+      "bytes": 24751
+    },
+    {
+      "path": "native/research/scene_catalog_validation/with_animated_surface/scene_catalog_probe.json",
+      "sha256": "2878c4f900391441e5eb1dcd15146cc8c420d61c22191d9a85d8073cd3e3f279",
+      "bytes": 10832
+    },
+    {
+      "path": "native/research/scene_catalog_validation/with_animated_surface/scene_probe.json",
+      "sha256": "86de5da7bdb13fd44ef80141b80e1e1b351e9349992e639924478355fb46becf",
+      "bytes": 909
+    }
+  ]
+}

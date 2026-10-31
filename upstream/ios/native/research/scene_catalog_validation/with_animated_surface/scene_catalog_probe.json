@@ -1,0 +1,632 @@
+{
+  "scope": "Native data/geometry load; no gameplay execution or GPU draw",
+  "roster_contract_checks_passed": true,
+  "empty_roster_supported": true,
+  "types": [
+    {
+      "type": 0,
+      "descriptor": 1298,
+      "image": 961,
+      "frames": 29,
+      "animations": 8,
+      "vertices": 1068
+    },
+    {
+      "type": 1,
+      "descriptor": 1111,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 900
+    },
+    {
+      "type": 2,
+      "descriptor": 1119,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 3,
+      "descriptor": 1020,
+      "image": 961,
+      "frames": 31,
+      "animations": 8,
+      "vertices": 1158
+    },
+    {
+      "type": 4,
+      "descriptor": 1106,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 5,
+      "descriptor": 1041,
+      "image": 961,
+      "frames": 9,
+      "animations": 3,
+      "vertices": 432
+    },
+    {
+      "type": 6,
+      "descriptor": 426,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 7,
+      "descriptor": 522,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 8,
+      "descriptor": 1281,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 1008
+    },
+    {
+      "type": 9,
+      "descriptor": 1088,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 10,
+      "descriptor": 1155,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 858
+    },
+    {
+      "type": 11,
+      "descriptor": 868,
+      "image": 961,
+      "frames": 57,
+      "animations": 12,
+      "vertices": 1770
+    },
+    {
+      "type": 12,
+      "descriptor": 876,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 648
+    },
+    {
+      "type": 13,
+      "descriptor": 377,
+      "image": 961,
+      "frames": 29,
+      "animations": 8,
+      "vertices": 1056
+    },
+    {
+      "type": 14,
+      "descriptor": 985,
+      "image": 961,
+      "frames": 29,
+      "animations": 8,
+      "vertices": 1062
+    },
+    {
+      "type": 15,
+      "descriptor": 1036,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 894
+    },
+    {
+      "type": 16,
+      "descriptor": 1196,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 882
+    },
+    {
+      "type": 17,
+      "descriptor": 1032,
+      "image": 961,
+      "frames": 29,
+      "animations": 8,
+      "vertices": 972
+    },
+    {
+      "type": 18,
+      "descriptor": 815,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 876
+    },
+    {
+      "type": 19,
+      "descriptor": 517,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 20,
+      "descriptor": 1027,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 21,
+      "descriptor": 1183,
+      "image": 961,
+      "frames": 12,
+      "animations": 3,
+      "vertices": 576
+    },
+    {
+      "type": 22,
+      "descriptor": 1069,
+      "image": 961,
+      "frames": 25,
+      "animations": 8,
+      "vertices": 858
+    }
+  ],
+  "all_frame_vertices": 19050,
+  "map_style_pairs": [
+    {
+      "map_index": 0,
+      "resource": 268,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 255,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          315,
+          2
+        ],
+        [
+          332,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 1,
+      "resource": 274,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 255,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          320,
+          2
+        ],
+        [
+          326,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 2,
+      "resource": 277,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 249,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          333,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 3,
+      "resource": 272,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 761,
+      "quads": 210,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          327,
+          3
+        ],
+        [
+          330,
+          3
+        ],
+        [
+          334,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 4,
+      "resource": 276,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 254,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          329,
+          3
+        ],
+        [
+          335,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 5,
+      "resource": 263,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 761,
+      "quads": 210,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          325,
+          3
+        ],
+        [
+          336,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 6,
+      "resource": 265,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 230,
+      "animated_quads": 34,
+      "decoration_slots": 15,
+      "references": [
+        [
+          324,
+          3
+        ],
+        [
+          337,
+          2
+        ],
+        [
+          339,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 7,
+      "resource": 266,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 242,
+      "animated_quads": 24,
+      "decoration_slots": 12,
+      "references": [
+        [
+          337,
+          16
+        ]
+      ]
+    },
+    {
+      "map_index": 9,
+      "resource": 270,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 225,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          317,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 10,
+      "resource": 271,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 259,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          318,
+          2
+        ],
+        [
+          318,
+          17
+        ],
+        [
+          328,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 11,
+      "resource": 273,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 225,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          319,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 12,
+      "resource": 275,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 232,
+      "animated_quads": 32,
+      "decoration_slots": 10,
+      "references": [
+        [
+          321,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 13,
+      "resource": 267,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 221,
+      "animated_quads": 31,
+      "decoration_slots": 11,
+      "references": [
+        [
+          322,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 14,
+      "resource": 279,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 224,
+      "animated_quads": 26,
+      "decoration_slots": 14,
+      "references": [
+        [
+          323,
+          2
+        ],
+        [
+          323,
+          25
+        ],
+        [
+          323,
+          36
+        ],
+        [
+          331,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 15,
+      "resource": 269,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 228,
+      "animated_quads": 24,
+      "decoration_slots": 11,
+      "references": [
+        [
+          338,
+          2
+        ]
+      ]
+    },
+    {
+      "map_index": 16,
+      "resource": 264,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 693,
+      "quads": 252,
+      "animated_quads": 0,
+      "decoration_slots": 0,
+      "references": [
+        [
+          316,
+          2
+        ],
+        [
+          316,
+          26
+        ]
+      ]
+    },
+    {
+      "map_index": 17,
+      "resource": 258,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 212,
+      "animated_quads": 22,
+      "decoration_slots": 16,
+      "references": [
+        [
+          310,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 18,
+      "resource": 259,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 230,
+      "animated_quads": 22,
+      "decoration_slots": 11,
+      "references": [
+        [
+          311,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 19,
+      "resource": 260,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 222,
+      "animated_quads": 36,
+      "decoration_slots": 17,
+      "references": [
+        [
+          312,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 20,
+      "resource": 261,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 216,
+      "animated_quads": 22,
+      "decoration_slots": 14,
+      "references": [
+        [
+          313,
+          3
+        ]
+      ]
+    },
+    {
+      "map_index": 21,
+      "resource": 262,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "loaded": true,
+      "atlas": 777,
+      "quads": 242,
+      "animated_quads": 24,
+      "decoration_slots": 12,
+      "references": [
+        [
+          314,
+          3
+        ]
+      ]
+    }
+  ],
+  "supported_map_style_pairs": 21,
+  "unsupported_map_style_pairs": 0,
+  "gpu_execution": false,
+  "campaign_completion": false
+}

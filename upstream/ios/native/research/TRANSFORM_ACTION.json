@@ -1,0 +1,29 @@
+{
+  "status": "frozen_native_component",
+  "scope": "transform admission and exact unit form/flag/stat transition; audio request observation",
+  "host_contracts_passed": 17,
+  "full_original_transform_cases": 128,
+  "original_eligibility_cases": 128,
+  "audio_request_prefix_cases": 64,
+  "native_original_exact_match": true,
+  "original_audio_playback_executed": false,
+  "instruction_patches": 0,
+  "function_stubs": 0,
+  "original_math_helper_binding": "data slot0xd26a4 bound to original ARMv6 ___divsi3",
+  "native_product_contains_original_code_or_cpu_runtime": false,
+  "files": {
+    "native/include/g1/TransformAction.hpp": "2a9f1738b07db5df60181b90d46cf624b31120b10e2f39ce75ee4cccd35f003e",
+    "native/src/TransformAction.cpp": "a51c0872e29238283da5eb371aa67362bc55342c3d2b14e6b71681615f95e7d3",
+    "native/tests/transform_action_test.cpp": "48edfffa767ae14b0f009be77d4a5965d692515befcbe2ac49175cde4489abfa",
+    "native/research/TRANSFORM_ACTION.md": "a0762ac3e58bc04fa200bbdfd0d9e6b17cc734a6f6003f1346d4f491fa6db9c3",
+    "native/research/transform_action_validation/original_transform.json": "212ffdac12fef2a012a4ced767ac22b1c03e7e1ee8d5a6905aeea5b513ee31f8",
+    "analysis_tools/transform_action/oracle.py": "6db2c2f19bf6e332f7b60114da57a4ed58612e385e15fc57419088789e255b02",
+    "analysis_tools/transform_action/probe.cpp": "8e18b0452ad51e86ff3c192fe3bc07030dc6ba5744a7f0627489f8c45e0eb875",
+    "analysis_tools/transform_action/README.md": "f0649e07f11667dc13603cb3f99d9680c507a1dbbd83e71119cffd64a506f945",
+    "native/research/ACTION_ADMISSION.md": "b3106d4f3b96ba50c6834abd0e1952f0ff1b53eab6bc0337f0f1629d5f6c4ce9"
+  },
+  "combat_dependencies": {
+    "native/include/g1/Combat.hpp": "b82553f85b90e7794140903d8a6cdf2310c232dbde2339a8d7208d70a0b30a17",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e"
+  }
+}

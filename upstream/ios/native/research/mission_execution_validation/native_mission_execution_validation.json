@@ -1,0 +1,218 @@
+{
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "text_resource_sha256": "8c189a68d0d31b53d08b88438fa0df06c88196bf446a43801ae332039c4f452a",
+  "mission_resource_sha256": "7ecc54a292717325b9e6e2c44c3c166e44be296b2e408c42b76cc49b6d10346a",
+  "native_probe_sha256": "2d411805968186510bbca9ae94c306a82dbb601a4f2b2e529b918c985a456946",
+  "validator_source_sha256": "f32f83cffced3a2159ec2747477041f98fd87aba00665ba78c0e1a0529a663ca",
+  "localization_entries_compared_byte_for_byte": 511,
+  "source_text_payload_bytes": 28253,
+  "full_probe_output_sha256": "6c18323d2a375268d48b4ea36f59f6fa0826d914f1372f17e331c64f19cd2082",
+  "mission_resource_id": 315,
+  "mission_command_count": 29,
+  "control_flow_command_entries": [
+    {
+      "index": 9,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 11,
+      "heading_text_id": 416,
+      "text_index": 280,
+      "text_id": 725
+    },
+    {
+      "index": 10,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 281,
+      "text_id": 811
+    },
+    {
+      "index": 11,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 11,
+      "heading_text_id": 416,
+      "text_index": 282,
+      "text_id": 802
+    },
+    {
+      "index": 12,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 283,
+      "text_id": 826
+    },
+    {
+      "index": 13,
+      "opcode": 4,
+      "phase": 4,
+      "mode": 6,
+      "gate": "camera",
+      "camera": [
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "index": 14,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 284,
+      "text_id": 816
+    },
+    {
+      "index": 15,
+      "opcode": 4,
+      "phase": 4,
+      "mode": 6,
+      "gate": "camera",
+      "camera": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 16,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 11,
+      "heading_text_id": 416,
+      "text_index": 285,
+      "text_id": 776
+    },
+    {
+      "index": 17,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 286,
+      "text_id": 767
+    },
+    {
+      "index": 18,
+      "opcode": 12,
+      "phase": 99,
+      "mode": 0,
+      "gate": "captured_site_item",
+      "objective_indices": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_id": 619
+    },
+    {
+      "index": 19,
+      "opcode": 5,
+      "phase": 5,
+      "mode": 6,
+      "gate": "delay"
+    },
+    {
+      "index": 20,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 287,
+      "text_id": 798
+    },
+    {
+      "index": 21,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 11,
+      "heading_text_id": 416,
+      "text_index": 288,
+      "text_id": 786
+    },
+    {
+      "index": 22,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 289,
+      "text_id": 1185
+    },
+    {
+      "index": 23,
+      "opcode": 3,
+      "phase": 3,
+      "mode": 6,
+      "gate": "dialogue",
+      "speaker_type": 1,
+      "heading_text_id": 679,
+      "text_index": 290,
+      "text_id": 1193
+    },
+    {
+      "index": 24,
+      "opcode": 5,
+      "phase": 5,
+      "mode": 6,
+      "gate": "delay"
+    },
+    {
+      "index": 25,
+      "opcode": 1,
+      "phase": 1,
+      "mode": 6,
+      "gate": "transition"
+    },
+    {
+      "index": 26,
+      "opcode": 8,
+      "phase": 99,
+      "mode": 6,
+      "gate": "stopped",
+      "pending_text_id": 1323
+    }
+  ],
+  "capture_target": [
+    5,
+    7
+  ],
+  "initial_capture_satisfied": false,
+  "final_stop_index": 26,
+  "final_stop": "completion_presentation_required",
+  "opcode_8_consumed": false,
+  "synthetic_renderer_and_capture_observations": true,
+  "effects_applied": false,
+  "is_playthrough_evidence": false,
+  "limits": [
+    "Native font layout, UI, camera motion and capture actions were not exercised.",
+    "Synthetic observations only test control-flow continuation using original script data.",
+    "Completion presentation, save, campaign handoff and device validation remain unimplemented/unverified."
+  ]
+}

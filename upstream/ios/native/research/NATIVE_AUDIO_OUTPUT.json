@@ -1,0 +1,48 @@
+{
+  "scope": "Native Apple AVAudioEngine output adapter",
+  "source_frozen": true,
+  "source_sha256": {
+    "native/platform/apple/AppleAudio.hpp": "eacbb06584a93fffc07c9510df8c8c13fae950bf545b20a89896a5a34ea170fd",
+    "native/platform/apple/AppleAudio.mm": "c9ea90c338a429392d97b8316c8915bcefda32a60c39439017f54d72d63537f9",
+    "native/research/NATIVE_AUDIO_OUTPUT.md": "058365e1d8a5654c97e08886393c164dfb845ee6ffc1bd82eb97d33664cfb847"
+  },
+  "api": [
+    "initWithArchive:(const g1::Archive&)",
+    "request:(g1::MissionAudioRequest)",
+    "setForegroundActive:",
+    "operational",
+    "diagnostics"
+  ],
+  "caller_thread": "main",
+  "framework": "AVFAudio",
+  "input_format": {
+    "sample_rate": 22050,
+    "channels": 1,
+    "native_pcm": "float32"
+  },
+  "voices": {
+    "independent": true,
+    "bound": 64,
+    "silent_stealing": false
+  },
+  "looping": {
+    "automatic": false,
+    "original_evidence": "2b2d2 R2=0 -> 7dc94 -> 7d66c event+1c -> 1e3be masked bit0 -> alSourcei AL_LOOPING(0x1007),false",
+    "rejected_prior_inference": "7d67e R2=1 is channels, not repeat count"
+  },
+  "validation": {
+    "independent_source_review": "no concrete lifetime/cache/callback blocker under main-thread contract",
+    "apple_compiled": false,
+    "device_tested": false,
+    "audibility_verified": false,
+    "native_app_wired_at_freeze": true
+  },
+  "remaining": [
+    "Apple compile/link",
+    "device audibility",
+    "background/interruption/configuration-reset behavior",
+    "original mixing concurrency/gain fidelity",
+    "full sound-event coverage"
+  ],
+  "native_app_sha256": "3b2e86456032a637793b4a5fe08f2dd443b41c9408e6034c7d1101cba4edf6a5"
+}

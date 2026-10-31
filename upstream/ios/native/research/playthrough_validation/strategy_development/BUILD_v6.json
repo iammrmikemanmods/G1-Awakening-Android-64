@@ -1,0 +1,33 @@
+{
+  "scope": "Development-only input strategy; unchanged native gameplay core",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy/session_playthrough_probe_v6.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/tactical_search_v6.inc",
+      "bytes": 22671,
+      "sha256": "a26455100ab48e1b28365a0860cf5642865740bd54d7f7115eb546f83b9c3f17"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/pilot_v6",
+      "bytes": 948656,
+      "sha256": "af0bc651dcd842fd6fd744425996bd9d97d117e2508ddeb15a77b9e81bbf8693"
+    }
+  ],
+  "probes": [
+    "probe08_tactical_arrival_transform"
+  ],
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ]
+}

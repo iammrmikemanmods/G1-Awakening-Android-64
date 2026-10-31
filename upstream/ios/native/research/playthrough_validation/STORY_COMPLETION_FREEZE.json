@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "scope": "Complete fresh continuous headless Story execution. Input-policy source and reproducible evidence only; native runtime source unchanged. No original assets, binary executables, native saves or device claims.",
+  "files": [
+    {
+      "path": "native/tools/session_playthrough_probe.cpp",
+      "source_path": "g1_port/research/playthrough_strategy_followup/release/session_playthrough_probe.cpp",
+      "bytes": 98496,
+      "sha256": "35fb08a25fff7b0ccf91230418b3b95b1adfbc618a170cdd56a4690c9b369455"
+    },
+    {
+      "path": "analysis_tools/playthrough/run_complete_story_probe.py",
+      "source_path": "g1_port/research/playthrough_strategy_followup/release/run_complete_story_probe.py",
+      "bytes": 4099,
+      "sha256": "a71310d60587e149a4d0acd4f686045df7ef1dc6afe30c47269560bb0559d2f2"
+    },
+    {
+      "path": "native/research/COMPLETE_STORY_HEADLESS.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/release/COMPLETE_STORY_HEADLESS.json",
+      "bytes": 2969,
+      "sha256": "c4a31f2b9d8175192ea1bc983802c8a48bc230c4bddef2316d2575152b53623c"
+    },
+    {
+      "path": "native/research/COMPLETE_STORY_HEADLESS.md",
+      "source_path": "g1_port/research/playthrough_strategy_followup/release/COMPLETE_STORY_HEADLESS.md",
+      "bytes": 4974,
+      "sha256": "3bb6e00cc70af300d7341624edc364669779aeaa63ff76ee0b4c31a471f8cbb0"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/DEVELOPMENT_RUNS.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/release/STORY_COMPLETION_DEVELOPMENT_RUNS.json",
+      "bytes": 24987,
+      "sha256": "d775081640fe7ee0fbae9068c2e0a33b392722065ecd27d892cf6008d74c0c1f"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/ORIGIN.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/ORIGIN.json",
+      "bytes": 1324,
+      "sha256": "9c18ae0014758ec08a0d902316d6a98e675197e00cebe88f3f55992411416b9c"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/HEADER_INPUTS.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/HEADER_INPUTS.json",
+      "bytes": 8854,
+      "sha256": "5d71449cacf544a19273e5c110b49519f1158769e64af79340524dd77833f8ab"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/CHECKPOINT_BUILD.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/CHECKPOINT_BUILD.json",
+      "bytes": 745,
+      "sha256": "c588b9edb54f69f1a12fe04b25e62ad8bca5ecd1c45541a3f97d4c60a8c7b710"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/RANGED_BUILD.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/RANGED_BUILD.json",
+      "bytes": 1302,
+      "sha256": "be1cf187d5b11eb53d88a5762700f30994d84681f4077535c8d454784ae3efe4"
+    },
+    {
+      "path": "analysis_tools/playthrough/history/story_completion/session_playthrough_probe_formation.cpp",
+      "source_path": "g1_port/research/playthrough_strategy_followup/session_playthrough_probe_formation.cpp",
+      "bytes": 96055,
+      "sha256": "d4b0d250b1d11e5c0dc2b6b1b21cbb030429f6cdc82bd70279c810c16c36b192"
+    },
+    {
+      "path": "analysis_tools/playthrough/history/story_completion/checkpoint_probe.cpp",
+      "source_path": "g1_port/research/playthrough_strategy_followup/checkpoint_probe.cpp",
+      "bytes": 93376,
+      "sha256": "98b4f3a9c29ea9ea386f442645a6ad366c60b0eb200bdb657ab5819626dd3d03"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/capture15_combat/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/capture15_combat/result.json",
+      "bytes": 3351,
+      "sha256": "11f2153a371b376d7b56b699444cff152af7dbcf79eb8c32c1f492137cb3c964"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/capture15_combat/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/capture15_combat/events.jsonl",
+      "bytes": 99219,
+      "sha256": "5940b8fba96e385186da7a291d577eff298c2ed0382591db735e8387934067d5"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/full_story_aggressive/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/result.json",
+      "bytes": 5167,
+      "sha256": "8a826116d3741373f46576503cd57e9b86948107711a7ab241620380a2eb2062"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/full_story_aggressive/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/events.jsonl",
+      "bytes": 840169,
+      "sha256": "fa43728c1bed9ce58f0eaad2c1c28d4db7b434019d1d26956403bd5d6b72ec38"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/full_story_aggressive/reproduction.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/reproduction.json",
+      "bytes": 2999,
+      "sha256": "8cfed7df990f0f420e6a8df77ed1ddc246d6327f5a9e9d8f7dcbff5f6731544b"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/live_prefix_checkpoint/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/live_prefix_checkpoint/result.json",
+      "bytes": 5050,
+      "sha256": "c3b13dda5f11af7b1adcd8ad897854d872e5ce88ed003187c70b3cee96c712f2"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/live_prefix_checkpoint/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/live_prefix_checkpoint/events.jsonl",
+      "bytes": 673528,
+      "sha256": "ced58db49c9cd735fd823a193e18f887a4b75642fd0d1b93a870e8ef4e67a451"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_aggressive/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_aggressive/result.json",
+      "bytes": 2839,
+      "sha256": "775502fb54ca493b17d2250ce4a1342b98be300a27d77ba28750457c04386f15"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_aggressive/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_aggressive/events.jsonl",
+      "bytes": 68830,
+      "sha256": "424ecfcfd52bc08932ee0f6f119784220cb236720a7506ac08d882a9d8bcf49d"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_baseline/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_baseline/result.json",
+      "bytes": 3387,
+      "sha256": "c0d302e99d15f2412c6f0b14595f4ebd48cfd2110a049d82f27afa703f8c92ee"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_baseline/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_baseline/events.jsonl",
+      "bytes": 74039,
+      "sha256": "c03278fd4d5ddf7ba03344b3fbd8be92266376351bed88a6f2a1c503489d478e"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_cohesive_left/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_cohesive_left/result.json",
+      "bytes": 3390,
+      "sha256": "54e218ee9a80c4126f04ea64579546c53083e6c775b8833c598b4f7d7bb0bd9a"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_cohesive_left/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_cohesive_left/events.jsonl",
+      "bytes": 66303,
+      "sha256": "5e1a845e79f3f83f9d66a6f07908241ebf5c6a98313c6c279f91cfd76d68f9e4"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_cohesive_right/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_cohesive_right/result.json",
+      "bytes": 3391,
+      "sha256": "c79d5505b97a465b0bd0d1411914d698b9dae8260ff7bfe533b4e68162e74d59"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_cohesive_right/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_cohesive_right/events.jsonl",
+      "bytes": 66303,
+      "sha256": "5e1a845e79f3f83f9d66a6f07908241ebf5c6a98313c6c279f91cfd76d68f9e4"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_defensive/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_defensive/result.json",
+      "bytes": 3513,
+      "sha256": "9b012336d508b955c6d936d0307166fa4248882f935f1d1fcd8e74a423cc0919"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_defensive/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_defensive/events.jsonl",
+      "bytes": 169380,
+      "sha256": "8278ddbcdb2baa7de17d8123ef0c693e90a2691606388e4f7181466b86170c25"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_ranged/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_ranged/result.json",
+      "bytes": 3510,
+      "sha256": "98062a056b963cc0d6082c9bef66984daeddb4b0b82e9e3084dd85984d063327"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume15_ranged/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume15_ranged/events.jsonl",
+      "bytes": 245957,
+      "sha256": "409aefb0938c91cd7e3c671ef53a30b0f20d3989df0a5d00576634ce361ab30c"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_baseline/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_baseline/result.json",
+      "bytes": 3361,
+      "sha256": "3bdf97f1b8c141fd5ce231c9f6962f35dd801459bc988a2b896f09d3efb07835"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_baseline/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_baseline/events.jsonl",
+      "bytes": 56524,
+      "sha256": "eba02702ea56f51441f992186f01033b8e15a7690a720d62be9cd8e3e9503ff1"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_capture_right/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_capture_right/result.json",
+      "bytes": 3366,
+      "sha256": "89368a4e40e492c1669e50a429f4f60d6e06d263ffd3d7941facd76d0b31332f"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_capture_right/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_capture_right/events.jsonl",
+      "bytes": 52598,
+      "sha256": "25facae8a2d8c172a17de1bb5e465a50a9a643a6c7f24d1754d135ed9468e4b4"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_cohesive_left/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_cohesive_left/result.json",
+      "bytes": 3169,
+      "sha256": "ab80b845afea006ab796af15631623006df537762589559c12e400d1cde6448f"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_cohesive_left/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_cohesive_left/events.jsonl",
+      "bytes": 231948,
+      "sha256": "a0b0075f833d2d91f5adcd9d768f20e7c8f7ba4462bee9140c4a1e90ff7de6bc"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_cohesive_right/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_cohesive_right/result.json",
+      "bytes": 3368,
+      "sha256": "fdf33d993e670caf5aa40d8f67686bbda43db03ce70e4fa2f4874202389b6496"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_cohesive_right/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_cohesive_right/events.jsonl",
+      "bytes": 73229,
+      "sha256": "0b7678109703e213db337b42edc866f552e31393f8547bc2e9a8ddff41f85247"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_combat/result.json",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_combat/result.json",
+      "bytes": 3556,
+      "sha256": "a8e5f39569a136d23968eb64cf963a6b8a73c0dd9b2f0a7d7764bf8e74be2d1e"
+    },
+    {
+      "path": "native/research/playthrough_validation/story_completion/resume_combat/events.jsonl",
+      "source_path": "g1_port/research/playthrough_strategy_followup/resume_combat/events.jsonl",
+      "bytes": 164224,
+      "sha256": "58398c3821c2358f54cda7b6df468f337025499601deca45a866e9914e34df3f"
+    }
+  ]
+}

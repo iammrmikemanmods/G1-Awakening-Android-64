@@ -1,0 +1,96 @@
+{
+  "status": "portable_movement_slice_verified_against_original_functions",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "case_count": 256,
+  "named_cases": 31,
+  "seeded_cases": 225,
+  "seed": "0x473141",
+  "scalar_comparisons": 9092,
+  "malformed_input_checks": 4,
+  "unresolved_integration_areas": 5,
+  "instruction_patches": 0,
+  "function_stubs": 0,
+  "original_text_readonly_and_unchanged_all_cases": true,
+  "reference_tool": {
+    "name": "Unicorn",
+    "version": "2.1.4",
+    "role": "development reference only; not linked or shipped",
+    "wheel_sha256": "9d6e6dea140560de4ebd8446661f7ef84a357d428c14a3ef09dacd306ec8c239"
+  },
+  "implemented_mode": "full-fill path from original0x50844",
+  "original_functions": {
+    "remaining_budget": "0x43724",
+    "movement_cost": "0x4a16e",
+    "movement_range_wrapper": "0x50844",
+    "movement_fill": "0x4a29c",
+    "reset_range": "0x49b16",
+    "any_unoccupied_destination": "0x49b5a"
+  },
+  "verification": {
+    "host_cpp17_compile": true,
+    "warnings_as_errors": true,
+    "original_function_differential": true,
+    "address_sanitizer": true,
+    "undefined_behavior_sanitizer": true,
+    "leak_sanitizer": false,
+    "leak_sanitizer_limit": "process inspection blocked in sandbox; detect_leaks=0 used",
+    "apple_arm64_compile": false,
+    "device_execution": false,
+    "full_game_execution": false,
+    "movement_route_execution": false,
+    "campaign_complete": false
+  },
+  "resolved_differential_finding": {
+    "case": "unoccupied_origin_zero_budget",
+    "initial_native_result": true,
+    "original_result": false,
+    "correction": "Preserve the original clamped-adjacency gate before the vacant-cell scan."
+  },
+  "files": [
+    {
+      "path": "native/include/g1/Movement.hpp",
+      "bytes": 2996,
+      "sha256": "3d6ae42658f6be7a10685e5153ec168b3f32d71b76db2468499fa832ce45f438"
+    },
+    {
+      "path": "native/src/Movement.cpp",
+      "bytes": 8163,
+      "sha256": "20de5fe30ac8b69803b149bdc0a1a019a480c70d412f1bd0e474e6b1f70dbf04"
+    },
+    {
+      "path": "native/tests/movement_test.cpp",
+      "bytes": 5614,
+      "sha256": "4dbe03624ab5e378c5e19f63b93ba337afd5357a6c493afae87c9a656ce22dc6"
+    },
+    {
+      "path": "native/tests/movement_cases.txt",
+      "bytes": 65806,
+      "sha256": "ba6b138459a4016101f8ad22e35564faafa6635defc75437695d26408e0425d3"
+    },
+    {
+      "path": "native/research/MOVEMENT_RECOVERY.md",
+      "bytes": 8974,
+      "sha256": "b3d5fa8883af45d2860dd193c9623d9d39a60b2ac052ccf4a5c238a48fa80c87"
+    },
+    {
+      "path": "research/binary/native_movement/oracle.py",
+      "bytes": 10551,
+      "sha256": "ded6e06bc41c9bb6c8189b5f84e8636053d4ae296f925160de978660e61946a0"
+    },
+    {
+      "path": "research/binary/native_movement/make_cases.py",
+      "bytes": 5927,
+      "sha256": "abc56504d92482a1dd227431238bd811c3f06f30940b4964847add5201e9d1fa"
+    },
+    {
+      "path": "research/binary/native_movement/cases.json",
+      "bytes": 350558,
+      "sha256": "8339a517a8757e70a25adc42e7b0ce2b164b8da062b3e7529aea944de3899bae"
+    },
+    {
+      "path": "research/binary/native_movement/original_results.json",
+      "bytes": 158376,
+      "sha256": "61add36fcbbea0ae6a1f8a0c2d0abc4a4b13171c0fab02cdef5e194e2d7a19f5"
+    }
+  ]
+}

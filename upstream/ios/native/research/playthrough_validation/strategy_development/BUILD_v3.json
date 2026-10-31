@@ -1,0 +1,49 @@
+{
+  "scope": "Development-only input policy; native gameplay libraries unchanged; no state transplantation",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy/session_playthrough_probe_v3.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/tactical_search_v3.inc",
+      "bytes": 19382,
+      "sha256": "5cc335817a266e1f77de515f1634c5935e9500455dcd141f2c68257af117247a"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/pilot_v3",
+      "bytes": 944512,
+      "sha256": "5008b49a46aeaf7d12faa69c3e3b7789403b01aa0451918ab0e1069ee42dd59d"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_resources.a",
+      "bytes": 2180540,
+      "sha256": "95d734aa7d6e407b0fbd491a96a1fe3100b14029099bdccc0cb9e86498889e1e"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_png.a",
+      "bytes": 211556,
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_vorbis.a",
+      "bytes": 90250,
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+    }
+  ],
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "probes": [
+    "probe05_tactical_economy"
+  ],
+  "status": "strict compile; bounded at100 human turns, no victory claim"
+}

@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "status": "frozen",
+  "scope": "Lawful headless native gameplay pilot; presentation feedback synthetic; no ARM interpreter or original executable used",
+  "successful_story_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "terminal_loss_mission": 14,
+  "full_campaign_completed": false,
+  "remaining_story_indices_without_success_evidence": [
+    14,
+    15,
+    16
+  ],
+  "result": {
+    "bytes": 5440,
+    "sha256": "dec386f94f36c4fdb996654417c5b7642cef3e83c8f8fb2002cc85eedb7b7c1f"
+  },
+  "events": {
+    "bytes": 729283,
+    "sha256": "d00c66f47d7a6280933ba49af7fa0b84d0c09dbbd64d1437aa8c9b5b2d1724c7"
+  },
+  "actions": {
+    "commands": 1029,
+    "selections": 744,
+    "moves": 348,
+    "attacks": 172,
+    "captures": 24,
+    "transforms": 176,
+    "heals": 68,
+    "upgrades": 8,
+    "productions": 22,
+    "human_end_turns": 211,
+    "ai_turn_entries": 210
+  },
+  "ticks": 16301,
+  "wall_seconds": 46.7271,
+  "search": {
+    "branch_command_evaluations": 96132,
+    "accepted_branch_commands": 95512,
+    "settle_bounds": 0,
+    "solutions": 143,
+    "live_replay_checkpoint_matches": 689,
+    "counter_scope": "escape and tactical searches combined; solutions are replayable plans, not mission victories",
+    "state_transplanted": false,
+    "per_search_command_bound": 30000,
+    "per_search_turn_bound": 10,
+    "per_search_seconds_bound": 10
+  },
+  "first_seven_handoff_records_identical_to_previous_continuous_run": true,
+  "native_exception_count": 0,
+  "gameplay_state_forced": false,
+  "canonical_source_unchanged_at_freeze": {
+    "bytes": 65007,
+    "sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6"
+  },
+  "frozen_source": {
+    "bytes": 90230,
+    "sha256": "adf73562d5ed348ba4537d1c0e3d92190d24c1a69979e29483fe99c4b3718b2c"
+  },
+  "tested_executable": {
+    "bytes": 948744,
+    "sha256": "28ae8ac7c951ca1cd4d43e81ae1df5f9bba3035d56e3467a213e0aa2f64640e1"
+  },
+  "self_contained_source_build_executable_byte_identical": true,
+  "copied_core_libraries_verified_unchanged": {
+    "libg1_resources.a": "95d734aa7d6e407b0fbd491a96a1fe3100b14029099bdccc0cb9e86498889e1e",
+    "libg1_png.a": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9",
+    "libg1_vorbis.a": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+  },
+  "seed": 18241,
+  "profile": {
+    "completed": [
+      false,
+      false
+    ],
+    "highest_unlocked": [
+      14,
+      0
+    ]
+  },
+  "profile_writes_including_loss": 15,
+  "next_mission_installs": 14,
+  "strict_compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "reproducer_python_ast_and_help_checked": true,
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "terrain_tables_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+  "no_claims": [
+    "complete Story victory",
+    "missions15/16 reached",
+    "complete Showdown/Arena",
+    "rendered presentation",
+    "iPhone performance",
+    "Apple combined-source compilation",
+    "actual device playthrough"
+  ]
+}

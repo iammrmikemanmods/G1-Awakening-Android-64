@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "status": "frozen",
+  "scope": "Development-only input pilot and evidence; root applies destination source after review; no game rules or app edits",
+  "files": [
+    {
+      "path": "native/tools/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/session_playthrough_probe.cpp",
+      "bytes": 90230,
+      "sha256": "adf73562d5ed348ba4537d1c0e3d92190d24c1a69979e29483fe99c4b3718b2c"
+    },
+    {
+      "path": "analysis_tools/playthrough/run_strategy_probe.py",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/run_strategy_probe.py",
+      "bytes": 4265,
+      "sha256": "a68e5727aa7b6d6595e67276f804a8a4bb01a70d978861cd8bdac5d802e94be3"
+    },
+    {
+      "path": "native/research/PLAYTHROUGH_STRATEGY.md",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/PLAYTHROUGH_STRATEGY.md",
+      "bytes": 8537,
+      "sha256": "46c2a8329e5df1f4ca39b2f80e22c7b1bde3a8242109dc2073cdfb11a29a3e62"
+    },
+    {
+      "path": "native/research/PLAYTHROUGH_STRATEGY.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/PLAYTHROUGH_STRATEGY.json",
+      "bytes": 3236,
+      "sha256": "08762cb417b5fa7b21328dbe659d0402ebcd6791b7845725d10dcb3cce87d956"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/DEVELOPMENT_RUNS.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/DEVELOPMENT_RUNS.json",
+      "bytes": 19033,
+      "sha256": "eb5b1f07810f876264bb1137b69691cd66d8961b34f9d7d4cce9249b345de3d9"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe01_site_ai/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe01_site_ai/result.json",
+      "bytes": 3473,
+      "sha256": "e38867d40da68f169f4a4d1448c5231e0862a39a7bfe4bba75ffa1f2858d3684"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe01_site_ai/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe01_site_ai/events.jsonl",
+      "bytes": 223196,
+      "sha256": "f91dc64a0d7f0c55a6170a84f3f46875a2ebddddbee1b31749a16b2424c9598d"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe02_baseline/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe02_baseline/result.json",
+      "bytes": 3201,
+      "sha256": "0ff4dc9886ab4eee992ab815f4c26669c74466831d407b904c8671cf5f0084a3"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe02_baseline/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe02_baseline/events.jsonl",
+      "bytes": 111127,
+      "sha256": "8cc4728f509337f76953ff1cea144281949f95a0c8927d61d9dcfa320a6df86e"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_direct/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_direct/result.json",
+      "bytes": 3186,
+      "sha256": "20a07df950132a6bc6c5cfea26368e7e06b30b014cb9a92ac844eb4a8073675d"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_direct/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_direct/events.jsonl",
+      "bytes": 111127,
+      "sha256": "8cc4728f509337f76953ff1cea144281949f95a0c8927d61d9dcfa320a6df86e"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_economy/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_economy/result.json",
+      "bytes": 3190,
+      "sha256": "3bb7aeafb54a39c5b5b9e5b59050e28a257761c9891220d19669daed10f257b8"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_economy/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_economy/events.jsonl",
+      "bytes": 147967,
+      "sha256": "cafb06f7c9ebe7a35bba4d2a1dd6e72c32c6d8dee474d2a5b15947a437a99837"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_coordinated/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_coordinated/result.json",
+      "bytes": 3193,
+      "sha256": "7a7ccf0ce24b3c60ef990cc58f83b980356f20775dce4c25527324d4341c918e"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_coordinated/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_coordinated/events.jsonl",
+      "bytes": 127132,
+      "sha256": "44bf9649b93aa70e8ec67ba25f157e083c94885b2ea98e99f440e309dabc223b"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_coordinated-economy/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_coordinated-economy/result.json",
+      "bytes": 3201,
+      "sha256": "7c86b9cb316d0a64aadd64d827d9b775146dc745661f393c7c167455efec7af3"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe03_coordinated-economy/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe03_coordinated-economy/events.jsonl",
+      "bytes": 127132,
+      "sha256": "44bf9649b93aa70e8ec67ba25f157e083c94885b2ea98e99f440e309dabc223b"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe04_tactical/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe04_tactical/result.json",
+      "bytes": 2877,
+      "sha256": "da6a57b9a097151d78d288788102b8ec120d3435d95c183dc36081ba5f88edc3"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe04_tactical/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe04_tactical/events.jsonl",
+      "bytes": 206734,
+      "sha256": "2ec43d07772e9a5ffe7114134fccf2b87249fe1c801cdb72c1d9824f2832d68e"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe05_tactical_economy/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe05_tactical_economy/result.json",
+      "bytes": 2877,
+      "sha256": "82d74160986409cc22096c5766b925d10925f098cbeb961a262f8ffc6860989e"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe05_tactical_economy/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe05_tactical_economy/events.jsonl",
+      "bytes": 206734,
+      "sha256": "6e223d90b5026b4b736da072bcee0d3c61cf14c100cbc09b8dc139e1da8eb4c6"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe06_tactical_diagnostic/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe06_tactical_diagnostic/result.json",
+      "bytes": 2868,
+      "sha256": "4c706ec083cde1225e8e849882c56fa74eab6a08d07834be477fe37d6e852774"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe06_tactical_diagnostic/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe06_tactical_diagnostic/events.jsonl",
+      "bytes": 59347,
+      "sha256": "31f2c1ccbf73a10daccafb0acc954bda8acc080ede7be9e579e360109249c2b2"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe07_tactical_response/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe07_tactical_response/result.json",
+      "bytes": 2999,
+      "sha256": "28b7858b1f0337bc1bb494c2b9c2cd1208d6ee5825c0a0285385ccce033cc8e4"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe07_tactical_response/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe07_tactical_response/events.jsonl",
+      "bytes": 258229,
+      "sha256": "c2e98069b70e78702324e2e6ca6d8ec4feaa4d134c3a112b1a6646e2fcf3bab5"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe08_tactical_arrival_transform/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe08_tactical_arrival_transform/result.json",
+      "bytes": 2999,
+      "sha256": "76a1ee4f99668a4652190bcf8e5d3cf7adf2ba99c96ddbdd4b26545ecfd7a8cd"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/probe08_tactical_arrival_transform/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe08_tactical_arrival_transform/events.jsonl",
+      "bytes": 284361,
+      "sha256": "792c5e87c8ec25e5a878a3aaaa6b77994e20f3d3fe0302de26ac54dbb21d14ea"
+    },
+    {
+      "path": "native/research/playthrough_validation/tactical_continuous/result.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe09_hybrid_continuous/result.json",
+      "bytes": 5440,
+      "sha256": "dec386f94f36c4fdb996654417c5b7642cef3e83c8f8fb2002cc85eedb7b7c1f"
+    },
+    {
+      "path": "native/research/playthrough_validation/tactical_continuous/events.jsonl",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/probe09_hybrid_continuous/events.jsonl",
+      "bytes": 729283,
+      "sha256": "d00c66f47d7a6280933ba49af7fa0b84d0c09dbbd64d1437aa8c9b5b2d1724c7"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v1.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v1.json",
+      "bytes": 13885,
+      "sha256": "5dd320b2b4c21658fb94af79195a4e931222ac753f77e5382228ffcd30da1ec8"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v1/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v1.cpp",
+      "bytes": 66212,
+      "sha256": "21dc8bdcecdae2bca900b11183f4c418b6c2fff741d2d8112435a5675d85c461"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v2.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v2.json",
+      "bytes": 1602,
+      "sha256": "e032324b7856b7605e7df096b69e5cfee2a15dc279193a81b37052c45bbd9b98"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v2/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v2.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v2/tactical_search.inc",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/tactical_search_v2.inc",
+      "bytes": 19231,
+      "sha256": "0e188883af68d9c774c1cb4ddc4ba9c62f9f13c2f0e4e8d843a9c92a57699d21"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v3.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v3.json",
+      "bytes": 1575,
+      "sha256": "a127d4152661b19a3d9189f6a5738f40cba1b7e0c0b999094cf7878b0e351d4c"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v3/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v3.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v3/tactical_search.inc",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/tactical_search_v3.inc",
+      "bytes": 19382,
+      "sha256": "5cc335817a266e1f77de515f1634c5935e9500455dcd141f2c68257af117247a"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v4.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v4.json",
+      "bytes": 892,
+      "sha256": "96772c84e2f6b86199cc49ed86560022e1f62efe43b3521edb1db6db648e5478"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v4/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v4.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v4/tactical_search.inc",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/tactical_search_v4.inc",
+      "bytes": 20781,
+      "sha256": "dad4111c5562a3bb56c0e9f2773fb401a20332711b4b2a36fddd4776b3dcb8fa"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v5.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v5.json",
+      "bytes": 893,
+      "sha256": "b95b92d484f6e738f082a5d23a1f133e73c40ff8e3e0cd5c8c3a125d1a9d344e"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v5/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v5.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v5/tactical_search.inc",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/tactical_search_v5.inc",
+      "bytes": 21853,
+      "sha256": "d307ef453d6ebebd7f4f0fb861be858b8df84e4f16f7b7a3093264b0d1820e21"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v6.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v6.json",
+      "bytes": 902,
+      "sha256": "8434c6fe7ce36d79da13abf5c35d6ff7be3bd1ad2ea3d39ff7815301d5a82102"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v6/session_playthrough_probe.cpp",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/session_playthrough_probe_v6.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "analysis_tools/playthrough/development/v6/tactical_search.inc",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/tactical_search_v6.inc",
+      "bytes": 22671,
+      "sha256": "a26455100ab48e1b28365a0860cf5642865740bd54d7f7115eb546f83b9c3f17"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/BUILD_v7.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/BUILD_v7.json",
+      "bytes": 1867,
+      "sha256": "844f4a3d922bdd5a496e421f9371699f840c973ffad53b73dfb1197a6c1f5801"
+    },
+    {
+      "path": "native/research/playthrough_validation/strategy_development/SOURCE_ORIGIN.json",
+      "source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/SOURCE_ORIGIN.json",
+      "bytes": 393,
+      "sha256": "6db8256563321dd144cebf3ad1111ec6181a26fc3bf995a71fafded0a703ce93"
+    }
+  ],
+  "validation_summary_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/PLAYTHROUGH_STRATEGY.json",
+  "historical_runs_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/DEVELOPMENT_RUNS.json",
+  "excluded_payloads": [
+    "compiled executables",
+    "static libraries",
+    "native save files",
+    "original archive",
+    "terrain table bytes",
+    "original executable"
+  ],
+  "implementation_destination": "native/tools/session_playthrough_probe.cpp",
+  "implementation_source_path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy/release/session_playthrough_probe.cpp",
+  "implementation_sha256": "adf73562d5ed348ba4537d1c0e3d92190d24c1a69979e29483fe99c4b3718b2c"
+}

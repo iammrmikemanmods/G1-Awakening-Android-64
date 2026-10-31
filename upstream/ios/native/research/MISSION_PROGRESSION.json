@@ -1,0 +1,56 @@
+{
+  "status": "native_decision_equivalence_verified",
+  "scope": "completion requests, profile mutation, actual-save-result dispatch, results input/scroll and campaign handoff decisions; not persistence or renderer implementation",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "native_tests": {
+    "mission_progression": {
+      "rows": 738,
+      "checks": 10843,
+      "passed": true
+    },
+    "updated_mission_execution": {
+      "checks": 724,
+      "passed": true
+    }
+  },
+  "original_clock_phase8_cases": 3,
+  "compiler_options": [
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic",
+    "-O2"
+  ],
+  "source_hashes": {
+    "include/g1/MissionProgression.hpp": "7da6229854fa0168ae1402e890f53eaf1241e1284bc07c1b167602101e12f2e9",
+    "src/MissionProgression.cpp": "8fe4883f3a6532a3254afa29919bb95e0137ac8cc585642b2d42aad2797fd203",
+    "tests/mission_progression_test.cpp": "6bef39fe778757cdcfd9e0fbf1432c45d4448153b0cd869fb6892032d25009a9",
+    "tests/mission_progression_original_vectors.txt": "a120950902b56f7a339f774f44f0c7e489f082e533500c24b579c65f78421aa5",
+    "include/g1/MissionExecution.hpp": "e18f59d6312d982cdd6898e79be19d2e59532a7bef69d61cbd277a2f0a770341",
+    "src/MissionExecution.cpp": "5d802e7dbf6359eaab3abe3592c7d47b0b624af6aa4d2eb86bd658a2dd0072c2",
+    "tests/mission_execution_test.cpp": "56d2c2b216f2b825e98ac939e2150b5b5d815b32bc318ca1ff7cd707cae70290"
+  },
+  "reference_report": "mission_progression_validation/original_mission_progression_reference.json",
+  "repo_reference_generator": "analysis_tools/mission_progression/oracle.py",
+  "integration": {
+    "completion_entry": "MissionExecution::begin_completion(command_index, actual CampaignContext)",
+    "profile_update": "prepare_campaign_profile_update before actual persistence",
+    "save_result": "campaign_save_disposition accepts actual persistence result",
+    "campaign_next": "campaign_handoff after actual results input (immediate only group2)",
+    "first_next_resource": 326
+  },
+  "pending": [
+    "root GameSession integration and actual native durable persistence",
+    "native result/ending presentation and audio request implementation",
+    "general world/script commands and remaining objective kinds",
+    "campaign playthrough",
+    "Apple/device performance validation"
+  ],
+  "subsequent_general_objectives_extension": {
+    "report": "MISSION_OBJECTIVES.json",
+    "current_controller_checks": 731,
+    "prior_validation_is_historical_for_its_bounded_slice": true
+  }
+}

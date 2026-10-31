@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "kind": "native camera projection arithmetic and view contracts",
+  "result": {
+    "original_cases": 12,
+    "projection_comparisons": 192,
+    "native_contracts": 28,
+    "passed": true
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror"
+  ],
+  "sources": [
+    {
+      "path": "native/include/g1/M3GCamera.hpp",
+      "sha256": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04",
+      "bytes": 1520
+    },
+    {
+      "path": "native/src/M3GCamera.cpp",
+      "sha256": "5344397d24736ae86eab134d5a3ca7b5fe6b7c7870bb346a29187e12062e32a2",
+      "bytes": 7144
+    },
+    {
+      "path": "native/tests/m3g_camera_test.cpp",
+      "sha256": "b9928f5c35d68e4935e8d9dc711d29d805c94cfc2231cf3596ba304719546ee4",
+      "bytes": 4252
+    },
+    {
+      "path": "native/tests/m3g_camera_fixture.hpp",
+      "sha256": "dc6d39f420534c965a5ff655bc43e518e42f1d34e3563a148868bf0fd23cc5e5",
+      "bytes": 3916
+    }
+  ],
+  "reference": {
+    "path": "native/research/m3g_validation/original_camera_projection.json",
+    "sha256": "6aaedd0bfc4f6d53b2b9cf511a5ba99693f75d111a7ac4465a67782669eebcc1",
+    "bytes": 5984
+  },
+  "test_binary_sha256": "a4e8f698194c715cf1e983613bc917e5b5c4814d0ef3ac849ddf16b57ead955d",
+  "review_regression": "exactly singular float32 rows can leave nonzero double cofactor residual; relative determinant floor rejects it",
+  "host_math_boundary": "platform tanf; no historical iOS libm bit-identity claim",
+  "scope": {
+    "native_compile": true,
+    "projection_reference_match": true,
+    "inverse_reference_execution": false,
+    "apple_compile": false,
+    "gpu_execution": false,
+    "live_camera_selection": false
+  }
+}

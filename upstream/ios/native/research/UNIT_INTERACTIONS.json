@@ -1,0 +1,77 @@
+{
+  "status": "frozen_validated_native_components",
+  "original_reference_cases": 877,
+  "native_original_cases": 869,
+  "scalar_comparisons": 20601,
+  "native_guards": 14,
+  "native_test_output": "869 unchanged-original unit interaction cases matched (20601 scalars); 14 native guards passed.",
+  "confirmation_paths": [
+    "funds_checked_button",
+    "direct_type_list"
+  ],
+  "original_source_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "fixture_sha256": "12cadb6b1c3cd9bfcc5be7006ba4a306213e1d06a66a8b2d1b27028b112820ef",
+  "files": {
+    "native/include/g1/UnitInteractions.hpp": {
+      "bytes": 6610,
+      "sha256": "17c078644175988bf8ded0cae22864f25dec20d26279cdc56d1c841de8fc74fb"
+    },
+    "native/src/UnitInteractions.cpp": {
+      "bytes": 15269,
+      "sha256": "4de04ac71da7e2a0aff27c8b772b082786565d3fb7860f1233bfff8d217d2072"
+    },
+    "native/tests/unit_interactions_test.cpp": {
+      "bytes": 15423,
+      "sha256": "33247f55c55bcadae34f8089a3eb21fcc4c297aad4262311b875daa6341c057c"
+    },
+    "native/tests/unit_interactions_original_vectors.txt": {
+      "bytes": 910500,
+      "sha256": "12cadb6b1c3cd9bfcc5be7006ba4a306213e1d06a66a8b2d1b27028b112820ef"
+    },
+    "native/research/UNIT_INTERACTIONS.md": {
+      "bytes": 9366,
+      "sha256": "0989cf0a2ad3951508c30779e1279ba1b070f45865cf7bfe051280be3a1ed7a1"
+    },
+    "native/research/unit_interactions_validation/original_unit_interactions_reference.json": {
+      "bytes": 6861,
+      "sha256": "1ff8938d2bead72aac01b354d2e3a0f2d99914c5c331473d6538b49aa0523592"
+    },
+    "native/research/unit_interactions_validation/native_checks.json": {
+      "bytes": 2763,
+      "sha256": "b8ccc4d98864cc73de164f8d2f6e8ff1901ed0ab714ef4ef5bdfe7dd734b785c"
+    },
+    "native/research/unit_interactions_validation/native_checks.txt": {
+      "bytes": 96,
+      "sha256": "b80d33f86e82e868f5667a7e3e9ed5c59bc91582f6c31cceced848df021ad764"
+    },
+    "repository_native/analysis_tools/unit_interactions/oracle.py": {
+      "bytes": 26044,
+      "sha256": "bb70491ccc5c0a5d1290883aefcf5225723adcfec14bc14bc29410e0c299e5b4"
+    },
+    "repository_native/analysis_tools/unit_interactions/README.md": {
+      "bytes": 2196,
+      "sha256": "b37ce5ea6650240c554854779b293dc99d7c9b5d02666e3676e5a1253a6f11d8"
+    },
+    "repository_native/analysis_tools/unit_interactions/requirements.txt": {
+      "bytes": 15,
+      "sha256": "56bce36af734e3b9aeff2be4301bbc2a2c2b58ea1ea1e6ee6e792db84f96fbd4"
+    },
+    "repository_native/analysis_tools/unit_interactions/REFERENCE.json": {
+      "bytes": 6861,
+      "sha256": "1ff8938d2bead72aac01b354d2e3a0f2d99914c5c331473d6538b49aa0523592"
+    }
+  },
+  "cmake_additions": {
+    "source": "src/UnitInteractions.cpp",
+    "test_target": "g1_unit_interactions_tests",
+    "test_source": "tests/unit_interactions_test.cpp",
+    "ctest_name": "unit_interactions_original_functions",
+    "fixture_argument": "tests/unit_interactions_original_vectors.txt"
+  },
+  "mutable_state": "No new cargo record. Existing unit active flag, count, upgrade slot and status-cache/renderer requests change. Static field10/14 links derive from definitions and owner slots.",
+  "scope_limits": [
+    "No session/UI integration performed by this module author.",
+    "No Apple/device/full-playthrough validation of these new actions.",
+    "Post-arrival phase reset, presentation and future Undo remain caller work."
+  ]
+}

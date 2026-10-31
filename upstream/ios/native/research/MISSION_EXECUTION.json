@@ -1,0 +1,74 @@
+{
+  "module_scope": "Native first-mission control-flow continuation, strict localization, recovered dialogue/capture/clock behavior. No old code executes in product.",
+  "source_sha256": {
+    "include/g1/Text.hpp": "7e78e6b25dfe6e65ed7b98ec47809b1a0560428145a8e8d32ec5ea40b5134df0",
+    "include/g1/MissionExecution.hpp": "22d7eb9909cacc5a0d55ee6592fdeec45b53613eff4eb42e61fe35e3470b2ffc",
+    "src/Text.cpp": "77f0edbdf3a6f9b9979a89175ce7a2efe3068c2039394cdc9b33b70e0fa17058",
+    "src/TextIndexMap.inc": "cfdb86ff805a4a75b65aa1f79c943bb4f671d18e47d40dfe1b02561709201ad4",
+    "src/MissionExecution.cpp": "5f705097c45aa339b8eae52384a5026699c4ff2a892d2fa9e587ce56c7c0cbf2",
+    "tests/text_test.cpp": "d4252e42c8a4fc98d3054bd2d12c81ff00e4a2a677309b479be036b4192d864c",
+    "tests/mission_execution_test.cpp": "a7c1364f3f62a52f7c2c54907932f4d11529412ea631ea69da0b00a9de217084",
+    "tools/mission_execution_probe.cpp": "30202022383afff7b4a96d9e16c7a2a212de12cac3ac63bac98919148bb185ce",
+    "tests/text_index_original_vectors.txt": "cd329716c58c072847af3a476a6abd6ed7792301cbc1663f952c22100585daac",
+    "tests/dialogue_original_vectors.txt": "4254fffddd56e8c4c6be760b614ea71df0838f56abb1d7350f5bfc804134bf41",
+    "tests/capture_original_vectors.txt": "e31a5a7359ef7a29da6359d993d8ee19328e9728d56a7242a8857ad0eb5acb8f",
+    "tests/mission_clock_original_vectors.txt": "d2d5007a408aee4d9289bd8d64cc9611fd1b8afa446cec54c78f6fdadf69a1d0"
+  },
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "native_checks": {
+    "text": 1048,
+    "mission_execution": 716,
+    "compiler": "c++ -std=c++17 -Wall -Wextra -Wconversion -Werror -pedantic -O2",
+    "all_passed": true
+  },
+  "original_function_vectors": {
+    "text_index": 972,
+    "dialogue": 476,
+    "capture_case_shapes": 164,
+    "capture_executions": 328,
+    "mission_clock": 48,
+    "phase99_dispatch_observations": 1
+  },
+  "actual_resource_validation": {
+    "localization_entries_exact": 511,
+    "mission_id": 315,
+    "command_count": 29,
+    "control_flow_entries": 18,
+    "begin_cursor": 9,
+    "stop_cursor": 26,
+    "stop_opcode": 8,
+    "stop_consumed": false,
+    "synthetic_renderer_and_capture_observations": true,
+    "effects_applied": false,
+    "is_playthrough_evidence": false
+  },
+  "unsupported_boundaries": [
+    "Native text wrapping/font/portrait drawing and input gestures are external.",
+    "Camera movement, first-goal gameplay/tutorial setup and capture mutation are external required work.",
+    "Player-loss and alternate campaign branches stop explicitly.",
+    "Opcode8 completion presentation and opcode10 save/campaign handoff stop before consumption.",
+    "No iOS/device test or full mission/campaign playthrough claim."
+  ],
+  "reference_tools": {
+    "oracle.py": "17c89000f86d327946602d621ba10729d5a6880a80e0140dc5592f5532bf0c8f",
+    "validate_resources.py": "f32f83cffced3a2159ec2747477041f98fd87aba00665ba78c0e1a0529a663ca",
+    "requirements.txt": "56bce36af734e3b9aeff2be4301bbc2a2c2b58ea1ea1e6ee6e792db84f96fbd4"
+  },
+  "evidence": {
+    "original_mission_execution_reference.json": "4811020b731986c364bcf0bc6b93e7a6269e74bbaa48cd510c51c761e5fbbe78",
+    "native_mission_execution_validation.json": "df423ff9e8fd6a3d71a61488754cc4f9311d4ac9d3bef5ceeff8e011fd95c5cd"
+  },
+  "subsequent_progression_extension": {
+    "report": "MISSION_PROGRESSION.json",
+    "completion_entry": "begin_completion(command_index, actual CampaignContext)",
+    "updated_controller_checks": 724,
+    "earlier_resource_probe_remains_bounded_at_cursor": 26,
+    "opcode10_actual_persistence_required": true
+  },
+  "subsequent_general_objectives_extension": {
+    "report": "MISSION_OBJECTIVES.json",
+    "current_controller_checks": 731,
+    "prior_validation_is_historical_for_its_bounded_slice": true
+  }
+}

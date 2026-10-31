@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "scope": "Native rigid M3G animation sampling and iterative posed hierarchy; no Apple/GPU/clip claim",
+  "sources": [
+    {
+      "path": "native/include/g1/M3GAnimation.hpp",
+      "sha256": "33a55c86be8ae54542bd06aa7a7da3ff0bb0cd54234bd87d2fe4b12aae29ae8f",
+      "bytes": 3178
+    },
+    {
+      "path": "native/src/M3GAnimation.cpp",
+      "sha256": "957b1a7128e32e2df39c37273421145339c60a5fb433b914e1949b0cb6e3628a",
+      "bytes": 23159
+    },
+    {
+      "path": "native/tests/m3g_animation_test.cpp",
+      "sha256": "8f4ebcb0338814dfdbc2ac003be6bdb3e9cc1586caca6977167e383214ce2b9f",
+      "bytes": 9532
+    },
+    {
+      "path": "native/tests/m3g_animation_fixture.hpp",
+      "sha256": "1a9b5bcbfcc70a68c58e244702678c265c24177589b0079938674abfaebfa191",
+      "bytes": 3658
+    },
+    {
+      "path": "native/tools/m3g_animation_probe.cpp",
+      "sha256": "331e2111d57ad3a04a1f1f02b1a13857c0a8d940c25a86774b1fed3060a8f8af",
+      "bytes": 4726
+    },
+    {
+      "path": "analysis_tools/m3g/animation_oracle.py",
+      "sha256": "9aac208b97f7f5654d5745f806fea80d8e7056cb1a0ed38746137452058ef97f",
+      "bytes": 12728
+    },
+    {
+      "path": "analysis_tools/m3g/animation_validate.py",
+      "sha256": "13908b36de89fdb4530c379561aa8e23c368a6c366e87e0b399b2b6c8edc0d90",
+      "bytes": 8222
+    }
+  ],
+  "records": [
+    {
+      "path": "native/research/M3G_ANIMATION.md",
+      "sha256": "0312b1b26ad04e2bdc422cdd909c05c6ddea1192f70db38f8b8116bc19665784",
+      "bytes": 10887
+    },
+    {
+      "path": "native/research/m3g_validation/bumblebee_animation.json",
+      "sha256": "76d98bb841feef5e88ddbb04c6f846a19a61a21b5a7e2958e5ee1bc013db64bd",
+      "bytes": 3232
+    }
+  ],
+  "excluded": [
+    "private game payloads",
+    "original ARM program",
+    "emulator or tool binaries",
+    "original sampled asset timeline"
+  ],
+  "captured_campaign_native_app_sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "battle_clip_selection": false
+}

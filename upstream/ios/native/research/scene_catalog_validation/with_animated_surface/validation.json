@@ -1,0 +1,920 @@
+{
+  "scope": "Portable native scene construction, exact first-scene regression and actual asset coverage",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "terrain_tables_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+  "commands": [
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Archive.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Atlas.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Atlas.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Image.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Image.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/SpriteGeometry.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpriteGeometry.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Terrain.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Terrain.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/World.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/World.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Mission.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Mission.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Movement.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Movement.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/Scene.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Scene.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/InitialPresentation.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/InitialPresentation.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/src/SpritePlacement.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpritePlacement.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-c",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng/lodepng.cpp",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/lodepng.o"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "/workspace/scratch/cba553aafa20/g1_port/native/tools/scene_probe.cpp",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Archive.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Atlas.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Image.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpriteGeometry.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Terrain.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/World.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Mission.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Movement.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Scene.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/InitialPresentation.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpritePlacement.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/lodepng.o",
+      "-lz",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/scene_probe"
+    ],
+    [
+      "g++",
+      "-std=c++17",
+      "-O1",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/include",
+      "-I",
+      "/workspace/scratch/cba553aafa20/g1_port/native/third_party/lodepng",
+      "/workspace/scratch/cba553aafa20/g1_port/native/tools/scene_catalog_probe.cpp",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Archive.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Atlas.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Image.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpriteGeometry.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Terrain.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/World.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Mission.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Movement.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/Scene.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/InitialPresentation.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/SpritePlacement.o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/build/lodepng.o",
+      "-lz",
+      "-o",
+      "/workspace/scratch/cba553aafa20/g1_port/native/research/scene_catalog_validation/with_animated_surface/scene_catalog_probe"
+    ]
+  ],
+  "source_sha256": {
+    "native/src/Archive.cpp": "cc82a6de8d26c55cdad2ec17e342b03244a5dbd053d4f9a99af64247207ff309",
+    "native/src/Atlas.cpp": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+    "native/src/Image.cpp": "a3f4d8e18f82699138ef6948bbd72e7402c98e2e4973c6cba5096cb220564e4f",
+    "native/src/SpriteGeometry.cpp": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+    "native/src/Terrain.cpp": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+    "native/src/World.cpp": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+    "native/src/Mission.cpp": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+    "native/src/Movement.cpp": "0cac89782a82b521ea12845c400caedbb680790432de17f6d8fbd51acdd64f9f",
+    "native/src/Scene.cpp": "919b83acbe2e6eee2299985f4a3bc41d46442f5b1f33d9ccb41474899cec98ab",
+    "native/src/InitialPresentation.cpp": "dd992341007b3d19bc43c4a88c994d5f3581cbe6132528e3f83d5ad91fe7b62e",
+    "native/src/SpritePlacement.cpp": "7615da12e273eb5bf5c6cb18707655b73b547c2dce0f7306f074619a37bb7ed0",
+    "native/third_party/lodepng/lodepng.cpp": "6aec876971ec860527859458d3095220fc5ee1258ec37eb59e1e7dd9cf136a81",
+    "native/tools/scene_probe.cpp": "4ac7bf4026dae41475dcb3a6af1c77f8a3e3ce848fcf2d2c96e4c08b13c9fecb",
+    "native/tools/scene_catalog_probe.cpp": "4b1b9d6ea9b365eb674f4610849ec79163ea7945dc0dab95973e68b0e230f6e8",
+    "native/include/g1/Scene.hpp": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1",
+    "analysis_tools/scene_catalog/validate.py": "b9886446b4f478d3abd9df38d516bd95f71fb0cbcf4089976db0e92d7163e64a"
+  },
+  "first_scene_unchanged": true,
+  "baseline_sha256": "86de5da7bdb13fd44ef80141b80e1e1b351e9349992e639924478355fb46becf",
+  "descriptor_reference_sha256": "47688d06d6621bbc5eb29df7ca3668d75b18edde90b966b3d5cf166515ac50d1",
+  "descriptor_reference_matches": 23,
+  "catalog": {
+    "scope": "Native data/geometry load; no gameplay execution or GPU draw",
+    "roster_contract_checks_passed": true,
+    "empty_roster_supported": true,
+    "types": [
+      {
+        "type": 0,
+        "descriptor": 1298,
+        "image": 961,
+        "frames": 29,
+        "animations": 8,
+        "vertices": 1068
+      },
+      {
+        "type": 1,
+        "descriptor": 1111,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 900
+      },
+      {
+        "type": 2,
+        "descriptor": 1119,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 3,
+        "descriptor": 1020,
+        "image": 961,
+        "frames": 31,
+        "animations": 8,
+        "vertices": 1158
+      },
+      {
+        "type": 4,
+        "descriptor": 1106,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 5,
+        "descriptor": 1041,
+        "image": 961,
+        "frames": 9,
+        "animations": 3,
+        "vertices": 432
+      },
+      {
+        "type": 6,
+        "descriptor": 426,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 7,
+        "descriptor": 522,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 8,
+        "descriptor": 1281,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 1008
+      },
+      {
+        "type": 9,
+        "descriptor": 1088,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 10,
+        "descriptor": 1155,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 858
+      },
+      {
+        "type": 11,
+        "descriptor": 868,
+        "image": 961,
+        "frames": 57,
+        "animations": 12,
+        "vertices": 1770
+      },
+      {
+        "type": 12,
+        "descriptor": 876,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 648
+      },
+      {
+        "type": 13,
+        "descriptor": 377,
+        "image": 961,
+        "frames": 29,
+        "animations": 8,
+        "vertices": 1056
+      },
+      {
+        "type": 14,
+        "descriptor": 985,
+        "image": 961,
+        "frames": 29,
+        "animations": 8,
+        "vertices": 1062
+      },
+      {
+        "type": 15,
+        "descriptor": 1036,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 894
+      },
+      {
+        "type": 16,
+        "descriptor": 1196,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 882
+      },
+      {
+        "type": 17,
+        "descriptor": 1032,
+        "image": 961,
+        "frames": 29,
+        "animations": 8,
+        "vertices": 972
+      },
+      {
+        "type": 18,
+        "descriptor": 815,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 876
+      },
+      {
+        "type": 19,
+        "descriptor": 517,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 20,
+        "descriptor": 1027,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 21,
+        "descriptor": 1183,
+        "image": 961,
+        "frames": 12,
+        "animations": 3,
+        "vertices": 576
+      },
+      {
+        "type": 22,
+        "descriptor": 1069,
+        "image": 961,
+        "frames": 25,
+        "animations": 8,
+        "vertices": 858
+      }
+    ],
+    "all_frame_vertices": 19050,
+    "map_style_pairs": [
+      {
+        "map_index": 0,
+        "resource": 268,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 255,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            315,
+            2
+          ],
+          [
+            332,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 1,
+        "resource": 274,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 255,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            320,
+            2
+          ],
+          [
+            326,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 2,
+        "resource": 277,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 249,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            333,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 3,
+        "resource": 272,
+        "style": 2,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 761,
+        "quads": 210,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            327,
+            3
+          ],
+          [
+            330,
+            3
+          ],
+          [
+            334,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 4,
+        "resource": 276,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 254,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            329,
+            3
+          ],
+          [
+            335,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 5,
+        "resource": 263,
+        "style": 2,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 761,
+        "quads": 210,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            325,
+            3
+          ],
+          [
+            336,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 6,
+        "resource": 265,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 230,
+        "animated_quads": 34,
+        "decoration_slots": 15,
+        "references": [
+          [
+            324,
+            3
+          ],
+          [
+            337,
+            2
+          ],
+          [
+            339,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 7,
+        "resource": 266,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 242,
+        "animated_quads": 24,
+        "decoration_slots": 12,
+        "references": [
+          [
+            337,
+            16
+          ]
+        ]
+      },
+      {
+        "map_index": 9,
+        "resource": 270,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 225,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            317,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 10,
+        "resource": 271,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 259,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            318,
+            2
+          ],
+          [
+            318,
+            17
+          ],
+          [
+            328,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 11,
+        "resource": 273,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 225,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            319,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 12,
+        "resource": 275,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 232,
+        "animated_quads": 32,
+        "decoration_slots": 10,
+        "references": [
+          [
+            321,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 13,
+        "resource": 267,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 221,
+        "animated_quads": 31,
+        "decoration_slots": 11,
+        "references": [
+          [
+            322,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 14,
+        "resource": 279,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 224,
+        "animated_quads": 26,
+        "decoration_slots": 14,
+        "references": [
+          [
+            323,
+            2
+          ],
+          [
+            323,
+            25
+          ],
+          [
+            323,
+            36
+          ],
+          [
+            331,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 15,
+        "resource": 269,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 228,
+        "animated_quads": 24,
+        "decoration_slots": 11,
+        "references": [
+          [
+            338,
+            2
+          ]
+        ]
+      },
+      {
+        "map_index": 16,
+        "resource": 264,
+        "style": 0,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 693,
+        "quads": 252,
+        "animated_quads": 0,
+        "decoration_slots": 0,
+        "references": [
+          [
+            316,
+            2
+          ],
+          [
+            316,
+            26
+          ]
+        ]
+      },
+      {
+        "map_index": 17,
+        "resource": 258,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 212,
+        "animated_quads": 22,
+        "decoration_slots": 16,
+        "references": [
+          [
+            310,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 18,
+        "resource": 259,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 230,
+        "animated_quads": 22,
+        "decoration_slots": 11,
+        "references": [
+          [
+            311,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 19,
+        "resource": 260,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 222,
+        "animated_quads": 36,
+        "decoration_slots": 17,
+        "references": [
+          [
+            312,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 20,
+        "resource": 261,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 216,
+        "animated_quads": 22,
+        "decoration_slots": 14,
+        "references": [
+          [
+            313,
+            3
+          ]
+        ]
+      },
+      {
+        "map_index": 21,
+        "resource": 262,
+        "style": 1,
+        "width": 15,
+        "height": 14,
+        "loaded": true,
+        "atlas": 777,
+        "quads": 242,
+        "animated_quads": 24,
+        "decoration_slots": 12,
+        "references": [
+          [
+            314,
+            3
+          ]
+        ]
+      }
+    ],
+    "supported_map_style_pairs": 21,
+    "unsupported_map_style_pairs": 0,
+    "gpu_execution": false,
+    "campaign_completion": false
+  },
+  "apple_compilation_performed": false,
+  "gpu_execution": false,
+  "device_performance_verified": false,
+  "campaign_completion_verified": false
+}

@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "prerequisite": "sampler_v2.patch",
+  "live_source_unchanged": true,
+  "files": [
+    {
+      "path": "native/src/M3GAnimation.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/M3GAnimation.cpp",
+      "sha256": "f4b06082be47fdf415e100103b16540c0bc283ce17294550a0d79e64b20bf876",
+      "bytes": 29334,
+      "base_sha256": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10"
+    },
+    {
+      "path": "native/include/g1/M3GAnimation.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/include/g1/M3GAnimation.hpp",
+      "sha256": "42eb6dc4bd6315fcf14f8867c39035d915f675236f91c684738e5ea4d7a60f12",
+      "bytes": 4097,
+      "base_sha256": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b"
+    },
+    {
+      "path": "native/tests/m3g_animation_test.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/m3g_animation_test.cpp",
+      "sha256": "1b9470d97ed430ea01eff3ca5c1cc23f60da919f5f4801cfa64649bdc1c4bb57",
+      "bytes": 9535,
+      "base_sha256": "c4d90a282cd3fa09fb04d077607f2563cf8969579384ba289284d59281e70246"
+    },
+    {
+      "path": "native/include/g1/M3GScenePose.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/include/g1/M3GScenePose.hpp",
+      "sha256": "6f487fa9c340372712d09da5b285dd97ef637d03c7bb3b85dcaf81f6291cc13b",
+      "bytes": 1810,
+      "base_sha256": null
+    },
+    {
+      "path": "native/src/M3GScenePose.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/M3GScenePose.cpp",
+      "sha256": "54cc1a0e5fb4638a4f63a748bfda3d3c89d14435ff6d80bfb9f086efaed86a5e",
+      "bytes": 5507,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_scene_pose_test.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/m3g_scene_pose_test.cpp",
+      "sha256": "22fe2f24ea14dd3c159a85a9bf8da4efa73ea9110baebeae13d6fddaa7175f87",
+      "bytes": 9822,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_property_fixture.hpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/m3g_property_fixture.hpp",
+      "sha256": "477f50b590d38cae2ee7e5d86b748e54c4b16495ce19e289ccaabecd9eb7a2a2",
+      "bytes": 8801,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tools/m3g_scene_pose_probe.cpp",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/m3g_scene_pose_probe.cpp",
+      "sha256": "271136d55069c1fe2b7daeae846f9f02f6cc6ba765fe023756f4b49c5577a9d7",
+      "bytes": 2834,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/property_fixture.py",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/property_fixture.py",
+      "sha256": "d5bb87e63fa27ce25961188c5108422d06d671df5370a1f1d1306a82fa9d68c3",
+      "bytes": 4176,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/scene_pose_validate.py",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/scene_pose_validate.py",
+      "sha256": "3e04c36864451a7853d74c875d7b66ac1176f32f0450f984be81b4254a07b070",
+      "bytes": 2395,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/M3G_SCENE_POSE.md",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/M3G_SCENE_POSE.md",
+      "sha256": "d4e8a28ae252fef173bfb7941e27aeae4bdb55998442385e439cf655607287cb",
+      "bytes": 7472,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/scalar_native.json",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/scalar_native.json",
+      "sha256": "1bd761e99fb4916baeb4b025f17ebfa1857f879c565078401f0b9a7741e52752",
+      "bytes": 139,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/scene_pose_actual.json",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/scene_pose_actual.json",
+      "sha256": "9cf40932cc71d9c108fa000ec9411301e1e791ac0f882a7db85c6da0c7400d29",
+      "bytes": 40000,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/scene_pose_animation_regression.txt",
+      "source": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/animation_regression.txt",
+      "sha256": "b3e07391eeb5fb546178c4a0b6ae0201e483aad837c7d0f2c8d67374819243cf",
+      "bytes": 41,
+      "base_sha256": null
+    }
+  ],
+  "patch": {
+    "path": "/workspace/scratch/cba553aafa20/g1_port/research/native_m3g/scene_pose_v3/scene_pose_v3.patch",
+    "bytes": 91174,
+    "sha256": "656ce409443ab808d8f9c360f82f0be0146a42020db119ca050798b7ae641237"
+  },
+  "validation": {
+    "checks": 590,
+    "original_field_comparisons": 365,
+    "accepted_direct": 60,
+    "accepted_dispatch": 10,
+    "native_rejections_of_original_diagnostics": 20
+  },
+  "original_fixture_sha256": "5c19ffbd5705f3020cc0fc418f915c60fbe3b1baf3dc2461b95e9e3359af6252",
+  "actual_scene_validation": {
+    "resources": 4,
+    "poses": 24,
+    "nodes": 263,
+    "cameras": 38
+  },
+  "peer_review": "binary_audit read-only; no concrete blocker found; no independent execution claimed",
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

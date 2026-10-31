@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "reviewer": "asset_audit",
+  "scope": "Bounded independent read-only static review of the Apple offscreen M3G probe and final battle integration; no Apple build or GPU execution",
+  "files": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "sha256": "33e11fd69808b892a83a67f85c14b76bca4ac1a89af91376c9733464bb3fec43"
+    },
+    {
+      "path": "native/platform/apple/NativeBattle.hpp",
+      "sha256": "c26818c80ee8f9e6b1953b71ff030aebaa01d601afd8a5ef16fe81dbd0a812b4"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GProbe.mm",
+      "sha256": "eed26f026c0eae2821bd4fcfd65cf208f4ecfb2b60b01ac1c3bebfe938024c72"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.mm",
+      "sha256": "ef7ada8792ba2e8c740b86793c8da508050fd0d8407e919c0c1462870d57e41c"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.hpp",
+      "sha256": "fcce8e7a6e7279dfd44aeb3f1df9d2d2dacad504b8a7cdc1404c80a8afe2b429"
+    },
+    {
+      "path": "native/platform/apple/MetalM3GShader.hpp",
+      "sha256": "a376bd4ba4df753e9fe4299c3ce3e6b616b9a06e05592c7cfdd9d95cae07cd49"
+    },
+    {
+      "path": "native/include/g1/M3GBattlePresentation.hpp",
+      "sha256": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7"
+    },
+    {
+      "path": "native/src/M3GBattlePresentation.cpp",
+      "sha256": "dc4301ca833bb3fae00ce765121bc64a5271d58aebbb3e1a7d839a999416962e"
+    },
+    {
+      "path": "native/include/g1/M3GRenderFrame.hpp",
+      "sha256": "1a89af7fc4701c75492293ea074b2ce5556e6bfe10a1c428d6ea0ecf45ab6796"
+    },
+    {
+      "path": "native/src/M3GRenderFrame.cpp",
+      "sha256": "69ee42e31ce63bbaff9d53513dec3146f5337af32da4703bdb2ab9fbf29a07ec"
+    }
+  ],
+  "concrete_blockers": [],
+  "checked_contracts": [
+    {
+      "area": "offscreen probe",
+      "evidence": [
+        "MetalM3GProbe.mm render(): prepares from gpu->asset() while pose/grouping maps remain alive",
+        "BGRA8Unorm and Depth32Float match renderer; single sample default",
+        "Waits for command completion before shared target getBytes",
+        "Sprite source32x32 and viewport64x64 use the recovered unscaled rectangle path"
+      ],
+      "result": "no concrete static blocker found"
+    },
+    {
+      "area": "material adapter",
+      "evidence": [
+        "M3GBattlePresentation.cpp add_model(): applies ordered texture_object matches",
+        "Distinct host image key preserves unrelated textures sharing an authored Image2D",
+        "Updates image_format99 before upload and queue classification; preserves other state"
+      ],
+      "result": "matches frozen material integration contract"
+    },
+    {
+      "area": "asset/source identity and render order",
+      "evidence": [
+        "NativeApp.mm prepareBattle(): publishes presentation/models only after complete upload",
+        "drawInMTKView passes each MetalM3GModel retained asset address to prepare_frame",
+        "World/model A/model B/effects/death submissions encode independently in returned order",
+        "One render pass/clear precedes these ordered queues"
+      ],
+      "result": "no concrete source pairing or pass-order blocker found"
+    },
+    {
+      "area": "GPU resource and uniform lifetime",
+      "evidence": [
+        "Metal models own retained immutable assets and Metal objects",
+        "All CPU frame validation and source identity checks happen during encode",
+        "Uniforms and Sprite3D vertices use setVertexBytes/setFragmentBytes copy operations",
+        "No deferred callback dereferences the temporary prepared frame or node-state maps"
+      ],
+      "result": "no concrete lifetime blocker found in inspected call path"
+    },
+    {
+      "area": "asynchronous acknowledgement",
+      "evidence": [
+        "NativePresentationDelivery completion/presented flags are updated on main-queue blocks",
+        "deliverPresentation requires completed, finite positive presented_time, not failed and not previously delivered",
+        "recordPresentation rejects stale scene revisions, failed/paused state and nonmonotonic samples",
+        "finishBattleFrame requires matching pending token/current revision, completed controller and matching HUD draw",
+        "Battle frames carry no tactical world/focus/transform acknowledgements"
+      ],
+      "result": "no CPU-only or failed-command completion path found"
+    },
+    {
+      "area": "timing/HUD",
+      "evidence": [
+        "First matching presented battle token gates controller advance",
+        "Controller advances only by native SimulationClock30ms steps; draw resampling is read-only",
+        "Asset-load/foreground transitions reset wall-clock catch-up state",
+        "HUD has no private progress clock or Continue acknowledgement and reads controller health/damage",
+        "Final complete revision stops advancing while waiting for a matching presented frame/HUD draw"
+      ],
+      "result": "no concrete second clock or forced-completion blocker found"
+    }
+  ],
+  "closed_minor_finding": {
+    "path": "native/platform/apple/MetalM3GProbe.mm",
+    "line": 121,
+    "issue": "REPLACE test label initially said follows node alpha, but expected RGBA alpha proves overwrite after prior node alpha",
+    "resolution": "Root changed label to REPLACE overwrites previously applied node alpha; verified in final hash",
+    "code_behavior_change_required": false
+  },
+  "not_established": [
+    "Apple Objective-C++/Metal compilation",
+    "offscreen Metal pixel results",
+    "UIKit compositor timing or a physical display capture; HUD gate records drawRect execution",
+    "iPhone XR/iOS17.5 launch, complete battle playback, campaign playthrough or performance"
+  ],
+  "shared_source_edits_by_reviewer": [],
+  "tests_or_builds_run_for_this_review": []
+}

@@ -1,0 +1,17 @@
+.gradle/
+.cxx/
+**/build/
+local.properties
+app/src/main/assets/game/
+*.apk
+*.aab
+*.keystore
+*.jks
+*.ipa
+*.log
+__pycache__/
+.idea/
+.android-sdk/
+private-signing/
+captures/
+validation/runtime/

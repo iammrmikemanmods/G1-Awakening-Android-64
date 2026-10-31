@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "scope": "Dedicated rigid unlit M3G Metal source checkpoint; Apple and GPU gates pending",
+  "sources": [
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.hpp",
+      "sha256": "583b984f7f79ec32c767d9bd1cf50c452aedc8d181fed3c851fdcb3be25f842a",
+      "bytes": 2052
+    },
+    {
+      "path": "native/platform/apple/MetalM3GRenderer.mm",
+      "sha256": "a8476fc1520af7f513003920f75f1caf4b4ae74c5599aafc50e6e31f4c9c9ec2",
+      "bytes": 16060
+    },
+    {
+      "path": "native/platform/apple/MetalM3GShader.hpp",
+      "sha256": "a376bd4ba4df753e9fe4299c3ce3e6b616b9a06e05592c7cfdd9d95cae07cd49",
+      "bytes": 2855
+    },
+    {
+      "path": "analysis_tools/m3g/extract_metal_shader.py",
+      "sha256": "8cdcf150ffb6431ecf6027bc08299b46585ed5a4294839ff0beefa88a80b8422",
+      "bytes": 961
+    },
+    {
+      "path": "analysis_tools/m3g/render_state_audit.py",
+      "sha256": "d60c2f402b7582a9f7b0873846430e27976943467d30e01fee7b0a3cc824823a",
+      "bytes": 3837
+    }
+  ],
+  "records": [
+    {
+      "path": "native/research/M3G_METAL_RENDERER.md",
+      "sha256": "88a6ee0bd6a41d4ef89a3eb545d14274ae432853a45b6f5a69f49bc7d402acb3",
+      "bytes": 6193
+    },
+    {
+      "path": "native/research/m3g_validation/bumblebee_render_states.json",
+      "sha256": "6920188bb09ba87bbcd0e8e88e360e7e42b06f18f4e1fb17963291e768584318",
+      "bytes": 1986
+    }
+  ],
+  "excluded": [
+    "private game payloads",
+    "original ARM program",
+    "emulator or tool binaries",
+    "original sampled asset timeline"
+  ],
+  "captured_campaign_native_app_sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "battle_clip_selection": false
+}

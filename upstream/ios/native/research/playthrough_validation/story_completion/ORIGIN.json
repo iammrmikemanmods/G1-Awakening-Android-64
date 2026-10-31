@@ -1,0 +1,27 @@
+{
+  "scope": "Isolated follow-up input policy only. Frozen native code unchanged. Original ARM executable never executed.",
+  "source": "g1_port/research/playthrough_strategy/release/session_playthrough_probe.cpp",
+  "source_sha256": "adf73562d5ed348ba4537d1c0e3d92190d24c1a69979e29483fe99c4b3718b2c",
+  "libraries": [
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_resources.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_resources.a",
+      "sha256": "20ec327bf2aac0c69cb2a3e013a97326b647d6e07555fc2168f027fd18d1ea95",
+      "bytes": 2463006
+    },
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_png.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_png.a",
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9",
+      "bytes": 211556
+    },
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_vorbis.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_vorbis.a",
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f",
+      "bytes": 90250
+    }
+  ],
+  "baseline_result": "/tmp/g1-native-complete-staged-story/result.json",
+  "baseline_result_sha256": "79a237e3b3b1cf557fdadd44fabc2122abd39f220f805f63120641bd0dbb094b"
+}

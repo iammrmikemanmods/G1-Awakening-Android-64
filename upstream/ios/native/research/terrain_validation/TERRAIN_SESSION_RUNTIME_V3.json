@@ -1,0 +1,67 @@
+{
+  "scope": "Session-owned terrain0/1/2, ordered initialization and format3 actual-file cold resume; synthetic presentation only",
+  "checkpoint_format": 3,
+  "native_session_save_checks": 74,
+  "host_ctest_suites_passed": 51,
+  "strict_syntax": "C++17 Wall Wextra Wconversion Werror pedantic",
+  "actual_archive_entries": {
+    "presentation": "synthetic headless acknowledgements",
+    "playthrough": false,
+    "verified_entries": 45,
+    "applied_world_operations": 540,
+    "empty_initial_rosters": 6,
+    "checkpoint_round_trips": 45,
+    "unique_mission_scripts": 30,
+    "arena_variants_per_script": 4
+  },
+  "checkpoint_bytes_range": [
+    3255,
+    17477
+  ],
+  "apple_build_for_this_change": false,
+  "iphone_xr_verified": false,
+  "full_playthrough_verified": false,
+  "files": [
+    {
+      "path": "native/include/g1/TerrainRuntime.hpp",
+      "bytes": 1512,
+      "sha256": "de33c17f623639eccc11aa0234bf1feb9f088029f101259b8cac3a738e0a109b"
+    },
+    {
+      "path": "native/src/TerrainRuntime.cpp",
+      "bytes": 3453,
+      "sha256": "b2c5ccb05b6f43e4b90e0771958dc9c9a2cd73d04f5793c33308c8f4d241f69d"
+    },
+    {
+      "path": "native/include/g1/GameSession.hpp",
+      "bytes": 12117,
+      "sha256": "37e21ce2c4ee57a879eccca53f66586aa8caf7a4516932bce7792355333668b0"
+    },
+    {
+      "path": "native/src/GameSessionWorld.cpp",
+      "bytes": 8193,
+      "sha256": "14fc87e569983fc99528d9eda7c2f095f8af4c621f5bee546cd477fea183258d"
+    },
+    {
+      "path": "native/src/SessionSave.cpp",
+      "bytes": 30056,
+      "sha256": "7f9292c19a26b6bb09dff088f0e88d7fe70ac654684cb7b27695150b42cfb825"
+    },
+    {
+      "path": "native/tests/session_save_test.cpp",
+      "bytes": 20331,
+      "sha256": "3a7ee885ad873a661696f3b3c31a9c65214dea24de18daf4ef6cb4af0e9d6ed3"
+    },
+    {
+      "path": "native/tools/session_campaign_probe.cpp",
+      "bytes": 5354,
+      "sha256": "650c57679b3e2570aa796e4330262d1dcd9dc8f5c99adceaae7cfe6810c29c10"
+    },
+    {
+      "path": "native/research/SESSION_SAVE.md",
+      "bytes": 8647,
+      "sha256": "94dc7983f7bfb3d5d58931549e1a9fe4091f7ab0c8e0cb2ee2599497c83bd0cc"
+    }
+  ],
+  "style0_2_sprite_entries": 17
+}

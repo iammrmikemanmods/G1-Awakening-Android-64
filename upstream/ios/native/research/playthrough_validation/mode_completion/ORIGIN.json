@@ -1,0 +1,8 @@
+{
+  "scope": "Isolated mode pilot; preserve STORY_COMPLETION_FREEZE unchanged. Native gameplay libraries unchanged.",
+  "source": "g1_port/research/playthrough_strategy_followup/release/session_playthrough_probe.cpp",
+  "source_sha256": "35fb08a25fff7b0ccf91230418b3b95b1adfbc618a170cdd56a4690c9b369455",
+  "story_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+  "story_profile_sha256": "bc7f1b4d472ed8f41937d563663ebd273f91d597d8b7e0f605395c529efd6a56",
+  "library_provenance": "g1_port/research/playthrough_strategy_followup/ORIGIN.json"
+}

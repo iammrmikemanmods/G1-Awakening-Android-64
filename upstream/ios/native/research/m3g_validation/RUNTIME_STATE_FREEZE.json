@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "scope": "Additive runtime operations for native battle attachment/camera propagation, target-restricted sampling and retained Texture2D identity. Existing sampler formulas unchanged.",
+  "validation": {
+    "native_runtime_contracts": 26,
+    "optimization": "g++ C++17 O2, Wall Wextra Werror pedantic",
+    "original_execution_in_this_change": false,
+    "existing_original_evidence": [
+      "native/research/M3G_CAMERA_TRANSLATE_SLOT.md",
+      "native/research/M3G_MODEL_ATTACHMENT.md",
+      "native/research/M3G_PUBLIC_ANIMATE.md"
+    ]
+  },
+  "cmake_additions": {
+    "test_source": "tests/m3g_runtime_state_test.cpp",
+    "test_name": "m3g_runtime_state_contract",
+    "arguments": []
+  },
+  "files": [
+    {
+      "path": "native/include/g1/M3GScene.hpp",
+      "bytes": 6176,
+      "sha256": "7a1c27aa53e6df32d83c2ec23727d180008591154b108af70b8c12f9a373c653"
+    },
+    {
+      "path": "native/src/M3GScene.cpp",
+      "bytes": 37873,
+      "sha256": "3908c41603d8a3d9f80ef184909083ca3cfe1e68244944918014aed431c9444b"
+    },
+    {
+      "path": "native/include/g1/M3GAnimation.hpp",
+      "bytes": 5222,
+      "sha256": "790d94abaf8b0ea4d842801c3e3517347efa4cd02163c1fc85816700b48597ad"
+    },
+    {
+      "path": "native/src/M3GAnimation.cpp",
+      "bytes": 32088,
+      "sha256": "300b15ceb1f251d8701d6e8f058a86fe3f5987a5cea39f907f7ab7f3d150136c"
+    },
+    {
+      "path": "native/include/g1/M3GScenePose.hpp",
+      "bytes": 2131,
+      "sha256": "c2d8080f45a6060b2e22bacd77c91a4643f0ce644a885620950d1aefd7fb6b50"
+    },
+    {
+      "path": "native/src/M3GScenePose.cpp",
+      "bytes": 6470,
+      "sha256": "09d815e4c654b18306b28b4e1d51ea53917d66bafc3a670523598b7273310ef7"
+    },
+    {
+      "path": "native/tests/m3g_runtime_state_test.cpp",
+      "bytes": 5193,
+      "sha256": "6f312aa4fe00d2afe063d7777976bb972910bdb628d903058e2a9228c5c301d2"
+    },
+    {
+      "path": "native/tests/m3g_scene_test.cpp",
+      "bytes": 13247,
+      "sha256": "8435874945efd36efb86227b2317fdb3b45dc247b006e526ff10cfd7a3b4034b"
+    }
+  ]
+}

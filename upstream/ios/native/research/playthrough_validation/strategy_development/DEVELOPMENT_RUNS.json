@@ -1,0 +1,654 @@
+{
+  "schema": 1,
+  "status": "frozen",
+  "runs": [
+    {
+      "run": "probe01_site_ai",
+      "build_version": 1,
+      "strategy": "native-planner-all",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 0.0327028,
+      "ticks": 2594,
+      "actions": {
+        "commands": 201,
+        "selections": 430,
+        "moves": 8,
+        "attacks": 83,
+        "captures": 0,
+        "transforms": 4,
+        "heals": 0,
+        "upgrades": 0,
+        "productions": 6,
+        "human_end_turns": 100,
+        "ai_turn_entries": 100
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3473,
+        "sha256": "e38867d40da68f169f4a4d1448c5231e0862a39a7bfe4bba75ffa1f2858d3684"
+      },
+      "events": {
+        "bytes": 223196,
+        "sha256": "f91dc64a0d7f0c55a6170a84f3f46875a2ebddddbee1b31749a16b2424c9598d"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe02_baseline",
+      "build_version": 1,
+      "strategy": "native-planner-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 0.0145204,
+      "ticks": 1454,
+      "actions": {
+        "commands": 97,
+        "selections": 104,
+        "moves": 2,
+        "attacks": 39,
+        "captures": 0,
+        "transforms": 3,
+        "heals": 0,
+        "upgrades": 0,
+        "productions": 2,
+        "human_end_turns": 51,
+        "ai_turn_entries": 51
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3201,
+        "sha256": "0ff4dc9886ab4eee992ab815f4c26669c74466831d407b904c8671cf5f0084a3"
+      },
+      "events": {
+        "bytes": 111127,
+        "sha256": "8cc4728f509337f76953ff1cea144281949f95a0c8927d61d9dcfa320a6df86e"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe03_direct",
+      "build_version": 1,
+      "strategy": "direct",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 0.0270227,
+      "ticks": 1454,
+      "actions": {
+        "commands": 97,
+        "selections": 104,
+        "moves": 2,
+        "attacks": 39,
+        "captures": 0,
+        "transforms": 3,
+        "heals": 0,
+        "upgrades": 0,
+        "productions": 2,
+        "human_end_turns": 51,
+        "ai_turn_entries": 51
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3186,
+        "sha256": "20a07df950132a6bc6c5cfea26368e7e06b30b014cb9a92ac844eb4a8073675d"
+      },
+      "events": {
+        "bytes": 111127,
+        "sha256": "8cc4728f509337f76953ff1cea144281949f95a0c8927d61d9dcfa320a6df86e"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe03_economy",
+      "build_version": 1,
+      "strategy": "economy",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 0.0243609,
+      "ticks": 2036,
+      "actions": {
+        "commands": 125,
+        "selections": 112,
+        "moves": 2,
+        "attacks": 38,
+        "captures": 0,
+        "transforms": 3,
+        "heals": 10,
+        "upgrades": 0,
+        "productions": 3,
+        "human_end_turns": 69,
+        "ai_turn_entries": 69
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3190,
+        "sha256": "3bb7aeafb54a39c5b5b9e5b59050e28a257761c9891220d19669daed10f257b8"
+      },
+      "events": {
+        "bytes": 147967,
+        "sha256": "cafb06f7c9ebe7a35bba4d2a1dd6e72c32c6d8dee474d2a5b15947a437a99837"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe03_coordinated",
+      "build_version": 1,
+      "strategy": "coordinated",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 0.0245583,
+      "ticks": 1768,
+      "actions": {
+        "commands": 112,
+        "selections": 227,
+        "moves": 2,
+        "attacks": 34,
+        "captures": 0,
+        "transforms": 3,
+        "heals": 13,
+        "upgrades": 0,
+        "productions": 3,
+        "human_end_turns": 57,
+        "ai_turn_entries": 57
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3193,
+        "sha256": "7a7ccf0ce24b3c60ef990cc58f83b980356f20775dce4c25527324d4341c918e"
+      },
+      "events": {
+        "bytes": 127132,
+        "sha256": "44bf9649b93aa70e8ec67ba25f157e083c94885b2ea98e99f440e309dabc223b"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe03_coordinated-economy",
+      "build_version": 1,
+      "strategy": "coordinated-economy",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 0.0253929,
+      "ticks": 1768,
+      "actions": {
+        "commands": 112,
+        "selections": 227,
+        "moves": 2,
+        "attacks": 34,
+        "captures": 0,
+        "transforms": 3,
+        "heals": 13,
+        "upgrades": 0,
+        "productions": 3,
+        "human_end_turns": 57,
+        "ai_turn_entries": 57
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 0,
+        "accepted_branch_commands": 0,
+        "settle_bounds": 0,
+        "solutions": 0,
+        "live_replay_checkpoint_matches": 0,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 3201,
+        "sha256": "7c86b9cb316d0a64aadd64d827d9b775146dc745661f393c7c167455efec7af3"
+      },
+      "events": {
+        "bytes": 127132,
+        "sha256": "44bf9649b93aa70e8ec67ba25f157e083c94885b2ea98e99f440e309dabc223b"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe04_tactical",
+      "build_version": 2,
+      "strategy": "tactical-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 3.10862,
+      "ticks": 1787,
+      "actions": {
+        "commands": 127,
+        "selections": 27,
+        "moves": 11,
+        "attacks": 4,
+        "captures": 1,
+        "transforms": 6,
+        "heals": 5,
+        "upgrades": 0,
+        "productions": 0,
+        "human_end_turns": 100,
+        "ai_turn_entries": 100
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 18147,
+        "accepted_branch_commands": 18115,
+        "settle_bounds": 0,
+        "solutions": 100,
+        "live_replay_checkpoint_matches": 126,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 2877,
+        "sha256": "da6a57b9a097151d78d288788102b8ec120d3435d95c183dc36081ba5f88edc3"
+      },
+      "events": {
+        "bytes": 206734,
+        "sha256": "2ec43d07772e9a5ffe7114134fccf2b87249fe1c801cdb72c1d9824f2832d68e"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe05_tactical_economy",
+      "build_version": 3,
+      "strategy": "tactical-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 3.30092,
+      "ticks": 1787,
+      "actions": {
+        "commands": 127,
+        "selections": 27,
+        "moves": 11,
+        "attacks": 4,
+        "captures": 1,
+        "transforms": 6,
+        "heals": 5,
+        "upgrades": 0,
+        "productions": 0,
+        "human_end_turns": 100,
+        "ai_turn_entries": 100
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 18091,
+        "accepted_branch_commands": 18059,
+        "settle_bounds": 0,
+        "solutions": 100,
+        "live_replay_checkpoint_matches": 126,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 2877,
+        "sha256": "82d74160986409cc22096c5766b925d10925f098cbeb961a262f8ffc6860989e"
+      },
+      "events": {
+        "bytes": 206734,
+        "sha256": "6e223d90b5026b4b736da072bcee0d3c61cf14c100cbc09b8dc139e1da8eb4c6"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe06_tactical_diagnostic",
+      "build_version": 4,
+      "strategy": "tactical-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 0.573861,
+      "ticks": 1234,
+      "actions": {
+        "commands": 48,
+        "selections": 27,
+        "moves": 11,
+        "attacks": 4,
+        "captures": 1,
+        "transforms": 6,
+        "heals": 5,
+        "upgrades": 0,
+        "productions": 0,
+        "human_end_turns": 21,
+        "ai_turn_entries": 21
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 2779,
+        "accepted_branch_commands": 2747,
+        "settle_bounds": 0,
+        "solutions": 21,
+        "live_replay_checkpoint_matches": 47,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 2868,
+        "sha256": "4c706ec083cde1225e8e849882c56fa74eab6a08d07834be477fe37d6e852774"
+      },
+      "events": {
+        "bytes": 59347,
+        "sha256": "31f2c1ccbf73a10daccafb0acc954bda8acc080ede7be9e579e360109249c2b2"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe07_tactical_response",
+      "build_version": 5,
+      "strategy": "tactical-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 2.51829,
+      "ticks": 3792,
+      "actions": {
+        "commands": 216,
+        "selections": 116,
+        "moves": 30,
+        "attacks": 46,
+        "captures": 1,
+        "transforms": 19,
+        "heals": 14,
+        "upgrades": 4,
+        "productions": 2,
+        "human_end_turns": 100,
+        "ai_turn_entries": 100
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 10800,
+        "accepted_branch_commands": 10752,
+        "settle_bounds": 0,
+        "solutions": 100,
+        "live_replay_checkpoint_matches": 215,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 2999,
+        "sha256": "28b7858b1f0337bc1bb494c2b9c2cd1208d6ee5825c0a0285385ccce033cc8e4"
+      },
+      "events": {
+        "bytes": 258229,
+        "sha256": "c2e98069b70e78702324e2e6ca6d8ec4feaa4d134c3a112b1a6646e2fcf3bab5"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe08_tactical_arrival_transform",
+      "build_version": 6,
+      "strategy": "tactical-search",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 7,
+      "outcome": "human_turn_bound",
+      "error": "",
+      "wall_seconds": 6.4698,
+      "ticks": 3980,
+      "actions": {
+        "commands": 325,
+        "selections": 225,
+        "moves": 83,
+        "attacks": 67,
+        "captures": 1,
+        "transforms": 32,
+        "heals": 41,
+        "upgrades": 0,
+        "productions": 1,
+        "human_end_turns": 100,
+        "ai_turn_entries": 100
+      },
+      "successful_story_indices": [],
+      "final_mission": 7,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 26655,
+        "accepted_branch_commands": 26599,
+        "settle_bounds": 0,
+        "solutions": 100,
+        "live_replay_checkpoint_matches": 324,
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 2999,
+        "sha256": "76a1ee4f99668a4652190bcf8e5d3cf7adf2ba99c96ddbdd4b26545ecfd7a8cd"
+      },
+      "events": {
+        "bytes": 284361,
+        "sha256": "792c5e87c8ec25e5a878a3aaaa6b77994e20f3d3fe0302de26ac54dbb21d14ea"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    },
+    {
+      "run": "probe09_hybrid_continuous",
+      "build_version": 7,
+      "strategy": "native-planner-tactical",
+      "seed": 18241,
+      "start_group": 0,
+      "start_mission": 0,
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "wall_seconds": 46.7271,
+      "ticks": 16301,
+      "actions": {
+        "commands": 1029,
+        "selections": 744,
+        "moves": 348,
+        "attacks": 172,
+        "captures": 24,
+        "transforms": 176,
+        "heals": 68,
+        "upgrades": 8,
+        "productions": 22,
+        "human_end_turns": 211,
+        "ai_turn_entries": 210
+      },
+      "successful_story_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "final_mission": 14,
+      "profile_completed": [
+        false,
+        false
+      ],
+      "search": {
+        "branch_command_evaluations": 96132,
+        "accepted_branch_commands": 95512,
+        "settle_bounds": 0,
+        "solutions": 143,
+        "live_replay_checkpoint_matches": 689,
+        "counter_scope": "escape and tactical searches combined; solutions are replayable plans, not mission victories",
+        "state_transplanted": false,
+        "per_search_command_bound": 30000,
+        "per_search_turn_bound": 10,
+        "per_search_seconds_bound": 10
+      },
+      "search_budget_events": 0,
+      "result": {
+        "bytes": 5440,
+        "sha256": "dec386f94f36c4fdb996654417c5b7642cef3e83c8f8fb2002cc85eedb7b7c1f"
+      },
+      "events": {
+        "bytes": 729283,
+        "sha256": "d00c66f47d7a6280933ba49af7fa0b84d0c09dbbd64d1437aa8c9b5b2d1724c7"
+      },
+      "scope": "Native core plus synthetic presentation; no state transplantation; not device or rendered validation"
+    }
+  ],
+  "tactical_exact_limits": {
+    "branch_commands": 8000,
+    "human_turn_depth": 1,
+    "wall_seconds": 6,
+    "final_partial_beam": 8,
+    "final_response_candidates_per_actor": 32
+  },
+  "historical_metadata_note": "Early tactical result files retain conservative legacy 30000-command/10-turn/10-second escape bounds; the tighter tactical bounds are in their source. solutions counts replayable plans, not victories. Historical raw files are preserved unchanged."
+}

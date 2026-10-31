@@ -1,0 +1,20 @@
+{
+  "kind": "offscreen UI contract, not Android device gameplay",
+  "width": 2340,
+  "height": 1080,
+  "source_text_entries": 511,
+  "single_font_coverage": 510,
+  "source_font_dialogue_layouts": 510,
+  "platform_fallback_entries": 1,
+  "production_dialogue_font": "Android white monospace (iOS uses Menlo)",
+  "platform_fallback": "U+00AE preserved; Android uses Canvas, this probe uses DejaVuSansMono",
+  "menu_and_battle_tokens": true,
+  "dialogue_reveal_feedback": true,
+  "production_choices_scroll_beyond_nine": true,
+  "production_cancel_fixed": true,
+  "generic_panel_receipt_and_disabled_action": true,
+  "accessibility_source_labels_visible_bounds_and_disabled_actions": true,
+  "accessibility_dialogue_reveal_and_scroll_rows": true,
+  "safe_area_hit_geometry": true,
+  "disabled_controls_rejected": true
+}

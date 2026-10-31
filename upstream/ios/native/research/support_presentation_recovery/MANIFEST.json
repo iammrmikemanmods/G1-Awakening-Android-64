@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "status": "Frozen evidence only; support overlay is not integrated in build005",
+  "production_runtime_changes": false,
+  "cmake_changes": false,
+  "original_assets_included": false,
+  "inspected_source_hashes": {
+    "native/platform/apple/NativeApp.mm": "1ff0d8bc82fb13c4b6b1a52e4de1e9bc088632502de05218908912985c1fcf72",
+    "native/src/GameSession.cpp": "8a90b763c6b27b914d3989b8bcfa5f2d35f0f435db95941a402432676acc830a",
+    "native/include/g1/GameSession.hpp": "37e21ce2c4ee57a879eccca53f66586aa8caf7a4516932bce7792355333668b0",
+    "native/src/SpriteAnimation.cpp": "80159bac9e3e9e52178a54a3d53666326142bd7863e47721d75a24703882c07e",
+    "native/include/g1/SpriteAnimation.hpp": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9",
+    "native/include/g1/AudioMaintenance.hpp": "56fe008b5846b6a0f46b93e1525273a17fc5906fafb62797176907b66cfa3bac",
+    "analysis_tools/combat/oracle.py": "10c98c7fe6b2132fd8e70da527cb7f149e8c071975fae137404970d0dfd038e9",
+    "analysis_tools/sprite/animation_oracle.py": "055c46dbfc8b13fc7c63278e214d1c04c9ca61035d9513bad9dffa84f9dbf79b",
+    "analysis_tools/sprite/animation_probe.cpp": "9ed6bb55dd04e7240bd0be5ed319665903183d1972c599336f4fb963e970d283"
+  },
+  "original_inputs": {
+    "armv6_executable": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+    "original_libgcc": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+    "archive": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "descriptor256": "dc520143e30346dad8ed479089fcb78783b97922b7e1bda0eef0e5c1f28a50bb",
+    "bmp997": "9ca143bb91d5bb8f8bfc2dce2244cb3df334e5ebf059931ba827990fb36069cb"
+  },
+  "files": {
+    "README.md": {
+      "sha256": "66f7ea1a304a4606fd374ca6d3af5d1dbe1e7b0c7826cb23fc1b437eeead1216",
+      "bytes": 14258
+    },
+    "fixtures/g1/SupportPresentation.hpp": {
+      "sha256": "b160796eb7a87f8d0c7bdf6f1d3f3aa9d201cd13ed4a6c3e0da0f89724bd55df",
+      "bytes": 2914
+    },
+    "fixtures/support_presentation_fixture.hpp": {
+      "sha256": "93a72468d2daffe8a5c23a63180a0f6ab13584183083d0c78b08c581ab79338c",
+      "bytes": 39881
+    },
+    "fixtures/support_presentation_test.cpp": {
+      "sha256": "14babc1219ee73d11bf772b18d6280f3302d61959faaf0d752d7f6ed9132a4e6",
+      "bytes": 2825
+    },
+    "oracles/support_animation_oracle.py": {
+      "sha256": "e563061041b29cb5f6268830a638fc8737566c6d425d4c488bfa0462f6696f7b",
+      "bytes": 10492
+    },
+    "oracles/support_palette_oracle.py": {
+      "sha256": "6f75ebdd8c8a66859d928148823f43a6069776a0f9c572d43162504eafb10df4",
+      "bytes": 8993
+    },
+    "oracles/support_presentation_oracle.py": {
+      "sha256": "fb43f1d089b2d8b8bf2d7455ca9aba2954e06d3d91ead1799e0d5a674c6f93f7",
+      "bytes": 8567
+    },
+    "results/native_phase_test.json": {
+      "sha256": "2b4c40c126452ab029836e6c49e897a5989060e209ddf41ff0560dce63908825",
+      "bytes": 112
+    },
+    "results/original_support_animation.json": {
+      "sha256": "30b8166aa8bfbd9f203a9db7ad67c0ebb4d8b01ed63990068934ad2e6cd6cf28",
+      "bytes": 125257
+    },
+    "results/original_support_palette.json": {
+      "sha256": "6a308d235575f9f568787f0e4bea3d5c1e356ea959877362438af624969ed231",
+      "bytes": 7792
+    },
+    "results/original_support_presentation.json": {
+      "sha256": "44053b2e80f8e876188df02554a8aecb1662526e61141525ec4b2181e3f7dbbb",
+      "bytes": 449361
+    }
+  }
+}

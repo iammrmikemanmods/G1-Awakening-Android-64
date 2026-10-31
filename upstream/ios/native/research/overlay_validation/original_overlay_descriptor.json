@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "scope": "Strict version-1 resource-256 metadata decoder versus original parser body",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "descriptor_resource": 256,
+  "descriptor_sha256": "dc520143e30346dad8ed479089fcb78783b97922b7e1bda0eef0e5c1f28a50bb",
+  "image_properties_resource": 1000,
+  "image_properties_sha256": "e6522b4147b7553cde18e15b1be0febfa7143ec57a23ecc430c682e0416bd382",
+  "source_image_resource": 997,
+  "source_image_sha256": "9ca143bb91d5bb8f8bfc2dce2244cb3df334e5ebf059931ba827990fb36069cb",
+  "source_image_dimensions": [
+    69,
+    63
+  ],
+  "source_image_format": "uncompressed 8-bit paletted BMP",
+  "original_parser_range": [
+    "0x5ecfe",
+    "0x5f7f6"
+  ],
+  "original_parser_parent": "0x5eb30",
+  "original_helpers": [
+    "0x7632",
+    "0x7650",
+    "0x7758",
+    "0x7782",
+    "0x2b1bc",
+    "0x2adb6",
+    "0x2ae20",
+    "0x2ae14"
+  ],
+  "instruction_patches": 0,
+  "original_code_readonly_and_unchanged": true,
+  "boundaries": {
+    "0x7672": "raw stream byte-copy; endian/sign and field interpretation execute unchanged",
+    "0x61f9e": "resolved image dimensions from pinned BMP; image property/palette loading excluded",
+    "0x1f540": "bounded allocation",
+    "0x1f512": "free in a monotonic temporary arena",
+    "0x1f4e0": "exact byte fill"
+  },
+  "oracle_sha256": "ef26eb5b0e73d646519e51345e12e562a5be6c0f94e79578953d469c7d469153",
+  "base_oracle_sha256": "10c98c7fe6b2132fd8e70da527cb7f149e8c071975fae137404970d0dfd038e9",
+  "native_header_sha256": "687ae5b9a18ba8059a889cf874d8cb45b02dcf3018e41029e489d49f2b9b06b8",
+  "native_source_sha256": "ada026d44b021d7ee41c525310871744fc73737beb4339e7a48925e563dd9234",
+  "native_probe_source_sha256": "65128106069bff5b4bfc96ef2ffbb2855348db38f8eb2c38cec4b6377a25bbd5",
+  "native_probe_binary_sha256": "ce41c32ff3829a9612a6079e923671fc1324791dfc703908063916e76c73daec",
+  "unicorn_version": "2.1.4",
+  "case_count": 3,
+  "scalar_comparisons": 490,
+  "native_only_rejected_inputs": 553,
+  "cases": [
+    {
+      "case": "resource256",
+      "source_sha256": "dc520143e30346dad8ed479089fcb78783b97922b7e1bda0eef0e5c1f28a50bb",
+      "consumed_bytes": 546,
+      "rectangles": 13,
+      "variants": 13,
+      "frames": 27,
+      "animations": 4,
+      "scalar_comparisons": 446,
+      "metadata_sha256": "294f34cf8f9fad47fe0946b957693963fdbe809ce4724b6c4f8702fd25af33e2",
+      "original_overall_bounds": [
+        -9,
+        -90,
+        44,
+        100
+      ],
+      "original_image_lookup_ids": [
+        1000
+      ],
+      "boundary_calls": {
+        "raw_stream_read": 473,
+        "allocate": 178,
+        "image_lookup": 1,
+        "byte_fill": 149,
+        "0x1f512": 27
+      },
+      "passed": true
+    },
+    {
+      "case": "synthetic-empty-frame",
+      "source_sha256": "73a344ad081037d2af4fe0948466522e41469bd99571800ac80c4946282f8418",
+      "consumed_bytes": 31,
+      "rectangles": 1,
+      "variants": 1,
+      "frames": 2,
+      "animations": 1,
+      "scalar_comparisons": 16,
+      "metadata_sha256": "09c78fcca76386dd92fe55c4bebf798298efeb8fcf688f88acaec92ce6774f00",
+      "original_overall_bounds": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "original_image_lookup_ids": [
+        1000
+      ],
+      "boundary_calls": {
+        "raw_stream_read": 26,
+        "allocate": 23,
+        "image_lookup": 1,
+        "byte_fill": 18,
+        "0x1f512": 2
+      },
+      "passed": true
+    },
+    {
+      "case": "synthetic-signed-offsets-and-endian-duration",
+      "source_sha256": "317754ca704ab4225ff48528196245ebe3382c24cdc46bd34ac39bd863034956",
+      "consumed_bytes": 40,
+      "rectangles": 2,
+      "variants": 2,
+      "frames": 2,
+      "animations": 1,
+      "scalar_comparisons": 28,
+      "metadata_sha256": "5b49028dfff69010f68da00cea134d4ae6b44112df47565abaf0830ea10839ba",
+      "original_overall_bounds": [
+        -128,
+        -128,
+        256,
+        256
+      ],
+      "original_image_lookup_ids": [
+        1000
+      ],
+      "boundary_calls": {
+        "raw_stream_read": 35,
+        "allocate": 25,
+        "image_lookup": 1,
+        "byte_fill": 18,
+        "0x1f512": 2
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Only the observed narrow-coordinate, identity-variant, single-image v1 profile is supported",
+    "No archive selection, image property loader or BMP pixel decoder executes in this parser comparison",
+    "Overall/frame collision bounds are not part of the native metadata interface",
+    "No clock, projection, viewport mapping, clipping, draw submission, Metal or device execution",
+    "Malformed-input rejections are safe native policy, not a claim of original failure parity"
+  ],
+  "passed": true
+}

@@ -1,0 +1,63 @@
+{
+  "scope": "Native C++17 mission framing module and combined native host build integration; no game executable delivered",
+  "compatibility_save_reload_probe_started": false,
+  "original_machine_code_executed_in_mission_validation": false,
+  "mission_streams_matched": 30,
+  "instructions_matched": 803,
+  "argument_words_matched": 2800,
+  "malformed_and_lookup_cases_rejected": 855,
+  "independent_reference_payloads_included": false,
+  "reference_expectations_derived_from_native_implementation": false,
+  "mission_opcode_behavior_implemented": false,
+  "source_files_frozen": true,
+  "cmake_modules": [
+    "Archive",
+    "M3G",
+    "Mission",
+    "Movement",
+    "Atlas"
+  ],
+  "combined_host_ctest_passed": true,
+  "combined_host_test_results": {
+    "mission_format_contract": {
+      "checks": 62,
+      "passed": true,
+      "evidence_type": "constructed parser contracts; separate original-data oracle retained"
+    },
+    "movement_original_function_vectors": {
+      "cases": 256,
+      "scalar_comparisons": 9092,
+      "separate_malformed_checks": 4,
+      "passed": true,
+      "source_owner": "binary_audit"
+    },
+    "atlas_format_geometry_contract": {
+      "checks": 71,
+      "passed": true,
+      "source_owner": "port_approaches",
+      "gpu_rendering_tested": false
+    }
+  },
+  "ios_arm64_compiled_in_this_validation": false,
+  "device_tested": false,
+  "playable_native_game": false,
+  "source_and_evidence_sha256": {
+    "include/g1/Mission.hpp": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+    "src/Mission.cpp": "36c003e35084c66d406323fadb372fbb87431f27dd4af7c633e74a745ab97e35",
+    "tools/mission_probe.cpp": "689ff449ce11f633a7d66c7fb8237501780d127af02c05e891efe6eb90042e46",
+    "tests/mission_test.cpp": "720cf1d432c423bd4cadae262900db23e2ffc193e3631c98ddbc29e529963841",
+    "tests/mission_reference.json": "1ef8f33c6b929ca330136d9c80d960b2a5e04a72b0a6cde114291301da3d77c9",
+    "tests/generate_mission_reference.py": "7f7a4d8a6bd05008f05cca2e6a11d3c1a714e7ef2bba52d7609b6f226dee2709",
+    "tests/verify_missions.py": "de8f32da9479ed2a70b2ee49d1529c6d1218e110404867e5f8d3bbe320c16469",
+    "research/MISSION_DECODER.md": "d0781fe436358844256ab4f5f1f99960c46b89c90f3aadd8b6d980aab32555b8",
+    "CMakeLists.txt": "ddffece70f56e509cfdc5a5b879cdba288b2abbe67b075780053740ed492c60f",
+    "research/mission_validation/native_mission_validation.json": "55b70ec3e3bf800421f048ba64e28010e27b1788358e05ea466d84b563713a01",
+    "research/mission_validation/cmake_validation.json": "b92d9e26a0d9dd879c98ffccf8209b67215947492de61f5f67357d2055030bcd"
+  },
+  "packaging_exclusions": [
+    "research/mission_validation/cmake_build/",
+    "research/mission_validation/mission_probe",
+    "original IPA and resource payloads"
+  ],
+  "next_native_engine_dependency": "Recover opcode handler semantics and connect native mission commands to proven world/state behavior; decoding alone does not execute a mission."
+}

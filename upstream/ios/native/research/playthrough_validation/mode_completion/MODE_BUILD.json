@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "scope": "Isolated headless mode input pilot; unchanged frozen gameplay libraries",
+  "source": {
+    "path": "g1_port/research/mode_playthrough_followup/release/session_mode_playthrough_probe.cpp",
+    "bytes": 105997,
+    "sha256": "db9c5f3dec1e09ff28e49315c3f22033c0878c764815399b62b6766e78c9a751"
+  },
+  "executed_source": {
+    "path": "g1_port/research/mode_playthrough_followup/session_playthrough_probe_v9.cpp",
+    "bytes": 105997,
+    "sha256": "db9c5f3dec1e09ff28e49315c3f22033c0878c764815399b62b6766e78c9a751"
+  },
+  "executable": {
+    "path": "g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+    "bytes": 990792,
+    "sha256": "ff07c19dd9c4c232eb7a5fd5f51f41ffda12fa4454593f68d4ae896759333e16"
+  },
+  "native_libraries": [
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_resources.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_resources.a",
+      "sha256": "20ec327bf2aac0c69cb2a3e013a97326b647d6e07555fc2168f027fd18d1ea95",
+      "bytes": 2463006
+    },
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_png.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_png.a",
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9",
+      "bytes": 211556
+    },
+    {
+      "source": "/tmp/g1_native_complete_staged_hostbuild/libg1_vorbis.a",
+      "path": "g1_port/research/playthrough_strategy_followup/lib/libg1_vorbis.a",
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f",
+      "bytes": 90250
+    }
+  ],
+  "headers": {
+    "path": "g1_port/research/playthrough_strategy_followup/HEADER_INPUTS.json",
+    "bytes": 8854,
+    "sha256": "5d71449cacf544a19273e5c110b49519f1158769e64af79340524dd77833f8ab"
+  },
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "native_runtime_source_changed": false,
+  "original_executable_executed": false,
+  "unexecuted_v10_experiment_included": false,
+  "executed_wrappers": {
+    "fresh_showdown": {
+      "path": "g1_port/research/mode_playthrough_followup/run_mode_probe.py",
+      "bytes": 6138,
+      "sha256": "5aff2a91ca7dfcb3b2180f0d4ea694be10f0955dd8dd797e71207a0c95fa1d71"
+    },
+    "final_arena_single_run": {
+      "path": "g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+      "bytes": 6347,
+      "sha256": "35d85e0901e2973862c4186eba3ef151eb2b450768e499f8142f26eef155daa5"
+    },
+    "final_arena_matrix": {
+      "path": "g1_port/research/mode_playthrough_followup/release/run_arena_matrix.py",
+      "bytes": 2748,
+      "sha256": "edda704d8bebc60d5704f1dd2caf8c0264af6cca36557c146bbf10c3812068b8"
+    }
+  }
+}

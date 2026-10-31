@@ -1,0 +1,1428 @@
+{
+  "scope": "headless native Arena configuration input matrix",
+  "presentation_feedback": "synthetic",
+  "device_or_rendered_playthrough": false,
+  "profile_flags_forced": false,
+  "rows": [
+    {
+      "mission": 0,
+      "faction": 0,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "0",
+        "--faction",
+        "0",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 1095,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1095,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 0,
+      "faction": 0,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "0",
+        "--faction",
+        "0",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 902,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 902,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            8,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 0,
+      "faction": 1,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "0",
+        "--faction",
+        "1",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 1054,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1054,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            19,
+            0,
+            7
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 0,
+      "faction": 1,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "0",
+        "--faction",
+        "1",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 721,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 721,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            7,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 1,
+      "faction": 0,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "1",
+        "--faction",
+        "0",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 274,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 274,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 1,
+      "faction": 0,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "1",
+        "--faction",
+        "0",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 249,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 249,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            4,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 1,
+      "faction": 1,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "1",
+        "--faction",
+        "1",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 399,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 399,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 1,
+      "faction": 1,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "1",
+        "--faction",
+        "1",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 472,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 472,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            9,
+            4,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 2,
+      "faction": 0,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "2",
+        "--faction",
+        "0",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 881,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 881,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 2,
+      "faction": 0,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "2",
+        "--faction",
+        "0",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 958,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 958,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            8,
+            1,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 2,
+      "faction": 1,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "2",
+        "--faction",
+        "1",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 1132,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1132,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            27,
+            0,
+            9
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 2,
+      "faction": 1,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "2",
+        "--faction",
+        "1",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 997,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 997,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            9,
+            6,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 3,
+      "faction": 0,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "3",
+        "--faction",
+        "0",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 379,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 379,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            29,
+            0,
+            8
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 3,
+      "faction": 0,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "3",
+        "--faction",
+        "0",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 543,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 543,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            10,
+            2,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 3,
+      "faction": 1,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "3",
+        "--faction",
+        "1",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 324,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 324,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 3,
+      "faction": 1,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "3",
+        "--faction",
+        "1",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 392,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 392,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 4,
+      "faction": 0,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "4",
+        "--faction",
+        "0",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 879,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 879,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            16,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 4,
+      "faction": 0,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "4",
+        "--faction",
+        "0",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 936,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 936,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 4,
+      "faction": 1,
+      "opponent": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0",
+        "--group",
+        "2",
+        "--mission",
+        "4",
+        "--faction",
+        "1",
+        "--opponent",
+        "0",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 772,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 772,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "mission": 4,
+      "faction": 1,
+      "opponent": 1,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/release/run_mode_probe.py",
+        "--pilot",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/pilot_modes_v9",
+        "--archive",
+        "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+        "--terrain-tables",
+        "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+        "--profile",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+        "--output",
+        "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1",
+        "--group",
+        "2",
+        "--mission",
+        "4",
+        "--faction",
+        "1",
+        "--opponent",
+        "1",
+        "--strategy",
+        "native-planner-all",
+        "--policy",
+        "baseline",
+        "--seconds",
+        "45",
+        "--human-turns",
+        "220"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"native_arena_finished\",\n  \"error\": \"\",\n  \"story_records_preserved\": true,\n  \"profile_bytes_preserved\": true,\n  \"complete_showdown_headless\": false,\n  \"arena_headless_finished\": true,\n  \"device_playthrough_verified\": false\n}\n",
+      "stderr": "",
+      "outcome": "native_arena_finished",
+      "error": "",
+      "ticks": 856,
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 856,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            7,
+            4,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    }
+  ]
+}

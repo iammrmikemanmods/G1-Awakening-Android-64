@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "scope": "Frozen native material bindings and eleven exact original RGB replacements; no GPU/device claim",
+  "files": [
+    {
+      "path": "native/include/g1/M3GMaterialOverrides.hpp",
+      "bytes": 3670,
+      "sha256": "3ac2699d45e83dc04088ac723bc49a42db4630303a88720e311ff42de17c52c9"
+    },
+    {
+      "path": "native/src/M3GMaterialOverrides.cpp",
+      "bytes": 16082,
+      "sha256": "92edf8089968ec9e56d52ff8a30efa7c774819a1e359bdc3ec11635bdc69e111"
+    },
+    {
+      "path": "native/tools/m3g_material_probe.cpp",
+      "bytes": 3511,
+      "sha256": "1959748be7888d49e4b8e227f8fa8a0c39f6c903c5903df696fba7ec2373eda0"
+    },
+    {
+      "path": "native/tests/m3g_material_overrides_test.cpp",
+      "bytes": 12253,
+      "sha256": "47664677ed33ce332e89039b54eb1d354fd9b38c917ec7b986f90f59198f7896"
+    },
+    {
+      "path": "native/tests/m3g_material_cases.txt",
+      "bytes": 10734,
+      "sha256": "af5a4b4f44027dac70d30ec445458293596b5d638a2652ba180937a7028a179f"
+    },
+    {
+      "path": "native/research/M3G_MATERIAL_OVERRIDES.md",
+      "bytes": 13325,
+      "sha256": "7cff26358201abefca9aef027fccd7f50df593cf545dba94ea63fc99e0637124"
+    },
+    {
+      "path": "native/research/m3g_validation/material_overrides.json",
+      "bytes": 15148,
+      "sha256": "541d3657bc16df34efd750f5cc69d8fede633c312eda08898656fe0fde936d0d"
+    },
+    {
+      "path": "native/research/m3g_validation/original_material_overrides.json",
+      "bytes": 201907,
+      "sha256": "6ec43cc903b5f4f3548a44ec4ffc3ebf78ef42bb4b438972277fecb1fabbc59d"
+    },
+    {
+      "path": "native/research/m3g_validation/original_material_find.json",
+      "bytes": 4702,
+      "sha256": "44ee6bdcf4715a86319df80352da2024a360ba4cd316104f180b95052651f8d1"
+    },
+    {
+      "path": "native/research/m3g_validation/original_material_png.json",
+      "bytes": 12358,
+      "sha256": "716897a58b7f9957759c53e42960bc8ef0db5f96298ee91328ecbe310d4be2b2"
+    },
+    {
+      "path": "native/research/m3g_validation/material_overrides_contracts.json",
+      "bytes": 1702,
+      "sha256": "2024fccba25a0bd33ff833c8e77b2658f11410f708304ea057b29c5f6ee36d27"
+    },
+    {
+      "path": "analysis_tools/m3g/material_override_oracle.py",
+      "bytes": 18988,
+      "sha256": "9d9b10e2db593f18cd20215b52aa1e252436d986a940c33d990e82f44e477dab"
+    },
+    {
+      "path": "analysis_tools/m3g/material_find_oracle.py",
+      "bytes": 8097,
+      "sha256": "45a9ebb7469e13ffbddccf27d95e5670aa68b4a81a251a14d88b29d5165a964c"
+    },
+    {
+      "path": "analysis_tools/m3g/material_png_oracle.py",
+      "bytes": 11793,
+      "sha256": "febb4029767222c45f5a2b89f50027acd20c8418d40d93a340f485d5b2d9040d"
+    },
+    {
+      "path": "analysis_tools/m3g/material_override_validate.py",
+      "bytes": 7881,
+      "sha256": "7670f3a1de960ffa9e4220eb9b904fe6e89241d245a6d751302cb87dfe44f4e6"
+    }
+  ],
+  "executed_commands_from_g1_port": [
+    "python3 analysis_tools/m3g/material_override_oracle.py --image research/binary/G1awakening.armv6 --libgcc /workspace/scratch/cba553aafa20/.tools/g1_runtime/Applesauce/touchHLE_dylibs/libgcc_s.1.dylib --manifest research/assets/results/asset_manifest.json --extracted research/assets/results/extracted --unicorn-path /tmp/g1-movement-oracle-tools/python --output native/research/m3g_validation/original_material_overrides.json",
+    "python3 analysis_tools/m3g/material_find_oracle.py --image research/binary/G1awakening.armv6 --libgcc /workspace/scratch/cba553aafa20/.tools/g1_runtime/Applesauce/touchHLE_dylibs/libgcc_s.1.dylib --manifest research/assets/results/asset_manifest.json --extracted research/assets/results/extracted --unicorn-path /tmp/g1-movement-oracle-tools/python --material-report native/research/m3g_validation/original_material_overrides.json --output native/research/m3g_validation/original_material_find.json",
+    "python3 analysis_tools/m3g/material_png_oracle.py --image research/binary/G1awakening.armv6 --libgcc /workspace/scratch/cba553aafa20/.tools/g1_runtime/Applesauce/touchHLE_dylibs/libgcc_s.1.dylib --manifest research/assets/results/asset_manifest.json --extracted research/assets/results/extracted --unicorn-path /tmp/g1-movement-oracle-tools/python --output native/research/m3g_validation/original_material_png.json",
+    "python3 analysis_tools/m3g/material_override_validate.py --probe research/native_m3g/material_override_v1/m3g_material_probe --archive research/assets/iphone.big --manifest research/assets/results/asset_manifest.json --extracted research/assets/results/extracted --attachment-report native/research/m3g_validation/original_model_attachment.json --material-report native/research/m3g_validation/original_material_overrides.json --png-report native/research/m3g_validation/original_material_png.json --fixture native/tests/m3g_material_cases.txt --output native/research/m3g_validation/material_overrides.json"
+  ],
+  "cmake_handoff": {
+    "library_source": "src/M3GMaterialOverrides.cpp",
+    "test_source": "tests/m3g_material_overrides_test.cpp",
+    "test_name": "m3g_material_overrides_original_vectors",
+    "test_argument": "tests/m3g_material_cases.txt",
+    "optional_probe": "tools/m3g_material_probe.cpp"
+  },
+  "validation": {
+    "original_caller_synthetic_cases": 40,
+    "authored_models": 7,
+    "authored_assignments": 11,
+    "original_find_queries": 14,
+    "original_find_required_matches": 11,
+    "original_png_decodes": 11,
+    "identity_files": 27,
+    "identity_objects": 7404,
+    "rgba_hash_matched_bytes": 2621440,
+    "native_parity_comparisons": 59424,
+    "native_tests_checks_each": 309,
+    "optimized_pass": true,
+    "ubsan_pass": true,
+    "independent_source_review_no_blocker": true
+  },
+  "excluded": [
+    "original game payloads/executable/dylib",
+    "development executables/object files",
+    "private exploratory assembler/probe artifacts"
+  ],
+  "shared_files_modified": [],
+  "limits": [
+    "ambiguous authored material IDs explicitly rejected",
+    "nonnull alignment references and nonrigid objects unsupported by this bounded helper",
+    "partial failure-path side effects not replayed",
+    "no new complete loader/cache/attachment/controller/GPU/device validation"
+  ]
+}

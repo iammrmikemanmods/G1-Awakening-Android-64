@@ -1,0 +1,1645 @@
+{
+  "schema": 1,
+  "scope": "Connected native CPU implementation plus independent Apple source review; no Apple compilation/GPU/device execution claimed here",
+  "private_input_sha256": {
+    "iphone.big": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "terrain-tables.bin": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8"
+  },
+  "source_sha256": {
+    "native/src/M3GBattleController.cpp": "922a634e4af8d98dab7543dcdadc478c8a508d019dd58aa48ceec04f59e0f793",
+    "native/include/g1/M3GBattleController.hpp": "3a4b2770c751c1c0bc7fe240199ff5b4271e4ab60780148b51c277a32bc27483",
+    "native/src/M3GBattlePresentation.cpp": "dc4301ca833bb3fae00ce765121bc64a5271d58aebbb3e1a7d839a999416962e",
+    "native/include/g1/M3GBattlePresentation.hpp": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7",
+    "native/src/M3GMaterialOverrides.cpp": "92edf8089968ec9e56d52ff8a30efa7c774819a1e359bdc3ec11635bdc69e111",
+    "native/tools/m3g_battle_session_probe.cpp": "9483926e52b7525d2c09c7f555ae24134edf721ecac7ccd2126333901dcfc1d0",
+    "native/tools/m3g_battle_presentation_probe.cpp": "b69d31825a34b06ce30a857bf446a4f9d8a1ba5c77c37a3f68cfd1c9261f5373",
+    "native/platform/apple/NativeApp.mm": "33e11fd69808b892a83a67f85c14b76bca4ac1a89af91376c9733464bb3fec43",
+    "native/platform/apple/NativeBattle.hpp": "c26818c80ee8f9e6b1953b71ff030aebaa01d601afd8a5ef16fe81dbd0a812b4"
+  },
+  "controller": {
+    "original_updates": 1225,
+    "original_draws": 159,
+    "checks": 82600,
+    "differences": 0,
+    "fixture_sha256": "ed13ed66091c92e00560f3ac873a3d59f9ce0708aa5f7ed1f6e3198b24788bfb",
+    "original_json_sha256": "2a0d24678c03d9a88942e021a8cf8eeafb0577e9dc2c8923c2ac9d368e35cca2"
+  },
+  "actual_models": {
+    "input_order": [
+      "attacker_type",
+      "defender_type",
+      "style",
+      "attacker_form",
+      "defender_form"
+    ],
+    "count": 26,
+    "results": [
+      {
+        "input": [
+          0,
+          19,
+          0,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 126,
+          "sprites": 63,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 3736,
+          "nonculled_draws": 2860,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          1,
+          19,
+          1,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 98,
+          "sprites": 21,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 757,
+          "nonculled_draws": 752,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          2,
+          19,
+          2,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 78,
+          "sprites": 33,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 752,
+          "nonculled_draws": 603,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          3,
+          19,
+          0,
+          1,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 1339,
+          "nonculled_draws": 762,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          4,
+          19,
+          1,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 92,
+          "sprites": 21,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1809,
+          "nonculled_draws": 1809,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          5,
+          19,
+          2,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 80,
+          "sprites": 33,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 810,
+          "nonculled_draws": 632,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          6,
+          19,
+          0,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 101,
+          "sprites": 63,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 1571,
+          "nonculled_draws": 1080,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          7,
+          19,
+          1,
+          1,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 78,
+          "sprites": 21,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 332,
+          "nonculled_draws": 313,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          8,
+          19,
+          2,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 90,
+          "sprites": 33,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 2051,
+          "nonculled_draws": 1807,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          9,
+          19,
+          0,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 101,
+          "sprites": 63,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 2030,
+          "nonculled_draws": 1418,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          10,
+          19,
+          1,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 96,
+          "sprites": 21,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 776,
+          "nonculled_draws": 765,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          1,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 424,
+          "nonculled_draws": 266,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          12,
+          19,
+          0,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 125,
+          "sprites": 63,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 3904,
+          "nonculled_draws": 3023,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          13,
+          19,
+          1,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 766,
+          "nonculled_draws": 765,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          14,
+          19,
+          2,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 800,
+          "nonculled_draws": 651,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          15,
+          19,
+          0,
+          1,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 112,
+          "sprites": 63,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 1347,
+          "nonculled_draws": 846,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          16,
+          19,
+          1,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 90,
+          "sprites": 21,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1641,
+          "nonculled_draws": 1641,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          17,
+          19,
+          2,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 91,
+          "sprites": 33,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 837,
+          "nonculled_draws": 632,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          18,
+          19,
+          0,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 154,
+          "sprites": 63,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 2147,
+          "nonculled_draws": 1679,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          19,
+          11,
+          1,
+          1,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 368,
+          "nonculled_draws": 360,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          20,
+          19,
+          2,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 70,
+          "sprites": 33,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1631,
+          "nonculled_draws": 1376,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          21,
+          19,
+          0,
+          1,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 110,
+          "sprites": 63,
+          "updates": 335,
+          "prepared_frames": 20,
+          "queued_draws": 2030,
+          "nonculled_draws": 1419,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          22,
+          19,
+          1,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 107,
+          "sprites": 21,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 884,
+          "nonculled_draws": 873,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          17,
+          0,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 138,
+          "sprites": 63,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 4012,
+          "nonculled_draws": 3148,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          17,
+          1,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 115,
+          "sprites": 21,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 2127,
+          "nonculled_draws": 2127,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          17,
+          2,
+          0,
+          0
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 107,
+          "sprites": 33,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 2243,
+          "nonculled_draws": 2001,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    ]
+  },
+  "actual_outcomes": {
+    "input_order": [
+      "attacker_type",
+      "defender_type",
+      "style",
+      "attacker_form",
+      "defender_form",
+      "scenario"
+    ],
+    "count": 21,
+    "results": [
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 2678,
+          "nonculled_draws": 1932,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            3,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          2
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 634,
+          "prepared_frames": 33,
+          "queued_draws": 4136,
+          "nonculled_draws": 3083,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          3
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 320,
+          "prepared_frames": 19,
+          "queued_draws": 2242,
+          "nonculled_draws": 1642,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          4
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 3649,
+          "nonculled_draws": 2752,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          5
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 2662,
+          "nonculled_draws": 1910,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          6
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 1913,
+          "nonculled_draws": 1438,
+          "audio_requests": 4,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          0,
+          0,
+          0,
+          7
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 117,
+          "sprites": 63,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 3652,
+          "nonculled_draws": 2771,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 1183,
+          "nonculled_draws": 1183,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            3,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          2
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 634,
+          "prepared_frames": 33,
+          "queued_draws": 1991,
+          "nonculled_draws": 1991,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          3
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 320,
+          "prepared_frames": 19,
+          "queued_draws": 1007,
+          "nonculled_draws": 1007,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          4
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1764,
+          "nonculled_draws": 1764,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          5
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 1167,
+          "nonculled_draws": 1167,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          6
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 938,
+          "nonculled_draws": 938,
+          "audio_requests": 4,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          1,
+          0,
+          0,
+          7
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 94,
+          "sprites": 21,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1767,
+          "nonculled_draws": 1767,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          1
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 1275,
+          "nonculled_draws": 1063,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            3,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          2
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 634,
+          "prepared_frames": 33,
+          "queued_draws": 2123,
+          "nonculled_draws": 1837,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          3
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 320,
+          "prepared_frames": 19,
+          "queued_draws": 1083,
+          "nonculled_draws": 911,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          4
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1880,
+          "nonculled_draws": 1620,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          5
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 420,
+          "prepared_frames": 23,
+          "queued_draws": 1259,
+          "nonculled_draws": 1041,
+          "audio_requests": 3,
+          "complete": true,
+          "phases": [
+            0,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          6
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 256,
+          "prepared_frames": 15,
+          "queued_draws": 998,
+          "nonculled_draws": 864,
+          "audio_requests": 4,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "input": [
+          11,
+          19,
+          2,
+          0,
+          0,
+          7
+        ],
+        "returncode": 0,
+        "result": {
+          "source": "synthetic resolved exchange with original assets; no GPU",
+          "assets": 8,
+          "mesh_surfaces": 86,
+          "sprites": 33,
+          "updates": 534,
+          "prepared_frames": 29,
+          "queued_draws": 1883,
+          "nonculled_draws": 1637,
+          "audio_requests": 5,
+          "complete": true,
+          "phases": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    ]
+  },
+  "actual_session_bridge": {
+    "source": "real GameSession exchange; synthetic startup/host feedback; no GPU",
+    "setup_ticks": 81,
+    "actual_attacker_type": 11,
+    "actual_defender_type": 19,
+    "attacker_health_after": 95,
+    "defender_health_after": 50,
+    "battle_updates": 534,
+    "prepared_frames": 217,
+    "read_only_sample_checks": 54,
+    "distinct_interpolation_cases": 46,
+    "rng_unchanged": true,
+    "token_retained_until_host_report": true,
+    "complete": true
+  },
+  "combined_ctest": {
+    "total": 53,
+    "passed": 53,
+    "failed": 0,
+    "log_sha256": "d8a63d2b8e3749bfae012e65f9b195fb0cdb96d29781c2a8624c98c725d277c6",
+    "log_path_at_validation": "/tmp/g1_native_complete_hostbuild/Testing/Temporary/LastTest.log"
+  },
+  "apple_source_review": {
+    "path": "native/research/m3g_validation/APPLE_BATTLE_INTEGRATION_REVIEW.json",
+    "sha256": "4f915ab66845209688cd0679bb06697f1552cc1d17f7c75113bc9af559467d08"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0; C++17 -O2 -ffp-contract=off -Wall -Wextra -Werror -pedantic for standalone probes",
+  "limitations": [
+    "Actual asset model/outcome cases use synthetic resolved exchanges.",
+    "Real session bridge uses synthetic startup presentation feedback and a synthetic CPU completion report; it never claims GPU presentation.",
+    "Actual Apple compilation, Metal pixel tests, iPhone XR output/pacing and full playthrough remain unverified at this checkpoint.",
+    "Original earlier tactical support-attack presentation and shared background-music maintenance are not part of the connected ordinary cinematic."
+  ]
+}

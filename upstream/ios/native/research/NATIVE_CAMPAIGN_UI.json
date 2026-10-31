@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "checkpoint": "native campaign integration test",
+  "version": "0.4.0",
+  "build": 4,
+  "created_utc": "2026-10-26T07:40:45.907379+00:00",
+  "source_checks": {
+    "session_calls_resolved": 54,
+    "zero_argument_selectors_resolved": 34,
+    "private_host_terrain_mutation": false,
+    "guest_runtime_reference": false,
+    "plist_version_checked": true,
+    "scope": "Text/API consistency checks, not an Apple compiler"
+  },
+  "independent_review": {
+    "reviewer": "binary_audit",
+    "scope": [
+      "results draw token and original input",
+      "controller/profile ownership",
+      "cached preparation and new session acknowledgement",
+      "save retirement order"
+    ],
+    "concrete_fix": "Install replacement scene before retiring the previous checkpoint; acknowledge handoff only afterward"
+  },
+  "portable_scene_validation": {
+    "record": "native/research/scene_catalog_validation/with_animated_surface/validation.json",
+    "supported_map_style_pairs": 21,
+    "unsupported_map_style_pairs": 0,
+    "descriptor_reference_matches": 23,
+    "all_frame_vertices": 19050,
+    "first_scene_unchanged": true
+  },
+  "implemented_host_paths": [
+    "campaign modes and persisted profile locks",
+    "current world/title/site/item/marker presentation",
+    "dialogue and camera/focus acknowledgements",
+    "movement/capture/transform/attack/heal/upgrade/production/boarding/undo/end turn",
+    "token-bound native battle outcome panel",
+    "original one-shot audio and independent native preferences",
+    "core-owned shared-RNG style1 decoration presentation",
+    "actual profile save/results/next mission/menu/ending gates",
+    "archive-validated session save/restore with retry",
+    "current-scene presented-time observations"
+  ],
+  "presentation_policy": [
+    "native UI, inspection camera and site/marker overlays are not original visual parity",
+    "native battle outcome panel is not original animated M3G battle rendering",
+    "30ms native simulation and target60Hz interpolation do not establish historical wall-clock parity or device performance"
+  ],
+  "unverified_for_this_checkpoint": {
+    "apple_sdk_compile": true,
+    "gpu_run": true,
+    "xr_ios_17_5_run": true,
+    "full_playthrough": true,
+    "sustained_60fps": true,
+    "device_audibility": true,
+    "device_cold_launch_save_restore": true
+  },
+  "remaining": [
+    "original animated M3G battles",
+    "original site/marker artwork",
+    "historical camera/UI/font parity",
+    "style0/2 decorative sprite pools and complete RNG parity",
+    "device control/sound/lifecycle/performance acceptance"
+  ],
+  "sources": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+      "bytes": 137541
+    },
+    {
+      "path": "native/platform/apple/NativeCampaign.hpp",
+      "sha256": "2c8a8b16b191fe74ef13ed27878618926b7e937d3411bb99b6bdc7a743e97c27",
+      "bytes": 4079
+    },
+    {
+      "path": "native/platform/apple/NativeDialogue.hpp",
+      "sha256": "0feb9b86c49d22b636932cfd2bf7e3920fce9fc1270a5a0666c3c068fd16e806",
+      "bytes": 6556
+    },
+    {
+      "path": "native/platform/apple/NativeBattle.hpp",
+      "sha256": "423bbfb6c2c5333dedbc6075b5f6a8867f927d8b04169b525dd56e371bf80223",
+      "bytes": 6210
+    },
+    {
+      "path": "native/platform/apple/AppleAudio.hpp",
+      "sha256": "c72655669f7c8c28a91682bafedd7b43c7005cf581c2a302750d6ac5a1eda5e3",
+      "bytes": 584
+    },
+    {
+      "path": "native/platform/apple/AppleAudio.mm",
+      "sha256": "53d2c5655d9672d99a635fda5b6b765b0bc3d5f142c691d3ac6c5d9d32297912",
+      "bytes": 18268
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.hpp",
+      "sha256": "0e97ecfd4820515ee8673e9e76db82aebd927cbe47ec76347d154b7122ef38d1",
+      "bytes": 1070
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.mm",
+      "sha256": "8a27f759647c622309207cbf0e07f08a224899eaa1ff9ef0f22dd959368432dc",
+      "bytes": 7262
+    },
+    {
+      "path": "native/platform/apple/Info.plist.in",
+      "sha256": "52e62fab0edc61424cb454f17d61e44621aa2e294bb4d10337c45cf233d38d19",
+      "bytes": 1855
+    },
+    {
+      "path": "native/include/g1/Scene.hpp",
+      "sha256": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1",
+      "bytes": 1965
+    },
+    {
+      "path": "native/src/Scene.cpp",
+      "sha256": "919b83acbe2e6eee2299985f4a3bc41d46442f5b1f33d9ccb41474899cec98ab",
+      "bytes": 4546
+    },
+    {
+      "path": "native/tools/scene_catalog_probe.cpp",
+      "sha256": "4b1b9d6ea9b365eb674f4610849ec79163ea7945dc0dab95973e68b0e230f6e8",
+      "bytes": 9487
+    },
+    {
+      "path": "analysis_tools/scene_catalog/validate.py",
+      "sha256": "b9886446b4f478d3abd9df38d516bd95f71fb0cbcf4089976db0e92d7163e64a",
+      "bytes": 5030
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "scope": "Development-only public human input pilot; no native gameplay library changes; no state transplantation",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy/session_playthrough_probe.cpp",
+      "bytes": 67556,
+      "sha256": "7e9aa473ee0ba88b2c2c0abadb1ac537500ebcf325267a36703d659432e063ec"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/tactical_search.inc",
+      "bytes": 22705,
+      "sha256": "368255e97d35854012d8a91370f3ce9418efe0626fb35e88a60c2919c42f8518"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/pilot_v7",
+      "bytes": 948744,
+      "sha256": "28ae8ac7c951ca1cd4d43e81ae1df5f9bba3035d56e3467a213e0aa2f64640e1"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_resources.a",
+      "bytes": 2180540,
+      "sha256": "95d734aa7d6e407b0fbd491a96a1fe3100b14029099bdccc0cb9e86498889e1e"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_png.a",
+      "bytes": 211556,
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_vorbis.a",
+      "bytes": 90250,
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+    }
+  ],
+  "canonical_probe": {
+    "path": "g1_port/native/tools/session_playthrough_probe.cpp",
+    "bytes": 65007,
+    "sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6"
+  },
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "original_core_provenance": "BUILD_v1.json (full native input/source hashes and copied-library verification)",
+  "original_native_input_count": 112,
+  "probes": [
+    "probe09_hybrid_continuous"
+  ]
+}

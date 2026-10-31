@@ -1,0 +1,875 @@
+{
+  "schema": 1,
+  "compiled_commit_prefix": "083057b",
+  "current_snapshot": ".tools/g1_native_005_followup_stage",
+  "snapshot_identity_source": "Parent build process confirms this exact local snapshot against all 757 remote Git blobs for compiled commit083057b; this child independently compares source hashes below.",
+  "frozen_library_source_snapshot": ".tools/g1_native_complete_stage",
+  "frozen_library_source_inventory": ".tools/g1_native_complete_stage/validation/NATIVE_BUILD_005_TESTED_SOURCE.json",
+  "frozen_library_source_inventory_sha256": "7b8dbb83dc33334f28c664180b78b2ec50b04cbfd393cd60dec175e1ba244a86",
+  "copied_header_inventory": "g1_port/research/playthrough_strategy_followup/HEADER_INPUTS.json",
+  "matching_existing_core_files": 120,
+  "changed_existing_core_files": 0,
+  "removed_core_files": [],
+  "files": [
+    {
+      "path": "native/include/g1/AI.hpp",
+      "bytes": 4594,
+      "frozen_source_sha256": "ea45901ace1318be438de171d27a3aa78f9d2779ac2c9d92c91b99ff2b74bf91",
+      "compiled_stage_sha256": "ea45901ace1318be438de171d27a3aa78f9d2779ac2c9d92c91b99ff2b74bf91",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/AIExecution.hpp",
+      "bytes": 1563,
+      "frozen_source_sha256": "5891fe1aa39f323460561aadda21b7595f9dfcaf6003704d07d0ff04f4bc6b37",
+      "compiled_stage_sha256": "5891fe1aa39f323460561aadda21b7595f9dfcaf6003704d07d0ff04f4bc6b37",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/AIIncome.hpp",
+      "bytes": 611,
+      "frozen_source_sha256": "3e78f1300b3a54fda0a0f697ec100b4323a7e24f241e40410a03552658a68160",
+      "compiled_stage_sha256": "3e78f1300b3a54fda0a0f697ec100b4323a7e24f241e40410a03552658a68160",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Archive.hpp",
+      "bytes": 1939,
+      "frozen_source_sha256": "786c7f3a87d3d9d9fa3e663510cf43d7ba38e47d3ef590a92b2bfa1e34d5eb99",
+      "compiled_stage_sha256": "786c7f3a87d3d9d9fa3e663510cf43d7ba38e47d3ef590a92b2bfa1e34d5eb99",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Atlas.hpp",
+      "bytes": 3325,
+      "frozen_source_sha256": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+      "compiled_stage_sha256": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Audio.hpp",
+      "bytes": 521,
+      "frozen_source_sha256": "8b690383d255e4f08a2d99d41f799e563cfa6fbe8088654fbfb963b496c8453f",
+      "compiled_stage_sha256": "8b690383d255e4f08a2d99d41f799e563cfa6fbe8088654fbfb963b496c8453f",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/AudioEvents.hpp",
+      "bytes": 1651,
+      "frozen_source_sha256": "98a2872b108889ab093c28d718dc41ec631e4155ab7144cf407cf32e135f4471",
+      "compiled_stage_sha256": "98a2872b108889ab093c28d718dc41ec631e4155ab7144cf407cf32e135f4471",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/CampaignController.hpp",
+      "bytes": 4950,
+      "frozen_source_sha256": "bcce896bbf1612f5ff5f8750de01b9dce5edc81307da14730f9e96a9ef0a94b1",
+      "compiled_stage_sha256": "bcce896bbf1612f5ff5f8750de01b9dce5edc81307da14730f9e96a9ef0a94b1",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/CaptureAction.hpp",
+      "bytes": 3966,
+      "frozen_source_sha256": "9d198f8d61ff07beeea26264776ac4ba2514b4c2d572c17190ee07612135621b",
+      "compiled_stage_sha256": "9d198f8d61ff07beeea26264776ac4ba2514b4c2d572c17190ee07612135621b",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Combat.hpp",
+      "bytes": 6478,
+      "frozen_source_sha256": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+      "compiled_stage_sha256": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/GameSession.hpp",
+      "bytes": 12117,
+      "frozen_source_sha256": "37e21ce2c4ee57a879eccca53f66586aa8caf7a4516932bce7792355333668b0",
+      "compiled_stage_sha256": "37e21ce2c4ee57a879eccca53f66586aa8caf7a4516932bce7792355333668b0",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/HealAction.hpp",
+      "bytes": 2109,
+      "frozen_source_sha256": "31117a87ad62872778197af5a6df3b3d4c40719e1fe0447e4b3a47087bbf0df7",
+      "compiled_stage_sha256": "31117a87ad62872778197af5a6df3b3d4c40719e1fe0447e4b3a47087bbf0df7",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Image.hpp",
+      "bytes": 412,
+      "frozen_source_sha256": "b7a19e7f2473190d19fbc46380a5cfd288e5d2f08db9b1a41983a63627e79804",
+      "compiled_stage_sha256": "b7a19e7f2473190d19fbc46380a5cfd288e5d2f08db9b1a41983a63627e79804",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/InitialPresentation.hpp",
+      "bytes": 758,
+      "frozen_source_sha256": "2031c931ea7dcfc388d13eb554df1deace1db70294c0603a47c642f4112b2dde",
+      "compiled_stage_sha256": "2031c931ea7dcfc388d13eb554df1deace1db70294c0603a47c642f4112b2dde",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3G.hpp",
+      "bytes": 1006,
+      "frozen_source_sha256": "03069196d3475c6f5dd910fa9202504d4dd4a8ee7f84f4c144cbb21cedb5ff7d",
+      "compiled_stage_sha256": "03069196d3475c6f5dd910fa9202504d4dd4a8ee7f84f4c144cbb21cedb5ff7d",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GAnimation.hpp",
+      "bytes": 5222,
+      "frozen_source_sha256": "790d94abaf8b0ea4d842801c3e3517347efa4cd02163c1fc85816700b48597ad",
+      "compiled_stage_sha256": "790d94abaf8b0ea4d842801c3e3517347efa4cd02163c1fc85816700b48597ad",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GBattleCamera.hpp",
+      "bytes": 3698,
+      "frozen_source_sha256": "34370c78f2f81f540d68dcd1a8f9e968f7d624236bc059d49c01c8f45e1e9fc3",
+      "compiled_stage_sha256": "34370c78f2f81f540d68dcd1a8f9e968f7d624236bc059d49c01c8f45e1e9fc3",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GBattleController.hpp",
+      "bytes": 2269,
+      "frozen_source_sha256": "3a4b2770c751c1c0bc7fe240199ff5b4271e4ab60780148b51c277a32bc27483",
+      "compiled_stage_sha256": "3a4b2770c751c1c0bc7fe240199ff5b4271e4ab60780148b51c277a32bc27483",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GBattlePresentation.hpp",
+      "bytes": 2729,
+      "frozen_source_sha256": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7",
+      "compiled_stage_sha256": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GBattleTimeline.hpp",
+      "bytes": 1332,
+      "frozen_source_sha256": "b80131c93ce1445a4caa1d0c11897a803f87165ab3cef63fc9223afec3964925",
+      "compiled_stage_sha256": "b80131c93ce1445a4caa1d0c11897a803f87165ab3cef63fc9223afec3964925",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GBindings.hpp",
+      "bytes": 3365,
+      "frozen_source_sha256": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03",
+      "compiled_stage_sha256": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GCamera.hpp",
+      "bytes": 1520,
+      "frozen_source_sha256": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04",
+      "compiled_stage_sha256": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GMaterialOverrides.hpp",
+      "bytes": 3670,
+      "frozen_source_sha256": "3ac2699d45e83dc04088ac723bc49a42db4630303a88720e311ff42de17c52c9",
+      "compiled_stage_sha256": "3ac2699d45e83dc04088ac723bc49a42db4630303a88720e311ff42de17c52c9",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GRenderFrame.hpp",
+      "bytes": 3741,
+      "frozen_source_sha256": "1a89af7fc4701c75492293ea074b2ce5556e6bfe10a1c428d6ea0ecf45ab6796",
+      "compiled_stage_sha256": "1a89af7fc4701c75492293ea074b2ce5556e6bfe10a1c428d6ea0ecf45ab6796",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GScene.hpp",
+      "bytes": 6176,
+      "frozen_source_sha256": "7a1c27aa53e6df32d83c2ec23727d180008591154b108af70b8c12f9a373c653",
+      "compiled_stage_sha256": "7a1c27aa53e6df32d83c2ec23727d180008591154b108af70b8c12f9a373c653",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GScenePose.hpp",
+      "bytes": 2131,
+      "frozen_source_sha256": "c2d8080f45a6060b2e22bacd77c91a4643f0ce644a885620950d1aefd7fb6b50",
+      "compiled_stage_sha256": "c2d8080f45a6060b2e22bacd77c91a4643f0ce644a885620950d1aefd7fb6b50",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/M3GSprite3D.hpp",
+      "bytes": 4011,
+      "frozen_source_sha256": "0e99e83bf8a16b8eb754f1d80aa9a0cd202a97558958ac2a562f42607842167b",
+      "compiled_stage_sha256": "0e99e83bf8a16b8eb754f1d80aa9a0cd202a97558958ac2a562f42607842167b",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Mission.hpp",
+      "bytes": 1448,
+      "frozen_source_sha256": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+      "compiled_stage_sha256": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/MissionExecution.hpp",
+      "bytes": 8551,
+      "frozen_source_sha256": "df0ceb34f1ded75523f30777ba39b402a2aec3d659cb6226e2c7c41fe426289e",
+      "compiled_stage_sha256": "df0ceb34f1ded75523f30777ba39b402a2aec3d659cb6226e2c7c41fe426289e",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/MissionObjectives.hpp",
+      "bytes": 3195,
+      "frozen_source_sha256": "b1774f766cd669f9a840b663698e0bea931bdede752ad1485f7007ace912e7df",
+      "compiled_stage_sha256": "b1774f766cd669f9a840b663698e0bea931bdede752ad1485f7007ace912e7df",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/MissionProgression.hpp",
+      "bytes": 5233,
+      "frozen_source_sha256": "7da6229854fa0168ae1402e890f53eaf1241e1284bc07c1b167602101e12f2e9",
+      "compiled_stage_sha256": "7da6229854fa0168ae1402e890f53eaf1241e1284bc07c1b167602101e12f2e9",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Movement.hpp",
+      "bytes": 3493,
+      "frozen_source_sha256": "a3a4b66db096e34c6de57642e01a41e2aa19c616aebeb4002eab279f809b6e75",
+      "compiled_stage_sha256": "a3a4b66db096e34c6de57642e01a41e2aa19c616aebeb4002eab279f809b6e75",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/MovementAction.hpp",
+      "bytes": 4403,
+      "frozen_source_sha256": "a96b7f918569dd8923955d02e462887eb2e6cf51bd35f9cee79cdc5f37783728",
+      "compiled_stage_sha256": "a96b7f918569dd8923955d02e462887eb2e6cf51bd35f9cee79cdc5f37783728",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/MovementArrival.hpp",
+      "bytes": 1369,
+      "frozen_source_sha256": "4d2f2cd05b78ad730c08184b9f13ea7b64d4e321f83c2ac86c0bdc7ee38ad3d3",
+      "compiled_stage_sha256": "4d2f2cd05b78ad730c08184b9f13ea7b64d4e321f83c2ac86c0bdc7ee38ad3d3",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/SaveStore.hpp",
+      "bytes": 896,
+      "frozen_source_sha256": "bba8b7e69165d1d0d4a4059346082757e7f4f223186cc7a2feb4e61777a566fc",
+      "compiled_stage_sha256": "bba8b7e69165d1d0d4a4059346082757e7f4f223186cc7a2feb4e61777a566fc",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Scene.hpp",
+      "bytes": 1965,
+      "frozen_source_sha256": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1",
+      "compiled_stage_sha256": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/SessionSave.hpp",
+      "bytes": 1819,
+      "frozen_source_sha256": "6e1fc2481b0c643b58993a1307bdc756bf5fadaf31243506d58238ddcc4234a2",
+      "compiled_stage_sha256": "6e1fc2481b0c643b58993a1307bdc756bf5fadaf31243506d58238ddcc4234a2",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/SpriteAnimation.hpp",
+      "bytes": 2470,
+      "frozen_source_sha256": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9",
+      "compiled_stage_sha256": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/SpriteGeometry.hpp",
+      "bytes": 1700,
+      "frozen_source_sha256": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac",
+      "compiled_stage_sha256": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/SpritePlacement.hpp",
+      "bytes": 1267,
+      "frozen_source_sha256": "be73567877ec77644328abcbe73629526b0e1f12d4d1753d687c218083eb555d",
+      "compiled_stage_sha256": "be73567877ec77644328abcbe73629526b0e1f12d4d1753d687c218083eb555d",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Terrain.hpp",
+      "bytes": 6474,
+      "frozen_source_sha256": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a",
+      "compiled_stage_sha256": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/TerrainDecorations.hpp",
+      "bytes": 2661,
+      "frozen_source_sha256": "52925f12aeb10622a2943f377ddbf6f088402d8184d85cd5196fbdb62a84d494",
+      "compiled_stage_sha256": "52925f12aeb10622a2943f377ddbf6f088402d8184d85cd5196fbdb62a84d494",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/TerrainRuntime.hpp",
+      "bytes": 1512,
+      "frozen_source_sha256": "de33c17f623639eccc11aa0234bf1feb9f088029f101259b8cac3a738e0a109b",
+      "compiled_stage_sha256": "de33c17f623639eccc11aa0234bf1feb9f088029f101259b8cac3a738e0a109b",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/TerrainSpriteDecorations.hpp",
+      "bytes": 5040,
+      "frozen_source_sha256": "5c691db68a5635cd5cf1ec17c9513c7166f91c786e6602e8b2c4e89bca5535ec",
+      "compiled_stage_sha256": "5c691db68a5635cd5cf1ec17c9513c7166f91c786e6602e8b2c4e89bca5535ec",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/Text.hpp",
+      "bytes": 1373,
+      "frozen_source_sha256": "7e78e6b25dfe6e65ed7b98ec47809b1a0560428145a8e8d32ec5ea40b5134df0",
+      "compiled_stage_sha256": "7e78e6b25dfe6e65ed7b98ec47809b1a0560428145a8e8d32ec5ea40b5134df0",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/TransformAction.hpp",
+      "bytes": 1672,
+      "frozen_source_sha256": "2a9f1738b07db5df60181b90d46cf624b31120b10e2f39ce75ee4cccd35f003e",
+      "compiled_stage_sha256": "2a9f1738b07db5df60181b90d46cf624b31120b10e2f39ce75ee4cccd35f003e",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/TurnProgression.hpp",
+      "bytes": 1634,
+      "frozen_source_sha256": "f82e327a22ef1c45c9bee832439215d9d9e962811ca554f5335f21c7a7cd9e61",
+      "compiled_stage_sha256": "f82e327a22ef1c45c9bee832439215d9d9e962811ca554f5335f21c7a7cd9e61",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/UndoAction.hpp",
+      "bytes": 2522,
+      "frozen_source_sha256": "30783a0111cbe3e324056607cebc4828f6e2766f927dfab2c53c542deb74cc58",
+      "compiled_stage_sha256": "30783a0111cbe3e324056607cebc4828f6e2766f927dfab2c53c542deb74cc58",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/UnitCommands.hpp",
+      "bytes": 2143,
+      "frozen_source_sha256": "b0f501484216dfb7ed2756fd0b76614fdad6d1863c7332d72317a6b1de4f2e2e",
+      "compiled_stage_sha256": "b0f501484216dfb7ed2756fd0b76614fdad6d1863c7332d72317a6b1de4f2e2e",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/UnitInteractions.hpp",
+      "bytes": 6610,
+      "frozen_source_sha256": "17c078644175988bf8ded0cae22864f25dec20d26279cdc56d1c841de8fc74fb",
+      "compiled_stage_sha256": "17c078644175988bf8ded0cae22864f25dec20d26279cdc56d1c841de8fc74fb",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/UnitSpawn.hpp",
+      "bytes": 1879,
+      "frozen_source_sha256": "ea2a2365909deaf668b78fcf0be2c4864f5defffc53ad163fb27265fb0d4d27f",
+      "compiled_stage_sha256": "ea2a2365909deaf668b78fcf0be2c4864f5defffc53ad163fb27265fb0d4d27f",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/UpgradeAction.hpp",
+      "bytes": 2793,
+      "frozen_source_sha256": "8ada0dea4e358b179d2711f7c01e5a4af863b40163898f857a373dc248e68287",
+      "compiled_stage_sha256": "8ada0dea4e358b179d2711f7c01e5a4af863b40163898f857a373dc248e68287",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/World.hpp",
+      "bytes": 5870,
+      "frozen_source_sha256": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501",
+      "compiled_stage_sha256": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501",
+      "equal": true
+    },
+    {
+      "path": "native/include/g1/WorldCommands.hpp",
+      "bytes": 6008,
+      "frozen_source_sha256": "cb1902396e24f527a7eabf1f59fca7466bd54305676262e503380c960ebea592",
+      "compiled_stage_sha256": "cb1902396e24f527a7eabf1f59fca7466bd54305676262e503380c960ebea592",
+      "equal": true
+    },
+    {
+      "path": "native/src/AI.cpp",
+      "bytes": 27645,
+      "frozen_source_sha256": "428f9868b0f2c33d82a288493008770ac7ffb4bedfa48448c36b982b6dd2e402",
+      "compiled_stage_sha256": "428f9868b0f2c33d82a288493008770ac7ffb4bedfa48448c36b982b6dd2e402",
+      "equal": true
+    },
+    {
+      "path": "native/src/AIExecution.cpp",
+      "bytes": 2662,
+      "frozen_source_sha256": "5b46ca0421bcf62edd8ffe82d941d757c287342286660a0e3d6861bbfda272c2",
+      "compiled_stage_sha256": "5b46ca0421bcf62edd8ffe82d941d757c287342286660a0e3d6861bbfda272c2",
+      "equal": true
+    },
+    {
+      "path": "native/src/AIIncome.cpp",
+      "bytes": 1492,
+      "frozen_source_sha256": "3b663dab235207b1ac6e6cdcce0881f13eafd0277c5251e2f08f66fd6e2388e7",
+      "compiled_stage_sha256": "3b663dab235207b1ac6e6cdcce0881f13eafd0277c5251e2f08f66fd6e2388e7",
+      "equal": true
+    },
+    {
+      "path": "native/src/AISite.cpp",
+      "bytes": 6529,
+      "frozen_source_sha256": "abd1e3643b723ab01b1ea9bd7992dc3d7e44f4438fa06c2c8d6398b314cd3772",
+      "compiled_stage_sha256": "abd1e3643b723ab01b1ea9bd7992dc3d7e44f4438fa06c2c8d6398b314cd3772",
+      "equal": true
+    },
+    {
+      "path": "native/src/Archive.cpp",
+      "bytes": 7888,
+      "frozen_source_sha256": "cc82a6de8d26c55cdad2ec17e342b03244a5dbd053d4f9a99af64247207ff309",
+      "compiled_stage_sha256": "cc82a6de8d26c55cdad2ec17e342b03244a5dbd053d4f9a99af64247207ff309",
+      "equal": true
+    },
+    {
+      "path": "native/src/Atlas.cpp",
+      "bytes": 7960,
+      "frozen_source_sha256": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+      "compiled_stage_sha256": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+      "equal": true
+    },
+    {
+      "path": "native/src/Audio.cpp",
+      "bytes": 2713,
+      "frozen_source_sha256": "297a62c64cfcb9f1ef5af80c7e8c2bc1b1d0e74d034473e24bbc8af6eb2bfc52",
+      "compiled_stage_sha256": "297a62c64cfcb9f1ef5af80c7e8c2bc1b1d0e74d034473e24bbc8af6eb2bfc52",
+      "equal": true
+    },
+    {
+      "path": "native/src/AudioEvents.cpp",
+      "bytes": 3195,
+      "frozen_source_sha256": "132fcbde0f734e79e0401877f2fb35bc39650c0311f433f4aa9eb8cc88868685",
+      "compiled_stage_sha256": "132fcbde0f734e79e0401877f2fb35bc39650c0311f433f4aa9eb8cc88868685",
+      "equal": true
+    },
+    {
+      "path": "native/src/CampaignController.cpp",
+      "bytes": 11876,
+      "frozen_source_sha256": "26b4d0079990402cf1e13947dee9e89abc23c895104f60510375ca6c76c3bd2d",
+      "compiled_stage_sha256": "26b4d0079990402cf1e13947dee9e89abc23c895104f60510375ca6c76c3bd2d",
+      "equal": true
+    },
+    {
+      "path": "native/src/CaptureAction.cpp",
+      "bytes": 9860,
+      "frozen_source_sha256": "951bad97b69cdaad3b3788581c1f2f1379a4fbf0de1d8c1727d009d235312e14",
+      "compiled_stage_sha256": "951bad97b69cdaad3b3788581c1f2f1379a4fbf0de1d8c1727d009d235312e14",
+      "equal": true
+    },
+    {
+      "path": "native/src/Combat.cpp",
+      "bytes": 15641,
+      "frozen_source_sha256": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+      "compiled_stage_sha256": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+      "equal": true
+    },
+    {
+      "path": "native/src/GameSession.cpp",
+      "bytes": 23264,
+      "frozen_source_sha256": "8a90b763c6b27b914d3989b8bcfa5f2d35f0f435db95941a402432676acc830a",
+      "compiled_stage_sha256": "8a90b763c6b27b914d3989b8bcfa5f2d35f0f435db95941a402432676acc830a",
+      "equal": true
+    },
+    {
+      "path": "native/src/GameSessionAI.cpp",
+      "bytes": 16090,
+      "frozen_source_sha256": "be4118db0bd2cf9de856d1771bc9bb58b2d81569acbaabd63eeaece673f6348d",
+      "compiled_stage_sha256": "be4118db0bd2cf9de856d1771bc9bb58b2d81569acbaabd63eeaece673f6348d",
+      "equal": true
+    },
+    {
+      "path": "native/src/GameSessionActions.cpp",
+      "bytes": 5432,
+      "frozen_source_sha256": "a4f520ec2e807c3f519adf5d8a4bb3dcc71f0f3a2c94cf07c91237e0e75923bb",
+      "compiled_stage_sha256": "a4f520ec2e807c3f519adf5d8a4bb3dcc71f0f3a2c94cf07c91237e0e75923bb",
+      "equal": true
+    },
+    {
+      "path": "native/src/GameSessionWorld.cpp",
+      "bytes": 8193,
+      "frozen_source_sha256": "14fc87e569983fc99528d9eda7c2f095f8af4c621f5bee546cd477fea183258d",
+      "compiled_stage_sha256": "14fc87e569983fc99528d9eda7c2f095f8af4c621f5bee546cd477fea183258d",
+      "equal": true
+    },
+    {
+      "path": "native/src/HealAction.cpp",
+      "bytes": 4148,
+      "frozen_source_sha256": "1b2c94205ea64668f35c5e13f696720c4bd07da0341ba04a64a1ca47cfb7cdfc",
+      "compiled_stage_sha256": "1b2c94205ea64668f35c5e13f696720c4bd07da0341ba04a64a1ca47cfb7cdfc",
+      "equal": true
+    },
+    {
+      "path": "native/src/Image.cpp",
+      "bytes": 2645,
+      "frozen_source_sha256": "a3f4d8e18f82699138ef6948bbd72e7402c98e2e4973c6cba5096cb220564e4f",
+      "compiled_stage_sha256": "a3f4d8e18f82699138ef6948bbd72e7402c98e2e4973c6cba5096cb220564e4f",
+      "equal": true
+    },
+    {
+      "path": "native/src/InitialPresentation.cpp",
+      "bytes": 2586,
+      "frozen_source_sha256": "dd992341007b3d19bc43c4a88c994d5f3581cbe6132528e3f83d5ad91fe7b62e",
+      "compiled_stage_sha256": "dd992341007b3d19bc43c4a88c994d5f3581cbe6132528e3f83d5ad91fe7b62e",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3G.cpp",
+      "bytes": 4130,
+      "frozen_source_sha256": "5a80cf51465903ec076bd18173235b801b90fe61217cb67d410060d6f17ba9ff",
+      "compiled_stage_sha256": "5a80cf51465903ec076bd18173235b801b90fe61217cb67d410060d6f17ba9ff",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GAnimation.cpp",
+      "bytes": 32088,
+      "frozen_source_sha256": "300b15ceb1f251d8701d6e8f058a86fe3f5987a5cea39f907f7ab7f3d150136c",
+      "compiled_stage_sha256": "300b15ceb1f251d8701d6e8f058a86fe3f5987a5cea39f907f7ab7f3d150136c",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GBattleCamera.cpp",
+      "bytes": 6004,
+      "frozen_source_sha256": "2568601c2bac5561d32e64c50960cfb4698e2a56a7c6cf3aca79cc25015fa5a8",
+      "compiled_stage_sha256": "2568601c2bac5561d32e64c50960cfb4698e2a56a7c6cf3aca79cc25015fa5a8",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GBattleController.cpp",
+      "bytes": 11187,
+      "frozen_source_sha256": "922a634e4af8d98dab7543dcdadc478c8a508d019dd58aa48ceec04f59e0f793",
+      "compiled_stage_sha256": "922a634e4af8d98dab7543dcdadc478c8a508d019dd58aa48ceec04f59e0f793",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GBattlePresentation.cpp",
+      "bytes": 29668,
+      "frozen_source_sha256": "dc4301ca833bb3fae00ce765121bc64a5271d58aebbb3e1a7d839a999416962e",
+      "compiled_stage_sha256": "dc4301ca833bb3fae00ce765121bc64a5271d58aebbb3e1a7d839a999416962e",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GBattleTimeline.cpp",
+      "bytes": 1869,
+      "frozen_source_sha256": "4cd66f6d2acf7d5af20eaaac8093e42b8809736c152f3ec54aa4e30c847df5f0",
+      "compiled_stage_sha256": "4cd66f6d2acf7d5af20eaaac8093e42b8809736c152f3ec54aa4e30c847df5f0",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GBindings.cpp",
+      "bytes": 6069,
+      "frozen_source_sha256": "6178bfd971e4aabdd1ade845a2175f2423cededdb246c7bff5d69d9eb7b50bdc",
+      "compiled_stage_sha256": "6178bfd971e4aabdd1ade845a2175f2423cededdb246c7bff5d69d9eb7b50bdc",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GCamera.cpp",
+      "bytes": 7144,
+      "frozen_source_sha256": "5344397d24736ae86eab134d5a3ca7b5fe6b7c7870bb346a29187e12062e32a2",
+      "compiled_stage_sha256": "5344397d24736ae86eab134d5a3ca7b5fe6b7c7870bb346a29187e12062e32a2",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GMaterialOverrides.cpp",
+      "bytes": 16082,
+      "frozen_source_sha256": "92edf8089968ec9e56d52ff8a30efa7c774819a1e359bdc3ec11635bdc69e111",
+      "compiled_stage_sha256": "92edf8089968ec9e56d52ff8a30efa7c774819a1e359bdc3ec11635bdc69e111",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GRenderFrame.cpp",
+      "bytes": 9604,
+      "frozen_source_sha256": "69ee42e31ce63bbaff9d53513dec3146f5337af32da4703bdb2ab9fbf29a07ec",
+      "compiled_stage_sha256": "69ee42e31ce63bbaff9d53513dec3146f5337af32da4703bdb2ab9fbf29a07ec",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GScene.cpp",
+      "bytes": 37873,
+      "frozen_source_sha256": "3908c41603d8a3d9f80ef184909083ca3cfe1e68244944918014aed431c9444b",
+      "compiled_stage_sha256": "3908c41603d8a3d9f80ef184909083ca3cfe1e68244944918014aed431c9444b",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GScenePose.cpp",
+      "bytes": 6470,
+      "frozen_source_sha256": "09d815e4c654b18306b28b4e1d51ea53917d66bafc3a670523598b7273310ef7",
+      "compiled_stage_sha256": "09d815e4c654b18306b28b4e1d51ea53917d66bafc3a670523598b7273310ef7",
+      "equal": true
+    },
+    {
+      "path": "native/src/M3GSprite3D.cpp",
+      "bytes": 13806,
+      "frozen_source_sha256": "26486d2ade3a6823646a9b5a3c9be4cc9034e95dfed11385f28dac8e3d6cae1e",
+      "compiled_stage_sha256": "26486d2ade3a6823646a9b5a3c9be4cc9034e95dfed11385f28dac8e3d6cae1e",
+      "equal": true
+    },
+    {
+      "path": "native/src/Mission.cpp",
+      "bytes": 5199,
+      "frozen_source_sha256": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+      "compiled_stage_sha256": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+      "equal": true
+    },
+    {
+      "path": "native/src/MissionExecution.cpp",
+      "bytes": 19505,
+      "frozen_source_sha256": "096c24a193e7a398c7813303bf5034e8adb8b0a4a374fca478dc6930acf54c17",
+      "compiled_stage_sha256": "096c24a193e7a398c7813303bf5034e8adb8b0a4a374fca478dc6930acf54c17",
+      "equal": true
+    },
+    {
+      "path": "native/src/MissionObjectives.cpp",
+      "bytes": 9311,
+      "frozen_source_sha256": "317e1160344c6f02a98aad2280553b1abf94ccb21dab1eb8f4a1c3ff642bb993",
+      "compiled_stage_sha256": "317e1160344c6f02a98aad2280553b1abf94ccb21dab1eb8f4a1c3ff642bb993",
+      "equal": true
+    },
+    {
+      "path": "native/src/MissionProgression.cpp",
+      "bytes": 8208,
+      "frozen_source_sha256": "8fe4883f3a6532a3254afa29919bb95e0137ac8cc585642b2d42aad2797fd203",
+      "compiled_stage_sha256": "8fe4883f3a6532a3254afa29919bb95e0137ac8cc585642b2d42aad2797fd203",
+      "equal": true
+    },
+    {
+      "path": "native/src/Movement.cpp",
+      "bytes": 8505,
+      "frozen_source_sha256": "0cac89782a82b521ea12845c400caedbb680790432de17f6d8fbd51acdd64f9f",
+      "compiled_stage_sha256": "0cac89782a82b521ea12845c400caedbb680790432de17f6d8fbd51acdd64f9f",
+      "equal": true
+    },
+    {
+      "path": "native/src/MovementAction.cpp",
+      "bytes": 9189,
+      "frozen_source_sha256": "37e3d7cf8cd18262c7c808128fd5652851ab401350c9199f66079049bf86a073",
+      "compiled_stage_sha256": "37e3d7cf8cd18262c7c808128fd5652851ab401350c9199f66079049bf86a073",
+      "equal": true
+    },
+    {
+      "path": "native/src/MovementArrival.cpp",
+      "bytes": 2057,
+      "frozen_source_sha256": "a929d215d24ceaceba6e5ae0a9492f2834400d117e7b9ca6c8c5789db68fae23",
+      "compiled_stage_sha256": "a929d215d24ceaceba6e5ae0a9492f2834400d117e7b9ca6c8c5789db68fae23",
+      "equal": true
+    },
+    {
+      "path": "native/src/SaveStore.cpp",
+      "bytes": 5698,
+      "frozen_source_sha256": "fdae81f5f210ea2bd2606924eef67a268493d05ea15d980a4092611e5e955679",
+      "compiled_stage_sha256": "fdae81f5f210ea2bd2606924eef67a268493d05ea15d980a4092611e5e955679",
+      "equal": true
+    },
+    {
+      "path": "native/src/Scene.cpp",
+      "bytes": 4546,
+      "frozen_source_sha256": "919b83acbe2e6eee2299985f4a3bc41d46442f5b1f33d9ccb41474899cec98ab",
+      "compiled_stage_sha256": "919b83acbe2e6eee2299985f4a3bc41d46442f5b1f33d9ccb41474899cec98ab",
+      "equal": true
+    },
+    {
+      "path": "native/src/SessionSave.cpp",
+      "bytes": 30056,
+      "frozen_source_sha256": "7f9292c19a26b6bb09dff088f0e88d7fe70ac654684cb7b27695150b42cfb825",
+      "compiled_stage_sha256": "7f9292c19a26b6bb09dff088f0e88d7fe70ac654684cb7b27695150b42cfb825",
+      "equal": true
+    },
+    {
+      "path": "native/src/SpriteAnimation.cpp",
+      "bytes": 4410,
+      "frozen_source_sha256": "80159bac9e3e9e52178a54a3d53666326142bd7863e47721d75a24703882c07e",
+      "compiled_stage_sha256": "80159bac9e3e9e52178a54a3d53666326142bd7863e47721d75a24703882c07e",
+      "equal": true
+    },
+    {
+      "path": "native/src/SpriteGeometry.cpp",
+      "bytes": 1942,
+      "frozen_source_sha256": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+      "compiled_stage_sha256": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+      "equal": true
+    },
+    {
+      "path": "native/src/SpritePlacement.cpp",
+      "bytes": 2598,
+      "frozen_source_sha256": "7615da12e273eb5bf5c6cb18707655b73b547c2dce0f7306f074619a37bb7ed0",
+      "compiled_stage_sha256": "7615da12e273eb5bf5c6cb18707655b73b547c2dce0f7306f074619a37bb7ed0",
+      "equal": true
+    },
+    {
+      "path": "native/src/Terrain.cpp",
+      "bytes": 16396,
+      "frozen_source_sha256": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+      "compiled_stage_sha256": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+      "equal": true
+    },
+    {
+      "path": "native/src/TerrainDecorations.cpp",
+      "bytes": 12779,
+      "frozen_source_sha256": "4b35dfc378068f3ee030bd6a4727e2a06650152a9c82baee350d26d47c4aed0b",
+      "compiled_stage_sha256": "4b35dfc378068f3ee030bd6a4727e2a06650152a9c82baee350d26d47c4aed0b",
+      "equal": true
+    },
+    {
+      "path": "native/src/TerrainRuntime.cpp",
+      "bytes": 3453,
+      "frozen_source_sha256": "b2c5ccb05b6f43e4b90e0771958dc9c9a2cd73d04f5793c33308c8f4d241f69d",
+      "compiled_stage_sha256": "b2c5ccb05b6f43e4b90e0771958dc9c9a2cd73d04f5793c33308c8f4d241f69d",
+      "equal": true
+    },
+    {
+      "path": "native/src/TerrainSpriteDecorations.cpp",
+      "bytes": 24482,
+      "frozen_source_sha256": "0dfe3ee44ad7fabdff0572e81c8e205406d3ec7230e9fab81ac3769e1e980922",
+      "compiled_stage_sha256": "0dfe3ee44ad7fabdff0572e81c8e205406d3ec7230e9fab81ac3769e1e980922",
+      "equal": true
+    },
+    {
+      "path": "native/src/Text.cpp",
+      "bytes": 5439,
+      "frozen_source_sha256": "77f0edbdf3a6f9b9979a89175ce7a2efe3068c2039394cdc9b33b70e0fa17058",
+      "compiled_stage_sha256": "77f0edbdf3a6f9b9979a89175ce7a2efe3068c2039394cdc9b33b70e0fa17058",
+      "equal": true
+    },
+    {
+      "path": "native/src/TextIndexMap.inc",
+      "bytes": 4814,
+      "frozen_source_sha256": "cfdb86ff805a4a75b65aa1f79c943bb4f671d18e47d40dfe1b02561709201ad4",
+      "compiled_stage_sha256": "cfdb86ff805a4a75b65aa1f79c943bb4f671d18e47d40dfe1b02561709201ad4",
+      "equal": true
+    },
+    {
+      "path": "native/src/TransformAction.cpp",
+      "bytes": 2015,
+      "frozen_source_sha256": "a51c0872e29238283da5eb371aa67362bc55342c3d2b14e6b71681615f95e7d3",
+      "compiled_stage_sha256": "a51c0872e29238283da5eb371aa67362bc55342c3d2b14e6b71681615f95e7d3",
+      "equal": true
+    },
+    {
+      "path": "native/src/TurnProgression.cpp",
+      "bytes": 2893,
+      "frozen_source_sha256": "dbedefb33651b22fa2acddce2d1ff423b04a11ce35e301210f83253c4c98b2bd",
+      "compiled_stage_sha256": "dbedefb33651b22fa2acddce2d1ff423b04a11ce35e301210f83253c4c98b2bd",
+      "equal": true
+    },
+    {
+      "path": "native/src/UndoAction.cpp",
+      "bytes": 3865,
+      "frozen_source_sha256": "546050f67a6e6d153cdd3e8417c37be66cd9c56089d449129bfc8d6559c1162f",
+      "compiled_stage_sha256": "546050f67a6e6d153cdd3e8417c37be66cd9c56089d449129bfc8d6559c1162f",
+      "equal": true
+    },
+    {
+      "path": "native/src/UnitCommands.cpp",
+      "bytes": 1558,
+      "frozen_source_sha256": "0c7084fba55a28984e9d14e8c5822bdd8f1067e1551e09742d6f782951cdcee5",
+      "compiled_stage_sha256": "0c7084fba55a28984e9d14e8c5822bdd8f1067e1551e09742d6f782951cdcee5",
+      "equal": true
+    },
+    {
+      "path": "native/src/UnitInteractions.cpp",
+      "bytes": 15269,
+      "frozen_source_sha256": "4de04ac71da7e2a0aff27c8b772b082786565d3fb7860f1233bfff8d217d2072",
+      "compiled_stage_sha256": "4de04ac71da7e2a0aff27c8b772b082786565d3fb7860f1233bfff8d217d2072",
+      "equal": true
+    },
+    {
+      "path": "native/src/UnitSpawn.cpp",
+      "bytes": 2501,
+      "frozen_source_sha256": "1a6e77d6b1d57eaac69274d3fa76091b010c0412bf27ab1bb0c3ae44c18b64a4",
+      "compiled_stage_sha256": "1a6e77d6b1d57eaac69274d3fa76091b010c0412bf27ab1bb0c3ae44c18b64a4",
+      "equal": true
+    },
+    {
+      "path": "native/src/UpgradeAction.cpp",
+      "bytes": 6633,
+      "frozen_source_sha256": "da24bd04630e36004be9166da967bfb50b3163ec83e474f791a2300e5c540b78",
+      "compiled_stage_sha256": "da24bd04630e36004be9166da967bfb50b3163ec83e474f791a2300e5c540b78",
+      "equal": true
+    },
+    {
+      "path": "native/src/World.cpp",
+      "bytes": 16810,
+      "frozen_source_sha256": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+      "compiled_stage_sha256": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+      "equal": true
+    },
+    {
+      "path": "native/src/WorldCommands.cpp",
+      "bytes": 20109,
+      "frozen_source_sha256": "ada6f10aa76b300cb9ad1323a6656ed4999b201eca956b70e9cb9d197fc124ef",
+      "compiled_stage_sha256": "ada6f10aa76b300cb9ad1323a6656ed4999b201eca956b70e9cb9d197fc124ef",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/lodepng/LICENSE",
+      "bytes": 886,
+      "frozen_source_sha256": "bdafa318b8e637d600ca1b60545e894881977a16a16b74809c95e805701621e3",
+      "compiled_stage_sha256": "bdafa318b8e637d600ca1b60545e894881977a16a16b74809c95e805701621e3",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/lodepng/UPSTREAM.json",
+      "bytes": 639,
+      "frozen_source_sha256": "cb2940d282b1bace1f30d5031dd0d4b436f67a37acbddd7d8c724b072d8453fe",
+      "compiled_stage_sha256": "cb2940d282b1bace1f30d5031dd0d4b436f67a37acbddd7d8c724b072d8453fe",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/lodepng/lodepng.cpp",
+      "bytes": 312689,
+      "frozen_source_sha256": "6aec876971ec860527859458d3095220fc5ee1258ec37eb59e1e7dd9cf136a81",
+      "compiled_stage_sha256": "6aec876971ec860527859458d3095220fc5ee1258ec37eb59e1e7dd9cf136a81",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/lodepng/lodepng.h",
+      "bytes": 108843,
+      "frozen_source_sha256": "9a1fca0238c38333bdc8545336961b73fd0b76957bbacf033186991be9d7cf85",
+      "compiled_stage_sha256": "9a1fca0238c38333bdc8545336961b73fd0b76957bbacf033186991be9d7cf85",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/stb/LICENSE",
+      "bytes": 2510,
+      "frozen_source_sha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "compiled_stage_sha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/stb/UPSTREAM.json",
+      "bytes": 727,
+      "frozen_source_sha256": "f49725da5c0866f601db30578ebedc9b8d4da22729e4da61344059420b816a1d",
+      "compiled_stage_sha256": "f49725da5c0866f601db30578ebedc9b8d4da22729e4da61344059420b816a1d",
+      "equal": true
+    },
+    {
+      "path": "native/third_party/stb/stb_vorbis.c",
+      "bytes": 192790,
+      "frozen_source_sha256": "4c7cb2ff1f7011e9d67950446b7eb9ca044f2e464d76bfbb0b84dd2e23e65636",
+      "compiled_stage_sha256": "4c7cb2ff1f7011e9d67950446b7eb9ca044f2e464d76bfbb0b84dd2e23e65636",
+      "equal": true
+    }
+  ],
+  "added_headers_excluded_from_frozen_library_inputs": [
+    {
+      "path": "native/include/g1/AudioMaintenance.hpp",
+      "sha256": "56fe008b5846b6a0f46b93e1525273a17fc5906fafb62797176907b66cfa3bac",
+      "reason": "Added header absent from frozen pilot library inputs; presentation/music maintenance has separate validation."
+    },
+    {
+      "path": "native/include/g1/MenuMusic.hpp",
+      "sha256": "e4537498fab6ec64471ca0bd9e41cdff930d52172f36c99e1295c522bb20fe32",
+      "reason": "Added header absent from frozen pilot library inputs; presentation/music maintenance has separate validation."
+    }
+  ],
+  "other_exclusions": [
+    "native/platform/apple/NativeApp.mm",
+    "native/platform/apple/AppleAudio.mm",
+    "Apple runtime/UI build, rendering, audio and physical-device execution",
+    "Updated music tests, original fixtures and fixture-only camera test",
+    "CMake target additions and presentation-specific build configuration"
+  ],
+  "source_equality_is_not_device_execution_evidence": true
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "scope": "Native route/ordered pose-effect plan only; actual graph lookup, native pose application and GPU output are caller boundaries",
+  "optimized": {
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "g1_port/native/include",
+      "-I",
+      "g1_port/native/tests"
+    ],
+    "result": {
+      "checks": 9668,
+      "original_cases": 221,
+      "original_field_comparisons": 9645,
+      "native_contracts": 23
+    },
+    "binary_sha256": "f34e4ce74ed1a8af8063b0abd89337b073cbf0afafb746653ac5a8e87dab1fc3"
+  },
+  "ubsan": {
+    "flags": [
+      "-std=c++17",
+      "-O1",
+      "-g1",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "g1_port/native/include",
+      "-I",
+      "g1_port/native/tests"
+    ],
+    "result": {
+      "checks": 9668,
+      "original_cases": 221,
+      "original_field_comparisons": 9645,
+      "native_contracts": 23
+    },
+    "binary_sha256": "7fdaf2437066056445f21ddc2ec581858d49ea0b11ed08f0b5054c5633535670"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "original_reference": {
+    "cases": 221,
+    "public_events": 5192,
+    "propagation_entries": 442
+  },
+  "scene_data_inventory": {
+    "queries": 42,
+    "found_camera5": 36,
+    "missing": [
+      {
+        "resource_id": 486,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 486,
+        "name": "d_Stat_Camera"
+      },
+      {
+        "resource_id": 534,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 534,
+        "name": "d_Stat_Camera"
+      },
+      {
+        "resource_id": 1212,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 1212,
+        "name": "d_Stat_Camera"
+      }
+    ]
+  },
+  "source_sha256": {
+    "native/include/g1/M3GBattleCamera.hpp": "34370c78f2f81f540d68dcd1a8f9e968f7d624236bc059d49c01c8f45e1e9fc3",
+    "native/src/M3GBattleCamera.cpp": "2568601c2bac5561d32e64c50960cfb4698e2a56a7c6cf3aca79cc25015fa5a8",
+    "native/tests/m3g_battle_camera_test.cpp": "d41f39c273fb8d9a9be5743d6ed9411f8fecd06b815db94ba19fb16466656115",
+    "native/tests/m3g_battle_camera_fixture.hpp": "c4e6a67add5dbd7453c0f6465abda9842b236a1a49c9c4eab6ce78e0ee96ab7c",
+    "analysis_tools/m3g/battle_camera_oracle.py": "7917b756471c4a8d47dfcd0bf51f8a8ace59f6538f7479e6f5f6dbb7f820eb02",
+    "analysis_tools/m3g/battle_camera_fixture.py": "0b86dd1c2409e7f996739b5f99e2c94c8a48544a60b9ad0c6ef3e83acd432449",
+    "analysis_tools/m3g/battle_camera_inventory.py": "82bbb7d13b4ef80bdbb5c7b146d42bfccd7af15fa8c6c52f4445eb8e52eab6a6"
+  },
+  "peer_review": "asset_audit read-only review of final header/cpp/test and additive-slot proof: no remaining concrete blocker; no peer execution claimed",
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

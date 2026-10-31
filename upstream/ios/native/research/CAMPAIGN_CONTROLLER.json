@@ -1,0 +1,33 @@
+{
+  "status": "native_campaign_orchestration_verified_locally",
+  "runtime_checks": 53,
+  "passed": true,
+  "scope": "actual native opcode10 profile write, token-bound results and campaign handoff orchestration; host rendering remains separate",
+  "source_hashes": {
+    "include/g1/CampaignController.hpp": "a74e8d6b119816a867d6c59e4eec5b92bc7e07725bc5526bc93223a4ace3c843",
+    "src/CampaignController.cpp": "3e54328d75b67b2afbb612d81bc7a015cdbbfc534bb3be3cb2f47c4755a684a4",
+    "tests/campaign_controller_test.cpp": "aff6f773d10cf816e772992bdd2b90f75bb9bf108ee36df54b36c4152769adbe"
+  },
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "existing_original_reference": {
+    "report": "MISSION_PROGRESSION.json",
+    "cases": 738,
+    "comparisons_or_guards": 10843
+  },
+  "validation": "campaign_controller_validation/native_checks.json",
+  "integration": {
+    "source": "src/CampaignController.cpp",
+    "test_source": "tests/campaign_controller_test.cpp",
+    "suggested_test_name": "campaign_actual_save_and_handoff",
+    "requires_original_asset_file": false,
+    "requires_new_oracle": false
+  },
+  "pending": [
+    "Apple compilation of this new module",
+    "host results/ending/menu rendering",
+    "iPhone execution",
+    "complete campaign playthrough",
+    "mid-mission restore",
+    "sustained60FPS"
+  ]
+}

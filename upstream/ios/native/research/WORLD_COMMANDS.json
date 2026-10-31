@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-10-26T06:41:58.544531+00:00",
+  "source_scope": "Native preparation/bootstrap/mission request gates. Live application and physical presentation are caller responsibilities.",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "reference_cases": 151,
+  "world_commands_checks": 1702,
+  "mission_execution_checks": 794,
+  "legacy_bootstrap_regression": {
+    "original_cases": 552,
+    "checks": 1203
+  },
+  "corpus": {
+    "prefixes": 30,
+    "unconsumed_camera_boundaries": 30,
+    "empty_initial_rosters": 6,
+    "activation_events": 135,
+    "seed": 18241,
+    "goals_advanced": 0,
+    "playthrough": false
+  },
+  "original_reference": "world_commands_validation/original_world_commands_reference.json",
+  "native_corpus": "world_commands_validation/campaign_bootstrap_corpus.json",
+  "fixture_sha256": "eca49489020d81a467afff1839f91afa4dadc291aa569a3c58eac3a73d5ef656",
+  "source_sha256": {
+    "include/g1/WorldCommands.hpp": "8ef1d1f21f6a07379708c914cef2fb6dda4a66d16ac173f550621d5d8e89abc2",
+    "src/WorldCommands.cpp": "d780516eef92a546d9551ae22aabcd6ececa9c53490475180400d2ad82375db7",
+    "include/g1/World.hpp": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501",
+    "src/World.cpp": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+    "include/g1/MissionExecution.hpp": "32eec51edab7d602e73cc46bd16f540d0a5340dea0f3c662e0b1cfcff3518a2d",
+    "src/MissionExecution.cpp": "d71090a9196f4f2d5da12aaf67f2d8c437a0c1d5560de5d13e3f097095bf8142",
+    "tests/world_commands_test.cpp": "e27c387d084534f1bed7c4c12f447738268a5a75a6e79338645b4eff95b30f70",
+    "tests/world_commands_original_vectors.txt": "eca49489020d81a467afff1839f91afa4dadc291aa569a3c58eac3a73d5ef656",
+    "tests/mission_execution_test.cpp": "a19a76bd74c1ee4cb10904514ebc9b08cdc2d3613e9449c72dd53b81842ff82e",
+    "tools/world_commands_probe.cpp": "7b7b2cd4d06430e4ec31322f5ba532da97c50d645c59c8180062397de6530a2c",
+    "tools/world_probe.cpp": "17f3ee556277219bbc6d6e887fa5156464d1c60555b1d860655bba9948c548d8",
+    "tools/mission_execution_probe.cpp": "cb41b86bbeb611c6947c613c0cb2149f06f6f59dab0346bcf0abcc1214c84b69"
+  },
+  "reproducer": {
+    "repository_path": "analysis_tools/world_commands/world_commands_oracle.py",
+    "sha256": "5a8279d8e165eea33a2c9b2da3563cf3b3dbf540e18e6c4e412b2987146a1a7a",
+    "dependency": "unicorn==2.1.4",
+    "support_path": "analysis_tools/mission_progression/oracle.py",
+    "support_sha256": "f0505848b34b88b6653cbb8ebe5f74fa8fd5394f4e1727fa93f0b3f2c18374ad",
+    "original_executable_required": true,
+    "original_libgcc_required": false,
+    "compiled_into_app": false
+  },
+  "compile": "C++17, -Wall -Wextra -Wconversion -Werror -pedantic -O2; new/modified source compiled directly, previously validated supporting modules linked from existing native static library. Root owns coherent full CMake/Apple rebuild.",
+  "limits": [
+    "The151-case oracle does not execute complete site opcode7 or map I/O; those use existing World/Terrain evidence.",
+    "Generic bootstrap stops before actual camera/control, never acknowledges it.",
+    "Complete live WorldCommand application remains GameSession responsibility.",
+    "Cold bootstrap requires one initial map; subsequent reload is a live command.",
+    "Native saves restore native state; original-profile replay filtering is not substituted.",
+    "A custom pre-activation immunity target is explicitly unsupported by cold bootstrap; no actual prefix uses it.",
+    "No campaign playthrough or iPhone XR/IOS17.5 performance result is claimed."
+  ]
+}

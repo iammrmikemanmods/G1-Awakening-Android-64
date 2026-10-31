@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "kind": "bounded original battle model and timeline binding evidence",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "original_libgcc_armv6_sha256": "7c737e6bc896ae963833a8c2580fb5511948f3b120d6cccf73707b23a7cdbe7d",
+  "methods": {
+    "battle_request": "0x58354 -> 0x45b2a",
+    "cinematic_reset": "0x40e38",
+    "setup": "0x3fadc",
+    "model_constructor": "0x3e416",
+    "form_visibility": "0x3e220",
+    "start_clip": "0x3c23a",
+    "tick_clip": "0x3c950",
+    "phase_dispatch": "0x413e8",
+    "phase_table": "0x41444",
+    "camera_select": "0x3d9d0",
+    "camera_table": "0x3dab0"
+  },
+  "sides": {
+    "a_unit_field": "controller+0x4c",
+    "b_unit_field": "controller+0x50",
+    "swap_condition": "attacker faction byte0x0b is nonzero and attacker pointer differs from defender pointer",
+    "swap_branch": "0x583d0",
+    "a_attacked_first_field": "controller+0x55",
+    "counter_eligible_field": "controller+0x54",
+    "a_damage": "controller+0x58",
+    "b_damage": "controller+0x5c",
+    "a_dead": "controller+0x60",
+    "b_dead": "controller+0x61"
+  },
+  "models": {
+    "table": "0xceab4",
+    "tag": "0x03000000",
+    "resources_by_type": [
+      408,
+      699,
+      444,
+      492,
+      1300,
+      561,
+      369,
+      565,
+      634,
+      395,
+      475,
+      867,
+      1039,
+      631,
+      795,
+      967,
+      564,
+      1299,
+      829,
+      1201,
+      1070,
+      489,
+      490
+    ],
+    "special_entry_23_resource": 500,
+    "type17_override": {
+      "branch": "0x3e468..0x3e48c",
+      "condition": "phase !=13 ? constructor_side_flag ==0 : side_a_unit_owner_byte_0x0a ==1",
+      "effective_type": 23
+    },
+    "initial_clip": {
+      "two_side": 1,
+      "single_model": 3,
+      "consumed_at": "0x3f5be"
+    },
+    "initial_clock_selection": {
+      "branch": "0x3f5a0..0x3f5b2",
+      "condition": "effective_type == cinematic_field_0x7c",
+      "equal": "cinematic+0x90",
+      "unequal": "cinematic+0x94"
+    },
+    "form_visibility": {
+      "unit_form_offset": "0x0c",
+      "robot": "form ==0",
+      "car": "robot_visible XOR 1"
+    },
+    "scene_resources_by_style": [
+      486,
+      534,
+      1212
+    ],
+    "scene_table": "0xcea9c",
+    "map_style_field": "0x22c"
+  },
+  "timeline": {
+    "start_table": "0xceaa8",
+    "end_table": "0xcea90",
+    "frame_float_bits": "0x42055555",
+    "start_frames": [
+      0,
+      50,
+      100,
+      200,
+      320,
+      260
+    ],
+    "end_frames": [
+      20,
+      90,
+      160,
+      250,
+      350,
+      300
+    ],
+    "start_ms": [
+      0,
+      1666,
+      3333,
+      6666,
+      10666,
+      8666
+    ],
+    "end_float_ms": [
+      666.6666259765625,
+      3000,
+      5333.3330078125,
+      8333.3330078125,
+      11666.666015625,
+      10000
+    ],
+    "end_call_ms": [
+      666,
+      3000,
+      5333,
+      8333,
+      11666,
+      10000
+    ],
+    "below_end": "invoke old clock; store current+delta; return0",
+    "end_no_restart": "invoke truncated float end; leave stored clock unchanged; return1",
+    "end_restart": "store/invoke start; discard overshoot; return1",
+    "comparison": "float32(signed32 current+delta) >= float32(end_frame * frame_scale)",
+    "tick_return_controls_phase": false
+  },
+  "states": [
+    {
+      "phase": 0,
+      "entry": "0x41484",
+      "role_inference": "intro",
+      "tick_call": null,
+      "root_field": null,
+      "clock_field": null,
+      "clip": null,
+      "phase_transition_elapsed_greater_than": 999,
+      "restart": null,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 1,
+      "entry": "0x41d5c",
+      "role_inference": "side_a_fire",
+      "tick_call": "0x41e1e",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 1,
+      "phase_transition_elapsed_greater_than": 1332,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 2,
+      "entry": "0x41eda",
+      "role_inference": "side_b_hit",
+      "tick_call": "0x41fa4",
+      "root_field": "0x88",
+      "clock_field": "0x94",
+      "clip": 0,
+      "phase_transition_elapsed_greater_than": 731,
+      "restart": false,
+      "delta_divisor_toward_zero": 2
+    },
+    {
+      "phase": 3,
+      "entry": "0x420bc",
+      "role_inference": "side_b_death",
+      "tick_call": "0x4214c",
+      "root_field": "0x88",
+      "clock_field": "0x94",
+      "clip": 2,
+      "phase_transition_elapsed_greater_than": 2999,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 4,
+      "entry": "0x4215a",
+      "role_inference": "side_b_fire",
+      "tick_call": "0x42234",
+      "root_field": "0x88",
+      "clock_field": "0x94",
+      "clip": 1,
+      "phase_transition_elapsed_greater_than": 1332,
+      "restart": true,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 5,
+      "entry": "0x422dc",
+      "role_inference": "side_a_hit",
+      "tick_call": "0x423a4",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 0,
+      "phase_transition_elapsed_greater_than": 731,
+      "restart": false,
+      "delta_divisor_toward_zero": 2
+    },
+    {
+      "phase": 6,
+      "entry": "0x424aa",
+      "role_inference": "side_a_death",
+      "tick_call": "0x4253a",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 2,
+      "phase_transition_elapsed_greater_than": 2999,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 7,
+      "entry": "0x42572",
+      "role_inference": "exit",
+      "tick_call": null,
+      "root_field": null,
+      "clock_field": null,
+      "clip": null,
+      "phase_transition_elapsed_greater_than": 999,
+      "restart": null,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 8,
+      "entry": "0x41610",
+      "role_inference": "scene_hold",
+      "tick_call": null,
+      "root_field": null,
+      "clock_field": null,
+      "clip": null,
+      "phase_transition_elapsed_greater_than": 3599,
+      "restart": null,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 9,
+      "entry": "0x416b2",
+      "role_inference": "side_a_setup",
+      "tick_call": "0x416ea",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 5,
+      "phase_transition_elapsed_greater_than": 1332,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 10,
+      "entry": "0x4187e",
+      "role_inference": "side_b_setup",
+      "tick_call": "0x418b6",
+      "root_field": "0x88",
+      "clock_field": "0x94",
+      "clip": 5,
+      "phase_transition_elapsed_greater_than": 1332,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 11,
+      "entry": "0x41a0e",
+      "role_inference": "side_a_zoom_or_car",
+      "tick_call": "0x41a90",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 4,
+      "phase_transition_elapsed_greater_than": 998,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 12,
+      "entry": "0x41bb4",
+      "role_inference": "side_b_zoom",
+      "tick_call": "0x41c34",
+      "root_field": "0x84",
+      "clock_field": "0x94",
+      "clip": 4,
+      "phase_transition_elapsed_greater_than": 998,
+      "restart": false,
+      "delta_divisor_toward_zero": 1
+    },
+    {
+      "phase": 13,
+      "entry": "0x425b4",
+      "role_inference": "single_model_selection",
+      "tick_call": "0x4266c",
+      "root_field": "0x84",
+      "clock_field": "0x90",
+      "clip": 3,
+      "phase_transition_elapsed_greater_than": null,
+      "restart": true,
+      "delta_divisor_toward_zero": 1
+    }
+  ],
+  "camera_fallback_names": [
+    [
+      "cam_auto_takehit",
+      "cam_auto_car"
+    ],
+    [
+      "cam_auto_shoot"
+    ],
+    [
+      "cam_auto_death",
+      "cam_auto_car"
+    ],
+    [
+      "cam_decpt_takehit"
+    ],
+    [
+      "cam_decpt_shoot"
+    ],
+    [
+      "cam_decpt_death"
+    ],
+    [
+      "Stat_Camera"
+    ],
+    [
+      "d_Stat_Camera"
+    ],
+    [
+      "cam_rot"
+    ],
+    [
+      "cam_auto_setup"
+    ],
+    [
+      "cam_decpt_setup"
+    ],
+    [
+      "cam_auto_zoom",
+      "cam_auto_car"
+    ],
+    [
+      "cam_decpt_zoom"
+    ]
+  ],
+  "public_slot_24": {
+    "static_chain_from_peer": [
+      "0x90540 type9",
+      "0xb0b74 -> 0xb0cdc",
+      "0xac2d0 -> 0xae220 -> 0xb27d2 -> 0xae674",
+      "0xae698..0xae69c installs0xae7cd at+0x24",
+      "0xae7cc -> 0x99e3c -> 0x9346c"
+    ],
+    "report": "M3G_PUBLIC_ANIMATE.md",
+    "actual_method_executed_by_fixture": false
+  },
+  "validation": {
+    "fixture": "m3g_validation/original_battle_timeline.json",
+    "case_count": 54,
+    "start_cases": 6,
+    "tick_cases": 48,
+    "unicorn": "2.1.4",
+    "instruction_patches": 0,
+    "original_text_readonly_unchanged": true,
+    "original_libgcc_readonly_unchanged": true,
+    "object_endpoints": "synthetic record only",
+    "native_comparison": false
+  },
+  "scope": {
+    "static_state_mapping": true,
+    "complete_phase_controller_reconstructed": false,
+    "actual_model_animation_execution": false,
+    "camera_pixels_validated": false,
+    "original_battle_gpu_rendering": false,
+    "apple_build": false,
+    "native_app_or_cmake_edits": false
+  },
+  "unresolved": [
+    "cinematic setup flag0xa4 provenance not fully named",
+    "full cloned model placement and fallback behavior",
+    "camera/effect scene rendering and all phases as one integrated native presentation",
+    "complete playback versus original pixel capture",
+    "negative-delta and signed-overflow oracle cases"
+  ],
+  "files": [
+    {
+      "path": "analysis_tools/m3g/battle_timeline_oracle.py",
+      "bytes": 7080,
+      "sha256": "43ea3cdba41d9af33f44819f86a480eb2b57d16b112a6b36392e63bfaf796622"
+    },
+    {
+      "path": "analysis_tools/m3g/BATTLE_TIMELINE_REFERENCE.md",
+      "bytes": 2908,
+      "sha256": "d975ac61432a8d850596461fe4fc830a0b5bbdea975c4914f770fe857567b314"
+    },
+    {
+      "path": "native/research/M3G_BATTLE_BINDING.md",
+      "bytes": 12971,
+      "sha256": "8327d757900f509d0888ab1aa08792f75ae796fe041309db4e982582a096e4f7"
+    },
+    {
+      "path": "native/research/m3g_validation/original_battle_timeline.json",
+      "bytes": 16646,
+      "sha256": "15baf7f0794896bd5815f46b7721c3099a94fea28201eb8b3eba74ad3f2b8c4a"
+    }
+  ]
+}

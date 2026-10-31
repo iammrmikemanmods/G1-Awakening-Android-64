@@ -1,0 +1,47 @@
+{
+  "apk": "G1-Awakening-Android64-v0.1.0-dev.apk",
+  "bytes": 39529529,
+  "sha256": "f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684",
+  "abi": "arm64-v8a",
+  "min_sdk": 36,
+  "target_sdk": 36,
+  "build_variant": "release",
+  "signing": "private retained development key; not a production store certificate",
+  "native_elf_machine": 183,
+  "native_load_segments": [
+    {
+      "offset": 0,
+      "virtual_address": 0,
+      "alignment": 16384
+    },
+    {
+      "offset": 854288,
+      "virtual_address": 870672,
+      "alignment": 16384
+    },
+    {
+      "offset": 2378928,
+      "virtual_address": 2411696,
+      "alignment": 16384
+    },
+    {
+      "offset": 2424792,
+      "virtual_address": 2473944,
+      "alignment": 16384
+    }
+  ],
+  "original_asset_count": 98,
+  "source_ipa_sha256": "b035acfe0c08aafa715c54f60a59423191046c271328abbca4cd72689dfaed46",
+  "all_packaged_assets_match_manifest": true,
+  "zip_crc_passed": true,
+  "lint": {
+    "debug": {
+      "errors": 0,
+      "warnings": 10
+    },
+    "release": {
+      "errors": 0,
+      "warnings": 10
+    }
+  }
+}

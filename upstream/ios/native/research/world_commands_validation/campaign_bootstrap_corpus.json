@@ -1,0 +1,549 @@
+{
+  "seed": 18241,
+  "campaigns": [
+    {
+      "group": 0,
+      "index": 0,
+      "mission": 315,
+      "grid": 268,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 7,
+      "unique_units": 2,
+      "activation_events": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "sites": 1,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 1,
+      "mission": 326,
+      "grid": 274,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 8,
+      "unique_units": 3,
+      "activation_events": 3,
+      "counts": [
+        2,
+        1
+      ],
+      "sites": 1,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 2,
+      "mission": 333,
+      "grid": 277,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 11,
+      "unique_units": 6,
+      "activation_events": 6,
+      "counts": [
+        3,
+        3
+      ],
+      "sites": 1,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 3,
+      "mission": 334,
+      "grid": 272,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 1,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 4,
+      "mission": 335,
+      "grid": 276,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 8,
+      "unique_units": 3,
+      "activation_events": 3,
+      "counts": [
+        1,
+        2
+      ],
+      "sites": 3,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 5,
+      "mission": 336,
+      "grid": 263,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "camera_command": 12,
+      "unique_units": 5,
+      "activation_events": 5,
+      "counts": [
+        3,
+        2
+      ],
+      "sites": 1,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 6,
+      "mission": 337,
+      "grid": 265,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 11,
+      "unique_units": 7,
+      "activation_events": 7,
+      "counts": [
+        4,
+        3
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 7,
+      "mission": 338,
+      "grid": 269,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 3,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 8,
+      "mission": 339,
+      "grid": 265,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 3,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 9,
+      "mission": 316,
+      "grid": 264,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 3,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 10,
+      "mission": 317,
+      "grid": 270,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 3,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 11,
+      "mission": 318,
+      "grid": 271,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 3,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 12,
+      "mission": 319,
+      "grid": 273,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 4,
+      "unique_units": 0,
+      "activation_events": 0,
+      "counts": [
+        0,
+        0
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 13,
+      "mission": 320,
+      "grid": 274,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 15,
+      "unique_units": 9,
+      "activation_events": 9,
+      "counts": [
+        3,
+        6
+      ],
+      "sites": 3,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 14,
+      "mission": 321,
+      "grid": 275,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 12,
+      "unique_units": 7,
+      "activation_events": 7,
+      "counts": [
+        3,
+        4
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 15,
+      "mission": 322,
+      "grid": 267,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 14,
+      "unique_units": 10,
+      "activation_events": 10,
+      "counts": [
+        4,
+        6
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 0,
+      "index": 16,
+      "mission": 323,
+      "grid": 279,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 8,
+      "unique_units": 3,
+      "activation_events": 4,
+      "counts": [
+        3,
+        1
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 0,
+      "mission": 324,
+      "grid": 265,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 7,
+      "unique_units": 2,
+      "activation_events": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 1,
+      "mission": 325,
+      "grid": 263,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "camera_command": 12,
+      "unique_units": 6,
+      "activation_events": 6,
+      "counts": [
+        4,
+        2
+      ],
+      "sites": 6,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 2,
+      "mission": 327,
+      "grid": 272,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "camera_command": 8,
+      "unique_units": 3,
+      "activation_events": 3,
+      "counts": [
+        2,
+        1
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 3,
+      "mission": 328,
+      "grid": 271,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 7,
+      "unique_units": 2,
+      "activation_events": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "sites": 2,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 4,
+      "mission": 329,
+      "grid": 276,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 10,
+      "unique_units": 5,
+      "activation_events": 5,
+      "counts": [
+        2,
+        3
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 5,
+      "mission": 330,
+      "grid": 272,
+      "style": 2,
+      "width": 15,
+      "height": 14,
+      "camera_command": 7,
+      "unique_units": 2,
+      "activation_events": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 6,
+      "mission": 331,
+      "grid": 279,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 11,
+      "unique_units": 7,
+      "activation_events": 7,
+      "counts": [
+        1,
+        6
+      ],
+      "sites": 0,
+      "rng_draws": 0
+    },
+    {
+      "group": 1,
+      "index": 7,
+      "mission": 332,
+      "grid": 268,
+      "style": 0,
+      "width": 15,
+      "height": 14,
+      "camera_command": 9,
+      "unique_units": 4,
+      "activation_events": 4,
+      "counts": [
+        2,
+        2
+      ],
+      "sites": 4,
+      "rng_draws": 0
+    },
+    {
+      "group": 2,
+      "index": 0,
+      "mission": 310,
+      "grid": 258,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 2,
+      "rng_draws": 12
+    },
+    {
+      "group": 2,
+      "index": 1,
+      "mission": 311,
+      "grid": 259,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 4,
+      "rng_draws": 12
+    },
+    {
+      "group": 2,
+      "index": 2,
+      "mission": 312,
+      "grid": 260,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 8,
+      "rng_draws": 12
+    },
+    {
+      "group": 2,
+      "index": 3,
+      "mission": 313,
+      "grid": 261,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 2,
+      "rng_draws": 12
+    },
+    {
+      "group": 2,
+      "index": 4,
+      "mission": 314,
+      "grid": 262,
+      "style": 1,
+      "width": 15,
+      "height": 14,
+      "camera_command": 13,
+      "unique_units": 8,
+      "activation_events": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "sites": 8,
+      "rng_draws": 12
+    }
+  ],
+  "verified_prefixes": 30,
+  "empty_initial_rosters": 6,
+  "activation_events": 135,
+  "playthrough": false
+}

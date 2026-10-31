@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "scope": "Isolated development input policy; unchanged frozen native gameplay libraries. No original executable execution. Synthetic presentation acknowledgements.",
+  "files": {
+    "session_playthrough_probe.cpp": {
+      "bytes": 98496,
+      "sha256": "35fb08a25fff7b0ccf91230418b3b95b1adfbc618a170cdd56a4690c9b369455"
+    },
+    "session_playthrough_probe_formation.cpp": {
+      "bytes": 96055,
+      "sha256": "d4b0d250b1d11e5c0dc2b6b1b21cbb030429f6cdc82bd70279c810c16c36b192"
+    },
+    "pilot_ranged": {
+      "bytes": 972864,
+      "sha256": "60bdc1a462c46bbda25b2f2b9e8d705337c611e128bab4e23087edfeeef80cfe"
+    },
+    "pilot_formation": {
+      "bytes": 972880,
+      "sha256": "d307b73add24da52a221e32ddaea06ea1f691dcf08773c0862ed791aad3a7dad"
+    },
+    "checkpoint_probe.cpp": {
+      "bytes": 93376,
+      "sha256": "98b4f3a9c29ea9ea386f442645a6ad366c60b0eb200bdb657ab5819626dd3d03"
+    },
+    "pilot_checkpoint": {
+      "bytes": 953136,
+      "sha256": "7da5ae004b99b4f7ca2920d615341ba0481450ef966ee3d9bbf94849d6e72119"
+    }
+  },
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "library_provenance": "ORIGIN.json",
+  "headers": "HEADER_INPUTS.json"
+}

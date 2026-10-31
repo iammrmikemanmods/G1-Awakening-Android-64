@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "scope": "Isolated native M3G SPLINE/SQUAD addition; current frozen live source unchanged",
+  "patch": {
+    "path": "g1_port/research/native_m3g/sampler_v2/sampler_v2.patch",
+    "sha256": "6822c1ce8d61935a5515d54a6e4b5515803031a2bb4915e25e804e93c5ae71df",
+    "bytes": 122272,
+    "apply_check": true
+  },
+  "files": [
+    {
+      "path": "native/include/g1/M3GAnimation.hpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/include/g1/M3GAnimation.hpp",
+      "sha256": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b",
+      "bytes": 3937,
+      "base_sha256": "33a55c86be8ae54542bd06aa7a7da3ff0bb0cd54234bd87d2fe4b12aae29ae8f"
+    },
+    {
+      "path": "native/src/M3GAnimation.cpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/M3GAnimation.cpp",
+      "sha256": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10",
+      "bytes": 29132,
+      "base_sha256": "957b1a7128e32e2df39c37273421145339c60a5fb433b914e1949b0cb6e3628a"
+    },
+    {
+      "path": "native/tests/m3g_animation_test.cpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/m3g_animation_test.cpp",
+      "sha256": "c4d90a282cd3fa09fb04d077607f2563cf8969579384ba289284d59281e70246",
+      "bytes": 9535,
+      "base_sha256": "8f4ebcb0338814dfdbc2ac003be6bdb3e9cc1586caca6977167e383214ce2b9f"
+    },
+    {
+      "path": "native/tests/m3g_spline_test.cpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/m3g_spline_test.cpp",
+      "sha256": "1d8fcada1ba7bedd32a9babf97557a34be3108909dc22bbdcace3c98fd904ad9",
+      "bytes": 5665,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tests/m3g_spline_fixture.hpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/m3g_spline_fixture.hpp",
+      "sha256": "8a840fd1429e367a14bf3cd6f13272e8e6139ee048229094d90a06f1e680dd5f",
+      "bytes": 58607,
+      "base_sha256": null
+    },
+    {
+      "path": "native/tools/m3g_curve_probe.cpp",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/m3g_curve_probe.cpp",
+      "sha256": "e41bad28efe7eb2b945765236beaea2fa850ca30a7b6952dabf5be16d52cf2b9",
+      "bytes": 1937,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/spline_fixture.py",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/spline_fixture.py",
+      "sha256": "e20addacc85428ce5c55bf8b4c030c09e7967bc5ea0f2f38a24055eb78fb617d",
+      "bytes": 3437,
+      "base_sha256": null
+    },
+    {
+      "path": "analysis_tools/m3g/spline_corpus_validate.py",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/spline_corpus_validate.py",
+      "sha256": "5ad09954e88ba45f07cd06ef1d04db4277ae07c53742f20eac1d3bcbed4bad15",
+      "bytes": 3386,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/M3G_SPLINE_SAMPLER.md",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/M3G_SPLINE_SAMPLER.md",
+      "sha256": "4b5e6de4f9bc724cc89f7e712b04715a35733f6d3fbabeebbc10142ea194e7cf",
+      "bytes": 5734,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/spline_native.json",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/spline_native.json",
+      "sha256": "623cdab019c4dcc96e6b693de64bffe0683493ea5959dce316f4eae17ca2a70d",
+      "bytes": 1344,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/spline_actual_corpus.json",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/actual_corpus.json",
+      "sha256": "db7ee98df76008c3c94765162a563ebb9c124c28e4e4d598dba5214ec255210a",
+      "bytes": 19081,
+      "base_sha256": null
+    },
+    {
+      "path": "native/research/m3g_validation/bumblebee_spline_regression.json",
+      "source_path": "g1_port/research/native_m3g/sampler_v2/bumblebee_regression.json",
+      "sha256": "e8c0480e20ed6b8adf17c514629ab6a252df37ba42797d2f74fe215ab567624d",
+      "bytes": 3988,
+      "base_sha256": null
+    }
+  ],
+  "add_cmake": {
+    "core_sources": [],
+    "test_source": "tests/m3g_spline_test.cpp",
+    "test_name": "m3g_spline_sampling_contract",
+    "test_arguments": [],
+    "optional_probe": "tools/m3g_curve_probe.cpp"
+  },
+  "validation": {
+    "original_sequences": 19,
+    "original_samples": 290,
+    "prepared_scalar_comparisons": 546,
+    "sample_scalar_comparisons": 987,
+    "prepared_binary32_identical": 546,
+    "sample_binary32_identical": 987,
+    "maximum_host_math_error": 0,
+    "host_math_tolerance": 2e-06,
+    "native_contracts": 10,
+    "passed": true,
+    "schema": 1,
+    "scope": "Native SPLINE/SQUAD prepared curves and samples versus unchanged-original synthetic reference",
+    "original_record_sha256": "9a94353901dce867c7c9c818ab5996d6cffd5519bfb01625372f93cc35436991",
+    "native_test_sha256": "c7c7d6e00bacf173fb23bf54fa5bd4f2bde3bb2191cdfef6413d2a086a07807e",
+    "host_math_boundary": "Original and native use local float32 host sqrtf/sinf/cosf; no historical iOS libSystem bit-identity claim",
+    "sources": {
+      "M3GAnimation.cpp": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10",
+      "include/g1/M3GAnimation.hpp": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b",
+      "m3g_spline_test.cpp": "1d8fcada1ba7bedd32a9babf97557a34be3108909dc22bbdcace3c98fd904ad9",
+      "m3g_spline_fixture.hpp": "8a840fd1429e367a14bf3cd6f13272e8e6139ee048229094d90a06f1e680dd5f",
+      "spline_fixture.py": "e20addacc85428ce5c55bf8b4c030c09e7967bc5ea0f2f38a24055eb78fb617d"
+    },
+    "apple_compilation": false,
+    "gpu_execution": false,
+    "device_execution": false
+  },
+  "corpus_summary": {
+    "resources": 27,
+    "curve_sequences": 738,
+    "curve_samples": 70786,
+    "curve_scalars": 266951,
+    "all_curves_finite": true,
+    "pose_probes_passed": 24,
+    "pose_probes_blocked": 3
+  },
+  "original_reference_sha256": "9a94353901dce867c7c9c818ab5996d6cffd5519bfb01625372f93cc35436991",
+  "captured_native_app_sha256": "a52048ff78364a7067e884edeee59051029000531c2cf0899fd1e1297ca53960",
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

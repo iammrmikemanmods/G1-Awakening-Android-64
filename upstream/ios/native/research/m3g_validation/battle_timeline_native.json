@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "kind": "native C++ battle timeline against unchanged-original synthetic reference",
+  "result": {
+    "original_cases": 54,
+    "reference_comparisons": 186,
+    "native_contracts": 58,
+    "reference_sha256": "15baf7f0794896bd5815f46b7721c3099a94fea28201eb8b3eba74ad3f2b8c4a",
+    "passed": true
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compile_argv": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-I",
+    "native/include",
+    "native/src/M3GBattleTimeline.cpp",
+    "native/tests/m3g_battle_timeline_test.cpp",
+    "-o",
+    "m3g_battle_timeline_test"
+  ],
+  "sources": [
+    {
+      "path": "native/include/g1/M3GBattleTimeline.hpp",
+      "sha256": "b80131c93ce1445a4caa1d0c11897a803f87165ab3cef63fc9223afec3964925",
+      "bytes": 1332
+    },
+    {
+      "path": "native/src/M3GBattleTimeline.cpp",
+      "sha256": "4cd66f6d2acf7d5af20eaaac8093e42b8809736c152f3ec54aa4e30c847df5f0",
+      "bytes": 1869
+    },
+    {
+      "path": "native/tests/m3g_battle_timeline_test.cpp",
+      "sha256": "d3494d69088115fb61ad740957faf03de3f01e3360b6504dfadee3bb5fa6d4c0",
+      "bytes": 2818
+    },
+    {
+      "path": "native/tests/m3g_battle_timeline_fixture.hpp",
+      "sha256": "b80aa1c0c34c62162a6ed5133883bee9c623dbdd601969995ef3b00f7469be14",
+      "bytes": 4297
+    },
+    {
+      "path": "analysis_tools/m3g/timeline_fixture.py",
+      "sha256": "16cd2e4675f10b67055867f1b274a124063dd66e8c4b91c796f535a4da1c83c0",
+      "bytes": 2953
+    }
+  ],
+  "reference": {
+    "path": "native/research/m3g_validation/original_battle_timeline.json",
+    "sha256": "15baf7f0794896bd5815f46b7721c3099a94fea28201eb8b3eba74ad3f2b8c4a",
+    "bytes": 16646
+  },
+  "test_binary_sha256": "76955ee74d0964e56334eb4ef2c29d89835bb8e987a41d463aabb8a094ac2f96",
+  "native_only_contracts_outside_original_fixture": [
+    "signed ADD wraps modulo2^32",
+    "negative delta preserves original ADD then compare order",
+    "invalid clip indices rejected"
+  ],
+  "scope": {
+    "native_compile": true,
+    "reference_match": true,
+    "apple_compile": false,
+    "gpu_execution": false,
+    "complete_cinematic": false,
+    "full_playthrough": false
+  }
+}

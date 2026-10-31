@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleDisplayName</key><string>G1 Awakening</string>
+    <key>CFBundleExecutable</key><string>G1AwakeningNative</string>
+    <key>CFBundleIdentifier</key><string>org.g1awakening.native.test</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>G1AwakeningNative</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.17.0</string>
+    <key>CFBundleVersion</key><string>17</string>
+    <!-- Names refer to original, user-supplied iTunesArtwork resized only
+         at packaging time. Do not add copyrighted artwork to Git history.
+         The application has NO asset catalog and therefore no false
+         CFBundleIconName pointing to missing compiled assets. -->
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>Icon-60</string>
+                <string>Icon-60@2x</string>
+                <string>Icon-60@3x</string>
+                <string>Icon-Small-40</string>
+                <string>Icon-Small-40@2x</string>
+                <string>Icon-Small-40@3x</string>
+            </array>
+            <key>UIPrerenderedIcon</key><true/>
+        </dict>
+    </dict>
+    <key>CFBundleSupportedPlatforms</key><array><string>iPhoneOS</string></array>
+    <key>MinimumOSVersion</key><string>15.0</string>
+    <key>UIDeviceFamily</key><array><integer>1</integer><integer>2</integer></array>
+    <key>UIRequiredDeviceCapabilities</key><array><string>arm64</string><string>metal</string></array>
+    <key>UISupportedInterfaceOrientations</key><array>
+        <string>UIInterfaceOrientationLandscapeLeft</string><string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UIRequiresFullScreen</key><true/>
+    <key>UIStatusBarHidden</key><true/>
+    <key>UIViewControllerBasedStatusBarAppearance</key><true/>
+    <key>UILaunchScreen</key><dict/>
+    <key>ITSAppUsesNonExemptEncryption</key><false/>
+    <key>G1SourceCommit</key><string>@G1_SOURCE_COMMIT@</string>
+    <key>G1ArtifactKind</key><string>Native adaptive UI and supersampling development candidate</string>
+    <key>G1FeatureScope</key><string>Build017 development candidate: authored rigid-part tactical gait and reversible assembly transitions for supported original forms; original action clock owns completion. Source-derived curve/gradient texture pack in shared UI and Modern materials, linear Modern sampling, true-colour/padded UI BMP support. Not recovered original transformation clips or wholly native SVG rendering. iOS 15.0 minimum. Physical device validation and runtime exterior extensions outstanding.</string>
+    <key>CFBundleIcons~ipad</key><dict><key>CFBundlePrimaryIcon</key><dict>
+        <key>CFBundleIconFiles</key><array><string>Icon-76</string><string>Icon-76@2x</string><string>Icon-83.5@2x</string></array>
+        <key>UIPrerenderedIcon</key><true/>
+    </dict></dict>
+</dict></plist>

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "scope": "Isolated native map/battle music maintenance delivery; no canonical files or remote writes modified",
+  "base_files": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "before_sha256": "33e11fd69808b892a83a67f85c14b76bca4ac1a89af91376c9733464bb3fec43",
+      "after_sha256": "c8b61d17facd67aede1af4d4b4c4f522e59fd37eb7cab97f579e965f9bd0c71b"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "before_sha256": "de2ba9b2a551174d277c6bafe1f0298d2911ed14b83009c39130fc804435c4af",
+      "after_sha256": "ebd936888ce5e40470e2e729700d0a9c86c7a3bf9b7872850e26dc477c3139b6"
+    }
+  ],
+  "files": [
+    {
+      "path": "analysis_tools/audio/music_maintenance_oracle.py",
+      "source_path": "g1_port/research/audio_followup/delivery/analysis_tools/audio/music_maintenance_oracle.py",
+      "bytes": 6068,
+      "sha256": "c80da9adbb879e60e9abe127104a19332f22d4ceb96637b77ca5e4050a5d2c96"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "source_path": "g1_port/research/audio_followup/delivery/native/CMakeLists.txt",
+      "bytes": 20174,
+      "sha256": "ebd936888ce5e40470e2e729700d0a9c86c7a3bf9b7872850e26dc477c3139b6"
+    },
+    {
+      "path": "native/include/g1/AudioMaintenance.hpp",
+      "source_path": "g1_port/research/audio_followup/delivery/native/include/g1/AudioMaintenance.hpp",
+      "bytes": 1701,
+      "sha256": "56fe008b5846b6a0f46b93e1525273a17fc5906fafb62797176907b66cfa3bac"
+    },
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "source_path": "g1_port/research/audio_followup/delivery/native/platform/apple/NativeApp.mm",
+      "bytes": 150564,
+      "sha256": "c8b61d17facd67aede1af4d4b4c4f522e59fd37eb7cab97f579e965f9bd0c71b"
+    },
+    {
+      "path": "native/research/AUDIO_MAINTENANCE.md",
+      "source_path": "g1_port/research/audio_followup/delivery/native/research/AUDIO_MAINTENANCE.md",
+      "bytes": 6061,
+      "sha256": "04c6628c815d5a42247cdfab5d18cc6f5f762a72eb6058d4aec65de0bfa6b43f"
+    },
+    {
+      "path": "native/research/audio_event_validation/music_maintenance_validation.json",
+      "source_path": "g1_port/research/audio_followup/delivery/native/research/audio_event_validation/music_maintenance_validation.json",
+      "bytes": 1241,
+      "sha256": "e6938a15fa442195e13495a0d7c462a2aa7d89d5eb50c6792e23eb53e7d7a412"
+    },
+    {
+      "path": "native/tests/audio_maintenance_cases.txt",
+      "source_path": "g1_port/research/audio_followup/delivery/native/tests/audio_maintenance_cases.txt",
+      "bytes": 27822,
+      "sha256": "24ffec0ccf70aaebd8b3006787ffc40f4eb65cab46911aa53a4db0be95b7e856"
+    },
+    {
+      "path": "native/tests/audio_maintenance_test.cpp",
+      "source_path": "g1_port/research/audio_followup/delivery/native/tests/audio_maintenance_test.cpp",
+      "bytes": 2713,
+      "sha256": "e618d873f136093e490b784edffaf543c03eb75f9235f0ea2ad0a0bf8d8a4501"
+    }
+  ],
+  "portable_original_cases": 1280,
+  "portable_scalar_comparisons": 2752,
+  "apple_compiled": false,
+  "device_tested": false,
+  "menu_music_parity_complete": false,
+  "runtime_assets_or_original_executable_included": false
+}

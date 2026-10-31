@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "ordered cold-bootstrap metadata and original signed spawn debit",
+  "native_checks": 1203,
+  "original_vectors": 552,
+  "script_effect_order": [
+    [
+      "begin_current_player_turn",
+      2,
+      0
+    ],
+    [
+      "debit_spawn_funds",
+      3,
+      0,
+      17
+    ],
+    [
+      "debit_spawn_funds",
+      4,
+      1,
+      8
+    ]
+  ],
+  "first_turn_site_snapshot": [],
+  "native_source_sha256": {
+    "include/g1/World.hpp": "39f6a78b4bbececf39d702bd95137fd30540bc2766febb24357b402e5869d07d",
+    "src/World.cpp": "869906b089a72b0890a2ce0a1d31bb41e7a6e6a7ebb55cfb635692cdb9ca9a10",
+    "tests/world_test.cpp": "3e42de60a11adb2e818d848ce40c6670e2188b82ee99206e90a17972ee37ac13",
+    "tests/world_funds_original_vectors.txt": "3848fe0e43133b777ae13a4e4860c79dae7b17a88a5d0ccd3c9afbc25e4cf637"
+  },
+  "original_reference": "bootstrap_metadata_validation/original_bootstrap_metadata_reference.json",
+  "limits": [
+    "Actual GameSession application is separate.",
+    "General dynamic map/script commands are not part of this metadata checkpoint.",
+    "No Apple/device or campaign-playthrough verification."
+  ],
+  "active_count_contract": "Each activation emits active_count_increment=1, even for a repeated active type; apply byte wrapping. Map installation resets original counts."
+}

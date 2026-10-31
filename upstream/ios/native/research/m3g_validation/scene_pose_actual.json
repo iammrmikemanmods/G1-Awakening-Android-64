@@ -1,0 +1,1519 @@
+{
+  "schema": 1,
+  "scope": "Native scene state, hierarchy and camera evaluation at six times; no geometry/GPU/device comparison",
+  "manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "probe_sha256": "b44d58d1e84d7d2242d59c424b0a7412c80dd0d8d52bab7342b3eb77bd591069",
+  "resources": [
+    {
+      "resource_id": 486,
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "native_pose": {
+        "bytes": 385350,
+        "nodes": 109,
+        "cameras": 12,
+        "poses": [
+          {
+            "time_ms": 0,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108420368
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 666,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595132
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1108619549
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1109031547
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108594999
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 1666,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1108731554
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 3333,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1109031940
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 6666,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 11666,
+            "enabled": 109,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 13,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 91,
+                "type": 50,
+                "field_bits": 1109332227
+              },
+              {
+                "object": 100,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 179,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 188,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 215,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 229,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 243,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 264,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 308,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 351,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource_id": 534,
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "native_pose": {
+        "bytes": 237646,
+        "nodes": 45,
+        "cameras": 12,
+        "poses": [
+          {
+            "time_ms": 0,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053609165,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108420368
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 666,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053629258,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595132
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1108619549
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109031547
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108594999
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 1666,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053609165,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1108731554
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 3333,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053609165,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1109031940
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 6666,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053649350,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 11666,
+            "enabled": 45,
+            "minimum_alpha_bits": 1053649350,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "256": 2,
+              "264": 5,
+              "268": 13,
+              "275": 13,
+              "276": 2
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 27,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 42,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 51,
+                "type": 50,
+                "field_bits": 1109332227
+              },
+              {
+                "object": 106,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 123,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 129,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 136,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 155,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 161,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 201,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource_id": 1212,
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "native_pose": {
+        "bytes": 350930,
+        "nodes": 56,
+        "cameras": 12,
+        "poses": [
+          {
+            "time_ms": 0,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108420368
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 666,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595132
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1108619549
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1109031547
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108594999
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 1666,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1108731554
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 3333,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1109031940
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 6666,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          },
+          {
+            "time_ms": 11666,
+            "enabled": 56,
+            "minimum_alpha_bits": 1065353216,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "264": 5,
+              "268": 14,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 5,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 21,
+                "type": 50,
+                "field_bits": 1108944656
+              },
+              {
+                "object": 50,
+                "type": 50,
+                "field_bits": 1109332227
+              },
+              {
+                "object": 59,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 110,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 117,
+                "type": 50,
+                "field_bits": 1109468945
+              },
+              {
+                "object": 126,
+                "type": 50,
+                "field_bits": 1109468943
+              },
+              {
+                "object": 133,
+                "type": 50,
+                "field_bits": 1107645781
+              },
+              {
+                "object": 146,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 156,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 168,
+                "type": 50,
+                "field_bits": 1108595131
+              },
+              {
+                "object": 196,
+                "type": 50,
+                "field_bits": 1109468945
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource_id": 867,
+      "sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+      "native_pose": {
+        "bytes": 64078,
+        "nodes": 53,
+        "cameras": 2,
+        "poses": [
+          {
+            "time_ms": 0,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          },
+          {
+            "time_ms": 666,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          },
+          {
+            "time_ms": 1666,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          },
+          {
+            "time_ms": 3333,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          },
+          {
+            "time_ms": 6666,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          },
+          {
+            "time_ms": 11666,
+            "enabled": 53,
+            "minimum_alpha_bits": 1053477579,
+            "maximum_alpha_bits": 1065353216,
+            "property_targets": {
+              "268": 15,
+              "275": 13
+            },
+            "camera_fields": [
+              {
+                "object": 2,
+                "type": 50,
+                "field_bits": 1106247680
+              },
+              {
+                "object": 7,
+                "type": 50,
+                "field_bits": 1106247680
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "resources": 4,
+    "poses": 24,
+    "nodes": 263,
+    "cameras": 38
+  },
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

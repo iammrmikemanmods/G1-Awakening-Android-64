@@ -1,0 +1,82 @@
+{
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "oracle_source_sha256": "17c89000f86d327946602d621ba10729d5a6880a80e0140dc5592f5532bf0c8f",
+  "unicorn_version": "2.1.4",
+  "text_mapping_cases": 972,
+  "invalid_mapping_cases": 3,
+  "dialogue_cases": 476,
+  "capture_cases": 164,
+  "capture_function_executions": 328,
+  "capture_active_unit_counts": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "clock_cases": 48,
+  "advance_dispatch_case": [
+    99,
+    0,
+    0,
+    0,
+    2,
+    [
+      "dispatch"
+    ]
+  ],
+  "boundaries": {
+    "0xba384": 468,
+    "0x6294c": 1238,
+    "0x6259c": 1238,
+    "0x3000100": 476,
+    "0x3000104": 762,
+    "0x2ad12": 49,
+    "0xba288": 97,
+    "0x5608c": 1
+  },
+  "executed_original_functions": [
+    "0x445c8",
+    "0x4e3bc",
+    "0x2b9c2",
+    "0x559b4",
+    "0x558e4",
+    "0x430fc",
+    "0x57914"
+  ],
+  "external_boundaries": {
+    "0xba384": "ABI unsigned low-64 multiplication, equivalent signed low-64 product",
+    "0xba288": "ABI signed division, truncation toward zero",
+    "0x6294c / 0x6259c": "synthetic font selection, no game branch decisions",
+    "0x3000100 / 0x3000104": "caller-supplied font metric virtual callbacks",
+    "0x2ad12": "records the observed (5,18) audio notification; audio not executed",
+    "0x5608c": "clock-only test records next-command dispatcher call, does not execute it",
+    "0x553ee": "reserved clock boundary for end-of-stream; not reached in this corpus"
+  },
+  "limits": [
+    "Does not execute full original dialogue allocation, font layout or drawing.",
+    "Capture corpus uses normal first-campaign live-player state, not player-loss/alternate branches.",
+    "Does not execute a real capture action, save, mission completion, campaign, iOS app or device."
+  ],
+  "fixtures": {
+    "capture_original_vectors.txt": {
+      "bytes": 7378,
+      "sha256": "e31a5a7359ef7a29da6359d993d8ee19328e9728d56a7242a8857ad0eb5acb8f"
+    },
+    "dialogue_original_vectors.txt": {
+      "bytes": 28801,
+      "sha256": "4254fffddd56e8c4c6be760b614ea71df0838f56abb1d7350f5bfc804134bf41"
+    },
+    "mission_clock_original_vectors.txt": {
+      "bytes": 1219,
+      "sha256": "d2d5007a408aee4d9289bd8d64cc9611fd1b8afa446cec54c78f6fdadf69a1d0"
+    },
+    "text_index_original_vectors.txt": {
+      "bytes": 9880,
+      "sha256": "cd329716c58c072847af3a476a6abd6ed7792301cbc1663f952c22100585daac"
+    }
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "scope": "Original camera setter/focus behavior under TWO supplied viewport inputs; neither is an observed live viewport",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "oracle_source_sha256": "6f9f58ec84de10bf775268648520ca5d3c96f38d11e3b8bb06a29fac964abf59",
+  "shared_renderer_oracle_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "original_functions": [
+    "0x6e40a..0x6e460",
+    "0x6e4e8..0x6e52e",
+    "0x6585e",
+    "0x66c20"
+  ],
+  "unicorn_version": "2.1.4",
+  "cases": [
+    {
+      "supplied_logical_viewport": [
+        320,
+        480
+      ],
+      "map_dimensions": [
+        15,
+        14
+      ],
+      "original_setter_calls": [
+        {
+          "operation": "camera_projection",
+          "float_bits": [
+            1106247680,
+            1059760811,
+            1065353216,
+            1090519040
+          ],
+          "values": [
+            30.0,
+            0.6666666865348816,
+            1.0,
+            8.0
+          ]
+        },
+        {
+          "operation": "camera_orientation",
+          "float_bits": [
+            3258187776,
+            1065353216,
+            0,
+            0
+          ],
+          "values": [
+            -45.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "operation": "camera_translation",
+          "float_bits": [
+            0,
+            1078774989,
+            1078774989
+          ],
+          "values": [
+            0.0,
+            3.200000047683716,
+            3.200000047683716
+          ]
+        }
+      ],
+      "original_bound_results_with_host_libm": {
+        "minimum_row_world_float": 123.588134765625,
+        "maximum_row_world_float": 329.8445739746094,
+        "border_half_width_world": 50,
+        "minimum_column_world": 34,
+        "height_world": 320,
+        "depth_world": 320
+      },
+      "focus_results": [
+        {
+          "tile_target": [
+            1,
+            2
+          ],
+          "immediate": true,
+          "clamped_world": [
+            34,
+            123
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1056964608,
+              1078774989,
+              1083703296,
+              1065353216
+            ],
+            "values": [
+              0.5,
+              3.200000047683716,
+              4.75,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            5,
+            7
+          ],
+          "immediate": true,
+          "clamped_world": [
+            160,
+            224
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1071728558,
+              1078774989,
+              1085821420,
+              1065353216
+            ],
+            "values": [
+              1.7599999904632568,
+              3.200000047683716,
+              5.760000228881836,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            0,
+            0
+          ],
+          "immediate": true,
+          "clamped_world": [
+            34,
+            123
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1056964608,
+              1078774989,
+              1083703296,
+              1065353216
+            ],
+            "values": [
+              0.5,
+              3.200000047683716,
+              4.75,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            14,
+            13
+          ],
+          "immediate": true,
+          "clamped_world": [
+            446,
+            329
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1083430666,
+              1078774989,
+              1088023429,
+              1065353216
+            ],
+            "values": [
+              4.619999885559082,
+              3.200000047683716,
+              6.809999942779541,
+              1.0
+            ]
+          }
+        }
+      ],
+      "trigonometric_calls": [
+        {
+          "name": "tanf",
+          "input": 0.26190000772476196,
+          "output": 0.26805704832077026
+        },
+        {
+          "name": "atanf",
+          "input": 0.1958771049976349,
+          "output": 0.19342811405658722
+        },
+        {
+          "name": "tan",
+          "input": 0.5922719240188599,
+          "output": 0.6728511027040477
+        },
+        {
+          "name": "atanf",
+          "input": 0.1552496999502182,
+          "output": 0.15402013063430786
+        },
+        {
+          "name": "tan",
+          "input": 0.9397201538085938,
+          "output": 1.3684302865253057
+        },
+        {
+          "name": "cos",
+          "input": 0.631679892539978,
+          "output": 0.8070366687515319
+        },
+        {
+          "name": "cos",
+          "input": 0.9791281223297119,
+          "output": 0.5577464270709549
+        },
+        {
+          "name": "tan",
+          "input": 0.1746000051498413,
+          "output": 0.1763961470735081
+        },
+        {
+          "name": "tan",
+          "input": 0.1746000051498413,
+          "output": 0.1763961470735081
+        }
+      ],
+      "call_counts": {
+        "___floatsisfvfp": 21,
+        "___divsf3vfp": 19,
+        "camera_projection": 1,
+        "camera_orientation": 1,
+        "camera_transform_interface": 1,
+        "camera_translation": 1,
+        "logical_screen_context": 1,
+        "host_libm:tanf": 1,
+        "___subsf3vfp": 5,
+        "___mulsf3vfp": 4,
+        "___addsf3vfp": 4,
+        "host_libm:atanf": 2,
+        "___floatsidfvfp": 2,
+        "___extendsfdf2vfp": 7,
+        "host_libm:tan": 4,
+        "___divdf3vfp": 4,
+        "___subdf3vfp": 2,
+        "___truncdfsf2vfp": 4,
+        "host_libm:cos": 2,
+        "___muldf3vfp": 2,
+        "___fixdfsivfp": 2,
+        "___fixsfsivfp": 8,
+        "camera_position_target_boundary": 4
+      }
+    },
+    {
+      "supplied_logical_viewport": [
+        480,
+        320
+      ],
+      "map_dimensions": [
+        15,
+        14
+      ],
+      "original_setter_calls": [
+        {
+          "operation": "camera_projection",
+          "float_bits": [
+            1106247680,
+            1069547520,
+            1065353216,
+            1090519040
+          ],
+          "values": [
+            30.0,
+            1.5,
+            1.0,
+            8.0
+          ]
+        },
+        {
+          "operation": "camera_orientation",
+          "float_bits": [
+            3258187776,
+            1065353216,
+            0,
+            0
+          ],
+          "values": [
+            -45.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "operation": "camera_translation",
+          "float_bits": [
+            0,
+            1078774989,
+            1078774989
+          ],
+          "values": [
+            0.0,
+            3.200000047683716,
+            3.200000047683716
+          ]
+        }
+      ],
+      "original_bound_results_with_host_libm": {
+        "minimum_row_world_float": 89.43119049072266,
+        "maximum_row_world_float": 358.26763916015625,
+        "border_half_width_world": 113,
+        "minimum_column_world": 85,
+        "height_world": 320,
+        "depth_world": 320
+      },
+      "focus_results": [
+        {
+          "tile_target": [
+            1,
+            2
+          ],
+          "immediate": true,
+          "clamped_world": [
+            85,
+            89
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1065437102,
+              1078774989,
+              1082990264,
+              1065353216
+            ],
+            "values": [
+              1.0099999904632568,
+              3.200000047683716,
+              4.409999847412109,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            5,
+            7
+          ],
+          "immediate": true,
+          "clamped_world": [
+            160,
+            224
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1071728558,
+              1078774989,
+              1085821420,
+              1065353216
+            ],
+            "values": [
+              1.7599999904632568,
+              3.200000047683716,
+              5.760000228881836,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            0,
+            0
+          ],
+          "immediate": true,
+          "clamped_world": [
+            85,
+            89
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1065437102,
+              1078774989,
+              1082990264,
+              1065353216
+            ],
+            "values": [
+              1.0099999904632568,
+              3.200000047683716,
+              4.409999847412109,
+              1.0
+            ]
+          }
+        },
+        {
+          "tile_target": [
+            14,
+            13
+          ],
+          "immediate": true,
+          "clamped_world": [
+            395,
+            358
+          ],
+          "call_to_6688c": {
+            "operation": "camera_position_target",
+            "float_bits": [
+              1082361119,
+              1078774989,
+              1088631603,
+              1065353216
+            ],
+            "values": [
+              4.110000133514404,
+              3.200000047683716,
+              7.099999904632568,
+              1.0
+            ]
+          }
+        }
+      ],
+      "trigonometric_calls": [
+        {
+          "name": "tanf",
+          "input": 0.26190000772476196,
+          "output": 0.26805704832077026
+        },
+        {
+          "name": "atanf",
+          "input": 0.1597871333360672,
+          "output": 0.15844769775867462
+        },
+        {
+          "name": "tan",
+          "input": 0.6272523403167725,
+          "output": 0.7249147943051832
+        },
+        {
+          "name": "atanf",
+          "input": 0.09884603321552277,
+          "output": 0.09852597862482071
+        },
+        {
+          "name": "tan",
+          "input": 0.8842260241508484,
+          "output": 1.22012758497786
+        },
+        {
+          "name": "cos",
+          "input": 0.6871740221977234,
+          "output": 0.7730417729087498
+        },
+        {
+          "name": "cos",
+          "input": 0.9441477060317993,
+          "output": 0.5864334478392387
+        },
+        {
+          "name": "tan",
+          "input": 0.39285001158714294,
+          "output": 0.41439039879309336
+        },
+        {
+          "name": "tan",
+          "input": 0.39285001158714294,
+          "output": 0.41439039879309336
+        }
+      ],
+      "call_counts": {
+        "___floatsisfvfp": 21,
+        "___divsf3vfp": 19,
+        "camera_projection": 1,
+        "camera_orientation": 1,
+        "camera_transform_interface": 1,
+        "camera_translation": 1,
+        "logical_screen_context": 1,
+        "host_libm:tanf": 1,
+        "___subsf3vfp": 5,
+        "___mulsf3vfp": 4,
+        "___addsf3vfp": 4,
+        "host_libm:atanf": 2,
+        "___floatsidfvfp": 2,
+        "___extendsfdf2vfp": 7,
+        "host_libm:tan": 4,
+        "___divdf3vfp": 4,
+        "___subdf3vfp": 2,
+        "___truncdfsf2vfp": 4,
+        "host_libm:cos": 2,
+        "___muldf3vfp": 2,
+        "___fixdfsivfp": 2,
+        "___fixsfsivfp": 8,
+        "camera_position_target_boundary": 4
+      }
+    }
+  ],
+  "live_game_viewport_observed_by_this_oracle": false,
+  "actual_initial_playable_camera_claimed": false,
+  "original_client_code_and_libgcc_unchanged": true,
+  "instruction_patches": 0,
+  "libm_boundary": {
+    "implementation": "libm.so.6",
+    "functions": [
+      "atanf",
+      "cos",
+      "tan",
+      "tanf"
+    ],
+    "historical_ios_bit_identity_claimed": false
+  },
+  "other_substitutions": [
+    "logical viewport context",
+    "M3G setter recording/ownership",
+    "camera target function0x6688c recording boundary"
+  ],
+  "gpu_rendered": false,
+  "device_tested": false,
+  "not_established": [
+    "full camera scene hierarchy/matrix execution",
+    "animated pan interpolation",
+    "live logical viewport/orientation binding",
+    "scene hierarchy/90-degree display rotation",
+    "historical libSystem trigonometric bit parity",
+    "GPU pixel parity"
+  ]
+}

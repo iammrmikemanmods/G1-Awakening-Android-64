@@ -1,0 +1,11 @@
+{
+  "scope": "Native host components and source integration only",
+  "ctest_suites_passed": 10,
+  "returncode": 0,
+  "stdout": "Test project /workspace/scratch/cba553aafa20/g1_port/build/native-scene\n      Start  1: mission_format_contract\n 1/10 Test  #1: mission_format_contract ..............   Passed    0.02 sec\n      Start  2: movement_original_function_vectors\n 2/10 Test  #2: movement_original_function_vectors ...   Passed    0.00 sec\n      Start  3: atlas_format_geometry_contract\n 3/10 Test  #3: atlas_format_geometry_contract .......   Passed    0.01 sec\n      Start  4: png_rgba_contract\n 4/10 Test  #4: png_rgba_contract ....................   Passed    0.00 sec\n      Start  5: sprite_geometry_contract\n 5/10 Test  #5: sprite_geometry_contract .............   Passed    0.00 sec\n      Start  6: terrain_original_function_vectors\n 6/10 Test  #6: terrain_original_function_vectors ....   Passed    0.00 sec\n      Start  7: world_bootstrap_contract\n 7/10 Test  #7: world_bootstrap_contract .............   Passed    0.00 sec\n      Start  8: sprite_animation_contract\n 8/10 Test  #8: sprite_animation_contract ............   Passed    0.00 sec\n      Start  9: sprite_placement_contract\n 9/10 Test  #9: sprite_placement_contract ............   Passed    0.00 sec\n      Start 10: initial_animation_table_contract\n10/10 Test #10: initial_animation_table_contract .....   Passed    0.00 sec\n\n100% tests passed out of 10\n\nTotal Test time (real) =   0.05 sec\n",
+  "stderr": "",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gameplay_complete": false,
+  "apple_compilation_current_source": false,
+  "device_execution": false
+}

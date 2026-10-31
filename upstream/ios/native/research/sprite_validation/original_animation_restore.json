@@ -1,0 +1,213 @@
+{
+  "scope": "Native checkpoint restore before every tick, followed by playback compared with unchanged original start/advance routines",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "unicorn_version": "2.1.4",
+  "oracle_source_sha256": "055c46dbfc8b13fc7c63278e214d1c04c9ca61035d9513bad9dffa84f9dbf79b",
+  "decoder_source_sha256": "1cda792238f2967a973206af136283bb9568e9d7d6dff38ec2cecb8a10a44dbb",
+  "native_probe_binary_sha256": "cef353742d6bcf8ac0e5c4e108aab1a0381a75ad052bf443a72466094ac70289",
+  "functions": [
+    "0x72d80",
+    "0x72cc0"
+  ],
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "substitutions": [
+    "allocation/free",
+    "byte buffer initialization",
+    "geometry refresh observer"
+  ],
+  "original_descriptor_inputs": [
+    {
+      "resource": 1298,
+      "sha256": "dbc8c268992ee448cf074281f740b59d84a0cfad8c5c362c43472a5ea0102d5a"
+    },
+    {
+      "resource": 1111,
+      "sha256": "7ebaf2146026658e3198a4d17b8cc867d23b0f2f68c71774fba8bd0e84c3d91d"
+    },
+    {
+      "resource": 1119,
+      "sha256": "c231c2d87b0aa1ce53ea5afa45ca0b61a4c8bd89fea30e939f3e62aa75f20241"
+    },
+    {
+      "resource": 1020,
+      "sha256": "72be6f7d02616e75a68ae3d03fbcdeacafea547695c5f336b558fd75ce1ef956"
+    },
+    {
+      "resource": 1106,
+      "sha256": "d2e2d907347c87a5d3f670aa03a003e4ba3fc123eaa5b5857a812f0a2b004947"
+    },
+    {
+      "resource": 1041,
+      "sha256": "a595b62055c204fefdfc3d4faca781c2a2122bb540dcd802f724e3f8caa9c8cf"
+    },
+    {
+      "resource": 426,
+      "sha256": "82a9fd9f452d8c293ce70d152d1b70da744925febfee4225c1dd96d229bc7ec1"
+    },
+    {
+      "resource": 522,
+      "sha256": "93dc6d11926de3c3359334cc838d45ea4e0ae0c4130e53cd3f8e910ef7f05ba7"
+    },
+    {
+      "resource": 1281,
+      "sha256": "cc5af48e8aa0cc2a539d6071fac67627f589ec04ebbb061de6c2e02ade4f2ffa"
+    },
+    {
+      "resource": 1088,
+      "sha256": "e5a89d3e0a0f9e823d234b637caf8c845c4eff689f5c79a2919797e703b7bed1"
+    },
+    {
+      "resource": 1155,
+      "sha256": "bace757c618a641ed22145ba1c105bb5f8bb44245a536f5ee513eab80e128427"
+    },
+    {
+      "resource": 868,
+      "sha256": "b0340493a08dae156db5cd3501838c0107681607a7d9e02afcdbd5adc00c6a4b"
+    },
+    {
+      "resource": 876,
+      "sha256": "563367fdb5e14c0f710bc3c4b6327aaf5bd97db2232b9bb7eb7675be51e84889"
+    },
+    {
+      "resource": 377,
+      "sha256": "d6f134404ac2573a0dc6c432e164a9b535f52cc3214314e8f97d20ce60d73fba"
+    },
+    {
+      "resource": 985,
+      "sha256": "f923ab0655c3fb2aa0f860a3202d0a423d424cc39d3b33d5ad5104a96545a99b"
+    },
+    {
+      "resource": 1036,
+      "sha256": "75410e2ce681a0f77443d14d095e0880d4bb5391c7d217f6075dcfdcb46fc72e"
+    },
+    {
+      "resource": 1196,
+      "sha256": "244e1a44eb3e29801945e8ac9a4a49b3abfbb41aa661b01adc4904e48b09ea7b"
+    },
+    {
+      "resource": 1032,
+      "sha256": "1a81cb186edf624d7f5312ede5f91a4a780b35f8e74d749bb6e8ccb0050e3a0c"
+    },
+    {
+      "resource": 815,
+      "sha256": "4afe71f3fd74dd16d8b0e21adfefed12cdf6a95adbdcbb2de423878b22e28c4b"
+    },
+    {
+      "resource": 517,
+      "sha256": "68c21b9b1c9beb6062d6436642a4324791fb3c7d7ec0f24aa42f4e7c91ea50b8"
+    },
+    {
+      "resource": 1027,
+      "sha256": "102b5811a3801d4bbdc43ed697070405113634654b13c5b5077f47f42973c1f6"
+    },
+    {
+      "resource": 1183,
+      "sha256": "af172532f9ae61e960d227c75e56f522c280d022301383d1770d3bcd5b9b807e"
+    },
+    {
+      "resource": 1069,
+      "sha256": "0146c13d47efbc300157318976a620ea8e9656800d4c0ad5acfa0b5bbcf2151b"
+    },
+    {
+      "resource": 607,
+      "sha256": "1305a3312821d509f5a4c72c9fe8c4cf7b0fb2ebddb89140a73ac6fc20285867"
+    },
+    {
+      "resource": 769,
+      "sha256": "abbfda4b205c1bbbb1e7b8b9da421510d84e8cdbc7e9008e02a745d3745d2d18"
+    },
+    {
+      "resource": 708,
+      "sha256": "47cfe5db5e2a9715a95d61243b08979af410d9d103572e2d421d79795efa04e1"
+    },
+    {
+      "resource": 933,
+      "sha256": "af6299e58c6f486768c0ae7be10843ce794c7916d08ffdf4a9b66ba88a5de5ff"
+    },
+    {
+      "resource": 809,
+      "sha256": "8dacb6ee076f6ee055895008f80d9edd3f4e2f87892137251e02c81148f6dad9"
+    },
+    {
+      "resource": 641,
+      "sha256": "4f4968dd6be9caa4e949c068094ad6ceb948ba4d0beee0445b107f361f5d5b65"
+    },
+    {
+      "resource": 1037,
+      "sha256": "eba8fb57bacb8ca5fd33960bb715fe0cab2bb33f52dedc1d4e58b2cf224c9258"
+    },
+    {
+      "resource": 539,
+      "sha256": "67304d82352e0e444b8e05ae2b2d3f760ac85a9c4e8b72f05dc26aaba119dbcd"
+    },
+    {
+      "resource": 781,
+      "sha256": "4fb9413bc7f4bb361748c8ad4f0441960079cbd213054cb8926e8104cade6d98"
+    },
+    {
+      "resource": 638,
+      "sha256": "d401b3eae93648eeb1e8be92b37c918d4fbccfa0365d2b4e2218f946b8c9facb"
+    },
+    {
+      "resource": 825,
+      "sha256": "4ad09ea1edf988950db43da952e432b1ef8eacb76733ee2d0d8f0aedffd9b003"
+    },
+    {
+      "resource": 581,
+      "sha256": "328adcfeb6579be78edb61968f22b3fbe66c9efbcb92faf007d0561c6e124bff"
+    },
+    {
+      "resource": 1095,
+      "sha256": "fcbc3e3160857d8fcdfc34402ceb05f88a524b2e3f2c00081af5edb528a7d1a6"
+    },
+    {
+      "resource": 1132,
+      "sha256": "b9cf58061c6ecbc0dbbd420119c4d8d3bb7bdd252e68026aa785b76a7cfae2ea"
+    },
+    {
+      "resource": 982,
+      "sha256": "276295a357cae72e6deff895d9e4d92062437f9bbd607ebd51929d9434004f10"
+    }
+  ],
+  "original_animations": 170,
+  "synthetic_sequences": 32,
+  "cases": 1616,
+  "states": 17776,
+  "scalar_comparisons": 124432,
+  "state_fields": [
+    "step",
+    "frame",
+    "elapsed_ms",
+    "repeat_count",
+    "reverse",
+    "complete",
+    "geometry_refresh"
+  ],
+  "case_sha256": "ad67f5dcb5e62fb0517bb505a038c28241575ac1788f66f3f77ff9fe690bf2ca",
+  "native_state_sha256": "2f3a868d9d31da931981dcc02e7b6071c3dc31f8b04b8ca594f299f774472bbf",
+  "boundary_calls": {
+    "allocate": 1616,
+    "byte_buffer_initialize": 1616,
+    "geometry_refresh": 5326
+  },
+  "passed": true,
+  "gameplay_or_gpu_or_device_test": false,
+  "native_restore_operation": "SpriteAnimation::restore receives the prior complete state and the same independently decoded steps before each advance_ms call",
+  "native_restore_method_is_new": "This is a native checkpoint facility; no claim that an equivalent original serialization API was called.",
+  "restored_ticks": 16160,
+  "contracts": {
+    "native_contract_checks": 42,
+    "index_outside_sequence_rejected": true,
+    "negative_elapsed_rejected": true,
+    "elapsed_beyond_selected_duration_preserved": true,
+    "sticky_completed_state_preserved": true,
+    "signed_elapsed_overflow_rejected_without_mutation": true
+  },
+  "native_sources": {
+    "native/include/g1/SpriteAnimation.hpp": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9",
+    "native/src/SpriteAnimation.cpp": "80159bac9e3e9e52178a54a3d53666326142bd7863e47721d75a24703882c07e",
+    "native/tests/sprite_animation_test.cpp": "010033124e9b194fadd18ad8580d8de1f7fffdfb79b06830802df8d7f2bac0d7",
+    "analysis_tools/sprite/animation_restore_probe.cpp": "275834d145ebf2230003212d3454de3a5b8231f90ed2e3eb393a6d019b9281d1"
+  }
+}

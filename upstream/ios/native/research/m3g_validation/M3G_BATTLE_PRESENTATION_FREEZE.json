@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-26T15:45:28.131711+00:00",
+  "scope": "Connected native ordinary battle controller, original asset/pose/camera/effect adapter, Apple Metal/UI integration and core-owned tactical decoration drawing; local source freeze only",
+  "source_frozen": true,
+  "remote_writes_attempted": false,
+  "apple_compilation_executed": false,
+  "gpu_output_executed": false,
+  "device_playthrough_verified": false,
+  "files": [
+    {
+      "path": "native/include/g1/M3GBattleController.hpp",
+      "bytes": 2269,
+      "sha256": "3a4b2770c751c1c0bc7fe240199ff5b4271e4ab60780148b51c277a32bc27483"
+    },
+    {
+      "path": "native/src/M3GBattleController.cpp",
+      "bytes": 11187,
+      "sha256": "922a634e4af8d98dab7543dcdadc478c8a508d019dd58aa48ceec04f59e0f793"
+    },
+    {
+      "path": "native/tests/m3g_battle_controller_test.cpp",
+      "bytes": 4742,
+      "sha256": "6cbb9ac6413c7a18ebff136ee4292d197cb7157812c5aa8cc438a1f6f2b273c1"
+    },
+    {
+      "path": "native/tests/m3g_battle_controller_cases.txt",
+      "bytes": 340582,
+      "sha256": "ed13ed66091c92e00560f3ac873a3d59f9ce0708aa5f7ed1f6e3198b24788bfb"
+    },
+    {
+      "path": "analysis_tools/m3g/battle_controller_fixture.py",
+      "bytes": 4133,
+      "sha256": "fcc8ede80528c7d1ebb85ebcf2ab6ef7721bda567f2fdeed5a86c0c1fadc036f"
+    },
+    {
+      "path": "native/include/g1/M3GBattlePresentation.hpp",
+      "bytes": 2729,
+      "sha256": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7"
+    },
+    {
+      "path": "native/src/M3GBattlePresentation.cpp",
+      "bytes": 29668,
+      "sha256": "dc4301ca833bb3fae00ce765121bc64a5271d58aebbb3e1a7d839a999416962e"
+    },
+    {
+      "path": "native/tools/m3g_battle_presentation_probe.cpp",
+      "bytes": 5038,
+      "sha256": "b69d31825a34b06ce30a857bf446a4f9d8a1ba5c77c37a3f68cfd1c9261f5373"
+    },
+    {
+      "path": "native/tools/m3g_battle_session_probe.cpp",
+      "bytes": 8646,
+      "sha256": "9483926e52b7525d2c09c7f555ae24134edf721ecac7ccd2126333901dcfc1d0"
+    },
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "bytes": 149158,
+      "sha256": "33e11fd69808b892a83a67f85c14b76bca4ac1a89af91376c9733464bb3fec43"
+    },
+    {
+      "path": "native/platform/apple/NativeBattle.hpp",
+      "bytes": 3953,
+      "sha256": "c26818c80ee8f9e6b1953b71ff030aebaa01d601afd8a5ef16fe81dbd0a812b4"
+    },
+    {
+      "path": "native/platform/apple/Info.plist.in",
+      "bytes": 1880,
+      "sha256": "f9a2fc2d28f7712611c0eedd1d0a14543baff0f89a68a430235617d3ba9aeaa5"
+    },
+    {
+      "path": "native/research/M3G_BATTLE_CONTROLLER_NATIVE.md",
+      "bytes": 5119,
+      "sha256": "b95fe861f239c4e0666021767f56f6d24823547b095f124cc92f865190612cee"
+    },
+    {
+      "path": "native/research/M3G_BATTLE_PRESENTATION.md",
+      "bytes": 12776,
+      "sha256": "9f4f9acb05db0892a32042cfdcd883f55e51f5b8cb97768935ec17fab8773228"
+    },
+    {
+      "path": "native/research/m3g_validation/battle_presentation_validation.json",
+      "bytes": 35905,
+      "sha256": "d8c36b4c77cd3c7a7867a1bae3321ff56cf0987e370e34d97d436cd134957819"
+    },
+    {
+      "path": "native/research/m3g_validation/APPLE_BATTLE_INTEGRATION_REVIEW.json",
+      "bytes": 5787,
+      "sha256": "4f915ab66845209688cd0679bb06697f1552cc1d17f7c75113bc9af559467d08"
+    },
+    {
+      "path": "analysis_tools/m3g/BATTLE_PRESENTATION_REFERENCE.md",
+      "bytes": 4868,
+      "sha256": "9477fa07897bdc73fc76b3cd9258c8a1325360c3eb7b829f0f541e92948a65d3"
+    }
+  ],
+  "file_count": 17,
+  "total_bytes": 628440,
+  "referenced_prerequisites": [
+    {
+      "path": "native/research/M3G_BATTLE_CONTROLLER.json",
+      "sha256": "6254d9a7111f89d834179dce9186035ca112597560dacad45aa759b709aeec3c"
+    },
+    {
+      "path": "native/research/M3G_BATTLE_RENDER_PASS.json",
+      "sha256": "45b9f47491f38923cfe1ef26da3584c2ef034feff92dd2d994d9d5b43337baf5"
+    },
+    {
+      "path": "native/research/M3G_MODEL_ATTACHMENT.json",
+      "sha256": "bf5ed4d1f82d6d990a516d6adb3a577e5c6bf783b9a82dbd3aef213aa0132f54"
+    },
+    {
+      "path": "native/research/M3G_BINDING_CORRECTION.json",
+      "sha256": "0990988a8225f5fae61354412527b39a262317bfeb51f3344cf7e93b423c9412"
+    },
+    {
+      "path": "native/research/m3g_validation/M3G_MATERIAL_OVERRIDES_FREEZE.json",
+      "sha256": "8ea2030ce7e46aa9e4580c4de470f3123ec7e7522a7920ec6eb3f455cbe93062"
+    },
+    {
+      "path": "research/native_m3g/runtime_state/RUNTIME_STATE_FREEZE.json",
+      "sha256": "5319302b489b7c8f962104b763e9efcda84ac4dec61477a3d479a7699482b151"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "sha256": "de2ba9b2a551174d277c6bafe1f0298d2911ed14b83009c39130fc804435c4af"
+    }
+  ],
+  "validation": {
+    "combined_ctest_passed": 53,
+    "controller_original_updates": 1225,
+    "controller_original_draws": 159,
+    "controller_field_checks": 82600,
+    "actual_asset_synthetic_sequences": 47,
+    "real_session_setup_ticks": 81,
+    "real_session_battle_updates": 534,
+    "read_only_sample_checks": 54,
+    "distinct_intermediate_sample_cases": 46,
+    "game_rng_unchanged": true,
+    "pending_token_preserved_until_explicit_host_report": true
+  },
+  "private_inputs_not_included": [
+    "iphone.big",
+    "terrain-tables.bin",
+    "original ARM executable and libgcc reference inputs"
+  ],
+  "remaining_product_limits": [
+    "Apple compilation, shader/pixel tests and actual XR output/pacing remain pending.",
+    "No complete physical-device playthrough verified.",
+    "Original earlier tactical support-attack presentation is not connected by this ordinary cinematic.",
+    "Native HUD, tactical camera and site/marker artwork are not original presentation parity.",
+    "Shared music maintenance, complete sound event coverage and device audibility remain separate."
+  ],
+  "cmake_handoff_already_registered": {
+    "sources": [
+      "src/M3GBattleController.cpp",
+      "src/M3GBattlePresentation.cpp"
+    ],
+    "test": "m3g_battle_controller_original_vectors",
+    "probes": [
+      "m3g_battle_presentation_probe",
+      "m3g_battle_session_probe"
+    ]
+  }
+}

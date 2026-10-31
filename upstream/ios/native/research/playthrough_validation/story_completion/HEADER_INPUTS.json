@@ -1,0 +1,275 @@
+{
+  "source": "/workspace/scratch/cba553aafa20/.tools/g1_native_complete_stage/native/include",
+  "headers": [
+    {
+      "path": "include/g1/AI.hpp",
+      "bytes": 4594,
+      "sha256": "ea45901ace1318be438de171d27a3aa78f9d2779ac2c9d92c91b99ff2b74bf91"
+    },
+    {
+      "path": "include/g1/AIExecution.hpp",
+      "bytes": 1563,
+      "sha256": "5891fe1aa39f323460561aadda21b7595f9dfcaf6003704d07d0ff04f4bc6b37"
+    },
+    {
+      "path": "include/g1/AIIncome.hpp",
+      "bytes": 611,
+      "sha256": "3e78f1300b3a54fda0a0f697ec100b4323a7e24f241e40410a03552658a68160"
+    },
+    {
+      "path": "include/g1/Archive.hpp",
+      "bytes": 1939,
+      "sha256": "786c7f3a87d3d9d9fa3e663510cf43d7ba38e47d3ef590a92b2bfa1e34d5eb99"
+    },
+    {
+      "path": "include/g1/Atlas.hpp",
+      "bytes": 3325,
+      "sha256": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f"
+    },
+    {
+      "path": "include/g1/Audio.hpp",
+      "bytes": 521,
+      "sha256": "8b690383d255e4f08a2d99d41f799e563cfa6fbe8088654fbfb963b496c8453f"
+    },
+    {
+      "path": "include/g1/AudioEvents.hpp",
+      "bytes": 1651,
+      "sha256": "98a2872b108889ab093c28d718dc41ec631e4155ab7144cf407cf32e135f4471"
+    },
+    {
+      "path": "include/g1/CampaignController.hpp",
+      "bytes": 4950,
+      "sha256": "bcce896bbf1612f5ff5f8750de01b9dce5edc81307da14730f9e96a9ef0a94b1"
+    },
+    {
+      "path": "include/g1/CaptureAction.hpp",
+      "bytes": 3966,
+      "sha256": "9d198f8d61ff07beeea26264776ac4ba2514b4c2d572c17190ee07612135621b"
+    },
+    {
+      "path": "include/g1/Combat.hpp",
+      "bytes": 6478,
+      "sha256": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322"
+    },
+    {
+      "path": "include/g1/GameSession.hpp",
+      "bytes": 12117,
+      "sha256": "37e21ce2c4ee57a879eccca53f66586aa8caf7a4516932bce7792355333668b0"
+    },
+    {
+      "path": "include/g1/HealAction.hpp",
+      "bytes": 2109,
+      "sha256": "31117a87ad62872778197af5a6df3b3d4c40719e1fe0447e4b3a47087bbf0df7"
+    },
+    {
+      "path": "include/g1/Image.hpp",
+      "bytes": 412,
+      "sha256": "b7a19e7f2473190d19fbc46380a5cfd288e5d2f08db9b1a41983a63627e79804"
+    },
+    {
+      "path": "include/g1/InitialPresentation.hpp",
+      "bytes": 758,
+      "sha256": "2031c931ea7dcfc388d13eb554df1deace1db70294c0603a47c642f4112b2dde"
+    },
+    {
+      "path": "include/g1/M3G.hpp",
+      "bytes": 1006,
+      "sha256": "03069196d3475c6f5dd910fa9202504d4dd4a8ee7f84f4c144cbb21cedb5ff7d"
+    },
+    {
+      "path": "include/g1/M3GAnimation.hpp",
+      "bytes": 5222,
+      "sha256": "790d94abaf8b0ea4d842801c3e3517347efa4cd02163c1fc85816700b48597ad"
+    },
+    {
+      "path": "include/g1/M3GBattleCamera.hpp",
+      "bytes": 3698,
+      "sha256": "34370c78f2f81f540d68dcd1a8f9e968f7d624236bc059d49c01c8f45e1e9fc3"
+    },
+    {
+      "path": "include/g1/M3GBattleController.hpp",
+      "bytes": 2269,
+      "sha256": "3a4b2770c751c1c0bc7fe240199ff5b4271e4ab60780148b51c277a32bc27483"
+    },
+    {
+      "path": "include/g1/M3GBattlePresentation.hpp",
+      "bytes": 2729,
+      "sha256": "1ebe63e4af014f459a9516fe04e68496c6c7700e2229af5b5f674229bb73eaa7"
+    },
+    {
+      "path": "include/g1/M3GBattleTimeline.hpp",
+      "bytes": 1332,
+      "sha256": "b80131c93ce1445a4caa1d0c11897a803f87165ab3cef63fc9223afec3964925"
+    },
+    {
+      "path": "include/g1/M3GBindings.hpp",
+      "bytes": 3365,
+      "sha256": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03"
+    },
+    {
+      "path": "include/g1/M3GCamera.hpp",
+      "bytes": 1520,
+      "sha256": "1cddf532f3acc7992bce3e9f259a13a3d66658862d5744ceac267f6598f8ba04"
+    },
+    {
+      "path": "include/g1/M3GMaterialOverrides.hpp",
+      "bytes": 3670,
+      "sha256": "3ac2699d45e83dc04088ac723bc49a42db4630303a88720e311ff42de17c52c9"
+    },
+    {
+      "path": "include/g1/M3GRenderFrame.hpp",
+      "bytes": 3741,
+      "sha256": "1a89af7fc4701c75492293ea074b2ce5556e6bfe10a1c428d6ea0ecf45ab6796"
+    },
+    {
+      "path": "include/g1/M3GScene.hpp",
+      "bytes": 6176,
+      "sha256": "7a1c27aa53e6df32d83c2ec23727d180008591154b108af70b8c12f9a373c653"
+    },
+    {
+      "path": "include/g1/M3GScenePose.hpp",
+      "bytes": 2131,
+      "sha256": "c2d8080f45a6060b2e22bacd77c91a4643f0ce644a885620950d1aefd7fb6b50"
+    },
+    {
+      "path": "include/g1/M3GSprite3D.hpp",
+      "bytes": 4011,
+      "sha256": "0e99e83bf8a16b8eb754f1d80aa9a0cd202a97558958ac2a562f42607842167b"
+    },
+    {
+      "path": "include/g1/Mission.hpp",
+      "bytes": 1448,
+      "sha256": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa"
+    },
+    {
+      "path": "include/g1/MissionExecution.hpp",
+      "bytes": 8551,
+      "sha256": "df0ceb34f1ded75523f30777ba39b402a2aec3d659cb6226e2c7c41fe426289e"
+    },
+    {
+      "path": "include/g1/MissionObjectives.hpp",
+      "bytes": 3195,
+      "sha256": "b1774f766cd669f9a840b663698e0bea931bdede752ad1485f7007ace912e7df"
+    },
+    {
+      "path": "include/g1/MissionProgression.hpp",
+      "bytes": 5233,
+      "sha256": "7da6229854fa0168ae1402e890f53eaf1241e1284bc07c1b167602101e12f2e9"
+    },
+    {
+      "path": "include/g1/Movement.hpp",
+      "bytes": 3493,
+      "sha256": "a3a4b66db096e34c6de57642e01a41e2aa19c616aebeb4002eab279f809b6e75"
+    },
+    {
+      "path": "include/g1/MovementAction.hpp",
+      "bytes": 4403,
+      "sha256": "a96b7f918569dd8923955d02e462887eb2e6cf51bd35f9cee79cdc5f37783728"
+    },
+    {
+      "path": "include/g1/MovementArrival.hpp",
+      "bytes": 1369,
+      "sha256": "4d2f2cd05b78ad730c08184b9f13ea7b64d4e321f83c2ac86c0bdc7ee38ad3d3"
+    },
+    {
+      "path": "include/g1/SaveStore.hpp",
+      "bytes": 896,
+      "sha256": "bba8b7e69165d1d0d4a4059346082757e7f4f223186cc7a2feb4e61777a566fc"
+    },
+    {
+      "path": "include/g1/Scene.hpp",
+      "bytes": 1965,
+      "sha256": "65b4df6a8880d1bdb076f6fef55113dc6e0eab880bac5ee9c8901af67fb4a7c1"
+    },
+    {
+      "path": "include/g1/SessionSave.hpp",
+      "bytes": 1819,
+      "sha256": "6e1fc2481b0c643b58993a1307bdc756bf5fadaf31243506d58238ddcc4234a2"
+    },
+    {
+      "path": "include/g1/SpriteAnimation.hpp",
+      "bytes": 2470,
+      "sha256": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9"
+    },
+    {
+      "path": "include/g1/SpriteGeometry.hpp",
+      "bytes": 1700,
+      "sha256": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac"
+    },
+    {
+      "path": "include/g1/SpritePlacement.hpp",
+      "bytes": 1267,
+      "sha256": "be73567877ec77644328abcbe73629526b0e1f12d4d1753d687c218083eb555d"
+    },
+    {
+      "path": "include/g1/Terrain.hpp",
+      "bytes": 6474,
+      "sha256": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a"
+    },
+    {
+      "path": "include/g1/TerrainDecorations.hpp",
+      "bytes": 2661,
+      "sha256": "52925f12aeb10622a2943f377ddbf6f088402d8184d85cd5196fbdb62a84d494"
+    },
+    {
+      "path": "include/g1/TerrainRuntime.hpp",
+      "bytes": 1512,
+      "sha256": "de33c17f623639eccc11aa0234bf1feb9f088029f101259b8cac3a738e0a109b"
+    },
+    {
+      "path": "include/g1/TerrainSpriteDecorations.hpp",
+      "bytes": 5040,
+      "sha256": "5c691db68a5635cd5cf1ec17c9513c7166f91c786e6602e8b2c4e89bca5535ec"
+    },
+    {
+      "path": "include/g1/Text.hpp",
+      "bytes": 1373,
+      "sha256": "7e78e6b25dfe6e65ed7b98ec47809b1a0560428145a8e8d32ec5ea40b5134df0"
+    },
+    {
+      "path": "include/g1/TransformAction.hpp",
+      "bytes": 1672,
+      "sha256": "2a9f1738b07db5df60181b90d46cf624b31120b10e2f39ce75ee4cccd35f003e"
+    },
+    {
+      "path": "include/g1/TurnProgression.hpp",
+      "bytes": 1634,
+      "sha256": "f82e327a22ef1c45c9bee832439215d9d9e962811ca554f5335f21c7a7cd9e61"
+    },
+    {
+      "path": "include/g1/UndoAction.hpp",
+      "bytes": 2522,
+      "sha256": "30783a0111cbe3e324056607cebc4828f6e2766f927dfab2c53c542deb74cc58"
+    },
+    {
+      "path": "include/g1/UnitCommands.hpp",
+      "bytes": 2143,
+      "sha256": "b0f501484216dfb7ed2756fd0b76614fdad6d1863c7332d72317a6b1de4f2e2e"
+    },
+    {
+      "path": "include/g1/UnitInteractions.hpp",
+      "bytes": 6610,
+      "sha256": "17c078644175988bf8ded0cae22864f25dec20d26279cdc56d1c841de8fc74fb"
+    },
+    {
+      "path": "include/g1/UnitSpawn.hpp",
+      "bytes": 1879,
+      "sha256": "ea2a2365909deaf668b78fcf0be2c4864f5defffc53ad163fb27265fb0d4d27f"
+    },
+    {
+      "path": "include/g1/UpgradeAction.hpp",
+      "bytes": 2793,
+      "sha256": "8ada0dea4e358b179d2711f7c01e5a4af863b40163898f857a373dc248e68287"
+    },
+    {
+      "path": "include/g1/World.hpp",
+      "bytes": 5870,
+      "sha256": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501"
+    },
+    {
+      "path": "include/g1/WorldCommands.hpp",
+      "bytes": 6008,
+      "sha256": "cb1902396e24f527a7eabf1f59fca7466bd54305676262e503380c960ebea592"
+    }
+  ]
+}

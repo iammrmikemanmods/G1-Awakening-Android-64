@@ -1,0 +1,4812 @@
+{
+  "schema": 1,
+  "kind": "unchanged original battle submission order and no-image clear",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "runner_sha256": "c1b31bae8594348a3d0089cb0afa953db93c96b3931e80767a22ac0ded9951b6",
+  "base_oracle_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "unicorn_version": "2.1.4",
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "original_libgcc_readonly_unchanged": true,
+  "pass_function": "0x3cc9c",
+  "clear_functions": [
+    "0xb5fe8",
+    "0xb4cb4"
+  ],
+  "pass_case_count": 14,
+  "clear_case_count": 44,
+  "scope": {
+    "synthetic_state": true,
+    "actual_asset_loader": false,
+    "gpu_execution": false,
+    "background_image_supported": false,
+    "ordinary_no_secondary_viewport": true,
+    "transform_calculation_executed": false,
+    "public_submission_order_executed": true,
+    "original_float_clear_conversion_executed": true
+  },
+  "recording_boundaries": [
+    "public retain/release/identity/factory",
+    "public enabled state",
+    "public transform-to returns success without calculating matrix",
+    "public camera query",
+    "public Graphics renderWorld/renderNode/setCamera",
+    "target begin/end helpers",
+    "graphics target/context acquisition",
+    "GL clear/color-mask/depth-mask/scissor calls"
+  ],
+  "visibility_order": [
+    "model_a",
+    "model_b",
+    "effect_0",
+    "effect_1",
+    "effect_2",
+    "effect_3",
+    "death_effect"
+  ],
+  "pass_cases": [
+    {
+      "flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "missing": [],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "missing": [
+        "model_b"
+      ],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": true,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "missing": [
+        "death_effect"
+      ],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": false,
+            "effect_1": false,
+            "effect_2": false,
+            "effect_3": false,
+            "death_effect": true
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_0",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_0",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_2",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_2",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "missing": [
+        "effect_0",
+        "effect_2"
+      ],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": true,
+            "effect_1": false,
+            "effect_2": true,
+            "effect_3": false,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_1",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_1",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "effect_3",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "effect_3",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "missing": [
+        "effect_array"
+      ],
+      "events": [
+        {
+          "operation": "begin_context"
+        },
+        {
+          "operation": "begin_target",
+          "argument3": 1,
+          "argument4": 0
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": false
+        },
+        {
+          "operation": "get_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": false
+        },
+        {
+          "operation": "render_world",
+          "target": "scene",
+          "enabled_snapshot": {
+            "model_a": false,
+            "model_b": false,
+            "effect_0": true,
+            "effect_1": true,
+            "effect_2": true,
+            "effect_3": true,
+            "death_effect": false
+          }
+        },
+        {
+          "operation": "create_transform"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "transform_to",
+          "target": "camera",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "get_camera"
+        },
+        {
+          "operation": "set_camera",
+          "target": "camera"
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_a",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_a",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "model_b",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "model_b",
+          "enabled": true
+        },
+        {
+          "operation": "set_enabled",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "transform_to",
+          "target": "death_effect",
+          "relative_to": "scene"
+        },
+        {
+          "operation": "render_node",
+          "target": "death_effect",
+          "enabled": true
+        },
+        {
+          "operation": "finish_target"
+        },
+        {
+          "operation": "end_context"
+        }
+      ]
+    }
+  ],
+  "clear_cases": [
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 4
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 4
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": false,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            256
+          ]
+        }
+      ],
+      "scissor_state_after": 1
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glEnable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glEnable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16384
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glEnable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 1,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glEnable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 4,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glDisable",
+          "arguments": [
+            3089
+          ]
+        },
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        1,
+        127,
+        254,
+        33
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 5,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            257,
+            32640,
+            65279,
+            8481
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        31,
+        47,
+        83,
+        99
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": true,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        31,
+        47,
+        83,
+        99
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": false,
+      "scissor_state": 5,
+      "null_background": true,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        31,
+        47,
+        83,
+        99
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": true,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        31,
+        47,
+        83,
+        99
+      ],
+      "color_clear": false,
+      "depth_clear": false,
+      "alpha_write": true,
+      "scissor_state": 5,
+      "null_background": true,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 5
+    },
+    {
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            24672,
+            40093,
+            65536,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 486
+    },
+    {
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            24672,
+            40093,
+            65536,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 486
+    },
+    {
+      "rgba8": [
+        168,
+        0,
+        216,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            43177,
+            0,
+            55513,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 534
+    },
+    {
+      "rgba8": [
+        168,
+        0,
+        216,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            43177,
+            0,
+            55513,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 534
+    },
+    {
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": false,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            24672,
+            40093,
+            65536,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 1212
+    },
+    {
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            24672,
+            40093,
+            65536,
+            65536
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0,
+      "actual_scene_resource": 1212
+    },
+    {
+      "rgba8": [
+        0,
+        255,
+        128,
+        0
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": true,
+      "events": [
+        {
+          "operation": "glClearColorx",
+          "arguments": [
+            0,
+            65536,
+            32897,
+            0
+          ]
+        },
+        {
+          "operation": "glColorMask",
+          "arguments": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "glDepthMask",
+          "arguments": [
+            1
+          ]
+        },
+        {
+          "operation": "glClear",
+          "arguments": [
+            16640
+          ]
+        }
+      ],
+      "scissor_state_after": 0
+    },
+    {
+      "rgba8": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "color_clear": true,
+      "depth_clear": true,
+      "alpha_write": true,
+      "scissor_state": 0,
+      "null_background": false,
+      "context_ready": false,
+      "events": [],
+      "scissor_state_after": 0
+    }
+  ]
+}

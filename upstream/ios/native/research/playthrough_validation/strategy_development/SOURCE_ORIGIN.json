@@ -1,0 +1,6 @@
+{
+  "base_path": "g1_port/native/tools/session_playthrough_probe.cpp",
+  "base_sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6",
+  "scope": "Development-only legal input strategy. Canonical source is unchanged.",
+  "new_strategy": "Use native read-only unit-plan advice for capture objectives as well as elimination; apply every action through human public APIs."
+}

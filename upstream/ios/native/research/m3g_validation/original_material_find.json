@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "scope": "Unchanged original Object3D.find and real reference enumerators over seeded authored graph",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "oracle_source_sha256": "45a9ebb7469e13ffbddccf27d95e5670aa68b4a81a251a14d88b29d5165a964c",
+  "reader_sha256": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+  "base_source_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "material_report_sha256": "6ec43cc903b5f4f3548a44ec4ffc3ebf78ef42bb4b438972277fecb1fabbc59d",
+  "unicorn_version": "2.1.4",
+  "find_entry": "0x99c90",
+  "enumerator_entries": {
+    "2": "0x89420",
+    "3": "0x89ca4",
+    "4": "0x8b300",
+    "9": "0x90108",
+    "14": "0x97db4",
+    "17": "0xa6500",
+    "18": "0xa598c",
+    "21": "0xa9efc",
+    "22": "0xaae98"
+  },
+  "base_enumerator": "0x99e1e",
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "find_or_getter_substitutions": 0,
+  "seeded_fields": "Object3D IDs/animation references, linked Group children, Mesh arrays, Appearance/Texture/VertexBuffer/track references",
+  "models": 7,
+  "queries": 14,
+  "required_matches": 11,
+  "results": [
+    {
+      "resource_id": 492,
+      "payload_sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "root": 292,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 22,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": 98,
+          "type": 3,
+          "used_override_slot": true
+        }
+      ]
+    },
+    {
+      "resource_id": 369,
+      "payload_sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "root": 175,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 12,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": null,
+          "type": null,
+          "used_override_slot": false
+        }
+      ]
+    },
+    {
+      "resource_id": 565,
+      "payload_sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "root": 175,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 12,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": null,
+          "type": null,
+          "used_override_slot": false
+        }
+      ]
+    },
+    {
+      "resource_id": 631,
+      "payload_sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "root": 292,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 22,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": 98,
+          "type": 3,
+          "used_override_slot": true
+        }
+      ]
+    },
+    {
+      "resource_id": 795,
+      "payload_sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "root": 292,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 22,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": 98,
+          "type": 3,
+          "used_override_slot": true
+        }
+      ]
+    },
+    {
+      "resource_id": 967,
+      "payload_sha256": "4206ffcf73d060d8fadd970ea6c0a52499eac45149d63ed1e12cb459f6eada5e",
+      "root": 264,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 58,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": 14,
+          "type": 3,
+          "used_override_slot": true
+        }
+      ]
+    },
+    {
+      "resource_id": 1070,
+      "payload_sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "root": 177,
+      "queries": [
+        {
+          "key": 500033589,
+          "original_object": 12,
+          "type": 3,
+          "used_override_slot": true
+        },
+        {
+          "key": 253263228,
+          "original_object": null,
+          "type": null,
+          "used_override_slot": false
+        }
+      ]
+    }
+  ],
+  "all_passed": true,
+  "not_established": [
+    "complete original object loading/construction",
+    "arbitrary cyclic or ambiguous-ID native traversal",
+    "GPU/device rendering"
+  ]
+}

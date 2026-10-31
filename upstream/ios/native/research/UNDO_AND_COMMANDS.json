@@ -1,0 +1,107 @@
+{
+  "status": "frozen_for_integration",
+  "scope": "native Undo/selection locks, command composition, explicit operation10 transition",
+  "validation": {
+    "status": "passed",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "build": "direct-source C++17 -O2 -Wall -Wextra -Wconversion -Werror -pedantic",
+    "native_cases": 1100,
+    "scalar_comparisons": 11436,
+    "native_guard_checks": 17,
+    "original_unit_logic_cases": 540,
+    "original_command_composition_cases": 560,
+    "instruction_patches": 0,
+    "stdout": "1100 original command/undo vectors matched (11436 scalars); 17 native guards passed.",
+    "binary_sha256": "b0e7e34fa4234cc8a32809acff3ae1e7bb23fd38a1db761488afb0c0a58fcaa3",
+    "source_hashes": {
+      "native/include/g1/UndoAction.hpp": "30783a0111cbe3e324056607cebc4828f6e2766f927dfab2c53c542deb74cc58",
+      "native/src/UndoAction.cpp": "546050f67a6e6d153cdd3e8417c37be66cd9c56089d449129bfc8d6559c1162f",
+      "native/include/g1/UnitCommands.hpp": "b0f501484216dfb7ed2756fd0b76614fdad6d1863c7332d72317a6b1de4f2e2e",
+      "native/src/UnitCommands.cpp": "0c7084fba55a28984e9d14e8c5822bdd8f1067e1551e09742d6f782951cdcee5",
+      "native/tests/unit_commands_test.cpp": "b98163d60dfa90da61ed4fcc679288b3d704ff4ac6125d3372a12a8663e623c0",
+      "native/tests/unit_commands_original_vectors.txt": "5a446d3079e49b4907a8c41af4b92d9eeba5345c7cbf36333eeb69912e36dd39"
+    },
+    "apple_build_tested_here": false,
+    "device_tested": false,
+    "full_playthrough_tested": false
+  },
+  "files": [
+    {
+      "path": "native/include/g1/UndoAction.hpp",
+      "bytes": 2522,
+      "sha256": "30783a0111cbe3e324056607cebc4828f6e2766f927dfab2c53c542deb74cc58"
+    },
+    {
+      "path": "native/src/UndoAction.cpp",
+      "bytes": 3865,
+      "sha256": "546050f67a6e6d153cdd3e8417c37be66cd9c56089d449129bfc8d6559c1162f"
+    },
+    {
+      "path": "native/include/g1/UnitCommands.hpp",
+      "bytes": 2143,
+      "sha256": "b0f501484216dfb7ed2756fd0b76614fdad6d1863c7332d72317a6b1de4f2e2e"
+    },
+    {
+      "path": "native/src/UnitCommands.cpp",
+      "bytes": 1558,
+      "sha256": "0c7084fba55a28984e9d14e8c5822bdd8f1067e1551e09742d6f782951cdcee5"
+    },
+    {
+      "path": "native/tests/unit_commands_test.cpp",
+      "bytes": 9074,
+      "sha256": "b98163d60dfa90da61ed4fcc679288b3d704ff4ac6125d3372a12a8663e623c0"
+    },
+    {
+      "path": "native/tests/unit_commands_original_vectors.txt",
+      "bytes": 251082,
+      "sha256": "5a446d3079e49b4907a8c41af4b92d9eeba5345c7cbf36333eeb69912e36dd39"
+    },
+    {
+      "path": "native/research/UNDO_AND_COMMANDS.md",
+      "bytes": 9075,
+      "sha256": "f3a2108429f3a677ab917ea45d7dc7bf1466f6c2fc15fab7e041f928dd5e4e2b"
+    },
+    {
+      "path": "native/research/undo_validation/native_checks.json",
+      "bytes": 1326,
+      "sha256": "b194eac82c94aa3903e3955750d2fb973ab4f9bbeb6bddaa88d752ced9a84ae2"
+    },
+    {
+      "path": "native/research/undo_validation/native_checks.txt",
+      "bytes": 85,
+      "sha256": "20f9f7aaf4bc7ce512b4d4162b32c73d8ff3d794231353dbd667af3afd191db5"
+    },
+    {
+      "path": "native/research/undo_validation/original_unit_commands_reference.json",
+      "bytes": 2555,
+      "sha256": "342e21dd31f66f406e0f4d8d8fdf9a9bb0b033241d3ee17fdf9cb9232f2f9b1a"
+    },
+    {
+      "path": "repository_native/analysis_tools/undo/oracle.py",
+      "bytes": 15096,
+      "sha256": "080990fd715004bce7b562d23f4e64ebf59ddddd3dc16dd3907003708f03b7e9"
+    },
+    {
+      "path": "repository_native/analysis_tools/undo/README.md",
+      "bytes": 3955,
+      "sha256": "5ed8a47966a71c42d60f80fa8f254e971a88c1e4cd5fef7867b24cd0deb97de5"
+    },
+    {
+      "path": "repository_native/analysis_tools/undo/requirements.txt",
+      "bytes": 15,
+      "sha256": "56bce36af734e3b9aeff2be4301bbc2a2c2b58ea1ea1e6ee6e792db84f96fbd4"
+    },
+    {
+      "path": "repository_native/analysis_tools/undo/REFERENCE.json",
+      "bytes": 2555,
+      "sha256": "342e21dd31f66f406e0f4d8d8fdf9a9bb0b033241d3ee17fdf9cb9232f2f9b1a"
+    }
+  ],
+  "notes": [
+    "No original executable/archive/library payload included.",
+    "No existing GameSession/CMake/UI source modified by this component.",
+    "Bit0x100 and operation10 human touch reachability are not equated; no visible Wait claim.",
+    "Command mask cases supply predicate return inputs and validate composition only.",
+    "Actual timer update source finding is documented; session implementation belongs to root."
+  ]
+}

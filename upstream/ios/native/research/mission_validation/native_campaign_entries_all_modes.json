@@ -1,0 +1,1452 @@
+{
+  "presentation": "synthetic headless acknowledgements",
+  "playthrough": false,
+  "entries": [
+    {
+      "group": 0,
+      "index": 0,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 315,
+      "objective_command": 18,
+      "native_ticks": 19,
+      "world_presentations": 1,
+      "unique_units": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 123,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 14,
+      "terrain_sprite_count": 121,
+      "checkpoint_bytes": 6797,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 1,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 326,
+      "objective_command": 14,
+      "native_ticks": 9,
+      "world_presentations": 1,
+      "unique_units": 3,
+      "counts": [
+        2,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 137,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 4,
+      "terrain_sprite_count": 133,
+      "checkpoint_bytes": 7327,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 2,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 333,
+      "objective_command": 22,
+      "native_ticks": 18,
+      "world_presentations": 2,
+      "unique_units": 7,
+      "counts": [
+        4,
+        3
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 133,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 2,
+      "terrain_sprite_count": 129,
+      "checkpoint_bytes": 7484,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 3,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 334,
+      "objective_command": 18,
+      "native_ticks": 7,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 95,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 2,
+      "terrain_sprite_count": 63,
+      "checkpoint_bytes": 5244,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 4,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 335,
+      "objective_command": 23,
+      "native_ticks": 42,
+      "world_presentations": 1,
+      "unique_units": 3,
+      "counts": [
+        1,
+        2
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 170,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 4,
+      "terrain_sprite_count": 165,
+      "checkpoint_bytes": 8407,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 5,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 336,
+      "objective_command": 19,
+      "native_ticks": 11,
+      "world_presentations": 1,
+      "unique_units": 5,
+      "counts": [
+        3,
+        2
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 105,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 58,
+      "checkpoint_bytes": 4971,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 6,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 337,
+      "objective_command": 37,
+      "native_ticks": 39,
+      "world_presentations": 7,
+      "unique_units": 9,
+      "counts": [
+        2,
+        3
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 33,
+      "terrain_slots": 12,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3655,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 7,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 338,
+      "objective_command": 24,
+      "native_ticks": 58,
+      "world_presentations": 11,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 24,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3599,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 8,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 339,
+      "objective_command": 22,
+      "native_ticks": 106,
+      "world_presentations": 12,
+      "unique_units": 9,
+      "counts": [
+        4,
+        5
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 56,
+      "terrain_slots": 15,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3754,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 9,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 316,
+      "objective_command": 22,
+      "native_ticks": 40,
+      "world_presentations": 11,
+      "unique_units": 10,
+      "counts": [
+        5,
+        5
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 161,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 11,
+      "terrain_sprite_count": 156,
+      "checkpoint_bytes": 8579,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 10,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 317,
+      "objective_command": 13,
+      "native_ticks": 12,
+      "world_presentations": 7,
+      "unique_units": 6,
+      "counts": [
+        1,
+        5
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 336,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 329,
+      "checkpoint_bytes": 14183,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 11,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 318,
+      "objective_command": 40,
+      "native_ticks": 115,
+      "world_presentations": 16,
+      "unique_units": 11,
+      "counts": [
+        4,
+        7
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 314,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 9,
+      "terrain_sprite_count": 150,
+      "checkpoint_bytes": 8484,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 12,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 319,
+      "objective_command": 23,
+      "native_ticks": 22,
+      "world_presentations": 13,
+      "unique_units": 11,
+      "counts": [
+        5,
+        6
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 422,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 415,
+      "checkpoint_bytes": 17477,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 13,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 320,
+      "objective_command": 21,
+      "native_ticks": 42,
+      "world_presentations": 1,
+      "unique_units": 9,
+      "counts": [
+        3,
+        6
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 138,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 4,
+      "terrain_sprite_count": 133,
+      "checkpoint_bytes": 7772,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 14,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 321,
+      "objective_command": 28,
+      "native_ticks": 88,
+      "world_presentations": 1,
+      "unique_units": 7,
+      "counts": [
+        3,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 34,
+      "terrain_slots": 10,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3494,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 15,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 322,
+      "objective_command": 22,
+      "native_ticks": 12,
+      "world_presentations": 1,
+      "unique_units": 10,
+      "counts": [
+        4,
+        6
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 13,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3704,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 0,
+      "index": 16,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 323,
+      "objective_command": 17,
+      "native_ticks": 14,
+      "world_presentations": 1,
+      "unique_units": 3,
+      "counts": [
+        3,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 17,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3287,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 0,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 324,
+      "objective_command": 9,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 15,
+      "terrain_slots": 15,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3255,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 1,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 325,
+      "objective_command": 14,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 6,
+      "counts": [
+        4,
+        2
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 105,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 58,
+      "checkpoint_bytes": 5059,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 2,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 327,
+      "objective_command": 10,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 3,
+      "counts": [
+        2,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 95,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 2,
+      "terrain_sprite_count": 63,
+      "checkpoint_bytes": 4882,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 3,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 328,
+      "objective_command": 9,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 152,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 9,
+      "terrain_sprite_count": 150,
+      "checkpoint_bytes": 7786,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 4,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 329,
+      "objective_command": 12,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 5,
+      "counts": [
+        2,
+        3
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 169,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 4,
+      "terrain_sprite_count": 165,
+      "checkpoint_bytes": 8544,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 5,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 330,
+      "objective_command": 9,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 2,
+      "counts": [
+        1,
+        1
+      ],
+      "funds": [
+        1,
+        0
+      ],
+      "rng_draws": 95,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 2,
+      "terrain_sprite_count": 63,
+      "checkpoint_bytes": 4810,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 6,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 331,
+      "objective_command": 13,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 7,
+      "counts": [
+        1,
+        6
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 14,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3575,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 1,
+      "index": 7,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 332,
+      "objective_command": 11,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 4,
+      "counts": [
+        2,
+        2
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 121,
+      "terrain_slots": 0,
+      "terrain_sprite_slots": 14,
+      "terrain_sprite_count": 121,
+      "checkpoint_bytes": 6923,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 0,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 310,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 16,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3712,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 0,
+      "variant": 1,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 310,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 16,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3712,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 0,
+      "variant": 2,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 310,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 16,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3712,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 0,
+      "variant": 3,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 310,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 16,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3712,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 1,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 311,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3577,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 1,
+      "variant": 1,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 311,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3577,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 1,
+      "variant": 2,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 311,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3577,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 1,
+      "variant": 3,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 311,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 11,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3577,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 2,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 312,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 17,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3765,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 2,
+      "variant": 1,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 312,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 17,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3765,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 2,
+      "variant": 2,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 312,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 17,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3765,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 2,
+      "variant": 3,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 312,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 49,
+      "terrain_slots": 17,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3765,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 3,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 313,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3657,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 3,
+      "variant": 1,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 313,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3657,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 3,
+      "variant": 2,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 313,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3657,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 3,
+      "variant": 3,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 313,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 14,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3657,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 4,
+      "variant": 0,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 314,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 12,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3629,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 4,
+      "variant": 1,
+      "player_factions": [
+        0,
+        1
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 314,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 12,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3629,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 4,
+      "variant": 2,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        1
+      ],
+      "resource": 314,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 12,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3629,
+      "cold_resume_equal": true
+    },
+    {
+      "group": 2,
+      "index": 4,
+      "variant": 3,
+      "player_factions": [
+        1,
+        0
+      ],
+      "player_controllers": [
+        0,
+        0
+      ],
+      "resource": 314,
+      "objective_command": 15,
+      "native_ticks": 3,
+      "world_presentations": 1,
+      "unique_units": 8,
+      "counts": [
+        4,
+        4
+      ],
+      "funds": [
+        0,
+        0
+      ],
+      "rng_draws": 44,
+      "terrain_slots": 12,
+      "terrain_sprite_slots": 0,
+      "terrain_sprite_count": 0,
+      "checkpoint_bytes": 3629,
+      "cold_resume_equal": true
+    }
+  ],
+  "verified_entries": 45,
+  "applied_world_operations": 540,
+  "empty_initial_rosters": 6,
+  "checkpoint_round_trips": 45,
+  "unique_mission_scripts": 30,
+  "arena_variants_per_script": 4
+}

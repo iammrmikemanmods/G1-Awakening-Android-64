@@ -1,0 +1,395 @@
+{
+  "schema": 1,
+  "scope": "Independent serialized Node-first lookup of raw fallback camera names; not runtime choice or GPU output",
+  "reference_parser_sha256": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+  "name_helper_sha256": "7917b756471c4a8d47dfcd0bf51f8a8ace59f6538f7479e6f5f6dbb7f820eb02",
+  "resources": [
+    {
+      "resource_id": 486,
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "world": 390,
+      "fallbacks": [
+        {
+          "name": "cam_auto_takehit",
+          "user_id": 60006714,
+          "object": 243,
+          "type": 5,
+          "parent": 249,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_auto_car",
+          "user_id": 857178138,
+          "object": 91,
+          "type": 5,
+          "parent": 96,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_auto_shoot",
+          "user_id": 895209355,
+          "object": 308,
+          "type": 5,
+          "parent": 314,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_auto_death",
+          "user_id": 1052582208,
+          "object": 179,
+          "type": 5,
+          "parent": 184,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_decpt_takehit",
+          "user_id": 1026220244,
+          "object": 188,
+          "type": 5,
+          "parent": 194,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_decpt_shoot",
+          "user_id": 880863019,
+          "object": 229,
+          "type": 5,
+          "parent": 235,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_decpt_death",
+          "user_id": 846658694,
+          "object": 351,
+          "type": 5,
+          "parent": 356,
+          "grandparent": 388
+        },
+        {
+          "name": "Stat_Camera",
+          "user_id": 668428819,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "d_Stat_Camera",
+          "user_id": 264163874,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "cam_rot",
+          "user_id": 1062556534,
+          "object": 59,
+          "type": 5,
+          "parent": 65,
+          "grandparent": 70
+        },
+        {
+          "name": "cam_auto_setup",
+          "user_id": 1047357845,
+          "object": 215,
+          "type": 5,
+          "parent": 220,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_decpt_setup",
+          "user_id": 379293131,
+          "object": 5,
+          "type": 5,
+          "parent": 260,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_auto_zoom",
+          "user_id": 922398172,
+          "object": 264,
+          "type": 5,
+          "parent": 269,
+          "grandparent": 388
+        },
+        {
+          "name": "cam_decpt_zoom",
+          "user_id": 485644046,
+          "object": 100,
+          "type": 5,
+          "parent": 105,
+          "grandparent": 388
+        }
+      ]
+    },
+    {
+      "resource_id": 534,
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "world": 208,
+      "fallbacks": [
+        {
+          "name": "cam_auto_takehit",
+          "user_id": 60006714,
+          "object": 129,
+          "type": 5,
+          "parent": 135,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_auto_car",
+          "user_id": 857178138,
+          "object": 51,
+          "type": 5,
+          "parent": 56,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_auto_shoot",
+          "user_id": 895209355,
+          "object": 161,
+          "type": 5,
+          "parent": 167,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_auto_death",
+          "user_id": 1052582208,
+          "object": 123,
+          "type": 5,
+          "parent": 128,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_decpt_takehit",
+          "user_id": 1026220244,
+          "object": 106,
+          "type": 5,
+          "parent": 112,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_decpt_shoot",
+          "user_id": 880863019,
+          "object": 136,
+          "type": 5,
+          "parent": 142,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_decpt_death",
+          "user_id": 846658694,
+          "object": 201,
+          "type": 5,
+          "parent": 206,
+          "grandparent": 207
+        },
+        {
+          "name": "Stat_Camera",
+          "user_id": 668428819,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "d_Stat_Camera",
+          "user_id": 264163874,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "cam_rot",
+          "user_id": 1062556534,
+          "object": 27,
+          "type": 5,
+          "parent": 33,
+          "grandparent": 38
+        },
+        {
+          "name": "cam_auto_setup",
+          "user_id": 1047357845,
+          "object": 117,
+          "type": 5,
+          "parent": 122,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_decpt_setup",
+          "user_id": 379293131,
+          "object": 5,
+          "type": 5,
+          "parent": 181,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_auto_zoom",
+          "user_id": 922398172,
+          "object": 155,
+          "type": 5,
+          "parent": 160,
+          "grandparent": 207
+        },
+        {
+          "name": "cam_decpt_zoom",
+          "user_id": 485644046,
+          "object": 42,
+          "type": 5,
+          "parent": 47,
+          "grandparent": 207
+        }
+      ]
+    },
+    {
+      "resource_id": 1212,
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "world": 211,
+      "fallbacks": [
+        {
+          "name": "cam_auto_takehit",
+          "user_id": 60006714,
+          "object": 133,
+          "type": 5,
+          "parent": 139,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_auto_car",
+          "user_id": 857178138,
+          "object": 50,
+          "type": 5,
+          "parent": 55,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_auto_shoot",
+          "user_id": 895209355,
+          "object": 168,
+          "type": 5,
+          "parent": 174,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_auto_death",
+          "user_id": 1052582208,
+          "object": 117,
+          "type": 5,
+          "parent": 122,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_decpt_takehit",
+          "user_id": 1026220244,
+          "object": 110,
+          "type": 5,
+          "parent": 116,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_decpt_shoot",
+          "user_id": 880863019,
+          "object": 146,
+          "type": 5,
+          "parent": 152,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_decpt_death",
+          "user_id": 846658694,
+          "object": 196,
+          "type": 5,
+          "parent": 201,
+          "grandparent": 209
+        },
+        {
+          "name": "Stat_Camera",
+          "user_id": 668428819,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "d_Stat_Camera",
+          "user_id": 264163874,
+          "object": null,
+          "type": null,
+          "parent": null,
+          "grandparent": null
+        },
+        {
+          "name": "cam_rot",
+          "user_id": 1062556534,
+          "object": 21,
+          "type": 5,
+          "parent": 27,
+          "grandparent": 32
+        },
+        {
+          "name": "cam_auto_setup",
+          "user_id": 1047357845,
+          "object": 126,
+          "type": 5,
+          "parent": 131,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_decpt_setup",
+          "user_id": 379293131,
+          "object": 5,
+          "type": 5,
+          "parent": 167,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_auto_zoom",
+          "user_id": 922398172,
+          "object": 156,
+          "type": 5,
+          "parent": 161,
+          "grandparent": 209
+        },
+        {
+          "name": "cam_decpt_zoom",
+          "user_id": 485644046,
+          "object": 59,
+          "type": 5,
+          "parent": 64,
+          "grandparent": 209
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "queries": 42,
+    "found_camera5": 36,
+    "missing": [
+      {
+        "resource_id": 486,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 486,
+        "name": "d_Stat_Camera"
+      },
+      {
+        "resource_id": 534,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 534,
+        "name": "d_Stat_Camera"
+      },
+      {
+        "resource_id": 1212,
+        "name": "Stat_Camera"
+      },
+      {
+        "resource_id": 1212,
+        "name": "d_Stat_Camera"
+      }
+    ]
+  }
+}

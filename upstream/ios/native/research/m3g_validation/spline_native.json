@@ -1,0 +1,27 @@
+{
+  "original_sequences": 19,
+  "original_samples": 290,
+  "prepared_scalar_comparisons": 546,
+  "sample_scalar_comparisons": 987,
+  "prepared_binary32_identical": 546,
+  "sample_binary32_identical": 987,
+  "maximum_host_math_error": 0,
+  "host_math_tolerance": 2e-06,
+  "native_contracts": 10,
+  "passed": true,
+  "schema": 1,
+  "scope": "Native SPLINE/SQUAD prepared curves and samples versus unchanged-original synthetic reference",
+  "original_record_sha256": "9a94353901dce867c7c9c818ab5996d6cffd5519bfb01625372f93cc35436991",
+  "native_test_sha256": "c7c7d6e00bacf173fb23bf54fa5bd4f2bde3bb2191cdfef6413d2a086a07807e",
+  "host_math_boundary": "Original and native use local float32 host sqrtf/sinf/cosf; no historical iOS libSystem bit-identity claim",
+  "sources": {
+    "M3GAnimation.cpp": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10",
+    "include/g1/M3GAnimation.hpp": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b",
+    "m3g_spline_test.cpp": "1d8fcada1ba7bedd32a9babf97557a34be3108909dc22bbdcace3c98fd904ad9",
+    "m3g_spline_fixture.hpp": "8a840fd1429e367a14bf3cd6f13272e8e6139ee048229094d90a06f1e680dd5f",
+    "spline_fixture.py": "e20addacc85428ce5c55bf8b4c030c09e7967bc5ea0f2f38a24055eb78fb617d"
+  },
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "device_execution": false
+}

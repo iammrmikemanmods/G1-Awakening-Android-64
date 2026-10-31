@@ -1,0 +1,72 @@
+{
+  "scope": "Native rigid M3G sampling versus original sampler; independent posed hierarchy; new sampler source compiled from isolated build_overrides, live frozen files unchanged",
+  "model_sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+  "original_record_sha256": "7601b6095296cdef7c323cc90bd6864a3c820404cde54977ff11b3e0c8a94a60",
+  "original_instruction_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "sequences": 28,
+  "sample_times": 1982,
+  "sample_scalar_comparisons": 7325,
+  "sample_binary32_identical": 7325,
+  "maximum_sample_error": 0,
+  "sample_tolerance": 2e-06,
+  "pose_times": 6,
+  "pose_matrix_scalar_comparisons": 5088,
+  "controller_mapping_original_cases": 12,
+  "controller_mapping_exact_binary32": true,
+  "weighted_original_cases": 24,
+  "weighted_scalar_comparisons": 84,
+  "weighted_exact_binary32": true,
+  "maximum_pose_matrix_error": 1.1712109628803091e-06,
+  "pose_matrix_tolerance": 2e-05,
+  "original_math_boundary": "host libm sqrtf/sinf with float arguments/results; no historical libSystem bit-identity claim",
+  "local_libgcc_data_rebases": [
+    {
+      "offset": 36872,
+      "target": 36116
+    },
+    {
+      "offset": 36876,
+      "target": 36372
+    }
+  ],
+  "native_contract_output": "43 native M3G animation contracts passed",
+  "native_probe_sha256": "122c5f89fcf6370051fd75205b729072fd08174e960ed58f9b92c5e03c84730e",
+  "native_test_sha256": "a89a9585a07170c6eb9d9152c84dcab6c7feb64cb5704e45ae6100d75fe9e7a4",
+  "native_output_sha256": "8683039b14528abcb930d8b3ef6188ae17ffbf40b96901473abf3e7b2d0b8d19",
+  "sources": {
+    "native/include/g1/M3GAnimation.hpp": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b",
+    "native/src/M3GAnimation.cpp": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10",
+    "native/tests/m3g_animation_test.cpp": "c4d90a282cd3fa09fb04d077607f2563cf8969579384ba289284d59281e70246",
+    "native/tests/m3g_animation_fixture.hpp": "1a9b5bcbfcc70a68c58e244702678c265c24177589b0079938674abfaebfa191",
+    "native/tools/m3g_animation_probe.cpp": "331e2111d57ad3a04a1f1f02b1a13857c0a8d940c25a86774b1fed3060a8f8af",
+    "native/include/g1/M3GScene.hpp": "02f25cde344a5661cd1fc00dace1626840ef80a16af21f0ef93fb11988bc5ca5",
+    "native/src/M3GScene.cpp": "da9eeb3764b0a0e31509c71a8085302548f5f761d08a567138b98fe1f970898e",
+    "native/src/M3G.cpp": "5a80cf51465903ec076bd18173235b801b90fe61217cb67d410060d6f17ba9ff",
+    "analysis_tools/m3g/animation_oracle.py": "9aac208b97f7f5654d5745f806fea80d8e7056cb1a0ed38746137452058ef97f",
+    "analysis_tools/m3g/animation_validate.py": "13908b36de89fdb4530c379561aa8e23c368a6c366e87e0b399b2b6c8edc0d90",
+    "analysis_tools/m3g/reference.py": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+    "analysis_tools/m3g/validate.py": "5bae2c249babf6c3b833c63261fe65068c41fb5ec26e1ff90bb62fe049052cee",
+    "analysis_tools/sprite/render_oracle.py": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c"
+  },
+  "passed": true,
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "battle_clip_selection": false,
+  "battle_choreography": false,
+  "historical_ios_libm_bit_identity": false,
+  "isolated_build_overrides": {
+    "native/include/g1/M3GAnimation.hpp": {
+      "path": "g1_port/research/native_m3g/sampler_v2/include/g1/M3GAnimation.hpp",
+      "sha256": "6bb223ef2effeba7ec7bcfd07b68f836f647cae35dbd2f0d63d2aa06708cab3b"
+    },
+    "native/src/M3GAnimation.cpp": {
+      "path": "g1_port/research/native_m3g/sampler_v2/M3GAnimation.cpp",
+      "sha256": "669bb1ea74571189b7d0d005cbe5f84c3c6bcbb6fbfa90c3dd48946171f44f10"
+    },
+    "native/tests/m3g_animation_test.cpp": {
+      "path": "g1_port/research/native_m3g/sampler_v2/m3g_animation_test.cpp",
+      "sha256": "c4d90a282cd3fa09fb04d077607f2563cf8969579384ba289284d59281e70246"
+    }
+  }
+}

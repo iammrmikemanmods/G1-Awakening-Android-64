@@ -1,0 +1,77 @@
+name: Android source validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core-tests:
+    name: Authoritative iOS core tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Verify authoritative source provenance
+        run: python3 tools/verify_port.py
+      - name: Compile portable core and tests
+        run: |
+          cmake -S upstream/ios/native -B build/host -G Ninja -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=ON
+          cmake --build build/host --parallel 2
+      - name: Run source contract tests
+        run: ctest --test-dir build/host --output-on-failure
+
+  build:
+    name: Android 16 / ${{ matrix.abi }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        abi: [arm64-v8a, x86_64]
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK17
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Verify Gradle wrapper
+        shell: bash
+        run: |
+          echo '2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046  gradle/wrapper/gradle-wrapper.jar' | sha256sum --check
+
+      - name: Install pinned Android toolchain
+        env:
+          G1_ACCEPT_ANDROID_LICENSES: '1'
+        run: bash tools/bootstrap-android.sh
+
+      # Game resources are imported locally from the authoritative iOS package.
+      # This public source workflow never uploads an APK with missing resources.
+      - name: Compile native library and Java host, then lint
+        run: ./gradlew --no-daemon :app:externalNativeBuildDebug :app:compileDebugJavaWithJavac :app:lintDebug -Pg1Abis=${{ matrix.abi }}
+
+      - name: Upload source validation reports
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: G1-Awakening-Android16-source-validation-${{ matrix.abi }}
+          path: |
+            app/build/reports/lint-results-debug.html
+            app/build/reports/lint-results-debug.xml
+          if-no-files-found: error
+          retention-days: 30

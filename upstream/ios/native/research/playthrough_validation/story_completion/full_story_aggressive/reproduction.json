@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "command": [
+    "g1_port/research/playthrough_strategy_followup/pilot_ranged",
+    "--archive",
+    "g1_port/research/assets/iphone.big",
+    "--terrain-tables",
+    "g1_port/research/native_terrain/terrain_visual_tables.bin",
+    "--output",
+    "g1_port/research/playthrough_strategy_followup/full_story_aggressive",
+    "--strategy",
+    "native-planner-tactical",
+    "--followup-policy",
+    "aggressive",
+    "--start-mission",
+    "0",
+    "--max-seconds",
+    "120",
+    "--max-human-turns",
+    "150"
+  ],
+  "cwd": "/workspace/scratch/cba553aafa20",
+  "inputs": {
+    "pilot": {
+      "path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy_followup/pilot_ranged",
+      "bytes": 972864,
+      "sha256": "60bdc1a462c46bbda25b2f2b9e8d705337c611e128bab4e23087edfeeef80cfe"
+    },
+    "archive": {
+      "path": "/workspace/scratch/cba553aafa20/g1_port/research/assets/iphone.big",
+      "bytes": 6994213,
+      "sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4"
+    },
+    "terrain_tables": {
+      "path": "/workspace/scratch/cba553aafa20/g1_port/research/native_terrain/terrain_visual_tables.bin",
+      "bytes": 480,
+      "sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8"
+    }
+  },
+  "returncode": 0,
+  "stdout": "Outcome native_campaign_ending; native handoffs 17; ticks 17422; human moves 373; attacks 199; captures 23\n",
+  "stderr": "",
+  "native_gameplay_core_used": true,
+  "original_executable_executed": false,
+  "gameplay_state_forced": false,
+  "presentation_feedback": "synthetic; no rendered/GPU/audio/device validation",
+  "result": {
+    "path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy_followup/full_story_aggressive/result.json",
+    "bytes": 5167,
+    "sha256": "8a826116d3741373f46576503cd57e9b86948107711a7ab241620380a2eb2062"
+  },
+  "events": {
+    "path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy_followup/full_story_aggressive/events.jsonl",
+    "bytes": 840169,
+    "sha256": "fa43728c1bed9ce58f0eaad2c1c28d4db7b434019d1d26956403bd5d6b72ec38"
+  },
+  "profile_file": {
+    "path": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+    "bytes": 330,
+    "sha256": "bc7f1b4d472ed8f41937d563663ebd273f91d597d8b7e0f605395c529efd6a56"
+  },
+  "observed": {
+    "outcome": "native_campaign_ending",
+    "error": "",
+    "continuous_story_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "profile_file_writes": 17,
+    "checkpoint_file_writes": 0,
+    "in_memory_checkpoint_matches": 797,
+    "full_story_headless_completed": true,
+    "full_device_playthrough_verified": false,
+    "first14_handoffs_identical_to_frozen_baseline": true,
+    "search_budget_events": 0,
+    "rejected_trial_plan_actions": 3
+  }
+}

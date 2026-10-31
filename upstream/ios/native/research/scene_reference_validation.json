@@ -1,0 +1,410 @@
+{
+  "schema": 1,
+  "kind": "native C++ scene visual integration using a CPU reference",
+  "created_utc": "2026-10-26T05:22:58.826991+00:00",
+  "product_guest_instruction_execution": false,
+  "native_scene_api_executed": true,
+  "metal_execution": false,
+  "ios_or_device_test": false,
+  "native_arm64_build_claimed_by_this_check": false,
+  "camera": "Exact NativeApp inspection-camera expressions; no original camera parity claim",
+  "mission_resource_id": 315,
+  "grid_resource_id": 268,
+  "grid_size": [
+    15,
+    14
+  ],
+  "style": 0,
+  "terrain_quad_count": 255,
+  "campaign_cursor": 9,
+  "animation_elapsed_ms": 0,
+  "source_sha256": {
+    "native/tools/scene_export.cpp": "0363e4e69deea5b25131dd326ea9406af4841f92ed8ed79ff50c1c20efadb053",
+    "analysis_tools/scene_reference/render.py": "9b270ad9f03aa307a17cc0ec3f5fe3a15d32d9691752f45c6954fbea231f0af3",
+    "native/platform/apple/NativeApp.mm": "9c335dcb03760152a591777b9d5c4fa8a403a724f77ec4f9fa24786ae83ff53b",
+    "native/platform/apple/MetalRenderer.mm": "3dc396a183761c9420392144f4e6d661ff64d03741bf5006059523dc59d9e1df",
+    "native/platform/apple/MetalRenderer.hpp": "4cd575225d20c1d456188b8fb2c00d293f5dccf9ad4550f3a1f2d7f6f37eae81",
+    "native/src/Archive.cpp": "a19a7576c9b9e793a5e2171d0096b7aba68e3951d28f4bb794494466905f8d87",
+    "native/src/Mission.cpp": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+    "native/src/Movement.cpp": "20de5fe30ac8b69803b149bdc0a1a019a480c70d412f1bd0e474e6b1f70dbf04",
+    "native/src/Atlas.cpp": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+    "native/src/Image.cpp": "a3f4d8e18f82699138ef6948bbd72e7402c98e2e4973c6cba5096cb220564e4f",
+    "native/src/SpriteGeometry.cpp": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+    "native/src/SpriteAnimation.cpp": "af666ad4afd0e728ec1930020fab1ec36496038c7636635f34271764ed6c060f",
+    "native/src/SpritePlacement.cpp": "7615da12e273eb5bf5c6cb18707655b73b547c2dce0f7306f074619a37bb7ed0",
+    "native/src/Terrain.cpp": "2baa7dbe5503e90379aa5950f5f5898a072a0e53cbec560612c7953c4582ef43",
+    "native/src/World.cpp": "4c8501b4712a69cdde6920d7fcc981d6336149f18197ad6fdf059f6e09f8a064",
+    "native/src/Scene.cpp": "20205229fbcc8ad80c8bf306f93f2006696d451687d48335771b4797f6140705",
+    "native/src/InitialPresentation.cpp": "bd2a16f05c1ce3b3eabbb92c2e433c9a0b68937cf7dd9eec3c82cf2c4250137f",
+    "native/third_party/lodepng/lodepng.cpp": "6aec876971ec860527859458d3095220fc5ee1258ec37eb59e1e7dd9cf136a81",
+    "native/third_party/lodepng/lodepng.h": "9a1fca0238c38333bdc8545336961b73fd0b76957bbacf033186991be9d7cf85",
+    "native/include/g1/Archive.hpp": "a53b2b30f456bad82d644996c92c5f3d630df1b6e8778b4be446765be41657f5",
+    "native/include/g1/Atlas.hpp": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+    "native/include/g1/Image.hpp": "b7a19e7f2473190d19fbc46380a5cfd288e5d2f08db9b1a41983a63627e79804",
+    "native/include/g1/InitialPresentation.hpp": "d93dfa36787ea2928c261372613b8a0b843aab62ad02f9f1bacb2021cfe90bf0",
+    "native/include/g1/Mission.hpp": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+    "native/include/g1/Movement.hpp": "3d6ae42658f6be7a10685e5153ec168b3f32d71b76db2468499fa832ce45f438",
+    "native/include/g1/Scene.hpp": "26dda9945692d72f663909b427d745f93bd5c9e61cf72b6cbc22d69462c968d4",
+    "native/include/g1/SpriteAnimation.hpp": "d73a3c7fe2f4075d8cc007acaa7c0eef0543893949cb3e8225eadaddc6eb140d",
+    "native/include/g1/SpriteGeometry.hpp": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac",
+    "native/include/g1/SpritePlacement.hpp": "be73567877ec77644328abcbe73629526b0e1f12d4d1753d687c218083eb555d",
+    "native/include/g1/Terrain.hpp": "23f270aa8360b59674c44925afbcdae25d146aeea81099db69143ca8c431bcc6",
+    "native/include/g1/World.hpp": "b7fd4bb861ff3419989e55db5ddb31015f3a7888178c62c0a905f72b09f6d210"
+  },
+  "input_sha256": {
+    "iphone.big": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "terrain_tables.bin": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8"
+  },
+  "exporter_binary": {
+    "path": "research/scene_reference/bin/scene_export",
+    "sha256": "e2ef7052ed9c0a7c62c011fef4b0f86d67a45956d8679a539a652dd0fdfbadb5",
+    "keep_out_of_git": true
+  },
+  "environment": {
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0"
+  },
+  "compile_result": "passed C++17 -O2 -Wall -Wextra -Werror -pedantic; native source only, linked zlib and vendored lodepng",
+  "results": [
+    {
+      "report_path": "research/scene_reference/render_896x414/render_report.json",
+      "report_sha256": "fc65c63780f8765fc8e5cd6734094859b4be6ff0ee1fe776ca0a01d6491b5bfc",
+      "kind": "CPU reference of new native C++ scene, not native Metal screenshot",
+      "device_or_metal_execution": false,
+      "original_camera_parity": false,
+      "original_gameplay_execution": false,
+      "camera": "NativeApp inspection camera, not recovered original camera",
+      "viewport_pixels": [
+        896,
+        414
+      ],
+      "animation_elapsed_ms": 0,
+      "scene_json_sha256": "ce4de35ea56d6839f80126bd933cbec663ec8159148e4c4ed11cbb7ed6fb017c",
+      "renderer_source_sha256": "9b270ad9f03aa307a17cc0ec3f5fe3a15d32d9691752f45c6954fbea231f0af3",
+      "scene_png_sha256": "b93b557d058ce40c631ef35d881ab86cba1143d5c0f5e51c86ec7c30ecefd1d9",
+      "terrain_png_sha256": "999e2250a9832a47ac0c468c3ead3189bef6e47029955ca2f0e8ebd6516c0187",
+      "native_textures": [
+        {
+          "resource_id": 693,
+          "width": 512,
+          "height": 256,
+          "file": "texture_693.rgba",
+          "format": "top-to-bottom straight RGBA8 from native decode_png",
+          "sha256": "2b452a050ce2f450291804ea90b1074b91d4eb4e980c5ca6542b67dfe778e056"
+        },
+        {
+          "resource_id": 961,
+          "width": 512,
+          "height": 512,
+          "file": "texture_961.rgba",
+          "format": "top-to-bottom straight RGBA8 from native decode_png",
+          "sha256": "548b98dcce04f941b8644ab376b387ef40f76148c5037577324ca1b97e750544"
+        }
+      ],
+      "draws": [
+        {
+          "kind": "terrain",
+          "texture": 693,
+          "triangles": 510,
+          "degenerate_triangles": 0,
+          "covered_fragments": 161833,
+          "alpha_surviving_fragments": 161833,
+          "depth_passing_fragments": 161833,
+          "screen_bounds_xyxy": [
+            218.69079993600002,
+            55.663640118000004,
+            677.309200064,
+            379.95582924900003
+          ],
+          "clip_depth_range": [
+            0.484160841,
+            0.515839219
+          ],
+          "vertices_inside_frustum": 1530,
+          "vertices_total": 1530,
+          "unique_alpha_candidate_pixels": 148392,
+          "unique_depth_passing_pixels": 148392,
+          "pixels_changed_at_least_half_8bit_step": 148392,
+          "final_pixels_with_draw_as_last_contributor": 147575,
+          "final_visible_pixel_bounds_xyxy": [
+            219,
+            56,
+            677,
+            380
+          ]
+        },
+        {
+          "kind": "unit",
+          "texture": 961,
+          "unit_index": 0,
+          "type": 11,
+          "tile": [
+            1,
+            2
+          ],
+          "descriptor_id": 868,
+          "animation": 0,
+          "frame": 0,
+          "triangles": 16,
+          "degenerate_triangles": 0,
+          "covered_fragments": 726,
+          "alpha_surviving_fragments": 571,
+          "depth_passing_fragments": 530,
+          "screen_bounds_xyxy": [
+            250.18260198399997,
+            92.561195745,
+            275.40661030399997,
+            120.078300249
+          ],
+          "clip_depth_range": [
+            0.509183943,
+            0.509183943
+          ],
+          "vertices_inside_frustum": 48,
+          "vertices_total": 48,
+          "unique_alpha_candidate_pixels": 428,
+          "unique_depth_passing_pixels": 417,
+          "pixels_changed_at_least_half_8bit_step": 416,
+          "final_pixels_with_draw_as_last_contributor": 417,
+          "final_visible_pixel_bounds_xyxy": [
+            250,
+            93,
+            275,
+            119
+          ]
+        },
+        {
+          "kind": "unit",
+          "texture": 961,
+          "unit_index": 1,
+          "type": 19,
+          "tile": [
+            4,
+            7
+          ],
+          "descriptor_id": 517,
+          "animation": 0,
+          "frame": 0,
+          "triangles": 16,
+          "degenerate_triangles": 0,
+          "covered_fragments": 673,
+          "alpha_surviving_fragments": 546,
+          "depth_passing_fragments": 456,
+          "screen_bounds_xyxy": [
+            346.492469568,
+            200.6585983251,
+            367.130298752,
+            228.17570276700002
+          ],
+          "clip_depth_range": [
+            0.497870207,
+            0.497870207
+          ],
+          "vertices_inside_frustum": 48,
+          "vertices_total": 48,
+          "unique_alpha_candidate_pixels": 411,
+          "unique_depth_passing_pixels": 400,
+          "pixels_changed_at_least_half_8bit_step": 399,
+          "final_pixels_with_draw_as_last_contributor": 400,
+          "final_visible_pixel_bounds_xyxy": [
+            347,
+            201,
+            367,
+            227
+          ]
+        }
+      ],
+      "limits": [
+        "Inspection camera, not recovered original playable camera.",
+        "NumPy software rasterization; not Metal shader compilation, GPU execution, or XR evidence.",
+        "Pixel-edge/subpixel/depth/texture arithmetic may differ from hardware precision and rounding.",
+        "Initial animation frame only; no gameplay, timing, UIKit controls, or display performance evaluated.",
+        "Known native terrain omissions (including outside-map padding) remain unchanged."
+      ]
+    },
+    {
+      "report_path": "research/scene_reference/render_1792x828/render_report.json",
+      "report_sha256": "aa0cc677e31b16872022b6cf3ed0239d80f8044c30bb1b3f2ffd11ddbf7da2a1",
+      "kind": "CPU reference of new native C++ scene, not native Metal screenshot",
+      "device_or_metal_execution": false,
+      "original_camera_parity": false,
+      "original_gameplay_execution": false,
+      "camera": "NativeApp inspection camera, not recovered original camera",
+      "viewport_pixels": [
+        1792,
+        828
+      ],
+      "animation_elapsed_ms": 0,
+      "scene_json_sha256": "92954e0e7c88b3b86fb38a8b5cf028faa9b8db4d14374ef5b951bf384e4882ac",
+      "renderer_source_sha256": "9b270ad9f03aa307a17cc0ec3f5fe3a15d32d9691752f45c6954fbea231f0af3",
+      "scene_png_sha256": "d773485b831bb870e3c2e3148c23c084512107c1f45f75a8f6e8c44930ac5118",
+      "terrain_png_sha256": "53a5c4a7c491900dc9c939551a16adafe62e83f7775fb46c010bee6bbdb2a725",
+      "native_textures": [
+        {
+          "resource_id": 693,
+          "width": 512,
+          "height": 256,
+          "file": "texture_693.rgba",
+          "format": "top-to-bottom straight RGBA8 from native decode_png",
+          "sha256": "2b452a050ce2f450291804ea90b1074b91d4eb4e980c5ca6542b67dfe778e056"
+        },
+        {
+          "resource_id": 961,
+          "width": 512,
+          "height": 512,
+          "file": "texture_961.rgba",
+          "format": "top-to-bottom straight RGBA8 from native decode_png",
+          "sha256": "548b98dcce04f941b8644ab376b387ef40f76148c5037577324ca1b97e750544"
+        }
+      ],
+      "draws": [
+        {
+          "kind": "terrain",
+          "texture": 693,
+          "triangles": 510,
+          "degenerate_triangles": 0,
+          "covered_fragments": 649794,
+          "alpha_surviving_fragments": 649794,
+          "depth_passing_fragments": 649794,
+          "screen_bounds_xyxy": [
+            437.38159987200004,
+            111.32728023600001,
+            1354.618400128,
+            759.9116584980001
+          ],
+          "clip_depth_range": [
+            0.484160841,
+            0.515839219
+          ],
+          "vertices_inside_frustum": 1530,
+          "vertices_total": 1530,
+          "unique_alpha_candidate_pixels": 595782,
+          "unique_depth_passing_pixels": 595782,
+          "pixels_changed_at_least_half_8bit_step": 595782,
+          "final_pixels_with_draw_as_last_contributor": 592442,
+          "final_visible_pixel_bounds_xyxy": [
+            437,
+            111,
+            1355,
+            760
+          ]
+        },
+        {
+          "kind": "unit",
+          "texture": 961,
+          "unit_index": 0,
+          "type": 11,
+          "tile": [
+            1,
+            2
+          ],
+          "descriptor_id": 868,
+          "animation": 0,
+          "frame": 0,
+          "triangles": 16,
+          "degenerate_triangles": 0,
+          "covered_fragments": 3090,
+          "alpha_surviving_fragments": 2285,
+          "depth_passing_fragments": 2163,
+          "screen_bounds_xyxy": [
+            500.36520396799995,
+            185.12239149,
+            550.8132206079999,
+            240.156600498
+          ],
+          "clip_depth_range": [
+            0.509183943,
+            0.509183943
+          ],
+          "vertices_inside_frustum": 48,
+          "vertices_total": 48,
+          "unique_alpha_candidate_pixels": 1726,
+          "unique_depth_passing_pixels": 1706,
+          "pixels_changed_at_least_half_8bit_step": 1705,
+          "final_pixels_with_draw_as_last_contributor": 1706,
+          "final_visible_pixel_bounds_xyxy": [
+            501,
+            186,
+            550,
+            239
+          ]
+        },
+        {
+          "kind": "unit",
+          "texture": 961,
+          "unit_index": 1,
+          "type": 19,
+          "tile": [
+            4,
+            7
+          ],
+          "descriptor_id": 517,
+          "animation": 0,
+          "frame": 0,
+          "triangles": 16,
+          "degenerate_triangles": 0,
+          "covered_fragments": 2612,
+          "alpha_surviving_fragments": 2192,
+          "depth_passing_fragments": 1914,
+          "screen_bounds_xyxy": [
+            692.984939136,
+            401.3171966502,
+            734.260597504,
+            456.35140553400004
+          ],
+          "clip_depth_range": [
+            0.497870207,
+            0.497870207
+          ],
+          "vertices_inside_frustum": 48,
+          "vertices_total": 48,
+          "unique_alpha_candidate_pixels": 1655,
+          "unique_depth_passing_pixels": 1634,
+          "pixels_changed_at_least_half_8bit_step": 1633,
+          "final_pixels_with_draw_as_last_contributor": 1634,
+          "final_visible_pixel_bounds_xyxy": [
+            693,
+            402,
+            734,
+            455
+          ]
+        }
+      ],
+      "limits": [
+        "Inspection camera, not recovered original playable camera.",
+        "NumPy software rasterization; not Metal shader compilation, GPU execution, or XR evidence.",
+        "Pixel-edge/subpixel/depth/texture arithmetic may differ from hardware precision and rounding.",
+        "Initial animation frame only; no gameplay, timing, UIKit controls, or display performance evaluated.",
+        "Known native terrain omissions (including outside-map padding) remain unchanged."
+      ]
+    }
+  ],
+  "visual_review": {
+    "reviewer": "asset_audit",
+    "viewed_images": [
+      "research/scene_reference/render_896x414/cpu_reference_scene.png",
+      "research/scene_reference/render_1792x828/cpu_reference_scene.png"
+    ],
+    "both_initial_units_visible": true,
+    "all_geometry_vertices_inside_clip_volume": true,
+    "obvious_texture_flip_observed": false,
+    "observations": "Yellow type11 and purple type19 are upright and visibly assembled. Terrain road/bridge/shore/water imagery is coherent. No fully hidden or off-screen unit found. This is qualitative inspection, not image parity with original game output.",
+    "independent_review": {
+      "reviewer": "port_approaches",
+      "image": "research/scene_reference/render_896x414/cpu_reference_scene.png",
+      "observation": "Both robot sprites upright, coherent in part assembly, no obvious UV inversion or model-axis mismatch. Ground/bridge rectangles consistent. CPU approximation only."
+    }
+  },
+  "limitations": [
+    "Inspection camera, not recovered original playable camera.",
+    "NumPy software rasterization; not Metal shader compilation, GPU execution, or XR evidence.",
+    "Pixel-edge/subpixel/depth/texture arithmetic may differ from hardware precision and rounding.",
+    "Initial animation frame only; no gameplay, timing, UIKit controls, or display performance evaluated.",
+    "Known native terrain omissions (including outside-map padding) remain unchanged.",
+    "No real display refresh, sustained frame pacing, gameplay, animation progression, UIKit layout, or save/reload is tested.",
+    "The software renderer is a separate approximation of Metal state; a native GPU/device run is still required."
+  ],
+  "redistribution": "Only source and this metadata report are intended for Git; exported geometry, native RGBA textures, PNG previews, and executable remain local original-data-derived artifacts."
+}

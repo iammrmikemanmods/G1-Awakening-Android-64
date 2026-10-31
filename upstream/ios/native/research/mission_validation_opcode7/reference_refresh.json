@@ -1,0 +1,15 @@
+{
+  "canonical_decode_and_metadata_stream_records_unchanged": 30,
+  "original_instruction_count": 803,
+  "argument_word_count": 2800,
+  "new_python_three_group_case_passed": true,
+  "reference_before_sha256": "1ef8f33c6b929ca330136d9c80d960b2a5e04a72b0a6cde114291301da3d77c9",
+  "reference_after_sha256": "76b465dadb42c4a55c7b3d0bb5082a88ee8590ab207989ad1a8a76276b7df9d7",
+  "updated_inventory_sha256": "860d473eb5d644fac3e6b1460c8cb0e813ac27e75b34dd1b62679c4ff4e1f9cf",
+  "old_inventory_is_historical_unchanged": true,
+  "observed_group_counts": {
+    "0": 69,
+    "1": 4,
+    "2": 1
+  }
+}

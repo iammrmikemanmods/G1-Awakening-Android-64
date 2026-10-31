@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "native_original_cases": 869,
+  "scalar_comparisons": 20601,
+  "native_guard_checks": 14,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compile_command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic",
+    "-O2",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-I",
+    "g1_port/native/include",
+    "g1_port/native/src/UnitInteractions.cpp",
+    "g1_port/native/src/UnitSpawn.cpp",
+    "g1_port/native/src/UpgradeAction.cpp",
+    "g1_port/native/src/Combat.cpp",
+    "g1_port/native/src/World.cpp",
+    "g1_port/native/src/Movement.cpp",
+    "g1_port/native/src/MovementAction.cpp",
+    "g1_port/native/tests/unit_interactions_test.cpp",
+    "-Wl,--gc-sections",
+    "-o",
+    "g1_port/research/binary/native_unit_interactions/unit_interactions_test_direct"
+  ],
+  "test_command": [
+    "g1_port/research/binary/native_unit_interactions/unit_interactions_test_direct",
+    "g1_port/native/tests/unit_interactions_original_vectors.txt"
+  ],
+  "test_output": "869 unchanged-original unit interaction cases matched (20601 scalars); 14 native guards passed.",
+  "source_sha256": {
+    "native/src/UnitInteractions.cpp": "4de04ac71da7e2a0aff27c8b772b082786565d3fb7860f1233bfff8d217d2072",
+    "native/src/UnitSpawn.cpp": "1a6e77d6b1d57eaac69274d3fa76091b010c0412bf27ab1bb0c3ae44c18b64a4",
+    "native/src/UpgradeAction.cpp": "da24bd04630e36004be9166da967bfb50b3163ec83e474f791a2300e5c540b78",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+    "native/src/World.cpp": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+    "native/src/Movement.cpp": "0cac89782a82b521ea12845c400caedbb680790432de17f6d8fbd51acdd64f9f",
+    "native/src/MovementAction.cpp": "37e3d7cf8cd18262c7c808128fd5652851ab401350c9199f66079049bf86a073",
+    "native/tests/unit_interactions_test.cpp": "33247f55c55bcadae34f8089a3eb21fcc4c297aad4262311b875daa6341c057c"
+  },
+  "header_sha256": {
+    "native/include/g1/UnitInteractions.hpp": "17c078644175988bf8ded0cae22864f25dec20d26279cdc56d1c841de8fc74fb",
+    "native/include/g1/Combat.hpp": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+    "native/include/g1/MovementAction.hpp": "a96b7f918569dd8923955d02e462887eb2e6cf51bd35f9cee79cdc5f37783728",
+    "native/include/g1/World.hpp": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501"
+  },
+  "fixture_sha256": "12cadb6b1c3cd9bfcc5be7006ba4a306213e1d06a66a8b2d1b27028b112820ef",
+  "test_binary_sha256": "2df7e5f19ef773bc8b23c2d14c6c6946869149ab5fa471bbc182d1fab892b30c",
+  "apple_build_performed": false,
+  "device_test_performed": false,
+  "full_playthrough_performed": false
+}

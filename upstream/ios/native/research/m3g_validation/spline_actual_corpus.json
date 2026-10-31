@@ -1,0 +1,765 @@
+{
+  "schema": 1,
+  "scope": "Native prepared curves and six rigid-pose samples of verified actual assets; no GPU/device/original execution in this check",
+  "manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "prior_corpus_sha256": "5736641c02095a3f19fbff375d13548592754549cb64bca313b458f5eb6c0468",
+  "curve_probe_sha256": "4c1414d054482d68f33eae827cb65987e644fefaff572760cb78e2396c00e895",
+  "pose_probe_sha256": "122c5f89fcf6370051fd75205b729072fd08174e960ed58f9b92c5e03c84730e",
+  "resources": [
+    {
+      "resource_id": 486,
+      "role": "battle_scene",
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "curve_probe": {
+        "sequences": 31,
+        "samples": 293,
+        "scalars": 931,
+        "modes": {
+          "176": 10,
+          "177": 12,
+          "178": 8,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 421721094,
+      "pose_exit_code": 1,
+      "pose_output_sha256": "dc10d8e146a258b4fad457712f5377c680549226bbb26b47849f458b732974ad",
+      "pose_error": "ERROR: M3G Sprite3D is not implemented by the rigid mesh path"
+    },
+    {
+      "resource_id": 534,
+      "role": "battle_scene",
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "curve_probe": {
+        "sequences": 33,
+        "samples": 335,
+        "scalars": 973,
+        "modes": {
+          "176": 12,
+          "177": 12,
+          "178": 8,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 421721094,
+      "pose_exit_code": 1,
+      "pose_output_sha256": "2e9a4ee443c0255c75fe1c185e4e275b6b76aefcef1c61623614420d9108a58f",
+      "pose_error": "ERROR: active M3G property is outside rigid translation/orientation/scale"
+    },
+    {
+      "resource_id": 1212,
+      "role": "battle_scene",
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "curve_probe": {
+        "sequences": 32,
+        "samples": 300,
+        "scalars": 959,
+        "modes": {
+          "176": 10,
+          "177": 13,
+          "178": 8,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 421721094,
+      "pose_exit_code": 1,
+      "pose_output_sha256": "f44573201f890d1e4703db701c7adec047dbb6f9689b5384577f8cf351aa358f",
+      "pose_error": "ERROR: M3G Sprite3D is not implemented by the rigid mesh path"
+    },
+    {
+      "resource_id": 408,
+      "role": "ordinary_model",
+      "sha256": "d1ab89d6440df4fb09d23c20204160e4fb04cde2ca420a04c77cc37b0f0e43f4",
+      "curve_probe": {
+        "sequences": 28,
+        "samples": 3394,
+        "scalars": 12782,
+        "modes": {
+          "176": 10,
+          "177": 18
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "874e19c64a638810d9d25cf312dc8058a895eb1ebe380b43d3f881666c492e50",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ]
+    },
+    {
+      "resource_id": 699,
+      "role": "ordinary_model",
+      "sha256": "c1e9e5c2a3377f8387c21a3c8e9e346784be317cf64893f794c0ae11b5096a4a",
+      "curve_probe": {
+        "sequences": 30,
+        "samples": 3144,
+        "scalars": 11469,
+        "modes": {
+          "176": 13,
+          "177": 17
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "88561331811fdfbcd7fac28553e78f9d65475753ac340aaf7bcf5373e5647724",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ]
+    },
+    {
+      "resource_id": 444,
+      "role": "ordinary_model",
+      "sha256": "9375af627f75c6c535109b7de5e3fa63baabc8b81c1546bfb1b56c38c624389d",
+      "curve_probe": {
+        "sequences": 22,
+        "samples": 2614,
+        "scalars": 10058,
+        "modes": {
+          "176": 6,
+          "177": 16
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "70a9ec542d761958749400f4df15d07881e8ba6ac63201962133a0991f50ca1f",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        22,
+        22,
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "resource_id": 492,
+      "role": "ordinary_model",
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "curve_probe": {
+        "sequences": 31,
+        "samples": 2982,
+        "scalars": 11275,
+        "modes": {
+          "176": 10,
+          "177": 19,
+          "178": 1,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "b6495b8e7ec7c0b89a1a5317b60653f508b3dddf592cc4f889a1344ce3f12104",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "resource_id": 1300,
+      "role": "ordinary_model",
+      "sha256": "36a9d282691508099a3b18089a95d3248bdd26f9f9e3ef4683b2d2b91e1bffd3",
+      "curve_probe": {
+        "sequences": 21,
+        "samples": 3256,
+        "scalars": 12502,
+        "modes": {
+          "176": 7,
+          "177": 14
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "81e9ef979f0a9d43f71ffa30106d43a9590e12ce1ad1e4f4716740ea3800c32d",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21
+      ]
+    },
+    {
+      "resource_id": 561,
+      "role": "ordinary_model",
+      "sha256": "e988521887c88fac8e9b1365b2cf72bc7e0b54615acb4ba078e29177ab67061a",
+      "curve_probe": {
+        "sequences": 27,
+        "samples": 3029,
+        "scalars": 11480,
+        "modes": {
+          "176": 12,
+          "177": 15
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "4e7e67360aefc29f9a473c9adfc5a51f252469a124c092edc45974fe8137308f",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        27,
+        27,
+        27,
+        27,
+        27,
+        27
+      ]
+    },
+    {
+      "resource_id": 369,
+      "role": "ordinary_model",
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "curve_probe": {
+        "sequences": 19,
+        "samples": 1905,
+        "scalars": 7015,
+        "modes": {
+          "176": 7,
+          "177": 12
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "dd8420a74c22a0e3286e2d3817d68f45c7c2bdd94c7211670c8613c074dfd61b",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ]
+    },
+    {
+      "resource_id": 565,
+      "role": "ordinary_model",
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "curve_probe": {
+        "sequences": 19,
+        "samples": 1905,
+        "scalars": 7015,
+        "modes": {
+          "176": 7,
+          "177": 12
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "dd8420a74c22a0e3286e2d3817d68f45c7c2bdd94c7211670c8613c074dfd61b",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ]
+    },
+    {
+      "resource_id": 634,
+      "role": "ordinary_model",
+      "sha256": "296822e2c432065d55d26816f64b430790dd9fef77ff81d756f07e902c053891",
+      "curve_probe": {
+        "sequences": 39,
+        "samples": 3711,
+        "scalars": 14559,
+        "modes": {
+          "176": 6,
+          "177": 25,
+          "179": 8
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "b60375c498a3abab2414034b3022cf0ae6d283975d03aa47f455a10e2831f713",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    {
+      "resource_id": 395,
+      "role": "ordinary_model",
+      "sha256": "a5de57b4c365df44b5f38eff424495503cf5b9ea0ccaa53e37291887f05842de",
+      "curve_probe": {
+        "sequences": 19,
+        "samples": 1983,
+        "scalars": 7431,
+        "modes": {
+          "176": 7,
+          "177": 12
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "2f84189c2fcbc7701229f0ffd0d018551bcfd0e443fdf88e3420d3dd48e518fb",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ]
+    },
+    {
+      "resource_id": 475,
+      "role": "ordinary_model",
+      "sha256": "23ed6b7cd803e85a77524a0b6f7d1a9778ffaa059a4c9c5bea8ed8b3119f6be6",
+      "curve_probe": {
+        "sequences": 29,
+        "samples": 2799,
+        "scalars": 10555,
+        "modes": {
+          "176": 11,
+          "177": 18
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "cb4c4c39950d71932f5b098dd0a7ace7f1753b7463caa3155c751b2d8b872316",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ]
+    },
+    {
+      "resource_id": 867,
+      "role": "ordinary_model",
+      "sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+      "curve_probe": {
+        "sequences": 28,
+        "samples": 1982,
+        "scalars": 7325,
+        "modes": {
+          "176": 13,
+          "177": 15
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "8683039b14528abcb930d8b3ef6188ae17ffbf40b96901473abf3e7b2d0b8d19",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ]
+    },
+    {
+      "resource_id": 1039,
+      "role": "ordinary_model",
+      "sha256": "4b766628e4bc4041b4796239ceddb43a0b2a815168bcdfecffbb79957409d847",
+      "curve_probe": {
+        "sequences": 28,
+        "samples": 3934,
+        "scalars": 15392,
+        "modes": {
+          "176": 4,
+          "177": 24
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "3d40c2c3eae7d6dacae64f04e3acf26abf1ed92d16c4ba5e7965ba876bfcf116",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ]
+    },
+    {
+      "resource_id": 631,
+      "role": "ordinary_model",
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "curve_probe": {
+        "sequences": 31,
+        "samples": 2982,
+        "scalars": 11275,
+        "modes": {
+          "176": 10,
+          "177": 19,
+          "178": 1,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "b6495b8e7ec7c0b89a1a5317b60653f508b3dddf592cc4f889a1344ce3f12104",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "resource_id": 795,
+      "role": "ordinary_model",
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "curve_probe": {
+        "sequences": 31,
+        "samples": 2982,
+        "scalars": 11275,
+        "modes": {
+          "176": 10,
+          "177": 19,
+          "178": 1,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "b6495b8e7ec7c0b89a1a5317b60653f508b3dddf592cc4f889a1344ce3f12104",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "resource_id": 967,
+      "role": "ordinary_model",
+      "sha256": "4206ffcf73d060d8fadd970ea6c0a52499eac45149d63ed1e12cb459f6eada5e",
+      "curve_probe": {
+        "sequences": 27,
+        "samples": 3109,
+        "scalars": 11794,
+        "modes": {
+          "176": 10,
+          "177": 17
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "3914475af1c7a934c759a89a5206a90d1ef0ee9820d590f8fecded677c048b7a",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        27,
+        27,
+        27,
+        27,
+        27,
+        27
+      ]
+    },
+    {
+      "resource_id": 564,
+      "role": "ordinary_model",
+      "sha256": "3058249f64a07996af31225f7fb919195f392605ace79f7fa355f2f032b0b0ee",
+      "curve_probe": {
+        "sequences": 27,
+        "samples": 3475,
+        "scalars": 12900,
+        "modes": {
+          "176": 10,
+          "177": 17
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "46cf785af72947504d19cfebb281a74f1ad7bcd76604f6cfdb0330b55642f167",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        27,
+        27,
+        27,
+        27,
+        27,
+        27
+      ]
+    },
+    {
+      "resource_id": 1299,
+      "role": "ordinary_model",
+      "sha256": "69884b098563c3b2969e568856c383b2ea8db08581e70713196af90a514041a6",
+      "curve_probe": {
+        "sequences": 32,
+        "samples": 4318,
+        "scalars": 16224,
+        "modes": {
+          "176": 11,
+          "177": 21
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "1ca3cf3926ef241f74e5c9307ec6da3eeb238a0c0903c9c326e35ed774862b55",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "resource_id": 829,
+      "role": "ordinary_model",
+      "sha256": "7ad03a1bb11ddf050780aa358317bacc6e3974bb0562ab9a57c6920af6a30340",
+      "curve_probe": {
+        "sequences": 29,
+        "samples": 3035,
+        "scalars": 11544,
+        "modes": {
+          "176": 10,
+          "177": 19
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "4fa0079051c5ff3c083eb9c17d0a5dfefb5d800738acaa9a99aefd2d757645fa",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ]
+    },
+    {
+      "resource_id": 1201,
+      "role": "ordinary_model",
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "curve_probe": {
+        "sequences": 20,
+        "samples": 1795,
+        "scalars": 6619,
+        "modes": {
+          "176": 7,
+          "177": 13
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "dc6ce5466b41b2c726bb7a2f69976365a5cd4ed1277d5ef997151530b0c1044b",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "resource_id": 1070,
+      "role": "ordinary_model",
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "curve_probe": {
+        "sequences": 20,
+        "samples": 1795,
+        "scalars": 6619,
+        "modes": {
+          "176": 7,
+          "177": 13
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "dc6ce5466b41b2c726bb7a2f69976365a5cd4ed1277d5ef997151530b0c1044b",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "resource_id": 489,
+      "role": "ordinary_model",
+      "sha256": "59401dc0dd19b85e35007bb04525f9fbe9025e37d3d1af8000a9a44663759635",
+      "curve_probe": {
+        "sequences": 24,
+        "samples": 2144,
+        "scalars": 8143,
+        "modes": {
+          "176": 6,
+          "177": 17,
+          "179": 1
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "4bbc53e62ace034380ae95997917656da72b8a6999e3da131cd1cafbad993cac",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    {
+      "resource_id": 490,
+      "role": "ordinary_model",
+      "sha256": "a666b66126b5d273ecdacff46b7593f28075e2d16f237ec002230aae52df0b63",
+      "curve_probe": {
+        "sequences": 29,
+        "samples": 3503,
+        "scalars": 13507,
+        "modes": {
+          "176": 9,
+          "177": 20
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "b1249b3a25b481381020f999592f2566eca6fbc037bd0159122ac8144f5461be",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ]
+    },
+    {
+      "resource_id": 500,
+      "role": "special_model",
+      "sha256": "fd92d638254a75b5fef063e71d31be11569b84740e5795db3b03ae664efeb20b",
+      "curve_probe": {
+        "sequences": 32,
+        "samples": 4082,
+        "scalars": 15330,
+        "modes": {
+          "176": 11,
+          "177": 21
+        },
+        "passed": true
+      },
+      "pose_root_user_id": 838542512,
+      "pose_exit_code": 0,
+      "pose_output_sha256": "2c4d772a90774d8f2de9e02ccdf4aa6e19d81ba2cbe7a704e6730beee732fe18",
+      "pose_error": "",
+      "pose_samples": 6,
+      "pose_properties": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    }
+  ],
+  "summary": {
+    "resources": 27,
+    "curve_sequences": 738,
+    "curve_samples": 70786,
+    "curve_scalars": 266951,
+    "all_curves_finite": true,
+    "pose_probes_passed": 24,
+    "pose_probes_blocked": 3
+  },
+  "apple_compilation": false,
+  "gpu_execution": false,
+  "historical_ios_libm_bit_identity": false
+}

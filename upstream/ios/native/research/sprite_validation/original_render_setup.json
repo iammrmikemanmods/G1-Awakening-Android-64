@@ -1,0 +1,543 @@
+{
+  "scope": "Original sprite mesh setup and existing UV-array update with synthetic M3G API boundaries",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "libgcc_armv6_slice_sha256": "7c737e6bc896ae963833a8c2580fb5511948f3b120d6cccf73707b23a7cdbe7d",
+  "unicorn_version": "2.1.4",
+  "oracle_source_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "functions": [
+    "0x70eb4",
+    "0x71248",
+    "0x71884",
+    "0x72100",
+    "0x715d0"
+  ],
+  "math_helpers": "unchanged original ARMv6 libgcc instructions, import calls redirected to mapped exports",
+  "substitutions": [
+    "M3G object API recording / identity / ownership",
+    "engine singleton",
+    "allocation/free",
+    "unwind registration/unregistration",
+    "triangle-strip factory boundary"
+  ],
+  "results": [
+    {
+      "maximum_parts": 1,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4
+        ]
+      },
+      "calls": {
+        "___gtsf2vfp": 1,
+        "___nesf2vfp": 1,
+        "unwind_register": 3,
+        "retain": 3,
+        "___divsi3": 1,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 3,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 31,
+        "___modsi3": 3,
+        "___gtsf2vfp": 3,
+        "___nesf2vfp": 3,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 4,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 37,
+        "___modsi3": 4,
+        "___gtsf2vfp": 4,
+        "___nesf2vfp": 4,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 8,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 61,
+        "___modsi3": 8,
+        "___gtsf2vfp": 8,
+        "___nesf2vfp": 8,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 9,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 67,
+        "___modsi3": 9,
+        "___gtsf2vfp": 9,
+        "___nesf2vfp": 9,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 10,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 73,
+        "___modsi3": 10,
+        "___gtsf2vfp": 10,
+        "___nesf2vfp": 10,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 11,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 79,
+        "___modsi3": 11,
+        "___gtsf2vfp": 11,
+        "___nesf2vfp": 11,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 13,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 91,
+        "___modsi3": 13,
+        "___gtsf2vfp": 13,
+        "___nesf2vfp": 13,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 14,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 97,
+        "___modsi3": 14,
+        "___gtsf2vfp": 14,
+        "___nesf2vfp": 14,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    },
+    {
+      "maximum_parts": 16,
+      "scale_after_dummy_bits": 1065353216,
+      "position_scale_bits": 1000593162,
+      "position_bias_bits": [
+        0,
+        0,
+        0
+      ],
+      "uv_scale_bits": 931135488,
+      "uv_bias_bits": [
+        1056964608,
+        1056964608
+      ],
+      "frame_update_preserves_uv_transform": true,
+      "strips": {
+        "start_index": 0,
+        "lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "calls": {
+        "___divsi3": 109,
+        "___modsi3": 16,
+        "___gtsf2vfp": 16,
+        "___nesf2vfp": 16,
+        "unwind_register": 3,
+        "retain": 3,
+        "array_set": 3,
+        "___divsf3vfp": 2,
+        "set_positions": 1,
+        "___mulsf3vfp": 1,
+        "set_uv": 1,
+        "release": 6,
+        "free": 3,
+        "unwind_unregister": 3,
+        "get_uv": 1,
+        "engine_singleton": 2,
+        "identity": 1,
+        "allocate": 1,
+        "create_triangle_strips": 1
+      }
+    }
+  ],
+  "all_passed": true,
+  "gpu_rendered": false,
+  "device_tested": false,
+  "not_established": [
+    "M3G implementation/GPU pixel fidelity",
+    "world camera",
+    "animation time units"
+  ]
+}

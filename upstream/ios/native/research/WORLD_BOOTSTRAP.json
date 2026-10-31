@@ -1,0 +1,209 @@
+{
+  "kind": "native-first-campaign-world-bootstrap-checkpoint",
+  "implementation_language": "C++17",
+  "product_executes_original_binary": false,
+  "supported_product_input": "decoded FGIB resources only",
+  "scope": "verified initial gameplay fields and presentation requests through command8; stop before command9/opcode3",
+  "sources_sha256": {
+    "include/g1/World.hpp": "b7fd4bb861ff3419989e55db5ddb31015f3a7888178c62c0a905f72b09f6d210",
+    "src/World.cpp": "4c8501b4712a69cdde6920d7fcc981d6336149f18197ad6fdf059f6e09f8a064",
+    "tools/world_probe.cpp": "11d336a0211f90f35e54e9f0f1cd303b5017c0cc7c2d618957e454be87671820",
+    "tests/world_test.cpp": "07002542b4f132b318cee218843332141eadeaaedb68247c3d336d58beaee601",
+    "research/WORLD_BOOTSTRAP.md": "887125491e7490414777560fb7de4d06dd68dbccf6249d6d11af3230e9ccdd96",
+    "src/Mission.cpp": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+    "tests/mission_test.cpp": "a7c4df5a354d9775c1335a9da92381375b20be5d6d6c79e151fbfc8f5b66f21e",
+    "tests/generate_mission_reference.py": "3022d02273db82675701a12a2050ad92dab123a92076d40de9ed35c01071ae14",
+    "tests/mission_reference.json": "76b465dadb42c4a55c7b3d0bb5082a88ee8590ab207989ad1a8a76276b7df9d7",
+    "research/MISSION_DECODER.md": "6384bfa5ae662bff83963b8e959838aec25a188daa388a442ce61187f82be9cd"
+  },
+  "development_reference": {
+    "source_path": "research/binary/native_world/world_oracle.py",
+    "repository_destination": "analysis_tools/world/world_oracle.py",
+    "sha256": "2c1fc1e53e27c8c0a16a248b4d724f6225f9fdcba05456a9d840cc21d1bc6a79",
+    "can_copy_without_changes": true,
+    "arguments": [
+      "--binary",
+      "--archive",
+      "--native-probe",
+      "--movement-oracle",
+      "--unicorn-dir (optional if installed normally)",
+      "--output"
+    ],
+    "dependencies": [
+      "Python3",
+      "external Unicorn2.1.4",
+      "preserved movement/oracle.py"
+    ],
+    "requires_original_source_local_only": true,
+    "linked_into_native_product": false
+  },
+  "validation": {
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "compiler_target": "x86_64-linux-gnu",
+    "strict_flags": [
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "-Werror",
+      "-pedantic"
+    ],
+    "synthetic_world_contract_checks": 90,
+    "mission_contract_checks": 64,
+    "original_world_report": "world_validation/original_world_oracle.json",
+    "original_world_report_sha256": "ddfa2c079e2b156ea240dc8f53c3377210a94ae8715e04de09c3f74b91b4a0f8",
+    "independent_unit_definitions": 23,
+    "original_owner_function_executed_types": 23,
+    "native_initial_owners_and_spawns_matched": 2,
+    "original_map_style_cases_matched": 66,
+    "original_movement_integration_cases_matched": 2,
+    "cells_per_movement_case": 210,
+    "original_instructions_patched": 0,
+    "boundaries": {
+      "0xba288": "imported ___divsi3: signed integer division truncating toward zero",
+      "0x507fc": "map resource I/O: record resource tags and supply decoded lookup bytes"
+    },
+    "boundary_call_counts": {
+      "0xba288": 6,
+      "0x507fc": 66
+    },
+    "original_mission_streams_preserved": 30,
+    "mission_instructions": 803,
+    "mission_argument_words": 2800,
+    "mission_rejections": 855,
+    "all_listed_checks_passed": true,
+    "ios_arm64_build_in_this_local_validation": false,
+    "device_tested": false
+  },
+  "first_scene": {
+    "mission_resource_id": 315,
+    "grid_resource_id": 268,
+    "lookup_resource_id": 282,
+    "style": 0,
+    "width": 15,
+    "height": 14,
+    "command_count": 29,
+    "next_command_index": 9,
+    "next_opcode": 3,
+    "stop": "presentation_required",
+    "title_text_index": 208,
+    "flag_225": false,
+    "last_phase_opcode": 2,
+    "camera": {
+      "x": 1,
+      "y": 2,
+      "immediate": true
+    },
+    "available_types": [
+      11,
+      19
+    ],
+    "sites": [
+      {
+        "x": 5,
+        "y": 10,
+        "state": -1,
+        "coordinate_groups": [
+          [
+            [
+              5,
+              7
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "initial_units": [
+    {
+      "type": 11,
+      "faction": 0,
+      "owner": 0,
+      "form": 0,
+      "active": true,
+      "x": 1,
+      "y": 2,
+      "spent_budget": 0,
+      "exclusion_fields_40_44": [
+        0,
+        0
+      ]
+    },
+    {
+      "type": 19,
+      "faction": 1,
+      "owner": 1,
+      "form": 0,
+      "active": true,
+      "x": 4,
+      "y": 7,
+      "spent_budget": 0,
+      "exclusion_fields_40_44": [
+        0,
+        0
+      ]
+    }
+  ],
+  "movement_integration": [
+    {
+      "type": 11,
+      "cell_count": 210,
+      "reachable_cells_including_origin": 12,
+      "original_result_sha256": "5a1f73f0e3591afeb77a02aa0ccdf52670c095f675f2a0e794d79efd88c8193b",
+      "native_matches_original": true
+    },
+    {
+      "type": 19,
+      "cell_count": 210,
+      "reachable_cells_including_origin": 11,
+      "original_result_sha256": "72e764a88d3d8b53cb152de3add090169a01570505636da75f91fe876b84cae4",
+      "native_matches_original": true
+    }
+  ],
+  "source_evidence": {
+    "new_game_call": "0x305ba ->0x300f6(index0,group0,swap0)",
+    "player_factions": "0x51d0a..0x51d20",
+    "campaign_table": "0xcec18",
+    "map_table": "0xcec60",
+    "unit_table": "0xcecc0",
+    "unit_definitions": "0x5a522;0x5a7f0..0x5a982",
+    "mission_parser": "0x48378",
+    "opcode7_general_group_loop": "0x48698..0x487ac",
+    "logical_dispatch": "0x5608c..0x578fc",
+    "owner_assignment": "0x496e4",
+    "spawn": "0x5678e ->0x54016 ->0x4333a",
+    "spent_reset": "0x430fc",
+    "terrain_style_fragment": "0x56c90..0x56de2 with shared branches0x57898..0x578cc",
+    "dialogue_boundary": "0x56124..0x561a4 ->0x4dd12",
+    "site_coordinates": "map+0x3f0",
+    "site_groups": "map+0x400",
+    "movement_blocking_points_distinct": "map+0x420"
+  },
+  "unimplemented": [
+    "original staged resource/UI transitions",
+    "dialogue",
+    "title text localization/presentation",
+    "camera matrix/timing",
+    "random sentinel/faction/special unit-placement branches",
+    "mission objective execution",
+    "movement execution and route choice",
+    "turn progression",
+    "AI",
+    "combat",
+    "save/load",
+    "complete campaign",
+    "iPhone XR iOS17.5 validation",
+    "sustained60FPS/game-time validation"
+  ],
+  "analysis_tool_correction": {
+    "inspector_source": "research/assets/inspect_game_data.py",
+    "preserved_repository_tool": "analysis_tools/inspect_game_data.py",
+    "inspector_sha256": "e9a03e9a7bc7b851dea5c801e8a1b7748428d9f7bcf332b50baff96754ac9925",
+    "reference_refresh": "mission_validation_opcode7/reference_refresh.json",
+    "all30_canonical_decode_hashes_unchanged": true
+  }
+}

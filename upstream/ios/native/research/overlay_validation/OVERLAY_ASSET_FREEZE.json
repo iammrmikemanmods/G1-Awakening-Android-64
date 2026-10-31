@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "purpose": "Evidence-only version-1 support overlay descriptor/resource mapping follow-up",
+  "production_integration": false,
+  "publication_root": "publication",
+  "no_original_payloads": true,
+  "file_count": 7,
+  "total_bytes": 44365,
+  "files": [
+    {
+      "path": "analysis_tools/overlay/v1_descriptor_oracle.py",
+      "size": 16147,
+      "sha256": "ef26eb5b0e73d646519e51345e12e562a5be6c0f94e79578953d469c7d469153"
+    },
+    {
+      "path": "native/research/overlay_validation/README.md",
+      "size": 8518,
+      "sha256": "001efa824922ccc9053287b7afb80711bc36b35afccddb60f10c4174fc5367fc"
+    },
+    {
+      "path": "native/research/overlay_validation/include/g1/OverlayDescriptor.hpp",
+      "size": 1628,
+      "sha256": "687ae5b9a18ba8059a889cf874d8cb45b02dcf3018e41029e489d49f2b9b06b8"
+    },
+    {
+      "path": "native/research/overlay_validation/original_overlay_descriptor.json",
+      "size": 4855,
+      "sha256": "580eded1861a399186dea0b09544f9bbaf557c56d245713200a6efc45d310fba"
+    },
+    {
+      "path": "native/research/overlay_validation/resource_256_mapping.json",
+      "size": 5705,
+      "sha256": "c3f50cb493f7eae047868436c9d480feb2f81cb4649e909de6e1a2ef1abb03ae"
+    },
+    {
+      "path": "native/research/overlay_validation/src/OverlayDescriptor.cpp",
+      "size": 4973,
+      "sha256": "ada026d44b021d7ee41c525310871744fc73737beb4339e7a48925e563dd9234"
+    },
+    {
+      "path": "native/research/overlay_validation/tests/overlay_descriptor_probe.cpp",
+      "size": 2539,
+      "sha256": "65128106069bff5b4bfc96ef2ffbb2855348db38f8eb2c38cec4b6377a25bbd5"
+    }
+  ],
+  "source_dependencies": [
+    {
+      "path": "native/include/g1/Archive.hpp",
+      "sha256": "786c7f3a87d3d9d9fa3e663510cf43d7ba38e47d3ef590a92b2bfa1e34d5eb99"
+    },
+    {
+      "path": "native/include/g1/Atlas.hpp",
+      "sha256": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f"
+    },
+    {
+      "path": "analysis_tools/combat/oracle.py",
+      "sha256": "10c98c7fe6b2132fd8e70da527cb7f149e8c071975fae137404970d0dfd038e9"
+    }
+  ],
+  "separate_support_delivery": "decomp_skill_review owns original support player and palette oracles",
+  "validation": {
+    "actual_asset_cases": 1,
+    "synthetic_boundary_cases": 2,
+    "scalar_comparisons": 490,
+    "native_only_rejected_inputs": 553,
+    "original_instruction_patches": 0
+  }
+}

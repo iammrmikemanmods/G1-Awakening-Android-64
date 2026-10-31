@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "cases": 151,
+  "kinds": {
+    "L": 8,
+    "T": 12,
+    "F": 4,
+    "M": 8,
+    "I": 12,
+    "A": 12,
+    "P": 3,
+    "N": 6,
+    "S": 32,
+    "R": 48,
+    "U": 6
+  },
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "support_sha256": "f0505848b34b88b6653cbb8ebe5f74fa8fd5394f4e1727fa93f0b3f2c18374ad",
+  "oracle_sha256": "5a8279d8e165eea33a2c9b2da3563cf3b3dbf540e18e6c4e412b2987146a1a7a",
+  "fixture_sha256": "eca49489020d81a467afff1839f91afa4dadc291aa569a3c58eac3a73d5ef656",
+  "external_boundaries": {
+    "0x301aa": 12,
+    "0x608b2": 12,
+    "0x604b4": 12,
+    "0x5c9ec": 8,
+    "0x6549a": 4,
+    "0xba5dc": 16,
+    "0xbaa14": 17,
+    "0xbaa5c": 17,
+    "0x5c8a8": 15,
+    "0x5c680": 15,
+    "0x5c9f8": 3,
+    "0x2b46c": 345,
+    "0xba36c": 345,
+    "0x2ad12": 9
+  },
+  "original_dispatch_body": "0x560c0..0x578e4, unchanged body with seeded frame",
+  "other_original_entries": [
+    "0x496e4",
+    "0x566fa..0x5674c",
+    "0x4e53a",
+    "0x7acc",
+    "0x7b26",
+    "0x4e7b8"
+  ],
+  "limits": [
+    "Command21 proved no map/app mutation in original body; not guessed as regions.",
+    "Vector copy/disposal hooks are storage-only; renderer notifications recorded.",
+    "malloc/free/memset imports implement bounded storage only; original vector resizing executes.",
+    "Title string construction/copy/disposal are recorded presentation boundaries; original text-index switch executes.",
+    "Shared RNG service lookup returns seeded original generator; original MT executes.",
+    "Signed modulo import supplied as exact arithmetic; no random words fabricated.",
+    "Site opcode7 and complete map I/O not executed by this oracle.",
+    "No original text/assets, native campaign playthrough, or Apple/device execution."
+  ]
+}

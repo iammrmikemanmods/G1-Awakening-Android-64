@@ -1,0 +1,21 @@
+{
+  "upstream": "https://github.com/lvandeve/lodepng",
+  "commit": "e584a8490db1b76b81bf298c11c09d3b55d9c270",
+  "license": "Zlib",
+  "modified": false,
+  "role": "Native portable PNG codec; straight RGBA8 texture pixels, not a compatibility runtime",
+  "files": [
+    {
+      "file": "lodepng.h",
+      "sha256": "9a1fca0238c38333bdc8545336961b73fd0b76957bbacf033186991be9d7cf85"
+    },
+    {
+      "file": "lodepng.cpp",
+      "sha256": "6aec876971ec860527859458d3095220fc5ee1258ec37eb59e1e7dd9cf136a81"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "bdafa318b8e637d600ca1b60545e894881977a16a16b74809c95e805701621e3"
+    }
+  ]
+}

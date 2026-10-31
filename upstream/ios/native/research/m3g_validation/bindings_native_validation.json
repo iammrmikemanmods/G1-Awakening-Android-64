@@ -1,0 +1,947 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Native reversed-name hash and bounded Node/container/form/model-camera binding helpers",
+  "original_fixture_sha256": "d6d39b71189bdd1ed6eb53fff342d516f2fabcf4f5d04d534fd2921f6a33300a",
+  "original_runner_sha256": "6c0befc60b3560afaec83432c4156be7752b54593c16472c13e419abc9f1a1b4",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "probe_sha256": "79e49828208b97098a6733f018bc045dc5ef4be8fd8fc79b38ec679f21491957",
+  "native_test": {
+    "sha256": "e979dca5023a366b2ef0e6699ff887dc4e86e82ba6ddab190b4823b1cd629a97",
+    "exit_code": 0,
+    "stderr_empty": true,
+    "checks": 83,
+    "original_hash_cases": 34,
+    "original_tree_cases": 6,
+    "original_comparisons": 40,
+    "contract_checks": 43
+  },
+  "ubsan_test": {
+    "sha256": "1c3be040fdb9cbe3842b3555883584a801add17db051d081a62753ef6184f752",
+    "exit_code": 0,
+    "stderr_empty": true,
+    "checks": 83,
+    "original_hash_cases": 34,
+    "original_tree_cases": 6,
+    "original_comparisons": 40,
+    "contract_checks": 43
+  },
+  "manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "corpus_sha256": "5736641c02095a3f19fbff375d13548592754549cb64bca313b458f5eb6c0468",
+  "source_sha256": {
+    "native/include/g1/M3GBindings.hpp": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03",
+    "native/src/M3GBindings.cpp": "6178bfd971e4aabdd1ade845a2175f2423cededdb246c7bff5d69d9eb7b50bdc",
+    "native/tests/m3g_bindings_test.cpp": "16765506012c4e07d05fa17c83ae817392f483b4c6d9dfd20276444e482b0892",
+    "native/tests/m3g_bindings_fixture.hpp": "9cc6dbbcc3f6d4b4ddb859fe0b5a2fa4ed83ddd02a39ffb4ad92a6dc91c02828",
+    "native/tests/m3g_bindings_fixture_provenance.json": "2b298c056879b3fd62e47a8f527a2dd38cfbf671a61f810135edacb70f21909f",
+    "native/tools/m3g_bindings_probe.cpp": "93046a7c2963adba6d5cd7974e3cf50330dcf20719cb9ef7eb51b09d75f29ebd",
+    "analysis_tools/m3g/bindings_validate.py": "d72ba93577bd257fc33cf892648e9c12f801c2f33280a3f9a0fa59a871bbe437",
+    "analysis_tools/m3g/reference.py": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+    "native/include/g1/M3GScene.hpp": "02f25cde344a5661cd1fc00dace1626840ef80a16af21f0ef93fb11988bc5ca5",
+    "native/src/M3GScene.cpp": "da9eeb3764b0a0e31509c71a8085302548f5f761d08a567138b98fe1f970898e"
+  },
+  "resources": [
+    {
+      "resource_id": 486,
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "byte_length": 385350,
+      "exit_code": 0,
+      "stdout_sha256": "605603fe1aa6b38fcc6970168d613202e73fc933e35a16d7d6af497c452729f7",
+      "expected_sha256": "ff87d350295d9e3632f919f16421c8914d8f2c36b0305b2656aea43be98c16c6",
+      "world": 390,
+      "ordered_world_children": [
+        388,
+        389
+      ],
+      "selected_group": 388,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": null,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": null,
+        "vehicle": null
+      },
+      "node_query_count": 29,
+      "expected_node_queries_sha256": "0e5ceeef1c6c59c3f99621df262a9b0c747fb2ef2d19d3dffe8968cece562faf",
+      "native_sha256": "ff87d350295d9e3632f919f16421c8914d8f2c36b0305b2656aea43be98c16c6",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 534,
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "byte_length": 237646,
+      "exit_code": 0,
+      "stdout_sha256": "36fd0c5994598627a4b994cbcda643a14d592c5ed497c14d11d3df01e5b3721b",
+      "expected_sha256": "0abc82cfcdc1864a3b3ef9118e982bc67b6c95c2c43655bf4bd72faa10848c24",
+      "world": 208,
+      "ordered_world_children": [
+        7,
+        207
+      ],
+      "selected_group": 207,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": null,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": null,
+        "vehicle": null
+      },
+      "node_query_count": 29,
+      "expected_node_queries_sha256": "b25b302fa95c573263f82fc94a8cac1941369c80ad59dbb84dcf4373fa80a132",
+      "native_sha256": "0abc82cfcdc1864a3b3ef9118e982bc67b6c95c2c43655bf4bd72faa10848c24",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1212,
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "byte_length": 350930,
+      "exit_code": 0,
+      "stdout_sha256": "b655825dad25383bfc6d8aac085805dd49637f935a38214c9c0e65f52d66b6c8",
+      "expected_sha256": "dd629c7a84ea16943f5b3b8ca657540d7d6d310879efeec891e4625d61d2dd97",
+      "world": 211,
+      "ordered_world_children": [
+        209,
+        210
+      ],
+      "selected_group": 209,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": null,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": null,
+        "vehicle": null
+      },
+      "node_query_count": 29,
+      "expected_node_queries_sha256": "d648b3563587da2bd6b37841a7aceb9d801d475c45d23b80b15ba19b971c63a2",
+      "native_sha256": "dd629c7a84ea16943f5b3b8ca657540d7d6d310879efeec891e4625d61d2dd97",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 408,
+      "sha256": "d1ab89d6440df4fb09d23c20204160e4fb04cde2ca420a04c77cc37b0f0e43f4",
+      "byte_length": 130624,
+      "exit_code": 0,
+      "stdout_sha256": "9ee1e858f51963b559dfa4e26392cba9935b89b8ccf5cd4c1f4570936c13b073",
+      "expected_sha256": "b1671ecf51aa4bf75510ad428dedafb3a7f8985240090330bab246e0c0d88944",
+      "world": 310,
+      "ordered_world_children": [
+        308,
+        309
+      ],
+      "selected_group": 308,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 306,
+        "car": 54
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 73,
+          "inner_group": 68,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 65,
+          "inner_group": 60,
+          "camera": 57
+        }
+      },
+      "node_query_count": 19,
+      "expected_node_queries_sha256": "aad5c0183d97f12f8783f30fbd58de75bedecd54775fdcf6020d43fe2071bdb3",
+      "native_sha256": "b1671ecf51aa4bf75510ad428dedafb3a7f8985240090330bab246e0c0d88944",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 699,
+      "sha256": "c1e9e5c2a3377f8387c21a3c8e9e346784be317cf64893f794c0ae11b5096a4a",
+      "byte_length": 77234,
+      "exit_code": 0,
+      "stdout_sha256": "fde01a05b005187e829b03c85458ff23d4b1fd8987a2046e70b319bffc611c57",
+      "expected_sha256": "fbe651efabac268ca76a07c2365c1d2506f5e0669b1dae36fef01bbe2b892496",
+      "world": 306,
+      "ordered_world_children": [
+        304,
+        305
+      ],
+      "selected_group": 304,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 293,
+        "car": 39
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 301,
+          "inner_group": 296,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 48,
+          "inner_group": 43,
+          "camera": 40
+        }
+      },
+      "node_query_count": 18,
+      "expected_node_queries_sha256": "9236ccddc63bd16b9aa9a01bd02057e9705c83e8bcf951b5ec129496fa05d41e",
+      "native_sha256": "fbe651efabac268ca76a07c2365c1d2506f5e0669b1dae36fef01bbe2b892496",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 444,
+      "sha256": "9375af627f75c6c535109b7de5e3fa63baabc8b81c1546bfb1b56c38c624389d",
+      "byte_length": 52725,
+      "exit_code": 0,
+      "stdout_sha256": "acbf60aad9e9f423c236c3da82b382a5c0b056c09ea4e5e9f060af68ebe836ec",
+      "expected_sha256": "a240c7fb0a0abb46fbc53114e82d30b5a5bb450eba6185f28ff32a9e64ef8a24",
+      "world": 257,
+      "ordered_world_children": [
+        4,
+        256
+      ],
+      "selected_group": 256,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 246,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 255,
+          "inner_group": 250,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 13,
+      "expected_node_queries_sha256": "4391cd291d2be281c0a92419864de0ba6a68a6c0f0d15b69347a7eef1857aad4",
+      "native_sha256": "a240c7fb0a0abb46fbc53114e82d30b5a5bb450eba6185f28ff32a9e64ef8a24",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 492,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "byte_length": 115411,
+      "exit_code": 0,
+      "stdout_sha256": "e93271c7d7a250828aba31533f1f7c23f14425f469cfd079af4c7b65d2596dd8",
+      "expected_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "world": 294,
+      "ordered_world_children": [
+        292,
+        293
+      ],
+      "selected_group": 292,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 252,
+        "car": 291
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 260,
+          "inner_group": 255,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 13,
+          "inner_group": 8,
+          "camera": 4
+        }
+      },
+      "node_query_count": 17,
+      "expected_node_queries_sha256": "4afd420fa32f392e741d65fa69498a130fd709bd1e3ee15d526ebf8eb1b6bb59",
+      "native_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1300,
+      "sha256": "36a9d282691508099a3b18089a95d3248bdd26f9f9e3ef4683b2d2b91e1bffd3",
+      "byte_length": 54932,
+      "exit_code": 0,
+      "stdout_sha256": "bfb4acc090965e0f064efaa4b9d2fc5170da762d2074e2ee1abfa24fede990ac",
+      "expected_sha256": "aba965399c7fc58c5817204fcd125bae563733ee9800eac35ba0ecdd17cb50b7",
+      "world": 228,
+      "ordered_world_children": [
+        4,
+        227
+      ],
+      "selected_group": 227,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 215,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 223,
+          "inner_group": 218,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 17,
+      "expected_node_queries_sha256": "c3f6ded9a44eebccc41c56475e63613cc628f1899ca197b6364754d42cb28672",
+      "native_sha256": "aba965399c7fc58c5817204fcd125bae563733ee9800eac35ba0ecdd17cb50b7",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 561,
+      "sha256": "e988521887c88fac8e9b1365b2cf72bc7e0b54615acb4ba078e29177ab67061a",
+      "byte_length": 47770,
+      "exit_code": 0,
+      "stdout_sha256": "9b9a3630c41a76bcf583f319dfd7d763091f03fd6101eafd0a2bd29cce816505",
+      "expected_sha256": "9e5f9dfecbe13af019878758f4c159789ea42a20f779a5b8f2b155d0e5f834ff",
+      "world": 244,
+      "ordered_world_children": [
+        4,
+        243
+      ],
+      "selected_group": 243,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 231,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 242,
+          "inner_group": 237,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 15,
+      "expected_node_queries_sha256": "f71cae0149c45db116240191f3ec3afb83b8987297ce525616d2143e86eea31a",
+      "native_sha256": "9e5f9dfecbe13af019878758f4c159789ea42a20f779a5b8f2b155d0e5f834ff",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 369,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "byte_length": 32146,
+      "exit_code": 0,
+      "stdout_sha256": "89a6dd5fac79c70dc3073ca3344964788fd75e47b6060e44b91701c9f0894c2c",
+      "expected_sha256": "9a4274bc3312cb03a6a3ae8a6ac76dd0949aa168e05caad3a92f2f669fb6669d",
+      "world": 176,
+      "ordered_world_children": [
+        4,
+        175
+      ],
+      "selected_group": 175,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 166,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 174,
+          "inner_group": 169,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 12,
+      "expected_node_queries_sha256": "84c2926b486b6497a419b0136d1fdbe9d4d451e579e9d5012c07aaaac89e0c58",
+      "native_sha256": "9a4274bc3312cb03a6a3ae8a6ac76dd0949aa168e05caad3a92f2f669fb6669d",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 565,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "byte_length": 32146,
+      "exit_code": 0,
+      "stdout_sha256": "89a6dd5fac79c70dc3073ca3344964788fd75e47b6060e44b91701c9f0894c2c",
+      "expected_sha256": "9a4274bc3312cb03a6a3ae8a6ac76dd0949aa168e05caad3a92f2f669fb6669d",
+      "world": 176,
+      "ordered_world_children": [
+        4,
+        175
+      ],
+      "selected_group": 175,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 166,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 174,
+          "inner_group": 169,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 12,
+      "expected_node_queries_sha256": "84c2926b486b6497a419b0136d1fdbe9d4d451e579e9d5012c07aaaac89e0c58",
+      "native_sha256": "9a4274bc3312cb03a6a3ae8a6ac76dd0949aa168e05caad3a92f2f669fb6669d",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 634,
+      "sha256": "296822e2c432065d55d26816f64b430790dd9fef77ff81d756f07e902c053891",
+      "byte_length": 78701,
+      "exit_code": 0,
+      "stdout_sha256": "7d7355b0d8b884e306248fdc5ad3aa11169a03324b71b84b9a0aba6457b5ccdf",
+      "expected_sha256": "488076a8411803024df410e250c8425a1fd67202e0e2fe025a17702adff4bf7f",
+      "world": 401,
+      "ordered_world_children": [
+        399,
+        400
+      ],
+      "selected_group": 399,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 396,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 19,
+          "inner_group": 14,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 13,
+      "expected_node_queries_sha256": "9f1c26e81c551ca035bf1b510a651772db1b6fa57a24542a9aad40506127c442",
+      "native_sha256": "488076a8411803024df410e250c8425a1fd67202e0e2fe025a17702adff4bf7f",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 395,
+      "sha256": "a5de57b4c365df44b5f38eff424495503cf5b9ea0ccaa53e37291887f05842de",
+      "byte_length": 34429,
+      "exit_code": 0,
+      "stdout_sha256": "11588afc9ff4cc3257cbc87657b16e10b1ee0d354d1d009a21ec965427e2e942",
+      "expected_sha256": "e9c6dc84a9e99e6a2b0b58c1dd4a21bcd2be44810030ebd28c6f1b7e9f2f7cbb",
+      "world": 190,
+      "ordered_world_children": [
+        188,
+        189
+      ],
+      "selected_group": 188,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 178,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 186,
+          "inner_group": 181,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 13,
+      "expected_node_queries_sha256": "eea9c163f22442ae517a522bdb7222c448d49995607d6ab3dbe69a42234983d6",
+      "native_sha256": "e9c6dc84a9e99e6a2b0b58c1dd4a21bcd2be44810030ebd28c6f1b7e9f2f7cbb",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 475,
+      "sha256": "23ed6b7cd803e85a77524a0b6f7d1a9778ffaa059a4c9c5bea8ed8b3119f6be6",
+      "byte_length": 106540,
+      "exit_code": 0,
+      "stdout_sha256": "416f291512685e9041f4f75c3713a7e27f11cc8f27a93e60dcb8fbe9f08c7be7",
+      "expected_sha256": "6d076978abd4e61debd018f2e1b7ed3534dfd2555bd296162c4d2b5690058716",
+      "world": 298,
+      "ordered_world_children": [
+        296,
+        297
+      ],
+      "selected_group": 296,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 285,
+        "car": 41
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 294,
+          "inner_group": 289,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 50,
+          "inner_group": 45,
+          "camera": 42
+        }
+      },
+      "node_query_count": 15,
+      "expected_node_queries_sha256": "4ea42e21d565907b876cffcc3a993533d3233b5a1c1d6ff53fc81c23cecc1f86",
+      "native_sha256": "6d076978abd4e61debd018f2e1b7ed3534dfd2555bd296162c4d2b5690058716",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 867,
+      "sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+      "byte_length": 64078,
+      "exit_code": 0,
+      "stdout_sha256": "475d7f7caf2c5fb2f3ac3ffec27d256cf90912c10e0c6a137713be21c80b1cdf",
+      "expected_sha256": "8efa06f2eccb1aaf2c409a2d10f4d396b9141e687bcf83a7781260facb6bb87a",
+      "world": 233,
+      "ordered_world_children": [
+        231,
+        232
+      ],
+      "selected_group": 231,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 221,
+        "car": 49
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 230,
+          "inner_group": 225,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 16,
+          "inner_group": 11,
+          "camera": 7
+        }
+      },
+      "node_query_count": 15,
+      "expected_node_queries_sha256": "534fa55b26b3167bda04319bbf5e44107ffe8dc269158f3c327a97d04f8b4749",
+      "native_sha256": "8efa06f2eccb1aaf2c409a2d10f4d396b9141e687bcf83a7781260facb6bb87a",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1039,
+      "sha256": "4b766628e4bc4041b4796239ceddb43a0b2a815168bcdfecffbb79957409d847",
+      "byte_length": 115862,
+      "exit_code": 0,
+      "stdout_sha256": "274a2b2158f1bb24af09cc8abdaa101de16f9f07c51351939c76e4f317136936",
+      "expected_sha256": "8d6ee3e58cb9d2bd3fe7805758b9ee9b3960a2256d2c352d16a7046c305208bd",
+      "world": 379,
+      "ordered_world_children": [
+        4,
+        378
+      ],
+      "selected_group": 378,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 368,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 377,
+          "inner_group": 372,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 10,
+      "expected_node_queries_sha256": "83e2dd2cfe0dcf9e02f9e1dbfa99a2798b4d0aef962df3caa38d6f5cb1a5ce49",
+      "native_sha256": "8d6ee3e58cb9d2bd3fe7805758b9ee9b3960a2256d2c352d16a7046c305208bd",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 631,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "byte_length": 115411,
+      "exit_code": 0,
+      "stdout_sha256": "e93271c7d7a250828aba31533f1f7c23f14425f469cfd079af4c7b65d2596dd8",
+      "expected_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "world": 294,
+      "ordered_world_children": [
+        292,
+        293
+      ],
+      "selected_group": 292,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 252,
+        "car": 291
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 260,
+          "inner_group": 255,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 13,
+          "inner_group": 8,
+          "camera": 4
+        }
+      },
+      "node_query_count": 17,
+      "expected_node_queries_sha256": "4afd420fa32f392e741d65fa69498a130fd709bd1e3ee15d526ebf8eb1b6bb59",
+      "native_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 795,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "byte_length": 115411,
+      "exit_code": 0,
+      "stdout_sha256": "e93271c7d7a250828aba31533f1f7c23f14425f469cfd079af4c7b65d2596dd8",
+      "expected_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "world": 294,
+      "ordered_world_children": [
+        292,
+        293
+      ],
+      "selected_group": 292,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 252,
+        "car": 291
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 260,
+          "inner_group": 255,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 13,
+          "inner_group": 8,
+          "camera": 4
+        }
+      },
+      "node_query_count": 17,
+      "expected_node_queries_sha256": "4afd420fa32f392e741d65fa69498a130fd709bd1e3ee15d526ebf8eb1b6bb59",
+      "native_sha256": "376d1494350158fe7d2d084698a26e975c457a5552902218fda8f4d1f8eed05b",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 967,
+      "sha256": "4206ffcf73d060d8fadd970ea6c0a52499eac45149d63ed1e12cb459f6eada5e",
+      "byte_length": 165069,
+      "exit_code": 0,
+      "stdout_sha256": "8cb3b4072d3c8cb5165f8af9b30a3468c025bcf8b3b5b9cf32d6859213f0d7e7",
+      "expected_sha256": "4c16be0dac0060db9acef74e72c557df5f979c54ee7dd3435b025349e2c4e610",
+      "world": 265,
+      "ordered_world_children": [
+        4,
+        264
+      ],
+      "selected_group": 264,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 252,
+        "car": 42
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 261,
+          "inner_group": 256,
+          "camera": 253
+        },
+        "vehicle": {
+          "transform": 51,
+          "inner_group": 46,
+          "camera": 2
+        }
+      },
+      "node_query_count": 13,
+      "expected_node_queries_sha256": "9fc3ae5f9dab73d141e5eeb4bafec71d85ceffd5816bdcd70efd9b4d237edb14",
+      "native_sha256": "4c16be0dac0060db9acef74e72c557df5f979c54ee7dd3435b025349e2c4e610",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 564,
+      "sha256": "3058249f64a07996af31225f7fb919195f392605ace79f7fa355f2f032b0b0ee",
+      "byte_length": 169269,
+      "exit_code": 0,
+      "stdout_sha256": "bff0c722cc2fa71791ef7fdea99dbb837a59de2c787307df18cfb4587a5790e1",
+      "expected_sha256": "e76efcb6e4e1cb44d9085f55f0f1aba73e226ae49524860c638ed107c4ab12ac",
+      "world": 267,
+      "ordered_world_children": [
+        265,
+        266
+      ],
+      "selected_group": 265,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 254,
+        "car": 44
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 53,
+          "inner_group": 48,
+          "camera": 45
+        },
+        "vehicle": {
+          "transform": 262,
+          "inner_group": 257,
+          "camera": 2
+        }
+      },
+      "node_query_count": 13,
+      "expected_node_queries_sha256": "f6f075d02795dbd248a83d957b8a1aa93ba53b0b079ac73aea701f8f6d5a774c",
+      "native_sha256": "e76efcb6e4e1cb44d9085f55f0f1aba73e226ae49524860c638ed107c4ab12ac",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1299,
+      "sha256": "69884b098563c3b2969e568856c383b2ea8db08581e70713196af90a514041a6",
+      "byte_length": 112274,
+      "exit_code": 0,
+      "stdout_sha256": "9d7db54fc6d8d419df765e627da514b5f0e7e7fe55df8369b1518f12e41411d1",
+      "expected_sha256": "5aaa3228e0fa5ae918a0b12d7a53621263852f17ccbace625177b1546d3ad816",
+      "world": 332,
+      "ordered_world_children": [
+        331
+      ],
+      "selected_group": 331,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 306,
+        "car": 330
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 26,
+          "inner_group": 21,
+          "camera": 18
+        },
+        "vehicle": {
+          "transform": 12,
+          "inner_group": 7,
+          "camera": 2
+        }
+      },
+      "node_query_count": 22,
+      "expected_node_queries_sha256": "65a84067b72b4b4069256fe45e36566bc5f3d690014b458f7ada503e714b2293",
+      "native_sha256": "5aaa3228e0fa5ae918a0b12d7a53621263852f17ccbace625177b1546d3ad816",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 829,
+      "sha256": "7ad03a1bb11ddf050780aa358317bacc6e3974bb0562ab9a57c6920af6a30340",
+      "byte_length": 124715,
+      "exit_code": 0,
+      "stdout_sha256": "bbbff4aea7f82f9172b9cf03358c56edaf6b879b0f89b36586318f3b457e0767",
+      "expected_sha256": "f57df4951289df195f8d3503fcca584a1093bab3269a4b7947206303b793643f",
+      "world": 343,
+      "ordered_world_children": [
+        4,
+        342
+      ],
+      "selected_group": 342,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 310,
+        "car": 341
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 25,
+          "inner_group": 20,
+          "camera": 17
+        },
+        "vehicle": {
+          "transform": 16,
+          "inner_group": 11,
+          "camera": 2
+        }
+      },
+      "node_query_count": 22,
+      "expected_node_queries_sha256": "613086b6a0754a8a4d90eacb360de2a74ceae92cffcce623f3d2fa329e8fdf70",
+      "native_sha256": "f57df4951289df195f8d3503fcca584a1093bab3269a4b7947206303b793643f",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1201,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "byte_length": 28502,
+      "exit_code": 0,
+      "stdout_sha256": "a68c3f97a73ec1ab85556170ddd7317dd737fd02487126cfe3f35e479ae60734",
+      "expected_sha256": "cfec9856282061b3f98ab7f832dcbedf7eb8def3b86bc6a4280ba68d01ce0056",
+      "world": 178,
+      "ordered_world_children": [
+        4,
+        177
+      ],
+      "selected_group": 177,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 166,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 176,
+          "inner_group": 171,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 12,
+      "expected_node_queries_sha256": "f49ea27d5eb679b1995b8407efc15b6fa52e49158784b961fca6afbbe2baf4b1",
+      "native_sha256": "cfec9856282061b3f98ab7f832dcbedf7eb8def3b86bc6a4280ba68d01ce0056",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 1070,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "byte_length": 28502,
+      "exit_code": 0,
+      "stdout_sha256": "a68c3f97a73ec1ab85556170ddd7317dd737fd02487126cfe3f35e479ae60734",
+      "expected_sha256": "cfec9856282061b3f98ab7f832dcbedf7eb8def3b86bc6a4280ba68d01ce0056",
+      "world": 178,
+      "ordered_world_children": [
+        4,
+        177
+      ],
+      "selected_group": 177,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 166,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 176,
+          "inner_group": 171,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 12,
+      "expected_node_queries_sha256": "f49ea27d5eb679b1995b8407efc15b6fa52e49158784b961fca6afbbe2baf4b1",
+      "native_sha256": "cfec9856282061b3f98ab7f832dcbedf7eb8def3b86bc6a4280ba68d01ce0056",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 489,
+      "sha256": "59401dc0dd19b85e35007bb04525f9fbe9025e37d3d1af8000a9a44663759635",
+      "byte_length": 85086,
+      "exit_code": 0,
+      "stdout_sha256": "b0452aa9fc6e22040a7f820ff1a69eb36f8150d91ec883c3e94c061e313d07fe",
+      "expected_sha256": "34882a561d11cffe91e9b320647f33df7c97706595e21a08cfcb8a41bff876c3",
+      "world": 287,
+      "ordered_world_children": [
+        4,
+        286
+      ],
+      "selected_group": 286,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 270,
+        "car": null
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 285,
+          "inner_group": 280,
+          "camera": 2
+        },
+        "vehicle": null
+      },
+      "node_query_count": 71,
+      "expected_node_queries_sha256": "2f65d94f667359ea07a6c6d6bb34bc2f48e58f8932698819519c9d35df375a5f",
+      "native_sha256": "34882a561d11cffe91e9b320647f33df7c97706595e21a08cfcb8a41bff876c3",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 490,
+      "sha256": "a666b66126b5d273ecdacff46b7593f28075e2d16f237ec002230aae52df0b63",
+      "byte_length": 109256,
+      "exit_code": 0,
+      "stdout_sha256": "b6558cd1395b5288051009380c82a91ec0a83b44b3941b69a1fa06cc9e30c5f1",
+      "expected_sha256": "ff497debb2e656d33dce829ee7f49001c69c52f8a80ecc178ee9fba2b7e14e90",
+      "world": 333,
+      "ordered_world_children": [
+        4,
+        332
+      ],
+      "selected_group": 332,
+      "selected_child_index": 1,
+      "forms": {
+        "robot": 299,
+        "car": 331
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 15,
+          "inner_group": 10,
+          "camera": 2
+        },
+        "vehicle": {
+          "transform": 25,
+          "inner_group": 20,
+          "camera": 17
+        }
+      },
+      "node_query_count": 18,
+      "expected_node_queries_sha256": "277b4fbda07ea9271448f525b280fd8fc7368595045001e5731023002c36fc2c",
+      "native_sha256": "ff497debb2e656d33dce829ee7f49001c69c52f8a80ecc178ee9fba2b7e14e90",
+      "exact_equal": true
+    },
+    {
+      "resource_id": 500,
+      "sha256": "fd92d638254a75b5fef063e71d31be11569b84740e5795db3b03ae664efeb20b",
+      "byte_length": 98192,
+      "exit_code": 0,
+      "stdout_sha256": "2f4f59bd5883557af10b28d59a25f87fe850c1905164e5f79d949f85ffb3e88d",
+      "expected_sha256": "e5c5e22cd3220726f6fdbecbb07fcfd82603ce2e611a64b54525adefa846274b",
+      "world": 332,
+      "ordered_world_children": [
+        331
+      ],
+      "selected_group": 331,
+      "selected_child_index": 0,
+      "forms": {
+        "robot": 316,
+        "car": 41
+      },
+      "model_cameras": {
+        "robot": {
+          "transform": 330,
+          "inner_group": 325,
+          "camera": 322
+        },
+        "vehicle": {
+          "transform": 12,
+          "inner_group": 7,
+          "camera": 2
+        }
+      },
+      "node_query_count": 20,
+      "expected_node_queries_sha256": "ca060b33dbd1a49bbe0ad89dee27dd8b9e20d4be711ae73d8ca1ac3a5cb4dd61",
+      "native_sha256": "e5c5e22cd3220726f6fdbecbb07fcfd82603ce2e611a64b54525adefa846274b",
+      "exact_equal": true
+    }
+  ],
+  "summary": {
+    "resources": 27,
+    "node_lookup_queries": 513,
+    "container_selection_counts": {
+      "0": 14,
+      "1": 13
+    },
+    "present_robot_form": 24,
+    "present_car_form": 13,
+    "present_robot_camera": 24,
+    "present_vehicle_camera": 13,
+    "source_data_checks_including_structure": 2677,
+    "difference_count": 0
+  },
+  "differences": [],
+  "actual_data_scope": "Serialized World child lists explicitly supplied as container-selection data-shape inputs; no claim that serialized World is the original loaded-container class",
+  "not_established": [
+    "General Object3D reference traversal beyond Node children",
+    "Original full resource-loader execution",
+    "Cache-hit cloning, reparenting, attachment placement or material changes",
+    "Battle phase/camera-ID selection or scene-camera fallback",
+    "Animation or rendering output",
+    "Apple compilation or GPU/device execution"
+  ],
+  "original_execution_repeated": false,
+  "gpu_execution": false,
+  "iphone_tested": false
+}

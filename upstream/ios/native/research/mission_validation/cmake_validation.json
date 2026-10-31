@@ -1,0 +1,66 @@
+{
+  "scope": "Linux native C++17 host compilation and CTest; no guest execution, Apple build or device test",
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/cba553aafa20/.tools/g1_runtime/cmake-3.31.12-linux-x86_64/bin/cmake",
+        "-S",
+        "/workspace/scratch/cba553aafa20/g1_port/native",
+        "-B",
+        "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "exit_code": 0,
+      "stdout": "-- Configuring done (0.0s)\n-- Generating done (0.0s)\n-- Build files have been written to: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/cba553aafa20/.tools/g1_runtime/cmake-3.31.12-linux-x86_64/bin/cmake",
+        "--build",
+        "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build",
+        "--parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "[ 10%] Building CXX object CMakeFiles/g1_resources.dir/src/Atlas.cpp.o\n[ 10%] Building CXX object CMakeFiles/g1_resources.dir/src/Movement.cpp.o\n[ 15%] Linking CXX static library libg1_resources.a\n[ 30%] Built target g1_resources\n[ 35%] Linking CXX executable g1_asset_probe\n[ 40%] Linking CXX executable m3g_probe\n[ 45%] Built target m3g_probe\n[ 50%] Built target g1_asset_probe\n[ 55%] Building CXX object CMakeFiles/atlas_probe.dir/tools/atlas_probe.cpp.o\n[ 60%] Linking CXX executable mission_probe\n[ 65%] Built target mission_probe\n[ 70%] Linking CXX executable g1_mission_tests\n[ 75%] Built target g1_mission_tests\n[ 80%] Building CXX object CMakeFiles/g1_movement_tests.dir/tests/movement_test.cpp.o\n[ 85%] Linking CXX executable atlas_probe\n[ 85%] Built target atlas_probe\n[ 90%] Building CXX object CMakeFiles/g1_atlas_tests.dir/tests/atlas_test.cpp.o\n[ 95%] Linking CXX executable g1_movement_tests\n[ 95%] Built target g1_movement_tests\n[100%] Linking CXX executable g1_atlas_tests\n[100%] Built target g1_atlas_tests\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/cba553aafa20/.tools/g1_runtime/cmake-3.31.12-linux-x86_64/bin/ctest",
+        "--test-dir",
+        "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build",
+        "--output-on-failure",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "Internal ctest changing into directory: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\nUpdateCTestConfiguration  from :/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/DartConfiguration.tcl\nParse Config file:/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/DartConfiguration.tcl\nUpdateCTestConfiguration  from :/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/DartConfiguration.tcl\nParse Config file:/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/DartConfiguration.tcl\nTest project /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: mission_format_contract\n\n1: Test command: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/g1_mission_tests\n1: Working Directory: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\n1: Test timeout computed to be: 1500\n1: Passed 62 mission framing contract checks; no gameplay execution.\n1/3 Test #1: mission_format_contract ..............   Passed    0.01 sec\ntest 2\n    Start 2: movement_original_function_vectors\n\n2: Test command: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/g1_movement_tests \"/workspace/scratch/cba553aafa20/g1_port/native/tests/movement_cases.txt\"\n2: Working Directory: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\n2: Test timeout computed to be: 1500\n2: Passed 256 original-execution cases, 9092 scalar comparisons, and 4 separate malformed-input checks.\n2/3 Test #2: movement_original_function_vectors ...   Passed    0.00 sec\ntest 3\n    Start 3: atlas_format_geometry_contract\n\n3: Test command: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/g1_atlas_tests\n3: Working Directory: /workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build\n3: Test timeout computed to be: 1500\n3: Passed 71 atlas framing / geometry contract checks; no GPU rendering.\n3/3 Test #3: atlas_format_geometry_contract .......   Passed    0.02 sec\n\n100% tests passed, 0 tests failed out of 3\n\nTotal Test time (real) =   0.04 sec\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "include/g1/Archive.hpp": "a53b2b30f456bad82d644996c92c5f3d630df1b6e8778b4be446765be41657f5",
+    "include/g1/Atlas.hpp": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+    "include/g1/M3G.hpp": "03069196d3475c6f5dd910fa9202504d4dd4a8ee7f84f4c144cbb21cedb5ff7d",
+    "include/g1/Mission.hpp": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+    "include/g1/Movement.hpp": "3d6ae42658f6be7a10685e5153ec168b3f32d71b76db2468499fa832ce45f438",
+    "src/Archive.cpp": "a19a7576c9b9e793a5e2171d0096b7aba68e3951d28f4bb794494466905f8d87",
+    "src/Atlas.cpp": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+    "src/M3G.cpp": "5a80cf51465903ec076bd18173235b801b90fe61217cb67d410060d6f17ba9ff",
+    "src/Mission.cpp": "36c003e35084c66d406323fadb372fbb87431f27dd4af7c633e74a745ab97e35",
+    "src/Movement.cpp": "20de5fe30ac8b69803b149bdc0a1a019a480c70d412f1bd0e474e6b1f70dbf04",
+    "tools/atlas_probe.cpp": "a79260305f11fd65764a7b5b2d37e7d4067c82e015772422ffbac1334cd05e15",
+    "tools/g1_asset_probe.cpp": "873af09ec06d65a14bec3ab30c0022df2f401c75262f266aca487ba4760ba5ac",
+    "tools/m3g_probe.cpp": "42b628462dbdba1f589e8e0c517aea97d881386d2f37e375979da662e42960f7",
+    "tools/mission_probe.cpp": "689ff449ce11f633a7d66c7fb8237501780d127af02c05e891efe6eb90042e46",
+    "tests/atlas_test.cpp": "b66a127f098faada423a51149e43d2438f2e2a388164138948e4a2efc6e50f6f",
+    "tests/mission_test.cpp": "720cf1d432c423bd4cadae262900db23e2ffc193e3631c98ddbc29e529963841",
+    "tests/movement_cases.txt": "ba6b138459a4016101f8ad22e35564faafa6635defc75437695d26408e0425d3",
+    "tests/movement_test.cpp": "4dbe03624ab5e378c5e19f63b93ba337afd5357a6c493afae87c9a656ce22dc6",
+    "CMakeLists.txt": "ddffece70f56e509cfdc5a5b879cdba288b2abbe67b075780053740ed492c60f"
+  },
+  "all_passed": true,
+  "ios_arm64_compiled": false,
+  "device_tested": false
+}

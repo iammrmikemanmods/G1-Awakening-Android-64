@@ -1,0 +1,5136 @@
+{
+  "schema": 1,
+  "scope": "All retained completed input-pilot runs. Native rules and unlock flags were never edited.",
+  "known_harness_issue": "showdown_v4_hybrid stopped before gameplay because the temporary entry-checkpoint reconstruction had not acknowledged synthetic focus; fixed in v5. This was not a native engine defect.",
+  "final_showdown": "full_showdown_v9",
+  "final_arena_matrix": "arena_matrix_release",
+  "runs": [
+    {
+      "directory": "arena_matrix_final/arena_0_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_0_opponent_0/result.json",
+        "bytes": 3861,
+        "sha256": "2c1d0f6fcc8884aa3ee22193953cac3e2f3758f677ef2eab8f7cc444c4641304"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_0_opponent_0/events.jsonl",
+        "bytes": 39570,
+        "sha256": "c45bfa97e8d4694c5b4a62547af33b9137048401adb2a106795b1bb68be0ab30"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1095,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_0_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_0_opponent_1/result.json",
+        "bytes": 3855,
+        "sha256": "3de7bd623ad7faabad393f3d8bce3cad9bd0e8392c54a89f64a2678440cd22c7"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_0_opponent_1/events.jsonl",
+        "bytes": 26652,
+        "sha256": "2b03936623621703e8ce85dfe0aae43b8cfcc2788ccf9ddf3144d2f0b6505c3a"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 902,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            8,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_0_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_1_opponent_0/result.json",
+        "bytes": 3861,
+        "sha256": "488add17b7c3883a666d9547c3c0ff15a839e728f490dc6c54269cb99b2900ef"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_1_opponent_0/events.jsonl",
+        "bytes": 37287,
+        "sha256": "99f4641229af6e48f107bfea7d3ac1d5b5450c50a683a58b66138858ad9c4a7b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1054,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            19,
+            0,
+            7
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_0_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_1_opponent_1/result.json",
+        "bytes": 3855,
+        "sha256": "a93b9e9b9ebefb6f12436024b5c210b9477ea321d271212adc1f5bdb10846d2e"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_0_faction_1_opponent_1/events.jsonl",
+        "bytes": 23845,
+        "sha256": "b064ee1bd4f66d46a39dfff0d133f23318555318a4d29ba664ba4ee6b4955431"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 721,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            7,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_1_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_0_opponent_0/result.json",
+        "bytes": 3726,
+        "sha256": "375e79eed08986455ca060d67644d3193643e02e9bedcaa7f93c76fc1a98fc41"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_0_opponent_0/events.jsonl",
+        "bytes": 16185,
+        "sha256": "44e728a565318522c480768056fdd79ad533111a5558766ebe2de2bf92708eb6"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 274,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_1_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_0_opponent_1/result.json",
+        "bytes": 3723,
+        "sha256": "e49b6ad8ce579dfebed5a81b7dc9e452790ae3ea5a97ffc435cbef15933ccb1c"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_0_opponent_1/events.jsonl",
+        "bytes": 14863,
+        "sha256": "7448d9258673148c9bac048c031f4b555845734760eee4e87586eea7e4659b5d"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 249,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            4,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_1_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_1_opponent_0/result.json",
+        "bytes": 3731,
+        "sha256": "6cdd54d83363195055332e7b5781d5df9c841e25ac442cf16f778ee2db2738e6"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_1_opponent_0/events.jsonl",
+        "bytes": 21975,
+        "sha256": "7a1323a13c40a8bd3b8d5c78e2a8bb034c9d16f8631c668a853caef9213fee96"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 399,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_1_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_1_opponent_1/result.json",
+        "bytes": 3728,
+        "sha256": "35ee64679c71719192d0317e1dcdc77a0489ae3a7d7daf8a088c31ee8746576b"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_1_faction_1_opponent_1/events.jsonl",
+        "bytes": 25641,
+        "sha256": "febe737f56aa6b5658ac37f6c0126b2b4b76416f8fc009f148ac51957e4cf9bb"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 472,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            9,
+            4,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_2_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_0_opponent_0/result.json",
+        "bytes": 4000,
+        "sha256": "87d504e73fa42b4fb54092160315e7c4271f7042e4a9cfbbec637067c776df38"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_0_opponent_0/events.jsonl",
+        "bytes": 37050,
+        "sha256": "bcb6ca98a358510796d78740b642f625e41ecf3c4f1aa14e317812ab5a2ad695"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 881,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_2_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_0_opponent_1/result.json",
+        "bytes": 3993,
+        "sha256": "fbe60eeb709648cc7c3870659696d639c81f77e6f4e7c44607cae5d8c4ac92a6"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_0_opponent_1/events.jsonl",
+        "bytes": 26823,
+        "sha256": "46408dd8f8b3dc6908276501732597c8e3fa698bb6c613e154afbceaa4c7dc5b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 958,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            8,
+            1,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_2_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_1_opponent_0/result.json",
+        "bytes": 4003,
+        "sha256": "169d8b90efd5daeef5fd95f955f107b401b77cf056d599ff6c5d855ab16f76d1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_1_opponent_0/events.jsonl",
+        "bytes": 51113,
+        "sha256": "f5f3f1c01260dbb796986f1240afc114c1507f83a1ab8416525a0ddf5aad58d1"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1132,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            27,
+            0,
+            9
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_2_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_1_opponent_1/result.json",
+        "bytes": 3994,
+        "sha256": "cf1028c8e5cc6ad8345fdaa0bb883e0a0d42b67e051c22b60a5ca6bcf9a8b365"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_2_faction_1_opponent_1/events.jsonl",
+        "bytes": 30720,
+        "sha256": "14ab520d47db1c9cd20950f08ca27a6caeb1b4136cbeb0f96fb71902b66681dc"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 997,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            9,
+            6,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_3_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_0_opponent_0/result.json",
+        "bytes": 4203,
+        "sha256": "b6140e982784ac8bd175b9ab68332104b6e4c05d64a7bd8a483ed9e1fc31e4c2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_0_opponent_0/events.jsonl",
+        "bytes": 43617,
+        "sha256": "89990508ad8b1c400d9c85116eae8aa0e6c846ca160f576d26b82f31c939c54e"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 379,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            29,
+            0,
+            8
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_3_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_0_opponent_1/result.json",
+        "bytes": 3858,
+        "sha256": "e30572903777a387bb64ece486223af5f47ef40416e4e5f72a5188b15a2c6a52"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_0_opponent_1/events.jsonl",
+        "bytes": 28381,
+        "sha256": "35e0b1127971e83a6783390a8d0a8f7ee1ebc9d21174a71a351041fdf0ec213d"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 543,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            10,
+            2,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_3_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_1_opponent_0/result.json",
+        "bytes": 3686,
+        "sha256": "02d4d4ffbc4d3486572de1d2304d4365270541c7ad3da2c6d73364026f32ce70"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_1_opponent_0/events.jsonl",
+        "bytes": 20697,
+        "sha256": "cafa2c43fa45e0b6695edd2899665b0c4902216770b74bb46d6b9ff0e89258a3"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 324,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_3_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_1_opponent_1/result.json",
+        "bytes": 3681,
+        "sha256": "baf7794dd3df6b7976a8ae037b2683baa892d559b132b8673d65e8dea9362cf7"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_3_faction_1_opponent_1/events.jsonl",
+        "bytes": 21601,
+        "sha256": "7ca2c28b676dba28efd63fa57a0e1a2f970ff04a0dc0b42798800e4eaa707b5e"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 392,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_4_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_0_opponent_0/result.json",
+        "bytes": 3827,
+        "sha256": "7179971d87e1f05e211801c4d1f0990131236fe52785758789040eb2528a2d17"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_0_opponent_0/events.jsonl",
+        "bytes": 30609,
+        "sha256": "11cfd8530750fc0dc1a3fb52720e1b08fc9e16dc5509499f2065e0367a874567"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 879,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            16,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_4_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_0_opponent_1/result.json",
+        "bytes": 3821,
+        "sha256": "60dac086ee802833904c818749ae28f692272ca59b402e8f8360b10677a894cf"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_0_opponent_1/events.jsonl",
+        "bytes": 25827,
+        "sha256": "ef7011fe5666e1b84a6ad922d14e7f2947bf8c351baccab89daee1cf14f49a62"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 936,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_4_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_1_opponent_0/result.json",
+        "bytes": 3822,
+        "sha256": "bf28e5b2cb116cf37cf1965da1ad4b3a7836c8d4b004096798c7f6ea704d7a82"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_1_opponent_0/events.jsonl",
+        "bytes": 26531,
+        "sha256": "33fb0d604dd2d202f8fca4dadc67e4533d844076156060e8e8c8d356952c3aeb"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 772,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_final/arena_4_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_1_opponent_1/result.json",
+        "bytes": 3818,
+        "sha256": "7b994b0c0bc91d7a8c7cdc2d4437fdf51fc16727fa21857025f56342cbf0428c"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_final/arena_4_faction_1_opponent_1/events.jsonl",
+        "bytes": 23239,
+        "sha256": "0eaeb62dc7c441cfc5754b3028be47bfa46596be19784a6510efbb80852cbda3"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 856,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            7,
+            4,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_0_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0/result.json",
+        "bytes": 3861,
+        "sha256": "f13b00835a4aa6ccc85c1b8272ba3427b44ec0e82d070a8925b185c5f4e5ef2d"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_0/events.jsonl",
+        "bytes": 39570,
+        "sha256": "c45bfa97e8d4694c5b4a62547af33b9137048401adb2a106795b1bb68be0ab30"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1095,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_0_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1/result.json",
+        "bytes": 3854,
+        "sha256": "7b0038572c9edb8078382c16390a0d1b0fa9a0884390f1e5bc6ddb9e13a9bf73"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_0_opponent_1/events.jsonl",
+        "bytes": 26652,
+        "sha256": "2b03936623621703e8ce85dfe0aae43b8cfcc2788ccf9ddf3144d2f0b6505c3a"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 902,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            8,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_0_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0/result.json",
+        "bytes": 3861,
+        "sha256": "5a184a8405c602393a742ea9c9fa0c691417cdefb304fdf9792758920dfe07c5"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_0/events.jsonl",
+        "bytes": 37287,
+        "sha256": "99f4641229af6e48f107bfea7d3ac1d5b5450c50a683a58b66138858ad9c4a7b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1054,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            19,
+            0,
+            7
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_0_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1/result.json",
+        "bytes": 3855,
+        "sha256": "35cfc2cfc8fca5b66070c040d3e886928006b3b34cdcbb528e4495e49c473aff"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_0_faction_1_opponent_1/events.jsonl",
+        "bytes": 23845,
+        "sha256": "b064ee1bd4f66d46a39dfff0d133f23318555318a4d29ba664ba4ee6b4955431"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 721,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            7,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_1_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0/result.json",
+        "bytes": 3726,
+        "sha256": "e17d368db5e0773c04b818abcdb555e7a44dd725a25cccd60e1b1babfd220d2e"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_0/events.jsonl",
+        "bytes": 16185,
+        "sha256": "44e728a565318522c480768056fdd79ad533111a5558766ebe2de2bf92708eb6"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 274,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_1_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1/result.json",
+        "bytes": 3723,
+        "sha256": "e6e2047283a1a1542b8db8b9812b601e7c2bd84ab3a016411a7fab13587347c2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_0_opponent_1/events.jsonl",
+        "bytes": 14863,
+        "sha256": "7448d9258673148c9bac048c031f4b555845734760eee4e87586eea7e4659b5d"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 249,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            4,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_1_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0/result.json",
+        "bytes": 3731,
+        "sha256": "6f906131eb2c8dfe065c3644847ca8d71adcae8ad7dc187e05111842fc0030b8"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_0/events.jsonl",
+        "bytes": 21975,
+        "sha256": "7a1323a13c40a8bd3b8d5c78e2a8bb034c9d16f8631c668a853caef9213fee96"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 399,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_1_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1/result.json",
+        "bytes": 3728,
+        "sha256": "cc7a3f329233ad7de9e60dc054d071db8ee85c098ea10e78d00bb453d476908a"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_1_faction_1_opponent_1/events.jsonl",
+        "bytes": 25641,
+        "sha256": "febe737f56aa6b5658ac37f6c0126b2b4b76416f8fc009f148ac51957e4cf9bb"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 472,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            9,
+            4,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_2_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0/result.json",
+        "bytes": 4000,
+        "sha256": "553683309024171588f6d7fcc1a9becd80114409b2e2823fe749bafd84324e33"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_0/events.jsonl",
+        "bytes": 37050,
+        "sha256": "bcb6ca98a358510796d78740b642f625e41ecf3c4f1aa14e317812ab5a2ad695"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 881,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_2_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1/result.json",
+        "bytes": 3994,
+        "sha256": "112bd2a4570b7592497a9fd6c026e959303199a73d813a83ae9a0655f75bb7fa"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_0_opponent_1/events.jsonl",
+        "bytes": 26823,
+        "sha256": "46408dd8f8b3dc6908276501732597c8e3fa698bb6c613e154afbceaa4c7dc5b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 958,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            8,
+            1,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_2_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0/result.json",
+        "bytes": 4003,
+        "sha256": "6a2d83f6a70190c9036755efbd732d1bf624e74a52206f8da51f0f1fe7de9d2f"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_0/events.jsonl",
+        "bytes": 51113,
+        "sha256": "f5f3f1c01260dbb796986f1240afc114c1507f83a1ab8416525a0ddf5aad58d1"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1132,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            27,
+            0,
+            9
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_2_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1/result.json",
+        "bytes": 3994,
+        "sha256": "ef057eff47a3b9bb1ed47d6307c3d32586e6ada300d67e486309e27cea0a2849"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_2_faction_1_opponent_1/events.jsonl",
+        "bytes": 30720,
+        "sha256": "14ab520d47db1c9cd20950f08ca27a6caeb1b4136cbeb0f96fb71902b66681dc"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 997,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            9,
+            6,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_3_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0/result.json",
+        "bytes": 4203,
+        "sha256": "bd480803016bc4c3d260f871d217831540b2916688aed1369da72c92967ee2de"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_0/events.jsonl",
+        "bytes": 43617,
+        "sha256": "89990508ad8b1c400d9c85116eae8aa0e6c846ca160f576d26b82f31c939c54e"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 379,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            29,
+            0,
+            8
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_3_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1/result.json",
+        "bytes": 3856,
+        "sha256": "5d611d90f317a2d4c77012ab485c0fbf928f75d74cc120ac7d4b2b1f8604e1ab"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_0_opponent_1/events.jsonl",
+        "bytes": 28381,
+        "sha256": "35e0b1127971e83a6783390a8d0a8f7ee1ebc9d21174a71a351041fdf0ec213d"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 543,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            10,
+            2,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_3_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0/result.json",
+        "bytes": 3686,
+        "sha256": "2699452d7e472c5462e9fbc845f8b00feaf8ad376ce459f556c40303ade2a69d"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_0/events.jsonl",
+        "bytes": 20697,
+        "sha256": "cafa2c43fa45e0b6695edd2899665b0c4902216770b74bb46d6b9ff0e89258a3"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 324,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_3_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1/result.json",
+        "bytes": 3681,
+        "sha256": "94222b12a1da896e09822380380d5e595d0b738af6e7a83318844a816ba1aa6d"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_3_faction_1_opponent_1/events.jsonl",
+        "bytes": 21601,
+        "sha256": "7ca2c28b676dba28efd63fa57a0e1a2f970ff04a0dc0b42798800e4eaa707b5e"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 392,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_4_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0/result.json",
+        "bytes": 3825,
+        "sha256": "e91591356cd406fd435677eaac8514dbcbdc70fdcedd13e60465257aedd4139c"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_0/events.jsonl",
+        "bytes": 30609,
+        "sha256": "11cfd8530750fc0dc1a3fb52720e1b08fc9e16dc5509499f2065e0367a874567"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 879,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            16,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_4_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1/result.json",
+        "bytes": 3821,
+        "sha256": "cffae822f0858a3aab08bc528278b6585af87552784f04f0636e92dd5cc2904b"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_0_opponent_1/events.jsonl",
+        "bytes": 25827,
+        "sha256": "ef7011fe5666e1b84a6ad922d14e7f2947bf8c351baccab89daee1cf14f49a62"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 936,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_4_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0/result.json",
+        "bytes": 3822,
+        "sha256": "7428fbfe321751cdcfab07bcd35e14764c54651d7c6a3dbceb966f0fd1b4e8f5"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_0/events.jsonl",
+        "bytes": 26531,
+        "sha256": "33fb0d604dd2d202f8fca4dadc67e4533d844076156060e8e8c8d356952c3aeb"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 772,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_release/arena_4_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1/result.json",
+        "bytes": 3818,
+        "sha256": "2f701c782a4fd12541f860397a56326a6e018cc9880448011172fe7e677e97e2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_release/arena_4_faction_1_opponent_1/events.jsonl",
+        "bytes": 23239,
+        "sha256": "0eaeb62dc7c441cfc5754b3028be47bfa46596be19784a6510efbb80852cbda3"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/full_showdown_v9/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 856,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            7,
+            4,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_0_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_0_opponent_0/result.json",
+        "bytes": 3864,
+        "sha256": "230bac91bad58dd0d2e9756048c94cff52a5ee833a4750762f87ffb0a2ddb662"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_0_opponent_0/events.jsonl",
+        "bytes": 39573,
+        "sha256": "a610c52e0d10f36e343812902a14469325ca5d5dd01e622b9bf8bf88256464db"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1095,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_0_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_0_opponent_1/result.json",
+        "bytes": 3858,
+        "sha256": "ded0481e863eb9cd0d694703aae716943d7153cdd6e6c9da58fc6098183a3ae2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_0_opponent_1/events.jsonl",
+        "bytes": 26655,
+        "sha256": "7a8ef73c0e61f63481e235f8277c4fc4c6e8ff8f0386df2eb7f2b4816ea6699b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 902,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            8,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_0_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_1_opponent_0/result.json",
+        "bytes": 3864,
+        "sha256": "78fe6dff285833fbf531cf727e8a49e497c3cadc508c667feeb1b0abc57b452a"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_1_opponent_0/events.jsonl",
+        "bytes": 37290,
+        "sha256": "ab7827ebfd832ab38eb1eb7f2efe31e7e902eb0eb8cf994e719af96b5e1a36d8"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1054,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            19,
+            0,
+            7
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_0_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_1_opponent_1/result.json",
+        "bytes": 3858,
+        "sha256": "d9519c1355d89d1c1aa2df191513253d3d9f4093bab23ae23e567ac9400174d8"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_0_faction_1_opponent_1/events.jsonl",
+        "bytes": 23848,
+        "sha256": "ba77d86b7ce73c894396bb868dfcdd2e0b66968787ad3a5b5f3d0a61a9119d51"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 0,
+          "resource": 310,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 721,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            7,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_1_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_0_opponent_0/result.json",
+        "bytes": 3729,
+        "sha256": "a5d73bcdac328ee87bf1506c4348fb3f55e957b0b55f0b54c90399bb4b20ee42"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_0_opponent_0/events.jsonl",
+        "bytes": 16188,
+        "sha256": "df04bd4ba9ef09e10d9a2bf04cce301013d30c22ac9bd83279f83cb6e95321df"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 274,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_1_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_0_opponent_1/result.json",
+        "bytes": 3726,
+        "sha256": "5f235998e963ffc1a531bfd8a97082f15b0844bf6906988b5e3d7cf22e6dfa50"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_0_opponent_1/events.jsonl",
+        "bytes": 14866,
+        "sha256": "3ec74d6868355b02b7c27e0e30becf4470fc544517bd716b548b9d742a766f77"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 249,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            4,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_1_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_1_opponent_0/result.json",
+        "bytes": 3734,
+        "sha256": "0ae7ea34666334676639ec7884b7262e6eb23d20d07fd97244d6ad58db1f2aad"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_1_opponent_0/events.jsonl",
+        "bytes": 21978,
+        "sha256": "5343ce66aed85464f26cdad79a62667e189312c437f2cf42df151c4df2334900"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 399,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_1_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_1_opponent_1/result.json",
+        "bytes": 3731,
+        "sha256": "94ceb10e18f6a60ffc5348327b4c560ed38543af8d4d44114586827dc6f59b72"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_1_faction_1_opponent_1/events.jsonl",
+        "bytes": 25644,
+        "sha256": "c7b7686efb60a1e7a0e0be47b449da487871e9d5160193011fcec7d68c8a4251"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 1,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 1,
+          "resource": 311,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 472,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            9,
+            4,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_2_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_0_opponent_0/result.json",
+        "bytes": 4003,
+        "sha256": "d091d6ecf999aae0a77854c668da1f81226f38b121e235443d92fd08c4655df5"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_0_opponent_0/events.jsonl",
+        "bytes": 37053,
+        "sha256": "ab16b72a56ae08f7112ac3f39ef71332184ec7edadc9a42997d36b3a20bffccf"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 881,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_2_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_0_opponent_1/result.json",
+        "bytes": 3997,
+        "sha256": "cf5898485b3ef96abf330ee12cd55f1146e7ed1a94911cb6cc58b7737a1995da"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_0_opponent_1/events.jsonl",
+        "bytes": 26826,
+        "sha256": "033846e823843063800cc227348de3b0f933460f7b6855585e9ae52c097466fa"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 958,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            8,
+            1,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_2_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_1_opponent_0/result.json",
+        "bytes": 4005,
+        "sha256": "7ed5e876c804065772e23ef1129f48550ce86a5473139413536f3e5299205953"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_1_opponent_0/events.jsonl",
+        "bytes": 51116,
+        "sha256": "b7a5bdedc82be7363cd7219388ee105399fd2682017624cc1c900ffe53f26a71"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1132,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            27,
+            0,
+            9
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_2_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_1_opponent_1/result.json",
+        "bytes": 3997,
+        "sha256": "f474bc57444c2561906689b89c53cdafeaee18316a85c93eee5da486b999840f"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_2_faction_1_opponent_1/events.jsonl",
+        "bytes": 30723,
+        "sha256": "6e950b69598bde33a43d234799773035a04b6ca11a0cb3a24dda4d9aa9203f31"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 2,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 2,
+          "resource": 312,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 997,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            9,
+            6,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_3_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_0_opponent_0/result.json",
+        "bytes": 4206,
+        "sha256": "01f92bd9719883f70674abb8d71c239d04aee379c2ee9e0730fd70c0cc88a3a0"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_0_opponent_0/events.jsonl",
+        "bytes": 43620,
+        "sha256": "70a659c22ed535ce02f01bcf2496c245fbcbdd12c7e74b1609f39dcaa3686a29"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 379,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            29,
+            0,
+            8
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_3_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_0_opponent_1/result.json",
+        "bytes": 3861,
+        "sha256": "80b634a2a21f2ca3c2beae60143c57997f390243afc5922e398d79c2578e9f82"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_0_opponent_1/events.jsonl",
+        "bytes": 28384,
+        "sha256": "41c829d3c19ea243440bbec75f753ded3a36aab98eb1f0d915b9f75e8404634b"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 543,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            10,
+            2,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_3_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_1_opponent_0/result.json",
+        "bytes": 3689,
+        "sha256": "bea1db21433434f551a1dc94befcd4f33fba92ed62c89141158e8aee15b4fff2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_1_opponent_0/events.jsonl",
+        "bytes": 20700,
+        "sha256": "737b4d56d5be6a3e7e3dd5c95aeb22515f3f6a4ef090cb217380c470335d5fac"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 324,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            13,
+            0,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_3_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_1_opponent_1/result.json",
+        "bytes": 3684,
+        "sha256": "563bd4370ade2897ac17efee22696d63aa589c3ccda477dead3b9a0d0c8447f1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_3_faction_1_opponent_1/events.jsonl",
+        "bytes": 21604,
+        "sha256": "9ac4885f09fe125aa421e7ab294b70deedb2773c60162018b74feb57fc67b166"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 3,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 3,
+          "resource": 313,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 392,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_4_faction_0_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_0_opponent_0/result.json",
+        "bytes": 3830,
+        "sha256": "c8c5ce511ae16fee3a7769901f74227eac3808ac6c8c7c487daad10623eb1137"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_0_opponent_0/events.jsonl",
+        "bytes": 30612,
+        "sha256": "d1c0315febfb4fdc7b3a65b335a77f75d26703fa6e568a2e678befc3905a4035"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 879,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            16,
+            0,
+            6
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_4_faction_0_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_0_opponent_1/result.json",
+        "bytes": 3824,
+        "sha256": "b36743462fcbacaa116b66fb25166a064ec55a5d0b123032a881f4c784fbbb65"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_0_opponent_1/events.jsonl",
+        "bytes": 25830,
+        "sha256": "4ef586eb70147b0e51e1f5f0bc02b7333f9048494122f10e84a3b91c9b821c42"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 936,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            2,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_4_faction_1_opponent_0",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_1_opponent_0/result.json",
+        "bytes": 3824,
+        "sha256": "7587af0128d287bf233317ab7d68850af948c920c1abfdc258fb597b1bcaf9f6"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_1_opponent_0/events.jsonl",
+        "bytes": 26534,
+        "sha256": "9817d8c0ddac9280fbe36db76fbb469ff85f477435d15492ac91fd4c8c25a413"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 772,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            0,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "arena_matrix_v9/arena_4_faction_1_opponent_1",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_1_opponent_1/result.json",
+        "bytes": 3821,
+        "sha256": "dc3121c31dbc6f7b73bf6c5b0e318b3860e58f4015e707dbda2b9169d8a9df47"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/arena_matrix_v9/arena_4_faction_1_opponent_1/events.jsonl",
+        "bytes": 23242,
+        "sha256": "c6672d1b72c1d9b717df40e4721e9316ee1ecc6bb3572cdc89e4fbf65b905448"
+      },
+      "outcome": "native_arena_finished",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 2,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/mode_playthrough_followup/v8_finish7_baseline/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 2,
+          "index": 4,
+          "resource": 314,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 856,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            7,
+            4,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "capture_showdown4_stall",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/capture_showdown4_stall/result.json",
+        "bytes": 2985,
+        "sha256": "6b21ea806e5fbf32d71a804332255f20bfde2252d67b7c01ae1b573ee963e9ab"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/capture_showdown4_stall/events.jsonl",
+        "bytes": 151321,
+        "sha256": "956e72fa5dbe4678d75a54acefe7536e9e4498c47e9fce1d51c1996aa11509fa"
+      },
+      "outcome": "live_checkpoint_captured",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "capture_showdown5_economy",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/capture_showdown5_economy/result.json",
+        "bytes": 3327,
+        "sha256": "ac815a98442da0b0a6e414817f50235fa1ed1f5f4aba2c702002125821aec736"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/capture_showdown5_economy/events.jsonl",
+        "bytes": 50362,
+        "sha256": "6c56fde199a7a3da63792fa0cf05a0d4619047ae66b87914ec31f7d9301dc083"
+      },
+      "outcome": "live_checkpoint_captured",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/stall_finish_direct/entry-1-5.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "economy_finish5_native-planner-all",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/economy_finish5_native-planner-all/result.json",
+        "bytes": 3713,
+        "sha256": "cb290c46bba144d59ffb203d48309800058c82271eec816535f1c1c136f62d55"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/economy_finish5_native-planner-all/events.jsonl",
+        "bytes": 14188,
+        "sha256": "4c5cd15031ddcf2ed34cd2cd9b3f6b45099430db4bf8371f01b252d72508c9fc"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown5_economy/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 153,
+          "active_counts": [
+            0,
+            5
+          ],
+          "record": [
+            36,
+            0,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "economy_finish5_tactical-search",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/economy_finish5_tactical-search/result.json",
+        "bytes": 3356,
+        "sha256": "7ff2d9c25c8aaae92f026a8fa1de35c54d5e33269232684ad3f44af408b5e5e4"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/economy_finish5_tactical-search/events.jsonl",
+        "bytes": 247372,
+        "sha256": "6ace77760d87e13d4482147c01b2854db80f101438b00b66920ada6ebbf728f8"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown5_economy/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "full_showdown_v9",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/result.json",
+        "bytes": 4187,
+        "sha256": "1f42f470d3785331d1cc910c921013faa1f29cd861959f91f374194d0235cbeb"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/full_showdown_v9/events.jsonl",
+        "bytes": 635156,
+        "sha256": "67aa663d5976cb5e3d2e1a0f6d1447ab99b27ebd3b889fca06ca3af69c8a7f44"
+      },
+      "outcome": "native_campaign_ending",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "mode-hybrid",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 0,
+          "resource": 324,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 517,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            17,
+            2,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 1,
+          "resource": 325,
+          "handoff": "next_mission",
+          "first_tick": 518,
+          "last_tick": 1223,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            26,
+            3,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 2,
+          "resource": 327,
+          "handoff": "next_mission",
+          "first_tick": 1224,
+          "last_tick": 3572,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            128,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 3,
+          "resource": 328,
+          "handoff": "next_mission",
+          "first_tick": 3573,
+          "last_tick": 3805,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            3,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "next_mission",
+          "first_tick": 3806,
+          "last_tick": 4193,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            7,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "next_mission",
+          "first_tick": 4194,
+          "last_tick": 5451,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            133,
+            4,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 6,
+          "resource": 331,
+          "handoff": "next_mission",
+          "first_tick": 5452,
+          "last_tick": 5637,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            4,
+            6,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_ending",
+          "first_tick": 5638,
+          "last_tick": 5915,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            6,
+            2,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_capture_right",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_capture_right/result.json",
+        "bytes": 2918,
+        "sha256": "5c11e6f9b0afcb6dda39cfa623981fc9f83d97dc4f0893fe356edd7d3c4306c6"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_capture_right/events.jsonl",
+        "bytes": 38822,
+        "sha256": "7d0906cedf8ab388269848dc064053e137d4a84fd03e478a1bc0fef8348822a7"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "capture_right",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 803,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            15,
+            1,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_cohesive_left",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_cohesive_left/result.json",
+        "bytes": 2929,
+        "sha256": "5dbeffea7406c444846f3e295fd701d3acb9b22f457e3cb29c02c0a9b7f989c1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_cohesive_left/events.jsonl",
+        "bytes": 118741,
+        "sha256": "c963d01921f21d43f8119112e446061e93ed39e90add65e8ab8ad0ac6aa175f3"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "cohesive_left",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 2148,
+          "active_counts": [
+            0,
+            1
+          ],
+          "record": [
+            55,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_cohesive_right",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_cohesive_right/result.json",
+        "bytes": 2930,
+        "sha256": "741146051882c073c0b69c9db11341bdb5b1996275224e4dd9d7c749f68f0d01"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_cohesive_right/events.jsonl",
+        "bytes": 118741,
+        "sha256": "c963d01921f21d43f8119112e446061e93ed39e90add65e8ab8ad0ac6aa175f3"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "cohesive_right",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 2148,
+          "active_counts": [
+            0,
+            1
+          ],
+          "record": [
+            55,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_combat",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_combat/result.json",
+        "bytes": 2718,
+        "sha256": "326ba33e0287a1003062df2cab66a180523581a72e70f46fa0e501b09b5a11b2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_combat/events.jsonl",
+        "bytes": 281361,
+        "sha256": "5e62f77d18cb42bbdb8180b7a49771643498ef994bc7b2f420d24802d8337092"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_defensive",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_defensive/result.json",
+        "bytes": 2932,
+        "sha256": "c9e586b52c511010efddc87474164ea82e5b2886109a9117df1001f68f84d9d9"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_defensive/events.jsonl",
+        "bytes": 97816,
+        "sha256": "5bcec91e6e0f6dd58e26563485dc7717ce9cefbdab5c2708aedbb8e33c1ff6ac"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "defensive",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 3293,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            38,
+            4,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_ranged",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_ranged/result.json",
+        "bytes": 2915,
+        "sha256": "03dac5963638241391b8adecb7e52d052e2f64e68525fb3dc6f9aa29f5ad1d0f"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_ranged/events.jsonl",
+        "bytes": 51259,
+        "sha256": "a0033480c2f78fe02f326efd9846e73465076fdca9920e950766d2a73fd1c2f6"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "ranged",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1676,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            20,
+            2,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown4_ranged_economy",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_ranged_economy/result.json",
+        "bytes": 2919,
+        "sha256": "cf606e6f23a408b3a7c16760d319d85dc7cf47ba8360423bb5f9562ad7e82a5f"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown4_ranged_economy/events.jsonl",
+        "bytes": 41356,
+        "sha256": "31afd7a702adf0858a4f7400332c3bf5493230313626705931d1be0d63d22a9a"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "ranged_economy",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/entry-1-4.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 974,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            16,
+            0,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown5_aggressive",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_aggressive/result.json",
+        "bytes": 3524,
+        "sha256": "6b62e5d8226bb65a7a6d0abf0a85a39304717a74c62d839a0e9099dcb97bc8b1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_aggressive/events.jsonl",
+        "bytes": 38333,
+        "sha256": "44dba2d9ae908b26cd8045c7a0e3b6c7d125a3ed93f9fb69b3072e2045242103"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/stall_finish_direct/entry-1-5.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 937,
+          "active_counts": [
+            0,
+            5
+          ],
+          "record": [
+            17,
+            4,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown5_baseline",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_baseline/result.json",
+        "bytes": 3516,
+        "sha256": "1a375a5c072727544e9d1bb8838bd8efe0b7b7c1b336e1359a2bdea2866365fb"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_baseline/events.jsonl",
+        "bytes": 300576,
+        "sha256": "51b385791b8a75e303e389833324862487daf3db6c3b2b38bcee37fa68fae01a"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/stall_finish_direct/entry-1-5.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "resume_showdown5_combat",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_combat/result.json",
+        "bytes": 3696,
+        "sha256": "0b55783fb431054632be25a61725bfc6b728f56dd8d3e06dc17df9a3d30ab567"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/resume_showdown5_combat/events.jsonl",
+        "bytes": 42278,
+        "sha256": "af4283bbbaf1cb31fe602a6078bf4fa774d2d80e6e0bb98bc1085ee21fc5d409"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/stall_finish_direct/entry-1-5.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1065,
+          "active_counts": [
+            0,
+            5
+          ],
+          "record": [
+            18,
+            5,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_cohesive_left_18241",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18241/result.json",
+        "bytes": 2928,
+        "sha256": "7f3f01456a6bddf0399939f94e47952635cd597303225c4ce5d9893259204fa2"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18241/events.jsonl",
+        "bytes": 88037,
+        "sha256": "8cf9c23e540aa48e2c2f07d55026f3eb85dd5b8b601087e66ac39b1b17483746"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "cohesive_left",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1025,
+          "active_counts": [
+            0,
+            1
+          ],
+          "record": [
+            41,
+            2,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_cohesive_left_18242",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18242/result.json",
+        "bytes": 2727,
+        "sha256": "8c5dea818889feef792237f92f52e0e4f60f40cd4e87f4fc7a9ea26e020df978"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18242/events.jsonl",
+        "bytes": 200942,
+        "sha256": "0c8583ac35e92077488538c182c01a9ccc92f246f552f5b08bcdbe2cff3fd31c"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "cohesive_left",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_cohesive_left_18243",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18243/result.json",
+        "bytes": 2933,
+        "sha256": "18c316ce4fd6c2297079a7375afa851eef86ca3dd579df7b443d3c868e51184c"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_cohesive_left_18243/events.jsonl",
+        "bytes": 138687,
+        "sha256": "ab75ff0c70b16f6dd767c9d637c472f64b471099a5b29b9134ef12057a38bb9e"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "cohesive_left",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 2612,
+          "active_counts": [
+            0,
+            1
+          ],
+          "record": [
+            64,
+            6,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_combat_18241",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18241/result.json",
+        "bytes": 2721,
+        "sha256": "30a74dfa9a15adcb408a4e1d3aec22a6c58abb5117e41869027c461d421114eb"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18241/events.jsonl",
+        "bytes": 196226,
+        "sha256": "93e9f4e223bd819b457e3ed689d88bd03948bca020f3af8ee562ac7cf03eab01"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_combat_18242",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18242/result.json",
+        "bytes": 2721,
+        "sha256": "5272f2a33b28d3460bfdaf53b42cb06a958ba3d3860cd17fd00c9029727e7672"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18242/events.jsonl",
+        "bytes": 198459,
+        "sha256": "3459a1ded222937fe9acfec15be920816520a5c4adce0a76c80997b3392fa70e"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "retry_showdown4_combat_18243",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18243/result.json",
+        "bytes": 2719,
+        "sha256": "cae0b75b460636f13a0c58f6dd059433ab58afca51da078372d67b89b2cc02ae"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/retry_showdown4_combat_18243/events.jsonl",
+        "bytes": 189010,
+        "sha256": "d1b003c2ea3d8d5e040622d8ea55f3f7a3dcdeb4c00c21d4ddb24d4dd95fc7f6"
+      },
+      "outcome": "human_turn_bound",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/campaign.g1native",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "showdown_native-planner-tactical",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_native-planner-tactical/result.json",
+        "bytes": 2687,
+        "sha256": "b9d7781e896f45fea18ad3c47106e1d1c96cd1b20d3814eeb516203e88a55fe1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_native-planner-tactical/events.jsonl",
+        "bytes": 29532,
+        "sha256": "b60b982e1e73f9bee353631ca05dff357436a7d75917a32c3f20ac7bf7c1be60"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "native-planner-tactical",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 0,
+          "resource": 324,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 471,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            19,
+            0,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          0
+        ]
+      }
+    },
+    {
+      "directory": "showdown_tactical-search",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_tactical-search/result.json",
+        "bytes": 3583,
+        "sha256": "078eae2e166a3cfc3f7ec2fe63991bf269565ff211fd41a7b6fe4a2164c54ad9"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_tactical-search/events.jsonl",
+        "bytes": 403479,
+        "sha256": "6329dbb7e46195cfd723c6bf6131e594211702c5f469f23fb5253a4b3e002f56"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 0,
+          "resource": 324,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 517,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            17,
+            2,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 1,
+          "resource": 325,
+          "handoff": "next_mission",
+          "first_tick": 518,
+          "last_tick": 1223,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            26,
+            3,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 2,
+          "resource": 327,
+          "handoff": "next_mission",
+          "first_tick": 1224,
+          "last_tick": 3572,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            128,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 3,
+          "resource": 328,
+          "handoff": "next_mission",
+          "first_tick": 3573,
+          "last_tick": 3805,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            3,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 3806,
+          "last_tick": 4821,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            16,
+            1,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "showdown_v2_aggressive",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v2_aggressive/result.json",
+        "bytes": 3624,
+        "sha256": "1f6c839889009b4cb23b6f8e7f3fb7f9f7a703fce65a38bd3ff80c25b1ce6366"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v2_aggressive/events.jsonl",
+        "bytes": 146253,
+        "sha256": "ea762a496efd67765ec1035115da8e0f2976eaacf17b1d421d77de1a33d21d67"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 0,
+          "resource": 324,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 534,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            18,
+            2,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 1,
+          "resource": 325,
+          "handoff": "campaign_menu",
+          "first_tick": 535,
+          "last_tick": 2688,
+          "active_counts": [
+            0,
+            1
+          ],
+          "record": [
+            42,
+            7,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "showdown_v4_hybrid",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v4_hybrid/result.json",
+        "bytes": 2393,
+        "sha256": "cadc6e6fb60138df5f3ed60dc1e21fd2a42b96407d429f690740a432f0614702"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v4_hybrid/events.jsonl",
+        "bytes": 1349,
+        "sha256": "cc1013484a657f3eec9bdfb5825931d70723e4ff4944c7a572c08ecee348e5c5"
+      },
+      "outcome": "native_exception",
+      "error": "native session has no completed checkpoint boundary",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          0
+        ]
+      }
+    },
+    {
+      "directory": "showdown_v5_hybrid",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/result.json",
+        "bytes": 3583,
+        "sha256": "4b1eb39f9d241a0dc7aefada8f83edb071c0c54a5658c33bec5dfd5f378f12aa"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/showdown_v5_hybrid/events.jsonl",
+        "bytes": 454647,
+        "sha256": "50db2cd9676a6363af5910860943c122cf6de9b903d55c3217f517fecfceb2f3"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_profile_menu_selection",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 0,
+      "resume_input": "",
+      "initial_profile": "g1_port/research/playthrough_strategy_followup/full_story_aggressive/campaign.g1native",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 0,
+          "resource": 324,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 517,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            17,
+            2,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 1,
+          "resource": 325,
+          "handoff": "next_mission",
+          "first_tick": 518,
+          "last_tick": 1223,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            26,
+            3,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 2,
+          "resource": 327,
+          "handoff": "next_mission",
+          "first_tick": 1224,
+          "last_tick": 3572,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            128,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 3,
+          "resource": 328,
+          "handoff": "next_mission",
+          "first_tick": 3573,
+          "last_tick": 3805,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            3,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "campaign_menu",
+          "first_tick": 3806,
+          "last_tick": 7081,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            38,
+            3,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          4
+        ]
+      }
+    },
+    {
+      "directory": "stall_finish_direct",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/stall_finish_direct/result.json",
+        "bytes": 2981,
+        "sha256": "2816fb6193a06e414c3a2fd20bbef37dcd71882d802f24861961f39a3cb9e741"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/stall_finish_direct/events.jsonl",
+        "bytes": 11904,
+        "sha256": "1c5edf644b8d7f96a097987f03f2b3249409f8c0086ab3c6805689fa783d496a"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "direct",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown4_stall/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 78,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            80,
+            3,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "campaign_menu",
+          "first_tick": 79,
+          "last_tick": 300,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            6,
+            0,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "stall_finish_native-planner-all",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/stall_finish_native-planner-all/result.json",
+        "bytes": 3518,
+        "sha256": "9b1dea175c1f83c1d19e6636736564428cb52d8fda1a90568b2677b3a64988ee"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/stall_finish_native-planner-all/events.jsonl",
+        "bytes": 22881,
+        "sha256": "16cd47ef907aff2f84f8b81cd68eff367f395f0ba62297411af82fb02edeff3e"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "native-planner-all",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown4_stall/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 78,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            80,
+            3,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "campaign_menu",
+          "first_tick": 79,
+          "last_tick": 511,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            11,
+            0,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "v8_capture_showdown5_ready",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_capture_showdown5_ready/result.json",
+        "bytes": 3362,
+        "sha256": "2833ac499dcac66ac54d882207c96b0c074160022f685adcd10ac2e36cd3431f"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_capture_showdown5_ready/events.jsonl",
+        "bytes": 166031,
+        "sha256": "e260a234d05976fdc4d99950cb820278146852ea8d2cf876a8f27a5465881357"
+      },
+      "outcome": "live_checkpoint_captured",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown5_economy/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    },
+    {
+      "directory": "v8_finish7_aggressive",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_aggressive/result.json",
+        "bytes": 3016,
+        "sha256": "b4c9003a92b33f08e35ebfddc50b470038fb93c4b8c7fa080fcda52372b83cd8"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_aggressive/events.jsonl",
+        "bytes": 20486,
+        "sha256": "b101e684ea3082b6e16b332945f030ccd2a991ae563c59a980d8ff8211bcb13a"
+      },
+      "outcome": "native_campaign_ending",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "aggressive",
+      "group": 1,
+      "mission": 7,
+      "resume_input": "g1_port/research/mode_playthrough_followup/v8_ready5_native-planner-all/entry-1-7.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_ending",
+          "first_tick": 0,
+          "last_tick": 340,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            8,
+            2,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "v8_finish7_baseline",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_baseline/result.json",
+        "bytes": 3015,
+        "sha256": "ce1ffcfb5fe981b4fb3486d170489419e097a044dc62004930e802f719a5bea1"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_baseline/events.jsonl",
+        "bytes": 14332,
+        "sha256": "841c39c140b6ae4aa2e041be059a18d9d2bab6639b5bf928fbd54ce6c52d7955"
+      },
+      "outcome": "native_campaign_ending",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 7,
+      "resume_input": "g1_port/research/mode_playthrough_followup/v8_ready5_native-planner-all/entry-1-7.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_ending",
+          "first_tick": 0,
+          "last_tick": 310,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            5,
+            2,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "v8_finish7_combat",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_combat/result.json",
+        "bytes": 3010,
+        "sha256": "8aaa1c869b9c4f390c3edb04ed23fbb1ac08307e40677fa9e312b7cb24991bed"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_finish7_combat/events.jsonl",
+        "bytes": 15589,
+        "sha256": "a86fca4bac840fbebe952c2f5737da33603bd0b90e9907e0858d7d1e8fbd652e"
+      },
+      "outcome": "native_campaign_ending",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 7,
+      "resume_input": "g1_port/research/mode_playthrough_followup/v8_ready5_native-planner-all/entry-1-7.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_ending",
+          "first_tick": 0,
+          "last_tick": 351,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            6,
+            2,
+            0
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          true
+        ],
+        "highest_unlocked": [
+          17,
+          8
+        ]
+      }
+    },
+    {
+      "directory": "v8_ready5_direct",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_ready5_direct/result.json",
+        "bytes": 3322,
+        "sha256": "0e9cb460571315a66aa669e87ec804e8d05677785aabec71799b4e344c4bdb4e"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_ready5_direct/events.jsonl",
+        "bytes": 29787,
+        "sha256": "d3b0955f7dd1890571ad859fc49bee2a2f376c27622951c50358ca1f8e069227"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "direct",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/v8_capture_showdown5_ready/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 221,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            134,
+            4,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 6,
+          "resource": 331,
+          "handoff": "next_mission",
+          "first_tick": 222,
+          "last_tick": 408,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            4,
+            6,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_menu",
+          "first_tick": 409,
+          "last_tick": 603,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            3,
+            0,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          7
+        ]
+      }
+    },
+    {
+      "directory": "v8_ready5_native-planner-all",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_ready5_native-planner-all/result.json",
+        "bytes": 3333,
+        "sha256": "6844a51b1445661ba0767e46d177f9abd1ca1b361fb3f846c6b9c394e0fbea37"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_ready5_native-planner-all/events.jsonl",
+        "bytes": 35408,
+        "sha256": "4af3d18bfb1f891ade48a2fe66f2bd4dd963cc15e460e64f48fb384bb8ae5660"
+      },
+      "outcome": "native_loss_handoff",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "native-planner-all",
+      "policy": "baseline",
+      "group": 1,
+      "mission": 5,
+      "resume_input": "g1_port/research/mode_playthrough_followup/v8_capture_showdown5_ready/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 5,
+          "resource": 330,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 204,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            133,
+            4,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 6,
+          "resource": 331,
+          "handoff": "next_mission",
+          "first_tick": 205,
+          "last_tick": 390,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            4,
+            6,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 1,
+          "index": 7,
+          "resource": 332,
+          "handoff": "campaign_menu",
+          "first_tick": 391,
+          "last_tick": 777,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            7,
+            0,
+            2
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          7
+        ]
+      }
+    },
+    {
+      "directory": "v8_stall_finish4",
+      "result": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_stall_finish4/result.json",
+        "bytes": 3184,
+        "sha256": "3c54dd27abff32f838928e59090e7bc03f0808133ce095129f95d01430307dc7"
+      },
+      "events": {
+        "path": "g1_port/research/mode_playthrough_followup/v8_stall_finish4/events.jsonl",
+        "bytes": 3546,
+        "sha256": "12163d7e09511f2fd7b2e36cdedacde19d1572c697c8d6980d9ca4357ca14104"
+      },
+      "outcome": "mission_count_bound",
+      "error": "",
+      "start_mode": "actual_native_checkpoint",
+      "strategy": "tactical-search",
+      "policy": "combat",
+      "group": 1,
+      "mission": 4,
+      "resume_input": "g1_port/research/mode_playthrough_followup/capture_showdown4_stall/captured-objective.g1native",
+      "initial_profile": "",
+      "handoffs": [
+        {
+          "group": 1,
+          "index": 4,
+          "resource": 329,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 78,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            80,
+            3,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "profile": {
+        "completed": [
+          true,
+          false
+        ],
+        "highest_unlocked": [
+          17,
+          5
+        ]
+      }
+    }
+  ]
+}

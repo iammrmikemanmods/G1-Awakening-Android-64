@@ -1,0 +1,194 @@
+{
+  "scope": "Original transform matrix core and native column-major matrix comparison",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "unicorn_version": "2.1.4",
+  "functions": [
+    "0xa6848",
+    "0xa6a44",
+    "0xa6766",
+    "0x9fbd4",
+    "0xa69b0",
+    "0x95a0c"
+  ],
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "substitutions": [
+    "external memcpy",
+    "external sinf/cosf using host libm",
+    "unwind registration/unregistration"
+  ],
+  "dispatch_seeds": {
+    "0xd22c8": "original CssVector3D::Magnitude2 at 0xb97e0",
+    "0xd23ac": "original CssVector3D::operator*=(float) at 0x9fe6a"
+  },
+  "libm_call_count": 260,
+  "libm_distinct_calls": [
+    {
+      "function": "sinf",
+      "input_bits": 3200847835,
+      "output_bits": 3200511766
+    },
+    {
+      "function": "cosf",
+      "input_bits": 3200847835,
+      "output_bits": 1064076126
+    }
+  ],
+  "results": [
+    {
+      "input": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_scale_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1065353216
+      ],
+      "after_translation_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        1051783804,
+        3171739396,
+        1064943851,
+        1065353216
+      ],
+      "quaternion_bits": [
+        3200511766,
+        2147483648,
+        2147483648,
+        1064076126
+      ],
+      "matrix_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1058066626,
+        3205550275,
+        0,
+        0,
+        1058066627,
+        1058066626,
+        0,
+        1051783804,
+        3171739396,
+        1064943851,
+        1065353216
+      ]
+    },
+    {
+      "input": [
+        4,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_scale_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1065353216
+      ],
+      "after_translation_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1061997773,
+        0,
+        1067916775,
+        3171739396,
+        1076156066,
+        1065353216
+      ],
+      "quaternion_bits": [
+        3200511766,
+        2147483648,
+        2147483648,
+        1064076126
+      ],
+      "matrix_bits": [
+        1061997773,
+        0,
+        0,
+        0,
+        0,
+        1058066626,
+        3205550275,
+        0,
+        0,
+        1058066627,
+        1058066626,
+        0,
+        1067916775,
+        3171739396,
+        1076156066,
+        1065353216
+      ]
+    }
+  ],
+  "cases": 130,
+  "matrix_scalar_comparisons": 2080,
+  "component_scalar_comparisons": 1430,
+  "matrix_multiplication_order_verified": "column-major dst = dst * src; final S*T*Rx",
+  "passed": true,
+  "source_sha256": "678dd059c857de98c2a9aadcb0f7be3be65b273c6772893be0963ec1f5ef57d4",
+  "shared_render_oracle_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "placement_oracle_sha256": "940f7010add66ec3188886f4b96147c1c4c16cbf8720c89f6d369b8682b85325",
+  "case_sha256": "49f8f4f0261b18e403f32fc999a93dd6004ff1ca2a81a26387d8852fdc8a112d",
+  "native_output_sha256": "1f3121fddb1ba89108b3ad4981f38b4a6e022b86f750504a1fe63e99d9b71656",
+  "native_probe_sha256": "4bb56158ed1079abc5bea08207a2a24d163ae290e965a145f6fe2ae3c9f185ab",
+  "gpu_or_device_test": false
+}

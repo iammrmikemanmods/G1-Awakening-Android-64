@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "model_sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+  "root_user_id": 838542512,
+  "root_object": 221,
+  "surface_count": 34,
+  "appearances": [
+    {
+      "object": 34,
+      "layer": 0,
+      "material": 0,
+      "fog": 0,
+      "compositing": [
+        true,
+        true,
+        true,
+        true,
+        68,
+        0,
+        0,
+        0
+      ],
+      "polygon": [
+        160,
+        165,
+        168,
+        false,
+        false,
+        false
+      ],
+      "texture_objects": []
+    },
+    {
+      "object": 42,
+      "layer": 0,
+      "material": 0,
+      "fog": 0,
+      "compositing": [
+        true,
+        true,
+        true,
+        true,
+        68,
+        0,
+        0,
+        0
+      ],
+      "polygon": [
+        160,
+        165,
+        168,
+        false,
+        false,
+        false
+      ],
+      "texture_objects": [
+        41
+      ]
+    },
+    {
+      "object": 56,
+      "layer": 0,
+      "material": 0,
+      "fog": 0,
+      "compositing": [
+        true,
+        true,
+        true,
+        true,
+        68,
+        0,
+        0,
+        0
+      ],
+      "polygon": [
+        160,
+        165,
+        168,
+        false,
+        false,
+        false
+      ],
+      "texture_objects": [
+        55
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "object": 41,
+      "image": 40,
+      "source_format": 99,
+      "width": 256,
+      "height": 256,
+      "function": 228,
+      "wrap_s": 241,
+      "wrap_t": 241,
+      "level_filter": 208,
+      "image_filter": 210
+    },
+    {
+      "object": 55,
+      "image": 54,
+      "source_format": 99,
+      "width": 256,
+      "height": 128,
+      "function": 228,
+      "wrap_s": 241,
+      "wrap_t": 241,
+      "level_filter": 208,
+      "image_filter": 210
+    }
+  ],
+  "unsupported_required_paths": [],
+  "gpu_execution": false,
+  "apple_compile": false,
+  "scope": "Independent serialized render-state audit, not a draw or image comparison"
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "Development-only input policy; native gameplay libraries unchanged; no state transplantation",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy/session_playthrough_probe_v2.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/tactical_search_v2.inc",
+      "bytes": 19231,
+      "sha256": "0e188883af68d9c774c1cb4ddc4ba9c62f9f13c2f0e4e8d843a9c92a57699d21"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/pilot_v2",
+      "bytes": 944512,
+      "sha256": "bd74773cdeb6c10bc0640ce3042cf6dc5ac548980e4bd6d8d6177f73c3541f24"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_resources.a",
+      "bytes": 2180540,
+      "sha256": "95d734aa7d6e407b0fbd491a96a1fe3100b14029099bdccc0cb9e86498889e1e"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_png.a",
+      "bytes": 211556,
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/lib/libg1_vorbis.a",
+      "bytes": 90250,
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+    }
+  ],
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ],
+  "probes": [
+    "probe04_tactical"
+  ],
+  "status": "strict compilation and126 live checkpoint matches; bounded at100 human turns, no victory claim"
+}

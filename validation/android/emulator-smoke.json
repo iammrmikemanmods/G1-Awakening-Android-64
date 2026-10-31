@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-31T16:40:57.774262+00:00",
+  "result": "functional_menu_touch_and_surface_lifecycle_smoke_passed; device_certification_incomplete",
+  "package": "com.iammrmikeman.g1awakening",
+  "version": "0.1.0-dev",
+  "final_test_apk": {
+    "variant": "debug",
+    "abi": "x86_64",
+    "bytes": 49085468,
+    "sha256": "481896a5ee165853577c252f1609217040f565899b20312b2dd0fcd2983c0372",
+    "installed_successfully": true,
+    "package_manager_last_update_device_time": "2026-10-31 12:32:54",
+    "process_id": 4301,
+    "launch_skip_intro": true
+  },
+  "delivered_apk": {
+    "variant": "release",
+    "abi": "arm64-v8a",
+    "sha256": "f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684",
+    "executed_on_physical_device": false
+  },
+  "runtime": {
+    "android_release": "16",
+    "api_level": 36,
+    "abi": "x86_64",
+    "build_fingerprint": "Android/sdk_phone64_x86_64/emu64x:16/BE2A.250530.026.D1/13818094:userdebug/test-keys",
+    "emulator_version": "37.2.13",
+    "system_image": "system-images;android-36;default;x86_64 revision 2",
+    "cpu_acceleration": "disabled; /dev/kvm unavailable",
+    "graphics": "SwiftShader software rendering",
+    "memory_mib": 2048,
+    "vcpu_count": 2,
+    "physical_display_pixels": [
+      1080,
+      2340
+    ],
+    "smoke_override_pixels": [
+      540,
+      1170
+    ],
+    "landscape_capture_pixels": [
+      1170,
+      540
+    ],
+    "physical_density_dpi": 420,
+    "smoke_override_density_dpi": 210
+  },
+  "observations": {
+    "earlier_development_build_original_ios_intro_decoded": true,
+    "earlier_development_build_intro_completed_to_native_menu": true,
+    "intro_capture_has_emulator_system_anr_overlay": true,
+    "final_build_original_intro_rerun": false,
+    "final_build_native_menu_rendered": true,
+    "final_build_play_touch_opened_game_modes": true,
+    "final_build_home_resume_retained_game_mode_panel": true,
+    "final_build_successful_presented_frames_at_pause": 861,
+    "final_build_classic_default": true,
+    "final_build_native_failed_flag": false,
+    "final_build_native_error": "",
+    "final_build_native_audio_error": "",
+    "final_build_mission_started": false,
+    "android_back_exit_test": "passed: Game Modes -> Main Menu -> Android launcher",
+    "root_activity_finished_on_unhandled_back": true,
+    "top_resumed_activity_after_back": "com.android.launcher3/.uioverrides.QuickstepLauncher",
+    "final_process_fatal_error_markers": [],
+    "final_process_log_bytes": 17097,
+    "bounded_lifecycle_wait_warnings": [
+      "Native surface release exceeded two seconds during early initialization/background",
+      "Native session shutdown exceeded two seconds after Back exited the root activity"
+    ]
+  },
+  "diagnostic": {
+    "ios_source_commit": "be203a911bc26313615ea450758413e5c9cf6462",
+    "resource_revision": "017R1",
+    "panel": 6,
+    "loaded": false,
+    "failed": false,
+    "session_installs": 0,
+    "presented_frames": 861,
+    "simulation_ticks": 0,
+    "modern": false,
+    "checkpoint_writes": 0,
+    "checkpoint_loads": 0,
+    "tactical_models": 0,
+    "tactical_fallbacks": 0,
+    "error": "",
+    "audio_error": "",
+    "render_width": 0,
+    "render_height": 0,
+    "render_low_power": false,
+    "render_thermal_serious": false,
+    "render_memory_pressure": false,
+    "move_actions": 0,
+    "capture_actions": 0,
+    "transform_actions": 0,
+    "attack_actions": 0,
+    "heal_actions": 0,
+    "upgrade_actions": 0,
+    "end_turn_actions": 0,
+    "undo_actions": 0,
+    "production_actions": 0,
+    "unit_targets": [],
+    "tile_targets": [],
+    "menu_labels": [
+      "STORY MODE",
+      "SHOWDOWN",
+      "CYBERTRON ARENA",
+      "Back"
+    ],
+    "hit_targets": [
+      {
+        "id": 100,
+        "value": 0,
+        "x": 44,
+        "y": 284
+      },
+      {
+        "id": 102,
+        "value": 0,
+        "x": 44,
+        "y": 228
+      }
+    ]
+  },
+  "evidence": [
+    "validation/runtime/android16-intro-system-dialog.png",
+    "validation/runtime/android16-final-main-menu.png",
+    "validation/runtime/android16-final-game-modes.png",
+    "validation/runtime/android16-final-pause-diagnostic.json",
+    "validation/runtime/android16-final-game-modes-resumed.png",
+    "validation/runtime/android16-final-app-logcat.txt"
+  ],
+  "limitations": [
+    "This is an x86_64 software-emulator smoke, not a Samsung Galaxy A36 or ARM64 runtime test.",
+    "The emulator previously displayed Process system and System UI ANR dialogs and restarted system_server during slow software boot.",
+    "The unaccelerated emulator exceeded the two-second bounded native surface-release wait during early initialization and the bounded session-shutdown wait on root exit. It subsequently resumed/rendered successfully, and Android Back returned to the launcher; physical-device lifecycle latency is unverified.",
+    "The final build used its debug-only skip_intro option; unchanged original intro decoding and transition were observed on the preceding development build.",
+    "No Android-emulator mission or complete campaign was played; separate host-native integration reports cover the broader game flow.",
+    "No audible hardware output, physical-device thermal behavior, real TalkBack service, 16KB runtime kernel, or A36 performance was certified."
+  ],
+  "runtime_evidence_sha256": {
+    "validation/runtime/android16-intro-system-dialog.png": "53d5b8cc5bd15c9822ba8d16a01a3d6046f08913d675d755abf96c6851493d15",
+    "validation/runtime/android16-final-main-menu.png": "b3674b1dfd0a67006247a7b271451a2448706ec269835b7447dec845d8360d66",
+    "validation/runtime/android16-final-game-modes.png": "f1d44ae21c87554e9a1f19bae61ad917b46d443fcd3120ff87116302facc5f3b",
+    "validation/runtime/android16-final-pause-diagnostic.json": "4c3eb38ca8c87a511998ce6588cb3710aa92cd9e4a6bbb418d412a5bc9938d09",
+    "validation/runtime/android16-final-game-modes-resumed.png": "f1d44ae21c87554e9a1f19bae61ad917b46d443fcd3120ff87116302facc5f3b",
+    "validation/runtime/android16-final-app-logcat.txt": "5c4350a44e70b1b7c7f6c36566bc7c963e450581683ad177545f652e1e961028"
+  }
+}

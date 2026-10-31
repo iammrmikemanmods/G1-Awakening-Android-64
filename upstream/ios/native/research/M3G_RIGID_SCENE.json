@@ -1,0 +1,46 @@
+{
+  "checkpoint": "native-rigid-m3g-serialized-pose",
+  "contracts": {
+    "passed": 47,
+    "command": "g1_m3g_scene_tests",
+    "private_asset_required": false
+  },
+  "actual_asset_validation": "m3g_validation/bumblebee_rigid.json",
+  "rigid_metal_renderer": false,
+  "animation_evaluation": false,
+  "iphone_tested": false,
+  "files": {
+    "native/include/g1/M3GScene.hpp": {
+      "sha256": "02f25cde344a5661cd1fc00dace1626840ef80a16af21f0ef93fb11988bc5ca5",
+      "bytes": 4336
+    },
+    "native/src/M3GScene.cpp": {
+      "sha256": "da9eeb3764b0a0e31509c71a8085302548f5f761d08a567138b98fe1f970898e",
+      "bytes": 35212
+    },
+    "native/tools/m3g_scene_probe.cpp": {
+      "sha256": "eacb8eaf9e7911a2fc9cac25d8379848854ff4b5aa98289b3f7d5ae29d6ff1d7",
+      "bytes": 5699
+    },
+    "native/tests/m3g_scene_test.cpp": {
+      "sha256": "ebdb4c738258ae06dc93e524a59e28a8f3f083dfe0bbb99506f5680b3b9574af",
+      "bytes": 12421
+    },
+    "analysis_tools/m3g/reference.py": {
+      "sha256": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+      "bytes": 10578
+    },
+    "analysis_tools/m3g/validate.py": {
+      "sha256": "5bae2c249babf6c3b833c63261fe65068c41fb5ec26e1ff90bb62fe049052cee",
+      "bytes": 10213
+    },
+    "native/research/M3G_RIGID_SCENE.md": {
+      "sha256": "d4b2d7415381eeaf14ca67b983d51983950bd73b73bbb3426ec7f19d39dc8b8d",
+      "bytes": 6838
+    },
+    "native/research/m3g_validation/bumblebee_rigid.json": {
+      "sha256": "3ee7ff267b743ac85ecc47a79fb5d1f542889643db8db9e8c7969ea67da1447f",
+      "bytes": 7073
+    }
+  }
+}

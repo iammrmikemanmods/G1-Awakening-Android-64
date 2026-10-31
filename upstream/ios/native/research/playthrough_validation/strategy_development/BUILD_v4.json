@@ -1,0 +1,33 @@
+{
+  "scope": "Development-only diagnostics; unchanged native gameplay core",
+  "files": [
+    {
+      "path": "g1_port/research/playthrough_strategy/session_playthrough_probe_v4.cpp",
+      "bytes": 66979,
+      "sha256": "80cd9a1a2d4ac1709b453d84de72d68f0738aed0292713822fc3184822dcf568"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/tactical_search_v4.inc",
+      "bytes": 20781,
+      "sha256": "dad4111c5562a3bb56c0e9f2773fb401a20332711b4b2a36fddd4776b3dcb8fa"
+    },
+    {
+      "path": "g1_port/research/playthrough_strategy/pilot_v4",
+      "bytes": 944808,
+      "sha256": "3743ee73e53eb319b5a058c89082cce4f5dbe53120aa25e7e8909e8726e417fc"
+    }
+  ],
+  "probes": [
+    "probe06_tactical_diagnostic"
+  ],
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic"
+  ]
+}

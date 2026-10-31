@@ -1,0 +1,23 @@
+{
+"scope":"headless native gameplay command pilot",
+"presentation_feedback":"synthetic: world/camera/dialogue/focus/transform/battle/results/menu/ending",
+"device_or_rendered_playthrough":false,
+"gameplay_state_forced":false,
+"strategy":"objective-directed reverse Dijkstra, greedy combat/capture, public human commands; real native opponent AI",
+"seed":18241,
+"start_group":0,
+"start_mission":0,
+"outcome":"native_loss_handoff",
+"error":"",
+"wall_seconds":0.0220082,
+"ticks":3113,
+"simulation_step_ms":30,
+"actions":{"commands":173,"selections":92,"moves":61,"attacks":41,"captures":6,"transforms":26,"heals":4,"upgrades":0,"productions":0,"human_end_turns":35,"ai_turn_entries":33},
+"synthetic_feedback_counts":{"world":7,"camera":21,"dialogue_ticks":35,"focus":135,"transform":37,"battle":65,"results":6},
+"profile_writes":6,
+"checkpoint_writes":0,
+"next_mission_installs":5,
+"native_handoffs":[{"group":0,"index":0,"resource":315,"handoff":"next_mission","first_tick":0,"last_tick":285,"active_counts":[1,0],"record":[4,1,0],"profile_written":true},{"group":0,"index":1,"resource":326,"handoff":"next_mission","first_tick":286,"last_tick":544,"active_counts":[2,0],"record":[4,1,0],"profile_written":true},{"group":0,"index":2,"resource":333,"handoff":"next_mission","first_tick":545,"last_tick":1375,"active_counts":[3,0],"record":[9,5,1],"profile_written":true},{"group":0,"index":3,"resource":334,"handoff":"next_mission","first_tick":1376,"last_tick":2263,"active_counts":[2,0],"record":[7,4,2],"profile_written":true},{"group":0,"index":4,"resource":335,"handoff":"next_mission","first_tick":2264,"last_tick":2676,"active_counts":[1,2],"record":[5,0,0],"profile_written":true},{"group":0,"index":5,"resource":336,"handoff":"campaign_menu","first_tick":2677,"last_tick":3113,"active_counts":[0,1],"record":[10,1,3],"profile_written":true}],
+"final":{"group":0,"mission":5,"resource":336,"command":28,"gate":10,"phase":99,"stop":5,"stop_detail":"opcode 10 requires actual profile persistence and results/campaign handoff","owner":0,"human_turn":10,"funds":[9,9],"active_counts":[0,1],"rng_draws":221,"objective":null,"units":[{"type":11,"owner":0,"active":false,"form":0,"position":[4,0],"health":0,"level":0,"spent":0,"acted":0,"transformed":0},{"type":0,"owner":0,"active":false,"form":0,"position":[5,1],"health":0,"level":0,"spent":0,"acted":0,"transformed":0},{"type":4,"owner":0,"active":false,"form":0,"position":[4,4],"health":0,"level":0,"spent":0,"acted":0,"transformed":0},{"type":9,"owner":1,"active":false,"form":0,"position":[5,2],"health":0,"level":0,"spent":0,"acted":0,"transformed":0},{"type":8,"owner":1,"active":true,"form":0,"position":[4,3],"health":43,"level":0,"spent":0,"acted":0,"transformed":0}],"sites":[{"owner":-1,"items":[[-1,-1]]}]},
+"persisted_profile":{"completed":[false,false],"highest_unlocked":[5,0]}
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "cases": 10608,
+  "scalar_comparisons": 17392,
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "oracle_sha256": "be87a33ac95ded639374c40f5f1d433b4edca81c832f3d9af25ce72e56765258",
+  "fixture_sha256": "e88ce3ad13c3188e2009f1bf4a890d7e2bc6588f7d9449a012e43d40df4fed6b",
+  "native_probe_sha256": "c92902b66bfd287e8e8275e9991f9bb6771fdc0e49ac8962efbc9b16de211790",
+  "original_entries": [
+    "0x36eae..0x36f22",
+    "0x2ad6c"
+  ],
+  "external_boundaries": {
+    "0x2ad12": "Record operation/argument; operation 6 returns independently supplied any-voice-playing state."
+  },
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "all_case_application_menu_storage_unchanged": true,
+  "scope": "Exact original menu-body requests; not whole application update, constructor execution, audible output, Apple timer behavior or physical iPhone testing."
+}

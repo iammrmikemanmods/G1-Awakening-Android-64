@@ -1,0 +1,238 @@
+{
+  "scope": "Native original-function comparisons with effective loader cost table; no live campaign/device test",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "strict_compile": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "native/include",
+      "native/src/AI.cpp",
+      "native/src/AISite.cpp",
+      "native/src/AIIncome.cpp",
+      "native/src/CaptureAction.cpp",
+      "native/src/Combat.cpp",
+      "native/src/Movement.cpp",
+      "native/src/World.cpp",
+      "native/tests/ai_attack_test.cpp",
+      "-Wl,--gc-sections",
+      "-o",
+      "research/native_ai/ai_cost_test"
+    ],
+    "seconds": 6.425,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "ubsan_compile": {
+    "command": [
+      "g++",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=undefined",
+      "-std=c++17",
+      "-O1",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "native/include",
+      "native/src/AI.cpp",
+      "native/src/AISite.cpp",
+      "native/src/AIIncome.cpp",
+      "native/src/CaptureAction.cpp",
+      "native/src/Combat.cpp",
+      "native/src/Movement.cpp",
+      "native/src/World.cpp",
+      "native/tests/ai_attack_test.cpp",
+      "-Wl,--gc-sections",
+      "-o",
+      "research/native_ai/ai_cost_test_ubsan"
+    ],
+    "seconds": 6.873,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "sources_sha256": {
+    "native/include/g1/AI.hpp": "ea45901ace1318be438de171d27a3aa78f9d2779ac2c9d92c91b99ff2b74bf91",
+    "native/src/AI.cpp": "428f9868b0f2c33d82a288493008770ac7ffb4bedfa48448c36b982b6dd2e402",
+    "native/include/g1/AIIncome.hpp": "3e78f1300b3a54fda0a0f697ec100b4323a7e24f241e40410a03552658a68160",
+    "native/src/AIIncome.cpp": "3b663dab235207b1ac6e6cdcce0881f13eafd0277c5251e2f08f66fd6e2388e7",
+    "native/src/AISite.cpp": "abd1e3643b723ab01b1ea9bd7992dc3d7e44f4438fa06c2c8d6398b314cd3772",
+    "native/include/g1/Movement.hpp": "a3a4b66db096e34c6de57642e01a41e2aa19c616aebeb4002eab279f809b6e75",
+    "native/src/Movement.cpp": "0cac89782a82b521ea12845c400caedbb680790432de17f6d8fbd51acdd64f9f",
+    "native/include/g1/Combat.hpp": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+    "native/include/g1/CaptureAction.hpp": "9d198f8d61ff07beeea26264776ac4ba2514b4c2d572c17190ee07612135621b",
+    "native/src/CaptureAction.cpp": "951bad97b69cdaad3b3788581c1f2f1379a4fbf0de1d8c1727d009d235312e14",
+    "native/tests/ai_attack_test.cpp": "5cedf4d24b5c57a965095c5d3d4025a4031e91ab10bafacb7f8c995f55dd8fe6",
+    "native/tests/ai_attack_cases.txt": "6831e4b0cb7f9eb8b83350dd8cde42db97b1faa09793e78ca9af28abc883dc00",
+    "native/tests/ai_planner_cases.txt": "8b351bb21c8a615cfcd3d8941b9830304a827b4603f2cc8093de6fbc5a5dd879",
+    "native/tests/ai_turn_cases.txt": "e714394bae0e419b3b1cb47a464d8f12d492201086717918dfff8d95894ae478",
+    "native/include/g1/World.hpp": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501",
+    "native/src/World.cpp": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289"
+  },
+  "runs": [
+    {
+      "fixture": "native/tests/ai_attack_cases.txt",
+      "fixture_sha256": "6831e4b0cb7f9eb8b83350dd8cde42db97b1faa09793e78ca9af28abc883dc00",
+      "contains_original_payload_exclude_from_git": false,
+      "strict": {
+        "command": [
+          "research/native_ai/ai_cost_test",
+          "native/tests/ai_attack_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":192,\"checks\":6479,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_ai/ai_cost_test_ubsan",
+          "native/tests/ai_attack_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":192,\"checks\":6479,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 192,
+        "checks": 6479,
+        "passed": true
+      }
+    },
+    {
+      "fixture": "native/tests/ai_planner_cases.txt",
+      "fixture_sha256": "8b351bb21c8a615cfcd3d8941b9830304a827b4603f2cc8093de6fbc5a5dd879",
+      "contains_original_payload_exclude_from_git": false,
+      "strict": {
+        "command": [
+          "research/native_ai/ai_cost_test",
+          "native/tests/ai_planner_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":137,\"checks\":8050,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_ai/ai_cost_test_ubsan",
+          "native/tests/ai_planner_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":137,\"checks\":8050,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 137,
+        "checks": 8050,
+        "passed": true
+      }
+    },
+    {
+      "fixture": "native/tests/ai_turn_cases.txt",
+      "fixture_sha256": "e714394bae0e419b3b1cb47a464d8f12d492201086717918dfff8d95894ae478",
+      "contains_original_payload_exclude_from_git": false,
+      "strict": {
+        "command": [
+          "research/native_ai/ai_cost_test",
+          "native/tests/ai_turn_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":201,\"checks\":15633,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_ai/ai_cost_test_ubsan",
+          "native/tests/ai_turn_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":201,\"checks\":15633,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 201,
+        "checks": 15633,
+        "passed": true
+      }
+    },
+    {
+      "fixture": "research/native_ai/source_attack_cases.txt",
+      "fixture_sha256": "1d351c8fa7763bdf0d95f20a2ca5e88ec2605db9fa197b054da97849b29037f8",
+      "contains_original_payload_exclude_from_git": true,
+      "strict": {
+        "command": [
+          "research/native_ai/ai_cost_test",
+          "research/native_ai/source_attack_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":92,\"checks\":20718,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_ai/ai_cost_test_ubsan",
+          "research/native_ai/source_attack_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":92,\"checks\":20718,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 92,
+        "checks": 20718,
+        "passed": true
+      }
+    },
+    {
+      "fixture": "research/native_ai/source_planner_cases.txt",
+      "fixture_sha256": "0c4a85dc2d1d088c97dcfad4b83ca6a82bf2f09b4533f080046befe269c59304",
+      "contains_original_payload_exclude_from_git": true,
+      "strict": {
+        "command": [
+          "research/native_ai/ai_cost_test",
+          "research/native_ai/source_planner_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":8,\"checks\":1994,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_ai/ai_cost_test_ubsan",
+          "research/native_ai/source_planner_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":8,\"checks\":1994,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 8,
+        "checks": 1994,
+        "passed": true
+      }
+    }
+  ],
+  "original_report_sha256": "0b82db50875f7802be7660dac2eb3e971a9edb74f60c217d6b5c0a6ca67a040b",
+  "superseded_report_sha256": "af606b29b60c45b2e24f36472a4552c57f68bdbd8e58a6eb39de1657353ab453",
+  "correction_note": "type21 effective cost40; raw decoded scalar1 preserved",
+  "existing_movement_regression": {
+    "cases": 256,
+    "comparisons": 9092,
+    "malformed_rejections": 4,
+    "passed": true,
+    "source_unchanged_since_prior_extension_gate": true,
+    "scope": "historical unchanged-source movement gate; not rerun for cost-only correction"
+  }
+}

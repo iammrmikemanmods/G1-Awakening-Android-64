@@ -1,0 +1,1331 @@
+{
+  "schema": 1,
+  "kind": "original support tutorial predicate and profile-field recovery",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "oracle_sha256": "9eb6a52a0dba4188a29336ea16dbc19e771e819d48d38e717d1d188ce8001bd9",
+  "unicorn_version": "2.1.4",
+  "instruction_patches": 0,
+  "original_code_readonly_unchanged": true,
+  "tutorial_cases": 2202,
+  "tutorial_output_scalars": 6606,
+  "requested_message_cases": 564,
+  "tutorial_entry": "0x58796",
+  "tutorial_stop_before_epilogue": "0x5887e",
+  "actual_accessors_executed": [
+    "0x2b5e6 selected configuration",
+    "0x2aa78 controller vector"
+  ],
+  "tutorial_boundaries": [
+    "0x301aa text construction records resource identity",
+    "0x46df2 message presentation records text, mode and already-cleared flag",
+    "0x604b4 temporary text disposal"
+  ],
+  "profile_prefixes": {
+    "default_pending_flag": 1,
+    "roundtrips": [
+      {
+        "input_flag": 0,
+        "serialized_flag": 0,
+        "restored_flag": 0
+      },
+      {
+        "input_flag": 1,
+        "serialized_flag": 1,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 2,
+        "serialized_flag": 2,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 3,
+        "serialized_flag": 3,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 4,
+        "serialized_flag": 4,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 5,
+        "serialized_flag": 5,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 6,
+        "serialized_flag": 6,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 7,
+        "serialized_flag": 7,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 8,
+        "serialized_flag": 8,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 9,
+        "serialized_flag": 9,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 10,
+        "serialized_flag": 10,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 11,
+        "serialized_flag": 11,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 12,
+        "serialized_flag": 12,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 13,
+        "serialized_flag": 13,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 14,
+        "serialized_flag": 14,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 15,
+        "serialized_flag": 15,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 16,
+        "serialized_flag": 16,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 17,
+        "serialized_flag": 17,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 18,
+        "serialized_flag": 18,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 19,
+        "serialized_flag": 19,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 20,
+        "serialized_flag": 20,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 21,
+        "serialized_flag": 21,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 22,
+        "serialized_flag": 22,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 23,
+        "serialized_flag": 23,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 24,
+        "serialized_flag": 24,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 25,
+        "serialized_flag": 25,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 26,
+        "serialized_flag": 26,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 27,
+        "serialized_flag": 27,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 28,
+        "serialized_flag": 28,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 29,
+        "serialized_flag": 29,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 30,
+        "serialized_flag": 30,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 31,
+        "serialized_flag": 31,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 32,
+        "serialized_flag": 32,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 33,
+        "serialized_flag": 33,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 34,
+        "serialized_flag": 34,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 35,
+        "serialized_flag": 35,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 36,
+        "serialized_flag": 36,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 37,
+        "serialized_flag": 37,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 38,
+        "serialized_flag": 38,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 39,
+        "serialized_flag": 39,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 40,
+        "serialized_flag": 40,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 41,
+        "serialized_flag": 41,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 42,
+        "serialized_flag": 42,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 43,
+        "serialized_flag": 43,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 44,
+        "serialized_flag": 44,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 45,
+        "serialized_flag": 45,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 46,
+        "serialized_flag": 46,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 47,
+        "serialized_flag": 47,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 48,
+        "serialized_flag": 48,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 49,
+        "serialized_flag": 49,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 50,
+        "serialized_flag": 50,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 51,
+        "serialized_flag": 51,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 52,
+        "serialized_flag": 52,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 53,
+        "serialized_flag": 53,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 54,
+        "serialized_flag": 54,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 55,
+        "serialized_flag": 55,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 56,
+        "serialized_flag": 56,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 57,
+        "serialized_flag": 57,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 58,
+        "serialized_flag": 58,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 59,
+        "serialized_flag": 59,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 60,
+        "serialized_flag": 60,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 61,
+        "serialized_flag": 61,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 62,
+        "serialized_flag": 62,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 63,
+        "serialized_flag": 63,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 64,
+        "serialized_flag": 64,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 65,
+        "serialized_flag": 65,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 66,
+        "serialized_flag": 66,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 67,
+        "serialized_flag": 67,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 68,
+        "serialized_flag": 68,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 69,
+        "serialized_flag": 69,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 70,
+        "serialized_flag": 70,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 71,
+        "serialized_flag": 71,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 72,
+        "serialized_flag": 72,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 73,
+        "serialized_flag": 73,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 74,
+        "serialized_flag": 74,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 75,
+        "serialized_flag": 75,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 76,
+        "serialized_flag": 76,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 77,
+        "serialized_flag": 77,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 78,
+        "serialized_flag": 78,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 79,
+        "serialized_flag": 79,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 80,
+        "serialized_flag": 80,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 81,
+        "serialized_flag": 81,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 82,
+        "serialized_flag": 82,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 83,
+        "serialized_flag": 83,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 84,
+        "serialized_flag": 84,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 85,
+        "serialized_flag": 85,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 86,
+        "serialized_flag": 86,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 87,
+        "serialized_flag": 87,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 88,
+        "serialized_flag": 88,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 89,
+        "serialized_flag": 89,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 90,
+        "serialized_flag": 90,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 91,
+        "serialized_flag": 91,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 92,
+        "serialized_flag": 92,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 93,
+        "serialized_flag": 93,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 94,
+        "serialized_flag": 94,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 95,
+        "serialized_flag": 95,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 96,
+        "serialized_flag": 96,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 97,
+        "serialized_flag": 97,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 98,
+        "serialized_flag": 98,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 99,
+        "serialized_flag": 99,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 100,
+        "serialized_flag": 100,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 101,
+        "serialized_flag": 101,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 102,
+        "serialized_flag": 102,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 103,
+        "serialized_flag": 103,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 104,
+        "serialized_flag": 104,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 105,
+        "serialized_flag": 105,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 106,
+        "serialized_flag": 106,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 107,
+        "serialized_flag": 107,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 108,
+        "serialized_flag": 108,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 109,
+        "serialized_flag": 109,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 110,
+        "serialized_flag": 110,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 111,
+        "serialized_flag": 111,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 112,
+        "serialized_flag": 112,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 113,
+        "serialized_flag": 113,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 114,
+        "serialized_flag": 114,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 115,
+        "serialized_flag": 115,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 116,
+        "serialized_flag": 116,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 117,
+        "serialized_flag": 117,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 118,
+        "serialized_flag": 118,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 119,
+        "serialized_flag": 119,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 120,
+        "serialized_flag": 120,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 121,
+        "serialized_flag": 121,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 122,
+        "serialized_flag": 122,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 123,
+        "serialized_flag": 123,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 124,
+        "serialized_flag": 124,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 125,
+        "serialized_flag": 125,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 126,
+        "serialized_flag": 126,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 127,
+        "serialized_flag": 127,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 128,
+        "serialized_flag": 128,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 129,
+        "serialized_flag": 129,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 130,
+        "serialized_flag": 130,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 131,
+        "serialized_flag": 131,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 132,
+        "serialized_flag": 132,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 133,
+        "serialized_flag": 133,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 134,
+        "serialized_flag": 134,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 135,
+        "serialized_flag": 135,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 136,
+        "serialized_flag": 136,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 137,
+        "serialized_flag": 137,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 138,
+        "serialized_flag": 138,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 139,
+        "serialized_flag": 139,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 140,
+        "serialized_flag": 140,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 141,
+        "serialized_flag": 141,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 142,
+        "serialized_flag": 142,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 143,
+        "serialized_flag": 143,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 144,
+        "serialized_flag": 144,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 145,
+        "serialized_flag": 145,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 146,
+        "serialized_flag": 146,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 147,
+        "serialized_flag": 147,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 148,
+        "serialized_flag": 148,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 149,
+        "serialized_flag": 149,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 150,
+        "serialized_flag": 150,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 151,
+        "serialized_flag": 151,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 152,
+        "serialized_flag": 152,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 153,
+        "serialized_flag": 153,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 154,
+        "serialized_flag": 154,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 155,
+        "serialized_flag": 155,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 156,
+        "serialized_flag": 156,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 157,
+        "serialized_flag": 157,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 158,
+        "serialized_flag": 158,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 159,
+        "serialized_flag": 159,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 160,
+        "serialized_flag": 160,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 161,
+        "serialized_flag": 161,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 162,
+        "serialized_flag": 162,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 163,
+        "serialized_flag": 163,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 164,
+        "serialized_flag": 164,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 165,
+        "serialized_flag": 165,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 166,
+        "serialized_flag": 166,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 167,
+        "serialized_flag": 167,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 168,
+        "serialized_flag": 168,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 169,
+        "serialized_flag": 169,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 170,
+        "serialized_flag": 170,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 171,
+        "serialized_flag": 171,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 172,
+        "serialized_flag": 172,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 173,
+        "serialized_flag": 173,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 174,
+        "serialized_flag": 174,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 175,
+        "serialized_flag": 175,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 176,
+        "serialized_flag": 176,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 177,
+        "serialized_flag": 177,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 178,
+        "serialized_flag": 178,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 179,
+        "serialized_flag": 179,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 180,
+        "serialized_flag": 180,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 181,
+        "serialized_flag": 181,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 182,
+        "serialized_flag": 182,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 183,
+        "serialized_flag": 183,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 184,
+        "serialized_flag": 184,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 185,
+        "serialized_flag": 185,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 186,
+        "serialized_flag": 186,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 187,
+        "serialized_flag": 187,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 188,
+        "serialized_flag": 188,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 189,
+        "serialized_flag": 189,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 190,
+        "serialized_flag": 190,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 191,
+        "serialized_flag": 191,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 192,
+        "serialized_flag": 192,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 193,
+        "serialized_flag": 193,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 194,
+        "serialized_flag": 194,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 195,
+        "serialized_flag": 195,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 196,
+        "serialized_flag": 196,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 197,
+        "serialized_flag": 197,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 198,
+        "serialized_flag": 198,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 199,
+        "serialized_flag": 199,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 200,
+        "serialized_flag": 200,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 201,
+        "serialized_flag": 201,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 202,
+        "serialized_flag": 202,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 203,
+        "serialized_flag": 203,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 204,
+        "serialized_flag": 204,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 205,
+        "serialized_flag": 205,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 206,
+        "serialized_flag": 206,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 207,
+        "serialized_flag": 207,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 208,
+        "serialized_flag": 208,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 209,
+        "serialized_flag": 209,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 210,
+        "serialized_flag": 210,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 211,
+        "serialized_flag": 211,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 212,
+        "serialized_flag": 212,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 213,
+        "serialized_flag": 213,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 214,
+        "serialized_flag": 214,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 215,
+        "serialized_flag": 215,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 216,
+        "serialized_flag": 216,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 217,
+        "serialized_flag": 217,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 218,
+        "serialized_flag": 218,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 219,
+        "serialized_flag": 219,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 220,
+        "serialized_flag": 220,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 221,
+        "serialized_flag": 221,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 222,
+        "serialized_flag": 222,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 223,
+        "serialized_flag": 223,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 224,
+        "serialized_flag": 224,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 225,
+        "serialized_flag": 225,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 226,
+        "serialized_flag": 226,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 227,
+        "serialized_flag": 227,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 228,
+        "serialized_flag": 228,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 229,
+        "serialized_flag": 229,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 230,
+        "serialized_flag": 230,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 231,
+        "serialized_flag": 231,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 232,
+        "serialized_flag": 232,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 233,
+        "serialized_flag": 233,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 234,
+        "serialized_flag": 234,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 235,
+        "serialized_flag": 235,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 236,
+        "serialized_flag": 236,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 237,
+        "serialized_flag": 237,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 238,
+        "serialized_flag": 238,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 239,
+        "serialized_flag": 239,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 240,
+        "serialized_flag": 240,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 241,
+        "serialized_flag": 241,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 242,
+        "serialized_flag": 242,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 243,
+        "serialized_flag": 243,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 244,
+        "serialized_flag": 244,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 245,
+        "serialized_flag": 245,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 246,
+        "serialized_flag": 246,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 247,
+        "serialized_flag": 247,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 248,
+        "serialized_flag": 248,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 249,
+        "serialized_flag": 249,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 250,
+        "serialized_flag": 250,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 251,
+        "serialized_flag": 251,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 252,
+        "serialized_flag": 252,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 253,
+        "serialized_flag": 253,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 254,
+        "serialized_flag": 254,
+        "restored_flag": 1
+      },
+      {
+        "input_flag": 255,
+        "serialized_flag": 255,
+        "restored_flag": 1
+      }
+    ]
+  },
+  "profile_prefix_ranges": {
+    "default_reset": "0x440f2..0x4410a",
+    "serialize_fields": "0x443ca..0x4441e",
+    "deserialize_fields": "0x4448a..0x4451a"
+  },
+  "profile_boundaries": [
+    "0x3358 byte writer",
+    "0x339e word writer",
+    "0x7782 byte reader",
+    "0x76c4 word reader"
+  ],
+  "profile_io_scope": "Scalar field order/normalization only; no original disk read/write or full profile records executed.",
+  "state_mutation_scope": "Every tutorial case permits only selected config+0x0e mutation in the prepared app/map/units region.",
+  "default_reset_caller_review": {
+    "constructor": "0x44360 calls 0x440f2",
+    "selected_profile_reset": "0x30560 calls 0x440f2; 0x3058e calls selected-profile save 0x2fd74",
+    "scope": "Instruction reviewed; full caller and filesystem path not executed."
+  },
+  "fixture_sha256": "44b15c030e78d48920ed9041f122084c89c8b2319a58e7b7baea17b05fff60cc",
+  "gpu_execution": false,
+  "original_popup_execution": false,
+  "original_disk_io_execution": false,
+  "physical_device_execution": false
+}

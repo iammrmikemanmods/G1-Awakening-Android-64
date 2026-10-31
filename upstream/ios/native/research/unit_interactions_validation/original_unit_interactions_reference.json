@@ -1,0 +1,255 @@
+{
+  "status": "original_reference_executed",
+  "cases": 877,
+  "fixture_cases": 869,
+  "coverage_by_kind": {
+    "1": 49,
+    "2": 96,
+    "3": 96,
+    "4": 128,
+    "5": 128,
+    "6": 96,
+    "7": 96,
+    "8": 180,
+    "9": 8
+  },
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "support_sha256": "2c1fc1e53e27c8c0a16a248b4d724f6225f9fdcba05456a9d840cc21d1bc6a79",
+  "movement_support_sha256": "ded6e06bc41c9bb6c8189b5f84e8636053d4ae296f925160de978660e61946a0",
+  "oracle_sha256": "bb70491ccc5c0a5d1290883aefcf5225723adcfec14bc14bc29410e0c299e5b4",
+  "fixture_sha256": "12cadb6b1c3cd9bfcc5be7006ba4a306213e1d06a66a8b2d1b27028b112820ef",
+  "unicorn_version": "2.1.4",
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "kind_mapping": {
+    "1": "static links5417a..54238",
+    "2": "complete candidates50116",
+    "3": "complete adjacency4a678 and human direction499c8",
+    "4": "54ebe with same-actor UI boundary54ef8",
+    "5": "transport arrival59884..59946/5994c",
+    "6": "complete human commit55f8c",
+    "7": "5300e common/ordinary prefix plus independent complete501f2 deploy",
+    "8": "original menu funds comparison555b0..555d6/555f8",
+    "9": "direct selected-name callback462aa..462de before UI dispatch"
+  },
+  "additional_original_fragment": "5a8ce..5a8e0 actual type21 cost-table override",
+  "reference_only_callback_cases": [
+    {
+      "name": "direct_callback_mode0_type2",
+      "parameters": [
+        2,
+        0,
+        -3
+      ],
+      "result": [
+        2,
+        1,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode0_type6",
+      "parameters": [
+        6,
+        0,
+        -3
+      ],
+      "result": [
+        6,
+        1,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode0_type19",
+      "parameters": [
+        19,
+        0,
+        -3
+      ],
+      "result": [
+        19,
+        1,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode0_type21",
+      "parameters": [
+        21,
+        0,
+        -3
+      ],
+      "result": [
+        21,
+        1,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode1_type2",
+      "parameters": [
+        2,
+        1,
+        -3
+      ],
+      "result": [
+        2,
+        6,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode1_type6",
+      "parameters": [
+        6,
+        1,
+        -3
+      ],
+      "result": [
+        6,
+        6,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode1_type19",
+      "parameters": [
+        19,
+        1,
+        -3
+      ],
+      "result": [
+        19,
+        6,
+        -3,
+        -3
+      ]
+    },
+    {
+      "name": "direct_callback_mode1_type21",
+      "parameters": [
+        21,
+        1,
+        -3
+      ],
+      "result": [
+        21,
+        6,
+        -3,
+        -3
+      ]
+    }
+  ],
+  "external_boundaries": {
+    "0x5c9a4": 43,
+    "0x5c9b2": 257,
+    "0x60918": 257,
+    "0xba288": 288,
+    "0x60800": 96,
+    "0x60b70": 96,
+    "0x5ca7e": 96,
+    "0x2ad12": 96,
+    "0x5cc64": 96,
+    "0x54f94": 96
+  },
+  "boundary_meanings": {
+    "0xba288": "exact signed division",
+    "0x60800": "funds string clear",
+    "0x60b70": "funds number output recorded",
+    "0x5ca7e": "spawn renderer notification recorded",
+    "0x2ad12": "audio request recorded",
+    "0x5cc64": "selection visibility renderer request recorded",
+    "0x54f94": "post-commit cursor/menu presentation refresh, not executed",
+    "0x5c9b2": "deactivate renderer type recorded",
+    "0x60918": "status string clear recorded",
+    "0x5c9a4": "movement follow renderer request recorded"
+  },
+  "input_fields_per_type": [
+    "faction",
+    "cost",
+    "field6_0",
+    "field6_1",
+    "field8_0",
+    "field8_1",
+    "field9_0",
+    "field9_1",
+    "field12_0",
+    "field12_1",
+    "active",
+    "form",
+    "x",
+    "y",
+    "offset_x",
+    "offset_y",
+    "acted",
+    "level",
+    "available"
+  ],
+  "scope_limits": [
+    "Synthetic data states; no original assets/binary included in generated fixture.",
+    "No graphics/audio/UI execution or device gameplay claim.",
+    "Native comparison is performed by the separately compiled native test.",
+    "Full post-arrival phase controller and same-actor command UI are outside these reference slices."
+  ],
+  "source_data_static_links": {
+    "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "resource_sha256": {
+      "292": "0ccf1c168c74a971241f519e52325acd53a001ecc905cad23db667310ae9049c",
+      "294": "fdd0b154d6321be1ae3089f4e65d2018c77a5bd73a16f92f8355fcbb0fed1470",
+      "290": "614339dce48b819bc3e2338bcc40b32fd6c9ad023efd29eb361544bdbb3df02c",
+      "302": "44e4711e0717b8126e849b2b9d2631d73deb0039f08120cf5fc1ded3b8fe9262",
+      "291": "23f2c122c7374a4f12cc28010be0fd4bdf6fa29fe012e4e0df46c6eb2828e68f",
+      "283": "3712aa3266c1c2d05c20dc31fdf80e46d3bfbe0ba5f0e6386d730aebb9170d23",
+      "285": "88674c2e041be5eb0634ac202b670c8df414cb73aeb7edb61f6361f2131fb6ec",
+      "295": "651ea846116238d89b0ab2fca04022e50e80cb058d53afd4efb2042a5ce50d55",
+      "305": "94886cd956f48b58494ce14427e57c1ce9539fffa2e2d453ebff22061e2f71b3",
+      "301": "eeb86b71200e794d696760aea1aca9c9bd2a1d1c56f09fb5b4eef2c6a5c25b3c",
+      "288": "44e47434f9eb8d747b7e22c00ba73d79308ffe8cb8e1bf0f6672d5ec91f6ae19",
+      "284": "ec5d93096486756ca2ca95e064c5db5362b7a1dc8e63b5f002a2a12a0806459a",
+      "287": "6fa2f887cb2ae281c654dd31da37f264584ae6ba11ac4f4bf24a75647b123451",
+      "299": "340d1f29ba1b63036a19b2b719da7a772765cd733162e56a9f74fa10480d8b36",
+      "304": "43a740fc7a0508194c6259f0357ce65485742fb7dabbabc27b58e0de0d767c46",
+      "300": "b4272010ab6fe47d47df367a97c961fb3954c07c903cad7e3bae7a32e19f2910",
+      "293": "242d9bbb6e4fd5a3c5881e3584165d6b27d3fefd2bb0784b7aab276351c8daaf",
+      "289": "7b88c0ff0e8ee44b4f37fc2a661f6d2e37970f70828b3bbbed8d649a240ab695",
+      "303": "986b6836970b265978d53feca6578508bc07f9d407229f239c8dfda1cd96b938",
+      "286": "d8c6c7b8f13a2839398eab84c04d365c9944c8bec591602b53018f1808e44909",
+      "296": "e0b915ee23ea5d29c79663ff3ff78d42ad50ff8fa56c681d6031ad6171316a8f",
+      "297": "c95f026a2b7ef3247639f63c0da375cce2d080324d7258796909f4016e701f2c",
+      "298": "f860eab36da77a0b1dd5ceb81928724a2efb4935bb53d29d38711bc80d7841a5"
+    },
+    "actual_links": {
+      "5": {
+        "field10": 6,
+        "field14": 7
+      },
+      "6": {
+        "field10": 5,
+        "field14": -1
+      },
+      "7": {
+        "field10": 5,
+        "field14": -1
+      },
+      "9": {
+        "field10": 19,
+        "field14": 20
+      },
+      "19": {
+        "field10": 9,
+        "field14": -1
+      },
+      "20": {
+        "field10": 9,
+        "field14": -1
+      }
+    }
+  }
+}

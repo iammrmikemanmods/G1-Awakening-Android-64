@@ -1,0 +1,34 @@
+{
+  "source": {
+    "files": 769,
+    "commit": "be203a911bc26313615ea450758413e5c9cf6462",
+    "byte_identical": true
+  },
+  "resources": {
+    "files": 98,
+    "bytes": 36914225,
+    "revision": "017R1",
+    "source_ipa_sha256": "b035acfe0c08aafa715c54f60a59423191046c271328abbca4cd72689dfaed46",
+    "byte_identical": true
+  },
+  "apk": {
+    "file": "G1-Awakening-Android64-v0.1.0-dev.apk",
+    "size": 39529529,
+    "sha256": "f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684",
+    "asset_files_byte_identical": 98,
+    "native_libraries": [
+      {
+        "abi": "arm64-v8a",
+        "elf_bits": 64,
+        "machine": 183,
+        "load_segment_alignment": [
+          16384,
+          16384,
+          16384,
+          16384
+        ]
+      }
+    ],
+    "note": "Signature, min/target SDK and ZIP alignment are checked with Android build-tools separately."
+  }
+}

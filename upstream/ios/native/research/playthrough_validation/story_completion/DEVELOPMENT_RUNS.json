@@ -1,0 +1,1081 @@
+{
+  "schema": 1,
+  "scope": "All preserved isolated follow-up runs, including losses and bounds. Original payloads, binaries and native save bytes are not deliverables.",
+  "runs": [
+    {
+      "directory": "capture15_combat",
+      "outcome": "live_checkpoint_captured",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "combat",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 1246,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            45,
+            6,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 5.13888,
+      "files": {
+        "result.json": {
+          "bytes": 3351,
+          "sha256": "11f2153a371b376d7b56b699444cff152af7dbcf79eb8c32c1f492137cb3c964"
+        },
+        "events.jsonl": {
+          "bytes": 99219,
+          "sha256": "5940b8fba96e385186da7a291d577eff298c2ed0382591db735e8387934067d5"
+        }
+      }
+    },
+    {
+      "directory": "full_story_aggressive",
+      "outcome": "native_campaign_ending",
+      "start_mode": "fresh_campaign",
+      "start_mission": 0,
+      "followup_policy": "aggressive",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 0,
+          "resource": 315,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 221,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            3,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 1,
+          "resource": 326,
+          "handoff": "next_mission",
+          "first_tick": 222,
+          "last_tick": 481,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            4,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 2,
+          "resource": 333,
+          "handoff": "next_mission",
+          "first_tick": 482,
+          "last_tick": 1443,
+          "active_counts": [
+            5,
+            0
+          ],
+          "record": [
+            9,
+            5,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 3,
+          "resource": 334,
+          "handoff": "next_mission",
+          "first_tick": 1444,
+          "last_tick": 2394,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            3
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 4,
+          "resource": 335,
+          "handoff": "next_mission",
+          "first_tick": 2395,
+          "last_tick": 2807,
+          "active_counts": [
+            1,
+            2
+          ],
+          "record": [
+            5,
+            0,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 5,
+          "resource": 336,
+          "handoff": "next_mission",
+          "first_tick": 2808,
+          "last_tick": 3544,
+          "active_counts": [
+            6,
+            0
+          ],
+          "record": [
+            15,
+            2,
+            4
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 6,
+          "resource": 337,
+          "handoff": "next_mission",
+          "first_tick": 3545,
+          "last_tick": 4556,
+          "active_counts": [
+            1,
+            4
+          ],
+          "record": [
+            11,
+            0,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 7,
+          "resource": 338,
+          "handoff": "next_mission",
+          "first_tick": 4557,
+          "last_tick": 5803,
+          "active_counts": [
+            4,
+            5
+          ],
+          "record": [
+            11,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 8,
+          "resource": 339,
+          "handoff": "next_mission",
+          "first_tick": 5804,
+          "last_tick": 7023,
+          "active_counts": [
+            5,
+            2
+          ],
+          "record": [
+            22,
+            7,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 9,
+          "resource": 316,
+          "handoff": "next_mission",
+          "first_tick": 7024,
+          "last_tick": 7650,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            8,
+            5,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 10,
+          "resource": 317,
+          "handoff": "next_mission",
+          "first_tick": 7651,
+          "last_tick": 8232,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            6,
+            5,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 11,
+          "resource": 318,
+          "handoff": "next_mission",
+          "first_tick": 8233,
+          "last_tick": 10346,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            57,
+            10,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 12,
+          "resource": 319,
+          "handoff": "next_mission",
+          "first_tick": 10347,
+          "last_tick": 11494,
+          "active_counts": [
+            6,
+            0
+          ],
+          "record": [
+            13,
+            6,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 13,
+          "resource": 320,
+          "handoff": "next_mission",
+          "first_tick": 11495,
+          "last_tick": 14602,
+          "active_counts": [
+            8,
+            0
+          ],
+          "record": [
+            32,
+            9,
+            3
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "next_mission",
+          "first_tick": 14603,
+          "last_tick": 15937,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            45,
+            6,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "next_mission",
+          "first_tick": 15938,
+          "last_tick": 17071,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            6,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 16,
+          "resource": 323,
+          "handoff": "campaign_ending",
+          "first_tick": 17072,
+          "last_tick": 17422,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            6,
+            1,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 59.9661,
+      "files": {
+        "result.json": {
+          "bytes": 5167,
+          "sha256": "8a826116d3741373f46576503cd57e9b86948107711a7ab241620380a2eb2062"
+        },
+        "events.jsonl": {
+          "bytes": 840169,
+          "sha256": "fa43728c1bed9ce58f0eaad2c1c28d4db7b434019d1d26956403bd5d6b72ec38"
+        },
+        "reproduction.json": {
+          "bytes": 2999,
+          "sha256": "8cfed7df990f0f420e6a8df77ed1ddc246d6327f5a9e9d8f7dcbff5f6731544b"
+        }
+      }
+    },
+    {
+      "directory": "live_prefix_checkpoint",
+      "outcome": "live_checkpoint_captured",
+      "start_mode": "fresh_campaign",
+      "start_mission": 0,
+      "followup_policy": null,
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 0,
+          "resource": 315,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 221,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            3,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 1,
+          "resource": 326,
+          "handoff": "next_mission",
+          "first_tick": 222,
+          "last_tick": 481,
+          "active_counts": [
+            2,
+            0
+          ],
+          "record": [
+            4,
+            1,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 2,
+          "resource": 333,
+          "handoff": "next_mission",
+          "first_tick": 482,
+          "last_tick": 1443,
+          "active_counts": [
+            5,
+            0
+          ],
+          "record": [
+            9,
+            5,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 3,
+          "resource": 334,
+          "handoff": "next_mission",
+          "first_tick": 1444,
+          "last_tick": 2394,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            8,
+            4,
+            3
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 4,
+          "resource": 335,
+          "handoff": "next_mission",
+          "first_tick": 2395,
+          "last_tick": 2807,
+          "active_counts": [
+            1,
+            2
+          ],
+          "record": [
+            5,
+            0,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 5,
+          "resource": 336,
+          "handoff": "next_mission",
+          "first_tick": 2808,
+          "last_tick": 3544,
+          "active_counts": [
+            6,
+            0
+          ],
+          "record": [
+            15,
+            2,
+            4
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 6,
+          "resource": 337,
+          "handoff": "next_mission",
+          "first_tick": 3545,
+          "last_tick": 4556,
+          "active_counts": [
+            1,
+            4
+          ],
+          "record": [
+            11,
+            0,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 7,
+          "resource": 338,
+          "handoff": "next_mission",
+          "first_tick": 4557,
+          "last_tick": 5803,
+          "active_counts": [
+            4,
+            5
+          ],
+          "record": [
+            11,
+            3,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 8,
+          "resource": 339,
+          "handoff": "next_mission",
+          "first_tick": 5804,
+          "last_tick": 7023,
+          "active_counts": [
+            5,
+            2
+          ],
+          "record": [
+            22,
+            7,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 9,
+          "resource": 316,
+          "handoff": "next_mission",
+          "first_tick": 7024,
+          "last_tick": 7650,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            8,
+            5,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 10,
+          "resource": 317,
+          "handoff": "next_mission",
+          "first_tick": 7651,
+          "last_tick": 8232,
+          "active_counts": [
+            1,
+            0
+          ],
+          "record": [
+            6,
+            5,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 11,
+          "resource": 318,
+          "handoff": "next_mission",
+          "first_tick": 8233,
+          "last_tick": 10346,
+          "active_counts": [
+            4,
+            0
+          ],
+          "record": [
+            57,
+            10,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 12,
+          "resource": 319,
+          "handoff": "next_mission",
+          "first_tick": 10347,
+          "last_tick": 11494,
+          "active_counts": [
+            6,
+            0
+          ],
+          "record": [
+            13,
+            6,
+            0
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 13,
+          "resource": 320,
+          "handoff": "next_mission",
+          "first_tick": 11495,
+          "last_tick": 14602,
+          "active_counts": [
+            8,
+            0
+          ],
+          "record": [
+            32,
+            9,
+            3
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 45.2734,
+      "files": {
+        "result.json": {
+          "bytes": 5050,
+          "sha256": "c3b13dda5f11af7b1adcd8ad897854d872e5ce88ed003187c70b3cee96c712f2"
+        },
+        "events.jsonl": {
+          "bytes": 673528,
+          "sha256": "ced58db49c9cd735fd823a193e18f887a4b75642fd0d1b93a870e8ef4e67a451"
+        }
+      }
+    },
+    {
+      "directory": "resume15_aggressive",
+      "outcome": "native_campaign_ending",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "aggressive",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 1121,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            14,
+            6,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 16,
+          "resource": 323,
+          "handoff": "campaign_ending",
+          "first_tick": 1122,
+          "last_tick": 1472,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            6,
+            1,
+            1
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 5.13872,
+      "files": {
+        "result.json": {
+          "bytes": 2839,
+          "sha256": "775502fb54ca493b17d2250ce4a1342b98be300a27d77ba28750457c04386f15"
+        },
+        "events.jsonl": {
+          "bytes": 68830,
+          "sha256": "424ecfcfd52bc08932ee0f6f119784220cb236720a7506ac08d882a9d8bcf49d"
+        }
+      }
+    },
+    {
+      "directory": "resume15_baseline",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "baseline",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1819,
+          "active_counts": [
+            0,
+            3
+          ],
+          "record": [
+            22,
+            4,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 3.16279,
+      "files": {
+        "result.json": {
+          "bytes": 3387,
+          "sha256": "c0d302e99d15f2412c6f0b14595f4ebd48cfd2110a049d82f27afa703f8c92ee"
+        },
+        "events.jsonl": {
+          "bytes": 74039,
+          "sha256": "c03278fd4d5ddf7ba03344b3fbd8be92266376351bed88a6f2a1c503489d478e"
+        }
+      }
+    },
+    {
+      "directory": "resume15_cohesive_left",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "cohesive_left",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1147,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            22,
+            5,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 2.99413,
+      "files": {
+        "result.json": {
+          "bytes": 3390,
+          "sha256": "54e218ee9a80c4126f04ea64579546c53083e6c775b8833c598b4f7d7bb0bd9a"
+        },
+        "events.jsonl": {
+          "bytes": 66303,
+          "sha256": "5e1a845e79f3f83f9d66a6f07908241ebf5c6a98313c6c279f91cfd76d68f9e4"
+        }
+      }
+    },
+    {
+      "directory": "resume15_cohesive_right",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "cohesive_right",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1147,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            22,
+            5,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 2.84162,
+      "files": {
+        "result.json": {
+          "bytes": 3391,
+          "sha256": "c79d5505b97a465b0bd0d1411914d698b9dae8260ff7bfe533b4e68162e74d59"
+        },
+        "events.jsonl": {
+          "bytes": 66303,
+          "sha256": "5e1a845e79f3f83f9d66a6f07908241ebf5c6a98313c6c279f91cfd76d68f9e4"
+        }
+      }
+    },
+    {
+      "directory": "resume15_defensive",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "defensive",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 3929,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            59,
+            8,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 3.80892,
+      "files": {
+        "result.json": {
+          "bytes": 3513,
+          "sha256": "9b012336d508b955c6d936d0307166fa4248882f935f1d1fcd8e74a423cc0919"
+        },
+        "events.jsonl": {
+          "bytes": 169380,
+          "sha256": "8278ddbcdb2baa7de17d8123ef0c693e90a2691606388e4f7181466b86170c25"
+        }
+      }
+    },
+    {
+      "directory": "resume15_ranged",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 15,
+      "followup_policy": "ranged",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 8534,
+          "active_counts": [
+            0,
+            5
+          ],
+          "record": [
+            87,
+            7,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 6.34297,
+      "files": {
+        "result.json": {
+          "bytes": 3510,
+          "sha256": "98062a056b963cc0d6082c9bef66984daeddb4b0b82e9e3084dd85984d063327"
+        },
+        "events.jsonl": {
+          "bytes": 245957,
+          "sha256": "409aefb0938c91cd7e3c671ef53a30b0f20d3989df0a5d00576634ce361ab30c"
+        }
+      }
+    },
+    {
+      "directory": "resume_baseline",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "baseline",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1610,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            18,
+            4,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 1.62756,
+      "files": {
+        "result.json": {
+          "bytes": 3361,
+          "sha256": "3bdf97f1b8c141fd5ce231c9f6962f35dd801459bc988a2b896f09d3efb07835"
+        },
+        "events.jsonl": {
+          "bytes": 56524,
+          "sha256": "eba02702ea56f51441f992186f01033b8e15a7690a720d62be9cd8e3e9503ff1"
+        }
+      }
+    },
+    {
+      "directory": "resume_capture_right",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "capture_right",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 1937,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            15,
+            3,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 1.68527,
+      "files": {
+        "result.json": {
+          "bytes": 3366,
+          "sha256": "89368a4e40e492c1669e50a429f4f60d6e06d263ffd3d7941facd76d0b31332f"
+        },
+        "events.jsonl": {
+          "bytes": 52598,
+          "sha256": "25facae8a2d8c172a17de1bb5e465a50a9a643a6c7f24d1754d135ed9468e4b4"
+        }
+      }
+    },
+    {
+      "directory": "resume_cohesive_left",
+      "outcome": "human_turn_bound",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "cohesive_left",
+      "handoffs": [],
+      "wall_seconds": 2.89731,
+      "files": {
+        "result.json": {
+          "bytes": 3169,
+          "sha256": "ab80b845afea006ab796af15631623006df537762589559c12e400d1cde6448f"
+        },
+        "events.jsonl": {
+          "bytes": 231948,
+          "sha256": "a0b0075f833d2d91f5adcd9d768f20e7c8f7ba4462bee9140c4a1e90ff7de6bc"
+        }
+      }
+    },
+    {
+      "directory": "resume_cohesive_right",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "cohesive_right",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "campaign_menu",
+          "first_tick": 0,
+          "last_tick": 2523,
+          "active_counts": [
+            0,
+            4
+          ],
+          "record": [
+            22,
+            4,
+            5
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 1.58958,
+      "files": {
+        "result.json": {
+          "bytes": 3368,
+          "sha256": "fdf33d993e670caf5aa40d8f67686bbda43db03ce70e4fa2f4874202389b6496"
+        },
+        "events.jsonl": {
+          "bytes": 73229,
+          "sha256": "0b7678109703e213db337b42edc866f552e31393f8547bc2e9a8ddff41f85247"
+        }
+      }
+    },
+    {
+      "directory": "resume_combat",
+      "outcome": "native_loss_handoff",
+      "start_mode": "actual_native_checkpoint",
+      "start_mission": 14,
+      "followup_policy": "combat",
+      "handoffs": [
+        {
+          "group": 0,
+          "index": 14,
+          "resource": 321,
+          "handoff": "next_mission",
+          "first_tick": 0,
+          "last_tick": 1246,
+          "active_counts": [
+            3,
+            0
+          ],
+          "record": [
+            45,
+            6,
+            1
+          ],
+          "profile_written": true
+        },
+        {
+          "group": 0,
+          "index": 15,
+          "resource": 322,
+          "handoff": "campaign_menu",
+          "first_tick": 1247,
+          "last_tick": 2406,
+          "active_counts": [
+            0,
+            2
+          ],
+          "record": [
+            22,
+            5,
+            4
+          ],
+          "profile_written": true
+        }
+      ],
+      "wall_seconds": 7.56986,
+      "files": {
+        "result.json": {
+          "bytes": 3556,
+          "sha256": "a8e5f39569a136d23968eb64cf963a6b8a73c0dd9b2f0a7d7764bf8e74be2d1e"
+        },
+        "events.jsonl": {
+          "bytes": 164224,
+          "sha256": "58398c3821c2358f54cda7b6df468f337025499601deca45a866e9914e34df3f"
+        }
+      }
+    }
+  ]
+}

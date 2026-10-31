@@ -1,0 +1,51 @@
+{
+  "mission_resource": 315,
+  "map_resource": 268,
+  "width": 15,
+  "height": 14,
+  "stopped_before_command": 9,
+  "terrain_quads": 255,
+  "terrain_vertices": 1530,
+  "textures": [
+    {
+      "id": 693,
+      "width": 512,
+      "height": 256
+    },
+    {
+      "id": 961,
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "sprites": [
+    {
+      "type": 11,
+      "descriptor": 868,
+      "frames": 57,
+      "all_frame_vertices": 1770,
+      "reachable_cells": 12,
+      "initial_animation": 0,
+      "model_translation": [
+        0.3456,
+        -0.0344,
+        0.9756
+      ]
+    },
+    {
+      "type": 19,
+      "descriptor": 517,
+      "frames": 12,
+      "all_frame_vertices": 576,
+      "reachable_cells": 11,
+      "initial_animation": 0,
+      "model_translation": [
+        1.3056,
+        -0.0344,
+        2.5756
+      ]
+    }
+  ],
+  "gameplay_executor": false,
+  "gpu_execution": false
+}

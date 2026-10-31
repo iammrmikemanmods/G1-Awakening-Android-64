@@ -1,0 +1,135 @@
+{
+  "scope": "Native original-function comparisons with effective loader cost table; no live campaign/device test",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "strict_compile": {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "native/include",
+      "native/src/UpgradeAction.cpp",
+      "native/src/HealAction.cpp",
+      "native/src/Combat.cpp",
+      "native/src/World.cpp",
+      "native/tests/unit_actions_test.cpp",
+      "-Wl,--gc-sections",
+      "-o",
+      "research/native_actions/unit_actions_cost_test"
+    ],
+    "seconds": 3.965,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "ubsan_compile": {
+    "command": [
+      "g++",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=undefined",
+      "-std=c++17",
+      "-O1",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-I",
+      "native/include",
+      "native/src/UpgradeAction.cpp",
+      "native/src/HealAction.cpp",
+      "native/src/Combat.cpp",
+      "native/src/World.cpp",
+      "native/tests/unit_actions_test.cpp",
+      "-Wl,--gc-sections",
+      "-o",
+      "research/native_actions/unit_actions_cost_test_ubsan"
+    ],
+    "seconds": 3.784,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "sources_sha256": {
+    "native/include/g1/UpgradeAction.hpp": "8ada0dea4e358b179d2711f7c01e5a4af863b40163898f857a373dc248e68287",
+    "native/src/UpgradeAction.cpp": "da24bd04630e36004be9166da967bfb50b3163ec83e474f791a2300e5c540b78",
+    "native/include/g1/HealAction.hpp": "31117a87ad62872778197af5a6df3b3d4c40719e1fe0447e4b3a47087bbf0df7",
+    "native/src/HealAction.cpp": "1b2c94205ea64668f35c5e13f696720c4bd07da0341ba04a64a1ca47cfb7cdfc",
+    "native/include/g1/Combat.hpp": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+    "native/include/g1/World.hpp": "9b2c9692004e50490c1b5605b34eed8fc5e86e919f44330f9ba553bf6dff5501",
+    "native/src/World.cpp": "d1723e859654b46b007754b54dc6a2d720e00195c382ac49fdaa90380f882289",
+    "native/tests/unit_actions_test.cpp": "8c48bac829354f65e31272f9ea4797cd17e1ff33c096033e4cb6cb75b4477e31",
+    "native/tests/unit_actions_cases.txt": "d6461eda09d30a2b60d394795cea846372cd261fbfc55ffc6c763aa00958f3e2",
+    "analysis_tools/actions/oracle.py": "d8133492ea62bc5a9ab4b190648d72cfedf6b9fd9b5761f97fb2b7226d673994",
+    "analysis_tools/ai/oracle.py": "6d59e821459f7f4a86dc4ea562b39f1a092491bd90168fb83f2309e645a9737f"
+  },
+  "runs": [
+    {
+      "fixture": "native/tests/unit_actions_cases.txt",
+      "fixture_sha256": "d6461eda09d30a2b60d394795cea846372cd261fbfc55ffc6c763aa00958f3e2",
+      "contains_original_payload_exclude_from_git": false,
+      "strict": {
+        "command": [
+          "research/native_actions/unit_actions_cost_test",
+          "native/tests/unit_actions_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":201,\"checks\":3552,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_actions/unit_actions_cost_test_ubsan",
+          "native/tests/unit_actions_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":201,\"checks\":3552,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 201,
+        "checks": 3552,
+        "passed": true
+      }
+    },
+    {
+      "fixture": "research/native_actions/source_actions_cases.txt",
+      "fixture_sha256": "572840dd376df21b60d11c303309d18d52111d3c39bd85c0d6280cdcc49bd421",
+      "contains_original_payload_exclude_from_git": true,
+      "strict": {
+        "command": [
+          "research/native_actions/unit_actions_cost_test",
+          "research/native_actions/source_actions_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":92,\"checks\":1616,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "ubsan": {
+        "command": [
+          "research/native_actions/unit_actions_cost_test_ubsan",
+          "research/native_actions/source_actions_cases.txt"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"cases\":92,\"checks\":1616,\"passed\":true}\n",
+        "stderr": ""
+      },
+      "result": {
+        "cases": 92,
+        "checks": 1616,
+        "passed": true
+      }
+    }
+  ],
+  "original_report_sha256": "32f43db3d3034fb20f5a4d23cd467c673d4bbcfc5fb97e53c9d335e5f4764648",
+  "superseded_report_sha256": "3693a0cc7da57299e20b4a09d7af5fdc1f8749b47b763e5a527a09219181d775",
+  "correction_note": "type21 effective cost40; raw decoded scalar1 preserved"
+}

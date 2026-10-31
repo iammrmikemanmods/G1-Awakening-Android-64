@@ -1,0 +1,54 @@
+{
+  "scope": "Frozen bounded native terrain component; no guest execution in product",
+  "native_compilation": "g++ C++17 -O2 -Wall -Wextra -Wconversion -Werror -pedantic",
+  "original_function_cases": 128,
+  "original_function_quads": 256,
+  "original_scalar_comparisons": 5760,
+  "format_api_contracts": 41,
+  "source_resources": 26,
+  "source_grid_cells": 4510,
+  "source_visual_records": 96,
+  "source_mutation_rejections": 81,
+  "first_grid_resource": 268,
+  "first_grid_cells": 210,
+  "first_grid_quads": 255,
+  "all_passed": true,
+  "native_product_source_frozen": true,
+  "full_scene_renderer": false,
+  "device_tested": false,
+  "source_files_sha256": {
+    "include/g1/Terrain.hpp": "23f270aa8360b59674c44925afbcdae25d146aeea81099db69143ca8c431bcc6",
+    "src/Terrain.cpp": "2baa7dbe5503e90379aa5950f5f5898a072a0e53cbec560612c7953c4582ef43",
+    "tools/terrain_probe.cpp": "f7d7013fda5001de7b6ed01da0873827345ce82b2b0d67833337fff0d7398a38",
+    "tools/extract_terrain_tables.py": "bca928d01ef4dc25f335b75d761266fbb6750bb721efd2a8fa93d60511c2e9b0",
+    "tests/terrain_test.cpp": "91b8f0b9cf82012759180cb9c46c71e415ef7b68a80af5a187b5adde2d7dd28f",
+    "tests/terrain_cases.txt": "5791215629f391e3400075ce012a4168a65931ea50fc8581f4c30e8d11c64345",
+    "tests/generate_terrain_reference.py": "9a5bccfa856356c281ba1440bd007d59325b80051132aa8c4f9b5037b218ba33",
+    "tests/terrain_reference.json": "e1d5940bc9acd1d1d89e475650e85f83fd9fdad7364b4ef1eec3a0f2fb7bee87",
+    "tests/verify_terrain.py": "851f7a94494e73f301223e8a46f5d8edd33107f21b0cd42db10d9592eafaa6f9",
+    "research/TERRAIN_DECODER.md": "fbc389c203731090e160cebbb2917b90651cc8f9ddebe8ac108af8bdf1e63078"
+  },
+  "evidence_sha256": {
+    "original_terrain_oracle.json": "06ea8a192abc6e717a9022d28bce9867e2eebfaae6343e97c6ca8073dc166133",
+    "native_terrain_validation.json": "57722e6cc7835473056b495c7b17182454997bbeb3d81d7ea4a7218675743c61",
+    "original_first_grid_oracle.json": "c1fdd81a0d5ebc17a706a8046141a433a4a62da4b4ab94f520e1fa4b1475bacb"
+  },
+  "limitations": [
+    "outside camera-dependent padding and left-edge interaction",
+    "style1 animated face14 routing",
+    "empty-sentinel mesh routing",
+    "camera and unit anchors not established by this component",
+    "GPU/device/full-game behavior"
+  ],
+  "camera_followup": {
+    "scope": "Conditional original camera setter and focus evidence for two explicitly supplied logical viewports",
+    "actual_initial_playable_camera_claimed": false,
+    "historical_ios_libm_bit_identity_claimed": false,
+    "native_camera_code_added": false,
+    "files_sha256": {
+      "research/CAMERA_RECOVERY.md": "3d27dd469867ca68b16201b0778fb7e8ec15419e074e06594f3d52212faf35de",
+      "research/terrain_validation/original_camera_setup.json": "e1b7292f7b09607e40ecbbe1429634795050c63f237c0d10cb25f3d1728241f8"
+    },
+    "development_oracle_sha256": "6f9f58ec84de10bf775268648520ca5d3c96f38d11e3b8bb06a29fac964abf59"
+  }
+}

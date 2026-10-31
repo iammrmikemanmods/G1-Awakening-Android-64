@@ -1,0 +1,29 @@
+{
+  "scope": "Native fixed style1 terrain geometry, config bounds, isolated animation clock; no guest execution in native source",
+  "command": [
+    "research/native_terrain/terrain_animated_test",
+    "native/tests/terrain_animated_cases.txt"
+  ],
+  "exit_code": 0,
+  "stdout": "animated terrain: 128 geometry and 64 clock cases, 7231 comparisons/contracts passed",
+  "original_geometry_cases": 128,
+  "original_clock_cases": 64,
+  "scalar_and_contract_checks": 7231,
+  "build": "g++ -std=c++17 -O2 -Wall -Wextra -Wconversion -Wpedantic -Werror -I native/include native/src/Terrain.cpp native/tests/terrain_animated_test.cpp -o research/native_terrain/terrain_animated_test",
+  "fixture_sha256": "876712e3711ed9718ab2fe232e8d49b17f87f4156284e1fd748cd3073c31f4dc",
+  "original_oracle_report_sha256": "94984aa8f21e3849e8a1eacdd66d736f6f670a882aea193c55c1b426cb8e419c",
+  "actual_map_report_sha256": "749155ce88f47902eb4af48d6c4b551334d7cf3584cb614ed4d2c48cfa3d9a4c",
+  "source_sha256": {
+    "native/include/g1/Terrain.hpp": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a",
+    "native/src/Terrain.cpp": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+    "native/tests/terrain_animated_test.cpp": "a32919200e85df10db13be059a076d2a5358426eb555105c59a54f46d16b40f2"
+  },
+  "all_passed": true,
+  "not_established": [
+    "random transient decoration placement",
+    "camera-padded outside geometry",
+    "GPU pixel parity",
+    "iPhone execution",
+    "full campaign playthrough"
+  ]
+}

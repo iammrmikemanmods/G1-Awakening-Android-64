@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "scope": "Native support tutorial predicate and original offline evidence",
+  "source_binary_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "instruction_patches": 0,
+  "files": [
+    {
+      "path": "native/include/g1/SupportTutorial.hpp",
+      "bytes": 1484,
+      "sha256": "0533df8b8b2cc896bac9eae2b73554ef90e12ad739c6906a35e9e98d4bb7715a"
+    },
+    {
+      "path": "native/tests/support_tutorial_test.cpp",
+      "bytes": 3626,
+      "sha256": "75246f5017ba8ccc6d3a602c38546066fc0379993efa1fa056433aeb9fc4ee04"
+    },
+    {
+      "path": "native/tests/support_tutorial_original_vectors.txt",
+      "bytes": 76751,
+      "sha256": "44b15c030e78d48920ed9041f122084c89c8b2319a58e7b7baea17b05fff60cc"
+    },
+    {
+      "path": "native/research/support_tutorial_recovery/oracle.py",
+      "bytes": 13765,
+      "sha256": "9eb6a52a0dba4188a29336ea16dbc19e771e819d48d38e717d1d188ce8001bd9"
+    },
+    {
+      "path": "native/research/support_tutorial_recovery/original_tutorial.json",
+      "bytes": 28149,
+      "sha256": "608d2427227182ffe64a31b3497b571b84e7c5758436661adc0faa75f83af07a"
+    },
+    {
+      "path": "native/research/support_tutorial_recovery/portable_validation.json",
+      "bytes": 786,
+      "sha256": "61cee084da79544efb39966c1484e7f4e6d43d3469d5fff1fc1cd9b13cac6190"
+    },
+    {
+      "path": "native/research/support_tutorial_recovery/README.md",
+      "bytes": 6313,
+      "sha256": "59ccdaee8fbaa614fb8a6a9374b75865326c15d943ba744b6b6cd3b145ef6abe"
+    }
+  ]
+}

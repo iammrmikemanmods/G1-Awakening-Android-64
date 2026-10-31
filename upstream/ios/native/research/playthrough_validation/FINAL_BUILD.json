@@ -1,0 +1,65 @@
+{
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-pedantic",
+    "-O2",
+    "-I",
+    "g1_port/native/include",
+    "/workspace/scratch/cba553aafa20/g1_port/native/tools/session_playthrough_probe.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/libg1_resources.a",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/libg1_png.a",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a",
+    "-lz",
+    "-o",
+    "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_validation/session_playthrough_probe"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "input_hashes_before": {
+    "g1_port/native/tools/session_playthrough_probe.cpp": {
+      "bytes": 65007,
+      "sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_resources.a": {
+      "bytes": 1650368,
+      "sha256": "ad01504b64cc5ac421f409bce3ef08797e53b64174359b9bb1bcfc99cb246c0c"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_png.a": {
+      "bytes": 211556,
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a": {
+      "bytes": 90250,
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+    }
+  },
+  "input_hashes_after": {
+    "g1_port/native/tools/session_playthrough_probe.cpp": {
+      "bytes": 65007,
+      "sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_resources.a": {
+      "bytes": 1650368,
+      "sha256": "ad01504b64cc5ac421f409bce3ef08797e53b64174359b9bb1bcfc99cb246c0c"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_png.a": {
+      "bytes": 211556,
+      "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+    },
+    "g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a": {
+      "bytes": 90250,
+      "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+    }
+  },
+  "inputs_unchanged_during_build": true,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "source_sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6",
+  "executable_sha256": "7db60e84f3f268d7fdd04bb1fecaac8aff126daa7dc110b174410e6bc3a4a2cf",
+  "executable_bytes": 758384
+}

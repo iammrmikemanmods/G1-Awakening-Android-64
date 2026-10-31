@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "kind": "native camera body decoder against independent asset audit",
+  "resources": 27,
+  "cameras": 73,
+  "exact_field_comparisons": 365,
+  "manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "corpus_audit_sha256": "5736641c02095a3f19fbff375d13548592754549cb64bca313b458f5eb6c0468",
+  "probe_sha256": "eba3e84ccc28a04c9ee2a26f342e876aca72e1c0a324e66edad26f969eab0712",
+  "runner_sha256": "3df7e8b962e257ebfca7c03fbb66d9d80d33a1b4c6567dd0e7367839c66f19fa",
+  "rows": [
+    {
+      "resource_id": 486,
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "cameras": 12,
+      "native_output_sha256": "2239dcde7a6699c678009f7463e05085722e765c94fab7dd28b5e7469281c406"
+    },
+    {
+      "resource_id": 534,
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "cameras": 12,
+      "native_output_sha256": "945ce5b9f47935edf27cff26d8ceb6c46bce94e3578c27f819572d7b9525f068"
+    },
+    {
+      "resource_id": 1212,
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "cameras": 12,
+      "native_output_sha256": "ef020c9ea417b27a6ce7df05f44111a5846933300293e7237a2c286fdabf79db"
+    },
+    {
+      "resource_id": 408,
+      "sha256": "d1ab89d6440df4fb09d23c20204160e4fb04cde2ca420a04c77cc37b0f0e43f4",
+      "cameras": 2,
+      "native_output_sha256": "b546fc57df9246f2ef7f457afb124b130736eb7ae0ea34803b5d02adba930cfc"
+    },
+    {
+      "resource_id": 699,
+      "sha256": "c1e9e5c2a3377f8387c21a3c8e9e346784be317cf64893f794c0ae11b5096a4a",
+      "cameras": 2,
+      "native_output_sha256": "2f5defbddfc45b2f294fc9147fad0ec92d26d4e2ab0a85918cc6069a9f801edb"
+    },
+    {
+      "resource_id": 444,
+      "sha256": "9375af627f75c6c535109b7de5e3fa63baabc8b81c1546bfb1b56c38c624389d",
+      "cameras": 1,
+      "native_output_sha256": "6ea689ad0618428ac489ac9fe02a6042cb7e6219aed2f0fd6ceccece209cbabb"
+    },
+    {
+      "resource_id": 492,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "cameras": 2,
+      "native_output_sha256": "eb6253b0064894401f283919e2ff9237898287ab1bab5f4cd8c3b852a186a16a"
+    },
+    {
+      "resource_id": 1300,
+      "sha256": "36a9d282691508099a3b18089a95d3248bdd26f9f9e3ef4683b2d2b91e1bffd3",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 561,
+      "sha256": "e988521887c88fac8e9b1365b2cf72bc7e0b54615acb4ba078e29177ab67061a",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 369,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 565,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 634,
+      "sha256": "296822e2c432065d55d26816f64b430790dd9fef77ff81d756f07e902c053891",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 395,
+      "sha256": "a5de57b4c365df44b5f38eff424495503cf5b9ea0ccaa53e37291887f05842de",
+      "cameras": 1,
+      "native_output_sha256": "6ea689ad0618428ac489ac9fe02a6042cb7e6219aed2f0fd6ceccece209cbabb"
+    },
+    {
+      "resource_id": 475,
+      "sha256": "23ed6b7cd803e85a77524a0b6f7d1a9778ffaa059a4c9c5bea8ed8b3119f6be6",
+      "cameras": 2,
+      "native_output_sha256": "7bcd4c7dae86e9e33d2b58ceb03c5d5353fcabbc8891a6f8682295d2b7c82a20"
+    },
+    {
+      "resource_id": 867,
+      "sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+      "cameras": 2,
+      "native_output_sha256": "e46f48474147443c184f2ca870062ba19a943ca8f737be630c4f5a5ef6f3634d"
+    },
+    {
+      "resource_id": 1039,
+      "sha256": "4b766628e4bc4041b4796239ceddb43a0b2a815168bcdfecffbb79957409d847",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 631,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "cameras": 2,
+      "native_output_sha256": "eb6253b0064894401f283919e2ff9237898287ab1bab5f4cd8c3b852a186a16a"
+    },
+    {
+      "resource_id": 795,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "cameras": 2,
+      "native_output_sha256": "eb6253b0064894401f283919e2ff9237898287ab1bab5f4cd8c3b852a186a16a"
+    },
+    {
+      "resource_id": 967,
+      "sha256": "4206ffcf73d060d8fadd970ea6c0a52499eac45149d63ed1e12cb459f6eada5e",
+      "cameras": 2,
+      "native_output_sha256": "2ea428be3554939333889a0feec5bd05ffb091eb51ccf4d7a3180b131d2d1f92"
+    },
+    {
+      "resource_id": 564,
+      "sha256": "3058249f64a07996af31225f7fb919195f392605ace79f7fa355f2f032b0b0ee",
+      "cameras": 2,
+      "native_output_sha256": "a1f5501d899aa70a0377951d40a0f834fe361c1a4b71739c25ea21be4a52665f"
+    },
+    {
+      "resource_id": 1299,
+      "sha256": "69884b098563c3b2969e568856c383b2ea8db08581e70713196af90a514041a6",
+      "cameras": 2,
+      "native_output_sha256": "9cb07a6cb932a452b8a3067a4e500d3a3bc79ee9dcc6816c40fc381ba3639155"
+    },
+    {
+      "resource_id": 829,
+      "sha256": "7ad03a1bb11ddf050780aa358317bacc6e3974bb0562ab9a57c6920af6a30340",
+      "cameras": 2,
+      "native_output_sha256": "70aecbe7b4f50779e6ef2562ee00b5851c937f77eaf0a96ad2333622193af562"
+    },
+    {
+      "resource_id": 1201,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 1070,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 489,
+      "sha256": "59401dc0dd19b85e35007bb04525f9fbe9025e37d3d1af8000a9a44663759635",
+      "cameras": 1,
+      "native_output_sha256": "ad9071a2d685da57c0e22e1106c6c75825e87c1c2934506260a6962e83f01bdf"
+    },
+    {
+      "resource_id": 490,
+      "sha256": "a666b66126b5d273ecdacff46b7593f28075e2d16f237ec002230aae52df0b63",
+      "cameras": 2,
+      "native_output_sha256": "70aecbe7b4f50779e6ef2562ee00b5851c937f77eaf0a96ad2333622193af562"
+    },
+    {
+      "resource_id": 500,
+      "sha256": "fd92d638254a75b5fef063e71d31be11569b84740e5795db3b03ae664efeb20b",
+      "cameras": 2,
+      "native_output_sha256": "fc4a4133409c768a1f5bf0bc3a1d7b1c306ae7ce693944757da69692d99dc44d"
+    }
+  ],
+  "passed": true,
+  "gpu_execution": false,
+  "live_camera_selection": false
+}

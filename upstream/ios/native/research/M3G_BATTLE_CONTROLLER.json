@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "frozen original ordinary controller reference; native implementation and GPU not claimed",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "unicorn_version": "2.1.4",
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "original_libgcc_readonly_unchanged": true,
+  "case_count": 295,
+  "sequence_count": 10,
+  "sequence_step_count": 930,
+  "draw_case_count": 159,
+  "original_functions": [
+    "0x413e8",
+    "0x40f0c",
+    "0x3c23a",
+    "0x3c950",
+    "0x42b44"
+  ],
+  "recording_boundaries": [
+    "public retain/release/identity",
+    "public animate: signed requested time only",
+    "camera select: record ID and supply separately proven route side plus synthetic graph presence",
+    "camera propagation: record signed time and adjustment byte only",
+    "effect placement: record side and hit arguments only",
+    "text formatting",
+    "audio request",
+    "app singleton",
+    "public render-enable setter",
+    "scene/participants rendering helper: record current enable states",
+    "battle HUD and damage text drawing"
+  ],
+  "scope": {
+    "synthetic_state": true,
+    "original_complete_phase_function": true,
+    "actual_combat_resolver": false,
+    "actual_asset_loader": false,
+    "gpu_rendering": false,
+    "unit_viewer_phase13": false,
+    "transition_inputs_include_synthetic_boundary_combinations": true
+  },
+  "static_additional_evidence": {
+    "request": "0x582ec..0x58358, 0x583d0; setter0x45b2a",
+    "initialization": "0x40e38, 0x3fadc, 0x40408..0x40462",
+    "completion": "0x3c0d0, 0x47d58..0x47e4e, 0x45aa8",
+    "effect_wrapper": "0x3f866",
+    "effect_placement": "0x3c74a, 0x3caa0",
+    "death_child_fallback": "0x4075e..0x408d8",
+    "head_matrix_get": "0x3ffb0..0x3ffe8, 0xb1fe4..0xb1fe8, 0xb210c, 0xa66c8"
+  },
+  "reproduction": {
+    "cwd": "g1_port or exported repository root",
+    "command": "python3 analysis_tools/m3g/battle_controller_oracle.py --binary /path/to/G1awakening.armv6 --libgcc /path/to/libgcc_s.1.dylib --unicorn-dir /path/to/unicorn-python --output /tmp/original_battle_controller.json",
+    "required_files": [
+      "analysis_tools/m3g/battle_controller_oracle.py",
+      "analysis_tools/sprite/render_oracle.py"
+    ],
+    "proprietary_inputs_not_in_repository": true
+  },
+  "files": {
+    "analysis_tools/m3g/battle_controller_oracle.py": {
+      "bytes": 19874,
+      "sha256": "f7e40e584624174ffbc345d3935a9e44bc8d45384615851c654574da2cacf346"
+    },
+    "analysis_tools/sprite/render_oracle.py": {
+      "bytes": 13657,
+      "sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c"
+    },
+    "native/research/M3G_BATTLE_CONTROLLER.md": {
+      "bytes": 18232,
+      "sha256": "eb7902cb8a4cd166297849b47182f84338ce02b7ddedd880e05ae7ccb17eef03"
+    },
+    "native/research/m3g_validation/original_battle_controller.json": {
+      "bytes": 1888437,
+      "sha256": "2a0d24678c03d9a88942e021a8cf8eeafb0577e9dc2c8923c2ac9d368e35cca2"
+    }
+  }
+}

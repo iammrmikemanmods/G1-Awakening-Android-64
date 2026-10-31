@@ -1,0 +1,46 @@
+{
+  "scope": "Original arrival target collection and facing prefix only",
+  "source_frozen": true,
+  "native_module": "MovementArrival",
+  "source_files_sha256": {
+    "native/include/g1/MovementArrival.hpp": "4d2f2cd05b78ad730c08184b9f13ea7b64d4e321f83c2ac86c0bdc7ee38ad3d3",
+    "native/src/MovementArrival.cpp": "a929d215d24ceaceba6e5ae0a9492f2834400d117e7b9ca6c8c5789db68fae23",
+    "native/tests/movement_arrival_test.cpp": "0d053b16109499cc3af12160fc80e48f7c636b359ef0bcddb4531427eace28c7",
+    "analysis_tools/movement_action/arrival_probe.cpp": "24c57a3fc4e8b551c70675ee547688f3ff6467d558ca4c66a91b20245e9eeabd",
+    "analysis_tools/movement_action/arrival_oracle.py": "9da989eb736d824f97591e6565d15adc90d3a192e890d09a465d9f9f03aa7e6a",
+    "native/research/MOVEMENT_ARRIVAL.md": "582b33220c3e63d705140e0ff9baf615a50aa2af9f0e48e83471b97815973d5e"
+  },
+  "contracts": {
+    "passed": 11,
+    "compiler": "g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror"
+  },
+  "reference": {
+    "start": "0x59798",
+    "natural_stop_before": "0x59884",
+    "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+    "unicorn_version": "2.1.4",
+    "case_count": 192,
+    "native_original_exact_match": true,
+    "instruction_patches": 0,
+    "function_stubs": 0,
+    "original_text_readonly_unchanged": true,
+    "synthetic_state": true,
+    "full_arrival_callback_executed": false
+  },
+  "reference_artifact": {
+    "path": "native/research/movement_action_validation/original_arrival_facing.json",
+    "sha256": "32af51d9c98020354e86c897e9716c6302df3e5f34f06f824f95f4809ea4b08b",
+    "bytes": 256361
+  },
+  "native_product_contains_emulator": false,
+  "native_product_reads_original_executable": false,
+  "later_phase_effects": "source-inspected and documented; not executed by this prefix oracle",
+  "unimplemented": [
+    "remaining arrival callback",
+    "co-location/transport deactivation and bookkeeping",
+    "command eligibility",
+    "AI continuation",
+    "capture mutation",
+    "UI refresh and passive visual effects"
+  ]
+}

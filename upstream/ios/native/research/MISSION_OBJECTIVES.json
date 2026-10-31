@@ -1,0 +1,43 @@
+{
+  "status": "all_four_objective_kinds_verified",
+  "original_function_cases": 400,
+  "external_functions_replaced_in_reference": [],
+  "native_objective_checks": 3217,
+  "updated_mission_controller_checks": 731,
+  "actual_mission_resources_decoded": 30,
+  "actual_objectives_decoded": 31,
+  "actual_kind_counts": [
+    3,
+    1,
+    25,
+    2
+  ],
+  "every_actual_goal_has_later_opcode1": true,
+  "source_sha256": {
+    "include/g1/MissionObjectives.hpp": "b1774f766cd669f9a840b663698e0bea931bdede752ad1485f7007ace912e7df",
+    "src/MissionObjectives.cpp": "317e1160344c6f02a98aad2280553b1abf94ccb21dab1eb8f4a1c3ff642bb993",
+    "tests/mission_objectives_test.cpp": "693ef93ad585ef9b825ae7e30c17a9acc1a77504352cb0acb67218aa92df5096",
+    "tests/mission_objectives_original_vectors.txt": "6e070197d3455bdc3dbd13f7f366a51ce93e571f9bdae83315dbac507b74df0c",
+    "tools/mission_objectives_probe.cpp": "ef1fa2e39c0fe50b7348b1c51332c9c160f023a1f50d7b505fed48914efb086a",
+    "include/g1/MissionExecution.hpp": "6d42d532228d7d90f24e7257eb93f778c8efbe2e919da90088590dc76a126419",
+    "src/MissionExecution.cpp": "efda86bfc468304c6f218d18c6ee18c50890bfcbadbd3d31624fa64e0f5c6522",
+    "tests/mission_execution_test.cpp": "5672cfe2f6ba786a381fe05a3cac9887f759f47c251e5dcae6d732c189fcfe14"
+  },
+  "fixture_sha256": "6e070197d3455bdc3dbd13f7f366a51ce93e571f9bdae83315dbac507b74df0c",
+  "original_executable_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "integration": {
+    "source": "src/MissionObjectives.cpp",
+    "full_observation": "MissionExecution::observe_objective(sites,units_by_type,campaign,current_owner)",
+    "all_goal_data": "state().mission_objective",
+    "legacy_capture_view": "state().objective for kind 1 only",
+    "generic_gate": "MissionGate::objective; kind 1 retains captured_site_item",
+    "effects_require_actual_caller_application": true
+  },
+  "remaining": [
+    "general world commands and bootstrap for later campaigns",
+    "caller application of action reset and world effects",
+    "actual whole campaign playthrough",
+    "iPhone device validation"
+  ]
+}

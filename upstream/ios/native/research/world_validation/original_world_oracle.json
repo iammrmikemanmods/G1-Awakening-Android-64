@@ -1,0 +1,380 @@
+{
+  "kind": "development-only original ARM world initialization reference",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "reference_script_sha256": "2c1fc1e53e27c8c0a16a248b4d724f6225f9fdcba05456a9d840cc21d1bc6a79",
+  "movement_reference_script_sha256": "ded6e06bc41c9bb6c8189b5f84e8636053d4ae296f925160de978660e61946a0",
+  "native_probe_sha256": "258fcbef66bcf38aaefd2bb80ffb5844fd892e2bf185a73a64ea6b533b6545b8",
+  "unicorn_version": "2.1.4",
+  "all_passed": true,
+  "original_text_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "boundary_substitutions": {
+    "0xba288": "imported ___divsi3: signed integer division truncating toward zero",
+    "0x507fc": "map resource I/O: record resource tags and supply decoded lookup bytes"
+  },
+  "boundary_call_counts": {
+    "0xba288": 6,
+    "0x507fc": 66
+  },
+  "definition_payloads_independently_decoded_and_matched": 23,
+  "definition_decode_sha256": "57b7ed2c3bbcbf3f1341769b48ad0e8e2c33946789527a3ca0897541e35e0eef",
+  "resource_tables_match_original": {
+    "unit_resources": [
+      292,
+      294,
+      290,
+      302,
+      291,
+      283,
+      285,
+      295,
+      305,
+      301,
+      288,
+      284,
+      287,
+      299,
+      304,
+      300,
+      293,
+      289,
+      303,
+      286,
+      296,
+      297,
+      298
+    ],
+    "campaign_resources": [
+      315,
+      326,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323
+    ],
+    "grid_resources": [
+      268,
+      274,
+      277,
+      272,
+      276,
+      263,
+      265,
+      266,
+      278,
+      270,
+      271,
+      273,
+      275,
+      267,
+      279,
+      269,
+      264,
+      258,
+      259,
+      260,
+      261,
+      262
+    ]
+  },
+  "owner_function": "0x496e4",
+  "owner_result": {
+    "player_factions": [
+      0,
+      1
+    ],
+    "owners_by_type": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "ordered_types_by_owner": [
+      [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        22
+      ],
+      [
+        2,
+        3,
+        8,
+        9,
+        13,
+        14,
+        19,
+        20,
+        21
+      ]
+    ]
+  },
+  "spawn_function": "0x4333a -> 0x4328a / 0x430fc",
+  "spawn_results": [
+    {
+      "type": 11,
+      "faction": 0,
+      "owner": 0,
+      "form": 0,
+      "active": true,
+      "x": 1,
+      "y": 2,
+      "spent_budget": 0,
+      "exclusion_fields_40_44": [
+        0,
+        0
+      ]
+    },
+    {
+      "type": 19,
+      "faction": 1,
+      "owner": 1,
+      "form": 0,
+      "active": true,
+      "x": 4,
+      "y": 7,
+      "spent_budget": 0,
+      "exclusion_fields_40_44": [
+        0,
+        0
+      ]
+    }
+  ],
+  "map_style_fragment": {
+    "begin": "0x56c90",
+    "stop_before": "0x56de2",
+    "cases_matched": 66,
+    "all_case_results_sha256": "ee2b0e26e916881a48ec6fa366b2c8ef0b54e6e62a3cf3f1a2880aa587ce699f",
+    "map0_cases": [
+      {
+        "map_index": 0,
+        "style": 0,
+        "grid_resource_id": 268,
+        "lookup_resource_id": 282,
+        "effective": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "map_index": 0,
+        "style": 1,
+        "grid_resource_id": 268,
+        "lookup_resource_id": 280,
+        "effective": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3,
+          4,
+          0,
+          1,
+          0,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0
+        ]
+      },
+      {
+        "map_index": 0,
+        "style": 2,
+        "grid_resource_id": 268,
+        "lookup_resource_id": 281,
+        "effective": [
+          0,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          0,
+          3,
+          3,
+          3,
+          3,
+          0,
+          3,
+          3,
+          0,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "movement_integration": [
+    {
+      "type": 11,
+      "cell_count": 210,
+      "reachable_cells_including_origin": 12,
+      "original_result_sha256": "5a1f73f0e3591afeb77a02aa0ccdf52670c095f675f2a0e794d79efd88c8193b",
+      "native_matches_original": true
+    },
+    {
+      "type": 19,
+      "cell_count": 210,
+      "reachable_cells_including_origin": 11,
+      "original_result_sha256": "72e764a88d3d8b53cb152de3add090169a01570505636da75f91fe876b84cae4",
+      "native_matches_original": true
+    }
+  ],
+  "native_world_summary": {
+    "mission_resource_id": 315,
+    "grid_resource_id": 268,
+    "lookup_resource_id": 282,
+    "style": 0,
+    "width": 15,
+    "height": 14,
+    "command_count": 29,
+    "next_command_index": 9,
+    "next_opcode": 3,
+    "stop": "presentation_required",
+    "title_text_index": 208,
+    "flag_225": false,
+    "last_phase_opcode": 2,
+    "camera": {
+      "x": 1,
+      "y": 2,
+      "immediate": true
+    },
+    "available_types": [
+      11,
+      19
+    ],
+    "sites": [
+      {
+        "x": 5,
+        "y": 10,
+        "state": -1,
+        "coordinate_groups": [
+          [
+            [
+              5,
+              7
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Original object layout and call-frame inputs are explicitly seeded; no whole engine boot",
+    "Original resource stream loader and unit definition parser are not executed",
+    "Two explicit non-gameplay boundary substitutions; no silent import fallback",
+    "Opcode9 is a bounded control-flow fragment, not the full staged dispatcher",
+    "Native unit subset is checked against original owner/spawn behavior, not every side effect",
+    "Movement comparison seeds decoded board/profile inputs; it does not execute a move",
+    "No dialogue, objective, AI, combat, save/load, complete campaign or iOS device validation"
+  ]
+}

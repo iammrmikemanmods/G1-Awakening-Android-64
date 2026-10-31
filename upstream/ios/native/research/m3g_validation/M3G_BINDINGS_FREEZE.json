@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "scope": "New native M3G name/Node/container/form/model-camera binding helpers; no existing source changed",
+  "files": [
+    {
+      "path": "native/include/g1/M3GBindings.hpp",
+      "bytes": 3365,
+      "sha256": "70308b20b29c424653848978986f32b08ed0233dc2e9f2bdada464108aa17c03"
+    },
+    {
+      "path": "native/src/M3GBindings.cpp",
+      "bytes": 6069,
+      "sha256": "6178bfd971e4aabdd1ade845a2175f2423cededdb246c7bff5d69d9eb7b50bdc"
+    },
+    {
+      "path": "native/tests/m3g_bindings_test.cpp",
+      "bytes": 9066,
+      "sha256": "16765506012c4e07d05fa17c83ae817392f483b4c6d9dfd20276444e482b0892"
+    },
+    {
+      "path": "native/tests/m3g_bindings_fixture.hpp",
+      "bytes": 2795,
+      "sha256": "9cc6dbbcc3f6d4b4ddb859fe0b5a2fa4ed83ddd02a39ffb4ad92a6dc91c02828"
+    },
+    {
+      "path": "native/tests/m3g_bindings_fixture_provenance.json",
+      "bytes": 1036,
+      "sha256": "2b298c056879b3fd62e47a8f527a2dd38cfbf671a61f810135edacb70f21909f"
+    },
+    {
+      "path": "native/tools/m3g_bindings_probe.cpp",
+      "bytes": 2691,
+      "sha256": "93046a7c2963adba6d5cd7974e3cf50330dcf20719cb9ef7eb51b09d75f29ebd"
+    },
+    {
+      "path": "analysis_tools/m3g/bindings_validate.py",
+      "bytes": 15990,
+      "sha256": "d72ba93577bd257fc33cf892648e9c12f801c2f33280a3f9a0fa59a871bbe437"
+    },
+    {
+      "path": "native/research/m3g_validation/bindings_native_validation.json",
+      "bytes": 31107,
+      "sha256": "5b4e408b4f1aa67323b044fac44d5aefacea57dd56c05fa70aa589bae33a381b"
+    },
+    {
+      "path": "native/research/M3G_BINDINGS.md",
+      "bytes": 10859,
+      "sha256": "a0a03da5f6c77b14b9dcf6cac1ad086d48693e309976ab3a42c6ca033b154ae7"
+    }
+  ],
+  "total_bytes": 82978,
+  "external_frozen_evidence": [
+    {
+      "path": "native/research/M3G_BINDING_CORRECTION.md",
+      "bytes": 10226,
+      "sha256": "1ea6c702b8cde5d65cfe37915e198cfcebc1adf3947ed246cbd1f65c914fa27a"
+    },
+    {
+      "path": "native/research/M3G_BINDING_CORRECTION.json",
+      "bytes": 4309,
+      "sha256": "0990988a8225f5fae61354412527b39a262317bfeb51f3344cf7e93b423c9412"
+    },
+    {
+      "path": "native/research/M3G_WORLD_GROUP_INTERFACE.md",
+      "bytes": 3169,
+      "sha256": "7409a2de00d192cc2a743dacbfc9f563542167e37c0a9f5e0e215d2b301b9cd0"
+    },
+    {
+      "path": "native/research/M3G_WORLD_GROUP_INTERFACE.json",
+      "bytes": 1982,
+      "sha256": "33478c4a714e4ce531801c9e4f03d55a5ef7c1d0aa0fed31d7414dd9bf0b0846"
+    },
+    {
+      "path": "native/research/m3g_validation/original_bindings.json",
+      "bytes": 7655,
+      "sha256": "d6d39b71189bdd1ed6eb53fff342d516f2fabcf4f5d04d534fd2921f6a33300a"
+    }
+  ],
+  "validation": {
+    "original_hash_cases": 34,
+    "original_tree_cases": 6,
+    "native_contracts": 43,
+    "optimized_passed": true,
+    "ubsan_passed": true,
+    "resources": 27,
+    "node_lookup_queries": 513,
+    "container_selection_counts": {
+      "0": 14,
+      "1": 13
+    },
+    "present_robot_form": 24,
+    "present_car_form": 13,
+    "present_robot_camera": 24,
+    "present_vehicle_camera": 13,
+    "source_data_checks_including_structure": 2677,
+    "difference_count": 0
+  },
+  "review": "Two bounded read-only independent reviews, including final World22 Group-interface delta, found no concrete blocker",
+  "gpu_execution": false,
+  "apple_compile": false,
+  "iphone_tested": false,
+  "cmake_edited": false
+}

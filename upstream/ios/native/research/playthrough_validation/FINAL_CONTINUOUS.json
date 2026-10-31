@@ -1,0 +1,483 @@
+{
+  "group": 0,
+  "index": 0,
+  "directory": "final_continuous",
+  "provenance": {
+    "command": [
+      "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_validation/session_playthrough_probe",
+      "--archive",
+      "g1_port/research/assets/iphone.big",
+      "--terrain-tables",
+      "g1_port/research/native_terrain/terrain_visual_tables.bin",
+      "--output",
+      "/workspace/scratch/cba553aafa20/g1_port/research/playthrough_validation/final_continuous",
+      "--strategy",
+      "native-planner-search",
+      "--group",
+      "0",
+      "--start-mission",
+      "0",
+      "--seed",
+      "0x4741",
+      "--max-missions",
+      "17",
+      "--max-ticks",
+      "200000",
+      "--max-human-turns",
+      "500",
+      "--max-seconds",
+      "90"
+    ],
+    "source_sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6",
+    "executable_sha256": "7db60e84f3f268d7fdd04bb1fecaac8aff126daa7dc110b174410e6bc3a4a2cf",
+    "linked_libraries": {
+      "g1_port/native/research/mission_validation/cmake_build/libg1_resources.a": {
+        "bytes": 1650368,
+        "sha256": "ad01504b64cc5ac421f409bce3ef08797e53b64174359b9bb1bcfc99cb246c0c"
+      },
+      "g1_port/native/research/mission_validation/cmake_build/libg1_png.a": {
+        "bytes": 211556,
+        "sha256": "e9937f9a8bf9d1ad3f1ea9cc646d5f21f018e3f3a3b1c0c33ca85eb62493eee9"
+      },
+      "g1_port/native/research/mission_validation/cmake_build/libg1_vorbis.a": {
+        "bytes": 90250,
+        "sha256": "563348c2f4d2d181b2dc0b3af4a517dc3535ad6face18f5fcc23a583c887349f"
+      }
+    },
+    "inputs": {
+      "g1_port/research/assets/iphone.big": {
+        "bytes": 6994213,
+        "sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4"
+      },
+      "g1_port/research/native_terrain/terrain_visual_tables.bin": {
+        "bytes": 480,
+        "sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8"
+      }
+    },
+    "returncode": 0,
+    "stdout": "Outcome native_loss_handoff; native handoffs 8; ticks 5920; human moves 87; attacks 90; captures 11\n",
+    "stderr": ""
+  },
+  "result": {
+    "scope": "headless native gameplay command pilot",
+    "presentation_feedback": "synthetic: world/camera/dialogue/focus/transform/battle/results/menu/ending",
+    "device_or_rendered_playthrough": false,
+    "gameplay_state_forced": false,
+    "strategy": "public human commands chosen by the named test-input strategy; real native opponent AI",
+    "strategy_variant": "native-planner-search",
+    "seed": 18241,
+    "start_group": 0,
+    "start_mission": 0,
+    "outcome": "native_loss_handoff",
+    "error": "",
+    "wall_seconds": 1.03158,
+    "ticks": 5920,
+    "simulation_step_ms": 30,
+    "actions": {
+      "commands": 344,
+      "selections": 232,
+      "moves": 87,
+      "attacks": 90,
+      "captures": 11,
+      "transforms": 47,
+      "heals": 0,
+      "upgrades": 0,
+      "productions": 9,
+      "human_end_turns": 100,
+      "ai_turn_entries": 99
+    },
+    "synthetic_feedback_counts": {
+      "world": 25,
+      "camera": 33,
+      "dialogue_ticks": 49,
+      "focus": 378,
+      "transform": 74,
+      "battle": 179,
+      "results": 8
+    },
+    "profile_writes": 8,
+    "checkpoint_writes": 0,
+    "next_mission_installs": 7,
+    "escape_search": {
+      "branch_command_evaluations": 6481,
+      "accepted_branch_commands": 6481,
+      "settle_bounds": 0,
+      "solutions": 1,
+      "live_replay_checkpoint_matches": 22,
+      "state_transplanted": false,
+      "per_search_command_bound": 30000,
+      "per_search_turn_bound": 10,
+      "per_search_seconds_bound": 10
+    },
+    "native_handoffs": [
+      {
+        "group": 0,
+        "index": 0,
+        "resource": 315,
+        "handoff": "next_mission",
+        "first_tick": 0,
+        "last_tick": 221,
+        "active_counts": [
+          1,
+          0
+        ],
+        "record": [
+          3,
+          1,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 1,
+        "resource": 326,
+        "handoff": "next_mission",
+        "first_tick": 222,
+        "last_tick": 481,
+        "active_counts": [
+          2,
+          0
+        ],
+        "record": [
+          4,
+          1,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 2,
+        "resource": 333,
+        "handoff": "next_mission",
+        "first_tick": 482,
+        "last_tick": 1459,
+        "active_counts": [
+          4,
+          0
+        ],
+        "record": [
+          9,
+          5,
+          1
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 3,
+        "resource": 334,
+        "handoff": "next_mission",
+        "first_tick": 1460,
+        "last_tick": 2307,
+        "active_counts": [
+          2,
+          0
+        ],
+        "record": [
+          8,
+          4,
+          2
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 4,
+        "resource": 335,
+        "handoff": "next_mission",
+        "first_tick": 2308,
+        "last_tick": 2720,
+        "active_counts": [
+          1,
+          2
+        ],
+        "record": [
+          5,
+          0,
+          0
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 5,
+        "resource": 336,
+        "handoff": "next_mission",
+        "first_tick": 2721,
+        "last_tick": 3457,
+        "active_counts": [
+          4,
+          0
+        ],
+        "record": [
+          15,
+          2,
+          5
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 6,
+        "resource": 337,
+        "handoff": "next_mission",
+        "first_tick": 3458,
+        "last_tick": 4481,
+        "active_counts": [
+          1,
+          4
+        ],
+        "record": [
+          11,
+          0,
+          1
+        ],
+        "profile_written": true
+      },
+      {
+        "group": 0,
+        "index": 7,
+        "resource": 338,
+        "handoff": "campaign_menu",
+        "first_tick": 4482,
+        "last_tick": 5920,
+        "active_counts": [
+          0,
+          7
+        ],
+        "record": [
+          51,
+          14,
+          6
+        ],
+        "profile_written": true
+      }
+    ],
+    "final": {
+      "group": 0,
+      "mission": 7,
+      "resource": 338,
+      "command": 31,
+      "gate": 10,
+      "phase": 99,
+      "stop": 5,
+      "stop_detail": "opcode 10 requires actual profile persistence and results/campaign handoff",
+      "owner": 1,
+      "human_turn": 51,
+      "funds": [
+        26,
+        14
+      ],
+      "active_counts": [
+        0,
+        7
+      ],
+      "rng_draws": 1446,
+      "objective": null,
+      "units": [
+        {
+          "type": 11,
+          "owner": 0,
+          "active": false,
+          "form": 0,
+          "position": [
+            5,
+            3
+          ],
+          "health": 0,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 4,
+          "owner": 0,
+          "active": false,
+          "form": 0,
+          "position": [
+            1,
+            9
+          ],
+          "health": 0,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 0,
+          "owner": 0,
+          "active": false,
+          "form": 0,
+          "position": [
+            1,
+            0
+          ],
+          "health": 0,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 1,
+          "owner": 0,
+          "active": false,
+          "form": 0,
+          "position": [
+            1,
+            8
+          ],
+          "health": 0,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 3,
+          "owner": 1,
+          "active": false,
+          "form": 0,
+          "position": [
+            1,
+            1
+          ],
+          "health": 0,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 9,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            5,
+            4
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 2,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            4,
+            5
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 8,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            4,
+            6
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 19,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            5,
+            3
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 20,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            4,
+            4
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 13,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            1,
+            1
+          ],
+          "health": 7,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        },
+        {
+          "type": 14,
+          "owner": 1,
+          "active": true,
+          "form": 0,
+          "position": [
+            0,
+            0
+          ],
+          "health": 100,
+          "level": 0,
+          "spent": 0,
+          "acted": 0,
+          "transformed": 0
+        }
+      ],
+      "sites": [
+        {
+          "owner": 1,
+          "items": []
+        },
+        {
+          "owner": 1,
+          "items": []
+        }
+      ]
+    },
+    "persisted_profile": {
+      "completed": [
+        false,
+        false
+      ],
+      "highest_unlocked": [
+        7,
+        0
+      ]
+    }
+  }
+}

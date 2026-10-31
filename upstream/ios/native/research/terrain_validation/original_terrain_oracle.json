@@ -1,0 +1,2411 @@
+{
+  "scope": "Original terrain face builder and512x256 atlas setup on synthetic inputs",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "unicorn_version": "2.1.4",
+  "oracle_source_sha256": "b6dee3a66421bd251cf9841c97129c10854e772a88bb09d6a609fe2d0a28d68d",
+  "shared_oracle_sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c",
+  "fixture_sha256": "5791215629f391e3400075ce012a4168a65931ea50fc8581f4c30e8d11c64345",
+  "case_count": 128,
+  "quad_count": 256,
+  "atlas_cells_covered": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "original_uv_table_sha256": "c61b419f092fde4ea9173fdb9305780a64e6b65992f6eedce7194e70afa206b2",
+  "original_transform": {
+    "position_scale_bits": 1008981770,
+    "position_bias_bits": [
+      0,
+      0,
+      0
+    ],
+    "uv_scale_bits": 931135616,
+    "uv_bias_bits": [
+      1056964736,
+      1056964736
+    ],
+    "strips": {
+      "start_index": 0,
+      "lengths": [
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  },
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "math_helpers": "unchanged original ARMv6 libgcc, redirected import destinations",
+  "substitutions": [
+    "bounded allocation/free",
+    "M3G API recording and ownership",
+    "engine singleton",
+    "unwind registration",
+    "triangle-strip factory"
+  ],
+  "original_call_counts": {
+    "___divsi3": 69,
+    "allocate": 2,
+    "___modsi3": 32,
+    "___gtsf2vfp": 256,
+    "___nesf2vfp": 256,
+    "unwind_register": 2,
+    "retain": 2,
+    "array_set": 2,
+    "___divsf3vfp": 2,
+    "set_positions": 1,
+    "set_uv": 1,
+    "release": 4,
+    "free": 3,
+    "unwind_unregister": 2,
+    "engine_singleton": 1,
+    "create_triangle_strips": 1
+  },
+  "cases": [
+    {
+      "name": "cell_000",
+      "input": [
+        -32,
+        0,
+        0,
+        -96,
+        0,
+        16,
+        0,
+        0,
+        3,
+        11,
+        23
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_001",
+      "input": [
+        0,
+        32,
+        -32,
+        -96,
+        0,
+        16,
+        0,
+        17,
+        20,
+        28,
+        8
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_002",
+      "input": [
+        32,
+        64,
+        -64,
+        -96,
+        1,
+        16,
+        0,
+        2,
+        5,
+        13,
+        25
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "5e394b34ce8c9af0f184a2719405259bd36db39d2bae96f9b87e990b0e6d65f8"
+    },
+    {
+      "name": "cell_003",
+      "input": [
+        64,
+        96,
+        0,
+        -96,
+        1,
+        16,
+        0,
+        19,
+        22,
+        30,
+        10
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "3cefa477317344617316f3976d83dac9a2cef7ef63968305e4c02c0440c3db5d"
+    },
+    {
+      "name": "cell_004",
+      "input": [
+        96,
+        128,
+        -32,
+        -96,
+        2,
+        16,
+        0,
+        4,
+        7,
+        15,
+        27
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "7e9d33c14bfef143129e26c2b6c329d3e2d5da582a3573cffb6cc508ff625438"
+    },
+    {
+      "name": "cell_005",
+      "input": [
+        -32,
+        160,
+        -64,
+        -96,
+        2,
+        16,
+        0,
+        21,
+        24,
+        0,
+        12
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "ae5a54f64242680d43a12eb9100a8aaf136deeb5cda4bbcbdc5d0e8c982e8af3"
+    },
+    {
+      "name": "cell_006",
+      "input": [
+        0,
+        192,
+        0,
+        -96,
+        3,
+        16,
+        0,
+        6,
+        9,
+        17,
+        29
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "9e722cbf1d365a07821734b2b6c43772771668698c319865d7056c645cb25fdb"
+    },
+    {
+      "name": "cell_007",
+      "input": [
+        32,
+        0,
+        -32,
+        -96,
+        3,
+        16,
+        0,
+        23,
+        26,
+        2,
+        14
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "eaa1e936f6fdda15cb6c0656e822a16dddcd18d829ff1778c5051e189b4d3c28"
+    },
+    {
+      "name": "cell_008",
+      "input": [
+        64,
+        32,
+        -64,
+        -96,
+        8,
+        16,
+        0,
+        8,
+        11,
+        19,
+        31
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "458680f0f403f5f520c25d97a7b4a32ec48c1b9f52f23077fd972b63010a93bb"
+    },
+    {
+      "name": "cell_009",
+      "input": [
+        96,
+        64,
+        0,
+        -96,
+        8,
+        16,
+        0,
+        25,
+        28,
+        4,
+        16
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "651f8ba4b911c8640ca20128aaa8fe2887487b085c7a8cbc0cda19b2a10ae659"
+    },
+    {
+      "name": "cell_010",
+      "input": [
+        -32,
+        96,
+        -32,
+        -96,
+        9,
+        16,
+        0,
+        10,
+        13,
+        21,
+        1
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "4eeb50a5e53c08b875a0ebf37708e0c73406869cd1f8d9eaf12d243bb65f0c83"
+    },
+    {
+      "name": "cell_011",
+      "input": [
+        0,
+        128,
+        -64,
+        -96,
+        9,
+        16,
+        0,
+        27,
+        30,
+        6,
+        18
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "94c9f82ac165e5403140995e3088d68babe7e605f971ce4eb714f0f1ac6a3a63"
+    },
+    {
+      "name": "cell_012",
+      "input": [
+        32,
+        160,
+        0,
+        -96,
+        10,
+        16,
+        0,
+        12,
+        15,
+        23,
+        3
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "7b67130fd1991ee6feb2e3aec960aa70c1e1d1466ce1d1f3a07e1bc9a9c00bfb"
+    },
+    {
+      "name": "cell_013",
+      "input": [
+        64,
+        192,
+        -32,
+        -96,
+        10,
+        16,
+        0,
+        29,
+        0,
+        8,
+        20
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "04dd5d5560b9df73f8988d000f1e6d120f99ab7bc60dd066d2c914dd9dc29565"
+    },
+    {
+      "name": "cell_014",
+      "input": [
+        96,
+        0,
+        -64,
+        -96,
+        11,
+        16,
+        0,
+        14,
+        17,
+        25,
+        5
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "9557d0b3dc458bee4a835423cb8af0ed6452692227fbdf753137b89448e889b5"
+    },
+    {
+      "name": "cell_015",
+      "input": [
+        -32,
+        32,
+        0,
+        -96,
+        11,
+        16,
+        0,
+        31,
+        2,
+        10,
+        22
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "f56af399eb00f4e2196f7ffadb66b82192c4e0414d54a0dc8a9233675161f22e"
+    },
+    {
+      "name": "cell_016",
+      "input": [
+        0,
+        64,
+        -32,
+        -96,
+        16,
+        16,
+        0,
+        16,
+        19,
+        27,
+        7
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "369a4ebc282f64370b3952136892ae56a93847185f3195a8cd1d8515efb9bf86"
+    },
+    {
+      "name": "cell_017",
+      "input": [
+        32,
+        96,
+        -64,
+        -96,
+        16,
+        16,
+        0,
+        1,
+        4,
+        12,
+        24
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "103f84bc8b826a25cafa556a972fc55352a7f2545adc1c097547db2106fb94ac"
+    },
+    {
+      "name": "cell_018",
+      "input": [
+        64,
+        128,
+        0,
+        -96,
+        17,
+        16,
+        0,
+        18,
+        21,
+        29,
+        9
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "330c3823cb7895e81db5a8a1bda73177dd8415575baf16e81558e9535999b373"
+    },
+    {
+      "name": "cell_019",
+      "input": [
+        96,
+        160,
+        -32,
+        -96,
+        17,
+        16,
+        0,
+        3,
+        6,
+        14,
+        26
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "ef2b5dce502827faf3e2c9edb618ec9f9f06f1e1ebadc74bb36688609fe64860"
+    },
+    {
+      "name": "cell_020",
+      "input": [
+        -32,
+        192,
+        -64,
+        -96,
+        18,
+        16,
+        0,
+        20,
+        23,
+        31,
+        11
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "a99002b5cec7aa80580986118c547efc2c2773b157668b9ab252ba697306b9f5"
+    },
+    {
+      "name": "cell_021",
+      "input": [
+        0,
+        0,
+        0,
+        -96,
+        18,
+        16,
+        0,
+        5,
+        8,
+        16,
+        28
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "88de0f5fd3efc42505b591d73978580b485dd37f4c401565bb56f88b2cbe40e2"
+    },
+    {
+      "name": "cell_022",
+      "input": [
+        32,
+        32,
+        -32,
+        -96,
+        19,
+        16,
+        0,
+        22,
+        25,
+        1,
+        13
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "cac9514b57a6d91b129ae9afd69730d9c031bcfcdf80c3bbc6b644d43c1a6cea"
+    },
+    {
+      "name": "cell_023",
+      "input": [
+        64,
+        64,
+        -64,
+        -96,
+        19,
+        16,
+        0,
+        7,
+        10,
+        18,
+        30
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "9fe703a5122ca3d45144a8966cbcd9b0e2e2b06a362e44e4cb63675d5132f712"
+    },
+    {
+      "name": "cell_024",
+      "input": [
+        96,
+        96,
+        0,
+        -96,
+        24,
+        16,
+        0,
+        24,
+        27,
+        3,
+        15
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "6d3d387b02ab2e5b455a9553e7dea87344335436d75ee93ff6cb2b3f5cf7dac4"
+    },
+    {
+      "name": "cell_025",
+      "input": [
+        -32,
+        128,
+        -32,
+        -96,
+        24,
+        16,
+        0,
+        9,
+        12,
+        20,
+        0
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "8bc7313aa10129fbad9f352df6dc1b95c367b92a441f75ff9c4a7278dc70108d"
+    },
+    {
+      "name": "cell_026",
+      "input": [
+        0,
+        160,
+        -64,
+        -96,
+        25,
+        16,
+        0,
+        26,
+        29,
+        5,
+        17
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "952fb0ca1a01e8595e84ddcc2f0b2a7dac45958d67d2803fea9f411eebb6bdfe"
+    },
+    {
+      "name": "cell_027",
+      "input": [
+        32,
+        192,
+        0,
+        -96,
+        25,
+        16,
+        0,
+        11,
+        14,
+        22,
+        2
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "77b1052ad692d1c8afa2983610cbbb4d404e0d3875a720d9b9866cca447ca494"
+    },
+    {
+      "name": "cell_028",
+      "input": [
+        64,
+        0,
+        -32,
+        -96,
+        26,
+        16,
+        0,
+        28,
+        31,
+        7,
+        19
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "2e85c475a308f8dadec11c6409572d3757572f3a707fe29fb51b5e8369766d7f"
+    },
+    {
+      "name": "cell_029",
+      "input": [
+        96,
+        32,
+        -64,
+        -96,
+        26,
+        16,
+        0,
+        13,
+        16,
+        24,
+        4
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "a7ba2adff01393b1c177875d6fa5373d053ee625b17c7fa3071d67f9d4a1b4ce"
+    },
+    {
+      "name": "cell_030",
+      "input": [
+        -32,
+        64,
+        0,
+        -96,
+        27,
+        16,
+        0,
+        30,
+        1,
+        9,
+        21
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "3af1a6f00590ce39c0f87df8217ea167a2fc868bb8caadf23b94965d72162914"
+    },
+    {
+      "name": "cell_031",
+      "input": [
+        0,
+        96,
+        -32,
+        -96,
+        27,
+        16,
+        0,
+        15,
+        18,
+        26,
+        6
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "4e50d7ffc7cea8f1977bfbd35576bece3ab7c75ceeab3aad8861a5ad48960003"
+    },
+    {
+      "name": "cell_032",
+      "input": [
+        32,
+        128,
+        -64,
+        -96,
+        0,
+        18,
+        0,
+        0,
+        3,
+        11,
+        23
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_033",
+      "input": [
+        64,
+        160,
+        0,
+        -96,
+        0,
+        18,
+        0,
+        17,
+        20,
+        28,
+        8
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_034",
+      "input": [
+        96,
+        192,
+        -32,
+        -96,
+        1,
+        18,
+        0,
+        2,
+        5,
+        13,
+        25
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "1308ff9d40106ddd4bb77415d70b5c76b22561db7656cd70ce8ea55afd017ed6"
+    },
+    {
+      "name": "cell_035",
+      "input": [
+        -32,
+        0,
+        -64,
+        -96,
+        1,
+        18,
+        0,
+        19,
+        22,
+        30,
+        10
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "075cec20e0d249b66d9ce7217ef3b2098846bfb398a6efee45b0e170b5e24e30"
+    },
+    {
+      "name": "cell_036",
+      "input": [
+        0,
+        32,
+        0,
+        -96,
+        2,
+        18,
+        0,
+        4,
+        7,
+        15,
+        27
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "c4515dfdea9fb8d83e03faf3b698be825de85b4a6bde751c61f87d98d06e7cb6"
+    },
+    {
+      "name": "cell_037",
+      "input": [
+        32,
+        64,
+        -32,
+        -96,
+        2,
+        18,
+        0,
+        21,
+        24,
+        0,
+        12
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "e44d900c3991f20e9724cd7bada70a42cb08cab504cf45fccbbcb2d5a9b133fe"
+    },
+    {
+      "name": "cell_038",
+      "input": [
+        64,
+        96,
+        -64,
+        -96,
+        3,
+        18,
+        0,
+        6,
+        9,
+        17,
+        29
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "32ad12051ae22c956c4fadf00242061c1c6d317dc0b7256531f194f8d967f7b2"
+    },
+    {
+      "name": "cell_039",
+      "input": [
+        96,
+        128,
+        0,
+        -96,
+        3,
+        18,
+        0,
+        23,
+        26,
+        2,
+        14
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "1effc9dc99ac90adc24417206828b4547f01a07e8df92bf3d959e88ed3262daf"
+    },
+    {
+      "name": "cell_040",
+      "input": [
+        -32,
+        160,
+        -32,
+        -96,
+        8,
+        18,
+        0,
+        8,
+        11,
+        19,
+        31
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "230bd9a0f2c780c72b03e0974e4457550785c7b04fb7672fc696407bf6c7bfe1"
+    },
+    {
+      "name": "cell_041",
+      "input": [
+        0,
+        192,
+        -64,
+        -96,
+        8,
+        18,
+        0,
+        25,
+        28,
+        4,
+        16
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "c332e0c2a7e881b9837f52909fc9f5a577f1bcacf3078f49bea690322298ae5f"
+    },
+    {
+      "name": "cell_042",
+      "input": [
+        32,
+        0,
+        0,
+        -96,
+        9,
+        18,
+        0,
+        10,
+        13,
+        21,
+        1
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "ec62f180cd4cabe28b61e8f8f34f888c8f313c75b698fe4a14c768bd8fc3b7f4"
+    },
+    {
+      "name": "cell_043",
+      "input": [
+        64,
+        32,
+        -32,
+        -96,
+        9,
+        18,
+        0,
+        27,
+        30,
+        6,
+        18
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "50cf58717657d1476902438cfcacd3490a16e02247784a360b8504b6eb227629"
+    },
+    {
+      "name": "cell_044",
+      "input": [
+        96,
+        64,
+        -64,
+        -96,
+        10,
+        18,
+        0,
+        12,
+        15,
+        23,
+        3
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "1410c7dde8b1eae5634d0e86290756692fcee21903292800e7b7db052b787749"
+    },
+    {
+      "name": "cell_045",
+      "input": [
+        -32,
+        96,
+        0,
+        -96,
+        10,
+        18,
+        0,
+        29,
+        0,
+        8,
+        20
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "5fa469916d3b6597efe1b4d01c2af4e1eab3bd4ece0bf985e6f31c7df909fc20"
+    },
+    {
+      "name": "cell_046",
+      "input": [
+        0,
+        128,
+        -32,
+        -96,
+        11,
+        18,
+        0,
+        14,
+        17,
+        25,
+        5
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "fbb01b0b5a2026d0d90150d50046eb942f6d41fd844247d23fadcb46258014c0"
+    },
+    {
+      "name": "cell_047",
+      "input": [
+        32,
+        160,
+        -64,
+        -96,
+        11,
+        18,
+        0,
+        31,
+        2,
+        10,
+        22
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "b874c6dc2ae6ddf3918a85a29a886c17637f4f71ea1504a55a644626f59dc652"
+    },
+    {
+      "name": "cell_048",
+      "input": [
+        64,
+        192,
+        0,
+        -96,
+        16,
+        18,
+        0,
+        16,
+        19,
+        27,
+        7
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "6d56b9431363eaeb1eef59ceadc9fc6ee6f0e81488fdc1512f40aed4431c00f0"
+    },
+    {
+      "name": "cell_049",
+      "input": [
+        96,
+        0,
+        -32,
+        -96,
+        16,
+        18,
+        0,
+        1,
+        4,
+        12,
+        24
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "27c562463d32fce5b53c0fa860e5b6adaef6663ef87c0d35e48f65cb92013ff9"
+    },
+    {
+      "name": "cell_050",
+      "input": [
+        -32,
+        32,
+        -64,
+        -96,
+        17,
+        18,
+        0,
+        18,
+        21,
+        29,
+        9
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "5a6547130f0a2757b99a8b7d0e5fae7c2cb05c16668f62eb018958ba851543be"
+    },
+    {
+      "name": "cell_051",
+      "input": [
+        0,
+        64,
+        0,
+        -96,
+        17,
+        18,
+        0,
+        3,
+        6,
+        14,
+        26
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "a97e20513e3ab3bb65aa6efd0ee60ea5cd905031151dd906f7a9cf11bbfb741d"
+    },
+    {
+      "name": "cell_052",
+      "input": [
+        32,
+        96,
+        -32,
+        -96,
+        18,
+        18,
+        0,
+        20,
+        23,
+        31,
+        11
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "740eb893bc68afd4442cb528172878e2983e6aa8cb43892447339d3fc063c4f7"
+    },
+    {
+      "name": "cell_053",
+      "input": [
+        64,
+        128,
+        -64,
+        -96,
+        18,
+        18,
+        0,
+        5,
+        8,
+        16,
+        28
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "3a2a7326605196d355dc16fa284ac1779c29ac15cc7c8fca4a7d91387c0203ce"
+    },
+    {
+      "name": "cell_054",
+      "input": [
+        96,
+        160,
+        0,
+        -96,
+        19,
+        18,
+        0,
+        22,
+        25,
+        1,
+        13
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "b60a64391c877b0039f113069c253404ab22193dee5d784aa378181d17511b73"
+    },
+    {
+      "name": "cell_055",
+      "input": [
+        -32,
+        192,
+        -32,
+        -96,
+        19,
+        18,
+        0,
+        7,
+        10,
+        18,
+        30
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "12fc6fb331d06bd478ea96fae28db0c9de03e3b81dbae20728a0d510b0f36f5c"
+    },
+    {
+      "name": "cell_056",
+      "input": [
+        0,
+        0,
+        -64,
+        -96,
+        24,
+        18,
+        0,
+        24,
+        27,
+        3,
+        15
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "723163d8e0b35795bf01daf4345754ab6d93e10c2566b2da2b36486f8b6db1db"
+    },
+    {
+      "name": "cell_057",
+      "input": [
+        32,
+        32,
+        0,
+        -96,
+        24,
+        18,
+        0,
+        9,
+        12,
+        20,
+        0
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "e80944b3208126df659b452bfdc16d769bdff2023352d076f1892bb16da3cc51"
+    },
+    {
+      "name": "cell_058",
+      "input": [
+        64,
+        64,
+        -32,
+        -96,
+        25,
+        18,
+        0,
+        26,
+        29,
+        5,
+        17
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "50d31d641a8f6b858350e5e80c937921b3166e9c446dcf7cd315556e0ff1968e"
+    },
+    {
+      "name": "cell_059",
+      "input": [
+        96,
+        96,
+        -64,
+        -96,
+        25,
+        18,
+        0,
+        11,
+        14,
+        22,
+        2
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "0c8bbe884bfafc66889440347a12a58c6dc2c28a03b872e54b897eca8014427c"
+    },
+    {
+      "name": "cell_060",
+      "input": [
+        -32,
+        128,
+        0,
+        -96,
+        26,
+        18,
+        0,
+        28,
+        31,
+        7,
+        19
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "09486b6890e7cd49c7f58e9d0f5de92706ca425371e8b1b36679d5d02b14b2ba"
+    },
+    {
+      "name": "cell_061",
+      "input": [
+        0,
+        160,
+        -32,
+        -96,
+        26,
+        18,
+        0,
+        13,
+        16,
+        24,
+        4
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "fb01a69907e3c73b1bcd84371735a43596d0e5c4823713cd9a943a848b87df15"
+    },
+    {
+      "name": "cell_062",
+      "input": [
+        32,
+        192,
+        -64,
+        -96,
+        27,
+        18,
+        0,
+        30,
+        1,
+        9,
+        21
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "a8a23245097b0225f416ddc8ef7a8daccc348090e2aac4e7ea4f1ce62f181b0e"
+    },
+    {
+      "name": "cell_063",
+      "input": [
+        64,
+        0,
+        0,
+        -96,
+        27,
+        18,
+        0,
+        15,
+        18,
+        26,
+        6
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "28913ff4e9ba382db94c1eb2b9204f2b3d3d748998fb35af7340bd4a38e8e88f"
+    },
+    {
+      "name": "cell_064",
+      "input": [
+        96,
+        32,
+        -32,
+        -96,
+        0,
+        16,
+        1,
+        2,
+        5,
+        13,
+        25
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_065",
+      "input": [
+        -32,
+        64,
+        -64,
+        -96,
+        0,
+        16,
+        1,
+        19,
+        22,
+        30,
+        10
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_066",
+      "input": [
+        0,
+        96,
+        0,
+        -96,
+        1,
+        16,
+        1,
+        4,
+        7,
+        15,
+        27
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "a0c706dc6ddd895bab26ebd3838b1eeab5763acbc0e88122fb2b863f6d8f620f"
+    },
+    {
+      "name": "cell_067",
+      "input": [
+        32,
+        128,
+        -32,
+        -96,
+        1,
+        16,
+        1,
+        21,
+        24,
+        0,
+        12
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "84e4259f8f5d5200bc5a679b2f199c94ee31d8cb223e7e26b80650fea8fdb140"
+    },
+    {
+      "name": "cell_068",
+      "input": [
+        64,
+        160,
+        -64,
+        -96,
+        2,
+        16,
+        1,
+        6,
+        9,
+        17,
+        29
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "b8a870f65af88dd7a62e1856a00f0c2519be2406cdb6d1eb67680c0200cf467b"
+    },
+    {
+      "name": "cell_069",
+      "input": [
+        96,
+        192,
+        0,
+        -96,
+        2,
+        16,
+        1,
+        23,
+        26,
+        2,
+        14
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "3f56a72b05ad01838f13420378c99d4a376c7c62c71c41cd16dd50248fcf9f65"
+    },
+    {
+      "name": "cell_070",
+      "input": [
+        -32,
+        0,
+        -32,
+        -96,
+        3,
+        16,
+        1,
+        8,
+        11,
+        19,
+        31
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "be6c659d2e574b71b22db086474cb74f60b221c9d81a4f849e0d5e9a7aadcba9"
+    },
+    {
+      "name": "cell_071",
+      "input": [
+        0,
+        32,
+        -64,
+        -96,
+        3,
+        16,
+        1,
+        25,
+        28,
+        4,
+        16
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "e90b1f4782ee3fdd0973cc5146e0b36db15532eba592ffefb27e62025adcfbcb"
+    },
+    {
+      "name": "cell_072",
+      "input": [
+        32,
+        64,
+        0,
+        -96,
+        8,
+        16,
+        1,
+        10,
+        13,
+        21,
+        1
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "2533b5ac7adb3f1d9304e382100d1ed7d47f4e088928e7dde696edaa72ceaaf1"
+    },
+    {
+      "name": "cell_073",
+      "input": [
+        64,
+        96,
+        -32,
+        -96,
+        8,
+        16,
+        1,
+        27,
+        30,
+        6,
+        18
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "27b670e6dc2ec3590f48a09d38c5fe66191c396c4c857cba5a10ed3fe13838d4"
+    },
+    {
+      "name": "cell_074",
+      "input": [
+        96,
+        128,
+        -64,
+        -96,
+        9,
+        16,
+        1,
+        12,
+        15,
+        23,
+        3
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "c332daea608bacc6ac1ad5f93f69d6b00eafe1be8c0b258be821074491e98f58"
+    },
+    {
+      "name": "cell_075",
+      "input": [
+        -32,
+        160,
+        0,
+        -96,
+        9,
+        16,
+        1,
+        29,
+        0,
+        8,
+        20
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "4014384d5826d61157c93bac4227694c2fca687e040beecb6b6ba5f599bd2943"
+    },
+    {
+      "name": "cell_076",
+      "input": [
+        0,
+        192,
+        -32,
+        -96,
+        10,
+        16,
+        1,
+        14,
+        17,
+        25,
+        5
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "40d6267a0cd7bb254c43f7697af4f69be015c65e9e9ae5344294e1eeaf758ed9"
+    },
+    {
+      "name": "cell_077",
+      "input": [
+        32,
+        0,
+        -64,
+        -96,
+        10,
+        16,
+        1,
+        31,
+        2,
+        10,
+        22
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "9b7dcf22843e7471bcdfa80b5aa117198882181c8081b547a73b747638964f48"
+    },
+    {
+      "name": "cell_078",
+      "input": [
+        64,
+        32,
+        0,
+        -96,
+        11,
+        16,
+        1,
+        16,
+        19,
+        27,
+        7
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "0258edb32c28a6208103347a5ab7566a4a8a7af49529d66f445913db55cac79a"
+    },
+    {
+      "name": "cell_079",
+      "input": [
+        96,
+        64,
+        -32,
+        -96,
+        11,
+        16,
+        1,
+        1,
+        4,
+        12,
+        24
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "fa9cf5e3a9e3401c8c9b17e73c31e173a6c33f57d86b45b0fc89db32f933f99c"
+    },
+    {
+      "name": "cell_080",
+      "input": [
+        -32,
+        96,
+        -64,
+        -96,
+        16,
+        16,
+        1,
+        18,
+        21,
+        29,
+        9
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "e92b3b1a3e2d75b885de1c6b680e74c5b17f5f1ff8614f8e5fd97bc034356347"
+    },
+    {
+      "name": "cell_081",
+      "input": [
+        0,
+        128,
+        0,
+        -96,
+        16,
+        16,
+        1,
+        3,
+        6,
+        14,
+        26
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "08bb3c7ca1027f84d88f6a5c20f1939a13c45299b42a2d34fd81fda7e19457be"
+    },
+    {
+      "name": "cell_082",
+      "input": [
+        32,
+        160,
+        -32,
+        -96,
+        17,
+        16,
+        1,
+        20,
+        23,
+        31,
+        11
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "bf282dd7ec92d75c487153556754da64561d82f8d570d85add37a20056d159b6"
+    },
+    {
+      "name": "cell_083",
+      "input": [
+        64,
+        192,
+        -64,
+        -96,
+        17,
+        16,
+        1,
+        5,
+        8,
+        16,
+        28
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "69d202cfce87949fef7f43e1eeb1da9378a218241353e2c75eac9314a2aa348d"
+    },
+    {
+      "name": "cell_084",
+      "input": [
+        96,
+        0,
+        0,
+        -96,
+        18,
+        16,
+        1,
+        22,
+        25,
+        1,
+        13
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "781e675381cb66f67411fc387aa2871e5e4cee473c7e130d5e27b6ce30b7dd08"
+    },
+    {
+      "name": "cell_085",
+      "input": [
+        -32,
+        32,
+        -32,
+        -96,
+        18,
+        16,
+        1,
+        7,
+        10,
+        18,
+        30
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "b1bc70c7e7b531586a42a4c84e69fa3576495d41acf2f1ad367084e3ce5ac425"
+    },
+    {
+      "name": "cell_086",
+      "input": [
+        0,
+        64,
+        -64,
+        -96,
+        19,
+        16,
+        1,
+        24,
+        27,
+        3,
+        15
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "c6f2094f93c25ffb7796ed226f575681d8da3b3f1df661c34cb88d3061f4dec9"
+    },
+    {
+      "name": "cell_087",
+      "input": [
+        32,
+        96,
+        0,
+        -96,
+        19,
+        16,
+        1,
+        9,
+        12,
+        20,
+        0
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "1b7e256576b33822165df30ed393b07cd3caba6e6db38c608d40666256ccb001"
+    },
+    {
+      "name": "cell_088",
+      "input": [
+        64,
+        128,
+        -32,
+        -96,
+        24,
+        16,
+        1,
+        26,
+        29,
+        5,
+        17
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "f514cfc38dc13adb17becedef1f6ae24199b90ba148cb3eccf81c86cf711132a"
+    },
+    {
+      "name": "cell_089",
+      "input": [
+        96,
+        160,
+        -64,
+        -96,
+        24,
+        16,
+        1,
+        11,
+        14,
+        22,
+        2
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "d34e01ddbdcff8b8356abf531260180bb0371250c342a2d4e0bc07e90bdc04b6"
+    },
+    {
+      "name": "cell_090",
+      "input": [
+        -32,
+        192,
+        0,
+        -96,
+        25,
+        16,
+        1,
+        28,
+        31,
+        7,
+        19
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "e1a317f379c51d9cec31bb8c1abb1f5213adbc9438bd53b03234197721a2d313"
+    },
+    {
+      "name": "cell_091",
+      "input": [
+        0,
+        0,
+        -32,
+        -96,
+        25,
+        16,
+        1,
+        13,
+        16,
+        24,
+        4
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "c2200583f5d746b4ce1254fdea4d6fe66e13286e3a27f9a769eca3111a36ee8f"
+    },
+    {
+      "name": "cell_092",
+      "input": [
+        32,
+        32,
+        -64,
+        -96,
+        26,
+        16,
+        1,
+        30,
+        1,
+        9,
+        21
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "c75f5bc6d451dc1337a8676b64f6acde9151e49bd4f7e4bf596f2438ee8fdea5"
+    },
+    {
+      "name": "cell_093",
+      "input": [
+        64,
+        64,
+        0,
+        -96,
+        26,
+        16,
+        1,
+        15,
+        18,
+        26,
+        6
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "430b010e017b66e37e5ca96c0a957e8ddf3b17fa913a7b1bfa3d383839ac608d"
+    },
+    {
+      "name": "cell_094",
+      "input": [
+        96,
+        96,
+        -32,
+        -96,
+        27,
+        16,
+        1,
+        0,
+        3,
+        11,
+        23
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "6d9e258a90d6adb7f385309eb3d681c4194f4c4383a7e722d0a87de5f361d480"
+    },
+    {
+      "name": "cell_095",
+      "input": [
+        -32,
+        128,
+        -64,
+        -96,
+        27,
+        16,
+        1,
+        17,
+        20,
+        28,
+        8
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "d5ae0dd6dedd25373d4b6a2b695bb08e7e02a13b060308356f85647710b1b3b6"
+    },
+    {
+      "name": "cell_096",
+      "input": [
+        0,
+        160,
+        0,
+        -96,
+        0,
+        18,
+        1,
+        2,
+        5,
+        13,
+        25
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_097",
+      "input": [
+        32,
+        192,
+        -32,
+        -96,
+        0,
+        18,
+        1,
+        19,
+        22,
+        30,
+        10
+      ],
+      "quad_count": 0,
+      "original_output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "cell_098",
+      "input": [
+        64,
+        0,
+        -64,
+        -96,
+        1,
+        18,
+        1,
+        4,
+        7,
+        15,
+        27
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "a4de94d9ff53d083741246bafe977077c278a44a02e10335f4672df26cc6c5a1"
+    },
+    {
+      "name": "cell_099",
+      "input": [
+        96,
+        32,
+        0,
+        -96,
+        1,
+        18,
+        1,
+        21,
+        24,
+        0,
+        12
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "545e292d265121fc1ddf6b06e6238655e23b0fc335271a0f6ef6590642ff1e7a"
+    },
+    {
+      "name": "cell_100",
+      "input": [
+        -32,
+        64,
+        -32,
+        -96,
+        2,
+        18,
+        1,
+        6,
+        9,
+        17,
+        29
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "a965bd6da8758c3a532f76470ee3ddad957a0e58a5c6d85567f81c81c704b5ff"
+    },
+    {
+      "name": "cell_101",
+      "input": [
+        0,
+        96,
+        -64,
+        -96,
+        2,
+        18,
+        1,
+        23,
+        26,
+        2,
+        14
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "f5359d54cbee2e41f572083e6e83ed9b906d784c59ba54b91ddf0639f94a0c82"
+    },
+    {
+      "name": "cell_102",
+      "input": [
+        32,
+        128,
+        0,
+        -96,
+        3,
+        18,
+        1,
+        8,
+        11,
+        19,
+        31
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "6d2680fc2a745d5dfe88904180221e3d58ce5807615eaa505f7cb6ccb99f682c"
+    },
+    {
+      "name": "cell_103",
+      "input": [
+        64,
+        160,
+        -32,
+        -96,
+        3,
+        18,
+        1,
+        25,
+        28,
+        4,
+        16
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "05c9cc0a8c7b315c26a942ffa01b8301fe8e2ef7aaa59803e303d83671fd6981"
+    },
+    {
+      "name": "cell_104",
+      "input": [
+        96,
+        192,
+        -64,
+        -96,
+        8,
+        18,
+        1,
+        10,
+        13,
+        21,
+        1
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "5e2246ba846887106320eef0e8b94b7cd497b6e85829301c52e95e0200772cc8"
+    },
+    {
+      "name": "cell_105",
+      "input": [
+        -32,
+        0,
+        0,
+        -96,
+        8,
+        18,
+        1,
+        27,
+        30,
+        6,
+        18
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "82a04386f8a7b4225fc631fc3137e74b9cf99ab70d6a50c69a92c82ccde95b05"
+    },
+    {
+      "name": "cell_106",
+      "input": [
+        0,
+        32,
+        -32,
+        -96,
+        9,
+        18,
+        1,
+        12,
+        15,
+        23,
+        3
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "3052f2c811b9501182a340011ed923c86ef84c822181d080bb36a5c16e7a5a4c"
+    },
+    {
+      "name": "cell_107",
+      "input": [
+        32,
+        64,
+        -64,
+        -96,
+        9,
+        18,
+        1,
+        29,
+        0,
+        8,
+        20
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "b9258ecd038562b13e79c248256861750e6a49dfbcc999922652257cc544a569"
+    },
+    {
+      "name": "cell_108",
+      "input": [
+        64,
+        96,
+        0,
+        -96,
+        10,
+        18,
+        1,
+        14,
+        17,
+        25,
+        5
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "2da26d896b211e0d7cbe3d998a52d2f1c11f3691325d1d4b67189241c1ee4b70"
+    },
+    {
+      "name": "cell_109",
+      "input": [
+        96,
+        128,
+        -32,
+        -96,
+        10,
+        18,
+        1,
+        31,
+        2,
+        10,
+        22
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "5746ac67ab9c7fd4ef141e6682958773651b942d2267e07115319569aa572652"
+    },
+    {
+      "name": "cell_110",
+      "input": [
+        -32,
+        160,
+        -64,
+        -96,
+        11,
+        18,
+        1,
+        16,
+        19,
+        27,
+        7
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "657a68ff6a488149914b0f8b57a77c09ef683fd29a996fb40f8348426c960e78"
+    },
+    {
+      "name": "cell_111",
+      "input": [
+        0,
+        192,
+        0,
+        -96,
+        11,
+        18,
+        1,
+        1,
+        4,
+        12,
+        24
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "8be5739997a2fbdbc8e2577eda3fc195a0eecba4dd0bb4f9423ceed9bfe74d38"
+    },
+    {
+      "name": "cell_112",
+      "input": [
+        32,
+        0,
+        -32,
+        -96,
+        16,
+        18,
+        1,
+        18,
+        21,
+        29,
+        9
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "b0e6f337a203ae5551988c8108d30fa749a18dfc4bdba1eef262f5e22b5febbd"
+    },
+    {
+      "name": "cell_113",
+      "input": [
+        64,
+        32,
+        -64,
+        -96,
+        16,
+        18,
+        1,
+        3,
+        6,
+        14,
+        26
+      ],
+      "quad_count": 1,
+      "original_output_sha256": "fdffda794fd28e1a04136f7f0bacfb82a6c2d8a56ccdfa5014c54ddcc2c723b6"
+    },
+    {
+      "name": "cell_114",
+      "input": [
+        96,
+        64,
+        0,
+        -96,
+        17,
+        18,
+        1,
+        20,
+        23,
+        31,
+        11
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "e01564d1a2853fd6e7604acad7320065b8797889d62698ffb601a0b34382e853"
+    },
+    {
+      "name": "cell_115",
+      "input": [
+        -32,
+        96,
+        -32,
+        -96,
+        17,
+        18,
+        1,
+        5,
+        8,
+        16,
+        28
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "7a0164863b665426af790ec90ae345230cba9a100206ac4c01b45e6e26b2e9f3"
+    },
+    {
+      "name": "cell_116",
+      "input": [
+        0,
+        128,
+        -64,
+        -96,
+        18,
+        18,
+        1,
+        22,
+        25,
+        1,
+        13
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "15c9458a5d337ff1996f420f39e4aca7637aa5e47b9f266ebbeaec68d2edc234"
+    },
+    {
+      "name": "cell_117",
+      "input": [
+        32,
+        160,
+        0,
+        -96,
+        18,
+        18,
+        1,
+        7,
+        10,
+        18,
+        30
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "8d5042a780bea9ef7fd301158b1eed31aa085c08f052d92a3203c1bad9692d44"
+    },
+    {
+      "name": "cell_118",
+      "input": [
+        64,
+        192,
+        -32,
+        -96,
+        19,
+        18,
+        1,
+        24,
+        27,
+        3,
+        15
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "78a936994748556c5d7bdd382525e4b60d48fe3609e77edd0e75caa730f9d664"
+    },
+    {
+      "name": "cell_119",
+      "input": [
+        96,
+        0,
+        -64,
+        -96,
+        19,
+        18,
+        1,
+        9,
+        12,
+        20,
+        0
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "c01698d5024c1b4b6d9a4069aa507309cb446b590601440ca7ed6c4774f0eab2"
+    },
+    {
+      "name": "cell_120",
+      "input": [
+        -32,
+        32,
+        0,
+        -96,
+        24,
+        18,
+        1,
+        26,
+        29,
+        5,
+        17
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "8f23b329d0507587ba9dbca1937944e89f5ed8eecb9f11acac9d5c18494e2656"
+    },
+    {
+      "name": "cell_121",
+      "input": [
+        0,
+        64,
+        -32,
+        -96,
+        24,
+        18,
+        1,
+        11,
+        14,
+        22,
+        2
+      ],
+      "quad_count": 2,
+      "original_output_sha256": "f0295dc09b74f41de074163fc8c3516a77a762ed4b53f8474ecccae2eb7cf7ac"
+    },
+    {
+      "name": "cell_122",
+      "input": [
+        32,
+        96,
+        -64,
+        -96,
+        25,
+        18,
+        1,
+        28,
+        31,
+        7,
+        19
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "8ac17c00a22155d3affa5cf8958431b77be3189c08fb839d7ec3a3a8aba88bf6"
+    },
+    {
+      "name": "cell_123",
+      "input": [
+        64,
+        128,
+        0,
+        -96,
+        25,
+        18,
+        1,
+        13,
+        16,
+        24,
+        4
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "aef53214ffa19907ee3c411cafa5fffff4457a4da5310b3d87f87926dd39315b"
+    },
+    {
+      "name": "cell_124",
+      "input": [
+        96,
+        160,
+        -32,
+        -96,
+        26,
+        18,
+        1,
+        30,
+        1,
+        9,
+        21
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "02f4f1d9d223b3aac673ca6cfb5ceb9d6385b183f8f8432c62c49a61d53e5a16"
+    },
+    {
+      "name": "cell_125",
+      "input": [
+        -32,
+        192,
+        -64,
+        -96,
+        26,
+        18,
+        1,
+        15,
+        18,
+        26,
+        6
+      ],
+      "quad_count": 3,
+      "original_output_sha256": "426d59a7a8f3bbe64b6d8056f7c441ab678423d58737b877ad893f8add1a3edd"
+    },
+    {
+      "name": "cell_126",
+      "input": [
+        0,
+        0,
+        0,
+        -96,
+        27,
+        18,
+        1,
+        0,
+        3,
+        11,
+        23
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "6a3b49f0e0d8feb9ac9fbf417b681f6066c31229845ae94c33124ae1a73a9e7b"
+    },
+    {
+      "name": "cell_127",
+      "input": [
+        32,
+        32,
+        -32,
+        -96,
+        27,
+        18,
+        1,
+        17,
+        20,
+        28,
+        8
+      ],
+      "quad_count": 4,
+      "original_output_sha256": "fa8dad6b3566cbeeb1fb8b7d09e454c70ff2790ecee63403b89b87abaeb02ced"
+    }
+  ],
+  "native_comparison_in_separate_test": true,
+  "gpu_rendered": false,
+  "device_tested": false,
+  "not_established": [
+    "full map-constructor execution",
+    "camera and outside padding",
+    "style1 animated terrain",
+    "native GPU pixel parity"
+  ]
+}

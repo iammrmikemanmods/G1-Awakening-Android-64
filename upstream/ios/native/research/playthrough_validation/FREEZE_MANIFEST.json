@@ -1,0 +1,76 @@
+{
+  "scope": "frozen source-native headless gameplay pilot; metadata and source only",
+  "files": [
+    {
+      "path": "native/tools/session_playthrough_probe.cpp",
+      "bytes": 65007,
+      "sha256": "099b0964bec4efd50b60136e16db1f08419a661dd835fd8a3b21d14fe797b1b6"
+    },
+    {
+      "path": "native/research/PLAYTHROUGH_PILOT.md",
+      "bytes": 9866,
+      "sha256": "ae94f111d25b16b54d74a3308516926143945d8c8e4abbfb1190ef71e9acd938"
+    },
+    {
+      "path": "native/research/PLAYTHROUGH_PILOT.json",
+      "bytes": 17259,
+      "sha256": "d316ea5a3167789bf7fe72566833231f0e68f944bcc115aee1bf77f88f835613"
+    },
+    {
+      "path": "native/research/playthrough_validation/BASELINE_PILOT01_PROVENANCE.json",
+      "bytes": 12271,
+      "sha256": "3ab7815196e27117ac84c9b149309945fd431ea4f601587a27bddeb9f49b7fb7"
+    },
+    {
+      "path": "native/research/playthrough_validation/BASELINE_PILOT01_RESULT.json",
+      "bytes": 2848,
+      "sha256": "b023b1a7feadd6d4564270979130484c1a092424598e2e39b2725b5fdad01895"
+    },
+    {
+      "path": "native/research/playthrough_validation/CORRECTED_HEAL_CASES.json",
+      "bytes": 28820,
+      "sha256": "35a99f0f1a826eedcfe72e530dbf4a3394c560876c9a9416c701319489b4eb52"
+    },
+    {
+      "path": "native/research/playthrough_validation/FINAL_BUILD.json",
+      "bytes": 2641,
+      "sha256": "e306b6be0338ad4323c991f34c56fdff82fb8c0db045ee55f606265667c1d305"
+    },
+    {
+      "path": "native/research/playthrough_validation/FINAL_CONTINUOUS.json",
+      "bytes": 10690,
+      "sha256": "6aab0e13c29c6faf63a82c468deb95246afd3be7020a1b628b2499ed8e265397"
+    },
+    {
+      "path": "native/research/playthrough_validation/FINAL_INDIVIDUAL.json",
+      "bytes": 248257,
+      "sha256": "186947341bc08beae7dc882c1d8c955796ac943cadbba45ec05b1ac5cbb87a49"
+    },
+    {
+      "path": "native/research/playthrough_validation/WRAPPER_SMOKE.json",
+      "bytes": 264,
+      "sha256": "297a529b7c1df599a0521073113c1601933735bdf838a32199c24d8ba0112b27"
+    },
+    {
+      "path": "native/research/playthrough_validation/continuous_events.jsonl",
+      "bytes": 190383,
+      "sha256": "78eb261102f59d489241fa08852e1ae4b7177d4708eb3be3b1b86604f14f7c03"
+    },
+    {
+      "path": "repository_native/analysis_tools/playthrough/README.md",
+      "bytes": 6007,
+      "sha256": "1b2a13d54cfb643d3e6681419b0d4cdc25dca2c0bc28f4a86673de78294bdc52"
+    },
+    {
+      "path": "repository_native/analysis_tools/playthrough/run_probe.py",
+      "bytes": 7136,
+      "sha256": "9311d8cf7d313397731a963b31a84e379ba089e2681148a70775540e066c6bb0"
+    }
+  ],
+  "excluded": [
+    "original resource payloads",
+    "native save binaries",
+    "compiled executable"
+  ],
+  "remote_actions": false
+}

@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+}
+
+def requestedAbis = providers.gradleProperty('g1Abis').orElse('arm64-v8a').get().split(',').toList()
+def debugAbis = providers.gradleProperty('g1DebugAbis').orElse(requestedAbis.join(',')).get().split(',').toList()
+if ([requestedAbis, debugAbis].any { abis -> abis.isEmpty() || abis.any { !['arm64-v8a', 'x86_64'].contains(it) } }) {
+    throw new GradleException('g1Abis and g1DebugAbis must contain arm64-v8a and/or x86_64, separated by a comma.')
+}
+
+android {
+    namespace 'com.iammrmikeman.g1awakening'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    ndkVersion '28.2.13676358'
+
+    defaultConfig {
+        applicationId 'com.iammrmikeman.g1awakening'
+        minSdk 36
+        targetSdk 36
+        versionCode 1
+        versionName '0.1.0-dev'
+        externalNativeBuild {
+            cmake {
+                targets 'g1awakening'
+                // Native code uses APIs available at 35; the APK installs only on API36+.
+                arguments '-DANDROID_STL=c++_static', '-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON',
+                        '-DANDROID_PLATFORM=android-35'
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true
+            ndk {
+                abiFilters.addAll(debugAbis)
+            }
+        }
+        release {
+            minifyEnabled false
+            ndk {
+                abiFilters.addAll(requestedAbis)
+            }
+            // Production signing must use the maintainer's private key outside this repository.
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    androidResources {
+        noCompress += ['big', 'bin', 'mp4', 'png', 'json']
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging false
+        }
+    }
+}

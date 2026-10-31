@@ -1,0 +1,104 @@
+{
+  "scope": "Native C++17 style0/2 terrain sprite construction, animation, reservation and draw bindings; bounded zero-padding single-batch profile; module validation, not integrated app/device certification",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "builds": [
+    {
+      "mode": "strict",
+      "compile_command": "g++ -std=c++17 -O2 -ffunction-sections -fdata-sections -Wall -Wextra -Werror -pedantic -I native/include native/src/TerrainSpriteDecorations.cpp native/src/SpriteAnimation.cpp native/src/SpriteGeometry.cpp native/src/Terrain.cpp native/src/Combat.cpp native/tests/terrain_sprite_decorations_test.cpp -Wl,--gc-sections -o research/native_terrain/terrain_sprite_decorations_test",
+      "compile_exit_code": 0,
+      "run_command": "research/native_terrain/terrain_sprite_decorations_test native/tests/terrain_sprite_decorations_cases.txt",
+      "run_exit_code": 0,
+      "binary_sha256": "74bd82452a8b0284400e91e1e3044bb91c790739777715f7bc89defc8cd941bd",
+      "original_synthetic_cases": 12,
+      "snapshots": 216,
+      "comparisons_and_contracts": 146028,
+      "passed": true
+    },
+    {
+      "mode": "undefined_behavior_sanitizer",
+      "compile_command": "g++ -std=c++17 -O1 -g0 -ffunction-sections -fdata-sections -fsanitize=undefined -fno-sanitize-recover=all -Wall -Wextra -Werror -pedantic -I native/include native/src/TerrainSpriteDecorations.cpp native/src/SpriteAnimation.cpp native/src/SpriteGeometry.cpp native/src/Terrain.cpp native/src/Combat.cpp native/tests/terrain_sprite_decorations_test.cpp -Wl,--gc-sections -o research/native_terrain/terrain_sprite_decorations_ubsan",
+      "compile_exit_code": 0,
+      "run_command": "research/native_terrain/terrain_sprite_decorations_ubsan native/tests/terrain_sprite_decorations_cases.txt",
+      "run_exit_code": 0,
+      "binary_sha256": "954db3fc457f58e481026de9509c0046731e5a223c022a09ef224e4b9aaf0526",
+      "original_synthetic_cases": 12,
+      "snapshots": 216,
+      "comparisons_and_contracts": 146028,
+      "passed": true
+    }
+  ],
+  "original_regeneration": {
+    "probe_compile_command": "g++ -std=c++17 -O2 -ffunction-sections -fdata-sections -Wall -Wextra -Werror -pedantic -I native/include native/src/TerrainSpriteDecorations.cpp native/src/SpriteAnimation.cpp native/src/SpriteGeometry.cpp native/src/Terrain.cpp native/src/Combat.cpp analysis_tools/terrain/sprite_decorations_probe.cpp -Wl,--gc-sections -o research/native_terrain/sprite_decorations_probe",
+    "command": "python3 analysis_tools/terrain/validate_sprite_decorations.py --binary research/binary/G1awakening.armv6 --libgcc ../.tools/g1_runtime/Applesauce/touchHLE_dylibs/libgcc_s.1.dylib --unicorn-dir /tmp/g1-movement-oracle-tools/python --manifest research/assets/results/asset_manifest.json --tables research/native_terrain/terrain_visual_tables.bin --native-probe research/native_terrain/sprite_decorations_probe --atlas-decoder native/tests/generate_atlas_reference.py --catalog native/research/scene_catalog_validation/validation.json --fixture native/tests/terrain_sprite_decorations_cases.txt --output native/research/terrain_validation/original_sprite_decorations.json",
+    "exit_code": 0,
+    "synthetic_cases": 12,
+    "actual_map_style_pairs": 10,
+    "snapshots": 396,
+    "scalar_comparisons": 944984,
+    "unique_original_matrix_core_executions": 645,
+    "all_passed": true
+  },
+  "checkpoint_checks": {
+    "copied_mid_run_state_and_rng_continuation": true,
+    "all_624_rng_words_compared": true,
+    "drawing_does_not_mutate_state": true,
+    "malformed_clock_candidates_slots_animations_attachment_and_positions_rejected": true,
+    "negative_original_remainder_rejected_without_partial_commit": true,
+    "valid_int_min_zero_remainder_retained": true
+  },
+  "input_hashes": {
+    "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+    "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+    "visual_tables_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+    "config_sha256": "1f3a38cb119bf213df68bc46951a903a9e0f70fa77bfcfe13d15f8248b3df8f6"
+  },
+  "source_sha256": {
+    "native/include/g1/TerrainSpriteDecorations.hpp": "5c691db68a5635cd5cf1ec17c9513c7166f91c786e6602e8b2c4e89bca5535ec",
+    "native/src/TerrainSpriteDecorations.cpp": "0dfe3ee44ad7fabdff0572e81c8e205406d3ec7230e9fab81ac3769e1e980922",
+    "native/tests/terrain_sprite_decorations_test.cpp": "e8ed3e37b69bf1be4bc408a0fe06d73150c9c7104b797f071c29eefb9e6e2822",
+    "native/tests/terrain_sprite_decorations_cases.txt": "d7139baa76747707dd3cee59712151af83ab7398b87ad3d9326baeb4e6de3a9d",
+    "analysis_tools/terrain/sprite_decorations_probe.cpp": "b264791eb4957429f907bd6fcce259d21a6789df188816963af2490aefacc6e0",
+    "analysis_tools/terrain/sprite_decorations_oracle.py": "4b7a5831b2ba4e2e08cc87911dd5632020626f63ed89ff81200b14f2d7b1000b",
+    "analysis_tools/terrain/validate_sprite_decorations.py": "31a5cea13f4b0842cf7cfe2ba9c91b4e0eb497ce0a415cbe3fd24b3748f7caf6",
+    "native/research/TERRAIN_SPRITE_DECORATIONS.md": "32f8836f64eaca3d74026541e52e074b59567918de4043cef9e95cf8d39a9d01",
+    "native/research/terrain_validation/original_sprite_decorations.json": "d913361ae9a1cbab23db1a316fbb58c9962868a882e299196df6a9c828818009"
+  },
+  "dependencies_sha256": {
+    "native/include/g1/Terrain.hpp": "9d7de469413078e68b20f7dabec29a051436217d0a54c7fcd5022b21ed25702a",
+    "native/src/Terrain.cpp": "406822ec9fc0c3fa05906e3e743e8cd781707a8a4406e0ea4b9ec905b25ef7d5",
+    "native/include/g1/SpriteAnimation.hpp": "a828515f61ce4540682ee85fc57a88588d78d717317a6f0dfbb08b3b2c6cb9a9",
+    "native/src/SpriteAnimation.cpp": "80159bac9e3e9e52178a54a3d53666326142bd7863e47721d75a24703882c07e",
+    "native/include/g1/SpriteGeometry.hpp": "1356de05761e44485e90300083fcd99eaaecf5055c777530cd9f5430511611ac",
+    "native/src/SpriteGeometry.cpp": "ad8bb1b6b324bcd39f1ce23b7e45cfa18d8d20b95a3a7afdf1da801a0d0c5f39",
+    "native/include/g1/Atlas.hpp": "7306580534598d1d1de640ae66e96dd05810fe1eef87d8a06b78864bd2f1381f",
+    "native/src/Atlas.cpp": "5224165172d03bd54c7d8033c1d2e6ee44ce7ca1fa03526d74b61d1b1e156749",
+    "native/include/g1/Combat.hpp": "2dab77f84a82ce5771ddc5aa5048ef8bcd294944dc5396ff91757e480bc02322",
+    "native/src/Combat.cpp": "a54dbc005997313f1347c1d7e61c745d909c5fa330722a61b6dcea9b4b81eb9e",
+    "analysis_tools/terrain/decorations_oracle.py": "69dccc2828a830863f361d56c8a5152eaacaa503e4023fcd99ed4ed61a09706d",
+    "analysis_tools/terrain/animated_oracle.py": "7cfd7925655b959e86f3e7d0fdfd3aa17509582f46fdfc03ac84320fe92a127a",
+    "analysis_tools/sprite/matrix_oracle.py": "678dd059c857de98c2a9aadcb0f7be3be65b273c6772893be0963ec1f5ef57d4",
+    "native/tests/generate_atlas_reference.py": "1cda792238f2967a973206af136283bb9568e9d7d6dff38ec2cecb8a10a44dbb"
+  },
+  "integration": {
+    "cmake_library_source": "src/TerrainSpriteDecorations.cpp",
+    "cmake_test_target": "g1_terrain_sprite_decorations_tests",
+    "cmake_test_source": "tests/terrain_sprite_decorations_test.cpp",
+    "cmake_test_name": "terrain_sprite_decorations_original_function_vectors",
+    "cmake_test_argument": "${CMAKE_CURRENT_SOURCE_DIR}/tests/terrain_sprite_decorations_cases.txt",
+    "link_library": "g1_resources",
+    "requires_additive_sprite_animation_restore": true,
+    "owner": "GameSession simulation and checkpoint codec; renderer reads immutable draw bindings",
+    "initialization": "After opcode9 map load and before following opcode6 spawns; preserve shared RNG draw order",
+    "restore": "Rebuild immutable layout and bank, restore saved state plus full shared RNG, validate; never call create on restore"
+  },
+  "original_payloads_in_fixture": false,
+  "guest_cpu_in_product": false,
+  "not_established": [
+    "camera-dependent outer padding and multiple terrain batches",
+    "complete original parent-group traversal relative to all other scene objects",
+    "complete live scheduler and all unrelated RNG consumers",
+    "historical wall-clock seed and historical iOS libm bit identity",
+    "native app/save codec integration at this module freeze",
+    "GPU/device/full campaign execution"
+  ]
+}

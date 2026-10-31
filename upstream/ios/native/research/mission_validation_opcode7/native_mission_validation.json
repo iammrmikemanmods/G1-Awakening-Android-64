@@ -1,0 +1,4768 @@
+{
+  "scope": "Native C++17 mission framing only; no guest CPU or compatibility runtime",
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+  "compact_reference_sha256": "76b465dadb42c4a55c7b3d0bb5082a88ee8590ab207989ad1a8a76276b7df9d7",
+  "reference_provenance": {
+    "input_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+    "archive_member": "Payload/G1awakening.app/iphone.big",
+    "archive_sha256": "663d2888982093ce66b7811ccb7a6ad3acd37fc02ffa85144775b88c39e83cb4",
+    "archive_size": 6994213,
+    "original_inventory_sha256": "860d473eb5d644fac3e6b1460c8cb0e813ac27e75b34dd1b62679c4ff4e1f9cf",
+    "original_manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+    "oracle_files_sha256": {
+      "inspect_assets.py": "8c2e133dfdb6c5cca2cf2d5331090f024d8d4d0724a7e9819f2a4a03e36c2d99",
+      "inspect_game_data.py": "e9a03e9a7bc7b851dea5c801e8a1b7748428d9f7bcf332b50baff96754ac9925"
+    },
+    "generator_sha256": "3022d02273db82675701a12a2050ad92dab123a92076d40de9ed35c01071ae14",
+    "expectations_derived_from_native_code": false
+  },
+  "source_files_sha256": {
+    "src/Archive.cpp": "a19a7576c9b9e793a5e2171d0096b7aba68e3951d28f4bb794494466905f8d87",
+    "src/Mission.cpp": "8cfd2d9a7faf9c8b3ad89816d6220eeae29119d754b0bf371543d9c6ca116cf2",
+    "tools/mission_probe.cpp": "689ff449ce11f633a7d66c7fb8237501780d127af02c05e891efe6eb90042e46",
+    "include/g1/Archive.hpp": "a53b2b30f456bad82d644996c92c5f3d630df1b6e8778b4be446765be41657f5",
+    "include/g1/Mission.hpp": "3580e5d74e2c2250302b996c13b92f61f592c7763fb4c233ac08c80d16b85efa",
+    "CMakeLists.txt": "2e5fb8fab3a784018938ad0c88e9db270265197e0ee20f3931b445162a81fd70",
+    "tests/verify_missions.py": "de8f32da9479ed2a70b2ee49d1529c6d1218e110404867e5f8d3bbe320c16469",
+    "tests/mission_reference.json": "76b465dadb42c4a55c7b3d0bb5082a88ee8590ab207989ad1a8a76276b7df9d7"
+  },
+  "host": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_target": "x86_64-linux-gnu",
+  "build_command": [
+    "/usr/bin/g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wconversion",
+    "-Werror",
+    "-I",
+    "/workspace/scratch/cba553aafa20/g1_port/native/include",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/src/Mission.cpp",
+    "/workspace/scratch/cba553aafa20/g1_port/native/tools/mission_probe.cpp",
+    "-lz",
+    "-o",
+    "/workspace/scratch/cba553aafa20/g1_port/native/research/mission_validation_opcode7/mission_probe"
+  ],
+  "build_stderr": "",
+  "executable_sha256": "7745e483e73ae407c8186117e78275dd805d83fe04fccfb098c51914fd1063f4",
+  "mission_streams_matched": 30,
+  "instructions_matched": 803,
+  "argument_words_matched": 2800,
+  "opcode_counts": {
+    "0": 35,
+    "1": 35,
+    "2": 35,
+    "3": 97,
+    "4": 90,
+    "5": 85,
+    "6": 207,
+    "7": 23,
+    "8": 30,
+    "9": 35,
+    "10": 30,
+    "12": 31,
+    "13": 1,
+    "14": 1,
+    "15": 30,
+    "16": 30,
+    "17": 1,
+    "18": 3,
+    "19": 1,
+    "20": 1,
+    "21": 2
+  },
+  "observed_layout_subtype_counts": {
+    "12": {
+      "0": 3,
+      "1": 1,
+      "2": 25,
+      "3": 2
+    }
+  },
+  "source_matches": [
+    {
+      "resource_id": 310,
+      "resource_key": "0xf4e02223",
+      "member_index": 55,
+      "size": 212,
+      "source_sha256": "d0ff76b77ff82dfd7baacc41fda785aa1f121d4116ad4f2317f47d11dd227b53",
+      "instruction_count": 21,
+      "argument_word_count": 84,
+      "decoded_json_sha256": "f041368a64fe209f74787270bf6662eeb70d71e2c787709255a061a314e9ef52",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 311,
+      "resource_key": "0xf4e02223",
+      "member_index": 56,
+      "size": 224,
+      "source_sha256": "9862ea507a1cbc6838f23bf62b6e4d7ed8ad9d3e3c0b50c46643ce4430c3604a",
+      "instruction_count": 21,
+      "argument_word_count": 90,
+      "decoded_json_sha256": "1ce2cd00d6366aece09eca740e11046a9fe2a052210ebcbdeaa42b23ae172458",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 312,
+      "resource_key": "0xf4e02223",
+      "member_index": 57,
+      "size": 248,
+      "source_sha256": "9c5bb5680534f9333215bec762e4d64f356aec7b63759455d778dd936fae7a9f",
+      "instruction_count": 21,
+      "argument_word_count": 102,
+      "decoded_json_sha256": "2b96205e93911a3d80d1539c0fb2902f7364b8168cdd3736e1b646317002eb4d",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 313,
+      "resource_key": "0xf4e02223",
+      "member_index": 58,
+      "size": 212,
+      "source_sha256": "edb6abc5f229ff04186708daf66fb0bf40405c0362db447ff3cbfa16f2b59dc1",
+      "instruction_count": 21,
+      "argument_word_count": 84,
+      "decoded_json_sha256": "350d36f5bf990935743fa1581a8b061dfdf09d6fec90383547c4c58db7556929",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 314,
+      "resource_key": "0xf4e02223",
+      "member_index": 59,
+      "size": 248,
+      "source_sha256": "ff15938ddee9f3a22c0ababac26c9b2bf7cac75006cb5f1df3c2324a65a76ec1",
+      "instruction_count": 21,
+      "argument_word_count": 102,
+      "decoded_json_sha256": "2a14826a10367f995a5329151af94c40fd1958abe330253eed7bac299d2b7f22",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 315,
+      "resource_key": "0xf4e02223",
+      "member_index": 60,
+      "size": 194,
+      "source_sha256": "7ecc54a292717325b9e6e2c44c3c166e44be296b2e408c42b76cc49b6d10346a",
+      "instruction_count": 29,
+      "argument_word_count": 67,
+      "decoded_json_sha256": "b94da6e974a182f337fe99badd6e65806d24f3822f51614799980374b2d9827d",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 316,
+      "resource_key": "0xf4e02223",
+      "member_index": 61,
+      "size": 340,
+      "source_sha256": "0f23f82fd009653ed2340872ab0df0304254a85248c178e7ce4abe77ea2f502d",
+      "instruction_count": 41,
+      "argument_word_count": 128,
+      "decoded_json_sha256": "6214d5adf532f1558f77dc2aee373423e4933d644cb419ab75f363eaad522529",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 317,
+      "resource_key": "0xf4e02223",
+      "member_index": 62,
+      "size": 182,
+      "source_sha256": "edd72a7eed22e3afd0f9d81b0d0bbb40bb912cce82e17049a6e8bee2fff1f4ff",
+      "instruction_count": 20,
+      "argument_word_count": 70,
+      "decoded_json_sha256": "c9eb73d745b727fd288ac067492480b0cdf7255c8e03670e8d24e4c5414d0a0d",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 318,
+      "resource_key": "0xf4e02223",
+      "member_index": 63,
+      "size": 390,
+      "source_sha256": "fdde9aa5ba6596c7dff751e5fcbd8e6421cc5690d83e479866614ae833702cc3",
+      "instruction_count": 47,
+      "argument_word_count": 147,
+      "decoded_json_sha256": "fa6ab966bbd4799c8ae038ee65b7ca5db5b62760a29ad69da11285b84ce2ea69",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 319,
+      "resource_key": "0xf4e02223",
+      "member_index": 64,
+      "size": 282,
+      "source_sha256": "c048b09fc1edaee9154816731b290c0db369097334db1a413a16309652af22c0",
+      "instruction_count": 29,
+      "argument_word_count": 111,
+      "decoded_json_sha256": "009a4ec86e03e5bd31bf9ccc13285a65b9797fb0e63ba48779140c99f7f89c99",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 320,
+      "resource_key": "0xf4e02223",
+      "member_index": 65,
+      "size": 270,
+      "source_sha256": "5f0f78657c555733df63c6d92562842d676d9ca01ffb08779e3573e353a112af",
+      "instruction_count": 29,
+      "argument_word_count": 105,
+      "decoded_json_sha256": "380f27d55c8dff7b3f89850346229c3cc1d204368941a3a175a1f649ba995215",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 321,
+      "resource_key": "0xf4e02223",
+      "member_index": 66,
+      "size": 312,
+      "source_sha256": "df27b773e4788c0b58bbec8a2df32c892afb017c9a40cac30883a2d84fbe221b",
+      "instruction_count": 36,
+      "argument_word_count": 119,
+      "decoded_json_sha256": "159a1de052518338c2cd5a807271e65d84bd063244c4ac03b4c49c4e0060fd05",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 322,
+      "resource_key": "0xf4e02223",
+      "member_index": 67,
+      "size": 270,
+      "source_sha256": "27fa93b5ca6e548f760fd5b4a46664d0766301587bf7ec080551c5ed4d9e087f",
+      "instruction_count": 30,
+      "argument_word_count": 104,
+      "decoded_json_sha256": "a3e7a91ef062a07748f280e40e495ebf76277167a45dfba9e426e420310416b6",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 323,
+      "resource_key": "0xf4e02223",
+      "member_index": 68,
+      "size": 400,
+      "source_sha256": "01008f1419e8565e63a72c65c43a22445c80cc0d579d371da19b9394207cca27",
+      "instruction_count": 54,
+      "argument_word_count": 145,
+      "decoded_json_sha256": "d0af01304182caaad9cebc5cfb772defea29fea07a52259a4236c45bf00106a7",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 324,
+      "resource_key": "0xf4e02223",
+      "member_index": 69,
+      "size": 152,
+      "source_sha256": "5df7bb2198cb9f2b6119401fccfdbab9bb97832a1d04b3a30e0349bd6665c605",
+      "instruction_count": 15,
+      "argument_word_count": 60,
+      "decoded_json_sha256": "e01ccf3c948db8a6e51d2d093bebc6cda8ba4a51a7d3c5223dd1a3e5d7c4e4f7",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 325,
+      "resource_key": "0xf4e02223",
+      "member_index": 70,
+      "size": 240,
+      "source_sha256": "e7f3c0704fa5f50ac406adc106b1275fa4ddfd819eb574d13df4ba9827cb8122",
+      "instruction_count": 20,
+      "argument_word_count": 99,
+      "decoded_json_sha256": "57629c064d1bb8bf42b9ab252142631a2e4737c96165b762261200de9aff5639",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 326,
+      "resource_key": "0xf4e02223",
+      "member_index": 71,
+      "size": 158,
+      "source_sha256": "ac7223bfe106f4e11a5c6b64751a8bfbef162316fcfb51938a00dc5b74c375cc",
+      "instruction_count": 22,
+      "argument_word_count": 56,
+      "decoded_json_sha256": "9aeee68313c6544b9f41027d5308e50d20b26c0d7394fec67da86edaf1eaeeb3",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 327,
+      "resource_key": "0xf4e02223",
+      "member_index": 72,
+      "size": 164,
+      "source_sha256": "de0a5956714d9d4e7177e9f9c436cc9c35deabe24deb5f9f4364c8cc63b0dd85",
+      "instruction_count": 16,
+      "argument_word_count": 65,
+      "decoded_json_sha256": "7a4a54312760cd7d4a8f04d949f4d5c54454a665545eb24acd36ef77d894ba9f",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 328,
+      "resource_key": "0xf4e02223",
+      "member_index": 73,
+      "size": 140,
+      "source_sha256": "ef91f186a66ca1618dd5a0df84697ab8bf5bd0b477637626b3687843243d14e9",
+      "instruction_count": 15,
+      "argument_word_count": 54,
+      "decoded_json_sha256": "3858e87cc169c03e54504c387f2cf34c5a788c34cdf730c5ba34f1614290ef16",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 329,
+      "resource_key": "0xf4e02223",
+      "member_index": 74,
+      "size": 188,
+      "source_sha256": "a646be9bad1fcdf18c44c5a38f59e63ed2aa590f2b8b9c1e8b0abc03a58c9eb9",
+      "instruction_count": 18,
+      "argument_word_count": 75,
+      "decoded_json_sha256": "1d9036735919e6a89ea8ae802a2850ae0eb7e4cc0e17a30f161389df03e3bd78",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 330,
+      "resource_key": "0xf4e02223",
+      "member_index": 75,
+      "size": 152,
+      "source_sha256": "592609766ba797a8680d10820d5f0684300c4aca69feac41e98b8aac230368e7",
+      "instruction_count": 15,
+      "argument_word_count": 60,
+      "decoded_json_sha256": "f66d14cd2f70f27b7656a36f96d540746b156ff2bb57cca31fc481ddad492421",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 331,
+      "resource_key": "0xf4e02223",
+      "member_index": 76,
+      "size": 184,
+      "source_sha256": "f1587b1cb184f1a7b396f91216b49ab9c66740065eef79330c55b278b916ad7d",
+      "instruction_count": 19,
+      "argument_word_count": 72,
+      "decoded_json_sha256": "dac7c9b609a4f0f029c5ab923dceab0342746e875c3ba9b072f2160631d001b7",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 332,
+      "resource_key": "0xf4e02223",
+      "member_index": 77,
+      "size": 176,
+      "source_sha256": "087c6c3b2a53f3215e9d3bfe226ff89b224f8e04b668e6daccc02b9899af1ab4",
+      "instruction_count": 17,
+      "argument_word_count": 70,
+      "decoded_json_sha256": "a8af37555f65754eac8f7be5c1834ee17e2632b3d4b72ccd2e9f174f50d46ab7",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 333,
+      "resource_key": "0xf4e02223",
+      "member_index": 78,
+      "size": 250,
+      "source_sha256": "dfec585c5f9e8c478d927b2a53c822fed9fd75abb53c8ca5295cada8130a7e87",
+      "instruction_count": 31,
+      "argument_word_count": 93,
+      "decoded_json_sha256": "9d0dfb74cc8ac75161ce1070b0bd31209f9f51436d08d6aa2dea60abedd92498",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 334,
+      "resource_key": "0xf4e02223",
+      "member_index": 79,
+      "size": 252,
+      "source_sha256": "3eae97769047d9aca9c481bf6610e7f38494d25ad61c979ceca6d3bfd4758b16",
+      "instruction_count": 28,
+      "argument_word_count": 97,
+      "decoded_json_sha256": "64cfad96a5b0107c3415b0faa4b6d6752548dd685fb3d3e1143ec803fe1bb1b0",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 335,
+      "resource_key": "0xf4e02223",
+      "member_index": 80,
+      "size": 240,
+      "source_sha256": "e6f65cb3375445e258f811db65a76c55f44fff7f23cb3b6b178eddeabad576d0",
+      "instruction_count": 31,
+      "argument_word_count": 88,
+      "decoded_json_sha256": "417e565eec9b1a5baa0b2d6867859da2a3d2c8465ff33b3779b69b3dec705d09",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 336,
+      "resource_key": "0xf4e02223",
+      "member_index": 81,
+      "size": 262,
+      "source_sha256": "fec04034632d7a7d2a064cd07a8e81accf1ab03875ebcd4e8ab82965bd679bc2",
+      "instruction_count": 29,
+      "argument_word_count": 101,
+      "decoded_json_sha256": "e7c9371896b63f692cfb93ec7c1187a4b3e03f35a1e9b1a723eb4b7a8559e2b4",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 337,
+      "resource_key": "0xf4e02223",
+      "member_index": 82,
+      "size": 362,
+      "source_sha256": "6caf774345e019675c76b1c7474a424bcb22f04a8d6c35c24bdd65e799c2ca50",
+      "instruction_count": 46,
+      "argument_word_count": 134,
+      "decoded_json_sha256": "c2c01fd23d2cb2e43dd2f6c978d1c94d21b3bf340d9dab61eb69c6f9ee921e86",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 338,
+      "resource_key": "0xf4e02223",
+      "member_index": 83,
+      "size": 290,
+      "source_sha256": "e60c5ecf1b7184250b77e2502bbdb3dc1976c53a92bfaf6ca5141198531873b5",
+      "instruction_count": 32,
+      "argument_word_count": 112,
+      "decoded_json_sha256": "169ca3a30739b549a9489b0141195bb5ed98e691b0bbc2ad19eac5810a1ac8ae",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    },
+    {
+      "resource_id": 339,
+      "resource_key": "0xf4e02223",
+      "member_index": 84,
+      "size": 272,
+      "source_sha256": "3f521f3742f4d4fa92a46cb03370057e6b4fdf82645c275d3169fd68555bcfbe",
+      "instruction_count": 29,
+      "argument_word_count": 106,
+      "decoded_json_sha256": "87a6d3591c68f92097263acba20f6e8df0fa43646ee4f4f17c418d4e9f5bfd60",
+      "standalone_matches": true,
+      "archive_lookup_matches": true,
+      "byte_exact_round_trip": true
+    }
+  ],
+  "malformed_input_rejections": [
+    {
+      "case": "id310_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id310_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id310_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id310_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id310_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id310_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id310_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id310_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id310_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id310_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id310_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id310_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id310_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id310_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id310_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 184"
+    },
+    {
+      "case": "id310_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 186"
+    },
+    {
+      "case": "id310_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id310_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id310_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id310_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id310_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id310_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 210"
+    },
+    {
+      "case": "id311_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id311_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id311_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id311_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id311_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id311_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id311_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id311_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id311_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id311_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id311_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id311_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id311_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id311_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id311_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 196"
+    },
+    {
+      "case": "id311_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id311_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 206"
+    },
+    {
+      "case": "id311_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 210"
+    },
+    {
+      "case": "id311_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id311_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id311_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id311_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 222"
+    },
+    {
+      "case": "id312_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id312_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id312_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id312_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id312_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id312_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id312_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id312_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id312_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id312_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id312_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id312_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id312_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id312_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id312_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id312_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id312_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 230"
+    },
+    {
+      "case": "id312_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id312_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id312_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id312_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id312_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 246"
+    },
+    {
+      "case": "id313_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id313_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id313_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id313_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id313_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id313_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id313_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id313_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id313_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id313_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id313_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id313_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id313_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id313_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id313_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 184"
+    },
+    {
+      "case": "id313_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 186"
+    },
+    {
+      "case": "id313_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id313_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id313_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id313_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id313_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id313_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 210"
+    },
+    {
+      "case": "id314_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id314_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id314_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id314_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id314_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id314_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id314_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id314_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id314_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id314_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id314_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id314_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id314_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id314_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id314_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id314_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id314_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 230"
+    },
+    {
+      "case": "id314_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id314_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id314_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id314_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id314_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 246"
+    },
+    {
+      "case": "id315_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id315_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 66"
+    },
+    {
+      "case": "id315_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id315_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id315_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 82"
+    },
+    {
+      "case": "id315_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id315_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 94"
+    },
+    {
+      "case": "id315_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id315_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 108"
+    },
+    {
+      "case": "id315_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 114"
+    },
+    {
+      "case": "id315_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id315_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id315_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id315_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id315_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 152"
+    },
+    {
+      "case": "id315_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id315_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id315_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id315_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id315_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id315_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id315_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 186"
+    },
+    {
+      "case": "id315_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id315_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 192"
+    },
+    {
+      "case": "id316_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id316_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 92"
+    },
+    {
+      "case": "id316_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 104"
+    },
+    {
+      "case": "id316_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 116"
+    },
+    {
+      "case": "id316_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id316_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id316_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 152"
+    },
+    {
+      "case": "id316_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id316_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id316_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id316_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id316_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id316_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id316_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id316_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 214"
+    },
+    {
+      "case": "id316_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id316_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id316_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id316_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id316_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id316_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id316_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 250"
+    },
+    {
+      "case": "id316_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id316_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 270"
+    },
+    {
+      "case": "id316_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 282"
+    },
+    {
+      "case": "id316_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 294"
+    },
+    {
+      "case": "id316_truncated_at_instruction_32",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 296"
+    },
+    {
+      "case": "id316_truncated_at_instruction_33",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 302"
+    },
+    {
+      "case": "id316_truncated_at_instruction_34",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 308"
+    },
+    {
+      "case": "id316_truncated_at_instruction_35",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 314"
+    },
+    {
+      "case": "id316_truncated_at_instruction_36",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 320"
+    },
+    {
+      "case": "id316_truncated_at_instruction_37",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 326"
+    },
+    {
+      "case": "id316_truncated_at_instruction_38",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 328"
+    },
+    {
+      "case": "id316_truncated_at_instruction_39",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 332"
+    },
+    {
+      "case": "id316_truncated_at_instruction_40",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 336"
+    },
+    {
+      "case": "id316_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 338"
+    },
+    {
+      "case": "id317_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id317_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id317_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id317_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id317_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id317_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 70"
+    },
+    {
+      "case": "id317_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 82"
+    },
+    {
+      "case": "id317_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 94"
+    },
+    {
+      "case": "id317_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 106"
+    },
+    {
+      "case": "id317_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 118"
+    },
+    {
+      "case": "id317_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 130"
+    },
+    {
+      "case": "id317_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 142"
+    },
+    {
+      "case": "id317_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 144"
+    },
+    {
+      "case": "id317_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id317_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id317_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 162"
+    },
+    {
+      "case": "id317_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 168"
+    },
+    {
+      "case": "id317_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id317_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 174"
+    },
+    {
+      "case": "id317_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 178"
+    },
+    {
+      "case": "id317_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 180"
+    },
+    {
+      "case": "id318_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id318_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 106"
+    },
+    {
+      "case": "id318_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 108"
+    },
+    {
+      "case": "id318_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 114"
+    },
+    {
+      "case": "id318_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id318_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id318_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id318_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 142"
+    },
+    {
+      "case": "id318_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id318_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id318_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id318_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 156"
+    },
+    {
+      "case": "id318_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id318_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id318_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id318_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id318_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id318_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 224"
+    },
+    {
+      "case": "id318_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id318_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 248"
+    },
+    {
+      "case": "id318_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 260"
+    },
+    {
+      "case": "id318_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 272"
+    },
+    {
+      "case": "id318_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 284"
+    },
+    {
+      "case": "id318_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 296"
+    },
+    {
+      "case": "id318_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 298"
+    },
+    {
+      "case": "id318_truncated_at_instruction_32",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 306"
+    },
+    {
+      "case": "id318_truncated_at_instruction_33",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 312"
+    },
+    {
+      "case": "id318_truncated_at_instruction_34",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 320"
+    },
+    {
+      "case": "id318_truncated_at_instruction_35",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 324"
+    },
+    {
+      "case": "id318_truncated_at_instruction_36",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 332"
+    },
+    {
+      "case": "id318_truncated_at_instruction_37",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 338"
+    },
+    {
+      "case": "id318_truncated_at_instruction_38",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 346"
+    },
+    {
+      "case": "id318_truncated_at_instruction_39",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 352"
+    },
+    {
+      "case": "id318_truncated_at_instruction_40",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 356"
+    },
+    {
+      "case": "id318_truncated_at_instruction_41",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 364"
+    },
+    {
+      "case": "id318_truncated_at_instruction_42",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 370"
+    },
+    {
+      "case": "id318_truncated_at_instruction_43",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 376"
+    },
+    {
+      "case": "id318_truncated_at_instruction_44",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 378"
+    },
+    {
+      "case": "id318_truncated_at_instruction_45",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 382"
+    },
+    {
+      "case": "id318_truncated_at_instruction_46",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 386"
+    },
+    {
+      "case": "id318_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 388"
+    },
+    {
+      "case": "id319_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id319_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id319_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id319_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id319_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id319_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id319_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id319_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id319_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id319_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 172"
+    },
+    {
+      "case": "id319_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 184"
+    },
+    {
+      "case": "id319_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 196"
+    },
+    {
+      "case": "id319_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id319_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 224"
+    },
+    {
+      "case": "id319_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id319_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id319_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id319_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 248"
+    },
+    {
+      "case": "id319_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 254"
+    },
+    {
+      "case": "id319_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 262"
+    },
+    {
+      "case": "id319_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 268"
+    },
+    {
+      "case": "id319_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 270"
+    },
+    {
+      "case": "id319_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 274"
+    },
+    {
+      "case": "id319_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 278"
+    },
+    {
+      "case": "id319_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 280"
+    },
+    {
+      "case": "id320_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id320_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 90"
+    },
+    {
+      "case": "id320_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 102"
+    },
+    {
+      "case": "id320_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 114"
+    },
+    {
+      "case": "id320_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 126"
+    },
+    {
+      "case": "id320_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 138"
+    },
+    {
+      "case": "id320_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id320_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 162"
+    },
+    {
+      "case": "id320_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 174"
+    },
+    {
+      "case": "id320_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 186"
+    },
+    {
+      "case": "id320_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id320_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 206"
+    },
+    {
+      "case": "id320_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id320_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id320_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id320_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id320_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id320_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id320_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 246"
+    },
+    {
+      "case": "id320_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 252"
+    },
+    {
+      "case": "id320_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 256"
+    },
+    {
+      "case": "id320_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id320_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 262"
+    },
+    {
+      "case": "id320_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 266"
+    },
+    {
+      "case": "id320_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 268"
+    },
+    {
+      "case": "id321_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id321_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id321_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id321_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id321_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id321_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id321_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 86"
+    },
+    {
+      "case": "id321_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 98"
+    },
+    {
+      "case": "id321_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id321_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id321_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id321_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id321_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 174"
+    },
+    {
+      "case": "id321_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id321_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 184"
+    },
+    {
+      "case": "id321_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id321_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id321_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id321_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id321_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 218"
+    },
+    {
+      "case": "id321_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id321_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 230"
+    },
+    {
+      "case": "id321_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id321_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id321_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 250"
+    },
+    {
+      "case": "id321_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 254"
+    },
+    {
+      "case": "id321_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 262"
+    },
+    {
+      "case": "id321_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 266"
+    },
+    {
+      "case": "id321_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 274"
+    },
+    {
+      "case": "id321_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 284"
+    },
+    {
+      "case": "id321_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 288"
+    },
+    {
+      "case": "id321_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 294"
+    },
+    {
+      "case": "id321_truncated_at_instruction_32",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 298"
+    },
+    {
+      "case": "id321_truncated_at_instruction_33",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 300"
+    },
+    {
+      "case": "id321_truncated_at_instruction_34",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 304"
+    },
+    {
+      "case": "id321_truncated_at_instruction_35",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 308"
+    },
+    {
+      "case": "id321_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 310"
+    },
+    {
+      "case": "id322_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id322_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id322_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id322_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id322_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 62"
+    },
+    {
+      "case": "id322_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id322_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 86"
+    },
+    {
+      "case": "id322_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 98"
+    },
+    {
+      "case": "id322_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id322_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id322_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id322_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id322_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id322_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id322_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id322_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id322_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 192"
+    },
+    {
+      "case": "id322_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id322_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 206"
+    },
+    {
+      "case": "id322_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id322_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id322_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id322_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id322_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id322_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 246"
+    },
+    {
+      "case": "id322_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 252"
+    },
+    {
+      "case": "id322_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 256"
+    },
+    {
+      "case": "id322_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id322_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 262"
+    },
+    {
+      "case": "id322_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 266"
+    },
+    {
+      "case": "id322_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 268"
+    },
+    {
+      "case": "id323_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id323_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id323_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 120"
+    },
+    {
+      "case": "id323_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id323_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 130"
+    },
+    {
+      "case": "id323_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id323_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 142"
+    },
+    {
+      "case": "id323_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id323_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 156"
+    },
+    {
+      "case": "id323_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id323_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id323_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 178"
+    },
+    {
+      "case": "id323_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id323_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id323_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id323_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id323_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 206"
+    },
+    {
+      "case": "id323_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id323_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 210"
+    },
+    {
+      "case": "id323_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id323_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id323_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id323_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 246"
+    },
+    {
+      "case": "id323_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 254"
+    },
+    {
+      "case": "id323_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 256"
+    },
+    {
+      "case": "id323_truncated_at_instruction_32",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 264"
+    },
+    {
+      "case": "id323_truncated_at_instruction_33",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 268"
+    },
+    {
+      "case": "id323_truncated_at_instruction_34",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 272"
+    },
+    {
+      "case": "id323_truncated_at_instruction_35",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 274"
+    },
+    {
+      "case": "id323_truncated_at_instruction_36",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 276"
+    },
+    {
+      "case": "id323_truncated_at_instruction_37",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 282"
+    },
+    {
+      "case": "id323_truncated_at_instruction_38",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 294"
+    },
+    {
+      "case": "id323_truncated_at_instruction_39",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 306"
+    },
+    {
+      "case": "id323_truncated_at_instruction_40",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 318"
+    },
+    {
+      "case": "id323_truncated_at_instruction_41",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 320"
+    },
+    {
+      "case": "id323_truncated_at_instruction_42",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 328"
+    },
+    {
+      "case": "id323_truncated_at_instruction_43",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 334"
+    },
+    {
+      "case": "id323_truncated_at_instruction_44",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 342"
+    },
+    {
+      "case": "id323_truncated_at_instruction_45",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 348"
+    },
+    {
+      "case": "id323_truncated_at_instruction_46",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 356"
+    },
+    {
+      "case": "id323_truncated_at_instruction_47",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 362"
+    },
+    {
+      "case": "id323_truncated_at_instruction_48",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 370"
+    },
+    {
+      "case": "id323_truncated_at_instruction_49",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 376"
+    },
+    {
+      "case": "id323_truncated_at_instruction_50",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 384"
+    },
+    {
+      "case": "id323_truncated_at_instruction_51",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 390"
+    },
+    {
+      "case": "id323_truncated_at_instruction_52",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 394"
+    },
+    {
+      "case": "id323_truncated_at_instruction_53",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 396"
+    },
+    {
+      "case": "id323_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 398"
+    },
+    {
+      "case": "id324_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id324_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id324_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id324_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id324_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id324_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id324_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id324_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 116"
+    },
+    {
+      "case": "id324_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id324_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 126"
+    },
+    {
+      "case": "id324_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id324_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 138"
+    },
+    {
+      "case": "id324_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id324_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 144"
+    },
+    {
+      "case": "id324_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id324_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 150"
+    },
+    {
+      "case": "id325_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id325_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id325_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id325_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id325_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id325_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id325_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id325_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id325_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id325_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id325_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id325_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id325_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id325_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id325_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 214"
+    },
+    {
+      "case": "id325_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id325_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id325_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id325_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 232"
+    },
+    {
+      "case": "id325_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id325_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 238"
+    },
+    {
+      "case": "id326_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id326_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id326_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id326_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id326_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id326_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 48"
+    },
+    {
+      "case": "id326_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 60"
+    },
+    {
+      "case": "id326_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 72"
+    },
+    {
+      "case": "id326_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 84"
+    },
+    {
+      "case": "id326_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 92"
+    },
+    {
+      "case": "id326_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 94"
+    },
+    {
+      "case": "id326_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id326_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 108"
+    },
+    {
+      "case": "id326_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 114"
+    },
+    {
+      "case": "id326_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id326_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 130"
+    },
+    {
+      "case": "id326_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id326_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id326_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 144"
+    },
+    {
+      "case": "id326_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id326_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id326_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 154"
+    },
+    {
+      "case": "id326_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 156"
+    },
+    {
+      "case": "id327_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id327_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id327_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id327_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id327_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id327_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id327_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id327_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id327_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id327_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id327_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 138"
+    },
+    {
+      "case": "id327_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id327_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id327_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 152"
+    },
+    {
+      "case": "id327_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 156"
+    },
+    {
+      "case": "id327_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id327_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 162"
+    },
+    {
+      "case": "id328_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id328_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id328_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id328_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id328_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id328_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id328_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id328_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 104"
+    },
+    {
+      "case": "id328_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id328_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 114"
+    },
+    {
+      "case": "id328_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id328_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 126"
+    },
+    {
+      "case": "id328_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id328_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 132"
+    },
+    {
+      "case": "id328_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id328_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 138"
+    },
+    {
+      "case": "id329_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id329_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id329_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id329_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id329_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id329_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id329_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id329_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id329_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id329_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id329_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 152"
+    },
+    {
+      "case": "id329_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id329_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 162"
+    },
+    {
+      "case": "id329_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id329_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 174"
+    },
+    {
+      "case": "id329_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id329_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id329_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 184"
+    },
+    {
+      "case": "id329_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 186"
+    },
+    {
+      "case": "id330_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id330_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id330_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id330_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id330_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id330_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id330_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id330_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 116"
+    },
+    {
+      "case": "id330_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id330_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 126"
+    },
+    {
+      "case": "id330_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id330_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 138"
+    },
+    {
+      "case": "id330_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id330_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 144"
+    },
+    {
+      "case": "id330_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id330_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 150"
+    },
+    {
+      "case": "id331_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id331_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id331_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id331_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id331_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id331_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id331_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id331_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id331_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id331_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id331_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id331_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id331_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 156"
+    },
+    {
+      "case": "id331_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id331_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 166"
+    },
+    {
+      "case": "id331_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id331_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 172"
+    },
+    {
+      "case": "id331_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 176"
+    },
+    {
+      "case": "id331_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id331_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 182"
+    },
+    {
+      "case": "id332_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id332_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id332_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id332_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 58"
+    },
+    {
+      "case": "id332_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 64"
+    },
+    {
+      "case": "id332_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id332_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id332_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id332_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id332_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id332_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id332_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id332_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id332_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 162"
+    },
+    {
+      "case": "id332_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id332_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 168"
+    },
+    {
+      "case": "id332_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 172"
+    },
+    {
+      "case": "id332_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 174"
+    },
+    {
+      "case": "id333_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id333_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id333_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 86"
+    },
+    {
+      "case": "id333_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 98"
+    },
+    {
+      "case": "id333_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id333_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id333_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id333_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 142"
+    },
+    {
+      "case": "id333_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 144"
+    },
+    {
+      "case": "id333_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id333_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id333_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id333_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id333_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id333_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id333_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 196"
+    },
+    {
+      "case": "id333_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 202"
+    },
+    {
+      "case": "id333_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id333_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id333_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 220"
+    },
+    {
+      "case": "id333_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id333_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 232"
+    },
+    {
+      "case": "id333_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id333_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id333_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id333_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 246"
+    },
+    {
+      "case": "id333_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 248"
+    },
+    {
+      "case": "id334_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id334_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id334_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id334_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id334_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id334_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id334_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 88"
+    },
+    {
+      "case": "id334_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 100"
+    },
+    {
+      "case": "id334_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 112"
+    },
+    {
+      "case": "id334_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 124"
+    },
+    {
+      "case": "id334_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 136"
+    },
+    {
+      "case": "id334_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id334_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id334_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 172"
+    },
+    {
+      "case": "id334_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id334_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id334_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id334_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 196"
+    },
+    {
+      "case": "id334_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id334_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id334_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id334_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id334_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id334_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id334_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id334_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 240"
+    },
+    {
+      "case": "id334_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id334_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 248"
+    },
+    {
+      "case": "id334_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 250"
+    },
+    {
+      "case": "id335_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id335_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id335_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id335_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id335_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id335_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id335_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 86"
+    },
+    {
+      "case": "id335_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 98"
+    },
+    {
+      "case": "id335_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id335_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 118"
+    },
+    {
+      "case": "id335_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 120"
+    },
+    {
+      "case": "id335_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 126"
+    },
+    {
+      "case": "id335_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 132"
+    },
+    {
+      "case": "id335_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 138"
+    },
+    {
+      "case": "id335_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id335_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id335_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id335_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 162"
+    },
+    {
+      "case": "id335_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id335_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 174"
+    },
+    {
+      "case": "id335_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id335_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 188"
+    },
+    {
+      "case": "id335_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id335_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 202"
+    },
+    {
+      "case": "id335_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id335_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id335_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id335_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id335_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id335_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 232"
+    },
+    {
+      "case": "id335_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id335_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 238"
+    },
+    {
+      "case": "id336_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id336_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id336_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id336_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id336_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id336_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 76"
+    },
+    {
+      "case": "id336_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 104"
+    },
+    {
+      "case": "id336_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id336_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id336_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id336_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id336_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id336_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id336_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 178"
+    },
+    {
+      "case": "id336_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id336_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 186"
+    },
+    {
+      "case": "id336_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 194"
+    },
+    {
+      "case": "id336_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 200"
+    },
+    {
+      "case": "id336_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 208"
+    },
+    {
+      "case": "id336_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 214"
+    },
+    {
+      "case": "id336_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 222"
+    },
+    {
+      "case": "id336_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id336_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 232"
+    },
+    {
+      "case": "id336_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id336_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id336_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 248"
+    },
+    {
+      "case": "id336_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 250"
+    },
+    {
+      "case": "id336_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 254"
+    },
+    {
+      "case": "id336_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id336_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 260"
+    },
+    {
+      "case": "id337_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id337_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 104"
+    },
+    {
+      "case": "id337_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 116"
+    },
+    {
+      "case": "id337_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id337_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id337_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 148"
+    },
+    {
+      "case": "id337_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 150"
+    },
+    {
+      "case": "id337_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 156"
+    },
+    {
+      "case": "id337_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id337_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 160"
+    },
+    {
+      "case": "id337_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 166"
+    },
+    {
+      "case": "id337_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 178"
+    },
+    {
+      "case": "id337_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 190"
+    },
+    {
+      "case": "id337_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 202"
+    },
+    {
+      "case": "id337_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 214"
+    },
+    {
+      "case": "id337_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id337_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 234"
+    },
+    {
+      "case": "id337_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id337_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id337_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 244"
+    },
+    {
+      "case": "id337_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 252"
+    },
+    {
+      "case": "id337_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id337_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 264"
+    },
+    {
+      "case": "id337_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 272"
+    },
+    {
+      "case": "id337_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 278"
+    },
+    {
+      "case": "id337_truncated_at_instruction_32",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 286"
+    },
+    {
+      "case": "id337_truncated_at_instruction_33",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 292"
+    },
+    {
+      "case": "id337_truncated_at_instruction_34",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 300"
+    },
+    {
+      "case": "id337_truncated_at_instruction_35",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 306"
+    },
+    {
+      "case": "id337_truncated_at_instruction_36",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 314"
+    },
+    {
+      "case": "id337_truncated_at_instruction_37",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 320"
+    },
+    {
+      "case": "id337_truncated_at_instruction_38",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 332"
+    },
+    {
+      "case": "id337_truncated_at_instruction_39",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 336"
+    },
+    {
+      "case": "id337_truncated_at_instruction_40",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 342"
+    },
+    {
+      "case": "id337_truncated_at_instruction_41",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 346"
+    },
+    {
+      "case": "id337_truncated_at_instruction_42",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 348"
+    },
+    {
+      "case": "id337_truncated_at_instruction_43",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 352"
+    },
+    {
+      "case": "id337_truncated_at_instruction_44",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 354"
+    },
+    {
+      "case": "id337_truncated_at_instruction_45",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 358"
+    },
+    {
+      "case": "id337_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 360"
+    },
+    {
+      "case": "id338_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id338_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id338_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id338_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id338_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id338_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 68"
+    },
+    {
+      "case": "id338_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 80"
+    },
+    {
+      "case": "id338_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 92"
+    },
+    {
+      "case": "id338_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 104"
+    },
+    {
+      "case": "id338_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 116"
+    },
+    {
+      "case": "id338_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 128"
+    },
+    {
+      "case": "id338_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 140"
+    },
+    {
+      "case": "id338_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 152"
+    },
+    {
+      "case": "id338_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 164"
+    },
+    {
+      "case": "id338_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 180"
+    },
+    {
+      "case": "id338_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 196"
+    },
+    {
+      "case": "id338_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 198"
+    },
+    {
+      "case": "id338_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id338_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id338_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 218"
+    },
+    {
+      "case": "id338_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 226"
+    },
+    {
+      "case": "id338_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 230"
+    },
+    {
+      "case": "id338_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 238"
+    },
+    {
+      "case": "id338_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 242"
+    },
+    {
+      "case": "id338_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 250"
+    },
+    {
+      "case": "id338_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 260"
+    },
+    {
+      "case": "id338_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 264"
+    },
+    {
+      "case": "id338_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 270"
+    },
+    {
+      "case": "id338_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 276"
+    },
+    {
+      "case": "id338_truncated_at_instruction_29",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 278"
+    },
+    {
+      "case": "id338_truncated_at_instruction_30",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 282"
+    },
+    {
+      "case": "id338_truncated_at_instruction_31",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 286"
+    },
+    {
+      "case": "id338_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 288"
+    },
+    {
+      "case": "id339_truncated_at_instruction_0",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_1",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_2",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_3",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_4",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_5",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count exceeds available words"
+    },
+    {
+      "case": "id339_truncated_at_instruction_6",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 74"
+    },
+    {
+      "case": "id339_truncated_at_instruction_7",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 86"
+    },
+    {
+      "case": "id339_truncated_at_instruction_8",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 98"
+    },
+    {
+      "case": "id339_truncated_at_instruction_9",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 110"
+    },
+    {
+      "case": "id339_truncated_at_instruction_10",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 122"
+    },
+    {
+      "case": "id339_truncated_at_instruction_11",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 134"
+    },
+    {
+      "case": "id339_truncated_at_instruction_12",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 146"
+    },
+    {
+      "case": "id339_truncated_at_instruction_13",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 158"
+    },
+    {
+      "case": "id339_truncated_at_instruction_14",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 170"
+    },
+    {
+      "case": "id339_truncated_at_instruction_15",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 182"
+    },
+    {
+      "case": "id339_truncated_at_instruction_16",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 204"
+    },
+    {
+      "case": "id339_truncated_at_instruction_17",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 206"
+    },
+    {
+      "case": "id339_truncated_at_instruction_18",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "id339_truncated_at_instruction_19",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 216"
+    },
+    {
+      "case": "id339_truncated_at_instruction_20",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 224"
+    },
+    {
+      "case": "id339_truncated_at_instruction_21",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 228"
+    },
+    {
+      "case": "id339_truncated_at_instruction_22",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 236"
+    },
+    {
+      "case": "id339_truncated_at_instruction_23",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 248"
+    },
+    {
+      "case": "id339_truncated_at_instruction_24",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 252"
+    },
+    {
+      "case": "id339_truncated_at_instruction_25",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 258"
+    },
+    {
+      "case": "id339_truncated_at_instruction_26",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 260"
+    },
+    {
+      "case": "id339_truncated_at_instruction_27",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 264"
+    },
+    {
+      "case": "id339_truncated_at_instruction_28",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 268"
+    },
+    {
+      "case": "id339_truncated_last_argument",
+      "exit_code": 1,
+      "error": "ERROR: mission arguments exceed resource at byte 270"
+    },
+    {
+      "case": "empty",
+      "exit_code": 1,
+      "error": "ERROR: invalid mission resource size"
+    },
+    {
+      "case": "one_byte_header",
+      "exit_code": 1,
+      "error": "ERROR: invalid mission resource size"
+    },
+    {
+      "case": "unsupported_version",
+      "exit_code": 1,
+      "error": "ERROR: unsupported mission version"
+    },
+    {
+      "case": "partial_word",
+      "exit_code": 1,
+      "error": "ERROR: partial mission word"
+    },
+    {
+      "case": "header_count_zero_with_body",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count leaves trailing bytes at byte 2"
+    },
+    {
+      "case": "header_count_too_small",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count leaves trailing bytes at byte 208"
+    },
+    {
+      "case": "header_count_too_large",
+      "exit_code": 1,
+      "error": "ERROR: truncated mission word at byte 212"
+    },
+    {
+      "case": "trailing_whole_word",
+      "exit_code": 1,
+      "error": "ERROR: mission instruction count leaves trailing bytes at byte 212"
+    },
+    {
+      "case": "unobserved_opcode_11",
+      "exit_code": 1,
+      "error": "ERROR: unsupported mission opcode 11 at byte 2"
+    },
+    {
+      "case": "unknown_opcode_65535",
+      "exit_code": 1,
+      "error": "ERROR: unsupported mission opcode 65535 at byte 2"
+    },
+    {
+      "case": "opcode15_count_exceeds_original_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission record list exceeds resource at byte 12"
+    },
+    {
+      "case": "opcode7_count_exceeds_original_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission opcode 7 list exceeds resource at byte 160"
+    },
+    {
+      "case": "opcode7_group_count_exceeds_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission opcode 7 groups exceed resource at byte 170"
+    },
+    {
+      "case": "opcode12_unknown_layout_subtype",
+      "exit_code": 1,
+      "error": "ERROR: unsupported mission opcode 12 subtype at byte 186"
+    },
+    {
+      "case": "opcode7_1groups_pair_count_exceeds_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission record list exceeds resource at byte 50"
+    },
+    {
+      "case": "opcode21_count_exceeds_original_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission record list exceeds resource at byte 140"
+    },
+    {
+      "case": "opcode7_2groups_pair_count_exceeds_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission record list exceeds resource at byte 26"
+    },
+    {
+      "case": "opcode17_count_exceeds_original_resource",
+      "exit_code": 1,
+      "error": "ERROR: mission record list exceeds resource at byte 184"
+    },
+    {
+      "case": "lookup_wrong_key",
+      "exit_code": 1,
+      "error": "ERROR: mission lookup must match exactly one resource ID/key pair"
+    },
+    {
+      "case": "lookup_missing_id",
+      "exit_code": 1,
+      "error": "ERROR: mission lookup must match exactly one resource ID/key pair"
+    },
+    {
+      "case": "lookup_overflow_id",
+      "exit_code": 1,
+      "error": "ERROR: invalid unsigned 32-bit resource identifier"
+    },
+    {
+      "case": "lookup_negative_id",
+      "exit_code": 1,
+      "error": "ERROR: invalid unsigned 32-bit resource identifier"
+    }
+  ],
+  "rejection_count": 855,
+  "all_passed": true,
+  "ios_arm64_compiled": false,
+  "gameplay_implemented": false,
+  "gameplay_tested": false,
+  "original_machine_code_executed": false,
+  "device_tested": false,
+  "limitations": [
+    "Opcode behavior is not implemented or proven by framing tests.",
+    "Thirty recovered streams do not establish thirty campaign levels.",
+    "Unobserved opcode 11 and unknown subtypes are rejected.",
+    "Host C++ compilation is not an Apple SDK build or iPhone XR performance test."
+  ]
+}

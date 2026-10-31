@@ -1,0 +1,123 @@
+{
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "builds": {
+    "g1_asset_probe": {
+      "command": [
+        "/usr/bin/g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wconversion",
+        "-Werror",
+        "-I",
+        "/workspace/scratch/cba553aafa20/g1_port/native/include",
+        "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+        "/workspace/scratch/cba553aafa20/g1_port/native/src/M3G.cpp",
+        "/workspace/scratch/cba553aafa20/g1_port/native/tools/g1_asset_probe.cpp",
+        "-lz",
+        "-o",
+        "/workspace/scratch/cba553aafa20/g1_port/native/research/resource_validation/g1_asset_probe"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "m3g_probe": {
+      "command": [
+        "/usr/bin/g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wconversion",
+        "-Werror",
+        "-I",
+        "/workspace/scratch/cba553aafa20/g1_port/native/include",
+        "/workspace/scratch/cba553aafa20/g1_port/native/src/Archive.cpp",
+        "/workspace/scratch/cba553aafa20/g1_port/native/src/M3G.cpp",
+        "/workspace/scratch/cba553aafa20/g1_port/native/tools/m3g_probe.cpp",
+        "-lz",
+        "-o",
+        "/workspace/scratch/cba553aafa20/g1_port/native/research/resource_validation/m3g_probe"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  },
+  "resource_payload_sha256_matches": 559,
+  "m3g_container_object_count_matches": 36,
+  "malformed_input_rejections": [
+    {
+      "case": "empty",
+      "exit_code": 1,
+      "error": "ERROR: invalid FGIB size"
+    },
+    {
+      "case": "truncated_header",
+      "exit_code": 1,
+      "error": "ERROR: invalid FGIB size"
+    },
+    {
+      "case": "truncated_body",
+      "exit_code": 1,
+      "error": "ERROR: FGIB table/body size mismatch"
+    },
+    {
+      "case": "invalid_member_count",
+      "exit_code": 1,
+      "error": "ERROR: invalid FGIB table counts"
+    },
+    {
+      "case": "invalid_body_offset",
+      "exit_code": 1,
+      "error": "ERROR: FGIB table/body size mismatch"
+    },
+    {
+      "case": "inflation_limit",
+      "exit_code": 1,
+      "error": "ERROR: FGIB expanded size exceeds bound"
+    },
+    {
+      "case": "zlib_checksum",
+      "exit_code": 1,
+      "error": "ERROR: zlib length/checksum/truncation/trailing-data failure"
+    },
+    {
+      "case": "m3g_truncation",
+      "exit_code": 1,
+      "error": "ERROR: M3G declared file size mismatch"
+    },
+    {
+      "case": "m3g_checksum",
+      "exit_code": 1,
+      "error": "ERROR: M3G section checksum mismatch"
+    },
+    {
+      "case": "m3g_section_length",
+      "exit_code": 1,
+      "error": "ERROR: invalid M3G section span/compression"
+    },
+    {
+      "case": "m3g_object_bounds_valid_checksum",
+      "exit_code": 1,
+      "error": "ERROR: invalid M3G object type/span"
+    },
+    {
+      "case": "m3g_header_only_valid_checksum",
+      "exit_code": 1,
+      "error": "ERROR: M3G missing scene data section"
+    },
+    {
+      "case": "m3g_extra_object_in_header_section",
+      "exit_code": 1,
+      "error": "ERROR: M3G first section must contain only its header"
+    }
+  ],
+  "ios_compiled": false,
+  "device_tested": false,
+  "gameplay_tested": false
+}

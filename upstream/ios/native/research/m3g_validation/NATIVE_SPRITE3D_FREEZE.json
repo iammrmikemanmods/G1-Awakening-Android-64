@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "scope": "Portable native Sprite3D arithmetic and original common draw-queue insertion; new files only.",
+  "files": [
+    {
+      "path": "native/include/g1/M3GSprite3D.hpp",
+      "bytes": 4011,
+      "sha256": "0e99e83bf8a16b8eb754f1d80aa9a0cd202a97558958ac2a562f42607842167b"
+    },
+    {
+      "path": "native/src/M3GSprite3D.cpp",
+      "bytes": 13806,
+      "sha256": "26486d2ade3a6823646a9b5a3c9be4cc9034e95dfed11385f28dac8e3d6cae1e"
+    },
+    {
+      "path": "native/tests/m3g_sprite3d_test.cpp",
+      "bytes": 7973,
+      "sha256": "6b1a67facd4368007a57106657f07f3595b171bd282a8232a5cef4b536f5dbe3"
+    },
+    {
+      "path": "native/tests/m3g_sprite3d_fixture.hpp",
+      "bytes": 4561,
+      "sha256": "625048fcf7d7f531b01062a28363f673287c05a11da06393b3e1cac6eaea32d2"
+    },
+    {
+      "path": "native/tests/m3g_sprite3d_cases.txt",
+      "bytes": 68365,
+      "sha256": "4cb9bc5b0b3e6d40e9981038ac4ca33c27189a34a88a93875e9d6be3f17a9ef9"
+    },
+    {
+      "path": "native/tests/m3g_sprite3d_cases_provenance.json",
+      "bytes": 1003,
+      "sha256": "9a2e3e99a9ad0ee1a266c27d55148d6932487f55da2ff9bfa72691f1195681de"
+    },
+    {
+      "path": "native/tools/m3g_sprite3d_probe.cpp",
+      "bytes": 2951,
+      "sha256": "9db5034bb1ce028e1970b05b733433c967442f3d3a7a9de7424b8675f5b34aae"
+    },
+    {
+      "path": "analysis_tools/m3g/sprite3d_validate.py",
+      "bytes": 8952,
+      "sha256": "d193f81b96c9cb45a0dce8b05a1e029de8ad382795e17aac3b92814f86ee2879"
+    },
+    {
+      "path": "native/research/m3g_validation/sprite3d_native_validation.json",
+      "bytes": 2633,
+      "sha256": "98f8db77bcf5722ec1fab89b7762dfb64d8e3a02342a79fe6753cad32dea8818"
+    },
+    {
+      "path": "native/research/m3g_validation/NATIVE_SPRITE3D.md",
+      "bytes": 11335,
+      "sha256": "896860fb21e55f35a3403df99a3d1962fc95f877bf2b2b3c2c27361dea8dbfbe"
+    }
+  ],
+  "original_reference_path": "native/research/m3g_validation/sprite3d_original_projected_draws.json",
+  "original_reference_sha256": "027532e072019b84008ace8b566fb7a370fa8070bb4803f233208d12f4b66722",
+  "validation": {
+    "renderer_cases": 142,
+    "draws": 47,
+    "authored_nodes": 54,
+    "queue_sequences": 4,
+    "queue_entries": 26,
+    "original_numeric_boolean_comparisons": 1557,
+    "binary32_origin_values": 141,
+    "fixed16_values": 1128,
+    "focused_contracts": 30,
+    "optimized_passed": true,
+    "undefined_behavior_sanitizer_passed": true
+  },
+  "independent_review": "binary_audit reviewed source read-only; finite homogeneous-W overflow finding fixed with regression; no remaining supported-corpus blocker reported.",
+  "source_files_changed_outside_manifest": false,
+  "scene_camera_animation_metal_app_modified": false,
+  "cmake_modified": false,
+  "original_code_or_payload_embedded": false,
+  "gpu_tested": false,
+  "apple_device_tested": false,
+  "known_scope_limits": [
+    "Finite affine model/view and finite original projection input.",
+    "Required power-of-two single-image blocks; NPOT padding and multi-block images reject explicitly.",
+    "Scene decoder/evaluated alpha, visibility, scope and rendering-state integration is separate.",
+    "Host square-root boundary follows original recorder; no historical iOS libm bit-identity claim."
+  ],
+  "cmake_handoff": {
+    "library_source": "src/M3GSprite3D.cpp",
+    "probe": "tools/m3g_sprite3d_probe.cpp",
+    "test": "tests/m3g_sprite3d_test.cpp",
+    "test_name": "m3g_sprite3d_original_function_vectors",
+    "test_argument": "tests/m3g_sprite3d_cases.txt"
+  }
+}

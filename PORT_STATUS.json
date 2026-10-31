@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "status": "development_checkpoint",
+  "target_device": "Samsung Galaxy A36",
+  "minimum_android_api": 36,
+  "target_android_api": 36,
+  "default_abi": "arm64-v8a",
+  "ios_repository": "https://github.com/iammrmikemanmods/G1-Awakening-IOS",
+  "ios_source_commit": "be203a911bc26313615ea450758413e5c9cf6462",
+  "resource_revision": "017R1",
+  "unmodified_upstream_files": 769,
+  "original_resource_files": 98,
+  "clean_texture_pngs": 88,
+  "original_intro_byte_identical": true,
+  "physical_a36_validated": false,
+  "full_campaign_device_validated": false,
+  "upstream_host_tests": {
+    "passed": 72,
+    "total": 72,
+    "configuration": "Debug with assertions enabled",
+    "report": "validation/host-core.xml"
+  },
+  "gles_contract_tests": {
+    "passed": 51,
+    "report": "validation/renderer-report.json"
+  },
+  "ui_contract_report": "validation/ui-contract-report.json",
+  "public_touch_gameplay": {
+    "status": "passed",
+    "rendered_frames": 993,
+    "touch_events": 45,
+    "source_dialogue_commands": 7,
+    "real_m3g_battle": true,
+    "final_battle_failed_receipt_rejected": true,
+    "process_checkpoint_restore": true,
+    "report": "validation/game-probe-report.json"
+  },
+  "android_build": {
+    "status": "passed",
+    "variant": "optimized release, development signed",
+    "apk": "G1-Awakening-Android64-v0.1.0-dev.apk",
+    "bytes": 39529529,
+    "sha256": "f7e8b271f011651bbbf334b6a5c6c8bd83c3682dc4b925a44522214efe632684",
+    "min_sdk": 36,
+    "target_sdk": 36,
+    "abi": "arm64-v8a",
+    "signature_verified": true,
+    "elf_and_apk_16kb_alignment_verified": true,
+    "report": "validation/android/apk-verification.json"
+  },
+  "android_emulator": {
+    "status": "functional_menu_touch_and_surface_lifecycle_smoke_passed",
+    "android_api": 36,
+    "test_abi": "x86_64",
+    "final_test_apk_sha256": "481896a5ee165853577c252f1609217040f565899b20312b2dd0fcd2983c0372",
+    "original_intro_observed_on_preceding_development_build": true,
+    "final_build_native_menu_and_touch": true,
+    "final_build_home_resume_and_back": true,
+    "presented_frames_at_pause": 861,
+    "native_game_or_audio_errors": false,
+    "missions_played_in_android_emulator": false,
+    "bounded_lifecycle_wait_warnings": 2,
+    "report": "validation/android/emulator-smoke.json"
+  },
+  "remaining_validation": [
+    "Physical Galaxy A36 with delivered APK",
+    "Full Story, Showdown and Arena on Android",
+    "Audible media/audio routing and interruptions on hardware",
+    "TalkBack runtime and touch latency",
+    "Sustained Modern thermal/performance behavior",
+    "Future Android releases"
+  ],
+  "claims": "Source and asset identity are verified. No 100 percent device or whole-campaign parity certification is implied."
+}

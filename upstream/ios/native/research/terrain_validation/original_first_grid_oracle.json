@@ -1,0 +1,36 @@
+{
+  "scope": "First mission grid268/style0 interior neighbor masks and raw terrain geometry",
+  "source_ipa_sha256": "b24fbe5cc4d5cb603189a476c4f81dd2a6ecc18b025eae913262055a7fc443fd",
+  "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "grid_resource_id": 268,
+  "grid_sha256": "cdd071f319ba2d8160699df363f7dd666342a23abd6e276b23fc36b73c95a5b5",
+  "tables_sha256": "b870e3d74244741003c8068178e7f58bb5fbe35599599c918e024227463725a8",
+  "grid_dimensions": [
+    15,
+    14
+  ],
+  "cells": 210,
+  "quad_count": 255,
+  "scalar_position_uv_count": 5100,
+  "original_neighbor_mask_sha256": "d252cae83f4e4ca67d28753370e19dc77bb688a857ade2a091f42232901d420b",
+  "original_and_native_quad_sha256": "7392230606f98cae05d8b174e83b8ca7ecb0f50d8219d8631370fbffd06d2727",
+  "native_probe_sha256": "cf9e4f6807db99d28db73e3e60733582612a6fc0165ed849487b693298ccf687",
+  "oracle_source_sha256": "bdb206e5455a5246a064361e6648bf565464487e399249ce656d87554a9fc919",
+  "geometry_oracle_source_sha256": "b6dee3a66421bd251cf9841c97129c10854e772a88bb09d6a609fe2d0a28d68d",
+  "unicorn_version": "2.1.4",
+  "original_code_readonly_and_unchanged": true,
+  "instruction_patches": 0,
+  "all_native_positions_and_quantized_uv_match": true,
+  "original_neighbor_block": "0x6ae1a..0x6af02",
+  "original_face_function": "0x65310",
+  "entry_state": "actual decoded grid/style0 table; explicit interior row previous_mask0x10",
+  "substitutions": "same documented infrastructure boundaries as original_terrain_oracle.json",
+  "not_established": [
+    "complete padded map constructor",
+    "outer-column boundary interactions",
+    "style1 animated terrain",
+    "GPU pixel parity",
+    "device execution"
+  ]
+}

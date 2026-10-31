@@ -1,0 +1,892 @@
+{
+  "schema": 1,
+  "scope": "Serialized World clear and CompositingMode metadata only; no original runtime pass selection or GPU execution",
+  "manifest_sha256": "49ae20ea549c5d7d893f1c0aa47b24cfa1899953de06ea56e1dfcb71a3aeefaa",
+  "reference_parser_sha256": "62bcdf69622b7601db7fdf09bc301d2330f32a739030ec5fb987157c22c1a404",
+  "background_state_order": [
+    "red",
+    "green",
+    "blue",
+    "alpha",
+    "image",
+    "mode_x",
+    "mode_y",
+    "crop_x",
+    "crop_y",
+    "crop_width",
+    "crop_height",
+    "depth_clear",
+    "color_clear"
+  ],
+  "resources": [
+    {
+      "resource_id": 486,
+      "sha256": "fe5be1749698a332214dc9e818823d64ebe61103e06598e35d14785f2680dd9b",
+      "worlds": [
+        {
+          "world": 390,
+          "background": 6,
+          "serialized_state": [
+            96,
+            156,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": [
+        {
+          "object": 8,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            25,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 18,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            25,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 82,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            66,
+            0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 206,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "resource_id": 534,
+      "sha256": "d00e1b3195ab0ee1567a5b57254e9000faf1975935b61467e651c86c674d948f",
+      "worlds": [
+        {
+          "world": 208,
+          "background": 6,
+          "serialized_state": [
+            168,
+            0,
+            216,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": [
+        {
+          "object": 24,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            65,
+            0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 61,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 93,
+          "values": [
+            true,
+            false,
+            true,
+            true,
+            65,
+            0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "resource_id": 1212,
+      "sha256": "760557433bc9765eaffa43dd204108215f996e00c9920b94caeed9576d826c0d",
+      "worlds": [
+        {
+          "world": 211,
+          "background": 6,
+          "serialized_state": [
+            96,
+            156,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": [
+        {
+          "object": 17,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            25,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 38,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            66,
+            0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "object": 102,
+          "values": [
+            true,
+            true,
+            true,
+            true,
+            64,
+            0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "resource_id": 408,
+      "sha256": "d1ab89d6440df4fb09d23c20204160e4fb04cde2ca420a04c77cc37b0f0e43f4",
+      "worlds": [
+        {
+          "world": 310,
+          "background": 3,
+          "serialized_state": [
+            65,
+            97,
+            113,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": [
+        {
+          "object": 19,
+          "values": [
+            true,
+            false,
+            true,
+            true,
+            65,
+            0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "resource_id": 699,
+      "sha256": "c1e9e5c2a3377f8387c21a3c8e9e346784be317cf64893f794c0ae11b5096a4a",
+      "worlds": [
+        {
+          "world": 306,
+          "background": 3,
+          "serialized_state": [
+            134,
+            134,
+            134,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 444,
+      "sha256": "9375af627f75c6c535109b7de5e3fa63baabc8b81c1546bfb1b56c38c624389d",
+      "worlds": [
+        {
+          "world": 257,
+          "background": 3,
+          "serialized_state": [
+            124,
+            139,
+            148,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 492,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "worlds": [
+        {
+          "world": 294,
+          "background": 3,
+          "serialized_state": [
+            255,
+            255,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 1300,
+      "sha256": "36a9d282691508099a3b18089a95d3248bdd26f9f9e3ef4683b2d2b91e1bffd3",
+      "worlds": [
+        {
+          "world": 228,
+          "background": 3,
+          "serialized_state": [
+            0,
+            0,
+            0,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 561,
+      "sha256": "e988521887c88fac8e9b1365b2cf72bc7e0b54615acb4ba078e29177ab67061a",
+      "worlds": [
+        {
+          "world": 244,
+          "background": 3,
+          "serialized_state": [
+            136,
+            136,
+            136,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 369,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "worlds": [
+        {
+          "world": 176,
+          "background": 3,
+          "serialized_state": [
+            0,
+            0,
+            0,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 565,
+      "sha256": "65aeacfc56865a70ab5c36307571433ef6e9e2e7a2ac5c8c8f8db5c8402e5363",
+      "worlds": [
+        {
+          "world": 176,
+          "background": 3,
+          "serialized_state": [
+            0,
+            0,
+            0,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 634,
+      "sha256": "296822e2c432065d55d26816f64b430790dd9fef77ff81d756f07e902c053891",
+      "worlds": [
+        {
+          "world": 401,
+          "background": 3,
+          "serialized_state": [
+            65,
+            97,
+            113,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 395,
+      "sha256": "a5de57b4c365df44b5f38eff424495503cf5b9ea0ccaa53e37291887f05842de",
+      "worlds": [
+        {
+          "world": 190,
+          "background": 3,
+          "serialized_state": [
+            114,
+            144,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 475,
+      "sha256": "23ed6b7cd803e85a77524a0b6f7d1a9778ffaa059a4c9c5bea8ed8b3119f6be6",
+      "worlds": [
+        {
+          "world": 298,
+          "background": 3,
+          "serialized_state": [
+            134,
+            134,
+            134,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 867,
+      "sha256": "aa08afabedbe636d7cedaec480070d3d051b5d2c950c5e40191d8c239f9b48a1",
+      "worlds": [
+        {
+          "world": 233,
+          "background": 3,
+          "serialized_state": [
+            84,
+            84,
+            84,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 1039,
+      "sha256": "4b766628e4bc4041b4796239ceddb43a0b2a815168bcdfecffbb79957409d847",
+      "worlds": [
+        {
+          "world": 379,
+          "background": 3,
+          "serialized_state": [
+            181,
+            181,
+            181,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 631,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "worlds": [
+        {
+          "world": 294,
+          "background": 3,
+          "serialized_state": [
+            255,
+            255,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 795,
+      "sha256": "0057f98e44813e33407879779f1906f96c9cdecccbc1a1fd14a49f3b2dac45f5",
+      "worlds": [
+        {
+          "world": 294,
+          "background": 3,
+          "serialized_state": [
+            255,
+            255,
+            255,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 967,
+      "sha256": "4206ffcf73d060d8fadd970ea6c0a52499eac45149d63ed1e12cb459f6eada5e",
+      "worlds": [
+        {
+          "world": 265,
+          "background": 3,
+          "serialized_state": [
+            86,
+            86,
+            86,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 564,
+      "sha256": "3058249f64a07996af31225f7fb919195f392605ace79f7fa355f2f032b0b0ee",
+      "worlds": [
+        {
+          "world": 267,
+          "background": 3,
+          "serialized_state": [
+            107,
+            107,
+            124,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 1299,
+      "sha256": "69884b098563c3b2969e568856c383b2ea8db08581e70713196af90a514041a6",
+      "worlds": [
+        {
+          "world": 332,
+          "background": 3,
+          "serialized_state": [
+            134,
+            134,
+            134,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 829,
+      "sha256": "7ad03a1bb11ddf050780aa358317bacc6e3974bb0562ab9a57c6920af6a30340",
+      "worlds": [
+        {
+          "world": 343,
+          "background": 3,
+          "serialized_state": [
+            121,
+            121,
+            121,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 1201,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "worlds": [
+        {
+          "world": 178,
+          "background": 3,
+          "serialized_state": [
+            0,
+            0,
+            0,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 1070,
+      "sha256": "f3c4458345f0bceafe993555b27a3683412bb31dd0b006e3bc9bb29838454e8d",
+      "worlds": [
+        {
+          "world": 178,
+          "background": 3,
+          "serialized_state": [
+            0,
+            0,
+            0,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 489,
+      "sha256": "59401dc0dd19b85e35007bb04525f9fbe9025e37d3d1af8000a9a44663759635",
+      "worlds": [
+        {
+          "world": 287,
+          "background": 3,
+          "serialized_state": [
+            107,
+            107,
+            124,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": [
+        {
+          "object": 141,
+          "values": [
+            true,
+            false,
+            true,
+            true,
+            65,
+            0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "resource_id": 490,
+      "sha256": "a666b66126b5d273ecdacff46b7593f28075e2d16f237ec002230aae52df0b63",
+      "worlds": [
+        {
+          "world": 333,
+          "background": 3,
+          "serialized_state": [
+            121,
+            121,
+            121,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    },
+    {
+      "resource_id": 500,
+      "sha256": "fd92d638254a75b5fef063e71d31be11569b84740e5795db3b03ae664efeb20b",
+      "worlds": [
+        {
+          "world": 332,
+          "background": 3,
+          "serialized_state": [
+            134,
+            134,
+            134,
+            255,
+            0,
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "compositing": []
+    }
+  ],
+  "summary": {
+    "resources": 27,
+    "worlds": 27,
+    "image_backgrounds": 0,
+    "depth_test_disabled_write_enabled": 0
+  }
+}

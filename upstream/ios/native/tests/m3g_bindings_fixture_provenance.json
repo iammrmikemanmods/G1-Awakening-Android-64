@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "original_fixture": "native/research/m3g_validation/original_bindings.json",
+  "original_fixture_sha256": "d6d39b71189bdd1ed6eb53fff342d516f2fabcf4f5d04d534fd2921f6a33300a",
+  "original_runner_sha256": "6c0befc60b3560afaec83432c4156be7752b54593c16472c13e419abc9f1a1b4",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "generator_sha256": "d72ba93577bd257fc33cf892648e9c12f801c2f33280a3f9a0fa59a871bbe437",
+  "fixture_sha256": "9cc6dbbcc3f6d4b4ddb859fe0b5a2fa4ed83ddd02a39ffb4ad92a6dc91c02828",
+  "name_cases": 34,
+  "tree_cases": 6,
+  "expected_values_source": "Frozen unchanged-original execution outputs; never native implementation outputs",
+  "scope": "Synthetic internal Group objects with child links and no animation references; not a general live Object3D graph or render test",
+  "original_execution_repeated": false,
+  "contains_original_asset_payload": false
+}

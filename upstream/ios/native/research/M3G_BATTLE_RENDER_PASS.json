@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "status": "frozen original submission and solid-background reference; no GPU or device claim",
+  "original_image_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+  "original_libgcc_sha256": "d758fbf1ac952532955d62866bd02df55315c0599f64bdd978ff941fccbdcf83",
+  "unicorn_version": "2.1.4",
+  "case_counts": {
+    "submission_cases": 14,
+    "solid_background_cases": 44
+  },
+  "instruction_patches": 0,
+  "original_text_readonly_unchanged": true,
+  "original_libgcc_readonly_unchanged": true,
+  "scope": {
+    "synthetic_state": true,
+    "actual_asset_loader": false,
+    "gpu_execution": false,
+    "background_image_supported": false,
+    "ordinary_no_secondary_viewport": true,
+    "transform_calculation_executed": false,
+    "public_submission_order_executed": true,
+    "original_float_clear_conversion_executed": true
+  },
+  "recording_boundaries": [
+    "public retain/release/identity/factory",
+    "public enabled state",
+    "public transform-to returns success without calculating matrix",
+    "public camera query",
+    "public Graphics renderWorld/renderNode/setCamera",
+    "target begin/end helpers",
+    "graphics target/context acquisition",
+    "GL clear/color-mask/depth-mask/scissor calls"
+  ],
+  "original_functions": [
+    "0x3cc9c",
+    "0xb5fe8",
+    "0xb4cb4",
+    "0x429ec",
+    "0x70b8c",
+    "0x42a34",
+    "0x42f20",
+    "0x42b44",
+    "original ARM libgcc"
+  ],
+  "static_render_routes": {
+    "world": "0x429ec -> Graphics+0x5c ->0xabf24 ->0x8f7ee ->renderer+0x2c ->0xb8a6c",
+    "individual_node": "0x70b8c -> Graphics+0x58 ->0xabeac ->0x8ebfc ->renderer+0x28 ->0xb8bc0",
+    "world_background": "0xb8b5e..0xb8b6a ->renderer+0x18 ->0xb5fe8",
+    "world_enqueue_flush": [
+      "0xb8b9a",
+      "0xb8ba0"
+    ],
+    "node_enqueue_flush": [
+      "0xb8c5a",
+      "0xb8c62"
+    ],
+    "default_depth_clear": "0xb57ba..0xb57be glClearDepthx(65536)",
+    "default_depth_enabled": "0x8ee32..0x8ee34 context+0x6c=true;0xb57f6..0xb580a GL_DEPTH_TEST"
+  },
+  "actual_scene_backgrounds": [
+    {
+      "resource_id": 486,
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "fixed16": [
+        24672,
+        40093,
+        65536,
+        65536
+      ]
+    },
+    {
+      "resource_id": 534,
+      "rgba8": [
+        168,
+        0,
+        216,
+        255
+      ],
+      "fixed16": [
+        43177,
+        0,
+        55513,
+        65536
+      ]
+    },
+    {
+      "resource_id": 1212,
+      "rgba8": [
+        96,
+        156,
+        255,
+        255
+      ],
+      "fixed16": [
+        24672,
+        40093,
+        65536,
+        65536
+      ]
+    }
+  ],
+  "reproduction_command": "python3 analysis_tools/m3g/battle_render_pass_oracle.py --binary /path/to/G1awakening.armv6 --libgcc /path/to/libgcc_s.1.dylib --unicorn-dir /path/to/unicorn-python --output /tmp/original_battle_render_pass.json",
+  "files": {
+    "analysis_tools/m3g/battle_render_pass_oracle.py": {
+      "bytes": 12779,
+      "sha256": "c1b31bae8594348a3d0089cb0afa953db93c96b3931e80767a22ac0ded9951b6"
+    },
+    "analysis_tools/sprite/render_oracle.py": {
+      "bytes": 13657,
+      "sha256": "f3fa8b4d3df77c82bfc3d249109f650e3ec6e9c5421fd29dcf81adb3d3e1124c"
+    },
+    "native/research/M3G_BATTLE_RENDER_PASS.md": {
+      "bytes": 10179,
+      "sha256": "af1da738da5eaa106ca523570da2905aee11917ff5120082976e1d975f87e349"
+    },
+    "native/research/m3g_validation/original_battle_render_pass.json": {
+      "bytes": 103316,
+      "sha256": "d5e544dfb438704cf1f76d19b9969da089768c9f08b9c7de21af42edeb5240ec"
+    }
+  },
+  "additional_source_inventory": {
+    "path": "research/native_m3g/render_scene_v4/render_pass_inventory.json",
+    "sha256": "474f9edaaac86a8b54fb7aa6244624c61d88e47bae2e7b1f80eede9a2a0153d0",
+    "scope": "original serialized World metadata only"
+  }
+}

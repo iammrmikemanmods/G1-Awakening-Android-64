@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "review": "Read-only source review of native scene app and local data packager",
+  "reviewer": "binary_audit",
+  "files": [
+    {
+      "path": "native/platform/apple/NativeApp.mm",
+      "bytes": 23288,
+      "sha256": "9c335dcb03760152a591777b9d5c4fa8a403a724f77ec4f9fa24786ae83ff53b"
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.hpp",
+      "bytes": 1033,
+      "sha256": "4cd575225d20c1d456188b8fb2c00d293f5dccf9ad4550f3a1f2d7f6f37eae81"
+    },
+    {
+      "path": "native/platform/apple/MetalRenderer.mm",
+      "bytes": 7126,
+      "sha256": "3dc396a183761c9420392144f4e6d661ff64d03741bf5006059523dc59d9e1df"
+    },
+    {
+      "path": "native/platform/apple/MetalProbe.mm",
+      "bytes": 5857,
+      "sha256": "1643bd1db4b52e53530f6690d37a7c7d836a0dd52118d8319f30b6072da6eed3"
+    },
+    {
+      "path": "native/platform/apple/Info.plist.in",
+      "bytes": 1639,
+      "sha256": "24631ccdd0e357dd92d8f2416e55263e21295d22cdfeade61d8f5d40f211350a"
+    },
+    {
+      "path": "native/include/g1/Scene.hpp",
+      "bytes": 1281,
+      "sha256": "26dda9945692d72f663909b427d745f93bd5c9e61cf72b6cbc22d69462c968d4"
+    },
+    {
+      "path": "native/src/Scene.cpp",
+      "bytes": 2662,
+      "sha256": "20205229fbcc8ad80c8bf306f93f2006696d451687d48335771b4797f6140705"
+    },
+    {
+      "path": "native/src/Image.cpp",
+      "bytes": 2645,
+      "sha256": "a3f4d8e18f82699138ef6948bbd72e7402c98e2e4973c6cba5096cb220564e4f"
+    },
+    {
+      "path": "native/include/g1/InitialPresentation.hpp",
+      "bytes": 753,
+      "sha256": "d93dfa36787ea2928c261372613b8a0b843aab62ad02f9f1bacb2021cfe90bf0"
+    },
+    {
+      "path": "native/src/InitialPresentation.cpp",
+      "bytes": 2581,
+      "sha256": "bd2a16f05c1ce3b3eabbb92c2e433c9a0b68937cf7dd9eec3c82cf2c4250137f"
+    },
+    {
+      "path": "native/CMakeLists.txt",
+      "bytes": 5875,
+      "sha256": "529a05031314e53ef77dfdaf2ab3f0ead4aecf580eb1e32f680b06e3b4ffd68e"
+    },
+    {
+      "path": "scripts/package-native-scene.py",
+      "bytes": 8205,
+      "sha256": "cb3a940fb62e1335ae6d4cabdc07bef55b9a88a644ece54debabcb05a12e725d"
+    },
+    {
+      "path": "scripts/verify-native-app.py",
+      "bytes": 4785,
+      "sha256": "475c8731ef75711038b67d9dfe9a535defa72558cbf99d5b45831e434667e207"
+    },
+    {
+      "path": ".github/workflows/native-core.yml",
+      "bytes": 4736,
+      "sha256": "314acbf8ccacb5271b32463906c272f988b4013c588b7e16d842dab85d91678a"
+    }
+  ],
+  "blocking_findings": [],
+  "checked_contracts": [
+    "World bootstrap remains stopped before presentation/dialogue opcode; app labels unfinished campaign controls.",
+    "Resource309 is 207 counted bytes; initial form0/action1 animation selection is checked against descriptor animations.",
+    "Atlas parser validates frame indices; animation constructor rejects empty/zero-duration sequences before indexed app use.",
+    "CPU SceneVertex32-byte/UVoffset16 and Uniform80-byte layouts match shader structs; column-major matrix multiplication is consistent.",
+    "PNG decoder returns straight RGBA; Metal uses matching source-alpha RGB and one/one-minus-source-alpha alpha blending.",
+    "ObjC++17 and ARC are set for renderer, app and probe; required frameworks are linked.",
+    "GPU/scene resource failures pause rendering; asynchronous completion/presentation callbacks use weak references and main-queue dispatch.",
+    "Presentation statistics use drawable presentedTime, with explicit recent-scene-only scope; elapsed milliseconds drive animation independently of frame count.",
+    "Packager bounds ZIP input and rejects unsafe/repeated/symlink/encrypted entries; only expected app members enter output.",
+    "Packager verifies thin native ARM64 Mach-O, iPhoneOS17.5, bundle identity, source-commit/executable-hash agreement and exact original-data hashes.",
+    "Only iphone.big and the verified480-byte terrain data tables are added; original Mach-O executable and compatibility runtime are not added.",
+    "Output ZIP re-read verifies inventory and byte equality; native executable mode755 is preserved in finalIPA."
+  ],
+  "local_checks": {
+    "python_ast_parse": [
+      "scripts/package-native-scene.py",
+      "scripts/verify-native-app.py"
+    ],
+    "apple_compilation_performed_by_this_review": false,
+    "metal_execution_performed_by_this_review": false,
+    "device_execution_performed_by_this_review": false,
+    "additional_data_tests": false
+  },
+  "limits": [
+    "Inspection camera, culling/blending and whole-scene composition are not original-renderer parity claims.",
+    "No original-game full playthrough, campaign execution, native save/reload, audio/lifecycle acceptance or sustained iPhoneXR frame-rate validation is established by this review.",
+    "The code artifact is authenticated by expected commit/source-controlled CI context plus recorded hashes, not a cryptographic signature from this script.",
+    "Metal offscreen test uses synthetic pixels and reports unavailable devices as skipped; it is not iPhone gameplay evidence."
+  ]
+}

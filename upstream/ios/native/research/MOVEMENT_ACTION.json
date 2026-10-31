@@ -1,0 +1,51 @@
+{
+  "scope": "Original route reconstruction, per-tick unit travel, ordinary undo and unit turn-reset primitive",
+  "source_frozen": true,
+  "native_module": "MovementAction",
+  "source_files_sha256": {
+    "native/include/g1/MovementAction.hpp": "4de89a3a714fd9cfc570e2fadf539c7b2728d05b255e1617df1a1ec2b9539992",
+    "native/src/MovementAction.cpp": "4c519b8c7c1cb75a8cb696f9852452f6f7bae60e855f0cc26b5fe1ab558ae4f9",
+    "native/tests/movement_action_test.cpp": "38fe7b67b0b18f73e0bb5cb3859fd6c114dac3861b75af132a3306fe5465ba6b",
+    "analysis_tools/movement_action/probe.cpp": "1d21de8e95fa83a4167b88aa96f0243716d36a3b3c411cb9eb7c3c08275d9c25",
+    "analysis_tools/movement_action/oracle.py": "7bcecdcf7f890643f8700e23d979c99ff03092a6062da0611e984572c157aa15",
+    "analysis_tools/movement_action/README.md": "73e1873dd897ac133ae427a959af0a333e2b7d1daacfbcb84b1bc79a202c1265",
+    "native/research/MOVEMENT_ACTION.md": "69dada926769d8446f44aae5278015e9f9231c0dae539f4911ec877446af3895"
+  },
+  "contracts": {
+    "passed": 36,
+    "compiler": "g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror"
+  },
+  "reference": {
+    "original_sha256": "0d510516fe3676ee4a0f4dff60ba64e1c5bf79a0c9800f420b1bbdb1c12febfd",
+    "unicorn_version": "2.1.4",
+    "case_count": 136,
+    "state_count": 4820,
+    "state_scalar_comparisons": 91580,
+    "route_scalar_comparisons": 690,
+    "instruction_patches": 0,
+    "function_stubs": 0,
+    "readonly_original_text_verified": true,
+    "native_original_exact_match": true,
+    "synthetic_state": true,
+    "full_game_execution": false
+  },
+  "reference_artifact": {
+    "path": "native/research/movement_action_validation/original_actions.json",
+    "sha256": "4be274515da01e656109614e10bedeeb0bc60642c2ba1bc03df07d2fa5a5236d",
+    "bytes": 1779791
+  },
+  "in_native_app": false,
+  "simulation_cadence_selected_by_module": false,
+  "display_fps_claim": null,
+  "unimplemented": [
+    "command admission and menu eligibility",
+    "occupied destination or transport permission",
+    "arrival callback0x59798",
+    "selection cancellation or moving-action interruption",
+    "special/transform undo",
+    "world occupancy synchronization",
+    "capture/combat/mission consequences"
+  ],
+  "native_product_contains_emulator": false,
+  "native_product_reads_original_executable": false
+}
