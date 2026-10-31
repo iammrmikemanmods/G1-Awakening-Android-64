@@ -1,0 +1,18 @@
+/workspace/scratch/94d9059342e2/install-diagnostics/G1-Awakening-Android64-v0.1.1-dev.apk: 1 file pushed, 0 skipped. 9.0 MB/s (39533625 bytes in 4.181s)
+
+Exception occurred while executing 'install':
+java.lang.IllegalArgumentException: Error: Failed to parse APK file: /data/local/tmp/G1-Awakening-Android64-v0.1.1-dev.apk: Requires newer sdk version #36 (current version is #31)
+	at com.android.server.pm.PackageManagerShellCommand.setParamsSize(PackageManagerShellCommand.java:581)
+	at com.android.server.pm.PackageManagerShellCommand.doRunInstall(PackageManagerShellCommand.java:1337)
+	at com.android.server.pm.PackageManagerShellCommand.runInstall(PackageManagerShellCommand.java:1303)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:193)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService.onShellCommand(PackageManagerService.java:24627)
+	at android.os.Binder.shellCommand(Binder.java:950)
+	at android.os.Binder.onTransact(Binder.java:834)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4818)
+	at com.android.server.pm.PackageManagerService.onTransact(PackageManagerService.java:8506)
+	at android.os.Binder.execTransactInternal(Binder.java:1184)
+	at android.os.Binder.execTransact(Binder.java:1143)
+Performing Push Install

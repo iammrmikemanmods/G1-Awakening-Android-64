@@ -87,10 +87,30 @@ bool boolean(const std::string &document, const std::string &key) {
     require(value == "true" || value == "false", "Missing boolean diagnostics field: " + key);
     return value == "true";
 }
+std::string accessible_label(const std::string &document, std::uint64_t id) {
+    static const std::regex object(R"re(\{[^{}]+\})re");
+    for (std::sregex_iterator it(document.begin(), document.end(), object), end; it != end; ++it) {
+        const auto node = it->str();
+        if (number(node, "id") == id)
+            return field(node, "label");
+    }
+    throw std::runtime_error("Missing presented accessibility node " + std::to_string(id));
+}
 struct Target {
     int id{}, value{};
     float x{}, y{};
 };
+g1::Bytes portrait_pixels(const Target &target) {
+    // Read the center of the visible portrait through its ordinary Tech Specs
+    // touch target, avoiding any private UI state or asset-loader assumption.
+    constexpr int edge = 12;
+    g1::Bytes pixels(edge * edge * 4);
+    glReadPixels(std::clamp(int(target.x) - edge / 2, 0, width - edge),
+                 std::clamp(height - int(target.y) - edge / 2, 0, height - edge),
+                 edge, edge, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
+    require(glGetError() == GL_NO_ERROR, "Portrait readback failed");
+    return pixels;
+}
 struct UnitTarget {
     std::uint64_t index{}, form{};
     int tile_x{}, tile_y{};
@@ -581,6 +601,7 @@ int main(int argc, char **argv) {
     try {
         require(argc == 3, "usage: game_probe GAME_RESOURCE_ROOT OUTPUT_DIRECTORY");
         const std::string resources = argv[1], output = argv[2];
+        const bool ui_name_smoke = std::getenv("G1_UI_NAME_SMOKE") != nullptr;
         std::filesystem::create_directories(output);
         std::ofstream(output + "/game-probe-report.json") << "{\"status\":\"running\"}\n";
         // Unique, initially absent save directory: never edits a user's profile.
@@ -736,6 +757,15 @@ int main(int argc, char **argv) {
         probe.capture("game-tech-specs-vehicle-a36");
         probe.click(g1::android::ui_specs_back);
         require(number(probe.state, "panel") == 0, "Tech Specs Back did not restore tactical play");
+        const auto robot_hud =
+            accessible_label(probe.game->accessibilitySnapshot(true).value_or(""), 4);
+        const auto name_end = robot_hud.find(". Health ");
+        require(name_end != std::string::npos && name_end > 0,
+                "Selected robot HUD did not expose its name and health");
+        const auto selected_name = robot_hud.substr(0, name_end);
+        const auto robot_portrait_target = target(probe.state, g1::android::ui_tech_specs);
+        require(bool(robot_portrait_target), "Selected robot portrait has no Tech Specs target");
+        const auto robot_portrait = portrait_pixels(*robot_portrait_target);
         const auto transforms = number(probe.state, "transform_actions");
         probe.click(g1::android::ui_transform);
         require(number(probe.state, "transform_actions") == transforms + 1,
@@ -745,7 +775,35 @@ int main(int argc, char **argv) {
         const auto transformed = friendly(probe.state);
         require(transformed && transformed->form != selectable->form,
                 "Source unit form did not finish changing");
+        const auto vehicle_hud =
+            accessible_label(probe.game->accessibilitySnapshot(true).value_or(""), 4);
+        require(vehicle_hud.rfind(selected_name + ". Health ", 0) == 0,
+                "Transformation replaced the Transformer name with a quote or form-dependent text");
+        const auto vehicle_portrait_target = target(probe.state, g1::android::ui_tech_specs);
+        require(bool(vehicle_portrait_target) &&
+                    portrait_pixels(*vehicle_portrait_target) == robot_portrait,
+                "Transformation changed or removed the selected Transformer portrait");
         probe.capture("game-transform-completed-a36");
+        if (ui_name_smoke) {
+            std::ofstream report(output + "/game-probe-report.json");
+            report << "{\n  \"status\":\"passed\",\n"
+                   << "  \"kind\":\"Focused public-touch name/portrait regression on offscreen "
+                      "AndroidGame GLES; not an Android device test or full campaign pass\",\n"
+                   << "  \"frames\":" << probe.frames << ",\n"
+                   << "  \"public_touch_events\":" << probe.touches << ",\n"
+                   << "  \"selected_unit_name\":" << json(selected_name) << ",\n"
+                   << "  \"unit_name_preserved_across_transform\":true,\n"
+                   << "  \"selected_portrait_preserved_across_transform\":true,\n"
+                   << "  \"robot_hud_label\":" << json(robot_hud) << ",\n"
+                   << "  \"vehicle_hud_label\":" << json(vehicle_hud) << "\n}\n";
+            require(bool(report), "Focused UI regression report write failed");
+            probe.game->pause();
+            probe.game->detachGraphics();
+            probe.game.reset();
+            std::cout << "Name/portrait regression passed: " << selected_name << ", "
+                      << probe.frames << " rendered frames.\n";
+            return 0;
+        }
         const auto moves = number(probe.state, "move_actions");
         probe.click(g1::android::ui_move);
         const auto destination = adjacent(probe.state, *transformed);
@@ -933,6 +991,8 @@ int main(int argc, char **argv) {
                << "  \"classic_and_modern\": true, \"modern_sprite_fallbacks\": 0,\n"
                << "  \"unit_selection\": true, \"tech_specs_robot_and_vehicle_models\": true, "
                   "\"source_transform_action\": true,\n"
+               << "  \"unit_name_preserved_across_transform\": true, "
+                  "\"selected_portrait_preserved_across_transform\": true,\n"
                << "  \"two_tap_movement_confirmation\": true, \"source_movement_completed\": true, "
                   "\"source_movement_undo\": true,\n"
                << "  \"display120hz_preserves30ms_simulation\": true, \"original_battle\": true, "

@@ -260,6 +260,36 @@ struct AndroidUI::Impl {
     void solid(Rect destination, Color color) {
         quad(destination, white_texture, {{0, 0, 1, 1}}, color);
     }
+    static Rect inset(Rect r, double amount) noexcept {
+        return {r.x + amount, r.y + amount, std::max(0.0, r.width - 2 * amount),
+                std::max(0.0, r.height - 2 * amount)};
+    }
+    // Keep the original G1 steel/red palette, but give every tappable control
+    // an opaque face and a real edge. These are surface-pixel shapes rather
+    // than enlarged artwork, so their borders stay clear at any resolution.
+    // The caller's original hit rectangle is deliberately unchanged.
+    void buttonChrome(Rect r, bool enabled) {
+        const double s = screen.scale;
+        const Color rim = enabled ? Color{{.68F, .73F, .79F, 1}}
+                                  : Color{{.30F, .34F, .39F, 1}};
+        const Color face = enabled ? Color{{.075F, .027F, .042F, .98F}}
+                                   : Color{{.055F, .065F, .080F, .98F}};
+        const Color accent = enabled ? Color{{.87F, .075F, .11F, 1}}
+                                     : Color{{.22F, .25F, .29F, 1}};
+        solid(r, {{.008F, .012F, .022F, 1}});
+        solid(inset(r, s), rim);
+        solid(inset(r, 2 * s), face);
+        solid({r.x + 2 * s, r.y + 2 * s, r.width - 4 * s, s},
+              enabled ? Color{{.90F, .93F, .97F, 1}} : Color{{.40F, .44F, .49F, 1}});
+        solid({r.x + 2 * s, r.y + 3 * s, r.width - 4 * s, 2 * s}, accent);
+        solid({r.x + 2 * s, r.bottom() - 4 * s, r.width - 4 * s, 2 * s},
+              {{.018F, .022F, .035F, 1}});
+        // Recessed corner cuts echo the original mechanical HUD frame.
+        const double corner = 2 * s;
+        for (const auto x : {r.x, r.right() - corner})
+            for (const auto y : {r.y, r.bottom() - corner})
+                solid({x, y, corner, corner}, {{.008F, .012F, .022F, 1}});
+    }
     void image(std::uint32_t id, Rect destination, std::optional<Rect> source = {},
                Color tint = white) {
         auto &p = picture(id);
@@ -608,11 +638,9 @@ struct AndroidUI::Impl {
             describe(3, scroll_region, p.title, {}, {}, {}, true, scroll_position < scroll_maximum,
                      scroll_position > 0);
             const auto draw_button = [&](const UiButton &button, Rect r) {
-                solid(r, {{.68F, .22F, .26F, 1}});
-                solid({r.x + s, r.y + s, r.width - 2 * s, r.height - 2 * s},
-                      {{.18F, .024F, .045F, .96F}});
+                buttonChrome(r, button.enabled);
                 line(button.label, {r.x + 8 * s, r.y + 2 * s, r.width - 16 * s, r.height - 4 * s},
-                     15 * s, slot, 1, button.enabled ? white : Color{{.5F, .5F, .5F, 1}}, true);
+                     15 * s, slot, 1, button.enabled ? white : Color{{.58F, .61F, .65F, 1}}, true);
                 const auto visible = intersection(r, clip ? *clip : screen.full);
                 if (visible.width > 0 && visible.height > 0)
                     target(visible, button.action, button.enabled, button.label);
@@ -666,8 +694,9 @@ struct AndroidUI::Impl {
                 const Rect r = source(
                     {26 + column * (cell + 3), center - total_height / 2 + row * 33, cell, 29});
                 const auto &b = p.buttons[i];
+                buttonChrome(r, b.enabled);
                 line(uppercase(b.label), {r.x + 4 * s, r.y + s, r.width - 8 * s, r.height - 2 * s},
-                     15 * s, 6, 1, b.enabled ? white : Color{{1, 1, 1, .38F}}, true);
+                     15 * s, 0, 1, b.enabled ? white : Color{{.58F, .61F, .65F, 1}}, true);
                 target(r, b.action, b.enabled, b.label);
             }
         } else {
@@ -701,12 +730,11 @@ struct AndroidUI::Impl {
                 const Rect r{screen.safe.x + 15 * s + column * (cell + gap),
                              screen.safe.bottom() - 15 * s - (rows - row) * (button_height + gap),
                              cell, button_height};
-                solid(r, {{.68F, .22F, .26F, 1}});
-                solid({r.x + s, r.y + s, r.width - 2 * s, r.height - 2 * s},
-                      {{.18F, .024F, .045F, .96F}});
+                buttonChrome(r, p.buttons[i].enabled);
                 line(p.buttons[i].label,
                      {r.x + 4 * s, r.y + 2 * s, r.width - 8 * s, r.height - 4 * s}, 13 * s,
-                     platform_slot, 1, p.buttons[i].enabled ? white : Color{{.5F, .5F, .5F, 1}},
+                     platform_slot, 1,
+                     p.buttons[i].enabled ? white : Color{{.58F, .61F, .65F, 1}},
                      true);
                 target(r, p.buttons[i].action, p.buttons[i].enabled, p.buttons[i].label);
             }
@@ -729,20 +757,21 @@ struct AndroidUI::Impl {
             if (id)
                 fitImage(id, p({1, 0, 60, 61}));
             if (t.shows_unit) {
-                line(t.name, p({94, 21, 126 + extra, 18}), 13 * s, 4, 0, white, true);
-                line(std::to_string(t.health), p({73, 39, 46, 18}), 12 * s, 4);
-                line("ATK", p({217 + extra, 20, 49, 14}), 11 * s, 4);
-                line("DEF", p({279 + extra, 20, 37, 14}), 11 * s, 4);
-                line("SPD", p({316 + extra, 20, 37, 14}), 11 * s, 4);
+                line(t.name, p({94, 21, 126 + extra, 18}), 13 * s, 0, 0, white, true);
+                line("HP " + std::to_string(t.health), p({73, 39, 46, 18}), 12 * s, 2,
+                     0, white, true);
+                line("ATK", p({217 + extra, 20, 49, 14}), 11 * s, 2);
+                line("DEF", p({279 + extra, 20, 37, 14}), 11 * s, 2);
+                line("SPD", p({316 + extra, 20, 37, 14}), 11 * s, 2);
                 line(std::to_string(t.attack_low) + "-" + std::to_string(t.attack_high),
-                     p({217 + extra, 39, 57, 17}), 12 * s, 4, 0, white, true);
-                line(std::to_string(t.defense), p({282 + extra, 39, 34, 17}), 12 * s, 4);
-                line(std::to_string(t.speed), p({318 + extra, 39, 32, 17}), 12 * s, 4);
+                     p({217 + extra, 39, 57, 17}), 12 * s, 2, 0, white, true);
+                line(std::to_string(t.defense), p({282 + extra, 39, 34, 17}), 12 * s, 2);
+                line(std::to_string(t.speed), p({318 + extra, 39, 32, 17}), 12 * s, 2);
             } else {
-                line(t.name, p({85, 21, 243 + extra, 14}), 12 * s, 4, 0, white, true);
+                line(t.name, p({85, 21, 243 + extra, 14}), 12 * s, 0, 0, white, true);
                 line(t.objective, p({84, 37, 249 + extra, 17}), 9 * s, 2, 0, white, true);
             }
-            line(std::to_string(t.funds), p({400 + extra, 39, 29, 16}), 11 * s, 4, 0, white, true);
+            line(std::to_string(t.funds), p({400 + extra, 39, 29, 16}), 11 * s, 2, 0, white, true);
             describe(
                 4, bar,
                 t.shows_unit
@@ -757,28 +786,44 @@ struct AndroidUI::Impl {
         if (!t.commands)
             return;
         const auto button = [&](Rect r, adaptive::Anchor anchor, int id, std::uint32_t on,
-                                std::uint32_t off, bool enabled) {
+                                std::uint32_t off, bool enabled, const char *label) {
             const auto rect = screen.place(r, anchor);
-            fitImage(enabled ? on : off, rect);
+            const auto face = inset(rect, s);
+            buttonChrome(face, enabled);
+            fitImage(enabled ? on : off,
+                     {face.x + 4 * s, face.y + 5 * s, face.width - 8 * s, face.height - 16 * s});
+            line(label,
+                 {face.x + 3 * s, face.bottom() - 13 * s, face.width - 6 * s, 10 * s},
+                 8 * s, 0, 1, enabled ? white : Color{{.58F, .61F, .65F, 1}}, true);
             target(rect, {id, 0}, enabled, {}, {},
                    id == ui_upgrade && t.shows_unit ? std::to_string(t.upgrade_cost) + " Energon"
                                                     : std::string{});
         };
         using namespace original_presentation;
-        button(source_left_actions[0], adaptive::Anchor::start, ui_heal, 669, 726, t.heal);
-        button(source_left_actions[1], adaptive::Anchor::start, ui_attack, 660, 850, t.attack);
-        button(source_left_actions[2], adaptive::Anchor::start, ui_undo, 793, 1076, t.undo);
+        button(source_left_actions[0], adaptive::Anchor::start, ui_heal, 669, 726, t.heal, "REPAIR");
+        button(source_left_actions[1], adaptive::Anchor::start, ui_attack, 660, 850, t.attack,
+               "ATTACK");
+        button(source_left_actions[2], adaptive::Anchor::start, ui_undo, 793, 1076, t.undo, "UNDO");
         const bool deploying = t.deploy && !t.build;
         button(source_left_actions[3], adaptive::Anchor::start, deploying ? ui_deploy : ui_build,
-               deploying ? 919 : 442, deploying ? 633 : 548, deploying ? t.deploy : t.build);
-        button(source_right_actions[0], adaptive::Anchor::end, ui_move, 1118, 721, t.move);
-        button(source_right_actions[1], adaptive::Anchor::end, ui_capture, 919, 633, t.capture);
+               deploying ? 919 : 442, deploying ? 633 : 548, deploying ? t.deploy : t.build,
+               deploying ? "DEPLOY" : "BUILD");
+        button(source_right_actions[0], adaptive::Anchor::end, ui_move, 1118, 721, t.move, "MOVE");
+        button(source_right_actions[1], adaptive::Anchor::end, ui_capture, 919, 633, t.capture,
+               "CAPTURE");
         button(source_right_actions[2], adaptive::Anchor::end, ui_transform,
-               t.vehicle_form ? 591 : 904, t.vehicle_form ? 1191 : 433, t.transform);
-        button(source_right_actions[3], adaptive::Anchor::end, ui_upgrade, 1118, 721, t.upgrade);
+               t.vehicle_form ? 591 : 904, t.vehicle_form ? 1191 : 433, t.transform, "TRANSFORM");
+        button(source_right_actions[3], adaptive::Anchor::end, ui_upgrade, 1118, 721, t.upgrade,
+               "UPGRADE");
         const auto end = screen.place(original_presentation::end_turn, adaptive::Anchor::center,
                                       adaptive::Anchor::start);
-        fitImage(454, end);
+        buttonChrome(inset(end, s), t.end_turn);
+        fitImage(454, {end.x + 15 * s, end.y + 4 * s, end.width - 30 * s, end.height - 17 * s});
+        if (!t.end_turn)
+            solid({end.x + 15 * s, end.y + 4 * s, end.width - 30 * s, end.height - 17 * s},
+                  {{.045F, .055F, .07F, .65F}});
+        line("END TURN", {end.x + 4 * s, end.bottom() - 14 * s, end.width - 8 * s, 10 * s},
+             8 * s, 0, 1, t.end_turn ? white : Color{{.58F, .61F, .65F, 1}}, true);
         target(end, {ui_end_turn, 0}, t.end_turn);
     }
     Rect dialogueArea() const noexcept {

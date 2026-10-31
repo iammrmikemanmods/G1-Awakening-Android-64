@@ -1,97 +1,67 @@
-# Android port validation — 0.1.1-dev
+# Android installation and UI validation — 0.1.2-dev
 
-Date: 31 October 2026. This record distinguishes source identity, compilation,
-desktop execution of the Android host, emulator installation and physical-device
-acceptance. The target remains Samsung Galaxy A36 on Android 16/API 36 or later.
+Date: 31 October 2026. This update supports **64-bit Android 12/API 31 or later**, retains target SDK 36, and improves the Android control presentation. The Galaxy A36 was the original device target; the phone in the installation report was subsequently confirmed to run Android 12.
 
-## Current verified results
+## Installation failure reproduced and repaired
+
+The exact GitHub BETA asset `G1-Awakening-Android64-v0.1.1-dev.apk` has SHA-256 `2ff8d0052d75b6d5f897893e7ffb9a92eaab56739ae94c83e52d4febe4a97b37`. It is a valid signed package, but declares minimum API 36. An official Android 12/API 31 emulator rejects it with:
+
+```text
+Failed to parse APK file: Requires newer sdk version #36 (current version is #31)
+```
+
+The replacement changes both the application minimum and native compilation floor to API 31. Newer Back, receiver and accessibility APIs are used only on Android versions that provide them. The **exact signed replacement APK** was installed on the same Android 12 emulator using `adb install --no-streaming -r`:
+
+```text
+Performing Push Install
+Success
+```
+
+The installed package independently reports versionCode 3, versionName `0.1.2-dev`, minimum API 31, target API 36 and x86_64 native execution. Its ARM64 library is included in that same APK for compatible phones.
+
+Evidence: [old rejection](validation/install-0.1.2/old-apk-rejection.txt), [new installation](validation/install-0.1.2/api31-install.txt), [installed package](validation/install-0.1.2/api31-installed-package.txt), and [emulator platform](validation/install-0.1.2/api31-environment.json).
+
+## Current verification
 
 | Check | Result | Evidence |
 | --- | --- | --- |
-| Pinned iOS source and licence | All 769 files byte-identical to Build 017 | [Source provenance](SOURCE_PROVENANCE.json) |
-| Original 017R1 resources | All 98 files byte-identical, including 88 clean PNGs and the iOS intro | [APK resource verification](validation/resume-0.1.1/apk-verification.json) |
-| Portable core tests | 72/72 passed with Debug assertions | [CTest report](validation/resume-0.1.1/host-core.xml) |
-| GLES renderer | 127 pixel/state checks passed | [Renderer report](validation/resume-0.1.1/renderer-report.json) |
-| Original UI contracts | Fonts, menus, dialogue, controls, scrolling production choices, safe-area geometry and accessibility mapping passed | [UI report](validation/resume-0.1.1/ui-contract-report.json) |
-| Audio failure recovery | Eight scenarios passed with original planner/decoder and injected AAudio device calls | [Audio report](validation/resume-0.1.1/audio-recovery-report.json) |
-| Public-touch game integration | 1,832 rendered frames; 83 touches; Mission 1 complete; Mission 2 control/unlock/checkpoint | [Gameplay report](validation/resume-0.1.1/game-probe-report.json) |
-| Supersampling allocation failure | Native 2340 × 1080 frame successfully presented, then 3510 × 1620 supersampling recovered | [Gameplay report](validation/resume-0.1.1/game-probe-report.json) |
-| Android native/Java builds | Optimized ARM64 release and x86_64 debug passed | [Build gates](validation/resume-0.1.1/build-gates.json) |
-| Android lint | Zero errors; nine advisory warnings in each variant | [Debug](validation/resume-0.1.1/lint-debug.xml), [release](validation/resume-0.1.1/lint-release.xml) |
-| Missing resource package | Actual Gradle package task rejected; source-only compile/lint still passed | [Rejection](validation/resume-0.1.1/package-without-assets.txt), [source-only build](validation/resume-0.1.1/source-only-no-assets.txt) |
-| Resource corruption | A single changed intro byte and an extra unmanifested file were rejected | [Asset rejection report](validation/resume-0.1.1/asset-rejection-report.json) |
-| APK integrity/signing/alignment | ZIP CRCs, original resources, signature, ARM64 ELF64 and 16 KB ELF/APK alignment passed | [APK verification](validation/resume-0.1.1/apk-verification.json), [signature](validation/resume-0.1.1/apk-signature.txt), [alignment](validation/resume-0.1.1/apk-zip-alignment.txt) |
+| Pinned iOS source and licence | All 769 files byte-identical | [Source/resource verification](validation/install-0.1.2/apk-verification.json) |
+| Original game resources and intro | All 98 files byte-identical in the final APK | [APK verification](validation/install-0.1.2/apk-verification.json) |
+| Release native/Java compilation | ARM64 and x86_64, native API 31 | [Build gates](validation/install-0.1.2/build-gates.json) |
+| Android compatibility lint | Zero errors; eleven advisory warnings | [Lint report](validation/install-0.1.2/lint-release.xml) |
+| Signature and upgrade identity | Valid; same certificate and application ID as 0.1.1 | [Signature](validation/install-0.1.2/apk-signature.txt) |
+| APK/native alignment | 16 KB ZIP and ELF LOAD alignment passed | [ZIP alignment](validation/install-0.1.2/apk-zip-alignment.txt), [ELF verification](validation/install-0.1.2/apk-verification.json) |
+| Android 12 installation | Exact delivered APK accepted | [Install log](validation/install-0.1.2/api31-install.txt) |
+| Android 12 Activity launch | Cold launch accepted with Status: ok; actual updated G1 menu visually verified after system recovery | [Launch log](validation/install-0.1.2/api31-launch.txt), [runtime record](validation/install-0.1.2/android-runtime.json) |
+| Android 12 menu, Settings, Back and accessibility | Actual APK menu controls presented; Settings opened; legacy Back returned to Main Menu | [Navigation check](validation/install-0.1.2/api31-navigation.txt), [menu hierarchy](validation/install-0.1.2/api31-menu-accessibility.xml), [Settings](validation/install-0.1.2/api31-settings-accessibility.xml), [Back result](validation/install-0.1.2/api31-back-menu-accessibility.xml) |
+| UI rendering/input contracts | 510 source-font dialogue layouts; menu, production, accessibility and disabled-control checks passed | [UI contracts](validation/install-0.1.2/ui-contract-report.json) |
+| Updated UI over actual game state | 1,832 frames / 83 public touches; Mission 1 completed, Mission 2 entered and checkpoint restored | [UI/game integration](validation/install-0.1.2/gameplay-ui-integration.json) |
+| Transformed name and portrait | Final code: 238 frames / 24 public touches; Bumblebee's name and rendered portrait retained | [Focused regression](validation/install-0.1.2/transformed-hud-regression.json) |
 
-## Gameplay coverage and its limits
+## UI changes and test scope
 
-The gameplay probe runs the actual Android C++ host with the exact original
-resources on Mesa llvmpipe EGL/OpenGL ES, at 2340 × 1080 with a 72 px safe inset.
-Desktop system-font rendering uses DejaVuSansMono; the Android app uses Canvas.
+Menu, result, production and tactical buttons now have opaque dark faces, steel borders and red accents. Enabled and disabled states are visually distinct. Tactical icons retain their original artwork and gain action captions. HUD names, health, combat statistics and Energon values use the original white font instead of low-contrast red text on red panels.
 
-The test starts a fresh profile, enters Story and Mission 1 through real menus,
-handles original dialogue and presentation gates, and uses enabled public touch
-targets. It covers Classic/Modern, Tech Specs robot/vehicle models, transformation,
-two-tap movement, Undo, normal end turns and AI movement, real M3G battles,
-objective capture, Mission Complete results and the player's Continue action.
-The campaign controller then installs Mission 2. Mission 2 is naturally unlocked
-while Mission 3 remains locked, and Continue restores the Mission 2 checkpoint.
+A real-game render exposed a separate name lookup defect: the second unit text entry is a quotation, not a vehicle-form name. Two Android host lookups now consistently use the canonical name for tactical and battle labels. This also restores the transformed unit's portrait lookup. The regression drives transformation through public touch input and checks the presented accessibility label and portrait framebuffer pixels.
 
-Presentation checks reject a failed final battle frame, prevent stale receipts
-at pause, preserve the 30 ms simulation cadence at 120 Hz, replace the actual
-host GL context, and resume without catching up background time. A host-only
-linker wrapper rejects one framebuffer allocation; the game presents a native
-frame successfully and returns to supersampling on the next frame. The wrapper
-is not compiled into the Android application.
+The full 1,832-frame integration run used the new button presentation and completed immediately before the two final name-lookup corrections. The 238-frame focused regression ran afterward against the final application code. These are separate results; the focused run is not another whole campaign pass.
 
-No game stats, mission progress, profile unlocks or RNG were injected. These are
-real host interactions, but they do not exercise Android Java lifecycle or a
-Samsung driver. Heal, upgrade, production and the support-tutorial action path
-are outside this probe's newly exercised gameplay. Entire Story, Showdown and
-Arena playthroughs remain unverified on Android.
+The main-menu preview supplied with this update is a capture from the Android 12 emulator running the exact delivered APK. The gameplay UI preview is an actual offscreen GLES render of AndroidGame with original resources. Neither is a physical Samsung capture. The unchanged core's 72 tests, 127 renderer checks and eight audio recovery scenarios were last run for 0.1.1; [that historical validation](docs/VALIDATION_0_1_1.md) is retained and is not relabelled as new testing.
 
-## APK and update identity
+## APK identity
 
-The delivered optimized development APK is:
-
-- `G1-Awakening-Android64-v0.1.1-dev.apk`
-- 39,533,625 bytes; ARM64 only; minimum and target API 36.
-- Version name `0.1.1-dev`, version code `2`.
-- SHA-256: `2ff8d0052d75b6d5f897893e7ffb9a92eaab56739ae94c83e52d4febe4a97b37`.
+- File: `G1-Awakening-Android64-v0.1.2-dev.apk`
+- Size: **42,118,076 bytes**.
+- Version: `0.1.2-dev`; versionCode `3`.
+- Minimum/native API: `31`; target/compile API: `36`.
+- Native ABIs: `arm64-v8a` and `x86_64`.
+- SHA-256: `b0b79c6e2304a8f8fbce07f9445288967f02443994d330bfa9026b697a031939`.
 - Signing certificate SHA-256: `303fcdd4074d308738d01d667dc2c6f1ccca8eee32fc077f367a2ccea91dbf29`.
 
-The certificate and application ID match the previous 0.1.0 development build.
-The private key was recovered locally and was not committed. The Android source
-and build inputs used for this pass are fingerprinted in
-[android-source-fingerprint.json](validation/resume-0.1.1/android-source-fingerprint.json).
+The retained certificate and application ID permit updates without deleting private saves. Do not uninstall or clear storage to work around an update error when saves must be retained. Build inputs are recorded in [the source fingerprint](validation/install-0.1.2/android-source-fingerprint.json).
 
-## Current Android emulator result: incomplete
+## Runtime limits
 
-The official Android 16 x86_64 emulator completed boot and accepted the final
-same-signer update over the previous installation, without uninstalling or
-clearing application data. The MainActivity launch request was accepted.
+Installation and Activity startup are independently verified on the official Android 12 x86_64 emulator. This host has no KVM acceleration; the emulator's System UI displayed an ANR during the first launch. After system recovery, the actual G1 main menu was visually verified. Its accessibility controls, Settings button and legacy Android12 Back navigation passed. This does not establish every mission, audio route or Android lifecycle transition. See the final [Android runtime record](validation/install-0.1.2/android-runtime.json) for the exact observed scope.
 
-The emulator then displayed **Process system isn't responding** and later
-**Quickstep isn't responding**. This environment has no KVM; the emulator was
-using software CPU emulation. A settled game menu or mission could not be
-verified in this pass. The result is **incomplete runtime acceptance**, not a
-passed Android gameplay test and not proof of an application defect.
-
-Exact scope and observations are recorded in
-[emulator-runtime.json](validation/resume-0.1.1/emulator-runtime.json).
-The successful menu/Home/Back smoke from 0.1.0 is historical evidence, preserved
-in [the initial validation record](docs/VALIDATION_0_1_0.md). It is not reused as
-a new runtime pass for 0.1.1. The current original-intro check is byte identity;
-this pass does not claim a new physical-device movie playback test.
-
-## Remaining device acceptance
-
-No physical Galaxy A36 is attached. Test the delivered ARM64 APK on the target
-phone: opening cinematic, menus, missions, sound/music, save/Continue, Back,
-TalkBack, interruptions, process recreation and sustained Classic/Modern use.
-Record the APK hash and Android build with the result. Complete the original
-campaign modes through natural unlocks before declaring whole-game device
-parity. Hardware audibility, touch latency, driver behavior and thermal
-performance require their own observations.
-
-The [update record](docs/DEVELOPMENT_0_1_1.md) explains the changes. Platform
-substitutions remain documented in [PORT_PARITY.md](PORT_PARITY.md).
+No physical phone is attached. Full Story, Showdown and Arena playthroughs, physical ARM64 graphics-driver behaviour, audible audio/video, touch latency, TalkBack, sustained Modern performance and an Android 16 runtime regression remain device-validation work. No whole-game 100% verification claim is made.

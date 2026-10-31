@@ -44,6 +44,10 @@ these APIs while retaining the source data and orchestration:
 - Android Back and safe insets replace UIKit navigation/system margins. Low-power,
   serious thermal and memory-pressure signals feed the unchanged source quality
   policy; UI remains at the display's native resolution.
+- Android 12/API 31 is the runtime and native minimum from 0.1.2. API 33+
+  uses the newer Back dispatcher and receiver export flags; API 34+ uses
+  accessibility window bounds. Older versions use the corresponding guarded
+  Android host paths. Compile and target SDK remain 36.
 
 ## Intentional Android host fixes
 
@@ -69,11 +73,24 @@ These fixes are in Android adapters; the authoritative core remains untouched.
 9. Match the iOS four-tap bilinear supersampling filter. Consult both texture
    and depth-renderbuffer limits; use the native target on allocation failure.
    Preserve a reported GL context loss for the Android context recreation path.
+10. Correct the Android 12 installation mismatch in 0.1.2. The reported phone
+    ran API 31, while 0.1.1 declared minimum API 36. Both Java platform calls
+    and the native build now use the Android 12 compatibility boundary; newer
+    Android callbacks are guarded rather than loaded during older-OS startup.
+11. Draw clearer Android control chrome using the source red, steel and white
+    palette: button plates/borders, enabled and disabled states, captions and
+    HUD labels. Original art, menu layout, control geometry and game rules are
+    preserved; these drawing changes are in the Android UI adapter.
+12. Use the canonical character-name text entry for tactical and battle labels
+    in both forms. The second text entry is a quotation, not a vehicle name;
+    selecting it by form replaced the transformed unit's name and prevented
+    its HUD portrait lookup. The final public-touch regression verifies the
+    displayed name and rendered portrait across transformation.
 
-The 0.1.1 host integration probe completes Mission 1, captures its objective,
-presents results, opens Mission 2 and restores its checkpoint through the real
-menus. It also rejects one framebuffer allocation and verifies a successful
-native-resolution frame followed by restored supersampling. The report is
+The historical 0.1.1 host integration probe completed Mission 1, captured its
+objective, presented results, opened Mission 2 and restored its checkpoint
+through the real menus. It also rejected one framebuffer allocation and verified
+a successful native-resolution frame followed by restored supersampling. The report is
 `validation/resume-0.1.1/game-probe-report.json`.
 
 ## Validation boundaries
@@ -84,7 +101,14 @@ menus and controls using public touch calls; it never grants unlocks, fabricates
 session state or calls core actions behind the UI. Its desktop GLES context is
 still not a Samsung driver or an Android application process.
 
-Full Story, Showdown and Arena playthroughs on the delivered A36 APK, device
+The 0.1.2 release package contains ARM64 and x86_64 libraries so its exact bytes
+can be used for both phone installation and emulator checks. The default source
+build remains ARM64. An x86_64 Android emulator result establishes that runtime
+path; it does not establish ARM64 GPU behavior on a physical Samsung phone.
+Host GLES screenshots, Android emulator screenshots and physical-phone screenshots
+must identify their origin. Prior 0.1.1 checks do not automatically validate 0.1.2.
+
+Full Story, Showdown and Arena playthroughs on physical devices, device
 audio/video, TalkBack use, interruptions, background process death, sustained
 thermal behavior and later Android versions require their own recorded results.
 See `VALIDATION.md` for checks actually completed at this checkpoint. No claim

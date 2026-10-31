@@ -1,0 +1,152 @@
+--------- beginning of main
+10-31 15:00:40.811  3098  3098 W man.g1awakenin: Unexpected CPU variant for X86 using defaults: x86_64
+10-31 15:00:41.578  3098  3098 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10105; state: ENABLED
+10-31 15:00:41.924  3098  3098 V GraphicsEnvironment: ANGLE Developer option for 'com.iammrmikeman.g1awakening' set to: 'default'
+10-31 15:00:41.925  3098  3098 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-31 15:00:41.948  3098  3098 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 15:00:41.950  3098  3098 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-31 15:00:42.334  3098  3117 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-31 15:00:42.397  3098  3117 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-31 15:00:42.729  3098  3117 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-31 15:00:44.705  3098  3116 D HostConnection: createUnique: call
+10-31 15:00:44.707  3098  3116 D HostConnection: HostConnection::get() New Host Connection established 0x7659c6095b50, tid 3116
+10-31 15:00:44.894  3098  3116 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-31 15:00:44.972  3098  3116 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-31 15:00:44.973  3098  3116 D EGL_emulation: eglCreateContext: 0x7659c6095550: maj 3 min 0 rcv 3
+10-31 15:00:44.981  3098  3116 D EGL_emulation: eglMakeCurrent: 0x7659c6095550: ver 3 0 (tinfo 0x765bdfc7f080) (first time)
+10-31 15:00:45.118  3098  3116 I Gralloc4: mapper 4.x is not supported
+10-31 15:00:45.139  3098  3116 D HostConnection: createUnique: call
+10-31 15:00:45.141  3098  3116 D HostConnection: HostConnection::get() New Host Connection established 0x7659c6094950, tid 3116
+10-31 15:00:45.142  3098  3116 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-31 15:00:45.149  3098  3116 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+10-31 15:00:45.163  3098  3116 W Gralloc4: allocator 4.x is not supported
+10-31 15:00:45.322  3098  3116 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-31 15:00:46.060  3098  3113 I OpenGLRenderer: Davey! duration=1818ms; Flags=1, FrameTimelineVsyncId=1636, IntendedVsync=664316309727, Vsync=664432976389, InputEventId=0, HandleInputStart=664443250213, AnimationStart=664443255571, PerformTraversalsStart=664443258405, DrawStart=665427060400, FrameDeadline=664332976393, FrameInterval=664443234169, FrameStartTime=16666666, SyncQueued=665439262776, SyncStart=665440095063, IssueDrawCommandsStart=665480423781, SwapBuffers=665951387009, FrameCompleted=666135711174, DequeueBufferDuration=100772, QueueBufferDuration=13881601, GpuCompleted=666134989374, SwapBuffersCompleted=666135711174, DisplayPresentTime=64,
+10-31 15:00:48.252  3098  3116 D EGL_emulation: app_time_stats: avg=1105.37ms min=523.54ms max=1687.20ms count=2
+10-31 15:00:49.993  3098  3116 D EGL_emulation: app_time_stats: avg=1736.71ms min=1736.71ms max=1736.71ms count=1
+10-31 15:00:52.033  3098  3116 D EGL_emulation: app_time_stats: avg=1017.05ms min=972.74ms max=1061.36ms count=2
+10-31 15:00:53.117  3098  3116 D EGL_emulation: app_time_stats: avg=1072.95ms min=1072.95ms max=1072.95ms count=1
+10-31 15:00:54.395  3098  3116 D EGL_emulation: app_time_stats: avg=1275.10ms min=1275.10ms max=1275.10ms count=1
+10-31 15:00:55.467  3098  3116 D EGL_emulation: app_time_stats: avg=535.39ms min=415.14ms max=655.64ms count=2
+10-31 15:00:55.671  3098  3108 I man.g1awakenin: Background concurrent copying GC freed 98722(2977KB) AllocSpace objects, 76(5044KB) LOS objects, 49% free, 2281KB/4563KB, paused 121us total 307.120ms
+10-31 15:01:01.257  3098  3116 D EGL_emulation: app_time_stats: avg=1924.33ms min=461.44ms max=4792.98ms count=3
+10-31 15:01:02.224  3098  3113 I OpenGLRenderer: Davey! duration=828ms; Flags=0, FrameTimelineVsyncId=1907, IntendedVsync=681466297964, Vsync=681466297964, InputEventId=0, HandleInputStart=681469483338, AnimationStart=681469488506, PerformTraversalsStart=681469491240, DrawStart=681470085357, FrameDeadline=681482964630, FrameInterval=681469474825, FrameStartTime=16666666, SyncQueued=682278661856, SyncStart=682279388033, IssueDrawCommandsStart=682279781036, SwapBuffers=682287515876, FrameCompleted=682295571340, DequeueBufferDuration=56715, QueueBufferDuration=5432593, GpuCompleted=682294952646, SwapBuffersCompleted=682295571340, DisplayPresentTime=64,
+10-31 15:01:02.534  3098  3116 D EGL_emulation: app_time_stats: avg=423.62ms min=101.25ms max=836.75ms count=3
+10-31 15:01:05.704  3098  3116 D EGL_emulation: app_time_stats: avg=1579.33ms min=219.80ms max=2938.86ms count=2
+10-31 15:01:05.707  3098  3114 W MediaPlayerNative: info/warning (3, 0)
+10-31 15:01:17.276  3098  3116 D EGL_emulation: app_time_stats: avg=5784.17ms min=542.15ms max=11026.18ms count=2
+10-31 15:01:19.284  3098  3116 D EGL_emulation: app_time_stats: avg=401.21ms min=97.50ms max=1136.44ms count=5
+10-31 15:01:20.432  3098  3116 D EGL_emulation: app_time_stats: avg=228.25ms min=67.87ms max=601.65ms count=5
+10-31 15:01:21.509  3098  3116 D EGL_emulation: app_time_stats: avg=179.14ms min=108.43ms max=238.36ms count=6
+10-31 15:01:22.787  3098  3116 D EGL_emulation: app_time_stats: avg=255.52ms min=59.19ms max=480.48ms count=5
+10-31 15:01:23.819  3098  3116 D EGL_emulation: app_time_stats: avg=205.24ms min=56.38ms max=328.07ms count=5
+10-31 15:01:25.107  3098  3116 D EGL_emulation: app_time_stats: avg=209.19ms min=111.14ms max=469.54ms count=6
+10-31 15:01:27.116  3098  3116 D EGL_emulation: app_time_stats: avg=668.81ms min=115.29ms max=1555.04ms count=3
+10-31 15:01:28.135  3098  3116 D EGL_emulation: app_time_stats: avg=254.39ms min=101.93ms max=678.68ms count=4
+10-31 15:01:29.413  3098  3116 D EGL_emulation: app_time_stats: avg=179.90ms min=66.08ms max=341.56ms count=7
+10-31 15:01:30.722  3098  3116 D EGL_emulation: app_time_stats: avg=158.10ms min=42.92ms max=359.12ms count=8
+10-31 15:01:31.825  3098  3116 D EGL_emulation: app_time_stats: avg=270.81ms min=227.20ms max=361.88ms count=4
+10-31 15:01:33.009  3098  3116 D EGL_emulation: app_time_stats: avg=196.42ms min=70.58ms max=417.34ms count=6
+10-31 15:01:34.079  3098  3116 D EGL_emulation: app_time_stats: avg=132.03ms min=63.08ms max=304.74ms count=8
+10-31 15:01:35.452  3098  3116 D EGL_emulation: app_time_stats: avg=166.46ms min=69.09ms max=417.06ms count=8
+10-31 15:01:36.584  3098  3116 D EGL_emulation: app_time_stats: avg=187.17ms min=109.41ms max=282.44ms count=6
+10-31 15:01:37.846  3098  3116 D EGL_emulation: app_time_stats: avg=153.01ms min=16.99ms max=292.31ms count=8
+10-31 15:01:38.878  3098  3116 D EGL_emulation: app_time_stats: avg=126.43ms min=54.26ms max=278.36ms count=8
+10-31 15:01:39.900  3098  3116 D EGL_emulation: app_time_stats: avg=169.29ms min=83.79ms max=296.62ms count=6
+10-31 15:01:41.003  3098  3116 D EGL_emulation: app_time_stats: avg=157.25ms min=59.92ms max=297.97ms count=7
+10-31 15:01:42.051  3098  3116 D EGL_emulation: app_time_stats: avg=174.58ms min=56.00ms max=306.78ms count=6
+10-31 15:01:43.183  3098  3116 D EGL_emulation: app_time_stats: avg=121.08ms min=16.55ms max=229.49ms count=9
+10-31 15:01:44.360  3098  3116 D EGL_emulation: app_time_stats: avg=130.36ms min=67.89ms max=188.35ms count=9
+10-31 15:01:45.417  3098  3116 D EGL_emulation: app_time_stats: avg=150.58ms min=82.11ms max=222.46ms count=7
+10-31 15:01:46.501  3098  3116 D EGL_emulation: app_time_stats: avg=135.34ms min=65.10ms max=199.08ms count=8
+10-31 15:01:47.680  3098  3116 D EGL_emulation: app_time_stats: avg=168.07ms min=73.89ms max=276.03ms count=7
+10-31 15:01:48.761  3098  3116 D EGL_emulation: app_time_stats: avg=154.08ms min=61.19ms max=322.40ms count=7
+10-31 15:01:49.832  3098  3116 D EGL_emulation: app_time_stats: avg=149.56ms min=37.08ms max=274.92ms count=7
+10-31 15:01:51.093  3098  3116 D EGL_emulation: app_time_stats: avg=157.06ms min=31.49ms max=349.03ms count=8
+10-31 15:01:52.238  3098  3116 D EGL_emulation: app_time_stats: avg=125.56ms min=62.82ms max=224.11ms count=9
+10-31 15:01:53.456  3098  3116 D EGL_emulation: app_time_stats: avg=196.91ms min=101.97ms max=326.26ms count=6
+10-31 15:01:54.708  3098  3116 D EGL_emulation: app_time_stats: avg=208.36ms min=66.15ms max=470.98ms count=6
+10-31 15:01:55.784  3098  3116 D EGL_emulation: app_time_stats: avg=214.56ms min=93.06ms max=355.87ms count=5
+10-31 15:01:57.036  3098  3116 D EGL_emulation: app_time_stats: avg=312.42ms min=104.42ms max=646.82ms count=4
+10-31 15:01:58.145  3098  3116 D EGL_emulation: app_time_stats: avg=277.00ms min=62.58ms max=426.29ms count=4
+10-31 15:01:59.329  3098  3116 D EGL_emulation: app_time_stats: avg=193.69ms min=32.86ms max=467.45ms count=6
+10-31 15:02:00.341  3098  3116 D EGL_emulation: app_time_stats: avg=198.90ms min=92.17ms max=294.28ms count=5
+10-31 15:02:01.477  3098  3116 D EGL_emulation: app_time_stats: avg=161.52ms min=24.67ms max=302.22ms count=7
+10-31 15:02:02.566  3098  3116 D EGL_emulation: app_time_stats: avg=180.11ms min=91.21ms max=435.84ms count=6
+10-31 15:02:03.633  3098  3116 D EGL_emulation: app_time_stats: avg=150.95ms min=56.31ms max=379.18ms count=7
+10-31 15:02:04.671  3098  3116 D EGL_emulation: app_time_stats: avg=118.97ms min=61.61ms max=200.24ms count=8
+10-31 15:02:05.657  3098  3116 D EGL_emulation: app_time_stats: avg=120.97ms min=46.84ms max=252.09ms count=8
+10-31 15:02:06.680  3098  3116 D EGL_emulation: app_time_stats: avg=204.33ms min=138.29ms max=265.35ms count=5
+10-31 15:02:07.856  3098  3116 D EGL_emulation: app_time_stats: avg=144.42ms min=13.98ms max=316.28ms count=8
+10-31 15:02:08.885  3098  3116 D EGL_emulation: app_time_stats: avg=114.00ms min=51.68ms max=257.11ms count=9
+10-31 15:02:09.905  3098  3116 D EGL_emulation: app_time_stats: avg=169.36ms min=76.08ms max=345.99ms count=6
+10-31 15:02:11.125  3098  3116 D EGL_emulation: app_time_stats: avg=173.06ms min=56.10ms max=309.57ms count=7
+10-31 15:02:12.216  3098  3116 D EGL_emulation: app_time_stats: avg=155.60ms min=51.91ms max=286.29ms count=7
+10-31 15:02:13.248  3098  3116 D EGL_emulation: app_time_stats: avg=204.90ms min=35.79ms max=351.17ms count=5
+10-31 15:02:14.337  3098  3116 D EGL_emulation: app_time_stats: avg=179.89ms min=76.91ms max=332.42ms count=6
+10-31 15:02:15.343  3098  3116 D EGL_emulation: app_time_stats: avg=141.72ms min=90.83ms max=197.67ms count=7
+10-31 15:02:16.476  3098  3116 D EGL_emulation: app_time_stats: avg=140.74ms min=52.19ms max=242.80ms count=8
+10-31 15:02:17.525  3098  3116 D EGL_emulation: app_time_stats: avg=174.33ms min=98.41ms max=323.08ms count=6
+10-31 15:02:18.728  3098  3116 D EGL_emulation: app_time_stats: avg=168.07ms min=42.79ms max=329.77ms count=7
+10-31 15:02:19.788  3098  3116 D EGL_emulation: app_time_stats: avg=130.60ms min=66.43ms max=207.86ms count=8
+10-31 15:02:21.528  3098  3116 D EGL_emulation: app_time_stats: avg=283.06ms min=34.59ms max=1014.66ms count=6
+10-31 15:02:22.569  3098  3116 D EGL_emulation: app_time_stats: avg=139.55ms min=44.36ms max=273.55ms count=7
+10-31 15:02:23.646  3098  3116 D EGL_emulation: app_time_stats: avg=134.43ms min=68.12ms max=269.87ms count=8
+10-31 15:02:24.673  3098  3116 D EGL_emulation: app_time_stats: avg=139.36ms min=28.97ms max=264.69ms count=7
+10-31 15:02:25.794  3098  3116 D EGL_emulation: app_time_stats: avg=224.07ms min=117.93ms max=439.08ms count=5
+10-31 15:02:26.881  3098  3116 D EGL_emulation: app_time_stats: avg=271.16ms min=209.90ms max=302.05ms count=4
+10-31 15:02:28.054  3098  3116 D EGL_emulation: app_time_stats: avg=130.03ms min=77.31ms max=261.62ms count=9
+10-31 15:02:29.144  3098  3116 D EGL_emulation: app_time_stats: avg=135.45ms min=68.11ms max=283.19ms count=8
+10-31 15:02:30.338  3098  3116 D EGL_emulation: app_time_stats: avg=198.64ms min=99.41ms max=370.18ms count=6
+10-31 15:02:31.445  3098  3116 D EGL_emulation: app_time_stats: avg=138.09ms min=46.05ms max=215.00ms count=8
+10-31 15:02:32.500  3098  3116 D EGL_emulation: app_time_stats: avg=148.37ms min=41.84ms max=205.75ms count=7
+10-31 15:02:33.555  3098  3116 D EGL_emulation: app_time_stats: avg=175.77ms min=94.09ms max=345.82ms count=6
+10-31 15:02:34.621  3098  3116 D EGL_emulation: app_time_stats: avg=208.94ms min=64.57ms max=372.87ms count=5
+10-31 15:02:35.509  3098  3098 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+10-31 15:02:35.509  3098  3098 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+10-31 15:02:35.757  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 0 is not owned by the producer (state = FREE)
+10-31 15:02:35.764  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 1 is not owned by the producer (state = FREE)
+10-31 15:02:35.767  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 2 is not owned by the producer (state = FREE)
+10-31 15:02:35.770  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 3 is not owned by the producer (state = FREE)
+10-31 15:02:35.773  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 4 is not owned by the producer (state = FREE)
+10-31 15:02:35.776  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 5 is not owned by the producer (state = FREE)
+10-31 15:02:35.779  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 6 is not owned by the producer (state = FREE)
+10-31 15:02:35.785  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 7 is not owned by the producer (state = FREE)
+10-31 15:02:35.794  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 8 is not owned by the producer (state = FREE)
+10-31 15:02:35.842  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 9 is not owned by the producer (state = FREE)
+10-31 15:02:35.845  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 10 is not owned by the producer (state = FREE)
+10-31 15:02:35.855  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 11 is not owned by the producer (state = FREE)
+10-31 15:02:35.858  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 12 is not owned by the producer (state = FREE)
+10-31 15:02:35.865  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 13 is not owned by the producer (state = FREE)
+10-31 15:02:35.873  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 14 is not owned by the producer (state = FREE)
+10-31 15:02:35.879  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 15 is not owned by the producer (state = FREE)
+10-31 15:02:35.882  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 16 is not owned by the producer (state = FREE)
+10-31 15:02:35.893  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 17 is not owned by the producer (state = FREE)
+10-31 15:02:35.896  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 18 is not owned by the producer (state = FREE)
+10-31 15:02:35.898  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 19 is not owned by the producer (state = FREE)
+10-31 15:02:35.904  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 20 is not owned by the producer (state = FREE)
+10-31 15:02:35.910  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 21 is not owned by the producer (state = FREE)
+10-31 15:02:35.938  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:3,p:490,c:3098) detachBuffer: slot 22 is not owned by the producer (state = FREE)
+10-31 15:02:35.948  3098  3112 E BufferQueueProducer: [SurfaceTexture-0-3098-0](id:c1a00000001,api:0,p:-1,c:3098) detachBuffer: BufferQueue has no connected producer
+10-31 15:02:36.757  3098  3098 I G1Surface: Requested display refresh: 60.000004 Hz; simulation timing remains independent.
+10-31 15:02:36.852  3098  3116 D EGL_emulation: app_time_stats: avg=246.39ms min=46.82ms max=1380.42ms count=9
+10-31 15:02:36.868  3098  3114 I OpenGLRenderer: Davey! duration=844ms; Flags=0, FrameTimelineVsyncId=3277, IntendedVsync=776099627512, Vsync=776182960842, InputEventId=0, HandleInputStart=776199085534, AnimationStart=776199092304, PerformTraversalsStart=776199095118, DrawStart=776890599971, FrameDeadline=776116294178, FrameInterval=776199075508, FrameStartTime=16666666, SyncQueued=776898987637, SyncStart=776902337805, IssueDrawCommandsStart=776904494853, SwapBuffers=776911824961, FrameCompleted=776947401944, DequeueBufferDuration=60271, QueueBufferDuration=13496390, GpuCompleted=776936375964, SwapBuffersCompleted=776947401944, DisplayPresentTime=53481581309853760,
+10-31 15:02:37.222  3098  3244 I AAudio  : AAudioStreamBuilder_openStream() called ----------------------------------------
+10-31 15:02:37.225  3098  3244 I AudioStreamBuilder: rate   =  22050, channels  = 1, format   = 5, sharing = SH, dir = OUTPUT
+10-31 15:02:37.226  3098  3244 I AudioStreamBuilder: device =      0, sessionId = -1, perfMode = 12, callback: ON with frames = 0
+10-31 15:02:37.231  3098  3244 I AudioStreamBuilder: usage  =     14, contentType = 2, inputPreset = 0, allowedCapturePolicy = 0
+10-31 15:02:37.234  3098  3244 I AudioStreamBuilder: privacy sensitive = false
+10-31 15:02:37.234  3098  3244 I AudioStreamBuilder: opPackageName = (null)
+10-31 15:02:37.235  3098  3244 I AudioStreamBuilder: attributionTag = (null)
+10-31 15:02:37.236  3098  3244 D man.g1awakenin: PlayerBase::PlayerBase()
+10-31 15:02:37.260  3098  3244 D AudioStreamTrack: open(), request notificationFrames = -8, frameCount = 0
+10-31 15:02:37.377  3098  3244 D AudioTrack: createTrack_l(0): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 984
+10-31 15:02:37.419  3098  3244 D AAudioStream: setState(s#1) from 0 to 2
+10-31 15:02:37.457  3098  3244 D AudioStreamTrack: open() flags changed from 0x00000104 to 0x00000000
+10-31 15:02:37.458  3098  3244 D AudioStreamTrack: open() perfMode changed from 12 to 10
+10-31 15:02:37.477  3098  3244 I AAudio  : AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+10-31 15:02:37.477  3098  3244 D AAudio  : AAudioStream_requestStart(s#1) called --------------
+10-31 15:02:37.477  3098  3244 D AAudioStream: setState(s#1) from 2 to 3
+10-31 15:02:37.518  3098  3244 D AAudio  : AAudioStream_requestStart(s#1) returned 0 ---------
+10-31 15:02:37.530  3098  3112 D AudioStreamLegacy: onAudioDeviceUpdate(deviceId = 2)
+10-31 15:02:37.559  3098  3245 D AAudioStream: setState(s#1) from 3 to 4

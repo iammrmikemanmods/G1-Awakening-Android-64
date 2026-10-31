@@ -1,0 +1,139 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        732cbc8 com.iammrmikeman.g1awakening/.MainActivity filter f67e461
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Key Set Manager:
+  [com.iammrmikeman.g1awakening]
+      Signing KeySets: 9
+
+Packages:
+  Package [com.iammrmikeman.g1awakening] (8140c5e):
+    userId=10105
+    pkg=Package{b02183f com.iammrmikeman.g1awakening}
+    codePath=/data/app/~~fjogTTWoCLxV2NafgG_slA==/com.iammrmikeman.g1awakening-YmFGmBs74pCflyfPJLEzrw==
+    resourcePath=/data/app/~~fjogTTWoCLxV2NafgG_slA==/com.iammrmikeman.g1awakening-YmFGmBs74pCflyfPJLEzrw==
+    legacyNativeLibraryDir=/data/app/~~fjogTTWoCLxV2NafgG_slA==/com.iammrmikeman.g1awakening-YmFGmBs74pCflyfPJLEzrw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3 minSdk=31 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.2-dev
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=PackageImpl{b02183f com.iammrmikeman.g1awakening}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.iammrmikeman.g1awakening
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-10-31 14:59:34
+    firstInstallTime=2026-10-31 14:59:42
+    lastUpdateTime=2026-10-31 14:59:42
+    signatures=PackageSignatures{301b50c version:3, signatures:[df034d5f], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    User 0: ceDataInode=123400 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.android.dynsystem,com.android.settings,com.android.providers.settings,com.android.localtransport,com.android.emulator.multidisplay,com.android.inputdevices,android,com.android.location.fused,com.android.keychain,com.android.wallpaperbackup]:
+        com.iammrmikeman.g1awakening
+      com.android.providers.media.module:
+        com.iammrmikeman.g1awakening
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=28
+  User 0:
+    seq=0, package=com.android.permissioncontroller
+    seq=1, package=com.android.systemui
+    seq=4, package=com.android.sdksetup
+    seq=5, package=com.android.provision
+    seq=6, package=com.android.settings
+    seq=8, package=com.android.traceur
+    seq=9, package=com.android.calendar
+    seq=10, package=com.android.camera2
+    seq=12, package=com.android.gallery3d
+    seq=13, package=com.android.inputmethod.latin
+    seq=18, package=com.android.messaging
+    seq=19, package=com.android.nfc
+    seq=21, package=com.android.statementservice
+    seq=22, package=com.android.bluetooth
+    seq=24, package=com.android.stk
+    seq=25, package=com.android.cellbroadcastreceiver.module
+    seq=26, package=com.iammrmikeman.g1awakening
+    seq=27, package=com.android.carrierdefaultapp
+
+
+Dexopt state:
+  [com.iammrmikeman.g1awakening]
+    path: /data/app/~~fjogTTWoCLxV2NafgG_slA==/com.iammrmikeman.g1awakening-YmFGmBs74pCflyfPJLEzrw==/base.apk
+      x86_64: [status=verify] [reason=install]
+
+
+Compiler stats:
+  [com.iammrmikeman.g1awakening]
+     base.apk - 6702
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+Snapshot statistics
+   Unrecorded-hits: 359  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:52         now           0           0           0           0           0           0           0
+          1:52        0:52           4         476           0           2           0          44          25
+          2:52        1:52          11       13885           0           2           1          54          21
+          3:52        2:52          18       20894           0           2           6         194         154
+          4:52        3:52          37       11640           0           6          15         163          48
+          5:52        4:52          23       10189           0           1           3          58          37
+          6:52        5:52          48        6668           0          16          26        1248         229
+          7:52        6:52          15       11801           0           4           3         264          99
+         10:19        7:52         231       26792           0           5          17         607         221
+         10:19         now         387      102345           0          38          71        2637         229
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:52         now           0           0           0           0           0           0           0           0
+          1:52        0:52           2           0           0           0           1           1           0           0
+          2:52        1:52           5           1           3           0           1           1           0           0
+          3:52        2:52          15           0           1           0           0           1           0           1
+          4:52        3:52          28           0           0           5           2           2           0           0
+          5:52        4:52          20           1           1           0           0           1           0           0
+          6:52        5:52          25           6           1           0           2           7           2           5
+          7:52        6:52           9           0           2           0           1           1           2           0
+         10:19        7:52         220           1           3           2           1           2           0           2
+         10:19         now         324           9          11           7           8          16           4           8
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:52         now           0           0           0           0           0           0           0           0
+          1:52        0:52           0           0           0           0           0           0           3           1
+          2:52        1:52           1           0           0           1           0           1           2           6
+          3:52        2:52           5           0           1           0           0           0           2          10
+          4:52        3:52          11           0           4           1           2           1           2          16
+          5:52        4:52           3           0           0           0           1           3           2          14
+          6:52        5:52          17           3           6           3           3           3           2          11
+          7:52        6:52           3           0           0           1           0           0           0          11
+         10:19        7:52           3           0          13         152          34          15           3          10
+         10:19         now          43           3          24         158          40          23          16          79

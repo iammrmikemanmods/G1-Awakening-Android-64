@@ -1,0 +1,3 @@
+/workspace/scratch/94d9059342e2/deliverables/G1-Awakening-Android64-v0.1.2-dev.apk: 1 file pushed, 0 skipped. 10.7 MB/s (42118076 bytes in 3.759s)
+Performing Push Install
+Success

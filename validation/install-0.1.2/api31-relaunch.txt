@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.iammrmikeman.g1awakening/.MainActivity }
+Status: ok
+LaunchState: WARM
+Activity: com.iammrmikeman.g1awakening/.MainActivity
+TotalTime: 3275
+WaitTime: 3418
+Complete

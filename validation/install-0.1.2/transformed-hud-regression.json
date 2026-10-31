@@ -1,0 +1,11 @@
+{
+  "status":"passed",
+  "kind":"Focused public-touch name/portrait regression on offscreen AndroidGame GLES; not an Android device test or full campaign pass",
+  "frames":238,
+  "public_touch_events":24,
+  "selected_unit_name":"BUMBLEBEE",
+  "unit_name_preserved_across_transform":true,
+  "selected_portrait_preserved_across_transform":true,
+  "robot_hud_label":"BUMBLEBEE. Health 100. Attack 65 to 75. Defense 55. Speed 2. Energon 0.",
+  "vehicle_hud_label":"BUMBLEBEE. Health 100. Attack 0 to 0. Defense 65. Speed 5. Energon 0."
+}

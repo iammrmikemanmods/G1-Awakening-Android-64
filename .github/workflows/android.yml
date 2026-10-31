@@ -38,7 +38,7 @@ jobs:
         run: bash tests/renderer/run-renderer-probe.sh
 
   build:
-    name: Android 16 / ${{ matrix.abi }}
+    name: Android 12+ / target SDK 36 / ${{ matrix.abi }}
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     strategy:
@@ -75,7 +75,7 @@ jobs:
       - name: Upload source validation reports
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: G1-Awakening-Android16-source-validation-${{ matrix.abi }}
+          name: G1-Awakening-Android12-plus-source-validation-${{ matrix.abi }}
           path: |
             app/build/reports/lint-results-debug.html
             app/build/reports/lint-results-debug.xml

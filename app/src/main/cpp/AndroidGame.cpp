@@ -989,8 +989,7 @@ void AndroidGame::Impl::refreshControls() {
         const auto status = _battlePresentation->status();
         auto name = [&](std::size_t side) {
             auto &d = _session->world().unit_definitions.at(status.types[side]);
-            return _text->at(
-                script_text_id(unit_text_index(d.raw_text_indices.at(status.forms[side]))));
+            return _text->at(script_text_id(unit_text_index(d.raw_text_indices[0])));
         };
         _uiState.battle = UiBattle{status,
                                    name(0),
@@ -1042,7 +1041,7 @@ void AndroidGame::Impl::refreshControls() {
         auto &combat = _session->combat_units().at(index);
         hud.shows_unit = true;
         hud.upgrade_cost = unit_spawn_cost(d);
-        hud.name = _text->at(script_text_id(unit_text_index(d.raw_text_indices.at(u.form))));
+        hud.name = _text->at(script_text_id(unit_text_index(d.raw_text_indices[0])));
         hud.health = combat.health;
         hud.attack_low = combat.stats.attack_low;
         hud.attack_high = combat.stats.attack_high;

@@ -1,0 +1,3 @@
+PASS: Presented main-menu accessibility controls on Android12/API31.
+PASS: Settings opened through the visible Settings button.
+PASS: Legacy Android12 Back returned from Settings to Main Menu.

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "version": "0.1.2-dev",
+  "version_code": 3,
+  "compile_sdk": 36,
+  "target_sdk": 36,
+  "minimum_sdk": 31,
+  "native_api_floor": 31,
+  "abis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "variant": "optimized release, development signed",
+  "lint_errors": 0,
+  "lint_warnings": 11,
+  "same_certificate_as_0_1_1": true,
+  "gameplay_core_changed": false,
+  "original_assets_changed": false,
+  "build_command": "./gradlew --offline --no-daemon --max-workers=4 :app:assembleRelease :app:lintRelease -Pg1Abis=arm64-v8a,x86_64"
+}

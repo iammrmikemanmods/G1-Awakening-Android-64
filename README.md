@@ -1,29 +1,57 @@
-# G1 Awakening — Android ARM64
+# G1 Awakening — Android 64-bit
 
-Native Android port of the iOS **Build 017 / 017R1** game, targeting the
-**Samsung Galaxy A36 on Android 16 or later**. The original portable engine
-is compiled directly; Android supplies the display, input, audio, video and
-application lifecycle adapters.
+Native Android port of the iOS **Build 017 / 017R1** game for **64-bit Android
+12 or later**, with OpenGL ES 3. The Samsung Galaxy A36 remains the original
+device target. The original portable engine is compiled directly; Android
+supplies the display, input, audio, video and application lifecycle adapters.
 
 **Status: development build with specific automated verification.** An APK
 build and host gameplay checks do not establish that every mission works on
 a physical A36. Current evidence and remaining device checks are recorded in
 [VALIDATION.md](VALIDATION.md) and [PORT_STATUS.json](PORT_STATUS.json).
 
-## Development update 0.1.1
+## Development update 0.1.2
 
-This update keeps the complete pinned iOS source and all original resources.
-It fixes startup when the Android audio device is temporarily unavailable,
-matches the iOS four-tap supersampling resolve, and falls back to native
+The reported installation failure was an OS-version mismatch: the phone was
+running **Android 12/API 31**, while the `0.1.1-dev` APK required **Android
+16/API 36**. This update sets both the application's minimum SDK and native
+API floor to **31**, while retaining compile and target SDK **36**. It is
+version `0.1.2-dev`, versionCode `3`.
+
+Android 12 uses the existing game Back action through the older Android
+callback. Android 13 and later retain the newer Back dispatcher and receiver
+export flags. Accessibility window bounds use the Android 14 API only when
+available, with parent/screen bounds on older releases. These are platform
+adapters; the pinned game engine, resources and save format remain unchanged.
+
+The Android UI also restores clearer red, steel and white control chrome:
+button plates and borders, visible enabled/disabled states, captions and
+readable HUD labels. It uses the original artwork and control geometry.
+Transformed units now keep their character names and HUD portraits; the
+character quote is no longer mistaken for a vehicle-form name. Battle labels
+use the same canonical character name.
+
+The development release APK contains **ARM64 (`arm64-v8a`) and x86_64** native
+libraries, so the same package can be installed on an ARM64 phone and an
+x86_64 Android emulator. A default source build still produces ARM64 only.
+This is a 64-bit package; a 32-bit Android installation is not supported.
+Updates retain the existing application ID and signer. Per-build verification,
+runtime coverage and screenshot origins are recorded in [VALIDATION.md](VALIDATION.md).
+
+## Previous update: 0.1.1
+
+Version 0.1.1 kept the complete pinned iOS source and all original resources.
+It fixed startup when the Android audio device was temporarily unavailable,
+matched the iOS four-tap supersampling resolve, and added a fallback to native
 resolution if a supersampling target cannot be allocated. APK/AAB packaging
-now requires the complete verified asset set.
+has required the complete verified asset set since that update.
 
-The extended native gameplay probe completes Mission 1 through normal controls,
-opens Mission 2 through the original campaign controller, and verifies its
-unlock and Continue checkpoint. It passes **1,832 rendered frames and 83 touches**.
-The renderer passes **127 checks**, and the audio recovery probe passes
-**eight failure/recovery scenarios**. These host tests are recorded separately
-from Android runtime and physical-phone validation.
+The recorded **0.1.1** native gameplay probe completed Mission 1 through normal
+controls, opened Mission 2 through the original campaign controller, and
+verified its unlock and Continue checkpoint over **1,832 rendered frames and
+83 touches**. That renderer run passed **127 checks**, and the audio recovery
+probe passed **eight failure/recovery scenarios**. These are historical host
+results, separate from 0.1.2 acceptance and physical-phone validation.
 
 See [the update record](docs/DEVELOPMENT_0_1_1.md) for the changes and evidence.
 
@@ -67,7 +95,7 @@ same enhanced source UI. Modern uses the source clean textures, M3G tactical
 models, soft shadows and the source supersampling budget policy.
 
 Android integration includes app-private atomic saves, safe-area insets,
-landscape orientation, predictive Back, touch/pan/pinch, display-paced
+landscape orientation, version-aware Back handling, touch/pan/pinch, display-paced
 rendering, audio focus, pause/resume and GPU resource recreation. The engine
 retains its original 30 ms simulation step; fractional frame time is carried
 between callbacks so 120 Hz does not slow the simulation.
@@ -78,7 +106,7 @@ cannot be described as byte-identical iOS platform implementations.
 
 ## Build an installable owner APK
 
-Requirements: JDK 17, Python 3, Android SDK 36, build-tools36.0.0,
+Requirements: JDK 17, Python 3, Android SDK 36, build-tools 36.0.0,
 NDK 28.2.13676358 and CMake 3.22.1. Gradle 8.11.1 and AGP 8.10.1 are pinned.
 
 ```bash
@@ -93,7 +121,8 @@ SDK configuration. It requires an existing JDK 17 and prompts for Android SDK
 licences unless `G1_ACCEPT_ANDROID_LICENSES=1` was deliberately set.
 
 The default APK is `app/build/outputs/apk/debug/app-debug.apk`, with only
-`arm64-v8a`, minimum API 36 and target API 36. Install it on the A36:
+`arm64-v8a`, minimum API 31 and target API 36. Install it on a compatible
+64-bit Android 12+ phone:
 
 ```bash
 adb install -r app/build/outputs/apk/debug/app-debug.apk
@@ -104,10 +133,17 @@ game resources reject the build before an installable package is produced.
 Source-only compilation and lint remain available without the original data.
 On a host where Python 3 is named `python`, pass `-Pg1Python=python`.
 
-An x86_64 emulator build is available with `-Pg1Abis=x86_64`. That APK is for
-an emulator, not the A36. For an optimized package, use `:app:assembleRelease`
-and sign the result with the maintainer's retained private key using Android
-`apksigner`. Keep the same signer for future upgrades; keys are never committed.
+An x86_64-only emulator build is available with `-Pg1Abis=x86_64`. To produce
+the universal 64-bit development release, build both ABIs:
+
+```bash
+./gradlew :app:assembleRelease :app:lintRelease -Pg1Abis=arm64-v8a,x86_64
+```
+
+Sign the unsigned release output with the maintainer's retained private key
+using Android `apksigner`. Keep the same signer for future upgrades; keys are
+never committed. Emulator captures and host-rendered fixtures must be identified
+separately from photographs or screenshots captured on a physical phone.
 See [docs/BUILD_AND_TEST.md](docs/BUILD_AND_TEST.md) for verification and signing commands.
 
 Save data stays in the application's private `files/saves` directory. Installing

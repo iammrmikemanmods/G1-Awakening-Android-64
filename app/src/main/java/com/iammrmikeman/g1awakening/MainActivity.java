@@ -1,5 +1,6 @@
 package com.iammrmikeman.g1awakening;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -12,6 +13,7 @@ import android.graphics.Insets;
 import android.media.AudioAttributes;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -39,7 +41,7 @@ public final class MainActivity extends Activity {
     private static final String STATE_INTRO_POSITION = "introPosition";
     private final ExecutorService importer = Executors.newSingleThreadExecutor(runnable ->
             new Thread(runnable, "G1-Asset-Verification"));
-    private final OnBackInvokedCallback backCallback = this::handleBack;
+    private Runnable unregisterBackCallback;
     private FrameLayout root;
     private TextView loading;
     private GameSurfaceView game;
@@ -67,8 +69,13 @@ public final class MainActivity extends Activity {
         super.onCreate(state);
         powerManager = getSystemService(PowerManager.class);
         powerManager.addThermalStatusListener(getMainExecutor(), thermalListener);
-        registerReceiver(powerReceiver, new IntentFilter(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED),
-                Context.RECEIVER_NOT_EXPORTED);
+        IntentFilter powerFilter = new IntentFilter(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(powerReceiver, powerFilter, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            // This protected system broadcast predates receiver export flags.
+            registerReceiver(powerReceiver, powerFilter);
+        }
         powerReceiverRegistered = true;
         audioManager = getSystemService(AudioManager.class);
         audioFocusRequest = new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN)
@@ -105,8 +112,9 @@ public final class MainActivity extends Activity {
         loading.setGravity(Gravity.CENTER);
         root.addView(loading, fillParent());
         setContentView(root);
-        getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
-                OnBackInvokedDispatcher.PRIORITY_DEFAULT, backCallback);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            unregisterBackCallback = Api33BackCallbacks.register(this, this::handleBack);
+        }
         immersive();
         importer.execute(() -> {
             try {
@@ -215,7 +223,10 @@ public final class MainActivity extends Activity {
         closed = true;
         powerManager.removeThermalStatusListener(thermalListener);
         if (powerReceiverRegistered) unregisterReceiver(powerReceiver);
-        getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(backCallback);
+        if (unregisterBackCallback != null) {
+            unregisterBackCallback.run();
+            unregisterBackCallback = null;
+        }
         importer.shutdownNow();
         if (intro != null) intro.close();
         if (game != null) game.close();
@@ -225,6 +236,12 @@ public final class MainActivity extends Activity {
     @Override public void onWindowFocusChanged(boolean focused) {
         super.onWindowFocusChanged(focused);
         if (focused) immersive();
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override public void onBackPressed() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) handleBack();
+        else super.onBackPressed();
     }
 
     private void handleBack() {
@@ -283,5 +300,18 @@ public final class MainActivity extends Activity {
     private static FrameLayout.LayoutParams fillParent() {
         return new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                 FrameLayout.LayoutParams.MATCH_PARENT);
+    }
+
+    /** Keep Android 13 callback types out of the activity's Android 12 initialization path. */
+    @TargetApi(Build.VERSION_CODES.TIRAMISU)
+    private static final class Api33BackCallbacks {
+        private Api33BackCallbacks() {}
+
+        static Runnable register(Activity activity, Runnable action) {
+            OnBackInvokedDispatcher dispatcher = activity.getOnBackInvokedDispatcher();
+            OnBackInvokedCallback callback = action::run;
+            dispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, callback);
+            return () -> dispatcher.unregisterOnBackInvokedCallback(callback);
+        }
     }
 }

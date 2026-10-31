@@ -1,6 +1,7 @@
 package com.iammrmikeman.g1awakening;
 
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -201,11 +202,22 @@ final class GameAccessibility {
             info.setClickable(node.action != 0 && node.enabled);
             info.setScrollable(node.forward || node.backward);
             info.setVisibleToUser(visible(node));
-            Rect window = new Rect(node.bounds);
-            int[] windowLocation = new int[2];
-            host.getLocationInWindow(windowLocation);
-            window.offset(windowLocation[0], windowLocation[1]);
-            info.setBoundsInWindow(window);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                Rect window = new Rect(node.bounds);
+                int[] windowLocation = new int[2];
+                host.getLocationInWindow(windowLocation);
+                window.offset(windowLocation[0], windowLocation[1]);
+                info.setBoundsInWindow(window);
+            } else {
+                // Snapshot rectangles use host coordinates; virtual children
+                // need bounds relative to their virtual scroll-container parent.
+                Rect parentBounds = new Rect(node.bounds);
+                Node parentNode = snapshot.byId.get(parentId);
+                if (parentNode != null) {
+                    parentBounds.offset(-parentNode.bounds.left, -parentNode.bounds.top);
+                }
+                info.setBoundsInParent(parentBounds);
+            }
             Rect screen = new Rect(node.bounds);
             Rect visible = new Rect();
             if (host.getLocalVisibleRect(visible)) screen.intersect(visible);
